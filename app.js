@@ -58,7 +58,7 @@
   function render() {
     const v = $('#f-venue').value, g = $('#f-genre').value, mine = $('#f-mine').checked, nw = $('#f-new').checked;
     const ok = c => (!v || c.venue === v) && (!g || c.genre === g) && (!mine || going.has(cid(c))) && (!nw || isNew(c));
-    ['this', 'next'].forEach(w => {
+    ['this', 'next', 'later'].forEach(w => {
       const all = shows.filter(c => c.week === w), l = all.filter(ok), el = document.getElementById(w);
       el.innerHTML = l.map(concertCard).join('') ||
         '<p class="few">No shows match these filters.</p>';

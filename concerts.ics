@@ -37,30 +37,17 @@ URL:https://www.ticketweb.com/event/balance-and-composure-midrift-the-pyra
  mid-scheme-tickets/14289554
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-20-afi-with-choir-boy@gr-concerts
+UID:2026-10-19-alton-brown@gr-concerts
 DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261020T200000
-DTEND;TZID=America/Detroit:20261020T230000
-SUMMARY:AFI (with Choir Boy)
-LOCATION:The Intersection (main room)\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/45
- 437472/skip-the-line-for-afi-grand-rapids-the-intersection (confirm detai
- ls with the venue)
-URL:https://www.etix.com/ticket/p/45437472/skip-the-line-for-afi-grand-rap
- ids-the-intersection
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-20-the-brook-the-bluff-the-werewolf-tour@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261020T200000
-DTEND;TZID=America/Detroit:20261020T230000
-SUMMARY:The Brook & The Bluff – The Werewolf Tour
-LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Indie Folk\, 8:00 PM. Tickets/info: https://www.etix.com/ticke
- t/p/64442619/skip-the-line-for-the-brook-the-bluff-grand-rapids-the-inter
- section-the-stache (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/64442619/skip-the-line-for-the-brook-the
- -bluff-grand-rapids-the-intersection-the-stache
+DTSTART;TZID=America/Detroit:20261019T193000
+DTEND;TZID=America/Detroit:20261019T223000
+SUMMARY:Alton Brown
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 7:30 PM. Tickets/info: https://www.ticketmaster.co
+ m/alton-brown-grand-rapids-michigan-10-19-2026/event/0800649C9A777C79 (co
+ nfirm details with the venue)
+URL:https://www.ticketmaster.com/alton-brown-grand-rapids-michigan-10-19-2
+ 026/event/0800649C9A777C79
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-20-ian-sweet-meg-elsier-cheap-emotion@gr-concerts
@@ -76,17 +63,41 @@ URL:https://www.ticketweb.com/event/ian-sweet-meg-elsier-the-pyramid-schem
  e-tickets/14865223
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-22-austin-snell-colors-tour-2026@gr-concerts
+UID:2026-10-20-dan-tyminski-band@gr-concerts
 DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261022T193000
-DTEND;TZID=America/Detroit:20261022T223000
-SUMMARY:Austin Snell – Colors Tour 2026
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Country\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p
- /92999146/skip-the-line-for-austin-snell-grand-rapids-the-intersection-el
- evation (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/92999146/skip-the-line-for-austin-snell-
- grand-rapids-the-intersection-elevation
+DTSTART;TZID=America/Detroit:20261020T193000
+DTEND;TZID=America/Detroit:20261020T223000
+SUMMARY:Dan Tyminski Band
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Bluegrass\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
+ erts/dan-tyminski-band-2026 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/dan-tyminski-band-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-the-brook-the-bluff-the-werewolf-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261020T200000
+DTEND;TZID=America/Detroit:20261020T230000
+SUMMARY:The Brook & The Bluff – The Werewolf Tour
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Indie Folk\, 8:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/64442619/skip-the-line-for-the-brook-the-bluff-grand-rapids-the-inter
+ section-the-stache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/64442619/skip-the-line-for-the-brook-the
+ -bluff-grand-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-afi-with-choir-boy@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261020T200000
+DTEND;TZID=America/Detroit:20261020T230000
+SUMMARY:AFI (with Choir Boy)
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/45
+ 437472/skip-the-line-for-afi-grand-rapids-the-intersection (confirm detai
+ ls with the venue)
+URL:https://www.etix.com/ticket/p/45437472/skip-the-line-for-afi-grand-rap
+ ids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-22-phabies-ohly-kate-pillsbury@gr-concerts
@@ -100,6 +111,45 @@ DESCRIPTION:Indie\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event
  ith the venue)
 URL:https://www.ticketweb.com/event/phabies-ohly-kate-the-pyramid-scheme-t
  ickets/15048753
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-austin-snell-colors-tour-2026@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261022T193000
+DTEND;TZID=America/Detroit:20261022T223000
+SUMMARY:Austin Snell – Colors Tour 2026
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Country\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p
+ /92999146/skip-the-line-for-austin-snell-grand-rapids-the-intersection-el
+ evation (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/92999146/skip-the-line-for-austin-snell-
+ grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-emma-willmann-oct-22-24@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261022T190000
+DTEND;TZID=America/Detroit:20261022T220000
+SUMMARY:Emma Willmann (Oct 22–24)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1235 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1235
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-candlelight-a-haunted-evening-of-halloween-classi@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261023T183000
+DTEND;TZID=America/Detroit:20261023T213000
+SUMMARY:Candlelight: A Haunted Evening of Halloween Classics (6:30 show)
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://grcmc.org/theatre/e
+ vent/candlelight-concert-a-haunted-evening-of-halloween-classics/1589 (co
+ nfirm details with the venue)
+URL:https://grcmc.org/theatre/event/candlelight-concert-a-haunted-evening-
+ of-halloween-classics/1589
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-23-judah-the-lion@gr-concerts
@@ -126,19 +176,6 @@ DESCRIPTION:Indie Rock\, 7:30 PM. Tickets/info: https://www.sectionlive.co
 URL:https://www.sectionlive.com/the-intersection/events
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-23-jessica-audiffred@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261023T210000
-DTEND;TZID=America/Detroit:20261024T000000
-SUMMARY:Jessica Audiffred
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
- t/p/86121759/skip-the-line-for-jessica-audiffred-grand-rapids-the-interse
- ction (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/86121759/skip-the-line-for-jessica-audif
- fred-grand-rapids-the-intersection
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-23-the-people-s-party-ft-the-dinero-crew@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261023T200000
@@ -152,6 +189,46 @@ URL:https://www.ticketweb.com/event/the-peoples-party-ft-the-the-pyramid-s
  cheme-tickets/14300754
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-candlelight-a-haunted-evening-of-halloween-classi@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261023T204500
+DTEND;TZID=America/Detroit:20261023T234500
+SUMMARY:Candlelight: A Haunted Evening of Halloween Classics (8:45 show)
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 8:45 PM. Tickets/info: https://grcmc.org/theatre/e
+ vent/candlelight-concert-a-haunted-evening-of-halloween-classics/1590 (co
+ nfirm details with the venue)
+URL:https://grcmc.org/theatre/event/candlelight-concert-a-haunted-evening-
+ of-halloween-classics/1590
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-jessica-audiffred@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261023T210000
+DTEND;TZID=America/Detroit:20261024T000000
+SUMMARY:Jessica Audiffred
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/86121759/skip-the-line-for-jessica-audiffred-grand-rapids-the-interse
+ ction (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/86121759/skip-the-line-for-jessica-audif
+ fred-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-reggaeton-rave-18@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261023T210000
+DTEND;TZID=America/Detroit:20261024T000000
+SUMMARY:Reggaeton Rave (18+)
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Latin\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/re
+ ggaeton-rave-18-grand-rapids-michigan-10-23-2026/event/0800652FD5D7A578 (
+ confirm details with the venue)
+URL:https://www.ticketmaster.com/reggaeton-rave-18-grand-rapids-michigan-1
+ 0-23-2026/event/0800652FD5D7A578
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-24-r-b-fest-90-s-00-s-r-b@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261024T160000
@@ -161,6 +238,34 @@ LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
 DESCRIPTION:R&B\, 4:00 PM. Tickets/info: https://www.sectionlive.com/the-i
  ntersection/events (confirm details with the venue)
 URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-sleeping-with-sirens-an-ending-in-itself-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261024T180000
+DTEND;TZID=America/Detroit:20261024T210000
+SUMMARY:Sleeping With Sirens – An Ending In Itself Tour
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 6:00 PM. Tickets/info: https://www.ticketmaster.com/sle
+ eping-with-sirens-an-ending-in-grand-rapids-michigan-10-24-2026/event/080
+ 064C8BDBE6F9C (confirm details with the venue)
+URL:https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-grand-r
+ apids-michigan-10-24-2026/event/080064C8BDBE6F9C
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-amaze-amuse-a-modern-day-magic-show-18-with-trino@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261024T190000
+DTEND;TZID=America/Detroit:20261024T220000
+SUMMARY:Amaze & Amuse: A Modern Day Magic Show (18+) with Trino and Parker
+  William
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://grcmc.org/event/amaze-
+ amuse-a-modern-day-magic-show-18-with-trino-and-parker-william/1696 (conf
+ irm details with the venue)
+URL:https://grcmc.org/event/amaze-amuse-a-modern-day-magic-show-18-with-tr
+ ino-and-parker-william/1696
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-lakeview-wreck-my-night-tour@gr-concerts
@@ -174,6 +279,17 @@ DESCRIPTION:Country\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p
  ache (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/82705457/skip-the-line-for-lakeview-gran
  d-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-willey-central-acoustic-stew-music-guild@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261025T150000
+DTEND;TZID=America/Detroit:20261025T180000
+SUMMARY:Willey Central – Acoustic Stew Music Guild
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/event/willey-c
+ entral-acoustic-stew-music-guild/1737 (confirm details with the venue)
+URL:https://grcmc.org/event/willey-central-acoustic-stew-music-guild/1737
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-25-spite-new-world-killer-tour@gr-concerts
@@ -215,6 +331,19 @@ URL:https://www.etix.com/ticket/p/67206187/skip-the-line-for-dark-divine-g
  rand-rapids-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-27-the-story-so-far@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261027T180000
+DTEND;TZID=America/Detroit:20261027T210000
+SUMMARY:The Story So Far
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Punk\, 6:00 PM. Tickets/info: https://www.ticketmaster.com/the
+ -story-so-far-grand-rapids-michigan-10-27-2026/event/08006487EFA691A3 (co
+ nfirm details with the venue)
+URL:https://www.ticketmaster.com/the-story-so-far-grand-rapids-michigan-10
+ -27-2026/event/08006487EFA691A3
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-27-outlander-in-concert@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261027T193000
@@ -251,6 +380,34 @@ URL:https://www.etix.com/ticket/p/84259194/skip-the-line-for-the-longest-j
  ohns-grand-rapids-the-intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-29-ringling-bros-and-barnum-bailey-the-greatest-show@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261029T190000
+DTEND;TZID=America/Detroit:20261029T220000
+SUMMARY:Ringling Bros. and Barnum & Bailey: The Greatest Show On Earth
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Family Show\, 7:00 PM. Tickets/info: https://www.ticketmaster.
+ com/ringling-bros-and-barnum-bailey-presents-grand-rapids-michigan-10-29-
+ 2026/event/0800642CD051623C (confirm details with the venue)
+URL:https://www.ticketmaster.com/ringling-bros-and-barnum-bailey-presents-
+ grand-rapids-michigan-10-29-2026/event/0800642CD051623C
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-blue-october-the-foiled-20th-anniversary-world-to@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261029T190000
+DTEND;TZID=America/Detroit:20261029T220000
+SUMMARY:Blue October – The Foiled 20th Anniversary World Tour
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/blu
+ e-october-the-foiled-20th-anniversary-grand-rapids-michigan-10-29-2026/ev
+ ent/080064650A25D587 (confirm details with the venue)
+URL:https://www.ticketmaster.com/blue-october-the-foiled-20th-anniversary-
+ grand-rapids-michigan-10-29-2026/event/080064650A25D587
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-29-american-aquarium@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261029T193000
@@ -262,6 +419,21 @@ DESCRIPTION:Americana\, 7:30 PM. Tickets/info: https://www.etix.com/ticket
  tion-elevation (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/83396174/skip-the-line-for-american-aqua
  rium-grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-chamber-music-society-of-lincoln-center-dvor-a-k-@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261029T193000
+DTEND;TZID=America/Detroit:20261029T223000
+SUMMARY:Chamber Music Society of Lincoln Center: Dvořák\, Debussy\, and Ch
+ aminade
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
+ erts/the-chamber-music-society-of-lincoln-center-dvorak-debussy-and-chami
+ nade-2026 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/the-chamber-music-society-of-lincoln-c
+ enter-dvorak-debussy-and-chaminade-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-chris-webby-webby-s-arcade-tour@gr-concerts
@@ -277,6 +449,48 @@ URL:https://www.etix.com/ticket/p/78733901/skip-the-line-for-chris-webby-g
  rand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-ringling-bros-and-barnum-bailey-the-greatest-show@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261030T190000
+DTEND;TZID=America/Detroit:20261030T220000
+SUMMARY:Ringling Bros. and Barnum & Bailey: The Greatest Show On Earth
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Family Show\, 7:00 PM. Tickets/info: https://www.ticketmaster.
+ com/ringling-bros-and-barnum-bailey-presents-grand-rapids-michigan-10-30-
+ 2026/event/0800642CD05D6249 (confirm details with the venue)
+URL:https://www.ticketmaster.com/ringling-bros-and-barnum-bailey-presents-
+ grand-rapids-michigan-10-30-2026/event/0800642CD05D6249
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-gr-symphony-the-nightmare-before-christmas-in-con@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261030T193000
+DTEND;TZID=America/Detroit:20261030T223000
+SUMMARY:GR Symphony: The Nightmare Before Christmas in Concert
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.devosperforman
+ cehall.com/events/2026/gr-symphony-presents-disney-tim-burtons-the-nightm
+ are-before-christmas-in-concert-live-to-film (confirm details with the ve
+ nue)
+URL:https://www.devosperformancehall.com/events/2026/gr-symphony-presents-
+ disney-tim-burtons-the-nightmare-before-christmas-in-concert-live-to-film
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-gasolina-halloween-party-18@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261030T210000
+DTEND;TZID=America/Detroit:20261031T000000
+SUMMARY:Gasolina Halloween Party (18+)
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Latin\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/ga
+ solina-halloween-party-18-grand-rapids-michigan-10-30-2026/event/08006515
+ C351C394 (confirm details with the venue)
+URL:https://www.ticketmaster.com/gasolina-halloween-party-18-grand-rapids-
+ michigan-10-30-2026/event/08006515C351C394
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-30-noche-de-banda-banda-recoditos-banda-machos@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261030T210000
@@ -286,6 +500,35 @@ LOCATION:The Intersection (main room)\, Grand Rapids\, MI
 DESCRIPTION:Regional Mexican\, 9:00 PM. Tickets/info: https://www.sectionl
  ive.com/the-intersection/events (confirm details with the venue)
 URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-ringling-bros-and-barnum-bailey-the-greatest-show@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261031T100000
+DTEND;TZID=America/Detroit:20261031T130000
+SUMMARY:Ringling Bros. and Barnum & Bailey: The Greatest Show On Earth
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Family Show\, 10:00 AM. Tickets/info: https://www.ticketmaster
+ .com/ringling-bros-and-barnum-bailey-presents-grand-rapids-michigan-10-31
+ -2026/event/0800642CD061624C (confirm details with the venue)
+URL:https://www.ticketmaster.com/ringling-bros-and-barnum-bailey-presents-
+ grand-rapids-michigan-10-31-2026/event/0800642CD061624C
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-gr-symphony-the-nightmare-before-christmas-in-con@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261031T143000
+DTEND;TZID=America/Detroit:20261031T173000
+SUMMARY:GR Symphony: The Nightmare Before Christmas in Concert
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 2:30 PM. Tickets/info: https://www.devosperforman
+ cehall.com/events/2026/gr-symphony-presents-disney-tim-burtons-the-nightm
+ are-before-christmas-in-concert-live-to-film (confirm details with the ve
+ nue)
+URL:https://www.devosperformancehall.com/events/2026/gr-symphony-presents-
+ disney-tim-burtons-the-nightmare-before-christmas-in-concert-live-to-film
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-broadway-rave-musical-theater-dance-party@gr-concerts
@@ -308,5 +551,745 @@ LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
 DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.sectionlive.co
  m/the-intersection/events (confirm details with the venue)
 URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-ringling-bros-and-barnum-bailey-the-greatest-show@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261101T130000
+DTEND;TZID=America/Detroit:20261101T160000
+SUMMARY:Ringling Bros. and Barnum & Bailey: The Greatest Show On Earth
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Family Show\, 1:00 PM & 5:00 PM. Tickets/info: https://www.tic
+ ketmaster.com/ringling-bros-and-barnum-bailey-presents-grand-rapids-michi
+ gan-11-01-2026/event/0800642CD06C6250 (confirm details with the venue)
+URL:https://www.ticketmaster.com/ringling-bros-and-barnum-bailey-presents-
+ grand-rapids-michigan-11-01-2026/event/0800642CD06C6250
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-04-the-string-cheese-incident-just-keep-spinning-tou@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261104T180000
+DTEND;TZID=America/Detroit:20261104T210000
+SUMMARY:The String Cheese Incident – Just Keep Spinning Tour
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Jam\, 6:00 PM. Tickets/info: https://www.ticketmaster.com/the-
+ string-cheese-incident-just-keep-grand-rapids-michigan-11-04-2026/event/0
+ 80064F8CB39B6AE (confirm details with the venue)
+URL:https://www.ticketmaster.com/the-string-cheese-incident-just-keep-gran
+ d-rapids-michigan-11-04-2026/event/080064F8CB39B6AE
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-05-be-la-fleck-my-bluegrass-heart@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261105T193000
+DTEND;TZID=America/Detroit:20261105T223000
+SUMMARY:Béla Fleck – My Bluegrass Heart
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Bluegrass\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
+ erts/bela-fleck-my-bluegrass-heart-2026 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/bela-fleck-my-bluegrass-heart-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-05-hotel-california-the-original-eagles-tribute@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261105T193000
+DTEND;TZID=America/Detroit:20261105T223000
+SUMMARY:Hotel California – The Original Eagles Tribute
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:30 PM. Tickets/info: https://grcmc.org/event/hotel
+ -california-the-original-eagles-tribute/1486 (confirm details with the ve
+ nue)
+URL:https://grcmc.org/event/hotel-california-the-original-eagles-tribute/1
+ 486
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-05-raanan-hershberg-nov-5-7@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261105T190000
+DTEND;TZID=America/Detroit:20261105T220000
+SUMMARY:Raanan Hershberg (Nov 5–7)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1289 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1289
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-gr-symphony-midori-plays-shostakovich@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261106T193000
+DTEND;TZID=America/Detroit:20261106T223000
+SUMMARY:GR Symphony: Midori Plays Shostakovich
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grsymphony.org/
+ midori-plays (confirm details with the venue)
+URL:https://www.grsymphony.org/midori-plays
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-07-gr-symphony-midori-plays-shostakovich@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261107T193000
+DTEND;TZID=America/Detroit:20261107T223000
+SUMMARY:GR Symphony: Midori Plays Shostakovich
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grsymphony.org/
+ midori-plays (confirm details with the venue)
+URL:https://www.grsymphony.org/midori-plays
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-07-pop-scholars-improv-comedy@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261107T200000
+DTEND;TZID=America/Detroit:20261107T230000
+SUMMARY:Pop Scholars: Improv Comedy
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/event/pop-sc
+ holars-improv-comedy/1128 (confirm details with the venue)
+URL:https://grcmc.org/event/pop-scholars-improv-comedy/1128
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-08-trivium-crown-in-the-grave-world-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261108T173000
+DTEND;TZID=America/Detroit:20261108T203000
+SUMMARY:Trivium – Crown in the Grave World Tour
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Metal\, 5:30 PM. Tickets/info: https://www.ticketmaster.com/tr
+ ivium-crown-in-the-grave-world-grand-rapids-michigan-11-08-2026/event/080
+ 064E8ECCDBF7C (confirm details with the venue)
+URL:https://www.ticketmaster.com/trivium-crown-in-the-grave-world-grand-ra
+ pids-michigan-11-08-2026/event/080064E8ECCDBF7C
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-08-scott-bradlee-s-postmodern-jukebox@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261108T200000
+DTEND;TZID=America/Detroit:20261108T230000
+SUMMARY:Scott Bradlee's Postmodern Jukebox
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Jazz/Pop\, 8:00 PM. Tickets/info: https://www.ticketmaster.com
+ /scott-bradlees-postmodern-jukebox-the-future-grand-rapids-michigan-11-08
+ -2026/event/0800648794F7474D (confirm details with the venue)
+URL:https://www.ticketmaster.com/scott-bradlees-postmodern-jukebox-the-fut
+ ure-grand-rapids-michigan-11-08-2026/event/0800648794F7474D
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-10-broadway-grand-rapids-maybe-happy-ending@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261110T193000
+DTEND;TZID=America/Detroit:20261110T223000
+SUMMARY:Broadway Grand Rapids: Maybe Happy Ending
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
+ maybe-happy-ending-touring-grand-rapids-michigan-11-10-2026/event/0800651
+ 9902B3EF8 (confirm details with the venue)
+URL:https://www.ticketmaster.com/maybe-happy-ending-touring-grand-rapids-m
+ ichigan-11-10-2026/event/08006519902B3EF8
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-11-broadway-grand-rapids-maybe-happy-ending@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261111T193000
+DTEND;TZID=America/Detroit:20261111T223000
+SUMMARY:Broadway Grand Rapids: Maybe Happy Ending
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
+ maybe-happy-ending-touring-grand-rapids-michigan-11-11-2026/event/0800651
+ 990303F06 (confirm details with the venue)
+URL:https://www.ticketmaster.com/maybe-happy-ending-touring-grand-rapids-m
+ ichigan-11-11-2026/event/0800651990303F06
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-12-broadway-grand-rapids-maybe-happy-ending@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261112T193000
+DTEND;TZID=America/Detroit:20261112T223000
+SUMMARY:Broadway Grand Rapids: Maybe Happy Ending
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
+ maybe-happy-ending-touring-grand-rapids-michigan-11-12-2026/event/0800651
+ 990353F0D (confirm details with the venue)
+URL:https://www.ticketmaster.com/maybe-happy-ending-touring-grand-rapids-m
+ ichigan-11-12-2026/event/0800651990353F0D
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-12-kevin-bozeman-nov-12-14@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261112T190000
+DTEND;TZID=America/Detroit:20261112T220000
+SUMMARY:Kevin Bozeman (Nov 12–14)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=578 (confirm details with the ven
+ ue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=578
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-gr-symphony-coffee-with-bob-grace-kim-violin@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261113T100000
+DTEND;TZID=America/Detroit:20261113T130000
+SUMMARY:GR Symphony: Coffee with Bob (Grace Kim\, violin)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 10:00 AM. Tickets/info: https://www.scmcgr.org/con
+ certs/grand-rapids-symphony (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/grand-rapids-symphony
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-gr-symphony-from-dvor-a-k-to-brahms-grace-kim-vio@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261113T193000
+DTEND;TZID=America/Detroit:20261113T223000
+SUMMARY:GR Symphony: From Dvořák to Brahms (Grace Kim\, violin)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
+ erts/grand-rapids-symphony-2 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/grand-rapids-symphony-2
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-broadway-grand-rapids-maybe-happy-ending@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261113T193000
+DTEND;TZID=America/Detroit:20261113T223000
+SUMMARY:Broadway Grand Rapids: Maybe Happy Ending
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
+ maybe-happy-ending-touring-grand-rapids-michigan-11-13-2026/event/0800651
+ 990393F1C (confirm details with the venue)
+URL:https://www.ticketmaster.com/maybe-happy-ending-touring-grand-rapids-m
+ ichigan-11-13-2026/event/0800651990393F1C
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-gabriel-iglesias-the-1976-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261113T200000
+DTEND;TZID=America/Detroit:20261113T230000
+SUMMARY:Gabriel Iglesias – The 1976 Tour
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketmaster.com/g
+ abriel-iglesias-the-1976-tour-grand-rapids-michigan-11-13-2026/event/0800
+ 64BBBB6A8E0C (confirm details with the venue)
+URL:https://www.ticketmaster.com/gabriel-iglesias-the-1976-tour-grand-rapi
+ ds-michigan-11-13-2026/event/080064BBBB6A8E0C
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-broadway-grand-rapids-maybe-happy-ending@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261114T140000
+DTEND;TZID=America/Detroit:20261114T170000
+SUMMARY:Broadway Grand Rapids: Maybe Happy Ending
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 2:00 PM & 7:30 PM. Tickets/info: https://www.devospe
+ rformancehall.com/events/2026/broadway-grand-rapids-presents-maybe-happy-
+ ending (confirm details with the venue)
+URL:https://www.devosperformancehall.com/events/2026/broadway-grand-rapids
+ -presents-maybe-happy-ending
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-gavin-adcock-the-day-i-hang-it-up-tour-with-braxt@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261114T190000
+DTEND;TZID=America/Detroit:20261114T220000
+SUMMARY:Gavin Adcock – The Day I Hang It Up Tour (with Braxton Keith & The
+  Creekers)
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://www.axs.com/events/13
+ 66139/gavin-adcock-tickets (confirm details with the venue)
+URL:https://www.axs.com/events/1366139/gavin-adcock-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-15-broadway-grand-rapids-maybe-happy-ending@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261115T130000
+DTEND;TZID=America/Detroit:20261115T160000
+SUMMARY:Broadway Grand Rapids: Maybe Happy Ending
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 1:00 PM & 6:30 PM. Tickets/info: https://www.devospe
+ rformancehall.com/events/2026/broadway-grand-rapids-presents-maybe-happy-
+ ending (confirm details with the venue)
+URL:https://www.devosperformancehall.com/events/2026/broadway-grand-rapids
+ -presents-maybe-happy-ending
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-15-classical-recital-with-aziza-poggi@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261115T160000
+DTEND;TZID=America/Detroit:20261115T190000
+SUMMARY:Classical Recital with Aziza Poggi
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 4:00 PM. Tickets/info: https://www.scmcgr.org/conc
+ erts/classical-recital-with-aziza-poggi (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/classical-recital-with-aziza-poggi
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-15-pentatonix-christmas-in-the-city-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261115T180000
+DTEND;TZID=America/Detroit:20261115T210000
+SUMMARY:Pentatonix – Christmas in the City Tour
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Pop\, 6:00 PM. Tickets/info: https://www.ticketmaster.com/pent
+ atonix-christmas-in-the-city-tour-grand-rapids-michigan-11-15-2026/event/
+ 080064FF0AF3208F (confirm details with the venue)
+URL:https://www.ticketmaster.com/pentatonix-christmas-in-the-city-tour-gra
+ nd-rapids-michigan-11-15-2026/event/080064FF0AF3208F
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-15-jason-bonham-s-led-zeppelin-evening@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261115T190000
+DTEND;TZID=America/Detroit:20261115T220000
+SUMMARY:Jason Bonham's Led Zeppelin Evening
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/jas
+ on-bonhams-led-zeppelin-evening-grand-rapids-michigan-11-15-2026/event/08
+ 006528F8668E79 (confirm details with the venue)
+URL:https://www.ticketmaster.com/jason-bonhams-led-zeppelin-evening-grand-
+ rapids-michigan-11-15-2026/event/08006528F8668E79
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-17-triumph-the-rock-roll-machine-reloaded@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261117T200000
+DTEND;TZID=America/Detroit:20261117T230000
+SUMMARY:Triumph – The Rock & Roll Machine Reloaded
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.ticketmaster.com/tri
+ umph-the-rock-roll-machine-reloaded-grand-rapids-michigan-11-17-2026/even
+ t/08006513CDCC984A (confirm details with the venue)
+URL:https://www.ticketmaster.com/triumph-the-rock-roll-machine-reloaded-gr
+ and-rapids-michigan-11-17-2026/event/08006513CDCC984A
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-gr-symphony-messiah-by-candlelight@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261120T193000
+DTEND;TZID=America/Detroit:20261120T223000
+SUMMARY:GR Symphony: Messiah by Candlelight
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grsymphony.org/
+ messiah-candle (confirm details with the venue)
+URL:https://www.grsymphony.org/messiah-candle
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-andrea-gonza-lez-caballero-spanish-guitar-concert@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261120T193000
+DTEND;TZID=America/Detroit:20261120T223000
+SUMMARY:Andrea González Caballero – Spanish Guitar Concert
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
+ erts/andrea-gonzalez-caballero-spanish-guitar-concert (confirm details wi
+ th the venue)
+URL:https://www.scmcgr.org/concerts/andrea-gonzalez-caballero-spanish-guit
+ ar-concert
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-annie-civic-theatre-production-nov-20-dec-20@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261120T193000
+DTEND;TZID=America/Detroit:20261120T223000
+SUMMARY:Annie (Civic Theatre production\, Nov 20–Dec 20)
+LOCATION:Grand Rapids Civic Theatre\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.grct.org/annie/ (
+ confirm details with the venue)
+URL:https://www.grct.org/annie/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-jamie-lissow-nov-20-21@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261120T190000
+DTEND;TZID=America/Detroit:20261120T220000
+SUMMARY:Jamie Lissow (Nov 20–21)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1502 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1502
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-gr-symphony-messiah-by-candlelight@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261121T193000
+DTEND;TZID=America/Detroit:20261121T223000
+SUMMARY:GR Symphony: Messiah by Candlelight
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grsymphony.org/
+ messiah-candle (confirm details with the venue)
+URL:https://www.grsymphony.org/messiah-candle
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-25-underoath-define-the-great-line-20th-anniversary-@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261125T173000
+DTEND;TZID=America/Detroit:20261125T203000
+SUMMARY:Underoath – Define the Great Line 20th Anniversary Tour
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Metal\, 5:30 PM. Tickets/info: https://www.ticketmaster.com/un
+ deroath-define-the-great-line-20th-grand-rapids-michigan-11-25-2026/event
+ /080064C2F409A32B (confirm details with the venue)
+URL:https://www.ticketmaster.com/underoath-define-the-great-line-20th-gran
+ d-rapids-michigan-11-25-2026/event/080064C2F409A32B
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-cirque-dreams-holidaze@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261127T193000
+DTEND;TZID=America/Detroit:20261127T223000
+SUMMARY:Cirque Dreams Holidaze
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Family Show\, 7:30 PM. Tickets/info: https://www.ticketmaster.
+ com/cirque-dreams-holidaze-touring-grand-rapids-michigan-11-27-2026/event
+ /080064F6D6A8975F (confirm details with the venue)
+URL:https://www.ticketmaster.com/cirque-dreams-holidaze-touring-grand-rapi
+ ds-michigan-11-27-2026/event/080064F6D6A8975F
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-dave-dyer-nov-27-28@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261127T190000
+DTEND;TZID=America/Detroit:20261127T220000
+SUMMARY:Dave Dyer (Nov 27–28)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1347 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1347
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-straight-no-chaser-make-spirits-bright-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261128T193000
+DTEND;TZID=America/Detroit:20261128T223000
+SUMMARY:Straight No Chaser – Make Spirits Bright Tour
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:A Cappella\, 7:30 PM. Tickets/info: https://www.ticketmaster.c
+ om/straight-no-chaser-grand-rapids-michigan-11-28-2026/event/080064A8E34A
+ D8D4 (confirm details with the venue)
+URL:https://www.ticketmaster.com/straight-no-chaser-grand-rapids-michigan-
+ 11-28-2026/event/080064A8E34AD8D4
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-29-love-actually-in-concert@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261129T150000
+DTEND;TZID=America/Detroit:20261129T180000
+SUMMARY:Love Actually In Concert
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 3:00 PM. Tickets/info: https://www.ticketmaster.c
+ om/love-actually-in-concert-grand-rapids-michigan-11-29-2026/event/080064
+ F0BD7E7D83 (confirm details with the venue)
+URL:https://www.ticketmaster.com/love-actually-in-concert-grand-rapids-mic
+ higan-11-29-2026/event/080064F0BD7E7D83
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-01-mannheim-steamroller-christmas@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261201T190000
+DTEND;TZID=America/Detroit:20261201T220000
+SUMMARY:Mannheim Steamroller Christmas
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Holiday\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
+ mannheim-steamroller-christmas-grand-rapids-michigan-12-01-2026/event/080
+ 064E984E02F83 (confirm details with the venue)
+URL:https://www.ticketmaster.com/mannheim-steamroller-christmas-grand-rapi
+ ds-michigan-12-01-2026/event/080064E984E02F83
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-03-christmas-together-with-amy-grant-michael-w-smith@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261203T190000
+DTEND;TZID=America/Detroit:20261203T220000
+SUMMARY:Christmas Together with Amy Grant & Michael W. Smith
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Christian\, 7:00 PM. Tickets/info: https://www.ticketmaster.co
+ m/christmas-together-with-amy-grant-michael-grand-rapids-michigan-12-03-2
+ 026/event/08006495B09788E8 (confirm details with the venue)
+URL:https://www.ticketmaster.com/christmas-together-with-amy-grant-michael
+ -grand-rapids-michigan-12-03-2026/event/08006495B09788E8
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-03-brian-simpson-dec-3-5@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261203T190000
+DTEND;TZID=America/Detroit:20261203T220000
+SUMMARY:Brian Simpson (Dec 3–5)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1463 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1463
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-gr-symphony-holiday-pops@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261204T193000
+DTEND;TZID=America/Detroit:20261204T223000
+SUMMARY:GR Symphony Holiday Pops
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.devosperforman
+ cehall.com/events/2026/the-gr-symphony-presents-holiday-pops (confirm det
+ ails with the venue)
+URL:https://www.devosperformancehall.com/events/2026/the-gr-symphony-prese
+ nts-holiday-pops
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-wwe-friday-night-smackdown@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261204T193000
+DTEND;TZID=America/Detroit:20261204T223000
+SUMMARY:WWE Friday Night SmackDown
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Wrestling\, 7:30 PM. Tickets/info: https://www.ticketmaster.co
+ m/wwe-friday-night-smackdown-grand-rapids-michigan-12-04-2026/event/08006
+ 513ADC36F77 (confirm details with the venue)
+URL:https://www.ticketmaster.com/wwe-friday-night-smackdown-grand-rapids-m
+ ichigan-12-04-2026/event/08006513ADC36F77
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-gr-symphony-holiday-pops@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261205T140000
+DTEND;TZID=America/Detroit:20261205T170000
+SUMMARY:GR Symphony Holiday Pops
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 2:00 PM & 7:30 PM. Tickets/info: https://www.devo
+ sperformancehall.com/events/2026/the-gr-symphony-presents-holiday-pops (c
+ onfirm details with the venue)
+URL:https://www.devosperformancehall.com/events/2026/the-gr-symphony-prese
+ nts-holiday-pops
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-sarah-jarosz-10-years-of-undercurrent@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261205T193000
+DTEND;TZID=America/Detroit:20261205T223000
+SUMMARY:Sarah Jarosz – 10 Years of Undercurrent
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 7:30 PM. Tickets/info: https://www.scmcgr.org/concerts/
+ sarah-jarosz-2026 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/sarah-jarosz-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261206T140000
+DTEND;TZID=America/Detroit:20261206T170000
+SUMMARY:GR Symphony Holiday Pops
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 2:00 PM. Tickets/info: https://www.devosperforman
+ cehall.com/events/2026/the-gr-symphony-presents-holiday-pops (confirm det
+ ails with the venue)
+URL:https://www.devosperformancehall.com/events/2026/the-gr-symphony-prese
+ nts-holiday-pops
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-06-trans-siberian-orchestra-the-ghosts-of-christmas-@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261206T150000
+DTEND;TZID=America/Detroit:20261206T180000
+SUMMARY:Trans-Siberian Orchestra – The Ghosts of Christmas Eve
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 3:00 PM & 7:30 PM. Tickets/info: https://www.vanandelar
+ ena.com/events/2026/trans-siberian-orchestra (confirm details with the ve
+ nue)
+URL:https://www.vanandelarena.com/events/2026/trans-siberian-orchestra
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-06-an-evening-with-lord-huron@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261206T183000
+DTEND;TZID=America/Detroit:20261206T213000
+SUMMARY:An Evening with Lord Huron
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Indie Folk\, 6:30 PM. Tickets/info: https://www.ticketmaster.c
+ om/an-evening-with-lord-huron-grand-rapids-michigan-12-06-2026/event/0800
+ 64FCD861B592 (confirm details with the venue)
+URL:https://www.ticketmaster.com/an-evening-with-lord-huron-grand-rapids-m
+ ichigan-12-06-2026/event/080064FCD861B592
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-08-jeff-daniels@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261208T193000
+DTEND;TZID=America/Detroit:20261208T223000
+SUMMARY:Jeff Daniels
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 7:30 PM. Tickets/info: https://www.scmcgr.org/concerts/
+ jeff-daniels-2026 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/jeff-daniels-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-10-jessica-michelle-singleton-dec-10-12@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261210T190000
+DTEND;TZID=America/Detroit:20261210T220000
+SUMMARY:Jessica Michelle Singleton (Dec 10–12)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1074 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1074
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-aoife-o-donovan-chris-thile@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261211T193000
+DTEND;TZID=America/Detroit:20261211T223000
+SUMMARY:Aoife O'Donovan & Chris Thile
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 7:30 PM. Tickets/info: https://www.scmcgr.org/concerts/
+ chris-thile-aoife-odonovan-2026 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/chris-thile-aoife-odonovan-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-michael-kosta-big-dad-energy@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261211T200000
+DTEND;TZID=America/Detroit:20261211T230000
+SUMMARY:Michael Kosta – Big Dad Energy
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketmaster.com/m
+ ichael-kosta-big-dad-energy-grand-rapids-michigan-12-11-2026/event/080064
+ EAEDB8B807 (confirm details with the venue)
+URL:https://www.ticketmaster.com/michael-kosta-big-dad-energy-grand-rapids
+ -michigan-12-11-2026/event/080064EAEDB8B807
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261213T190000
+DTEND;TZID=America/Detroit:20261213T220000
+SUMMARY:for KING + COUNTRY – A Drummer Boy Christmas
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Christian\, 7:00 PM. Tickets/info: https://www.ticketmaster.co
+ m/for-king-countrys-a-drummer-boy-grand-rapids-michigan-12-13-2026/event/
+ 080064EEEBB29253 (confirm details with the venue)
+URL:https://www.ticketmaster.com/for-king-countrys-a-drummer-boy-grand-rap
+ ids-michigan-12-13-2026/event/080064EEEBB29253
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-an-evening-with-john-cusack@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261213T190000
+DTEND;TZID=America/Detroit:20261213T220000
+SUMMARY:An Evening with John Cusack
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Film & Talk\, 7:00 PM. Tickets/info: https://www.ticketmaster.
+ com/an-evening-with-john-cusack-grand-rapids-michigan-12-13-2026/event/08
+ 006482A1E670BF (confirm details with the venue)
+URL:https://www.ticketmaster.com/an-evening-with-john-cusack-grand-rapids-
+ michigan-12-13-2026/event/08006482A1E670BF
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-14-the-meateater-christmas-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261214T193000
+DTEND;TZID=America/Detroit:20261214T223000
+SUMMARY:The MeatEater Christmas Tour
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 7:30 PM. Tickets/info: https://www.ticketmaster.co
+ m/the-meateater-christmas-tour-grand-rapids-michigan-12-14-2026/event/080
+ 06511D43BAD1C (confirm details with the venue)
+URL:https://www.ticketmaster.com/the-meateater-christmas-tour-grand-rapids
+ -michigan-12-14-2026/event/08006511D43BAD1C
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-15-jonas-brothers-the-burning-up-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261215T193000
+DTEND;TZID=America/Detroit:20261215T223000
+SUMMARY:Jonas Brothers – The Burning Up Tour
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Pop\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/jona
+ s-brothers-the-burning-up-tour-grand-rapids-michigan-12-15-2026/event/080
+ 0650EB9E3B051 (confirm details with the venue)
+URL:https://www.ticketmaster.com/jonas-brothers-the-burning-up-tour-grand-
+ rapids-michigan-12-15-2026/event/0800650EB9E3B051
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-16-gr-symphony-the-muppet-christmas-carol-in-concert@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261216T193000
+DTEND;TZID=America/Detroit:20261216T223000
+SUMMARY:GR Symphony: The Muppet Christmas Carol in Concert
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.devosperforman
+ cehall.com/events/2026/gr-symphony-presents-the-muppet-christmas-carol-in
+ -concert-live-to-film (confirm details with the venue)
+URL:https://www.devosperformancehall.com/events/2026/gr-symphony-presents-
+ the-muppet-christmas-carol-in-concert-live-to-film
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-17-gr-symphony-the-muppet-christmas-carol-in-concert@gr-concer
+ ts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261217T193000
+DTEND;TZID=America/Detroit:20261217T223000
+SUMMARY:GR Symphony: The Muppet Christmas Carol in Concert
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.devosperforman
+ cehall.com/events/2026/gr-symphony-presents-the-muppet-christmas-carol-in
+ -concert-live-to-film (confirm details with the venue)
+URL:https://www.devosperformancehall.com/events/2026/gr-symphony-presents-
+ the-muppet-christmas-carol-in-concert-live-to-film
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-17-michael-longfellow-dec-17-19@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261217T190000
+DTEND;TZID=America/Detroit:20261217T220000
+SUMMARY:Michael Longfellow (Dec 17–19)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1507 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1507
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-jeff-daniels@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261219T150000
+DTEND;TZID=America/Detroit:20261219T180000
+SUMMARY:Jeff Daniels
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://www.scmcgr.org/concerts/
+ jeff-daniels-12-19-2026 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/jeff-daniels-12-19-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-rene-vaca-that-mexican-ot@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261219T190000
+DTEND;TZID=America/Detroit:20261219T220000
+SUMMARY:Rene Vaca & That Mexican OT
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Hip-Hop\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
+ rene-vaca-that-mexican-ot-grand-rapids-michigan-12-19-2026/event/0800652A
+ B9856217 (confirm details with the venue)
+URL:https://www.ticketmaster.com/rene-vaca-that-mexican-ot-grand-rapids-mi
+ chigan-12-19-2026/event/0800652AB9856217
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-22-dolly-parton-s-smoky-mountain-christmas-carol@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261222T193000
+DTEND;TZID=America/Detroit:20261222T223000
+SUMMARY:Dolly Parton's Smoky Mountain Christmas Carol
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
+ dolly-partons-smoky-mountain-christmas-carol-grand-rapids-michigan-12-22-
+ 2026/event/0800653588982716 (confirm details with the venue)
+URL:https://www.ticketmaster.com/dolly-partons-smoky-mountain-christmas-ca
+ rol-grand-rapids-michigan-12-22-2026/event/0800653588982716
 END:VEVENT
 END:VCALENDAR
