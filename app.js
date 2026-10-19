@@ -1,7 +1,7 @@
 // Page logic: renders shows, NEW badges, Just Announced, filters, favorites, calendar, sharing.
 // You normally never need to edit this file — edit concerts.js, seasonal.js or config.js instead.
 (function () {
-  const C = window.CONFIG || {}, NEW_DAYS = C.NEW_DAYS || 7, SITE = C.SITE_URL || location.href.split('#')[0];
+  const C = (typeof CONFIG !== 'undefined' && CONFIG) || {}, NEW_DAYS = C.NEW_DAYS || 7, SITE = C.SITE_URL || location.href.split('#')[0];
   const $ = s => document.querySelector(s);
   const h = s => String(s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
@@ -20,26 +20,26 @@
 
   $('#updated').textContent = 'Last updated ' + LAST_UPDATED;
 
-  function actions(id, title, cal) {
+  function actions(id, title, cal, link, label) {
     return `<div class="actions">
-      <button class="going${going.has(id) ? ' on' : ''}" data-id="${id}" aria-pressed="${going.has(id)}">${going.has(id) ? '★ Going' : '☆ I\'m going'}</button>
-      <button class="share" data-id="${id}" data-title="${h(title)}">Share</button>
-      ${cal ? `<button class="ics" data-id="${id}">+ Calendar</button><a class="gcal" href="${h(cal)}" target="_blank" rel="noopener">Google Cal</a>` : ''}
+      <a class="b primary" href="${h(link)}" target="_blank" rel="noopener">${label}</a>
+      <button type="button" class="b going${going.has(id) ? ' on' : ''}" data-id="${id}" aria-pressed="${going.has(id)}">${going.has(id) ? '★ Going' : '☆ I\'m going'}</button>
+      <button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
+      ${cal ? `<button type="button" class="b ics" data-id="${id}">+ Calendar</button><a class="b gcal" href="${h(cal)}" target="_blank" rel="noopener">Google</a>` : ''}
     </div>`;
   }
   function concertCard(c) {
     const id = cid(c);
     return `<article class="card${isNew(c) ? ' is-new' : ''}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
-      <span class="tag">${h(c.genre)}</span>${isNew(c) ? '<span class="new">NEW</span>' : ''}
+      <div class="badges"><span class="tag">${h(c.genre)}</span>${isNew(c) ? '<span class="new">NEW</span>' : ''}</div>
       <h3>${h(c.artist)}</h3><p>${h(c.venue)}</p><p>${fmt(c.date)} · ${h(c.time)}</p>
-      <a href="${h(c.link)}" target="_blank" rel="noopener">Tickets / info</a>
-      ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c))}</article>`;
+      ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.link, 'Tickets / info')}</article>`;
   }
   function seasonalCard(e) {
     const id = sid(e);
-    return `<article class="card${isNew(e) ? ' is-new' : ''}" id="${id}" data-id="${id}"><span class="tag">${h(e.type)}</span>${isNew(e) ? '<span class="new">NEW</span>' : ''}
+    return `<article class="card${isNew(e) ? ' is-new' : ''}" id="${id}" data-id="${id}"><div class="badges"><span class="tag">${h(e.type)}</span>${isNew(e) ? '<span class="new">NEW</span>' : ''}</div>
       <h3>${h(e.name)}</h3><p>${h(e.location)}</p><p>${h(e.when)}</p>
-      <a href="${h(e.link)}" target="_blank" rel="noopener">Info / tickets</a>${actions(id, e.name, null)}</article>`;
+      ${actions(id, e.name, null, e.link, 'Info / tickets')}</article>`;
   }
 
   // ---- Just Announced: newest additions first (upcoming shows + seasonal) ----
