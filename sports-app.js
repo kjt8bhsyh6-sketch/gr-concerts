@@ -4,9 +4,19 @@
   const SITE = (C.SITE_URL || location.href.replace(/[^/]*$/, '')).replace(/\/?$/, '/') + 'sports.html';
   const $ = s => document.querySelector(s);
   const h = s => String(s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
+  // Testing only: ?today=YYYY-MM-DD pretends it's that day; ?demo=mix also back-dates 2 of every 3 items by 30 days (in this browser only) so NEW and older cards can be compared.
+  const qs = new URLSearchParams(location.search), qt = qs.get('today');
+  const today = /^\d{4}-\d{2}-\d{2}$/.test(qt || '') ? qt : new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
+  if (qs.get('demo') === 'mix') [GAMES, SEASON_NOTES].forEach(a => a.forEach((x, i) => { if (i % 3 && x.added) x.added = new Date(Date.parse(x.added) - 30 * 864e5).toISOString().slice(0, 10); }));
   const ago = d => (Date.parse(today) - Date.parse(d)) / 864e5;
   const isNew = x => x.added && ago(x.added) >= 0 && ago(x.added) < NEW_DAYS;
+  const newBadge = x => isNew(x) ? `<span class="new">NEW</span>` : '';
+  const addedLine = x => isNew(x) ? `<p class="added-on">Added ${new Date(x.added + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>` : '';
+  function newCount(n, cb) {
+    const el = $('#newcount'); if (!el) return;
+    el.hidden = !n;
+    el.innerHTML = `<span class="new">NEW</span> <strong>${n}</strong> new listing${n === 1 ? '' : 's'} added this week <button type="button" class="b newtoggle" aria-pressed="${cb.checked}">${cb.checked ? 'Show all' : 'Show only new'}</button>`;
+  }
   const fmt = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
   const sport = t => (TEAMS.find(x => x.name === t) || {}).sport || 'Sports';
   // shape each game like a concert so the shared calendar helpers (ics.js) work
@@ -26,15 +36,15 @@
   function card(g) {
     const id = gid(g), title = `${g.team} vs. ${g.opponent}, ${fmt(g.date)}`;
     return `<article class="card${isNew(g) ? ' is-new' : ''}" id="${id}">
-      <div class="badges"><span class="tag">${h(sport(g.team))}</span>${isNew(g) ? '<span class="new">NEW</span>' : ''}</div>
-      <h3>${h(g.team)}</h3><p><strong>vs. ${h(g.opponent)}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>
+      <div class="badges"><span class="tag">${h(sport(g.team))}</span>${newBadge(g)}</div>
+      <h3>${h(g.team)}</h3><p><strong>vs. ${h(g.opponent)}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>${addedLine(g)}
       <div class="actions${BIO[g.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a>
       ${whoBtn(id, g.team)}${goBtn(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
       <button type="button" class="b ics" data-id="${id}">+ Calendar</button><a class="b gcal" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google</a></div></article>`;
   }
   function note(n) {
-    return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span></div>
-      <h3>${h(n.team)}</h3><p>${h(n.text)}</p><div class="actions${BIO[n.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a>${whoBtn('note-' + GRICS.slug(n.team), n.team)}</div></article>`;
+    return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span>${newBadge(n)}</div>
+      <h3>${h(n.team)}</h3><p>${h(n.text)}</p>${addedLine(n)}<div class="actions${BIO[n.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a>${whoBtn('note-' + GRICS.slug(n.team), n.team)}</div></article>`;
   }
   const sel = $('#f-team');
   sel.insertAdjacentHTML('beforeend', TEAMS.map(t => `<option>${h(t.name)}</option>`).join(''));
@@ -44,9 +54,11 @@
     $('#games').innerHTML = l.map(card).join('') || '<p class="few">No games match these filters.</p>';
     const ns = SEASON_NOTES.filter(n => !t || n.team === t);
     $('#notes-wrap').hidden = !ns.length; $('#notes').innerHTML = ns.map(note).join('');
+    newCount(games.filter(isNew).length + SEASON_NOTES.filter(isNew).length, $('#f-new'));
   }
   document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
   $('#f-clear').addEventListener('click', () => { sel.value = ''; $('#f-mine').checked = $('#f-new').checked = false; render(); });
+  $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
   render();
 
   function toast(m) { const e = $('#toast'); e.textContent = m; e.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => e.hidden = true, 2500); }

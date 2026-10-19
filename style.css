@@ -99,3 +99,15 @@ footer p{margin:.3rem 0}.disclosure{font-size:.82rem}
 .bio-x{position:absolute;top:.5rem;right:.5rem;min-width:2.5rem;font-size:1.4rem;line-height:1;padding:.3rem .6rem}
 body.bio-open{overflow:hidden}
 .bio-box h3{margin:1rem 0 .4rem;font-size:1rem;padding-top:.75rem;border-top:1px solid #eee}
+
+/* ---- NEW this week: gold pill in the card's top corner, warm tint + glow; older cards stay plain ---- */
+.card{position:relative}
+.new{background:#facc15;color:#1b1b2f;font-weight:800;letter-spacing:.06em;box-shadow:0 1px 2px #0003}
+.card.is-new{background:#fffbea;border-color:#f59e0b;box-shadow:0 0 0 2px #f59e0b,0 4px 14px #f59e0b40}
+.card.is-new .badges .new{position:absolute;top:-.55rem;right:.75rem;padding:.2rem .7rem;font-size:.78rem;border:2px solid #fff}
+.added-on{font-size:.78rem!important;color:#92400e;font-weight:600}
+.newcount{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;background:#fffbea;border:1px solid #f59e0b;border-radius:12px;padding:.6rem .9rem;margin:0 0 1rem;font-size:.95rem}
+.newcount .new{margin-left:0}
+.newcount .newtoggle{margin-left:auto;font:inherit;font-size:.85rem;font-weight:700;padding:.4rem .8rem;border-radius:99px;border:1px solid #b45309;background:#fff;color:#92400e;cursor:pointer}
+.newcount .newtoggle[aria-pressed="true"]{background:#b45309;color:#fff}
+.just{border-left-color:#f59e0b}.just h2{border-bottom-color:#f59e0b}

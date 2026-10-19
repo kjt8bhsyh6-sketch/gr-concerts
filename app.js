@@ -4,9 +4,19 @@
   const C = (typeof CONFIG !== 'undefined' && CONFIG) || {}, NEW_DAYS = C.NEW_DAYS || 7, SITE = C.SITE_URL || location.href.split('#')[0];
   const $ = s => document.querySelector(s);
   const h = s => String(s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
+  // Testing only: ?today=YYYY-MM-DD pretends it's that day; ?demo=mix also back-dates 2 of every 3 items by 30 days (in this browser only) so NEW and older cards can be compared.
+  const qs = new URLSearchParams(location.search), qt = qs.get('today');
+  const today = /^\d{4}-\d{2}-\d{2}$/.test(qt || '') ? qt : new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
+  if (qs.get('demo') === 'mix') [CONCERTS, SEASONAL].forEach(a => a.forEach((x, i) => { if (i % 3 && x.added) x.added = new Date(Date.parse(x.added) - 30 * 864e5).toISOString().slice(0, 10); }));
   const ago = d => (Date.parse(today) - Date.parse(d)) / 864e5;
   const isNew = x => x.added && ago(x.added) >= 0 && ago(x.added) < NEW_DAYS;
+  const newBadge = x => isNew(x) ? `<span class="new">NEW</span>` : '';
+  const addedLine = x => isNew(x) ? `<p class="added-on">Added ${new Date(x.added + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>` : '';
+  function newCount(n, cb) {
+    const el = $('#newcount'); if (!el) return;
+    el.hidden = !n;
+    el.innerHTML = `<span class="new">NEW</span> <strong>${n}</strong> new listing${n === 1 ? '' : 's'} added this week <button type="button" class="b newtoggle" aria-pressed="${cb.checked}">${cb.checked ? 'Show all' : 'Show only new'}</button>`;
+  }
   const fmt = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
   const sid = e => 'ev-' + GRICS.slug(e.sort + '-' + e.name);
   const cid = c => 'show-' + GRICS.id(c);
@@ -34,14 +44,14 @@
   function concertCard(c) {
     const id = cid(c);
     return `<article class="card${isNew(c) ? ' is-new' : ''}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
-      <div class="badges"><span class="tag">${h(c.genre)}</span>${isNew(c) ? '<span class="new">NEW</span>' : ''}</div>
-      <h3>${h(c.artist)}</h3><p>${h(c.venue)}</p><p>${fmt(c.date)} · ${h(c.time)}</p>
+      <div class="badges"><span class="tag">${h(c.genre)}</span>${newBadge(c)}</div>
+      <h3>${h(c.artist)}</h3><p>${h(c.venue)}</p><p>${fmt(c.date)} · ${h(c.time)}</p>${addedLine(c)}
       ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist)}</article>`;
   }
   function seasonalCard(e) {
     const id = sid(e);
-    return `<article class="card${isNew(e) ? ' is-new' : ''}" id="${id}" data-id="${id}"><div class="badges"><span class="tag">${h(e.type)}</span>${isNew(e) ? '<span class="new">NEW</span>' : ''}</div>
-      <h3>${h(e.name)}</h3><p>${h(e.location)}</p><p>${h(e.when)}</p>
+    return `<article class="card${isNew(e) ? ' is-new' : ''}" id="${id}" data-id="${id}"><div class="badges"><span class="tag">${h(e.type)}</span>${newBadge(e)}</div>
+      <h3>${h(e.name)}</h3><p>${h(e.location)}</p><p>${h(e.when)}</p>${addedLine(e)}
       ${actions(id, e.name, null, e.link, 'Info / tickets')}</article>`;
   }
 
@@ -69,9 +79,11 @@
     });
     const se = SEASONAL.slice().sort((a, b) => a.sort.localeCompare(b.sort)).filter(e => (!mine || going.has(sid(e))) && (!nw || isNew(e)));
     $('#seasonal').innerHTML = se.map(seasonalCard).join('') || '<p class="few">Nothing matches.</p>';
+    newCount(shows.filter(c => ago(c.date) <= 0 && isNew(c)).length + SEASONAL.filter(isNew).length, $('#f-new'));
   }
   document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
   $('#f-clear').addEventListener('click', () => { $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').checked = $('#f-new').checked = false; render(); });
+  $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
   render();
 
   // ---- buttons (event delegation) ----

@@ -73,3 +73,11 @@ Every card on sports.html gets the same **Who is this?** button and pop-up as th
 - Game cards show the home team's bio, then the opponent's bio below it (if the opponent has an entry). Off-season cards show the home team only.
 - New opponent? Add one line for it (2–3 sentences, facts only from the linked `source` page). Without an entry the pop-up just shows the home team.
 - The pop-up code itself is shared in `bio-modal.js` (loaded by both index.html and sports.html); styles are the `.bio-*` rules in `style.css`. You shouldn't need to edit either.
+
+## NEW badges & "New this week" (all pages)
+- A card is **NEW** when its `added` date is within the last `NEW_DAYS` days (config.js, default 7), counted in the visitor's browser against today's date in Grand Rapids time.
+- NEW cards get a gold **NEW** pill in the top corner, a warm tinted background with a gold glow, and a small "Added Oct 19" line. Older cards stay plain. The badge is real text, so it doesn't rely on color alone.
+- Above the filters, a line reads "**N** new listings added this week" with a **Show only new** button. The button toggles the same "New only" checkbox. The line is hidden when nothing is new.
+- The Just Announced box works the same as before (newest `added` first) and now uses the same gold NEW pill.
+- So the badge means something, set `added` to the real day you add each item. Don't bulk-update old items.
+- **Testing only:** add `?today=2026-10-25` to the URL to pretend it's that day. Add `&demo=mix` to also back-date 2 of every 3 items by 30 days, in your browser only, so you can see NEW and older cards side by side. Example: `index.html?today=2026-10-21&demo=mix`. Visitors never see this unless they use those URLs.
