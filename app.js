@@ -20,9 +20,12 @@
 
   $('#updated').textContent = 'Last updated ' + LAST_UPDATED;
 
-  function actions(id, title, cal, link, label, aff) {
-    return `<div class="actions">
+  const BIO = (typeof BIOS !== 'undefined' && BIOS) || {};
+  function actions(id, title, cal, link, label, aff, artist) {
+    const bio = artist && BIO[artist];
+    return `<div class="actions${bio ? ' has-bio' : ''}">
       <a class="b primary" href="${h(link)}" target="_blank" rel="${aff ? 'sponsored noopener' : 'noopener'}">${label}</a>
+      ${bio ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : ''}
       <button type="button" class="b going${going.has(id) ? ' on' : ''}" data-id="${id}" aria-pressed="${going.has(id)}">${going.has(id) ? '★ Going' : '☆ I\'m going'}</button>
       <button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
       ${cal ? `<button type="button" class="b ics" data-id="${id}">+ Calendar</button><a class="b gcal" href="${h(cal)}" target="_blank" rel="noopener">Google</a>` : ''}
@@ -33,7 +36,7 @@
     return `<article class="card${isNew(c) ? ' is-new' : ''}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
       <div class="badges"><span class="tag">${h(c.genre)}</span>${isNew(c) ? '<span class="new">NEW</span>' : ''}</div>
       <h3>${h(c.artist)}</h3><p>${h(c.venue)}</p><p>${fmt(c.date)} · ${h(c.time)}</p>
-      ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate)}</article>`;
+      ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist)}</article>`;
   }
   function seasonalCard(e) {
     const id = sid(e);
@@ -85,11 +88,41 @@
       const url = SITE + '#' + id, title = b.dataset.title;
       if (navigator.share) { try { await navigator.share({ title, text: title + ' — Grand Rapids Concerts', url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
       try { await navigator.clipboard.writeText(url); toast('Link copied!'); } catch (e) { window.prompt('Copy this link:', url); }
+    } else if (b.classList.contains('whois')) {
+      const c = byId(id); if (c) openBio(c, b);
     } else if (b.classList.contains('ics')) {
       const c = byId(id); if (!c) return;
       const blob = new Blob([GRICS.calendar([c], c.artist)], { type: 'text/calendar' });
       const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = GRICS.id(c) + '.ics';
       document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    }
+  });
+
+  // ---- "Who is this?" dialog (text from bios.js) ----
+  const dlg = document.createElement('div');
+  dlg.className = 'bio-overlay'; dlg.hidden = true;
+  dlg.innerHTML = `<div class="bio-box" role="dialog" aria-modal="true" aria-labelledby="bio-title" tabindex="-1">
+    <button type="button" class="bio-x" aria-label="Close">×</button>
+    <h2 id="bio-title"></h2><p id="bio-text"></p><p class="bio-src"></p></div>`;
+  document.body.appendChild(dlg);
+  let bioOpener = null;
+  function openBio(c, opener) {
+    const bio = BIO[c.artist]; if (!bio) return;
+    dlg.querySelector('#bio-title').textContent = c.artist;
+    dlg.querySelector('#bio-text').textContent = bio.text;
+    dlg.querySelector('.bio-src').innerHTML = bio.source ? `Source: <a href="${h(bio.source)}" target="_blank" rel="noopener">${h(new URL(bio.source).hostname.replace(/^www\./, ''))}</a>` : '';
+    bioOpener = opener; dlg.hidden = false; document.body.classList.add('bio-open');
+    dlg.querySelector('.bio-x').focus();
+  }
+  function closeBio() { if (dlg.hidden) return; dlg.hidden = true; document.body.classList.remove('bio-open'); if (bioOpener) bioOpener.focus(); }
+  dlg.addEventListener('click', ev => { if (ev.target === dlg || ev.target.closest('.bio-x')) { ev.stopPropagation(); closeBio(); } });
+  document.addEventListener('keydown', ev => {
+    if (dlg.hidden) return;
+    if (ev.key === 'Escape') closeBio();
+    else if (ev.key === 'Tab') { // keep focus inside the dialog
+      const f = [...dlg.querySelectorAll('button, a[href]')], first = f[0], last = f[f.length - 1];
+      if (ev.shiftKey && document.activeElement === first) { ev.preventDefault(); last.focus(); }
+      else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
     }
   });
 

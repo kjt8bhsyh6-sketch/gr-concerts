@@ -58,3 +58,11 @@ Edit **`sports.js`**. The top nav and footer link Concerts and Sports on every p
   - AC Grand Rapids: home opener Mar 19, 2027 at Amway Stadium; opponent TBA
 - `SPORTS_UPDATED` is the date shown at the top.
 - `node scripts/build-ics.js` (also run by the nightly job) also writes `sports.ics`, a calendar of all home games.
+
+## "Who is this?" bios (bios.js)
+Each concert card gets a **Who is this?** button next to Tickets when `bios.js` has an entry for that show. It opens a small pop-up with a 2–3 sentence summary (closes with ×, Esc, or a click outside).
+- One line per act: `"Artist text": { text: "Summary…", source: "https://…" },`
+- The key must match the `artist` text in `concerts.js` **exactly** (same dashes, punctuation, and "(Nov 5–7)" style notes). If you rename a show in `concerts.js`, rename its key in `bios.js` too, or the button disappears. Repeat shows with the same artist text share one bio.
+- `source` (optional, recommended) is shown as a link at the bottom: Wikipedia, the artist's official site, or the venue's event page.
+- **Fact rule:** only write what a real source says. Keep it short and conservative (genre, where they're from, best-known songs/albums; for comedy/theater/symphony/family shows, what the show is). If you can't find reliable info (small local or tribute acts, dance parties), leave the act out. No entry = no button.
+- No photos — text only.
