@@ -1,0 +1,312 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GR Concerts//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Grand Rapids Concerts
+X-WR-TIMEZONE:America/Detroit
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Detroit
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-19-balance-and-composure-midrift@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261019T190000
+DTEND;TZID=America/Detroit:20261019T220000
+SUMMARY:Balance and Composure + Midrift
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event/
+ balance-and-composure-midrift-the-pyramid-scheme-tickets/14289554 (confir
+ m details with the venue)
+URL:https://www.ticketweb.com/event/balance-and-composure-midrift-the-pyra
+ mid-scheme-tickets/14289554
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-afi-with-choir-boy@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261020T200000
+DTEND;TZID=America/Detroit:20261020T230000
+SUMMARY:AFI (with Choir Boy)
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/45
+ 437472/skip-the-line-for-afi-grand-rapids-the-intersection (confirm detai
+ ls with the venue)
+URL:https://www.etix.com/ticket/p/45437472/skip-the-line-for-afi-grand-rap
+ ids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-the-brook-the-bluff-the-werewolf-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261020T200000
+DTEND;TZID=America/Detroit:20261020T230000
+SUMMARY:The Brook & The Bluff – The Werewolf Tour
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Indie Folk\, 8:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/64442619/skip-the-line-for-the-brook-the-bluff-grand-rapids-the-inter
+ section-the-stache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/64442619/skip-the-line-for-the-brook-the
+ -bluff-grand-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-ian-sweet-meg-elsier-cheap-emotion@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261020T190000
+DTEND;TZID=America/Detroit:20261020T220000
+SUMMARY:IAN SWEET + Meg Elsier + Cheap Emotion
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Indie Rock\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/ian-sweet-meg-elsier-the-pyramid-scheme-tickets/14865223 (confirm d
+ etails with the venue)
+URL:https://www.ticketweb.com/event/ian-sweet-meg-elsier-the-pyramid-schem
+ e-tickets/14865223
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-austin-snell-colors-tour-2026@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261022T193000
+DTEND;TZID=America/Detroit:20261022T223000
+SUMMARY:Austin Snell – Colors Tour 2026
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Country\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p
+ /92999146/skip-the-line-for-austin-snell-grand-rapids-the-intersection-el
+ evation (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/92999146/skip-the-line-for-austin-snell-
+ grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-phabies-ohly-kate-pillsbury@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261022T190000
+DTEND;TZID=America/Detroit:20261022T220000
+SUMMARY:Phabies + Ohly + Kate Pillsbury
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Indie\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event
+ /phabies-ohly-kate-the-pyramid-scheme-tickets/15048753 (confirm details w
+ ith the venue)
+URL:https://www.ticketweb.com/event/phabies-ohly-kate-the-pyramid-scheme-t
+ ickets/15048753
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-judah-the-lion@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261023T193000
+DTEND;TZID=America/Detroit:20261023T223000
+SUMMARY:Judah & The Lion
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Indie Pop\, 7:30 PM. Tickets/info: https://www.etix.com/ticket
+ /p/41630184/skip-the-line-for-judah-the-lion-grand-rapids-the-intersectio
+ n (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/41630184/skip-the-line-for-judah-the-lio
+ n-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-prior-noon-hometown-stache-bash@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261023T193000
+DTEND;TZID=America/Detroit:20261023T223000
+SUMMARY:Prior Noon (Hometown Stache Bash)
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Indie Rock\, 7:30 PM. Tickets/info: https://www.sectionlive.co
+ m/the-intersection/events (confirm details with the venue)
+URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-jessica-audiffred@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261023T210000
+DTEND;TZID=America/Detroit:20261024T000000
+SUMMARY:Jessica Audiffred
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/86121759/skip-the-line-for-jessica-audiffred-grand-rapids-the-interse
+ ction (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/86121759/skip-the-line-for-jessica-audif
+ fred-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-the-people-s-party-ft-the-dinero-crew@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261023T200000
+DTEND;TZID=America/Detroit:20261023T230000
+SUMMARY:The People's Party ft. The Dinero Crew
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Funk\, 8:00 PM. Tickets/info: https://www.ticketweb.com/event/
+ the-peoples-party-ft-the-the-pyramid-scheme-tickets/14300754 (confirm det
+ ails with the venue)
+URL:https://www.ticketweb.com/event/the-peoples-party-ft-the-the-pyramid-s
+ cheme-tickets/14300754
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-r-b-fest-90-s-00-s-r-b@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261024T160000
+DTEND;TZID=America/Detroit:20261024T190000
+SUMMARY:R&B Fest – 90's & 00's R&B
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:R&B\, 4:00 PM. Tickets/info: https://www.sectionlive.com/the-i
+ ntersection/events (confirm details with the venue)
+URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-lakeview-wreck-my-night-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261024T193000
+DTEND;TZID=America/Detroit:20261024T223000
+SUMMARY:LAKEVIEW – Wreck My Night Tour
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Country\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p
+ /82705457/skip-the-line-for-lakeview-grand-rapids-the-intersection-the-st
+ ache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/82705457/skip-the-line-for-lakeview-gran
+ d-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-spite-new-world-killer-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261025T190000
+DTEND;TZID=America/Detroit:20261025T220000
+SUMMARY:SPITE – New World Killer Tour
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/5
+ 1838751/skip-the-line-for-spite-grand-rapids-the-intersection-elevation (
+ confirm details with the venue)
+URL:https://www.etix.com/ticket/p/51838751/skip-the-line-for-spite-grand-r
+ apids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-all-them-witches-with-emma-ruth-rundle@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261025T200000
+DTEND;TZID=America/Detroit:20261025T230000
+SUMMARY:All Them Witches (with Emma Ruth Rundle)
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/31
+ 205246/skip-the-line-for-all-them-witches-grand-rapids-the-intersection (
+ confirm details with the venue)
+URL:https://www.etix.com/ticket/p/31205246/skip-the-line-for-all-them-witc
+ hes-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-26-dark-divine@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261026T190000
+DTEND;TZID=America/Detroit:20261026T220000
+SUMMARY:Dark Divine
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/6
+ 7206187/skip-the-line-for-dark-divine-grand-rapids-the-intersection-the-s
+ tache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/67206187/skip-the-line-for-dark-divine-g
+ rand-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-27-outlander-in-concert@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261027T193000
+DTEND;TZID=America/Detroit:20261027T223000
+SUMMARY:Outlander In Concert
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.devosperforman
+ cehall.com/events/2026/outlander-in-concert (confirm details with the ven
+ ue)
+URL:https://www.devosperformancehall.com/events/2026/outlander-in-concert
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-27-evan-honer-it-s-an-even-longer-road-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261027T200000
+DTEND;TZID=America/Detroit:20261027T230000
+SUMMARY:Evan Honer – It's An Even Longer Road Tour
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 8:00 PM. Tickets/info: https://www.sectionlive.com/the-
+ intersection/events (confirm details with the venue)
+URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-the-longest-johns-the-ends-of-the-earth-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261028T200000
+DTEND;TZID=America/Detroit:20261028T230000
+SUMMARY:The Longest Johns – The Ends Of The Earth Tour
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/84
+ 259194/skip-the-line-for-the-longest-johns-grand-rapids-the-intersection-
+ elevation (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/84259194/skip-the-line-for-the-longest-j
+ ohns-grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-american-aquarium@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261029T193000
+DTEND;TZID=America/Detroit:20261029T223000
+SUMMARY:American Aquarium
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Americana\, 7:30 PM. Tickets/info: https://www.etix.com/ticket
+ /p/83396174/skip-the-line-for-american-aquarium-grand-rapids-the-intersec
+ tion-elevation (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/83396174/skip-the-line-for-american-aqua
+ rium-grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-chris-webby-webby-s-arcade-tour@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261029T200000
+DTEND;TZID=America/Detroit:20261029T230000
+SUMMARY:Chris Webby – Webby's Arcade Tour
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Hip-Hop\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
+ /78733901/skip-the-line-for-chris-webby-grand-rapids-the-intersection (co
+ nfirm details with the venue)
+URL:https://www.etix.com/ticket/p/78733901/skip-the-line-for-chris-webby-g
+ rand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-noche-de-banda-banda-recoditos-banda-machos@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261030T210000
+DTEND;TZID=America/Detroit:20261031T000000
+SUMMARY:Noche de Banda: Banda Recoditos & Banda Machos
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Regional Mexican\, 9:00 PM. Tickets/info: https://www.sectionl
+ ive.com/the-intersection/events (confirm details with the venue)
+URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-broadway-rave-musical-theater-dance-party@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261031T200000
+DTEND;TZID=America/Detroit:20261031T230000
+SUMMARY:Broadway Rave – Musical Theater Dance Party
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://www.sectionlive.c
+ om/the-intersection/events (confirm details with the venue)
+URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-daft-disko-french-house-disco-halloween@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261031T210000
+DTEND;TZID=America/Detroit:20261101T000000
+SUMMARY:Daft Disko (French House & Disco Halloween)
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.sectionlive.co
+ m/the-intersection/events (confirm details with the venue)
+URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+END:VCALENDAR

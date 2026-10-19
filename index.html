@@ -1,16 +1,26 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Grand Rapids Concerts</title><link rel="stylesheet" href="style.css"></head><body>
+<title>Grand Rapids Concerts</title><meta name="description" content="Live music in Grand Rapids, MI this week and next, plus seasonal events. New shows marked NEW.">
+<link rel="stylesheet" href="style.css"><link rel="alternate" type="text/calendar" title="All shows (iCal)" href="concerts.ics"></head><body>
 <header><h1>Grand Rapids Concerts, This Week and Next</h1><p id="updated"></p></header>
-<main><section><h2>This Week</h2><div class="grid" id="this"></div></section>
+<main>
+<section class="just"><h2>🆕 Just Announced</h2><ul id="just"></ul></section>
+<section class="filters" aria-label="Filter shows">
+  <label>Venue <select id="f-venue"><option value="">All venues</option></select></label>
+  <label>Genre <select id="f-genre"><option value="">All genres</option></select></label>
+  <label><input type="checkbox" id="f-new"> New only</label>
+  <label><input type="checkbox" id="f-mine"> My shows (★)</label>
+  <button type="button" id="f-clear">Clear</button>
+</section>
+<section><h2>This Week</h2><div class="grid" id="this"></div></section>
 <section><h2>Next Week</h2><div class="grid" id="next"></div></section>
 <section><h2>Seasonal Events</h2><p class="note">Ghost tours, Christmas markets and holiday lights.</p><div class="grid" id="seasonal"></div></section>
-<section class="signup"><h2>Get alerts by email or text</h2><form onsubmit="return false"><input placeholder="Email or phone number" disabled><button disabled>Sign up</button></form><p class="note">Coming soon — alerts aren't active yet.</p></section></main>
+<section class="signup"><h2>Get weekly concert alerts by email</h2><form action="https://buttondown.com/api/emails/embed-subscribe/grconcerts" method="post" target="_blank"><input type="email" name="email" placeholder="Your email address" required><input type="hidden" name="tag" value="website"><button type="submit">Sign up</button></form><p class="note">Free. You'll get a confirmation email. Unsubscribe anytime.</p></section>
+<section class="signup"><h2>📅 Every show in your calendar</h2><p>Subscribe once and new shows appear automatically: <a id="sub-webcal" href="concerts.ics">Apple / Outlook</a> · <a id="sub-google" href="#" target="_blank" rel="noopener">Google Calendar</a></p><p class="note">Or paste this address into your calendar app: <code id="sub-url"></code></p></section>
+<section class="signup" id="submit" hidden><h2>Know a show we missed?</h2><p>Tell us about a concert or local event. We check every submission before it goes on the site.</p><p><a id="submit-link" class="btn" href="#" target="_blank" rel="noopener">Submit an event</a></p></section>
+<section id="comments" hidden><h2>Comments</h2><div id="giscus"></div></section>
+<p class="note">★ "I'm going" picks are saved only in this browser.</p>
+</main>
+<div id="toast" role="status" hidden></div>
 <footer>By Bill &amp; Chris Jenkins. Always confirm details with the venue.</footer>
-<script src="concerts.js"></script><script src="seasonal.js"></script><script>
-document.getElementById('updated').textContent='Last updated '+LAST_UPDATED;
-['this','next'].forEach(w=>{const el=document.getElementById(w);const l=CONCERTS.filter(c=>c.week===w).sort((a,b)=>a.date.localeCompare(b.date));
-if(l.length<3)el.insertAdjacentHTML('beforeend','<p class="few">Few shows found this week.</p>');
-l.forEach(c=>{const d=new Date(c.date+'T12:00').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
-el.insertAdjacentHTML('beforeend',`<article class="card"><span class="tag">${c.genre}</span><h3>${c.artist}</h3><p>${c.venue}</p><p>${d} · ${c.time}</p><a href="${c.link}" target="_blank" rel="noopener">Tickets / info</a></article>`)})});
-const se=document.getElementById('seasonal');SEASONAL.slice().sort((a,b)=>a.sort.localeCompare(b.sort)).forEach(e=>se.insertAdjacentHTML('beforeend',`<article class="card"><span class="tag">${e.type}</span><h3>${e.name}</h3><p>${e.location}</p><p>${e.when}</p><a href="${e.link}" target="_blank" rel="noopener">Info / tickets</a></article>`));
-</script></body></html>
+<script src="config.js"></script><script src="concerts.js"></script><script src="seasonal.js"></script><script src="ics.js"></script><script src="app.js"></script>
+</body></html>

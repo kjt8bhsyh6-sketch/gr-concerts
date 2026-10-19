@@ -9,3 +9,15 @@ header{background:var(--text);color:#fff;padding:2.5rem 1rem;text-align:center}h
 .few{grid-column:1/-1;font-style:italic}.signup{background:var(--card);padding:1rem;border-radius:12px;margin-top:2rem}
 form{display:flex;gap:.5rem;flex-wrap:wrap}input{flex:1;padding:.6rem;min-width:200px}button{padding:.6rem 1.2rem;background:var(--accent);color:#fff;border:0;border-radius:6px}
 .note{color:#666}footer{text-align:center;padding:2rem;color:#666;font-size:.9rem}
+/* NEW badges, Just Announced, filters, card buttons */
+.new{background:#16a34a;color:#fff;border-radius:99px;padding:.15rem .5rem;font-size:.7rem;font-weight:700;margin-left:.4rem}
+.card.is-new{outline:2px solid #16a34a}.card.flash{box-shadow:0 0 0 4px var(--accent)}
+.just{background:var(--card);border-radius:12px;padding:.5rem 1rem 1rem;border-left:6px solid #16a34a}.just ul{margin:0;padding-left:1.2rem}.just li{margin:.3rem 0}
+.muted{color:#666;font-size:.85rem}
+.filters{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;margin:1rem 0}.filters select{padding:.4rem}.filters input{flex:none;min-width:0}
+.filters button,.actions button{padding:.35rem .7rem;font-size:.85rem}
+.actions{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.6rem;align-items:center}.actions button{background:#eee;color:var(--text)}
+.actions button.on{background:#ffd54a}.actions .gcal{font-size:.85rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem 1.2rem;border-radius:6px;text-decoration:none}
+#toast{position:fixed;bottom:1rem;left:50%;transform:translateX(-50%);background:var(--text);color:#fff;padding:.6rem 1rem;border-radius:8px}
+code{word-break:break-all}
