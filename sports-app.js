@@ -19,19 +19,22 @@
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify([...going])); } catch (e) {} };
   $('#updated').textContent = 'Home games around Grand Rapids · Last updated ' + SPORTS_UPDATED;
 
+  const BIO = (typeof SPORTS_BIOS !== 'undefined' && SPORTS_BIOS) || {};
+  const whoBtn = (id, team) => BIO[team] ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : '';
+  const bioSec = t => BIO[t] && { title: t, text: BIO[t].text, source: BIO[t].source };
   const goBtn = id => `<button type="button" class="b going${going.has(id) ? ' on' : ''}" data-id="${id}" aria-pressed="${going.has(id)}">${going.has(id) ? '★ Going' : '☆ I\'m going'}</button>`;
   function card(g) {
     const id = gid(g), title = `${g.team} vs. ${g.opponent}, ${fmt(g.date)}`;
     return `<article class="card${isNew(g) ? ' is-new' : ''}" id="${id}">
       <div class="badges"><span class="tag">${h(sport(g.team))}</span>${isNew(g) ? '<span class="new">NEW</span>' : ''}</div>
       <h3>${h(g.team)}</h3><p><strong>vs. ${h(g.opponent)}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>
-      <div class="actions"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a>
-      ${goBtn(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
+      <div class="actions${BIO[g.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a>
+      ${whoBtn(id, g.team)}${goBtn(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
       <button type="button" class="b ics" data-id="${id}">+ Calendar</button><a class="b gcal" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google</a></div></article>`;
   }
   function note(n) {
     return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span></div>
-      <h3>${h(n.team)}</h3><p>${h(n.text)}</p><div class="actions"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a></div></article>`;
+      <h3>${h(n.team)}</h3><p>${h(n.text)}</p><div class="actions${BIO[n.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a>${whoBtn('note-' + GRICS.slug(n.team), n.team)}</div></article>`;
   }
   const sel = $('#f-team');
   sel.insertAdjacentHTML('beforeend', TEAMS.map(t => `<option>${h(t.name)}</option>`).join(''));
@@ -50,6 +53,10 @@
   document.addEventListener('click', async ev => {
     const b = ev.target.closest('button'); if (!b || !b.dataset.id) return;
     const id = b.dataset.id, g = games.find(x => gid(x) === id);
+    if (b.classList.contains('whois')) {
+      const team = g ? g.team : (SEASON_NOTES.find(n => 'note-' + GRICS.slug(n.team) === id) || {}).team;
+      BioModal.open([bioSec(team), g && bioSec(g.opponent)], b); return;
+    }
     if (b.classList.contains('going')) {
       going.has(id) ? going.delete(id) : going.add(id); save();
       const on = going.has(id); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); b.textContent = on ? '★ Going' : '☆ I\'m going';

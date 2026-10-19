@@ -66,3 +66,10 @@ Each concert card gets a **Who is this?** button next to Tickets when `bios.js` 
 - `source` (optional, recommended) is shown as a link at the bottom: Wikipedia, the artist's official site, or the venue's event page.
 - **Fact rule:** only write what a real source says. Keep it short and conservative (genre, where they're from, best-known songs/albums; for comedy/theater/symphony/family shows, what the show is). If you can't find reliable info (small local or tribute acts, dance parties), leave the act out. No entry = no button.
 - No photos — text only.
+
+## Sports "Who is this?" bios (sports-bios.js)
+Every card on sports.html gets the same **Who is this?** button and pop-up as the concerts page, when `sports-bios.js` has an entry for that team.
+- Keys are team names **exactly** as written in `sports.js` — the `TEAMS` names (home teams) and each game's `opponent`.
+- Game cards show the home team's bio, then the opponent's bio below it (if the opponent has an entry). Off-season cards show the home team only.
+- New opponent? Add one line for it (2–3 sentences, facts only from the linked `source` page). Without an entry the pop-up just shows the home team.
+- The pop-up code itself is shared in `bio-modal.js` (loaded by both index.html and sports.html); styles are the `.bio-*` rules in `style.css`. You shouldn't need to edit either.

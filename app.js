@@ -98,33 +98,8 @@
     }
   });
 
-  // ---- "Who is this?" dialog (text from bios.js) ----
-  const dlg = document.createElement('div');
-  dlg.className = 'bio-overlay'; dlg.hidden = true;
-  dlg.innerHTML = `<div class="bio-box" role="dialog" aria-modal="true" aria-labelledby="bio-title" tabindex="-1">
-    <button type="button" class="bio-x" aria-label="Close">×</button>
-    <h2 id="bio-title"></h2><p id="bio-text"></p><p class="bio-src"></p></div>`;
-  document.body.appendChild(dlg);
-  let bioOpener = null;
-  function openBio(c, opener) {
-    const bio = BIO[c.artist]; if (!bio) return;
-    dlg.querySelector('#bio-title').textContent = c.artist;
-    dlg.querySelector('#bio-text').textContent = bio.text;
-    dlg.querySelector('.bio-src').innerHTML = bio.source ? `Source: <a href="${h(bio.source)}" target="_blank" rel="noopener">${h(new URL(bio.source).hostname.replace(/^www\./, ''))}</a>` : '';
-    bioOpener = opener; dlg.hidden = false; document.body.classList.add('bio-open');
-    dlg.querySelector('.bio-x').focus();
-  }
-  function closeBio() { if (dlg.hidden) return; dlg.hidden = true; document.body.classList.remove('bio-open'); if (bioOpener) bioOpener.focus(); }
-  dlg.addEventListener('click', ev => { if (ev.target === dlg || ev.target.closest('.bio-x')) { ev.stopPropagation(); closeBio(); } });
-  document.addEventListener('keydown', ev => {
-    if (dlg.hidden) return;
-    if (ev.key === 'Escape') closeBio();
-    else if (ev.key === 'Tab') { // keep focus inside the dialog
-      const f = [...dlg.querySelectorAll('button, a[href]')], first = f[0], last = f[f.length - 1];
-      if (ev.shiftKey && document.activeElement === first) { ev.preventDefault(); last.focus(); }
-      else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
-    }
-  });
+  // ---- "Who is this?" pop-up: shared code in bio-modal.js, text from bios.js ----
+  function openBio(c, opener) { const bio = BIO[c.artist]; if (bio) BioModal.open([{ title: c.artist, text: bio.text, source: bio.source }], opener); }
 
   // ---- calendar subscribe links ----
   const feed = SITE.replace(/\/?$/, '/') + 'concerts.ics';

@@ -98,3 +98,4 @@ footer p{margin:.3rem 0}.disclosure{font-size:.82rem}
 .bio-box .bio-src{font-size:.8rem;color:#666;margin:0}
 .bio-x{position:absolute;top:.5rem;right:.5rem;min-width:2.5rem;font-size:1.4rem;line-height:1;padding:.3rem .6rem}
 body.bio-open{overflow:hidden}
+.bio-box h3{margin:1rem 0 .4rem;font-size:1rem;padding-top:.75rem;border-top:1px solid #eee}
