@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grand Rapids Concerts</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>Grand Rapids Concerts, This Week and Next</h1><p id="updated"></p></header>
+<main><section><h2>This Week</h2><div class="grid" id="this"></div></section>
+<section><h2>Next Week</h2><div class="grid" id="next"></div></section>
+<section class="signup"><h2>Get alerts by email or text</h2><form onsubmit="return false"><input placeholder="Email or phone number" disabled><button disabled>Sign up</button></form><p class="note">Coming soon — alerts aren't active yet.</p></section></main>
+<footer>By Bill &amp; Chris Jenkins. Always confirm details with the venue.</footer>
+<script src="concerts.js"></script><script>
+document.getElementById('updated').textContent='Last updated '+LAST_UPDATED;
+['this','next'].forEach(w=>{const el=document.getElementById(w);const l=CONCERTS.filter(c=>c.week===w).sort((a,b)=>a.date.localeCompare(b.date));
+if(l.length<3)el.insertAdjacentHTML('beforeend','<p class="few">Few shows found this week.</p>');
+l.forEach(c=>{const d=new Date(c.date+'T12:00').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+el.insertAdjacentHTML('beforeend',`<article class="card"><span class="tag">${c.genre}</span><h3>${c.artist}</h3><p>${c.venue}</p><p>${d} · ${c.time}</p><a href="${c.link}" target="_blank" rel="noopener">Tickets / info</a></article>`)})});
+</script></body></html>
