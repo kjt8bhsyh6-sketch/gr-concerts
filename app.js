@@ -20,9 +20,9 @@
 
   $('#updated').textContent = 'Last updated ' + LAST_UPDATED;
 
-  function actions(id, title, cal, link, label) {
+  function actions(id, title, cal, link, label, aff) {
     return `<div class="actions">
-      <a class="b primary" href="${h(link)}" target="_blank" rel="noopener">${label}</a>
+      <a class="b primary" href="${h(link)}" target="_blank" rel="${aff ? 'sponsored noopener' : 'noopener'}">${label}</a>
       <button type="button" class="b going${going.has(id) ? ' on' : ''}" data-id="${id}" aria-pressed="${going.has(id)}">${going.has(id) ? '★ Going' : '☆ I\'m going'}</button>
       <button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
       ${cal ? `<button type="button" class="b ics" data-id="${id}">+ Calendar</button><a class="b gcal" href="${h(cal)}" target="_blank" rel="noopener">Google</a>` : ''}
@@ -33,7 +33,7 @@
     return `<article class="card${isNew(c) ? ' is-new' : ''}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
       <div class="badges"><span class="tag">${h(c.genre)}</span>${isNew(c) ? '<span class="new">NEW</span>' : ''}</div>
       <h3>${h(c.artist)}</h3><p>${h(c.venue)}</p><p>${fmt(c.date)} · ${h(c.time)}</p>
-      ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.link, 'Tickets / info')}</article>`;
+      ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate)}</article>`;
   }
   function seasonalCard(e) {
     const id = sid(e);

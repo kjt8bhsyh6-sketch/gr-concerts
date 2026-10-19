@@ -33,3 +33,13 @@ To turn it on:
 2. In the repo, go to **Settings > Secrets and variables > Actions > New repository secret**. Name it `TICKETMASTER_API_KEY` and paste the key.
 3. Go to **Settings > Actions > General > Workflow permissions** and choose **Read and write** (needed so the job can save its files).
 4. Run it once from the **Actions** tab to test. Follow Ticketmaster's terms: link to their ticket pages and don't copy their images.
+
+## Legal pages and affiliate links
+`privacy.html` and `terms.html` are linked from the footer on every page. The footer also has the line "Some ticket links may earn us a small commission at no extra cost to you." Edit the wording in those files directly, and update the "Last updated" date when you do. Privacy questions go to bill.jenkins+gr@mail.grokbot.com.
+
+**Optional `affiliate` field** in `concerts.js`: add `affiliate:"https://..."` to a show. The Tickets button then uses that URL (marked `rel="sponsored"`). Without it, the button uses `link`. Right now no shows have one. Keep `link` as the plain official URL either way.
+Rules:
+1. **The official seller stays primary.** An affiliate URL must point to the same official seller/box office as `link` (e.g. a Ticketmaster or venue partner link for that same event), never to a different or more expensive seller.
+2. **No resale links**, unless the show is sold out at the official seller. Then label it in the listing (e.g. add "(SOLD OUT – resale)" to the artist text).
+3. **Grand Rapids Symphony shows always keep the Symphony box office link.** Never add an affiliate to them.
+4. Commissions never decide which shows get listed.

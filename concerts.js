@@ -3,6 +3,8 @@
 // Keep the quotes and commas. date format: "YYYY-MM-DD". week: "this" or "next".
 // added: the date YOU added the show, "YYYY-MM-DD". Shows added in the last 7 days get a NEW badge
 // and appear in "Just Announced" at the top of the page.
+// affiliate (optional): a partner/affiliate URL for the SAME official seller. If set, the Tickets button uses it;
+// otherwise it uses link. See EDITING.md for the rules. Example: affiliate:"https://..."
 const LAST_UPDATED = "Oct 19, 2026";
 const CONCERTS = [
   { week:"this", artist:"Balance and Composure + Midrift", venue:"The Pyramid Scheme", date:"2026-10-19", time:"7:00 PM", genre:"Rock", link:"https://www.ticketweb.com/event/balance-and-composure-midrift-the-pyramid-scheme-tickets/14289554", added:"2026-10-19" },

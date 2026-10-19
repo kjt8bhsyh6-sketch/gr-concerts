@@ -76,3 +76,8 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.9rem}
   .just{padding:.9rem}
 }
 .badges{display:flex;flex-wrap:wrap;gap:.3rem}.badges .new{margin-left:0}
+/* footer links + text pages (privacy / terms) */
+footer p{margin:.3rem 0}.disclosure{font-size:.82rem}
+.footlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.2rem;margin-top:.8rem}
+.footlinks a{color:var(--accent);font-weight:600;text-decoration:none}.footlinks a:hover{text-decoration:underline}
+.doc{max-width:760px}.doc section{margin-bottom:1rem}.doc p{line-height:1.55}
