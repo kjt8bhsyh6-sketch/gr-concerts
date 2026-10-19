@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grand Rapids Sports · Home Games</title><meta name="description" content="Upcoming Grand Rapids home games: Griffins hockey, Gold basketball, plus Rise, Whitecaps and AC Grand Rapids season info.">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><nav class="topnav" aria-label="Site"><a href="index.html">Concerts</a><a href="sports.html" aria-current="page">Sports</a></nav><h1>Grand Rapids Sports</h1><p id="updated"></p></header>
+<main>
+<section class="filters" aria-label="Filter games">
+  <label>Team <select id="f-team"><option value="">All teams</option></select></label>
+  <label><input type="checkbox" id="f-new"> New only</label>
+  <label><input type="checkbox" id="f-mine"> My games (★)</label>
+  <button type="button" id="f-clear">Clear</button>
+</section>
+<section><h2>Upcoming Home Games</h2><div class="grid" id="games"></div></section>
+<section id="notes-wrap"><h2>Off-Season &amp; Coming Soon</h2><div class="grid" id="notes"></div></section>
+<p class="note">Times are Eastern. Always confirm with the team. ★ picks are saved only in this browser.</p>
+</main>
+<div id="toast" role="status" hidden></div>
+<footer><p>By Bill &amp; Chris Jenkins. Always confirm details with the venue.</p><p class="disclosure">Some ticket links may earn us a small commission at no extra cost to you.</p><nav class="footlinks"><a href="index.html">Concerts</a><a href="sports.html">Sports</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="terms.html#affiliate">Affiliate disclosure</a></nav></footer>
+<script src="config.js"></script><script src="sports.js"></script><script src="ics.js"></script><script src="sports-app.js"></script>
+</body></html>

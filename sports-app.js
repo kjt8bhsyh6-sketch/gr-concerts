@@ -1,0 +1,73 @@
+// Page logic for sports.html. Edit sports.js (not this file) to change games.
+(function () {
+  const C = (typeof CONFIG !== 'undefined' && CONFIG) || {}, NEW_DAYS = C.NEW_DAYS || 7;
+  const SITE = (C.SITE_URL || location.href.replace(/[^/]*$/, '')).replace(/\/?$/, '/') + 'sports.html';
+  const $ = s => document.querySelector(s);
+  const h = s => String(s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
+  const ago = d => (Date.parse(today) - Date.parse(d)) / 864e5;
+  const isNew = x => x.added && ago(x.added) >= 0 && ago(x.added) < NEW_DAYS;
+  const fmt = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+  const sport = t => (TEAMS.find(x => x.name === t) || {}).sport || 'Sports';
+  // shape each game like a concert so the shared calendar helpers (ics.js) work
+  const asEvent = g => ({ artist: `${g.team} vs. ${g.opponent}`, venue: g.venue, date: g.date, time: g.time, genre: sport(g.team), link: g.link, added: g.added });
+  const key = g => g.date + String(GRICS.to24(g.time)[0]).padStart(2, '0');
+  const games = GAMES.filter(g => ago(g.date) <= 0).sort((a, b) => key(a).localeCompare(key(b))).map(g => Object.assign({}, g, { ev: asEvent(g) }));
+  const gid = g => 'game-' + GRICS.id(g.ev);
+  const KEY = 'grc-going';
+  let going; try { going = new Set(JSON.parse(localStorage.getItem(KEY) || '[]')); } catch (e) { going = new Set(); }
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify([...going])); } catch (e) {} };
+  $('#updated').textContent = 'Home games around Grand Rapids · Last updated ' + SPORTS_UPDATED;
+
+  const goBtn = id => `<button type="button" class="b going${going.has(id) ? ' on' : ''}" data-id="${id}" aria-pressed="${going.has(id)}">${going.has(id) ? '★ Going' : '☆ I\'m going'}</button>`;
+  function card(g) {
+    const id = gid(g), title = `${g.team} vs. ${g.opponent}, ${fmt(g.date)}`;
+    return `<article class="card${isNew(g) ? ' is-new' : ''}" id="${id}">
+      <div class="badges"><span class="tag">${h(sport(g.team))}</span>${isNew(g) ? '<span class="new">NEW</span>' : ''}</div>
+      <h3>${h(g.team)}</h3><p><strong>vs. ${h(g.opponent)}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>
+      <div class="actions"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a>
+      ${goBtn(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
+      <button type="button" class="b ics" data-id="${id}">+ Calendar</button><a class="b gcal" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google</a></div></article>`;
+  }
+  function note(n) {
+    return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span></div>
+      <h3>${h(n.team)}</h3><p>${h(n.text)}</p><div class="actions"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a></div></article>`;
+  }
+  const sel = $('#f-team');
+  sel.insertAdjacentHTML('beforeend', TEAMS.map(t => `<option>${h(t.name)}</option>`).join(''));
+  function render() {
+    const t = sel.value, mine = $('#f-mine').checked, nw = $('#f-new').checked;
+    const l = games.filter(g => (!t || g.team === t) && (!mine || going.has(gid(g))) && (!nw || isNew(g)));
+    $('#games').innerHTML = l.map(card).join('') || '<p class="few">No games match these filters.</p>';
+    const ns = SEASON_NOTES.filter(n => !t || n.team === t);
+    $('#notes-wrap').hidden = !ns.length; $('#notes').innerHTML = ns.map(note).join('');
+  }
+  document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
+  $('#f-clear').addEventListener('click', () => { sel.value = ''; $('#f-mine').checked = $('#f-new').checked = false; render(); });
+  render();
+
+  function toast(m) { const e = $('#toast'); e.textContent = m; e.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => e.hidden = true, 2500); }
+  document.addEventListener('click', async ev => {
+    const b = ev.target.closest('button'); if (!b || !b.dataset.id) return;
+    const id = b.dataset.id, g = games.find(x => gid(x) === id);
+    if (b.classList.contains('going')) {
+      going.has(id) ? going.delete(id) : going.add(id); save();
+      const on = going.has(id); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); b.textContent = on ? '★ Going' : '☆ I\'m going';
+      if ($('#f-mine').checked) render();
+    } else if (b.classList.contains('share')) {
+      const url = SITE + '#' + id, title = b.dataset.title;
+      if (navigator.share) { try { await navigator.share({ title, text: title + ' — GR Sports', url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
+      try { await navigator.clipboard.writeText(url); toast('Link copied!'); } catch (e) { window.prompt('Copy this link:', url); }
+    } else if (b.classList.contains('ics') && g) {
+      const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([GRICS.calendar([g.ev], g.ev.artist)], { type: 'text/calendar' }));
+      a.download = GRICS.id(g.ev) + '.ics'; document.body.appendChild(a); a.click(); a.remove();
+    }
+  });
+  const ld = games.map(g => ({ '@context': 'https://schema.org', '@type': 'SportsEvent', name: g.ev.artist, startDate: GRICS.startISO(g.ev),
+    eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    homeTeam: { '@type': 'SportsTeam', name: g.team }, awayTeam: { '@type': 'SportsTeam', name: g.opponent },
+    location: { '@type': 'Place', name: g.venue, address: { '@type': 'PostalAddress', addressLocality: 'Grand Rapids', addressRegion: 'MI', addressCountry: 'US' } },
+    url: g.link, offers: { '@type': 'Offer', url: g.link } }));
+  const s = document.createElement('script'); s.type = 'application/ld+json'; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
+  if (location.hash) { const e = document.getElementById(location.hash.slice(1)); if (e) { e.scrollIntoView(); e.classList.add('flash'); } }
+})();

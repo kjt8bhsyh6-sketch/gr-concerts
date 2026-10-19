@@ -81,3 +81,8 @@ footer p{margin:.3rem 0}.disclosure{font-size:.82rem}
 .footlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.2rem;margin-top:.8rem}
 .footlinks a{color:var(--accent);font-weight:600;text-decoration:none}.footlinks a:hover{text-decoration:underline}
 .doc{max-width:760px}.doc section{margin-bottom:1rem}.doc p{line-height:1.55}
+/* top nav (Concerts / Sports) + sports note cards */
+.topnav{display:flex;justify-content:center;gap:.5rem;margin:-1rem 0 1rem}
+.topnav a{color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;padding:.35rem .9rem;border:1px solid #ffffff55;border-radius:99px}
+.topnav a:hover,.topnav a[aria-current=page]{background:var(--accent);border-color:var(--accent)}
+.tag.off{background:#6b7280}.note-card p{color:var(--text)}

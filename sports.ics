@@ -1,0 +1,180 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GR Concerts//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Grand Rapids Sports
+X-WR-TIMEZONE:America/Detroit
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:America/Detroit
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-10-21-grand-rapids-griffins-vs-manitoba-moose@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261021T190000
+DTEND;TZID=America/Detroit:20261021T220000
+SUMMARY:Grand Rapids Griffins vs. Manitoba Moose
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
+ venue.net/events/S (confirm details with the venue)
+URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-grand-rapids-griffins-vs-cleveland-monsters@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261023T190000
+DTEND;TZID=America/Detroit:20261023T220000
+SUMMARY:Grand Rapids Griffins vs. Cleveland Monsters
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
+ venue.net/events/S (confirm details with the venue)
+URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-grand-rapids-griffins-vs-cleveland-monsters@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261024T190000
+DTEND;TZID=America/Detroit:20261024T220000
+SUMMARY:Grand Rapids Griffins vs. Cleveland Monsters
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
+ venue.net/events/S (confirm details with the venue)
+URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-04-grand-rapids-griffins-vs-texas-stars@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261104T190000
+DTEND;TZID=America/Detroit:20261104T220000
+SUMMARY:Grand Rapids Griffins vs. Texas Stars
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
+ venue.net/events/S (confirm details with the venue)
+URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-grand-rapids-griffins-vs-milwaukee-admirals@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261106T190000
+DTEND;TZID=America/Detroit:20261106T220000
+SUMMARY:Grand Rapids Griffins vs. Milwaukee Admirals
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
+ venue.net/events/S (confirm details with the venue)
+URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-07-grand-rapids-gold-vs-sioux-falls-skyforce@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261107T190000
+DTEND;TZID=America/Detroit:20261107T220000
+SUMMARY:Grand Rapids Gold vs. Sioux Falls Skyforce
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Basketball (NBA G League)\, 7:00 PM. Tickets/info: https://www
+ .gofevo.com/group/2026274315?ref=W (confirm details with the venue)
+URL:https://www.gofevo.com/group/2026274315?ref=W
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-08-grand-rapids-gold-vs-sioux-falls-skyforce@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261108T150000
+DTEND;TZID=America/Detroit:20261108T180000
+SUMMARY:Grand Rapids Gold vs. Sioux Falls Skyforce
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Basketball (NBA G League)\, 3:00 PM. Tickets/info: https://www
+ .gofevo.com/group/2026274315?ref=W (confirm details with the venue)
+URL:https://www.gofevo.com/group/2026274315?ref=W
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-11-grand-rapids-griffins-vs-rockford-icehogs@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261111T110000
+DTEND;TZID=America/Detroit:20261111T140000
+SUMMARY:Grand Rapids Griffins vs. Rockford IceHogs
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Hockey (AHL)\, 11:00 AM. Tickets/info: https://griffinshockey.
+ evenue.net/events/S (confirm details with the venue)
+URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-18-grand-rapids-griffins-vs-manitoba-moose@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261118T190000
+DTEND;TZID=America/Detroit:20261118T220000
+SUMMARY:Grand Rapids Griffins vs. Manitoba Moose
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
+ venue.net/events/S (confirm details with the venue)
+URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-grand-rapids-gold-vs-cleveland-charge@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261120T190000
+DTEND;TZID=America/Detroit:20261120T220000
+SUMMARY:Grand Rapids Gold vs. Cleveland Charge
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Basketball (NBA G League)\, 7:00 PM. Tickets/info: https://www
+ .gofevo.com/group/2026274315?ref=W (confirm details with the venue)
+URL:https://www.gofevo.com/group/2026274315?ref=W
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-22-grand-rapids-gold-vs-cleveland-charge@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261122T150000
+DTEND;TZID=America/Detroit:20261122T180000
+SUMMARY:Grand Rapids Gold vs. Cleveland Charge
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Basketball (NBA G League)\, 3:00 PM. Tickets/info: https://www
+ .gofevo.com/group/2026274315?ref=W (confirm details with the venue)
+URL:https://www.gofevo.com/group/2026274315?ref=W
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-grand-rapids-griffins-vs-iowa-wild@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261127T190000
+DTEND;TZID=America/Detroit:20261127T220000
+SUMMARY:Grand Rapids Griffins vs. Iowa Wild
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
+ venue.net/events/S (confirm details with the venue)
+URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-grand-rapids-gold-vs-noblesville-boom@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261128T190000
+DTEND;TZID=America/Detroit:20261128T220000
+SUMMARY:Grand Rapids Gold vs. Noblesville Boom
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Basketball (NBA G League)\, 7:00 PM. Tickets/info: https://www
+ .gofevo.com/group/2026274315?ref=W (confirm details with the venue)
+URL:https://www.gofevo.com/group/2026274315?ref=W
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-29-grand-rapids-griffins-vs-iowa-wild@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261129T160000
+DTEND;TZID=America/Detroit:20261129T190000
+SUMMARY:Grand Rapids Griffins vs. Iowa Wild
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Hockey (AHL)\, 4:00 PM. Tickets/info: https://griffinshockey.e
+ venue.net/events/S (confirm details with the venue)
+URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+END:VCALENDAR

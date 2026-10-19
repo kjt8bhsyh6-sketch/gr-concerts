@@ -43,3 +43,17 @@ Rules:
 2. **No resale links**, unless the show is sold out at the official seller. Then label it in the listing (e.g. add "(SOLD OUT – resale)" to the artist text).
 3. **Grand Rapids Symphony shows always keep the Symphony box office link.** Never add an affiliate to them.
 4. Commissions never decide which shows get listed.
+
+## Sports page (sports.html)
+Edit **`sports.js`**. The top nav and footer link Concerts and Sports on every page.
+- **GAMES:** one line per HOME game: `team` (must match a name in `TEAMS`), `opponent`, `date` "YYYY-MM-DD", `time` "7:00 PM", `venue`, `link`, `added`. Set `added` to today so the game gets a NEW badge for 7 days. Past games hide themselves. Each card gets Tickets, I'm going, Share, + Calendar and Google buttons. There's also a Team filter.
+- **Ticket links must be the team's official seller:**
+  - Griffins: https://griffinshockey.evenue.net/events/S (the Buy Tickets link on griffinshockey.com/schedule/home-schedule)
+  - Gold: the "Buy Tickets" link on grandrapids.gleague.nba.com/schedule (currently https://www.gofevo.com/group/2026274315?ref=W)
+  - Never use resale sites.
+- **SEASON_NOTES:** a short "Off-season" card for teams that aren't playing. When a schedule comes out, add its home games to `GAMES` and delete that team's note. Expected:
+  - Rise: 2027 schedule (MLV said October), at Van Andel Arena
+  - Whitecaps: 2027 schedule on milb.com/west-michigan
+  - AC Grand Rapids: home opener Mar 19, 2027 at Amway Stadium; opponent TBA
+- `SPORTS_UPDATED` is the date shown at the top.
+- `node scripts/build-ics.js` (also run by the nightly job) also writes `sports.ics`, a calendar of all home games.
