@@ -35,7 +35,7 @@
       ${bio ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : ''}
       ${Marks.buttons(id)}
       <button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
-      ${cal ? `<button type="button" class="b ics" data-id="${id}">+ Calendar</button><a class="b gcal" href="${h(cal)}" target="_blank" rel="noopener">Google</a>` : ''}
+      ${cal ? `<button type="button" class="b ics" data-id="${id}">Apple</button><a class="b gcal" data-id="${id}" href="${h(cal)}" target="_blank" rel="noopener">Google</a>` : ''}
     </div>`;
   }
   function concertCard(c) {
@@ -87,6 +87,9 @@
   // ---- buttons (event delegation) ----
   const byId = id => shows.find(c => cid(c) === id);
   function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => t.hidden = true, 2500); }
+  // Google link: title reflects the current mark at click time (★ Going / ♥ Interested)
+  const gcalFix = ev => { const a = ev.target.closest('a.gcal'); if (!a || !a.dataset.id) return; const c = byId(a.dataset.id); if (c) a.href = GRICS.google(c, Marks.state(a.dataset.id)); };
+  document.addEventListener('click', gcalFix, true); document.addEventListener('auxclick', gcalFix, true); document.addEventListener('contextmenu', gcalFix, true);
   document.addEventListener('click', async ev => {
     const b = ev.target.closest('button'); if (!b) return;
     const id = b.dataset.id;
@@ -100,7 +103,7 @@
       const c = byId(id); if (c) openBio(c, b);
     } else if (b.classList.contains('ics')) {
       const c = byId(id); if (!c) return;
-      const blob = new Blob([GRICS.calendar([c], c.artist)], { type: 'text/calendar' });
+      const blob = new Blob([GRICS.calendar([c], c.artist, Marks.state(id))], { type: 'text/calendar' });
       const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = GRICS.id(c) + '.ics';
       document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     }

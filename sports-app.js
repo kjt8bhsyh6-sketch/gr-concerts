@@ -38,7 +38,7 @@
       <h3>${h(g.team)}</h3><p><strong>vs. ${h(g.opponent)}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>${addedLine(g)}
       <div class="actions${BIO[g.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a>
       ${whoBtn(id, g.team)}${goBtn(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
-      <button type="button" class="b ics" data-id="${id}">+ Calendar</button><a class="b gcal" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google</a></div></article>`;
+      <button type="button" class="b ics" data-id="${id}">Apple</button><a class="b gcal" data-id="${id}" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google</a></div></article>`;
   }
   function note(n) {
     return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span>${newBadge(n)}</div>
@@ -73,6 +73,9 @@
   render();
 
   function toast(m) { const e = $('#toast'); e.textContent = m; e.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => e.hidden = true, 2500); }
+  // Google link: title reflects the current mark at click time (★ Going / ♥ Interested)
+  const gcalFix = ev => { const a = ev.target.closest('a.gcal'); if (!a || !a.dataset.id) return; const g = games.find(x => gid(x) === a.dataset.id); if (g) a.href = GRICS.google(g.ev, Marks.state(a.dataset.id)); };
+  document.addEventListener('click', gcalFix, true); document.addEventListener('auxclick', gcalFix, true); document.addEventListener('contextmenu', gcalFix, true);
   document.addEventListener('click', async ev => {
     const b = ev.target.closest('button'); if (!b || !b.dataset.id) return;
     const id = b.dataset.id, g = games.find(x => gid(x) === id);
@@ -87,7 +90,7 @@
       if (navigator.share) { try { await navigator.share({ title, text: title + ' — GR Sports', url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
       try { await navigator.clipboard.writeText(url); toast('Link copied!'); } catch (e) { window.prompt('Copy this link:', url); }
     } else if (b.classList.contains('ics') && g) {
-      const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([GRICS.calendar([g.ev], g.ev.artist)], { type: 'text/calendar' }));
+      const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([GRICS.calendar([g.ev], g.ev.artist, Marks.state(id))], { type: 'text/calendar' }));
       a.download = GRICS.id(g.ev) + '.ics'; document.body.appendChild(a); a.click(); a.remove();
     }
   });

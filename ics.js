@@ -26,24 +26,28 @@
   const VTZ = ['BEGIN:VTIMEZONE', 'TZID:America/Detroit', 'BEGIN:DAYLIGHT', 'TZOFFSETFROM:-0500', 'TZOFFSETTO:-0400', 'TZNAME:EDT',
     'DTSTART:19700308T020000', 'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU', 'END:DAYLIGHT', 'BEGIN:STANDARD', 'TZOFFSETFROM:-0400',
     'TZOFFSETTO:-0500', 'TZNAME:EST', 'DTSTART:19701101T020000', 'RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU', 'END:STANDARD', 'END:VTIMEZONE'];
-  function vevent(c) {
+  // Personal marks (marks.js) for the per-card download / Google link only; subscribe feeds never pass a mark.
+  const PREFIX = { going: '★ Going: ', interested: '♥ Interested: ' };
+  const title = (c, mark) => (PREFIX[mark] || '') + c.artist;
+  const markLines = mark => mark === 'going' ? ['STATUS:CONFIRMED'] : mark === 'interested' ? ['STATUS:TENTATIVE', 'TRANSP:TRANSPARENT'] : [];
+  function vevent(c, mark) {
     return ['BEGIN:VEVENT', `UID:${id(c)}@gr-concerts`, `DTSTAMP:${(c.added || c.date).replace(/-/g, '')}T120000Z`,
       `DTSTART;TZID=${TZ}:${stamp(parts(c))}`, `DTEND;TZID=${TZ}:${stamp(parts(c, 3))}`,
-      `SUMMARY:${esc(c.artist)}`, `LOCATION:${esc(c.venue + ', Grand Rapids, MI')}`,
+      `SUMMARY:${esc(title(c, mark))}`, ...markLines(mark), `LOCATION:${esc(c.venue + ', Grand Rapids, MI')}`,
       `DESCRIPTION:${esc(`${c.genre}, ${c.time}. Tickets/info: ${c.link} (confirm details with the venue)`)}`,
       `URL:${c.link}`, 'END:VEVENT'];
   }
-  function calendar(list, name) {
+  function calendar(list, name, mark) {
     const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//GR Concerts//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
       `X-WR-CALNAME:${esc(name || 'Grand Rapids Concerts')}`, `X-WR-TIMEZONE:${TZ}`, 'REFRESH-INTERVAL;VALUE=DURATION:PT12H',
-      ...VTZ, ...list.flatMap(vevent), 'END:VCALENDAR'];
+      ...VTZ, ...list.flatMap(c => vevent(c, mark)), 'END:VCALENDAR'];
     return lines.map(fold).join('\r\n') + '\r\n';
   }
-  function google(c) {
-    const q = new URLSearchParams({ action: 'TEMPLATE', text: c.artist, dates: `${stamp(parts(c))}/${stamp(parts(c, 3))}`,
+  function google(c, mark) {
+    const q = new URLSearchParams({ action: 'TEMPLATE', text: title(c, mark), dates: `${stamp(parts(c))}/${stamp(parts(c, 3))}`,
       ctz: TZ, location: c.venue + ', Grand Rapids, MI', details: `Tickets/info: ${c.link}` });
     return 'https://calendar.google.com/calendar/render?' + q;
   }
-  const api = { calendar, google, id, slug, startISO: c => iso(parts(c)), endISO: c => iso(parts(c, 3)), to24 };
+  const api = { calendar, google, title, id, slug, startISO: c => iso(parts(c)), endISO: c => iso(parts(c, 3)), to24 };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.GRICS = api;
 })(this);

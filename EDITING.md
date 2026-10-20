@@ -10,7 +10,7 @@ Every show and seasonal event has `added:"YYYY-MM-DD"`, the day you put it on th
 
 ## Calendar feed, sharing, favorites, filters
 These all work on their own. The page builds them from `concerts.js`:
-- Each show has **I'm going** (saved only in the visitor's browser), **Share**, **+ Calendar** (.ics download) and **Google Cal** buttons. There are Venue / Genre / New only / My shows filters.
+- Each show has **I'm going** (saved only in the visitor's browser), **Share**, **Apple** (.ics download, was "+ Calendar") and **Google Cal** buttons. There are Venue / Genre / New only / My shows filters.
 - `concerts.ics` is the all-shows calendar people can subscribe to. The nightly GitHub Action rebuilds it. If you edit shows and want it updated right away, go to the **Actions** tab, open **Nightly update**, and click **Run workflow**. (Or run `node scripts/build-ics.js` on a computer.)
 - Google event info (schema.org JSON-LD) is added automatically.
 
@@ -117,3 +117,10 @@ All three pages (Concerts, Sports, Seasonal) share one picker in `date-range.js`
 - The filter bar's **My shows / My games / My events** box is now a dropdown: Everything, Going + Interested, ★ Going only, ♥ Interested only.
 - Buttons sit in a 2-column grid. If one is left over at the end (e.g. Google), it takes the full row so phones stay tidy.
 - **Testing only:** `?demoMarks=1` marks the first listing Going and the second Interested for that page load. Nothing is saved, and the visitor's real picks aren't touched. Example: `index.html?demoMarks=1`.
+
+## Calendar titles for marked shows (added Oct 19, 2026)
+- On cards you've marked, the **Apple** (.ics, formerly "+ Calendar") download and the **Google** link title start with `★ Going: ` or `♥ Interested: `. Unmarked cards are unchanged. The title uses the mark at the moment you click (not when the page loaded).
+- Going events get `STATUS:CONFIRMED`. Interested events get `STATUS:TENTATIVE` and `TRANSP:TRANSPARENT` (show as free/tentative).
+- Code: `GRICS.calendar(list, name, mark)` / `GRICS.google(c, mark)` in `ics.js`, with `mark` = `Marks.state(id)`. The subscribe feeds (`concerts.ics`, `sports.ics`, `seasonal.ics`) never pass a mark, so they're the same for everyone.
+- Hint line under the Concerts and Sports calendar boxes: "Marked shows are saved to your calendar labeled ★ Going or ♥ Interested." (Seasonal cards have no per-card calendar buttons.)
+- Test: `node scripts/test-mark-ics.js` prints SUMMARY/STATUS lines for each state.
