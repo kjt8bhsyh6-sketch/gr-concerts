@@ -3,7 +3,7 @@
 **Venues we cover** (the Venue filter is built automatically from the `venue` names in `concerts.js`, so spell them exactly like this): The Intersection (main room / The Stache / Elevation), The Pyramid Scheme, GLC Live at 20 Monroe (formerly 20 Monroe Live), Van Andel Arena (concerts and shows only; Griffins/Gold games go in `sports.js`), DeVos Performance Hall, Dr. Grins (at The B.O.B.) (comedy, genre "Comedy"), Grand Rapids Civic Theatre, Wealthy Theatre (1130 Wealthy St SE; also called "Wealthy Street Theatre"; one venue), St. Cecilia Music Center, Acrisure Amphitheater (summer season), Frederik Meijer Gardens Amphitheater (summer series).
 **Text:** headline, section titles and footer are in `index.html` — just change the words between tags.
 **Colors:** top of `style.css`, the `:root` line. Replace the color codes (e.g. `#e4572e`).
-**Seasonal Events** (ghost tours, Christmas markets, holiday lights): open `seasonal.js`. Each event is one line in `{ }`: `type` is the tag, `name`, `location`, `when` is free text shown as written (e.g. "Nov 18–Dec 24 · Wed–Sun"), `sort` is the start date YYYY-MM-DD used for ordering, `link` is the event page. Copy a line to add one; delete a line to remove it (e.g. remove ghost tours after Oct 31).
+**Seasonal Events** (ghost tours, Christmas markets, holiday lights) have their own page, `seasonal.html` (third segment of the Concerts | Sports | Seasonal toggle; logic in `seasonal-app.js`). They no longer appear on the Concerts page. To edit them open `seasonal.js`. Each event is one line in `{ }`: `type` is the tag, `name`, `location`, `when` is free text shown as written (e.g. "Nov 18–Dec 24 · Wed–Sun"), `sort` is the start date YYYY-MM-DD used for ordering, `link` is the event page. Copy a line to add one; delete a line to remove it (e.g. remove ghost tours after Oct 31).
 
 ## New-show tracking (NEW badge + Just Announced)
 Every show and seasonal event has `added:"YYYY-MM-DD"`, the day you put it on the site. **When you add a show, set `added` to today's date.** Anything added in the last 7 days gets a green **NEW** badge and is listed at the top under "Just Announced" (newest first). You can change the 7 days and the list length in `config.js` (`NEW_DAYS`, `JUST_ANNOUNCED_MAX`).
@@ -84,7 +84,16 @@ Every card on sports.html gets the same **Who is this?** button and pop-up as th
 
 ## Concerts page: "This Week and Next" + date picker
 - By default the concerts page shows only **This Week** and **Next Week**. The `later` shows ("Coming Up") stay hidden, but they're still in the data and show up when someone picks dates.
-- Under the Concerts | Sports toggle there's a **"Looking for something further out?"** box with a **Pick dates** button. It opens From/To date fields (From defaults to the Monday after next week ends, To defaults to 30 days after that), quick chips (**Next 30 days** and the next two months, which roll forward on their own), plus **Show shows** and **Back to this week** buttons.
+- Under the Concerts | Sports toggle there's a **"Looking for something further out?"** box with a **Pick dates** button. It opens From/To date fields (From defaults to the Monday after next week ends, To defaults to 30 days after that), quick chips (**Next 30 days**, **Next 3 months**, **Next 6 months**, then the current month (rest of it), next month and the month after; they roll forward on their own). The pickers stop at **today + 6 months** (worked out from today's date in `app.js`, nothing hard-coded), so add shows at least that far out, plus **Show shows** and **Back to this week** buttons.
 - When a range is applied, one section "Shows from Nov 15 to Dec 15" lists every show dated in that range (any `week` value), sorted by date, with a count. The venue/genre/new/My shows filters still apply. If nothing is in range it says "Nothing listed in those dates yet; check back, we add shows daily."
-- The range goes in the URL so you can share it: `index.html?from=2026-11-15&to=2026-12-15`. Seasonal Events are not affected.
+- The range goes in the URL so you can share it: `index.html?from=2026-11-15&to=2026-12-15`. Seasonal Events are on their own page, so they're not affected.
 - To add far-out shows, just give them the right `date` (use `week:"later"`). You don't need to change anything else.
+
+## Far-out shows (added Oct 19, 2026)
+- Shows through Apr 30, 2027 are in `concerts.js` with `week:"later"`. They appear when someone picks dates (the hidden "Coming Up" section no longer says "through December").
+- `time:"Showtimes on venue site"` means the venue lists the dates but not a time for that show (multi-day runs, GR Symphony nights). `time:"Time on ticket page"` is for GLC Live, where the venue listing has no times. Swap in the real time when it's posted.
+- Multi-day runs with no per-show times are one entry on the first night, with the dates in the name, e.g. "Monster Jam (Mar 12–14)".
+
+## Toggle + ?v= stamps
+- Every page's toggle is `Concerts | Sports | Seasonal`, and the footer links match. When you add a page, add it to the toggle and footer on **every** `.html` file.
+- After changing any file, bump every `?v=YYYYMMDDHHMM` stamp in all `*.html` (`date +%Y%m%d%H%M`), so phones fetch the new files.

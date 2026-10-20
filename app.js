@@ -1,5 +1,5 @@
 // Page logic: renders shows, NEW badges, Just Announced, filters, favorites, calendar, sharing.
-// You normally never need to edit this file — edit concerts.js, seasonal.js or config.js instead.
+// You normally never need to edit this file — edit concerts.js or config.js (seasonal events: seasonal.js + seasonal-app.js) instead.
 (function () {
   const C = (typeof CONFIG !== 'undefined' && CONFIG) || {}, NEW_DAYS = C.NEW_DAYS || 7, SITE = C.SITE_URL || location.href.split('#')[0];
   const $ = s => document.querySelector(s);
@@ -7,7 +7,7 @@
   // Testing only: ?today=YYYY-MM-DD pretends it's that day; ?demo=mix also back-dates 2 of every 3 items by 30 days (in this browser only) so NEW and older cards can be compared.
   const qs = new URLSearchParams(location.search), qt = qs.get('today');
   const today = /^\d{4}-\d{2}-\d{2}$/.test(qt || '') ? qt : new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
-  if (qs.get('demo') === 'mix') [CONCERTS, SEASONAL].forEach(a => a.forEach((x, i) => { if (i % 3 && x.added) x.added = new Date(Date.parse(x.added) - 30 * 864e5).toISOString().slice(0, 10); }));
+  if (qs.get('demo') === 'mix') [CONCERTS].forEach(a => a.forEach((x, i) => { if (i % 3 && x.added) x.added = new Date(Date.parse(x.added) - 30 * 864e5).toISOString().slice(0, 10); }));
   const ago = d => (Date.parse(today) - Date.parse(d)) / 864e5;
   const isNew = x => x.added && ago(x.added) >= 0 && ago(x.added) < NEW_DAYS;
   const newBadge = x => isNew(x) ? `<span class="new">NEW</span>` : '';
@@ -18,7 +18,6 @@
     el.innerHTML = `<span class="new">NEW</span> <strong>${n}</strong> new listing${n === 1 ? '' : 's'} added this week <button type="button" class="b newtoggle" aria-pressed="${cb.checked}">${cb.checked ? 'Show all' : 'Show only new'}</button>`;
   }
   const fmt = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-  const sid = e => 'ev-' + GRICS.slug(e.sort + '-' + e.name);
   const cid = c => 'show-' + GRICS.id(c);
   const sortKey = c => c.date + String(GRICS.to24(c.time)[0]).padStart(2, '0') + String(GRICS.to24(c.time)[1]).padStart(2, '0');
   const shows = CONCERTS.slice().sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
@@ -48,16 +47,8 @@
       <h3>${h(c.artist)}</h3><p>${h(c.venue)}</p><p>${fmt(c.date)} · ${h(c.time)}</p>${addedLine(c)}
       ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist)}</article>`;
   }
-  function seasonalCard(e) {
-    const id = sid(e);
-    return `<article class="card${isNew(e) ? ' is-new' : ''}" id="${id}" data-id="${id}"><div class="badges"><span class="tag">${h(e.type)}</span>${newBadge(e)}</div>
-      <h3>${h(e.name)}</h3><p>${h(e.location)}</p><p>${h(e.when)}</p>${addedLine(e)}
-      ${actions(id, e.name, null, e.link, 'Info / tickets')}</article>`;
-  }
-
-  // ---- Just Announced: newest additions first (upcoming shows + seasonal) ----
-  const recent = [...shows.filter(c => ago(c.date) <= 0).map(c => ({ k: c.added, t: c.artist, s: `${c.venue} · ${fmt(c.date)}`, id: cid(c), n: isNew(c) })),
-    ...SEASONAL.map(e => ({ k: e.added, t: e.name, s: e.when, id: sid(e), n: isNew(e) }))]
+  // ---- Just Announced: newest additions first (upcoming shows; seasonal events live on seasonal.html) ----
+  const recent = [...shows.filter(c => ago(c.date) <= 0).map(c => ({ k: c.added, t: c.artist, s: `${c.venue} · ${fmt(c.date)}`, id: cid(c), n: isNew(c) }))]
     .filter(x => x.k).sort((a, b) => b.k.localeCompare(a.k)).slice(0, C.JUST_ANNOUNCED_MAX || 8);
   $('#just').innerHTML = recent.length ? recent.map(x =>
     `<li><a href="#${x.id}">${h(x.t)}</a> <span class="muted">${h(x.s)} · added ${fmt(x.k)}</span>${x.n ? ' <span class="new">NEW</span>' : ''}</li>`).join('')
@@ -86,9 +77,7 @@
         '<p class="few">No shows match these filters.</p>';
       if (all.length < 3 && l.length === all.length) el.insertAdjacentHTML('beforeend', '<p class="few">Few shows found this week.</p>');
     });
-    const se = SEASONAL.slice().sort((a, b) => a.sort.localeCompare(b.sort)).filter(e => (!mine || going.has(sid(e))) && (!nw || isNew(e)));
-    $('#seasonal').innerHTML = se.map(seasonalCard).join('') || '<p class="few">Nothing matches.</p>';
-    newCount(shows.filter(c => ago(c.date) <= 0 && isNew(c)).length + SEASONAL.filter(isNew).length, $('#f-new'));
+    newCount(shows.filter(c => ago(c.date) <= 0 && isNew(c)).length, $('#f-new'));
   }
   // ---- date range picker ("Looking for something further out?"), kept in the URL as ?from=&to= ----
   const md = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
@@ -101,9 +90,13 @@
   rf.min = rt.min = today; rf.value = range() ? rFrom : defFrom; rt.value = range() ? rTo : addD(rf.value, 30);
   rf.addEventListener('change', () => { if (rt.value < rf.value) rt.value = addD(rf.value, 30); rt.min = rf.value; });
   const y = +today.slice(0, 4), mo = +today.slice(5, 7), monEnd = (yy, m) => new Date(yy, m, 0).toLocaleDateString('en-CA');
-  const chips = [['Next 30 days', today, addD(today, 30)]];
-  for (let i = 1; i <= 2; i++) { const m = mo + i, yy = y + Math.floor((m - 1) / 12), mm = (m - 1) % 12 + 1, st = `${yy}-${String(mm).padStart(2, '0')}-01`;
-    chips.push([new Date(st + 'T12:00').toLocaleDateString('en-US', { month: 'long' }), st, monEnd(yy, mm)]); }
+  // Max pickable date = today + 6 months (computed, never hard-coded).
+  const addM = (d, n) => { const t = new Date(d + 'T12:00'); const day = t.getDate(); t.setDate(1); t.setMonth(t.getMonth() + n); t.setDate(Math.min(day, new Date(t.getFullYear(), t.getMonth() + 1, 0).getDate())); return t.toLocaleDateString('en-CA'); };
+  const maxD = addM(today, 6); rf.max = rt.max = maxD;
+  const clampD = d => d > maxD ? maxD : d;
+  const chips = [['Next 30 days', today, addD(today, 30)], ['Next 3 months', today, addM(today, 3)], ['Next 6 months', today, maxD]];
+  for (let i = 0; i <= 2; i++) { const m = mo + i, yy = y + Math.floor((m - 1) / 12), mm = (m - 1) % 12 + 1, st = `${yy}-${String(mm).padStart(2, '0')}-01`;
+    chips.push([new Date(st + 'T12:00').toLocaleDateString('en-US', { month: 'long' }), i ? st : today, clampD(monEnd(yy, mm))]); }
   $('#r-chips').innerHTML = chips.map(c => `<button type="button" class="chip" data-f="${c[1]}" data-t="${c[2]}">${c[0]}</button>`).join('');
   const openP = on => { $('#r-panel').hidden = !on; $('#r-open').setAttribute('aria-expanded', on); };
   function applyRange(f, t) {
