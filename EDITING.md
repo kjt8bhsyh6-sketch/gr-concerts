@@ -109,3 +109,11 @@ All three pages (Concerts, Sports, Seasonal) share one picker in `date-range.js`
 - All email boxes use the one Buttondown list `grconcerts` (form action `https://buttondown.com/api/emails/embed-subscribe/grconcerts`). Don't create other lists; only the heading/blurb text changes per page.
 - Calendar feeds: Concerts → `concerts.ics`, Sports → `sports.ics` (home games), Seasonal → `seasonal.ics`. The subscribe links are filled in by `app.js`, `sports-app.js` and `seasonal-app.js` from `CONFIG.SITE_URL`.
 - `node scripts/build-ics.js` rebuilds all three. Seasonal events become all-day events from `sort` through `end`. The file's DTEND is the day after `end`, because calendar apps treat the end date as exclusive. Each event's description has the event's type, `when`, and `link`. Re-run the script after editing `concerts.js`, `sports.js` or `seasonal.js`.
+
+## "I'm going" + "Interested" (all pages, added Oct 19, 2026)
+- Every listing card has two buttons side by side: **☆ I'm going** (turns into a yellow **★ Going**) and **♡ Interested** (turns into a teal **♥ Interested**). They are exclusive: picking one clears the other. Each uses `aria-pressed`, and the text and icon change too, so it doesn't rely on color alone.
+- Marked cards get a stripe down the left edge: violet = going, teal = interested. NEW cards keep their gold glow.
+- Saved only in the visitor's browser: localStorage `grc-going` (same key as before, so old picks are kept) and `grc-interested`. The shared code lives in `marks.js`, loaded before `app.js` / `sports-app.js` / `seasonal-app.js`. You shouldn't need to edit it.
+- The filter bar's **My shows / My games / My events** box is now a dropdown: Everything, Going + Interested, ★ Going only, ♥ Interested only.
+- Buttons sit in a 2-column grid. If one is left over at the end (e.g. Google), it takes the full row so phones stay tidy.
+- **Testing only:** `?demoMarks=1` marks the first listing Going and the second Interested for that page load. Nothing is saved, and the visitor's real picks aren't touched. Example: `index.html?demoMarks=1`.

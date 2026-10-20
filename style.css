@@ -130,3 +130,11 @@ body.bio-open{overflow:hidden}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.25rem 0 .5rem}
 .chip{border-radius:99px;border:2px solid var(--accent);color:var(--accent);background:var(--card);padding:.35rem .8rem}
 .range .b.primary{grid-column:auto}
+/* ---- "I'm interested" (♥) next to "I'm going" (★); the two are exclusive (marks.js) ---- */
+.b.interested.on{background:#ccfbf1;border-color:#0d9488;color:#115e59}
+.b.going.on{color:var(--text)}
+/* odd button left over at the end of the 2-column grid spans the full row */
+.actions:not(.has-bio)>.b:last-child:nth-child(even),.actions.has-bio>.b:last-child:nth-child(odd){grid-column:1/-1}
+/* card accent stripe: violet = going, teal = interested (NEW keeps its gold glow) */
+.card.mark-going{border-left:6px solid #7c3aed}
+.card.mark-interested{border-left:6px solid #0d9488}

@@ -22,10 +22,8 @@
   const sortKey = c => c.date + String(GRICS.to24(c.time)[0]).padStart(2, '0') + String(GRICS.to24(c.time)[1]).padStart(2, '0');
   const shows = CONCERTS.slice().sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
 
-  // ---- favorites ("I'm going"), stored only in this browser ----
-  const KEY = 'grc-going';
-  let going; try { going = new Set(JSON.parse(localStorage.getItem(KEY) || '[]')); } catch (e) { going = new Set(); }
-  const saveGoing = () => { try { localStorage.setItem(KEY, JSON.stringify([...going])); } catch (e) {} };
+  // ---- favorites ("I'm going" / "I'm interested"): shared code in marks.js, stored only in this browser ----
+  Marks.seedDemo(shows.filter(c => c.week === 'this').map(cid));
 
   $('#updated').textContent = 'Last updated ' + LAST_UPDATED;
 
@@ -35,14 +33,14 @@
     return `<div class="actions${bio ? ' has-bio' : ''}">
       <a class="b primary" href="${h(link)}" target="_blank" rel="${aff ? 'sponsored noopener' : 'noopener'}">${label}</a>
       ${bio ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : ''}
-      <button type="button" class="b going${going.has(id) ? ' on' : ''}" data-id="${id}" aria-pressed="${going.has(id)}">${going.has(id) ? '★ Going' : '☆ I\'m going'}</button>
+      ${Marks.buttons(id)}
       <button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
       ${cal ? `<button type="button" class="b ics" data-id="${id}">+ Calendar</button><a class="b gcal" href="${h(cal)}" target="_blank" rel="noopener">Google</a>` : ''}
     </div>`;
   }
   function concertCard(c) {
     const id = cid(c);
-    return `<article class="card${isNew(c) ? ' is-new' : ''}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
+    return `<article class="card${isNew(c) ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
       <div class="badges"><span class="tag">${h(c.genre)}</span>${newBadge(c)}</div>
       <h3>${h(c.artist)}</h3><p>${h(c.venue)}</p><p>${fmt(c.date)} · ${h(c.time)}</p>${addedLine(c)}
       ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist)}</article>`;
@@ -60,8 +58,8 @@
   fill($('#f-venue'), uniq('venue')); fill($('#f-genre'), uniq('genre'));
 
   function render() {
-    const v = $('#f-venue').value, g = $('#f-genre').value, mine = $('#f-mine').checked, nw = $('#f-new').checked;
-    const ok = c => (!v || c.venue === v) && (!g || c.genre === g) && (!mine || going.has(cid(c))) && (!nw || isNew(c));
+    const v = $('#f-venue').value, g = $('#f-genre').value, mine = $('#f-mine').value, nw = $('#f-new').checked;
+    const ok = c => (!v || c.venue === v) && (!g || c.genre === g) && Marks.match(cid(c), mine) && (!nw || isNew(c));
     const rg = range(), inR = !!rg;
     document.querySelectorAll('section.wk').forEach(x => x.hidden = inR); $('#range-sec').hidden = !inR;
     $('.subtitle').textContent = inR ? `Shows from ${md(rg[0])} to ${md(rg[1])}` : 'Concerts, This Week and Next';
@@ -82,7 +80,7 @@
   // ---- date range picker ("Looking for something further out?"): shared code in date-range.js ----
   const DR = DateRange.init({ today, onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
   document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
-  $('#f-clear').addEventListener('click', () => { $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').checked = $('#f-new').checked = false; render(); });
+  $('#f-clear').addEventListener('click', () => { $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; render(); });
   $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
   render();
 
@@ -92,10 +90,8 @@
   document.addEventListener('click', async ev => {
     const b = ev.target.closest('button'); if (!b) return;
     const id = b.dataset.id;
-    if (b.classList.contains('going')) {
-      going.has(id) ? going.delete(id) : going.add(id); saveGoing();
-      document.querySelectorAll(`button.going[data-id="${id}"]`).forEach(x => { const on = going.has(id); x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); x.textContent = on ? '★ Going' : '☆ I\'m going'; });
-      if ($('#f-mine').checked) render();
+    if (Marks.handle(b)) {
+      if ($('#f-mine').value) render();
     } else if (b.classList.contains('share')) {
       const url = SITE + '#' + id, title = b.dataset.title;
       if (navigator.share) { try { await navigator.share({ title, text: title + ' — Grand Rapids Happenings', url }); return; } catch (e) { if (e.name === 'AbortError') return; } }

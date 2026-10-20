@@ -24,18 +24,16 @@
   const key = g => g.date + String(GRICS.to24(g.time)[0]).padStart(2, '0');
   const games = GAMES.filter(g => ago(g.date) <= 0).sort((a, b) => key(a).localeCompare(key(b))).map(g => Object.assign({}, g, { ev: asEvent(g) }));
   const gid = g => 'game-' + GRICS.id(g.ev);
-  const KEY = 'grc-going';
-  let going; try { going = new Set(JSON.parse(localStorage.getItem(KEY) || '[]')); } catch (e) { going = new Set(); }
-  const save = () => { try { localStorage.setItem(KEY, JSON.stringify([...going])); } catch (e) {} };
+  Marks.seedDemo(games.map(gid)); // going / interested marks: shared code in marks.js
   $('#updated').textContent = 'Home games around Grand Rapids · Last updated ' + SPORTS_UPDATED;
 
   const BIO = (typeof SPORTS_BIOS !== 'undefined' && SPORTS_BIOS) || {};
   const whoBtn = (id, team) => BIO[team] ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : '';
   const bioSec = t => BIO[t] && { title: t, text: BIO[t].text, source: BIO[t].source };
-  const goBtn = id => `<button type="button" class="b going${going.has(id) ? ' on' : ''}" data-id="${id}" aria-pressed="${going.has(id)}">${going.has(id) ? '★ Going' : '☆ I\'m going'}</button>`;
+  const goBtn = id => Marks.buttons(id);
   function card(g) {
     const id = gid(g), title = `${g.team} vs. ${g.opponent}, ${fmt(g.date)}`;
-    return `<article class="card${isNew(g) ? ' is-new' : ''}" id="${id}">
+    return `<article class="card${isNew(g) ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}">
       <div class="badges"><span class="tag">${h(sport(g.team))}</span>${newBadge(g)}</div>
       <h3>${h(g.team)}</h3><p><strong>vs. ${h(g.opponent)}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>${addedLine(g)}
       <div class="actions${BIO[g.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a>
@@ -51,8 +49,8 @@
   const sel = $('#f-team');
   sel.insertAdjacentHTML('beforeend', TEAMS.map(t => `<option>${h(t.name)}</option>`).join(''));
   function render() {
-    const t = sel.value, mine = $('#f-mine').checked, nw = $('#f-new').checked;
-    const ok = g => (!t || g.team === t) && (!mine || going.has(gid(g))) && (!nw || isNew(g));
+    const t = sel.value, mine = $('#f-mine').value, nw = $('#f-new').checked;
+    const ok = g => (!t || g.team === t) && Marks.match(gid(g), mine) && (!nw || isNew(g));
     const rg = range(), inR = !!rg;
     $('#games-sec').hidden = inR; $('#range-sec').hidden = !inR;
     $('.subtitle').textContent = inR ? `Games from ${md(rg[0])} to ${md(rg[1])}` : 'Sports';
@@ -70,7 +68,7 @@
     newCount(games.filter(isNew).length + SEASON_NOTES.filter(isNew).length, $('#f-new'));
   }
   document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
-  $('#f-clear').addEventListener('click', () => { sel.value = ''; $('#f-mine').checked = $('#f-new').checked = false; render(); });
+  $('#f-clear').addEventListener('click', () => { sel.value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; render(); });
   $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
   render();
 
@@ -82,10 +80,8 @@
       const team = g ? g.team : (SEASON_NOTES.find(n => 'note-' + GRICS.slug(n.team) === id) || {}).team;
       BioModal.open([bioSec(team), g && bioSec(g.opponent)], b); return;
     }
-    if (b.classList.contains('going')) {
-      going.has(id) ? going.delete(id) : going.add(id); save();
-      const on = going.has(id); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); b.textContent = on ? '★ Going' : '☆ I\'m going';
-      if ($('#f-mine').checked) render();
+    if (Marks.handle(b)) {
+      if ($('#f-mine').value) render();
     } else if (b.classList.contains('share')) {
       const url = SITE + '#' + id, title = b.dataset.title;
       if (navigator.share) { try { await navigator.share({ title, text: title + ' — GR Sports', url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
