@@ -46,12 +46,25 @@
     return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span>${newBadge(n)}</div>
       <h3>${h(n.team)}</h3><p>${h(n.text)}</p>${addedLine(n)}<div class="actions${BIO[n.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a>${whoBtn('note-' + GRICS.slug(n.team), n.team)}</div></article>`;
   }
+  const DR = DateRange.init({ today, onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
+  const weekEnd = DR.addD(today, 13 - ((new Date(today + 'T12:00').getDay() + 6) % 7));
   const sel = $('#f-team');
   sel.insertAdjacentHTML('beforeend', TEAMS.map(t => `<option>${h(t.name)}</option>`).join(''));
   function render() {
     const t = sel.value, mine = $('#f-mine').checked, nw = $('#f-new').checked;
-    const l = games.filter(g => (!t || g.team === t) && (!mine || going.has(gid(g))) && (!nw || isNew(g)));
-    $('#games').innerHTML = l.map(card).join('') || '<p class="few">No games match these filters.</p>';
+    const ok = g => (!t || g.team === t) && (!mine || going.has(gid(g))) && (!nw || isNew(g));
+    const rg = range(), inR = !!rg;
+    $('#games-sec').hidden = inR; $('#range-sec').hidden = !inR;
+    $('.subtitle').textContent = inR ? `Games from ${md(rg[0])} to ${md(rg[1])}` : 'Sports';
+    if (inR) {
+      const all = games.filter(g => g.date >= rg[0] && g.date <= rg[1]), l = all.filter(ok);
+      $('#range-h').textContent = `Games from ${md(rg[0])} to ${md(rg[1])}`;
+      $('#range-n').textContent = `${l.length} game${l.length === 1 ? '' : 's'}` + (l.length < all.length ? ` (of ${all.length}, filters on)` : '');
+      $('#range-list').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">No games match these filters.</p>' : '<p class="few">No home games listed in those dates yet. Schedules get added as teams release them, so check back soon.</p>');
+    }
+    // default view: this week and next week (today through the Sunday that ends next week)
+    const all = games.filter(g => g.date <= weekEnd), l = all.filter(ok);
+    $('#games').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">No games match these filters.</p>' : '<p class="few">No home games this week or next. Tap 📅 Pick dates to look further out.</p>');
     const ns = SEASON_NOTES.filter(n => !t || n.team === t);
     $('#notes-wrap').hidden = !ns.length; $('#notes').innerHTML = ns.map(note).join('');
     newCount(games.filter(isNew).length + SEASON_NOTES.filter(isNew).length, $('#f-new'));

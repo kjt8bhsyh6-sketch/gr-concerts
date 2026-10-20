@@ -21,11 +21,26 @@
       <button type="button" class="b going${on ? ' on' : ''}" data-id="${id}" aria-pressed="${on}">${on ? '★ Going' : '☆ I\'m going'}</button>
       <button type="button" class="b share" data-id="${id}" data-title="${h(e.name)}">Share</button></div></article>`;
   }
+  // an event runs from `sort` to `end` (optional; one-day event if missing)
+  const overlaps = (e, f, t) => e.sort <= t && (e.end || e.sort) >= f;
+  const DR = DateRange.init({ today, onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
+  const weekEnd = DR.addD(today, 13 - ((new Date(today + 'T12:00').getDay() + 6) % 7));
   $('#f-type').insertAdjacentHTML('beforeend', [...new Set(list.map(e => e.type))].sort().map(t => `<option>${h(t)}</option>`).join(''));
   function render() {
     const t = $('#f-type').value, mine = $('#f-mine').checked, nw = $('#f-new').checked;
-    const l = list.filter(e => (!t || e.type === t) && (!mine || going.has(sid(e))) && (!nw || isNew(e)));
-    $('#seasonal').innerHTML = l.map(card).join('') || '<p class="few">Nothing matches.</p>';
+    const ok = e => (!t || e.type === t) && (!mine || going.has(sid(e))) && (!nw || isNew(e));
+    const rg = range(), inR = !!rg;
+    $('#seasonal-sec').hidden = inR; $('#range-sec').hidden = !inR;
+    $('.subtitle').textContent = inR ? `Events from ${md(rg[0])} to ${md(rg[1])}` : 'Seasonal Events';
+    if (inR) {
+      const all = list.filter(e => overlaps(e, rg[0], rg[1])), l = all.filter(ok);
+      $('#range-h').textContent = `Events from ${md(rg[0])} to ${md(rg[1])}`;
+      $('#range-n').textContent = `${l.length} event${l.length === 1 ? '' : 's'}` + (l.length < all.length ? ` (of ${all.length}, filters on)` : '');
+      $('#range-list').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">No events match these filters.</p>' : '<p class="few">No seasonal events listed in those dates yet. We add new ones as they\'re announced, so check back soon.</p>');
+    }
+    // default view: events ongoing or starting this week or next (today through the Sunday that ends next week)
+    const all = list.filter(e => overlaps(e, today, weekEnd)), l = all.filter(ok);
+    $('#seasonal').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">Nothing matches.</p>' : '<p class="few">No seasonal events this week or next. Tap 📅 Pick dates to look further out.</p>');
     const n = list.filter(isNew).length, el = $('#newcount'); el.hidden = !n;
     el.innerHTML = `<span class="new">NEW</span> <strong>${n}</strong> new listing${n === 1 ? '' : 's'} added this week`;
   }

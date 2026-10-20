@@ -1,8 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sports · Grand Rapids Happenings</title><meta property="og:site_name" content="Grand Rapids Happenings"><meta name="description" content="Upcoming Grand Rapids home games: Griffins hockey, Gold basketball, plus Rise, Whitecaps and AC Grand Rapids season info.">
-<link rel="stylesheet" href="style.css?v=202610192040"></head><body>
-<header><h1>Grand Rapids Happenings</h1><p class="subtitle">Sports</p><p id="updated"></p></header><nav class="segtoggle" aria-label="Section"><a href="index.html?v=202610192040">Concerts</a><a href="sports.html?v=202610192040" aria-current="page">Sports</a><a href="seasonal.html?v=202610192040">Seasonal</a></nav>
+<link rel="stylesheet" href="style.css?v=202610192048"></head><body>
+<header><h1>Grand Rapids Happenings</h1><p class="subtitle">Sports</p><p id="updated"></p></header><nav class="segtoggle" aria-label="Section"><a href="index.html?v=202610192048">Concerts</a><a href="sports.html?v=202610192048" aria-current="page">Sports</a><a href="seasonal.html?v=202610192048">Seasonal</a></nav>
 <main>
+<section class="range" id="range" aria-label="Pick dates">
+  <p class="range-ask">Looking for something further out? <button type="button" class="b" id="r-open" aria-expanded="false" aria-controls="r-panel">📅 Pick dates</button></p>
+  <div id="r-panel" hidden>
+    <div class="r-dates"><label>From <input type="date" id="r-from"></label><label>To <input type="date" id="r-to"></label></div>
+    <div class="chips" id="r-chips"></div>
+    <p class="row"><button type="button" class="b primary" id="r-go">Show games</button> <button type="button" class="b" id="r-back">Back to this week</button></p>
+  </div>
+</section>
 <p class="newcount" id="newcount" role="status" hidden></p>
 <section class="filters" aria-label="Filter games">
   <label>Team <select id="f-team"><option value="">All teams</option></select></label>
@@ -10,11 +18,12 @@
   <label><input type="checkbox" id="f-mine"> My games (★)</label>
   <button type="button" id="f-clear">Clear</button>
 </section>
-<section><h2>Upcoming Home Games</h2><div class="grid" id="games"></div></section>
+<section id="games-sec"><h2>This Week &amp; Next</h2><div class="grid" id="games"></div></section>
+<section id="range-sec" hidden><h2 id="range-h"></h2><p class="note" id="range-n"></p><div class="grid" id="range-list"></div></section>
 <section id="notes-wrap"><h2>Off-Season &amp; Coming Soon</h2><div class="grid" id="notes"></div></section>
 <p class="note">Times are Eastern. Always confirm with the team. ★ picks are saved only in this browser.</p>
 </main>
 <div id="toast" role="status" hidden></div>
-<footer><p>By The Canasta Club. Always confirm details with the venue.</p><p class="disclosure">Some ticket links may earn us a small commission at no extra cost to you.</p><nav class="footlinks"><a href="index.html?v=202610192040">Concerts</a><a href="sports.html?v=202610192040">Sports</a><a href="seasonal.html?v=202610192040">Seasonal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="terms.html#affiliate">Affiliate disclosure</a></nav></footer>
-<script src="config.js?v=202610192040"></script><script src="sports.js?v=202610192040"></script><script src="sports-bios.js?v=202610192040"></script><script src="ics.js?v=202610192040"></script><script src="bio-modal.js?v=202610192040"></script><script src="sports-app.js?v=202610192040"></script>
+<footer><p>By The Canasta Club. Always confirm details with the venue.</p><p class="disclosure">Some ticket links may earn us a small commission at no extra cost to you.</p><nav class="footlinks"><a href="index.html?v=202610192048">Concerts</a><a href="sports.html?v=202610192048">Sports</a><a href="seasonal.html?v=202610192048">Seasonal</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="terms.html#affiliate">Affiliate disclosure</a></nav></footer>
+<script src="config.js?v=202610192048"></script><script src="sports.js?v=202610192048"></script><script src="sports-bios.js?v=202610192048"></script><script src="ics.js?v=202610192048"></script><script src="date-range.js?v=202610192048"></script><script src="bio-modal.js?v=202610192048"></script><script src="sports-app.js?v=202610192048"></script>
 </body></html>
