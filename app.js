@@ -71,6 +71,15 @@
   function render() {
     const v = $('#f-venue').value, g = $('#f-genre').value, mine = $('#f-mine').checked, nw = $('#f-new').checked;
     const ok = c => (!v || c.venue === v) && (!g || c.genre === g) && (!mine || going.has(cid(c))) && (!nw || isNew(c));
+    const rg = range(), inR = !!rg;
+    document.querySelectorAll('section.wk').forEach(x => x.hidden = inR); $('#range-sec').hidden = !inR;
+    $('.subtitle').textContent = inR ? `Shows from ${md(rg[0])} to ${md(rg[1])}` : 'Concerts, This Week and Next';
+    if (inR) {
+      const all = shows.filter(c => c.date >= rg[0] && c.date <= rg[1]), l = all.filter(ok);
+      $('#range-h').textContent = `Shows from ${md(rg[0])} to ${md(rg[1])}`;
+      $('#range-n').textContent = `${l.length} show${l.length === 1 ? '' : 's'}` + (l.length < all.length ? ` (of ${all.length}, filters on)` : '');
+      $('#range-list').innerHTML = l.map(concertCard).join('') || (all.length ? '<p class="few">No shows match these filters.</p>' : '<p class="few">Nothing listed in those dates yet; check back, we add shows daily.</p>');
+    }
     ['this', 'next', 'later'].forEach(w => {
       const all = shows.filter(c => c.week === w), l = all.filter(ok), el = document.getElementById(w);
       el.innerHTML = l.map(concertCard).join('') ||
@@ -81,6 +90,32 @@
     $('#seasonal').innerHTML = se.map(seasonalCard).join('') || '<p class="few">Nothing matches.</p>';
     newCount(shows.filter(c => ago(c.date) <= 0 && isNew(c)).length + SEASONAL.filter(isNew).length, $('#f-new'));
   }
+  // ---- date range picker ("Looking for something further out?"), kept in the URL as ?from=&to= ----
+  const md = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  const addD = (d, n) => { const t = new Date(d + 'T12:00'); t.setDate(t.getDate() + n); return t.toLocaleDateString('en-CA'); };
+  const dow = new Date(today + 'T12:00').getDay(), defFrom = addD(today, 14 - ((dow + 6) % 7)); // Monday after next week ends
+  const isD = x => /^\d{4}-\d{2}-\d{2}$/.test(x || '');
+  let rFrom = qs.get('from'), rTo = qs.get('to');
+  const range = () => isD(rFrom) && isD(rTo) && rFrom <= rTo ? [rFrom, rTo] : null;
+  const rf = $('#r-from'), rt = $('#r-to');
+  rf.min = rt.min = today; rf.value = range() ? rFrom : defFrom; rt.value = range() ? rTo : addD(rf.value, 30);
+  rf.addEventListener('change', () => { if (rt.value < rf.value) rt.value = addD(rf.value, 30); rt.min = rf.value; });
+  const y = +today.slice(0, 4), mo = +today.slice(5, 7), monEnd = (yy, m) => new Date(yy, m, 0).toLocaleDateString('en-CA');
+  const chips = [['Next 30 days', today, addD(today, 30)]];
+  for (let i = 1; i <= 2; i++) { const m = mo + i, yy = y + Math.floor((m - 1) / 12), mm = (m - 1) % 12 + 1, st = `${yy}-${String(mm).padStart(2, '0')}-01`;
+    chips.push([new Date(st + 'T12:00').toLocaleDateString('en-US', { month: 'long' }), st, monEnd(yy, mm)]); }
+  $('#r-chips').innerHTML = chips.map(c => `<button type="button" class="chip" data-f="${c[1]}" data-t="${c[2]}">${c[0]}</button>`).join('');
+  const openP = on => { $('#r-panel').hidden = !on; $('#r-open').setAttribute('aria-expanded', on); };
+  function applyRange(f, t) {
+    rFrom = f; rTo = t; const u = new URL(location.href);
+    if (range()) { u.searchParams.set('from', f); u.searchParams.set('to', t); } else { u.searchParams.delete('from'); u.searchParams.delete('to'); }
+    history.replaceState(null, '', u); render();
+  }
+  $('#r-open').addEventListener('click', () => openP($('#r-panel').hidden));
+  $('#r-chips').addEventListener('click', ev => { const c = ev.target.closest('.chip'); if (!c) return; rf.value = c.dataset.f; rt.value = c.dataset.t; applyRange(c.dataset.f, c.dataset.t); });
+  $('#r-go').addEventListener('click', () => { if (rf.value && rt.value && rf.value <= rt.value) applyRange(rf.value, rt.value); else toast('Pick a From date before the To date.'); });
+  $('#r-back').addEventListener('click', () => { applyRange(null, null); openP(false); rf.value = defFrom; rt.value = addD(defFrom, 30); });
+  if (range()) openP(true);
   document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
   $('#f-clear').addEventListener('click', () => { $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').checked = $('#f-new').checked = false; render(); });
   $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });

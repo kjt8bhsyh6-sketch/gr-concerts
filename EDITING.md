@@ -81,3 +81,10 @@ Every card on sports.html gets the same **Who is this?** button and pop-up as th
 - The Just Announced box works the same as before (newest `added` first) and now uses the same gold NEW pill.
 - So the badge means something, set `added` to the real day you add each item. Don't bulk-update old items.
 - **Testing only:** add `?today=2026-10-25` to the URL to pretend it's that day. Add `&demo=mix` to also back-date 2 of every 3 items by 30 days, in your browser only, so you can see NEW and older cards side by side. Example: `index.html?today=2026-10-21&demo=mix`. Visitors never see this unless they use those URLs.
+
+## Concerts page: "This Week and Next" + date picker
+- By default the concerts page shows only **This Week** and **Next Week**. The `later` shows ("Coming Up") stay hidden, but they're still in the data and show up when someone picks dates.
+- Under the Concerts | Sports toggle there's a **"Looking for something further out?"** box with a **Pick dates** button. It opens From/To date fields (From defaults to the Monday after next week ends, To defaults to 30 days after that), quick chips (**Next 30 days** and the next two months, which roll forward on their own), plus **Show shows** and **Back to this week** buttons.
+- When a range is applied, one section "Shows from Nov 15 to Dec 15" lists every show dated in that range (any `week` value), sorted by date, with a count. The venue/genre/new/My shows filters still apply. If nothing is in range it says "Nothing listed in those dates yet; check back, we add shows daily."
+- The range goes in the URL so you can share it: `index.html?from=2026-11-15&to=2026-12-15`. Seasonal Events are not affected.
+- To add far-out shows, just give them the right `date` (use `week:"later"`). You don't need to change anything else.
