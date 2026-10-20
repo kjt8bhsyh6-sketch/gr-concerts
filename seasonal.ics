@@ -75,6 +75,21 @@ URL:https://www.studioparkgr.com/holiday-market
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-21-gentex-grand-rapids-santa-parade-city-tree-lighti@gr-season
+ al
+DTSTAMP:20261020T120000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Gentex Grand Rapids Santa Parade + City Tree Lighting
+LOCATION:Downtown Grand Rapids (tree lighting at Rosa Parks Circle)\, Gran
+ d Rapids\, MI
+DESCRIPTION:Holiday Parade. Sat Nov 21 · parade 5 PM\; Santa arrives ~6:30
+  PM\; tree lighting 6:45 PM. Info: https://grsantaparade.com/ (confirm de
+ tails with the organizer)
+URL:https://grsantaparade.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-23-enlighten-at-meijer-gardens@gr-seasonal
 DTSTAMP:20261019T120000Z
 DTSTART;VALUE=DATE:20261123
@@ -86,6 +101,20 @@ DESCRIPTION:Holiday Lights. Select nights Nov 23–Jan 10 · 5:30–8:30 PM\, t
  imed tickets. Info: https://www.meijergardens.org/enlighten/ (confirm det
  ails with the organizer)
 URL:https://www.meijergardens.org/enlighten/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-24-christmas-holiday-traditions-at-meijer-gardens@gr-seasonal
+DTSTAMP:20261020T120000Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20270111
+SUMMARY:Christmas & Holiday Traditions at Meijer Gardens
+LOCATION:Frederik Meijer Gardens\, 1000 E Beltline Ave NE\, Grand Rapids\,
+  MI
+DESCRIPTION:Holiday Exhibit. Nov 24–Jan 10 · 40+ holiday displays & Railwa
+ y Garden\; tree lighting Nov 24\, 6–8 PM. Info: https://www.meijergardens
+ .org/christmas-holiday-traditions/ (confirm details with the organizer)
+URL:https://www.meijergardens.org/christmas-holiday-traditions/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
