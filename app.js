@@ -98,7 +98,7 @@
       if ($('#f-mine').checked) render();
     } else if (b.classList.contains('share')) {
       const url = SITE + '#' + id, title = b.dataset.title;
-      if (navigator.share) { try { await navigator.share({ title, text: title + ' — Grand Rapids Concerts', url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
+      if (navigator.share) { try { await navigator.share({ title, text: title + ' — Grand Rapids Happenings', url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
       try { await navigator.clipboard.writeText(url); toast('Link copied!'); } catch (e) { window.prompt('Copy this link:', url); }
     } else if (b.classList.contains('whois')) {
       const c = byId(id); if (c) openBio(c, b);
