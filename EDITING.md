@@ -124,3 +124,10 @@ All three pages (Concerts, Sports, Seasonal) share one picker in `date-range.js`
 - Code: `GRICS.calendar(list, name, mark)` / `GRICS.google(c, mark)` in `ics.js`, with `mark` = `Marks.state(id)`. The subscribe feeds (`concerts.ics`, `sports.ics`, `seasonal.ics`) never pass a mark, so they're the same for everyone.
 - Hint line under the Concerts and Sports calendar boxes: "Marked shows are saved to your calendar labeled ★ Going or ♥ Interested." (Seasonal cards have no per-card calendar buttons.)
 - Test: `node scripts/test-mark-ics.js` prints SUMMARY/STATUS lines for each state.
+
+## App name + icon (bookmarks / home screen, added Oct 19, 2026)
+- Page titles start with the site name: `Grand Rapids Happenings` (home), `Grand Rapids Happenings · Sports / · Seasonal / · Privacy / · Terms`. Bookmarks use the title.
+- `manifest.webmanifest`: name "Grand Rapids Happenings", short_name "GR Happenings", start_url/scope `./`, standalone, theme/background navy `#1b1b2f`.
+- Home-screen label: iOS uses `<meta name="apple-mobile-web-app-title">` and Android uses short_name. Both are "GR Happenings", because the full name gets cut off (iOS shows about 12–14 characters). `application-name` is the full name.
+- Icons are in `icons/`: apple-touch-icon.png (180), icon-192.png, icon-512.png, icon-maskable-512.png, favicon-32.png, favicon.ico. Design: a navy rounded square with an orange (#e4572e) "GR" and a white "Happenings" (DejaVu Sans Bold). The favicons show "GR" only.
+- Every page `<head>` has the same block: manifest, icon, apple-touch-icon, application-name, apple-mobile-web-app-title/capable, theme-color. If you add a page, copy that block and use relative paths.
