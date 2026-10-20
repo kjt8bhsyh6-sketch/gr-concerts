@@ -102,4 +102,9 @@
     url: g.link, offers: { '@type': 'Offer', url: g.link } }));
   const s = document.createElement('script'); s.type = 'application/ld+json'; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
   if (location.hash) { const e = document.getElementById(location.hash.slice(1)); if (e) { e.scrollIntoView(); e.classList.add('flash'); } }
+
+  // ---- calendar subscribe links ----
+  { const base = (C.SITE_URL || location.href.split(/[?#]/)[0].replace(/[^/]*$/, '')).replace(/\/?$/, '/'), feed = base + 'sports.ics', wc = feed.replace(/^https?:/, 'webcal:');
+    const w = document.getElementById('sub-webcal'), g = document.getElementById('sub-google'), u = document.getElementById('sub-url');
+    if (w) w.href = wc; if (g) g.href = 'https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(wc); if (u) u.textContent = feed; }
 })();

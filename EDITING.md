@@ -103,3 +103,9 @@ All three pages (Concerts, Sports, Seasonal) share one picker in `date-range.js`
 - Concerts: "Shows from X to Y" (uses `date`).
 - Sports: normal view shows home games this week and next week, plus the off-season cards. The picker shows "Games from X to Y".
 - Seasonal: normal view shows events running or starting this week or next. The picker shows "Events from X to Y": any event whose `sort`–`end` dates overlap the range. So keep `end` filled in.
+
+## Email signup + calendar boxes (all pages, added Oct 19, 2026)
+- Every page has the same two boxes at the bottom, above the footer: **Get weekly alerts by email** and **Every … in your calendar**.
+- All email boxes use the one Buttondown list `grconcerts` (form action `https://buttondown.com/api/emails/embed-subscribe/grconcerts`). Don't create other lists; only the heading/blurb text changes per page.
+- Calendar feeds: Concerts → `concerts.ics`, Sports → `sports.ics` (home games), Seasonal → `seasonal.ics`. The subscribe links are filled in by `app.js`, `sports-app.js` and `seasonal-app.js` from `CONFIG.SITE_URL`.
+- `node scripts/build-ics.js` rebuilds all three. Seasonal events become all-day events from `sort` through `end`. The file's DTEND is the day after `end`, because calendar apps treat the end date as exclusive. Each event's description has the event's type, `when`, and `link`. Re-run the script after editing `concerts.js`, `sports.js` or `seasonal.js`.

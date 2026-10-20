@@ -1,0 +1,105 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GR Concerts//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Grand Rapids Seasonal Events
+X-WR-TIMEZONE:America/Detroit
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:2026-10-19-grand-rapids-ghost-tour-tours-around-michigan@gr-seasonal
+DTSTAMP:20261019T120000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261101
+SUMMARY:Grand Rapids Ghost Tour (Tours Around Michigan)
+LOCATION:Lyon Square\, 296 Lyon St NW\, Grand Rapids\, MI
+DESCRIPTION:Ghost Tour. Daily through Oct 31 (runs year-round) · evening t
+ ours\, see site for times. Info: https://toursaroundmichigan.com/tour/gra
+ nd-rapids-ghost-tour/ (confirm details with the organizer)
+URL:https://toursaroundmichigan.com/tour/grand-rapids-ghost-tour/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-19-grand-rapids-ghost-hunt-tour-tours-around-michiga@gr-season
+ al
+DTSTAMP:20261019T120000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261101
+SUMMARY:Grand Rapids Ghost Hunt Tour (Tours Around Michigan)
+LOCATION:40 Monroe Center NW (outside Shinola)\, Grand Rapids\, MI
+DESCRIPTION:Ghost Tour. Daily through Oct 31 (runs year-round) · see site 
+ for times. Info: https://toursaroundmichigan.com/tour/grand-rapids-ghost-
+ hunt-tour/ (confirm details with the organizer)
+URL:https://toursaroundmichigan.com/tour/grand-rapids-ghost-hunt-tour/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-ghosts-of-the-grand-paranormal-indoor-walking-tou@gr-season
+ al
+DTSTAMP:20261019T120000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261030
+SUMMARY:Ghosts of the Grand – Paranormal Indoor Walking Tour (21+)
+LOCATION:Amway Grand Plaza\, 187 Monroe Ave NW\, Grand Rapids\, MI
+DESCRIPTION:Ghost Tour. Oct 28–29 · tours 5:30–8:30 PM. Info: https://www.
+ eventbrite.com/e/ghosts-of-the-grand-a-paranormal-indoor-walking-tour-tic
+ kets-2002647431377 (confirm details with the organizer)
+URL:https://www.eventbrite.com/e/ghosts-of-the-grand-a-paranormal-indoor-w
+ alking-tour-tickets-2002647431377
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-18-grand-rapids-christkindl-markt@gr-seasonal
+DTSTAMP:20261019T120000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261225
+SUMMARY:Grand Rapids Christkindl Markt
+LOCATION:Downtown Market\, 435 Ionia Ave SW\, Grand Rapids\, MI
+DESCRIPTION:Christmas Market. Nov 18–Dec 24 · Wed–Sun (closed Mon/Tue & Th
+ anksgiving). Info: https://christkindlmarktgr.com/ (confirm details with 
+ the organizer)
+URL:https://christkindlmarktgr.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-18-holiday-market-at-studio-park@gr-seasonal
+DTSTAMP:20261019T120000Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261224
+SUMMARY:Holiday Market at Studio Park
+LOCATION:Studio Park Piazza\, downtown\, Grand Rapids\, MI
+DESCRIPTION:Christmas Market. Nov 18–Dec 23 · Wed–Sun (closed Mon/Tue & Th
+ anksgiving). Info: https://www.studioparkgr.com/holiday-market (confirm d
+ etails with the organizer)
+URL:https://www.studioparkgr.com/holiday-market
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-23-enlighten-at-meijer-gardens@gr-seasonal
+DTSTAMP:20261019T120000Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20270111
+SUMMARY:ENLIGHTEN at Meijer Gardens
+LOCATION:Frederik Meijer Gardens\, 1000 E Beltline Ave NE\, Grand Rapids\,
+  MI
+DESCRIPTION:Holiday Lights. Select nights Nov 23–Jan 10 · 5:30–8:30 PM\, t
+ imed tickets. Info: https://www.meijergardens.org/enlighten/ (confirm det
+ ails with the organizer)
+URL:https://www.meijergardens.org/enlighten/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-25-christmas-lite-show-drive-thru@gr-seasonal
+DTSTAMP:20261019T120000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20270103
+SUMMARY:Christmas Lite Show (drive-thru)
+LOCATION:LMCU Ballpark\, 4500 W River Dr NE\, Comstock Park\, Grand Rapids
+ \, MI
+DESCRIPTION:Holiday Lights. Nov 25–Jan 2 · Sun–Thu 5:30–9 PM\, Fri–Sat 5:3
+ 0–10 PM. Info: https://christmasliteshow.com/drive-thru/ (confirm details
+  with the organizer)
+URL:https://christmasliteshow.com/drive-thru/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
