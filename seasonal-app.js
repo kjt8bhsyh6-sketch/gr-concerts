@@ -11,13 +11,40 @@
   const sid = e => 'ev-' + GRICS.slug(e.sort + '-' + e.name);
   const list = SEASONAL.slice().sort((a, b) => a.sort.localeCompare(b.sort));
   Marks.seedDemo(list.map(sid)); // going / interested marks: shared code in marks.js
+  // ---- per-card calendar (all-day, spans sort..end; DTEND/Google end are exclusive, so the day after `end`) ----
+  // seasonal.js has no structured time field, so events are all-day; the "when" text goes in the description.
+  const byId = id => list.find(e => sid(e) === id);
+  const ymd = s => s.replace(/-/g, '');
+  const nextDay = s => { const [y, m, d] = s.split('-').map(Number); const t = new Date(Date.UTC(y, m - 1, d + 1)); return t.toISOString().slice(0, 10).replace(/-/g, ''); };
+  const PREFIX = { going: '★ Going: ', interested: '♥ Interested: ' };
+  const ctitle = (e, mark) => (PREFIX[mark] || '') + e.name;
+  const desc = e => `${e.type}. ${e.when}. Info: ${e.link} (confirm details with the organizer)`;
+  function gcal(e, mark) {
+    const q = new URLSearchParams({ action: 'TEMPLATE', text: ctitle(e, mark), dates: `${ymd(e.sort)}/${nextDay(e.end || e.sort)}`,
+      ctz: 'America/Detroit', location: e.location + ', Grand Rapids, MI', details: desc(e) });
+    return 'https://calendar.google.com/calendar/render?' + q;
+  }
+  function icsFile(e, mark) {
+    const esc = s => String(s).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
+    const fold = l => { const o = []; while (l.length > 74) { o.push(l.slice(0, 74)); l = ' ' + l.slice(74); } o.push(l); return o.join('\r\n'); };
+    const st = mark === 'going' ? ['STATUS:CONFIRMED', 'TRANSP:OPAQUE'] : mark === 'interested' ? ['STATUS:TENTATIVE', 'TRANSP:TRANSPARENT'] : ['TRANSP:TRANSPARENT'];
+    const L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//GR Concerts//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', `X-WR-CALNAME:${esc(e.name)}`,
+      'BEGIN:VEVENT', `UID:${GRICS.slug(e.sort + '-' + e.name)}@gr-seasonal`, `DTSTAMP:${ymd(e.added || e.sort)}T120000Z`,
+      `DTSTART;VALUE=DATE:${ymd(e.sort)}`, `DTEND;VALUE=DATE:${nextDay(e.end || e.sort)}`, `SUMMARY:${esc(ctitle(e, mark))}`, ...st,
+      `LOCATION:${esc(e.location + ', Grand Rapids, MI')}`, `DESCRIPTION:${esc(desc(e))}`, ...(e.link ? [`URL:${e.link}`] : []), 'END:VEVENT', 'END:VCALENDAR'];
+    return L.map(fold).join('\r\n') + '\r\n';
+  }
+  // Google link: title reflects the current mark at click time (★ Going / ♥ Interested)
+  const gcalFix = ev => { const a = ev.target.closest('a.gcal'); if (!a || !a.dataset.id) return; const e = byId(a.dataset.id); if (e) a.href = gcal(e, Marks.state(a.dataset.id)); };
+  document.addEventListener('click', gcalFix, true); document.addEventListener('auxclick', gcalFix, true); document.addEventListener('contextmenu', gcalFix, true);
   function card(e) {
     const id = sid(e), nw = isNew(e);
     return `<article class="card${nw ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-id="${id}"><div class="badges"><span class="tag">${h(e.type)}</span>${nw ? '<span class="new">NEW</span>' : ''}</div>
       <h3>${h(e.name)}</h3><p>${h(e.location)}</p><p>${h(e.when)}</p>${nw ? `<p class="added-on">Added ${new Date(e.added + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>` : ''}
       <div class="actions"><a class="b primary" href="${h(e.link)}" target="_blank" rel="noopener">Info / tickets</a>
       ${Marks.buttons(id)}
-      <button type="button" class="b share" data-id="${id}" data-title="${h(e.name)}">Share</button></div></article>`;
+      <button type="button" class="b share" data-id="${id}" data-title="${h(e.name)}">Share</button>
+      <button type="button" class="b ics" data-id="${id}">Apple</button><a class="b gcal" data-id="${id}" href="${h(gcal(e))}" target="_blank" rel="noopener">Google</a></div></article>`;
   }
   // an event runs from `sort` to `end` (optional; one-day event if missing)
   const overlaps = (e, f, t) => e.sort <= t && (e.end || e.sort) >= f;
@@ -54,6 +81,11 @@
       const url = SITE + '#' + id, title = b.dataset.title;
       if (navigator.share) { try { await navigator.share({ title, text: title + ' — Grand Rapids Happenings', url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
       try { await navigator.clipboard.writeText(url); toast('Link copied!'); } catch (e) { window.prompt('Copy this link:', url); }
+    } else if (b.classList.contains('ics')) {
+      const e = byId(id); if (!e) return;
+      const blob = new Blob([icsFile(e, Marks.state(id))], { type: 'text/calendar' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = id + '.ics';
+      document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     }
   });
   if (location.hash) { const t = document.getElementById(location.hash.slice(1)); if (t) { t.scrollIntoView(); t.classList.add('flash'); } }
