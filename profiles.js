@@ -3,7 +3,8 @@
 (function () {
   const API = "https://grh-profiles.grhappenings.workers.dev";
   const KS = "grh-session", KP = "grh-profile";
-  const nav = document.querySelector(".segtoggle"); if (!nav) return;
+  const hdr = document.querySelector("body > header, header"); if (!hdr) return;
+  const INFO = /privacy|terms/.test(location.pathname);
   const pg = /sports/.test(location.pathname) ? "sports" : /seasonal/.test(location.pathname) ? "seasonal" : "concerts";
   const OPT = {
     genres: ["Rock", "Indie", "Comedy", "Country", "Folk", "Punk", "Metal", "Electronic", "Hip-Hop", "Jazz", "Classical", "Musical"],
@@ -31,8 +32,11 @@
   }
 
   document.head.insertAdjacentHTML("beforeend", `<style>
-.mp-pill{display:block;margin:.6rem auto 0;min-height:0;padding:.3rem .8rem;border-radius:99px;font-size:.8rem;background:#fff;border:1px solid var(--line);color:var(--text);cursor:pointer}
-.mp-pill.mp-av{width:2.2rem;height:2.2rem;padding:0;font-weight:700;font-size:1rem;background:var(--accent);color:#fff;border-color:var(--accent)}
+header{position:relative}
+.mp-pill{position:absolute;top:.75rem;right:.75rem;margin:0;min-height:44px;padding:.55rem 1.2rem;border-radius:99px;font-size:1.2rem;font-weight:600;line-height:1.2;background:#fff;border:1px solid var(--line);color:var(--text);cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.25);white-space:nowrap}
+.mp-pill:hover{filter:brightness(.95)}
+.mp-pill.mp-av{width:3.3rem;height:3.3rem;padding:0;font-weight:700;font-size:1.5rem;background:var(--accent);color:#fff;border-color:#fff}
+@media (max-width:640px){header.mp-has{padding-top:4.6rem}.mp-pill{font-size:1.05rem;padding:.55rem 1rem}}
 .mp-back{position:fixed;inset:0;background:#0006;z-index:50}.mp-sheet{position:fixed;left:0;right:0;bottom:0;max-width:640px;margin:0 auto;background:#fff;border-radius:18px 18px 0 0;padding:1rem 1.2rem 1.4rem;z-index:51;max-height:88vh;overflow:auto;box-shadow:0 -4px 20px #0002}
 .mp-sheet h3{margin:.2rem 0 1rem;font-size:1.15rem;display:flex;justify-content:space-between;align-items:center}.mp-x{background:none;border:0;min-height:0;padding:0;font-size:1.3rem;cursor:pointer}
 .mp-l{font-size:.8rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:1rem 0 .4rem}.mp-h{font-weight:700;margin:.9rem 0 0}
@@ -47,7 +51,7 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
 .mp-strip ul{margin:0;padding:0 .9rem .6rem;list-style:none}.mp-strip li{padding:.4rem 0;border-top:1px solid #f0e2a8;font-size:.9rem}.mp-strip li span{display:block;color:var(--muted);font-size:.8rem}.mp-strip a{color:inherit}
 </style>`);
 
-  const pill = document.createElement("button"); pill.type = "button"; pill.className = "mp-pill"; nav.after(pill);
+  const pill = document.createElement("button"); pill.type = "button"; pill.className = "mp-pill"; hdr.classList.add("mp-has"); hdr.appendChild(pill);
   let strip = null;
 
   function close() { document.querySelectorAll(".mp-back,.mp-sheet").forEach(e => e.remove()); }
@@ -164,7 +168,7 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
     pill.setAttribute("aria-label", signed ? "Your profile (" + p.email + ")" : "Sign in or create a profile");
     pill.onclick = signed ? openProfile : openSignup;
     if (strip) { strip.remove(); strip = null; }
-    if (!signed) return;
+    if (!signed || INFO) return;
     const list = picks(Object.assign(blank(), p)), main = document.querySelector("main"); if (!main) return;
     strip = document.createElement("details"); strip.className = "mp-strip";
     strip.innerHTML = list.length ? `<summary>★ ${list.length} pick${list.length === 1 ? "" : "s"} for you this week ▾</summary><ul>${list.slice(0, 12).map(e => `<li>${esc(e[0])}<span>${esc(e[1])}</span></li>`).join("")}</ul>`
