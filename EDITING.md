@@ -67,6 +67,8 @@ Each concert card gets a **Who is this?** button next to Tickets when `bios.js` 
 - **Fact rule:** only write what a real source says. Keep it short and conservative (genre, where they're from, best-known songs/albums; for comedy/theater/symphony/family shows, what the show is). If you can't find reliable info (small local or tribute acts, dance parties), leave the act out. No entry = no button.
 - No photos — text only.
 
+**Daily check for new shows without a bio:** after updating `concerts.js`, run `node scripts/pending-bios.js`. It writes `data/pending-bios.json`, listing every show with no `bios.js` entry (This Week and Next Week first). For each new listing there, look for a real source (the artist's official site, the venue's event page, Bandsintown, Songkick, AllMusic or Wikipedia) and add a short 1–2 sentence entry with its `source` URL. If nothing reliable turns up, or the name is ambiguous (e.g. two bands with the same name), leave it out. Skip theme dance parties. The file is only a checklist; nothing in it shows on the site.
+
 ## Sports "Who is this?" bios (sports-bios.js)
 Every card on sports.html gets the same **Who is this?** button and pop-up as the concerts page, when `sports-bios.js` has an entry for that team.
 - Keys are team names **exactly** as written in `sports.js` — the `TEAMS` names (home teams) and each game's `opponent`.
