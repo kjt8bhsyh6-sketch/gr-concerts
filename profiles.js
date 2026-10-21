@@ -33,10 +33,10 @@
 
   document.head.insertAdjacentHTML("beforeend", `<style>
 header{position:relative}
-.mp-pill{position:absolute;top:.75rem;right:.75rem;margin:0;min-height:44px;padding:.55rem 1.2rem;border-radius:99px;font-size:1.2rem;font-weight:600;line-height:1.2;background:#fff;border:1px solid var(--line);color:var(--text);cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.25);white-space:nowrap}
+.mp-pill{position:absolute;top:10px;right:10px;margin:0;min-height:40px;padding:.36rem .96rem;border-radius:99px;font-size:.96rem;font-weight:600;line-height:1.2;background:#fff;border:1px solid var(--line);color:var(--text);cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.25);white-space:nowrap}
 .mp-pill:hover{filter:brightness(.95)}
-.mp-pill.mp-av{width:3.3rem;height:3.3rem;padding:0;font-weight:700;font-size:1.5rem;background:var(--accent);color:#fff;border-color:#fff}
-@media (max-width:640px){header.mp-has{padding-top:4.6rem}.mp-pill{font-size:1.05rem;padding:.55rem 1rem}}
+.mp-pill.mp-av{width:42px;height:42px;min-height:42px;padding:0;font-weight:700;font-size:1.15rem;background:var(--accent);color:#fff;border-color:#fff}
+@media (max-width:640px){header.mp-has{padding-top:3.7rem}}
 .mp-back{position:fixed;inset:0;background:#0006;z-index:50}.mp-sheet{position:fixed;left:0;right:0;bottom:0;max-width:640px;margin:0 auto;background:#fff;border-radius:18px 18px 0 0;padding:1rem 1.2rem 1.4rem;z-index:51;max-height:88vh;overflow:auto;box-shadow:0 -4px 20px #0002}
 .mp-sheet h3{margin:.2rem 0 1rem;font-size:1.15rem;display:flex;justify-content:space-between;align-items:center}.mp-x{background:none;border:0;min-height:0;padding:0;font-size:1.3rem;cursor:pointer}
 .mp-l{font-size:.8rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:1rem 0 .4rem}.mp-h{font-weight:700;margin:.9rem 0 0}
