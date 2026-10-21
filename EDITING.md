@@ -131,3 +131,8 @@ All three pages (Concerts, Sports, Seasonal) share one picker in `date-range.js`
 - Home-screen label: iOS uses `<meta name="apple-mobile-web-app-title">` and Android uses short_name. Both are "GR Happenings", because the full name gets cut off (iOS shows about 12–14 characters). `application-name` is the full name.
 - Icons are in `icons/`: apple-touch-icon.png (180), icon-192.png, icon-512.png, icon-maskable-512.png, favicon-32.png, favicon.ico. Design: a navy rounded square with an orange (#e4572e) "GR" and a white "Happenings" (DejaVu Sans Bold). The favicons show "GR" only.
 - Every page `<head>` has the same block: manifest, icon, apple-touch-icon, application-name, apple-mobile-web-app-title/capable, theme-color. If you add a page, copy that block and use relative paths.
+
+## Visitor profiles (profiles.js + worker/)
+- profiles.js adds the "Sign in / Create profile" pill, the sign-up/edit sheets and the "★ picks for you this week" strip on index/sports/seasonal. Its option lists (genres, venues, teams, event types) are at the top of the file.
+- The backend is the Cloudflare Worker in worker/ (deployed as https://grh-profiles.grhappenings.workers.dev, KV namespace GRH_PROFILES). Deploy: `cd worker && npx wrangler deploy`.
+- Email: sign-in links are sent by sendSignInEmail() via Brevo's free API once the BREVO_API_KEY Worker secret is set (`npx wrangler secret put BREVO_API_KEY`). Until then it runs in PREVIEW mode: the link is shown on screen and logged, not emailed. Do not merge to main until Brevo is set up.

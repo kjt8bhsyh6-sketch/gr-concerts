@@ -1,0 +1,10 @@
+name = "grh-profiles"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = true
+[vars]
+SITE_URL = "https://kjt8bhsyh6-sketch.github.io/gr-concerts/"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "3e4bc178e90940eaa813a8db724e1db9"
