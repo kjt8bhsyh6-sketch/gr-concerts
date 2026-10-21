@@ -26,16 +26,18 @@ function clean(p) {
 }
 
 // The one email sender. Provider is chosen by which secret is set:
-//   MAILJET_API_KEY + MAILJET_SECRET_KEY -> Mailjet Send API v3.1 (preferred, free 200/day, 6,000/mo)
+//   GMAIL_RELAY_URL + GMAIL_RELAY_SECRET  -> Google Apps Script relay, sends from grhappenings@gmail.com (primary)
+//   MAILJET_API_KEY + MAILJET_SECRET_KEY -> Mailjet Send API v3.1 (fallback, free 200/day, 6,000/mo)
 //   BREVO_API_KEY                         -> Brevo (legacy, optional)
 //   none                                  -> PREVIEW mode (link shown on screen; insecure, testing only)
 function emailMode(env) {
+  if (env.GMAIL_RELAY_URL && env.GMAIL_RELAY_SECRET) return "gmail-relay";
   if (env.MAILJET_API_KEY && env.MAILJET_SECRET_KEY) return "mailjet";
   if (env.BREVO_API_KEY) return "brevo";
   return "preview";
 }
 async function sendSignInEmail(env, email, link) {
-  const mode = emailMode(env);
+  let mode = emailMode(env);
   if (mode === "preview") { console.log(`[preview] sign-in link for ${email}: ${link}`); return { preview: true }; }
   const from = env.SENDER_EMAIL || "bill.jenkins@mail.grokbot.com";
   const name = "Grand Rapids Happenings";
@@ -43,6 +45,19 @@ async function sendSignInEmail(env, email, link) {
   const html = `<p>Tap to sign in (link works for 15 minutes, once):</p><p><a href="${link}">Sign in to Grand Rapids Happenings</a></p><p>If you didn't ask for this, ignore this email.</p>`;
   const text = `Sign in to Grand Rapids Happenings (works for 15 minutes, once):\n${link}\n\nIf you didn't ask for this, ignore this email.`;
   let r;
+  if (mode === "gmail-relay") {
+    try {
+      // Apps Script answers POST with a 302 to script.googleusercontent.com; following it (as GET) returns doPost output.
+      const g = await fetch(env.GMAIL_RELAY_URL, { method: "POST", redirect: "follow", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ secret: env.GMAIL_RELAY_SECRET, to: email, subject, html, text }) });
+      const body = await g.text();
+      let d = null; try { d = JSON.parse(body); } catch {}
+      if (g.ok && d && d.ok) return { preview: false };
+      console.log(`[gmail-relay] send failed ${g.status}: ${body.slice(0, 200)}`);
+    } catch (e) { console.log(`[gmail-relay] error: ${e}`); }
+    if (!(env.MAILJET_API_KEY && env.MAILJET_SECRET_KEY)) throw new Error("email send failed (gmail-relay)");
+    mode = "mailjet"; // fallback
+  }
   if (mode === "mailjet") {
     r = await fetch("https://api.mailjet.com/v3.1/send", {
       method: "POST",
