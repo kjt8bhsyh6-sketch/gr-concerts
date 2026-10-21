@@ -47,7 +47,7 @@ async function sendSignInEmail(env, email, link) {
     r = await fetch("https://api.mailjet.com/v3.1/send", {
       method: "POST",
       headers: { Authorization: "Basic " + btoa(`${env.MAILJET_API_KEY}:${env.MAILJET_SECRET_KEY}`), "Content-Type": "application/json" },
-      body: JSON.stringify({ Messages: [{ From: { Email: from, Name: name }, To: [{ Email: email }], Subject: subject, TextPart: text, HTMLPart: html }] }),
+      body: JSON.stringify({ Messages: [{ From: { Email: from, Name: name }, To: [{ Email: email }], Subject: subject, TextPart: text, HTMLPart: html, TrackClicks: "disabled", TrackOpens: "disabled" }] }),
     });
   } else {
     r = await fetch("https://api.brevo.com/v3/smtp/email", {
