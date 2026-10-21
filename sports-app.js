@@ -44,7 +44,7 @@
     return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span>${newBadge(n)}</div>
       <h3>${h(n.team)}</h3><p>${h(n.text)}</p>${addedLine(n)}<div class="actions${BIO[n.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a>${whoBtn('note-' + GRICS.slug(n.team), n.team)}</div></article>`;
   }
-  const DR = DateRange.init({ today, onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
+  const DR = DateRange.init({ today, lastDate: games.length ? games[games.length - 1].date : '', onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
   const weekEnd = DR.addD(today, 13 - ((new Date(today + 'T12:00').getDay() + 6) % 7));
   const sel = $('#f-team');
   sel.insertAdjacentHTML('beforeend', TEAMS.map(t => `<option>${h(t.name)}</option>`).join(''));
@@ -61,8 +61,8 @@
       $('#range-list').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">No games match these filters.</p>' : '<p class="few">No home games listed in those dates yet. Schedules get added as teams release them, so check back soon.</p>');
     }
     // default view: this week and next week (today through the Sunday that ends next week)
-    const all = games.filter(g => g.date <= weekEnd), l = all.filter(ok);
-    $('#games').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">No games match these filters.</p>' : '<p class="few">No home games this week or next. Tap 📅 Pick dates to look further out.</p>');
+    const all = inR ? [] : games.filter(g => g.date <= weekEnd), l = all.filter(ok); // empty while hidden: unique card ids
+    if (inR) $('#games').innerHTML = ''; else $('#games').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">No games match these filters.</p>' : '<p class="few">No home games this week or next. Tap 📅 Pick dates to look further out.</p>');
     const ns = SEASON_NOTES.filter(n => !t || n.team === t);
     $('#notes-wrap').hidden = !ns.length; $('#notes').innerHTML = ns.map(note).join('');
     newCount(games.filter(isNew).length + SEASON_NOTES.filter(isNew).length, $('#f-new'));

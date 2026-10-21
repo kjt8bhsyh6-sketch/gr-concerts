@@ -48,7 +48,7 @@
   }
   // an event runs from `sort` to `end` (optional; one-day event if missing)
   const overlaps = (e, f, t) => e.sort <= t && (e.end || e.sort) >= f;
-  const DR = DateRange.init({ today, onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
+  const DR = DateRange.init({ today, lastDate: list.map(e => e.end || e.sort).sort().pop(), onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
   const weekEnd = DR.addD(today, 13 - ((new Date(today + 'T12:00').getDay() + 6) % 7));
   $('#f-type').insertAdjacentHTML('beforeend', [...new Set(list.map(e => e.type))].sort().map(t => `<option>${h(t)}</option>`).join(''));
   function render() {
@@ -64,8 +64,8 @@
       $('#range-list').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">No events match these filters.</p>' : '<p class="few">No seasonal events listed in those dates yet. We add new ones as they\'re announced, so check back soon.</p>');
     }
     // default view: events ongoing or starting this week or next (today through the Sunday that ends next week)
-    const all = list.filter(e => overlaps(e, today, weekEnd)), l = all.filter(ok);
-    $('#seasonal').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">Nothing matches.</p>' : '<p class="few">No seasonal events this week or next. Tap 📅 Pick dates to look further out.</p>');
+    const all = inR ? [] : list.filter(e => overlaps(e, today, weekEnd)), l = all.filter(ok); // empty while hidden: unique card ids
+    if (inR) $('#seasonal').innerHTML = ''; else $('#seasonal').innerHTML = l.map(card).join('') || (all.length ? '<p class="few">Nothing matches.</p>' : '<p class="few">No seasonal events this week or next. Tap 📅 Pick dates to look further out.</p>');
     const n = list.filter(isNew).length, el = $('#newcount'); el.hidden = !n;
     el.innerHTML = `<span class="new">NEW</span> <strong>${n}</strong> new listing${n === 1 ? '' : 's'} added this week`;
   }

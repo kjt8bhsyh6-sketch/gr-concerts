@@ -20,6 +20,12 @@
   const fmt = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
   const cid = c => 'show-' + GRICS.id(c);
   const sortKey = c => c.date + String(GRICS.to24(c.time)[0]).padStart(2, '0') + String(GRICS.to24(c.time)[1]).padStart(2, '0');
+  // last night of a multi-night run: optional end:"YYYY-MM-DD", else read from a title like "(Nov 5–7)", "(…, Jan 15–24)", "(Nov 20–Dec 20)"
+  const MON = 'JanFebMarAprMayJunJulAugSepOctNovDec';
+  const endOf = c => { if (/^\d{4}-\d{2}-\d{2}$/.test(c.end || '')) return c.end;
+    const m = /\b([A-Z][a-z]{2})\s+(\d{1,2})\s*[–-]\s*(?:([A-Z][a-z]{2})\s+)?(\d{1,2})\)\s*$/.exec(c.artist); if (!m) return c.date;
+    const em = MON.indexOf(m[3] || m[1]) / 3 + 1; if (em < 1) return c.date; const y = +c.date.slice(0, 4) + (em < +c.date.slice(5, 7) ? 1 : 0);
+    const e = `${y}-${String(em).padStart(2, '0')}-${String(m[4]).padStart(2, '0')}`; return e > c.date ? e : c.date; };
   const shows = CONCERTS.slice().sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
 
   // ---- favorites ("I'm going" / "I'm interested"): shared code in marks.js, stored only in this browser ----
@@ -64,12 +70,14 @@
     document.querySelectorAll('section.wk').forEach(x => x.hidden = inR); $('#range-sec').hidden = !inR;
     $('.subtitle').textContent = inR ? `Shows from ${md(rg[0])} to ${md(rg[1])}` : 'Concerts, This Week and Next';
     if (inR) {
-      const all = shows.filter(c => c.date >= rg[0] && c.date <= rg[1]), l = all.filter(ok);
+      const all = shows.filter(c => c.date <= rg[1] && endOf(c) >= rg[0]), l = all.filter(ok);
       $('#range-h').textContent = `Shows from ${md(rg[0])} to ${md(rg[1])}`;
       $('#range-n').textContent = `${l.length} show${l.length === 1 ? '' : 's'}` + (l.length < all.length ? ` (of ${all.length}, filters on)` : '');
       $('#range-list').innerHTML = l.map(concertCard).join('') || (all.length ? '<p class="few">No shows match these filters.</p>' : '<p class="few">Nothing listed in those dates yet; check back, we add shows daily.</p>');
     }
+    // week sections are hidden in range view; leave them empty so card ids stay unique (anchors, pick taps, marks)
     ['this', 'next', 'later'].forEach(w => {
+      if (inR) { document.getElementById(w).innerHTML = ''; return; }
       const all = shows.filter(c => c.week === w), l = all.filter(ok), el = document.getElementById(w);
       el.innerHTML = l.map(concertCard).join('') ||
         '<p class="few">No shows match these filters.</p>';
@@ -78,7 +86,7 @@
     newCount(shows.filter(c => ago(c.date) <= 0 && isNew(c)).length, $('#f-new'));
   }
   // ---- date range picker ("Looking for something further out?"): shared code in date-range.js ----
-  const DR = DateRange.init({ today, onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
+  const DR = DateRange.init({ today, lastDate: shows.map(endOf).sort().pop(), onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
   document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
   $('#f-clear').addEventListener('click', () => { $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; render(); });
   $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
