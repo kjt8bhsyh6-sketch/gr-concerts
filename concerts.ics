@@ -245,6 +245,21 @@ URL:https://www.etix.com/ticket/p/82705457/skip-the-line-for-lakeview-gran
  d-rapids-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-24-the-insiders-tribute-to-tom-petty-with-kait-rose-@gr-concer
+ ts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261024T190000
+DTEND;TZID=America/Detroit:20261024T220000
+SUMMARY:The Insiders: Tribute to Tom Petty with Kait Rose & Co: Fleetwood 
+ Magic
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p
+ /88728565/the-insiderstribute-to-tom-petty-wfleetwood-magic-grand-rapids-
+ the-big-room (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/88728565/the-insiderstribute-to-tom-pett
+ y-wfleetwood-magic-grand-rapids-the-big-room
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-25-willey-central-acoustic-stew-music-guild@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261025T150000
@@ -560,6 +575,19 @@ DESCRIPTION:Regional Mexican\, 9:00 PM. Tickets/info: https://www.sectionl
 URL:https://www.sectionlive.com/the-intersection/events
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-l7-the-last-hurrah-tour-with-vial@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261030T200000
+DTEND;TZID=America/Detroit:20261030T230000
+SUMMARY:L7: The Last Hurrah Tour (with VIAL)
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Punk\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/58
+ 944296/l7the-last-hurrah-tour-2026-grand-rapids-the-big-room (confirm det
+ ails with the venue)
+URL:https://www.etix.com/ticket/p/58944296/l7the-last-hurrah-tour-2026-gra
+ nd-rapids-the-big-room
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-31-ringling-bros-and-barnum-bailey-the-greatest-show@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -812,6 +840,19 @@ URL:https://www.etix.com/ticket/p/30172810/said-the-sky-grand-rapids-the-i
  ntersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-06-andrea-gibson-s-love-letter-from-the-afterlife@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261106T193000
+DTEND;TZID=America/Detroit:20261106T223000
+SUMMARY:Andrea Gibson's Love Letter from the Afterlife
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Spoken Word\, 7:30 PM. Tickets/info: https://www.etix.com/tick
+ et/p/81959088/andrea-gibsons-love-letter-from-the-afterlife-grand-rapids-
+ the-big-room (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/81959088/andrea-gibsons-love-letter-from
+ -the-afterlife-grand-rapids-the-big-room
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-07-gr-symphony-midori-plays-shostakovich@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261107T193000
@@ -884,6 +925,19 @@ DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.etix.com/tick
  rsection-elevation (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/42446718/mega-80s-the-ultimate-80s-retro
  -party-grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-07-david-cross@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261107T190000
+DTEND;TZID=America/Detroit:20261107T220000
+SUMMARY:David Cross
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/
+ 97224940/david-cross-grand-rapids-the-big-room (confirm details with the 
+ venue)
+URL:https://www.etix.com/ticket/p/97224940/david-cross-grand-rapids-the-bi
+ g-room
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-08-trivium-crown-in-the-grave-world-tour@gr-concerts
@@ -1206,6 +1260,19 @@ DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
   the venue)
 URL:https://www.etix.com/ticket/p/57784142/boogie-t-grand-rapids-the-inter
  section
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-leslie-jones-i-m-hot-tour@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261114T200000
+DTEND;TZID=America/Detroit:20261114T230000
+SUMMARY:Leslie Jones – I'm Hot Tour
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/
+ 61506047/leslie-jonesim-hot-tour-grand-rapids-the-big-room (confirm detai
+ ls with the venue)
+URL:https://www.etix.com/ticket/p/61506047/leslie-jonesim-hot-tour-grand-r
+ apids-the-big-room
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-15-broadway-grand-rapids-maybe-happy-ending@gr-concerts
@@ -3477,6 +3544,19 @@ DESCRIPTION:Classical\, Showtimes on venue site. Tickets/info: https://www
  concerto (confirm details with the venue)
 URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  brahms-double-concerto
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-20-lucas-zelnick@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20270320T190000
+DTEND;TZID=America/Detroit:20270320T220000
+SUMMARY:Lucas Zelnick
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.ticketweb.com/even
+ t/lucas-zelnick-the-big-room-tickets/15005433 (confirm details with the v
+ enue)
+URL:https://www.ticketweb.com/event/lucas-zelnick-the-big-room-tickets/150
+ 05433
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-23-ali-wong-live@gr-concerts
