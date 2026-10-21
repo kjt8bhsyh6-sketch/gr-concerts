@@ -19,8 +19,12 @@
     const m = /GMT([+-]\d{2}):?(\d{2})?/.exec(s); return m ? `${m[1]}:${m[2] || '00'}` : '-05:00';
   }
   const iso = q => `${q.y}-${p(q.mo)}-${p(q.d)}T${p(q.h)}:${p(q.mi)}:00${offset(q)}`;
-  const slug = s => s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
-  const id = c => slug(c.date + '-' + c.artist);
+  const slugAll = s => s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const slug = s => slugAll(s).slice(0, 60);
+  // short stable hash (FNV-1a, base36) so long titles cut at 60 chars stay unique
+  const hash = s => { let x = 2166136261; for (let i = 0; i < s.length; i++) { x ^= s.charCodeAt(i); x = Math.imul(x, 16777619); } return (x >>> 0).toString(36).slice(0, 6); };
+  // card / UID id. Short titles keep their old id; long ones get a hash of the full title + time.
+  const id = c => { const f = slugAll(c.date + '-' + c.artist); return f.length <= 60 ? f : f.slice(0, 53).replace(/-$/, '') + '-' + hash(f + '|' + (c.time || '')); };
   const esc = s => String(s).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
   function fold(line) { const o = []; while (line.length > 74) { o.push(line.slice(0, 74)); line = ' ' + line.slice(74); } o.push(line); return o.join('\r\n'); }
   const VTZ = ['BEGIN:VTIMEZONE', 'TZID:America/Detroit', 'BEGIN:DAYLIGHT', 'TZOFFSETFROM:-0500', 'TZOFFSETTO:-0400', 'TZNAME:EDT',

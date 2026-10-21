@@ -156,7 +156,7 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
         const dow = new Date(g.date + "T12:00:00").getDay(), h = hour(g.time);
         const types = { Weekend: dow === 0 || dow === 6 || (dow === 5 && h >= 17), Weeknight: dow >= 1 && dow <= 4 && h >= 17, Matinee: h < 17, "Home openers": first[g.team] === g.date };
         const teamOk = !s.teams.length || has(s.teams, g.team), typeOk = !s.gameTypes.length || s.gameTypes.some(t => types[t]);
-        if (teamOk && typeOk) out.push([g.team.replace(/^(Grand Rapids|West Michigan) /, "") + " vs. " + g.opponent, dfmt(g.date) + " · " + g.time + " · " + g.venue, "game-" + GRICS.slug(g.date + "-" + g.team + " vs. " + g.opponent)]);
+        if (teamOk && typeOk) out.push([g.team.replace(/^(Grand Rapids|West Michigan) /, "") + " vs. " + g.opponent, dfmt(g.date) + " · " + g.time + " · " + g.venue, "game-" + GRICS.id({ date: g.date, artist: g.team + " vs. " + g.opponent, time: g.time })]);
       });
     } else if (pg === "seasonal" && typeof SEASONAL !== "undefined") {
       const t = p.seasonal.types; if (!t.length) return out;
