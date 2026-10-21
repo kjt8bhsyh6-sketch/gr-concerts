@@ -49,6 +49,10 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
 .mp-off .mp-c{opacity:.45}.mp-save{display:flex;justify-content:center;width:100%;margin-top:1.2rem}.mp-links{text-align:center;margin:.8rem 0 0;font-size:.85rem}.mp-links a{margin:0 .6rem}
 .mp-strip{margin:0 0 1rem;border:1px solid #e7b900;background:#fffbea;border-radius:10px}.mp-strip summary{padding:.55rem .9rem;font-weight:600;font-size:.92rem;cursor:pointer;list-style:none}
 .mp-strip ul{margin:0;padding:0 .9rem .6rem;list-style:none}.mp-strip li{padding:.4rem 0;border-top:1px solid #f0e2a8;font-size:.9rem}.mp-strip li span{display:block;color:var(--muted);font-size:.8rem}.mp-strip a{color:inherit}
+.mp-strip li.mp-pk{padding:0}.mp-pk a{display:flex;align-items:center;gap:.6rem;padding:.5rem .3rem;margin:0 -.3rem;border-radius:8px;text-decoration:none;color:inherit;min-height:44px;box-sizing:border-box}
+.mp-pk a:hover{background:#fff3c4}.mp-pk a:focus-visible{outline:2px solid var(--accent);outline-offset:1px}.mp-pk b{display:block;font-weight:600}.mp-pk i{margin-left:auto;font-style:normal;color:var(--muted);font-size:1.2rem;line-height:1}
+.card.mp-hl{animation:mp-hl 2.4s ease-out}@keyframes mp-hl{0%,35%{box-shadow:0 0 0 4px var(--accent),0 6px 22px #0003;background:#fffbea}100%{box-shadow:0 2px 8px #0000000d}}
+@media (prefers-reduced-motion:reduce){.card.mp-hl{animation:none;box-shadow:0 0 0 4px var(--accent)}}
 </style>`);
 
   const pill = document.createElement("button"); pill.type = "button"; pill.className = "mp-pill"; hdr.classList.add("mp-has"); hdr.appendChild(pill);
@@ -143,7 +147,7 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
       const c = p.concerts; if (!c.genres.length && !c.venues.length && !c.artists.length) return out;
       CONCERTS.filter(e => e.date >= today && e.date <= wkEnd).forEach(e => {
         if (has(c.genres, e.genre) || has(c.venues, e.venue) || c.artists.some(a => a.length > 1 && lc(e.artist).includes(lc(a))))
-          out.push([e.artist, dfmt(e.date) + " · " + e.time + " · " + e.venue]);
+          out.push([e.artist, dfmt(e.date) + " · " + e.time + " · " + e.venue, "show-" + GRICS.id(e)]);
       });
     } else if (pg === "sports" && typeof GAMES !== "undefined") {
       const s = p.sports; if (!s.teams.length && !s.gameTypes.length) return out;
@@ -152,11 +156,11 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
         const dow = new Date(g.date + "T12:00:00").getDay(), h = hour(g.time);
         const types = { Weekend: dow === 0 || dow === 6 || (dow === 5 && h >= 17), Weeknight: dow >= 1 && dow <= 4 && h >= 17, Matinee: h < 17, "Home openers": first[g.team] === g.date };
         const teamOk = !s.teams.length || has(s.teams, g.team), typeOk = !s.gameTypes.length || s.gameTypes.some(t => types[t]);
-        if (teamOk && typeOk) out.push([g.team.replace(/^(Grand Rapids|West Michigan) /, "") + " vs. " + g.opponent, dfmt(g.date) + " · " + g.time + " · " + g.venue]);
+        if (teamOk && typeOk) out.push([g.team.replace(/^(Grand Rapids|West Michigan) /, "") + " vs. " + g.opponent, dfmt(g.date) + " · " + g.time + " · " + g.venue, "game-" + GRICS.slug(g.date + "-" + g.team + " vs. " + g.opponent)]);
       });
     } else if (pg === "seasonal" && typeof SEASONAL !== "undefined") {
       const t = p.seasonal.types; if (!t.length) return out;
-      SEASONAL.filter(e => e.sort <= wkEnd && (e.end || e.sort) >= today && has(t, e.type)).forEach(e => out.push([e.name, e.when]));
+      SEASONAL.filter(e => e.sort <= wkEnd && (e.end || e.sort) >= today && has(t, e.type)).forEach(e => out.push([e.name, e.when, "ev-" + GRICS.slug(e.sort + "-" + e.name)]));
     }
     return out;
   }
@@ -171,11 +175,29 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
     if (!signed || INFO) return;
     const list = picks(Object.assign(blank(), p)), main = document.querySelector("main"); if (!main) return;
     strip = document.createElement("details"); strip.className = "mp-strip";
-    strip.innerHTML = list.length ? `<summary>★ ${list.length} pick${list.length === 1 ? "" : "s"} for you this week ▾</summary><ul>${list.slice(0, 12).map(e => `<li>${esc(e[0])}<span>${esc(e[1])}</span></li>`).join("")}</ul>`
+    strip.innerHTML = list.length ? `<summary>★ ${list.length} pick${list.length === 1 ? "" : "s"} for you this week ▾</summary><ul>${list.slice(0, 12).map(e => `<li class="mp-pk"><a href="${PAGE}#${esc(e[2])}" data-id="${esc(e[2])}"><span><b>${esc(e[0])}</b>${esc(e[1])}</span><i aria-hidden="true">›</i></a></li>`).join("")}</ul>`
       : `<summary>★ No picks for you this week. <a href="#" class="mp-edit">Edit interests</a></summary>`;
     main.prepend(strip);
+    strip.querySelectorAll(".mp-pk a").forEach(a => a.onclick = e => {
+      const c = document.getElementById(a.dataset.id); if (!c) return; // not rendered here (other page / filtered): follow the link
+      e.preventDefault(); strip.open = false; track("pick-open", "Profile: pick tapped");
+      history.replaceState(null, "", "#" + a.dataset.id); focusCard(c);
+    });
     const ed = strip.querySelector(".mp-edit"); if (ed) ed.onclick = e => { e.preventDefault(); openProfile(); };
   }
+
+  const PAGE = { concerts: "index.html", sports: "sports.html", seasonal: "seasonal.html" }[pg];
+  // scroll a card into view, flash it, and move keyboard focus to it
+  function focusCard(c) {
+    const rm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    c.scrollIntoView({ behavior: rm ? "auto" : "smooth", block: "center" });
+    if (!c.hasAttribute("tabindex")) c.setAttribute("tabindex", "-1");
+    c.focus({ preventScroll: true });
+    c.classList.remove("mp-hl"); void c.offsetWidth; c.classList.add("mp-hl");
+    clearTimeout(focusCard.t); focusCard.t = setTimeout(() => c.classList.remove("mp-hl"), 2600);
+  }
+  // arriving via page.html#card-id (e.g. a pick link from another page): highlight once the cards are rendered
+  if (/^#(show|game|ev)-/.test(location.hash)) setTimeout(() => { const c = document.getElementById(location.hash.slice(1)); if (c) focusCard(c); }, 150);
 
   async function boot() {
     const q = new URLSearchParams(location.search), tok = q.get("signin");
