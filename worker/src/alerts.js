@@ -59,13 +59,14 @@ async function hmac(key, msg) {
 export const unsubSig = (env, email) => hmac(env.ADMIN_KEY, "alerts-off:" + email);
 export async function unsubUrl(env, base, email) { return `${base}/alerts/off?e=${encodeURIComponent(email)}&k=${await unsubSig(env, email)}`; }
 
-export function renderEmail(env, email, picks, offUrl) {
+export const SUBJECTS = { weekly: "Your Grand Rapids picks this week", daily: "Your Grand Rapids picks: today's update", announced: "Just announced in Grand Rapids: your picks" };
+export function renderEmail(env, email, picks, offUrl, freq = "weekly") {
   const site = env.SITE_URL, page = k => k === "Concert" ? site : k === "Game" ? site + "sports.html" : site + "seasonal.html";
   const rows = picks.map(e => `<tr><td style="padding:12px 0;border-top:1px solid #e5e7eb">
 <div style="font-size:12px;color:#6b7280;text-transform:uppercase;letter-spacing:.04em">${esc(e.kind)}</div>
 <div style="font-size:17px;font-weight:700;color:#111827;margin:2px 0">${esc(e.title)}</div>
 <div style="font-size:14px;color:#374151">${esc(e.when)}${e.time ? " · " + esc(e.time) : ""}${e.venue ? " · " + esc(e.venue) : ""}</div>
-${e.link ? `<a href="${esc(e.link)}" style="display:inline-block;margin-top:6px;padding:6px 14px;background:#b45309;color:#fff;border-radius:99px;text-decoration:none;font-size:14px;font-weight:600">${e.seasonal ? "Details" : "Tickets"}</a>` : `<a href="${esc(page(e.kind))}" style="font-size:14px">Details</a>`}
+${e.link ? `<a href="${esc(e.link)}" style="display:inline-block;margin-top:6px;padding:6px 14px;background:#b45309;color:#fff;border-radius:99px;text-decoration:none;font-size:14px;font-weight:600">${e.seasonal ? "Details" : e.venueLink ? "Venue page" : "Tickets"}</a>` : `<a href="${esc(page(e.kind))}" style="font-size:14px">Details</a>`}
 </td></tr>`).join("");
   const html = `<!doctype html><html><body style="margin:0;background:#f3f4f6;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:24px 12px">
@@ -80,7 +81,7 @@ ${rows}
 </table></td></tr></table></body></html>`;
   const text = `Your Grand Rapids picks this week\n\n` + picks.map(e => `- ${e.title} | ${e.when}${e.time ? " " + e.time : ""} | ${e.venue || ""}\n  ${e.link || page(e.kind)}`).join("\n") +
     `\n\nSee all on Grand Rapids Happenings: ${site}\nUnsubscribe / manage alerts: ${offUrl}\n`;
-  return { subject: "Your Grand Rapids picks this week", html, text };
+  return { subject: SUBJECTS[freq] || SUBJECTS.weekly, html, text };
 }
 
 export async function listProfiles(env) {
@@ -89,3 +90,53 @@ export async function listProfiles(env) {
     for (const k of r.keys) { const v = await env.KV.get(k.name); if (v) try { out.push(JSON.parse(v)); } catch {} } } while (cursor);
   return out;
 }
+
+// ---- Pre-send link check ----
+// Dead = 404/410, DNS/connection failure (or Cloudflare 530). Bot-blocking answers (401/403/202/429, also 999) count as OK.
+// Results cached in KV (lc:<url>, 6 h) because a free-plan Worker gets only ~50 subrequests per run; a run checks at most
+// MAX_CHECKS new URLs, and a real send refuses to go out while any link is still unchecked.
+export const VENUE_PAGES = [
+  [/pyramid scheme/i, "https://pyramidschemebar.com/"],
+  [/intersection|stache|elevation/i, "https://www.sectionlive.com/the-intersection/events"],
+  [/van andel/i, "https://www.vanandelarena.com/events"],
+  [/devos/i, "https://www.devosperformancehall.com/events"],
+  [/glc live|20 monroe/i, "https://www.glcliveat20monroe.com/events"],
+  [/wealthy theatre/i, "https://grcmc.org/theatre"],
+  [/st\.? cecilia/i, "https://www.scmc-online.org/"],
+  [/dr\.? grins|b\.o\.b/i, "https://www.thebob.com/drgrins/"],
+  [/civic theatre/i, "https://grct.org/"],
+];
+const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36";
+const BOT_OK = new Set([401, 403, 202, 429, 999]);
+const MAX_CHECKS = 30, TIMEOUT = 6000;
+async function checkOne(url) {
+  const t0 = Date.now(), ctl = new AbortController(), tm = setTimeout(() => ctl.abort(), TIMEOUT);
+  try {
+    let r = await fetch(url, { method: "GET", redirect: "follow", signal: ctl.signal, headers: { "User-Agent": UA, Accept: "text/html,*/*" } });
+    try { r.body && r.body.cancel(); } catch {}
+    const s = r.status;
+    const status = s === 404 || s === 410 || s === 530 ? "dead" : s < 400 ? "ok" : BOT_OK.has(s) ? "ok-botblock" : "suspect";
+    return { status, http: s, ms: Date.now() - t0 };
+  } catch (e) {
+    const timeout = e.name === "AbortError";
+    return { status: timeout ? "timeout" : "dead", error: timeout ? "timeout" : String(e.message || e).slice(0, 120), ms: Date.now() - t0 };
+  } finally { clearTimeout(tm); }
+}
+export async function checkLinks(env, urls, { fresh = false } = {}) {
+  const res = {}, todo = [];
+  for (const u of [...new Set(urls.filter(Boolean))]) {
+    const c = !fresh && await env.KV.get("lc:" + u);
+    if (c) res[u] = { ...JSON.parse(c), cached: true }; else todo.push(u);
+  }
+  const now = todo.slice(0, MAX_CHECKS);
+  for (let i = 0; i < now.length; i += 6) {
+    const batch = await Promise.all(now.slice(i, i + 6).map(checkOne));
+    for (let j = 0; j < batch.length; j++) {
+      const u = now[i + j], r = { ...batch[j], at: new Date().toISOString() }; res[u] = r;
+      if (r.status !== "timeout") await env.KV.put("lc:" + u, JSON.stringify(r), { expirationTtl: 6 * 3600 });
+    }
+  }
+  for (const u of todo.slice(MAX_CHECKS)) res[u] = { status: "unchecked" };
+  return res;
+}
+export const venuePage = v => (VENUE_PAGES.find(([re]) => re.test(v || "")) || [])[1] || null;

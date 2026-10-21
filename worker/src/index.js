@@ -1,6 +1,6 @@
 // grh-profiles: visitor profiles for Grand Rapids Happenings (Cloudflare Workers free plan + KV).
 // KV keys: p:<email> profile JSON · t:<token> magic link (15 min TTL) · s:<session> session (30 days)
-import { loadData, matchPicks, renderEmail, listProfiles, unsubSig, unsubUrl } from "./alerts.js";
+import { loadData, matchPicks, renderEmail, listProfiles, unsubSig, unsubUrl, checkLinks, venuePage } from "./alerts.js";
 const ORIGINS = [/^https:\/\/kjt8bhsyh6-sketch\.github\.io$/, /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
 const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 30;
 const LIST = (a, n = 40) => Array.isArray(a) ? a.filter(x => typeof x === "string").map(x => x.trim().slice(0, 60)).filter(Boolean).slice(0, n) : [];
@@ -115,15 +115,33 @@ async function adminAlerts(req, env, url) {
   }
   let list = only ? eligible.filter(p => p.email === only) : eligible;
   if (only && !list.length) { const p = all.find(x => x.email === only); if (p) list = [p]; } // preview a non-opted profile's picks (override only)
+  // Pre-send link check over every link any recipient would get (+ venue fallbacks for dead ones).
+  const matched = list.map(p => [p, matchPicks(p, data)]);
+  const fresh = String(q("fresh") ?? "false") === "true";
+  let lc = await checkLinks(env, matched.flatMap(([, ps]) => ps.map(e => e.link)), { fresh });
+  const deadUrls = Object.keys(lc).filter(u => lc[u].status === "dead");
+  const fb = [...new Set(matched.flatMap(([, ps]) => ps.filter(e => deadUrls.includes(e.link)).map(e => venuePage(e.venue)).filter(Boolean)))];
+  if (fb.length) lc = { ...lc, ...(await checkLinks(env, fb)) };
+  const isOk = u => u && lc[u] && !["dead", "unchecked"].includes(lc[u].status);
+  const dropped = [], swapped = [];
+  for (const m of matched) m[1] = m[1].flatMap(e => {
+    if (!e.link || lc[e.link]?.status !== "dead") return [e];
+    const v = venuePage(e.venue);
+    if (v && isOk(v)) { swapped.push({ title: e.title, from: e.link, to: v }); return [{ ...e, link: v, venueLink: true }]; }
+    dropped.push({ title: e.title, link: e.link }); return [];
+  });
+  const vals = Object.values(lc), cnt = st => vals.filter(x => x.status === st).length;
+  const linkCheck = { checked: vals.length, ok: cnt("ok"), okBotBlock: cnt("ok-botblock"), suspect: cnt("suspect"), timeout: cnt("timeout"), dead: cnt("dead"), unchecked: cnt("unchecked"),
+    cachedResults: vals.filter(x => x.cached).length, swappedToVenuePage: swapped, droppedShows: dropped,
+    problems: Object.entries(lc).filter(([, r]) => !["ok", "ok-botblock"].includes(r.status)).map(([u, r]) => ({ url: u, ...r })) };
   const recips = [], skipped = [];
-  for (const p of list) {
-    const picks = matchPicks(p, data);
+  for (const [p, picks] of matched) {
     if (!picks.length) { skipped.push({ email: p.email, matches: 0 }); continue; }
     const off = await unsubUrl(env, base, p.email);
-    recips.push({ email: p.email, freq: p.alerts?.freq || "weekly", matches: picks.length, picks, ...renderEmail(env, p.email, picks, off) });
+    recips.push({ email: p.email, freq: p.alerts?.freq || "weekly", matches: picks.length, picks, ...renderEmail(env, p.email, picks, off, p.alerts?.freq) });
   }
   const summary = { profilesTotal: all.length, verifiedWithEmail: eligible.length + notOpted.length, optedIn: eligible.length, notOptedIn: notOpted.length,
-    optInField: "alerts.on (explicit toggle in profile)", wouldSend: recips.length, skippedZeroMatches: skipped.length,
+    optInField: "alerts.on (explicit toggle in profile)", linkCheck, wouldSend: recips.length, skippedZeroMatches: skipped.length,
     data: { concerts: data.concerts.length, games: data.games.length, seasonal: data.seasonal.length } };
   const view = r => ({ email: r.email, freq: r.freq, matches: r.matches, subject: r.subject, ...(includeHtml ? { html: r.html } : {}), picks: r.picks.map(e => `${e.date} ${e.time} ${e.title} @ ${e.venue}`) });
   if (dryRun) return json({}, { dryRun: true, ...summary, recipients: recips.map(view), skipped });
@@ -133,6 +151,7 @@ async function adminAlerts(req, env, url) {
     const r = recips[0], res = await relaySend(env, to, "[PREVIEW for " + r.email + "] " + r.subject, r.html, r.text);
     return json({}, { dryRun: false, override: to, previewOf: r.email, matches: r.matches, result: res });
   }
+  if (linkCheck.unchecked) return json({}, { error: `${linkCheck.unchecked} links not yet checked (subrequest limit); run dryRun again, then send`, linkCheck }, 409);
   if (!confirm) return json({}, { error: "real send to all recipients requires confirm=SEND-TO-ALL" }, 400);
   const results = [];
   for (const r of recips) { const res = await relaySend(env, r.email, r.subject, r.html, r.text); results.push({ email: r.email, matches: r.matches, ok: res.ok }); if (!res.ok) results[results.length - 1].err = res.relay; }
