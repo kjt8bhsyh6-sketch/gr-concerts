@@ -131,4 +131,18 @@ DESCRIPTION:Holiday Lights. Nov 25–Jan 2 · Sun–Thu 5:30–9 PM\, Fri–Sat 
 URL:https://christmasliteshow.com/drive-thru/
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-20-last-chance-holiday-market@gr-seasonal
+DTSTAMP:20261021T120000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Last Chance Holiday Market
+LOCATION:The Pyramid Scheme\, 68 Commerce Dr SW\, Grand Rapids\, MI
+DESCRIPTION:Holiday Market. Sun Dec 20 · starts 4 PM. Info: https://www.ti
+ cketweb.com/event/last-chance-holiday-market-the-pyramid-scheme-tickets/1
+ 4355814 (confirm details with the organizer)
+URL:https://www.ticketweb.com/event/last-chance-holiday-market-the-pyramid
+ -scheme-tickets/14355814
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR

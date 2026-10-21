@@ -24,54 +24,17 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-20-ian-sweet-meg-elsier-cheap-emotion@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261020T190000
-DTEND;TZID=America/Detroit:20261020T220000
-SUMMARY:IAN SWEET + Meg Elsier + Cheap Emotion
+UID:2026-10-21-high-score-comedy-round-10@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261021T200000
+DTEND;TZID=America/Detroit:20261021T230000
+SUMMARY:High Score Comedy: Round 10
 LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Indie Rock\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
- event/ian-sweet-meg-elsier-the-pyramid-scheme-tickets/14865223 (confirm d
- etails with the venue)
-URL:https://www.ticketweb.com/event/ian-sweet-meg-elsier-the-pyramid-schem
- e-tickets/14865223
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-20-dan-tyminski-band@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261020T193000
-DTEND;TZID=America/Detroit:20261020T223000
-SUMMARY:Dan Tyminski Band
-LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
-DESCRIPTION:Bluegrass\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
- erts/dan-tyminski-band-2026 (confirm details with the venue)
-URL:https://www.scmcgr.org/concerts/dan-tyminski-band-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-20-the-brook-the-bluff-the-werewolf-tour@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261020T200000
-DTEND;TZID=America/Detroit:20261020T230000
-SUMMARY:The Brook & The Bluff – The Werewolf Tour
-LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Indie Folk\, 8:00 PM. Tickets/info: https://www.etix.com/ticke
- t/p/64442619/skip-the-line-for-the-brook-the-bluff-grand-rapids-the-inter
- section-the-stache (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/64442619/skip-the-line-for-the-brook-the
- -bluff-grand-rapids-the-intersection-the-stache
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-20-afi-with-choir-boy@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261020T200000
-DTEND;TZID=America/Detroit:20261020T230000
-SUMMARY:AFI (with Choir Boy)
-LOCATION:The Intersection (main room)\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/45
- 437472/skip-the-line-for-afi-grand-rapids-the-intersection (confirm detai
- ls with the venue)
-URL:https://www.etix.com/ticket/p/45437472/skip-the-line-for-afi-grand-rap
- ids-the-intersection
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketweb.com/even
+ t/high-score-comedy-round-10-the-pyramid-scheme-tickets/15040123 (confirm
+  details with the venue)
+URL:https://www.ticketweb.com/event/high-score-comedy-round-10-the-pyramid
+ -scheme-tickets/15040123
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-22-phabies-ohly-kate-pillsbury@gr-concerts
@@ -227,6 +190,19 @@ URL:https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-grand-r
  apids-michigan-10-24-2026/event/080064C8BDBE6F9C
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-24-bingo-loco-halloween@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261024T183000
+DTEND;TZID=America/Detroit:20261024T213000
+SUMMARY:Bingo Loco: Halloween
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 6:30 PM. Tickets/info: https://www.etix.com/tick
+ et/p/37364607/bingo-locohalloween-grand-rapids-the-intersection (confirm 
+ details with the venue)
+URL:https://www.etix.com/ticket/p/37364607/bingo-locohalloween-grand-rapid
+ s-the-intersection
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-24-amaze-amuse-a-modern-day-magic-show-18-with-trino@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -240,6 +216,20 @@ DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://grcmc.org/event/amaze-
  irm details with the venue)
 URL:https://grcmc.org/event/amaze-amuse-a-modern-day-magic-show-18-with-tr
  ino-and-parker-william/1696
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-the-skies-revolt-still-teddy-glassfield-from-the-@gr-concer
+ ts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261024T190000
+DTEND;TZID=America/Detroit:20261024T220000
+SUMMARY:The Skies Revolt + Still.Teddy + Glassfield + From The Fleet
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/the-skies-revolt-stillteddy-the-pyramid-scheme-tickets/15013343 (co
+ nfirm details with the venue)
+URL:https://www.ticketweb.com/event/the-skies-revolt-stillteddy-the-pyrami
+ d-scheme-tickets/15013343
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-lakeview-wreck-my-night-tour@gr-concerts
@@ -317,6 +307,19 @@ DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/6
  tache (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/67206187/skip-the-line-for-dark-divine-g
  rand-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-26-slay-the-vote-2-0-18@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261026T190000
+DTEND;TZID=America/Detroit:20261026T220000
+SUMMARY:Slay The Vote 2.0 (18+)
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 7:00 PM. Tickets/info: https://www.ticketweb.com
+ /event/slay-the-vote-20-the-pyramid-scheme-tickets/14356034 (confirm deta
+ ils with the venue)
+URL:https://www.ticketweb.com/event/slay-the-vote-20-the-pyramid-scheme-ti
+ ckets/14356034
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-27-the-story-so-far@gr-concerts
@@ -478,6 +481,19 @@ URL:https://www.ticketweb.com/event/noah-gundersen-rites-of-spring-the-pyr
  amid-scheme-tickets/14938823
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-29-harryween-harry-styles-dance-night@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261029T203000
+DTEND;TZID=America/Detroit:20261029T233000
+SUMMARY:HARRYWEEN: Harry Styles Dance Night
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:30 PM. Tickets/info: https://www.etix.com/tick
+ et/p/83427799/harryweenharry-styles-dance-night-grand-rapids-the-intersec
+ tion-the-stache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/83427799/harryweenharry-styles-dance-nig
+ ht-grand-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-30-ringling-bros-and-barnum-bailey-the-greatest-show@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -490,6 +506,19 @@ DESCRIPTION:Family Show\, 7:00 PM. Tickets/info: https://www.ticketmaster.
  2026/event/0800642CD05D6249 (confirm details with the venue)
 URL:https://www.ticketmaster.com/ringling-bros-and-barnum-bailey-presents-
  grand-rapids-michigan-10-30-2026/event/0800642CD05D6249
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-dancin-with-the-devil-ft-garbage-angel-18@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261030T190000
+DTEND;TZID=America/Detroit:20261030T220000
+SUMMARY:Dancin' With The Devil ft. Garbage Angel (18+)
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/betka-pope-productions-presents-dancin-the-pyramid-scheme-tickets/1
+ 4953043 (confirm details with the venue)
+URL:https://www.ticketweb.com/event/betka-pope-productions-presents-dancin
+ -the-pyramid-scheme-tickets/14953043
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-30-gr-symphony-the-nightmare-before-christmas-in-con@gr-concer
@@ -580,6 +609,21 @@ LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
 DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.sectionlive.co
  m/the-intersection/events (confirm details with the venue)
 URL:https://www.sectionlive.com/the-intersection/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-twerk-or-treat-4-ft-dj-omega-supreme-dj-compositi@gr-concer
+ ts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261031T210000
+DTEND;TZID=America/Detroit:20261101T000000
+SUMMARY:Twerk or Treat 4 ft. DJ Omega Supreme + DJ Composition + Deeechild
+  + DJ Jodi Dro
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.ticketweb.com
+ /event/twerk-or-treat-4-ft-the-pyramid-scheme-tickets/14343904 (confirm d
+ etails with the venue)
+URL:https://www.ticketweb.com/event/twerk-or-treat-4-ft-the-pyramid-scheme
+ -tickets/14343904
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-01-ringling-bros-and-barnum-bailey-the-greatest-show@gr-concer
@@ -1069,6 +1113,20 @@ URL:https://www.ticketweb.com/event/resavoir-harmolodics-the-pyramid-schem
  e-tickets/15012863
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-13-music-for-the-masses-depeche-mode-vs-nine-inch-na@gr-concer
+ ts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261113T203000
+DTEND;TZID=America/Detroit:20261113T233000
+SUMMARY:Music For The Masses: Depeche Mode vs. Nine Inch Nails
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 8:30 PM. Tickets/info: https://www.etix.com/ticket/p
+ /34129516/music-for-the-massesdm-vs-nin-grand-rapids-the-intersection-the
+ -stache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/34129516/music-for-the-massesdm-vs-nin-g
+ rand-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-14-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261114T140000
@@ -1476,6 +1534,19 @@ URL:https://www.etix.com/ticket/p/85288926/hawthorne-heights-20th-annivers
  ary-of-if-only-you-were-lonely-grand-rapids-the-intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-21-dance-4-u-slayyyter-x-charli-xcx-night@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261121T200000
+DTEND;TZID=America/Detroit:20261121T230000
+SUMMARY:DANCE… 4 U: Slayyyter x Charli XCX Night
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://www.ticketweb.com
+ /event/dance-4-u-slayyyter-x-the-pyramid-scheme-tickets/14300704 (confirm
+  details with the venue)
+URL:https://www.ticketweb.com/event/dance-4-u-slayyyter-x-the-pyramid-sche
+ me-tickets/14300704
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-21-canabliss-after-glow-tour-18@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20261121T210000
@@ -1538,6 +1609,19 @@ DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/92
   with the venue)
 URL:https://www.etix.com/ticket/p/92085055/don-broco-grand-rapids-the-inte
  rsection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-24-high-score-comedy-round-11@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261124T200000
+DTEND;TZID=America/Detroit:20261124T230000
+SUMMARY:High Score Comedy: Round 11
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketweb.com/even
+ t/high-score-comedy-round-11-the-pyramid-scheme-tickets/15040133 (confirm
+  details with the venue)
+URL:https://www.ticketweb.com/event/high-score-comedy-round-11-the-pyramid
+ -scheme-tickets/15040133
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-25-underoath-define-the-great-line-20th-anniversary-@gr-concer
@@ -1677,6 +1761,19 @@ DESCRIPTION:Orchestral\, 3:00 PM. Tickets/info: https://www.ticketmaster.c
  F0BD7E7D83 (confirm details with the venue)
 URL:https://www.ticketmaster.com/love-actually-in-concert-grand-rapids-mic
  higan-11-29-2026/event/080064F0BD7E7D83
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-29-1976-1986-a-tribute@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261129T173000
+DTEND;TZID=America/Detroit:20261129T203000
+SUMMARY:1976/1986: A Tribute
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 5:30 PM. Tickets/info: https://www.ticketweb.com/eve
+ nt/19761986-a-tribute-the-pyramid-scheme-tickets/14243204 (confirm detail
+ s with the venue)
+URL:https://www.ticketweb.com/event/19761986-a-tribute-the-pyramid-scheme-
+ tickets/14243204
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-29-dexter-and-the-moonrocks-the-12-steps-tour-sold-o@gr-concer
@@ -2229,6 +2326,19 @@ DESCRIPTION:Holiday\, 6:30 PM. Tickets/info: https://grcmc.org/event/candl
 URL:https://grcmc.org/event/candlelight-christmas-classics/1707
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-17-high-score-comedy-round-12@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261217T200000
+DTEND;TZID=America/Detroit:20261217T230000
+SUMMARY:High Score Comedy: Round 12
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketweb.com/even
+ t/high-score-comedy-round-12-the-pyramid-scheme-tickets/15040143 (confirm
+  details with the venue)
+URL:https://www.ticketweb.com/event/high-score-comedy-round-12-the-pyramid
+ -scheme-tickets/15040143
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-17-candlelight-christmas-carols-on-strings-dec-17@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261217T204500
@@ -2301,6 +2411,19 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  13023 (confirm details with the venue)
 URL:https://www.ticketweb.com/event/cause-for-conflict-presents-conflict-t
  he-pyramid-scheme-tickets/15013023
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-domestic-problems-with-knee-deep-shag@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20261219T193000
+DTEND;TZID=America/Detroit:20261219T223000
+SUMMARY:Domestic Problems (with Knee Deep Shag)
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:30 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/85818089/domestic-problems-grand-rapids-the-intersection (confirm det
+ ails with the venue)
+URL:https://www.etix.com/ticket/p/85818089/domestic-problems-grand-rapids-
+ the-intersection
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-22-dolly-parton-s-smoky-mountain-christmas-carol@gr-concerts
@@ -2382,6 +2505,20 @@ DESCRIPTION:Family Show\, 2:00 PM. Tickets/info: https://www.ticketmaster.
  ent/08006523926A369D (confirm details with the venue)
 URL:https://www.ticketmaster.com/harlem-globetrotters-rivalry-tour-grand-r
  apids-michigan-01-03-2027/event/08006523926A369D
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-07-loners-club-x-lucid-lyfestyles-with-whothehellisc@gr-concer
+ ts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20270107T190000
+DTEND;TZID=America/Detroit:20270107T220000
+SUMMARY:Loners Club x Lucid Lyfestyles with WhoTheHellIsCarlo (18+)
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/loners-club-x-lucid-lyfestyles-the-pyramid-scheme-tickets/14376504 
+ (confirm details with the venue)
+URL:https://www.ticketweb.com/event/loners-club-x-lucid-lyfestyles-the-pyr
+ amid-scheme-tickets/14376504
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-08-deric-cahill-natural-consequences@gr-concerts
@@ -2771,6 +2908,19 @@ DESCRIPTION:Folk\, 7:30 PM. Tickets/info: https://www.scmcgr.org/concerts/
 URL:https://www.scmcgr.org/concerts/tommy-emmanuel-2027
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-29-emo-night-karaoke@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20270129T200000
+DTEND;TZID=America/Detroit:20270129T230000
+SUMMARY:Emo Night Karaoke
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Sing-Along\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/emo-night-karaoke-the-pyramid-scheme-tickets/14320564 (confirm deta
+ ils with the venue)
+URL:https://www.ticketweb.com/event/emo-night-karaoke-the-pyramid-scheme-t
+ ickets/14320564
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-29-gr-symphony-capriccio-espagnol@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270129T190000
@@ -2782,6 +2932,19 @@ DESCRIPTION:Classical\, Showtimes on venue site. Tickets/info: https://www
  e-espagnole (confirm details with the venue)
 URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  ravels-rapsodie-espagnole
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-30-kpop-night-k-winterland@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20270130T190000
+DTEND;TZID=America/Detroit:20270130T220000
+SUMMARY:KPOP Night: K-Winterland
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 7:00 PM. Tickets/info: https://www.ticketweb.com
+ /event/kpop-night-k-winterland-the-pyramid-scheme-tickets/14377244 (confi
+ rm details with the venue)
+URL:https://www.ticketweb.com/event/kpop-night-k-winterland-the-pyramid-sc
+ heme-tickets/14377244
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-30-cyclops-the-eye-witness-tour@gr-concerts
@@ -2894,6 +3057,19 @@ URL:https://www.etix.com/ticket/p/89090809/badfish-a-tribute-to-sublimewat
  ersection-elevation
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-11-now-clap-bob-the-drag-queen-s-on-tour@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20270211T180000
+DTEND;TZID=America/Detroit:20270211T210000
+SUMMARY:Now Clap! Bob The Drag Queen's on Tour
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Drag Show\, 6:00 PM. Tickets/info: https://www.ticketmaster.co
+ m/now-clap-bob-the-drag-queens-grand-rapids-michigan-02-11-2027/event/080
+ 06550C8E8695E (confirm details with the venue)
+URL:https://www.ticketmaster.com/now-clap-bob-the-drag-queens-grand-rapids
+ -michigan-02-11-2027/event/08006550C8E8695E
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-11-ashley-cooke-the-baby-blues-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270211T193000
@@ -2967,6 +3143,20 @@ DESCRIPTION:Dance Party\, 9:30 PM. Tickets/info: https://www.etix.com/tick
   details with the venue)
 URL:https://www.etix.com/ticket/p/75045829/2000s-rave-grand-rapids-the-int
  ersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-17-riley-with-super-sometimes-leisure-hour-shoreline@gr-concer
+ ts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20270217T190000
+DTEND;TZID=America/Detroit:20270217T220000
+SUMMARY:Riley! (with Super Sometimes\, Leisure Hour\, Shoreline)
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/57622950/riley-grand-rapids-the-intersection-the-stache (confirm deta
+ ils with the venue)
+URL:https://www.etix.com/ticket/p/57622950/riley-grand-rapids-the-intersec
+ tion-the-stache
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-18-john-scofield-dave-holland-duo@gr-concerts
@@ -3558,6 +3748,19 @@ DESCRIPTION:Musical\, 3:00 PM. Tickets/info: https://www.ticketmaster.com/
  2185 (confirm details with the venue)
 URL:https://www.ticketmaster.com/menopause-the-musical-grand-rapids-michig
  an-04-24-2027/event/0800654E7EE62185
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-24-49-winchester-change-of-plans-tour@gr-concerts
+DTSTAMP:20261021T120000Z
+DTSTART;TZID=America/Detroit:20270424T200000
+DTEND;TZID=America/Detroit:20270424T230000
+SUMMARY:49 Winchester – Change of Plans Tour
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
+ /86673580/49-winchesterchange-of-plans-tour-grand-rapids-the-intersection
+  (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/86673580/49-winchesterchange-of-plans-to
+ ur-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-25-mercyme-with-ben-fuller-peter-burton@gr-concerts
