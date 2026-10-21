@@ -25,18 +25,37 @@ function clean(p) {
   };
 }
 
-// The one email sender. Uses Brevo's free API once BREVO_API_KEY is set; otherwise preview mode.
+// The one email sender. Provider is chosen by which secret is set:
+//   MAILJET_API_KEY + MAILJET_SECRET_KEY -> Mailjet Send API v3.1 (preferred, free 200/day, 6,000/mo)
+//   BREVO_API_KEY                         -> Brevo (legacy, optional)
+//   none                                  -> PREVIEW mode (link shown on screen; insecure, testing only)
+function emailMode(env) {
+  if (env.MAILJET_API_KEY && env.MAILJET_SECRET_KEY) return "mailjet";
+  if (env.BREVO_API_KEY) return "brevo";
+  return "preview";
+}
 async function sendSignInEmail(env, email, link) {
-  if (!env.BREVO_API_KEY) { console.log(`[preview] sign-in link for ${email}: ${link}`); return { preview: true }; }
-  const r = await fetch("https://api.brevo.com/v3/smtp/email", {
-    method: "POST", headers: { "api-key": env.BREVO_API_KEY, "Content-Type": "application/json", accept: "application/json" },
-    body: JSON.stringify({
-      sender: { name: "Grand Rapids Happenings", email: env.SENDER_EMAIL || "bill.jenkins+gr@mail.grokbot.com" },
-      to: [{ email }], subject: "Your sign-in link for Grand Rapids Happenings",
-      htmlContent: `<p>Tap to sign in (link works for 15 minutes, once):</p><p><a href="${link}">Sign in to Grand Rapids Happenings</a></p><p>If you didn't ask for this, ignore this email.</p>`,
-    }),
-  });
-  if (!r.ok) throw new Error("email send failed " + r.status);
+  const mode = emailMode(env);
+  if (mode === "preview") { console.log(`[preview] sign-in link for ${email}: ${link}`); return { preview: true }; }
+  const from = env.SENDER_EMAIL || "bill.jenkins@mail.grokbot.com";
+  const name = "Grand Rapids Happenings";
+  const subject = "Your sign-in link for Grand Rapids Happenings";
+  const html = `<p>Tap to sign in (link works for 15 minutes, once):</p><p><a href="${link}">Sign in to Grand Rapids Happenings</a></p><p>If you didn't ask for this, ignore this email.</p>`;
+  const text = `Sign in to Grand Rapids Happenings (works for 15 minutes, once):\n${link}\n\nIf you didn't ask for this, ignore this email.`;
+  let r;
+  if (mode === "mailjet") {
+    r = await fetch("https://api.mailjet.com/v3.1/send", {
+      method: "POST",
+      headers: { Authorization: "Basic " + btoa(`${env.MAILJET_API_KEY}:${env.MAILJET_SECRET_KEY}`), "Content-Type": "application/json" },
+      body: JSON.stringify({ Messages: [{ From: { Email: from, Name: name }, To: [{ Email: email }], Subject: subject, TextPart: text, HTMLPart: html }] }),
+    });
+  } else {
+    r = await fetch("https://api.brevo.com/v3/smtp/email", {
+      method: "POST", headers: { "api-key": env.BREVO_API_KEY, "Content-Type": "application/json", accept: "application/json" },
+      body: JSON.stringify({ sender: { name, email: from }, to: [{ email }], subject, htmlContent: html, textContent: text }),
+    });
+  }
+  if (!r.ok) { console.log(`[${mode}] send failed ${r.status}: ${(await r.text()).slice(0, 300)}`); throw new Error("email send failed " + r.status); }
   return { preview: false };
 }
 
@@ -55,7 +74,7 @@ export default {
     const h = cors(req);
     const url = new URL(req.url), path = url.pathname;
     if (req.method === "OPTIONS") return h ? new Response(null, { status: 204, headers: h }) : new Response(null, { status: 403 });
-    if (path === "/" || path === "/health") return json(h || {}, { ok: true, service: "grh-profiles", emailMode: env.BREVO_API_KEY ? "brevo" : "preview" });
+    if (path === "/" || path === "/health") return json(h || {}, { ok: true, service: "grh-profiles", emailMode: emailMode(env) });
     if (!h) return json({}, { error: "origin not allowed" }, 403);
     try {
       if (path === "/auth/request" && req.method === "POST") {
