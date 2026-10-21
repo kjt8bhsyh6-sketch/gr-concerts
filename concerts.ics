@@ -712,19 +712,6 @@ URL:https://www.ticketmaster.com/the-string-cheese-incident-just-keep-gran
  d-rapids-michigan-11-04-2026/event/080064F8CB39B6AE
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-04-king-of-drag-the-royal-tour@gr-concerts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261104T190000
-DTEND;TZID=America/Detroit:20261104T220000
-SUMMARY:King of Drag: The Royal Tour
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Drag Show\, 7:00 PM. Tickets/info: https://www.ticketweb.com/e
- vent/king-of-drag-the-royal-the-pyramid-scheme-tickets/15019593 (confirm 
- details with the venue)
-URL:https://www.ticketweb.com/event/king-of-drag-the-royal-the-pyramid-sch
- eme-tickets/15019593
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-05-be-la-fleck-my-bluegrass-heart@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261105T193000
