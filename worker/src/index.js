@@ -1,5 +1,6 @@
 // grh-profiles: visitor profiles for Grand Rapids Happenings (Cloudflare Workers free plan + KV).
 // KV keys: p:<email> profile JSON · t:<token> magic link (15 min TTL) · s:<session> session (30 days)
+import { loadData, matchPicks, renderEmail, listProfiles, unsubSig, unsubUrl } from "./alerts.js";
 const ORIGINS = [/^https:\/\/kjt8bhsyh6-sketch\.github\.io$/, /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
 const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 30;
 const LIST = (a, n = 40) => Array.isArray(a) ? a.filter(x => typeof x === "string").map(x => x.trim().slice(0, 60)).filter(Boolean).slice(0, n) : [];
@@ -74,6 +75,70 @@ async function sendSignInEmail(env, email, link) {
   return { preview: false };
 }
 
+// Generic send through the Gmail Apps Script relay only (used for alert emails; Mailjet is useless for outside inboxes).
+async function relaySend(env, to, subject, html, text) {
+  if (!(env.GMAIL_RELAY_URL && env.GMAIL_RELAY_SECRET)) throw new Error("gmail relay not configured");
+  const g = await fetch(env.GMAIL_RELAY_URL, { method: "POST", redirect: "follow", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ secret: env.GMAIL_RELAY_SECRET, to, subject, html, text }) });
+  const body = await g.text(); let d = null; try { d = JSON.parse(body); } catch {}
+  return { ok: !!(g.ok && d && d.ok), status: g.status, relay: d || body.slice(0, 200) };
+}
+const page = (title, body, status = 200) => new Response(`<!doctype html><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><body style="font-family:system-ui,sans-serif;max-width:520px;margin:3rem auto;padding:0 1rem;line-height:1.5"><h2>${title}</h2>${body}</body>`, { status, headers: { "Content-Type": "text/html; charset=utf-8" } });
+const safeEq = (a, b) => typeof a === "string" && typeof b === "string" && a.length === b.length && [...a].reduce((x, c, i) => x | (c.charCodeAt(0) ^ b.charCodeAt(i)), 0) === 0;
+
+async function alertsOff(req, env, url) {
+  const e = String(url.searchParams.get("e") || "").toLowerCase(), k = String(url.searchParams.get("k") || "");
+  if (!env.ADMIN_KEY || !validEmail(e) || !safeEq(k, await unsubSig(env, e))) return page("Link not valid", "<p>This unsubscribe link is not valid. Sign in on the site and turn alerts off under your profile.</p>", 400);
+  const site = env.SITE_URL;
+  if (req.method === "GET") return page("Turn off alert emails?", `<p>Stop "Your Grand Rapids picks this week" emails to <b>${e.replace(/</g, "&lt;")}</b>?</p><form method="post"><button style="font:inherit;padding:.6rem 1.2rem;border-radius:99px;border:0;background:#b45309;color:#fff;cursor:pointer">Turn off alerts</button></form><p><a href="${site}">Back to Grand Rapids Happenings</a> (sign in to edit your picks or turn alerts back on).</p>`);
+  const raw = await env.KV.get("p:" + e);
+  if (raw) { const p = JSON.parse(raw); p.alerts = { ...(p.alerts || {}), on: false }; p.alertsOffAt = new Date().toISOString(); await env.KV.put("p:" + e, JSON.stringify(p)); }
+  return page("Alerts turned off", `<p>You won't get alert emails at <b>${e.replace(/</g, "&lt;")}</b> anymore. Your profile and picks are kept; delete them anytime from your profile.</p><p><a href="${site}">Back to Grand Rapids Happenings</a></p>`);
+}
+
+async function adminAlerts(req, env, url) {
+  if (!env.ADMIN_KEY || !safeEq(req.headers.get("X-Admin-Key") || "", env.ADMIN_KEY)) return json({}, { error: "forbidden" }, 403);
+  const b = req.method === "POST" ? await req.json().catch(() => ({})) : {};
+  const q = k => b[k] ?? url.searchParams.get(k);
+  const dryRun = String(q("dryRun") ?? "true") !== "false";
+  const to = q("to") ? String(q("to")).trim().toLowerCase() : null;     // override: send only to this address
+  const only = q("only") ? String(q("only")).trim().toLowerCase() : null; // limit to one profile's picks
+  const confirm = q("confirm") === "SEND-TO-ALL";
+  const includeHtml = String(q("html") ?? "true") !== "false";
+  const data = await loadData(env, b.data);
+  const base = url.origin;
+  const all = await listProfiles(env);
+  const eligible = [], notOpted = [];
+  for (const p of all) {
+    if (!validEmail(p.email) || !p.lastSignIn) continue; // verified = completed a magic-link sign-in
+    (p.alerts && p.alerts.on ? eligible : notOpted).push(p);
+  }
+  let list = only ? eligible.filter(p => p.email === only) : eligible;
+  if (only && !list.length) { const p = all.find(x => x.email === only); if (p) list = [p]; } // preview a non-opted profile's picks (override only)
+  const recips = [], skipped = [];
+  for (const p of list) {
+    const picks = matchPicks(p, data);
+    if (!picks.length) { skipped.push({ email: p.email, matches: 0 }); continue; }
+    const off = await unsubUrl(env, base, p.email);
+    recips.push({ email: p.email, freq: p.alerts?.freq || "weekly", matches: picks.length, picks, ...renderEmail(env, p.email, picks, off) });
+  }
+  const summary = { profilesTotal: all.length, verifiedWithEmail: eligible.length + notOpted.length, optedIn: eligible.length, notOptedIn: notOpted.length,
+    optInField: "alerts.on (explicit toggle in profile)", wouldSend: recips.length, skippedZeroMatches: skipped.length,
+    data: { concerts: data.concerts.length, games: data.games.length, seasonal: data.seasonal.length } };
+  const view = r => ({ email: r.email, freq: r.freq, matches: r.matches, subject: r.subject, ...(includeHtml ? { html: r.html } : {}), picks: r.picks.map(e => `${e.date} ${e.time} ${e.title} @ ${e.venue}`) });
+  if (dryRun) return json({}, { dryRun: true, ...summary, recipients: recips.map(view), skipped });
+  if (to) {
+    if (!validEmail(to)) return json({}, { error: "bad to" }, 400);
+    if (!recips.length) return json({}, { error: "no recipient with matches to preview (use only=<email>)" }, 400);
+    const r = recips[0], res = await relaySend(env, to, "[PREVIEW for " + r.email + "] " + r.subject, r.html, r.text);
+    return json({}, { dryRun: false, override: to, previewOf: r.email, matches: r.matches, result: res });
+  }
+  if (!confirm) return json({}, { error: "real send to all recipients requires confirm=SEND-TO-ALL" }, 400);
+  const results = [];
+  for (const r of recips) { const res = await relaySend(env, r.email, r.subject, r.html, r.text); results.push({ email: r.email, matches: r.matches, ok: res.ok }); if (!res.ok) results[results.length - 1].err = res.relay; }
+  return json({}, { dryRun: false, sent: results.filter(x => x.ok).length, failed: results.filter(x => !x.ok).length, ...summary, results });
+}
+
 async function session(req, env) {
   const m = (req.headers.get("Authorization") || "").match(/^Bearer ([a-f0-9]{64})$/);
   if (!m) return null;
@@ -90,6 +155,8 @@ export default {
     const url = new URL(req.url), path = url.pathname;
     if (req.method === "OPTIONS") return h ? new Response(null, { status: 204, headers: h }) : new Response(null, { status: 403 });
     if (path === "/" || path === "/health") return json(h || {}, { ok: true, service: "grh-profiles", emailMode: emailMode(env) });
+    if (path === "/alerts/off" && (req.method === "GET" || req.method === "POST")) return alertsOff(req, env, url);
+    if (path === "/admin/alerts" && (req.method === "GET" || req.method === "POST")) { try { return await adminAlerts(req, env, url); } catch (e) { return json({}, { error: String(e.message || e) }, 500); } }
     if (!h) return json({}, { error: "origin not allowed" }, 403);
     try {
       if (path === "/auth/request" && req.method === "POST") {
