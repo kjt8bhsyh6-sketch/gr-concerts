@@ -2,6 +2,9 @@ name = "grh-profiles"
 main = "src/index.js"
 compatibility_date = "2026-10-01"
 workers_dev = true
+# First-party API on the site's own domain (same origin as Pages) so the session cookie is first-party and
+# survives Safari ITP; the Worker strips the /api prefix. workers.dev stays up for old cached pages.
+routes = [{ pattern = "grhappenings.com/api/*", zone_name = "grhappenings.com" }]
 [vars]
 SITE_URL = "https://grhappenings.com/"
 # CAN-SPAM postal address shown in every email footer (Worker alerts + scripts/weekly-email.js). Never a home address.

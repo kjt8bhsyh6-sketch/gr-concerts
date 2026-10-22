@@ -1,8 +1,16 @@
 // grh-profiles: visitor profiles for Grand Rapids Happenings (Cloudflare Workers free plan + KV).
-// KV keys: p:<email> profile JSON · t:<token> magic link (15 min TTL) · s:<session> session (30 days)
+// KV keys: p:<email> profile JSON · t:<token> magic link (15 min TTL) · c:<email> 6-digit code for that link (15 min, 5 tries)
+//          s:<session> {email,at} session (1 year, rolling: TTL renewed at most once a day on use)
+// Served two ways: https://grhappenings.com/api/* (Worker route, first-party; sets HttpOnly cookie grh_s) and
+// https://grh-profiles.grhappenings.workers.dev/* (legacy; Bearer token only). The /api prefix is stripped.
 import { loadData, matchPicks, renderEmail, listProfiles, unsubSig, unsubUrl, checkLinks, venuePage } from "./alerts.js";
 const ORIGINS = [/^https:\/\/kjt8bhsyh6-sketch\.github\.io$/, /^https:\/\/(www\.)?grhappenings\.com$/, /^https:\/\/([a-z0-9-]+\.)?grhappenings\.pages\.dev$/, /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
-const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 30;
+const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 365, RENEW_AFTER = 60 * 60 * 24 * 1000, CODE_TRIES = 5;
+const COOKIE = "grh_s";
+// First-party cookie only when the browser talks to the Worker on the site's own host (grhappenings.com/api or localhost dev).
+const firstParty = (req, url) => { const o = req.headers.get("Origin"); return (!o || o === url.origin) && (url.hostname === "grhappenings.com" || url.hostname === "localhost" || url.hostname === "127.0.0.1"); };
+const setCookie = (sid, url, maxAge = SESSION_TTL) => `${COOKIE}=${sid}; Max-Age=${maxAge}; Path=/api; HttpOnly; SameSite=Lax${url.protocol === "https:" ? "; Secure" : ""}`;
+const code6 = () => String(crypto.getRandomValues(new Uint32Array(1))[0] % 1000000).padStart(6, "0");
 const LIST = (a, n = 40) => Array.isArray(a) ? a.filter(x => typeof x === "string").map(x => x.trim().slice(0, 60)).filter(Boolean).slice(0, n) : [];
 
 function cors(req) {
@@ -37,14 +45,14 @@ function emailMode(env) {
   if (env.BREVO_API_KEY) return "brevo";
   return "preview";
 }
-async function sendSignInEmail(env, email, link) {
+async function sendSignInEmail(env, email, link, code) {
   let mode = emailMode(env);
-  if (mode === "preview") { console.log(`[preview] sign-in link for ${email}: ${link}`); return { preview: true }; }
+  if (mode === "preview") { console.log(`[preview] sign-in for ${email}: code ${code} link ${link}`); return { preview: true }; }
   const from = env.SENDER_EMAIL || "bill.jenkins@mail.grokbot.com";
   const name = "Grand Rapids Happenings";
-  const subject = "Your sign-in link for Grand Rapids Happenings";
-  const html = `<p>Tap to sign in (link works for 15 minutes, once):</p><p><a href="${link}">Sign in to Grand Rapids Happenings</a></p><p>If you didn't ask for this, ignore this email.</p>`;
-  const text = `Sign in to Grand Rapids Happenings (works for 15 minutes, once):\n${link}\n\nIf you didn't ask for this, ignore this email.`;
+  const subject = `${code} is your Grand Rapids Happenings sign-in code`;
+  const html = `<p>Your sign-in code is:</p><p style="font-size:28px;font-weight:700;letter-spacing:6px;margin:8px 0">${code}</p><p>Type it on the sign-in screen (handy if you use the site from your home screen), or tap the link:</p><p><a href="${link}">Sign in to Grand Rapids Happenings</a></p><p>The code and link work for 15 minutes, once. If you didn't ask for this, ignore this email.</p>`;
+  const text = `Your Grand Rapids Happenings sign-in code: ${code}\n\nType it on the sign-in screen, or open this link:\n${link}\n\nThe code and link work for 15 minutes, once. If you didn't ask for this, ignore this email.`;
   let r;
   if (mode === "gmail-relay") {
     try {
@@ -158,20 +166,51 @@ async function adminAlerts(req, env, url) {
   return json({}, { dryRun: false, sent: results.filter(x => x.ok).length, failed: results.filter(x => !x.ok).length, ...summary, results });
 }
 
-async function session(req, env) {
+// Candidate session ids: first-party cookie first, then Bearer token (localStorage fallback / workers.dev).
+function sessionIds(req) {
+  const c = (req.headers.get("Cookie") || "").match(new RegExp("(?:^|;\\s*)" + COOKIE + "=([a-f0-9]{64})"));
   const m = (req.headers.get("Authorization") || "").match(/^Bearer ([a-f0-9]{64})$/);
-  if (!m) return null;
-  const email = await env.KV.get("s:" + m[1]);
-  if (!email) return null;
+  return [...new Set([c && c[1], m && m[1]].filter(Boolean))];
+}
+const sessionId = req => sessionIds(req)[0] || null;
+async function session(req, env) {
+  for (const sid of sessionIds(req)) { const s = await session1(env, sid); if (s) return s; }
+  return null;
+}
+async function session1(env, sid) {
+  const raw = await env.KV.get("s:" + sid);
+  if (!raw) return null;
+  let v; try { v = JSON.parse(raw); } catch { v = null; }
+  if (!v || typeof v !== "object") v = { email: raw, at: 0 }; // old format: plain email (30-day sessions)
   // A deleted account invalidates every session for that email (profile must still exist).
-  if (!(await env.KV.get("p:" + email))) { await env.KV.delete("s:" + m[1]); return null; }
-  return { sid: m[1], email };
+  if (!(await env.KV.get("p:" + v.email))) { await env.KV.delete("s:" + sid); return null; }
+  let renewed = false;
+  if (Date.now() - (v.at || 0) > RENEW_AFTER) { await env.KV.put("s:" + sid, JSON.stringify({ email: v.email, at: Date.now() }), { expirationTtl: SESSION_TTL }); renewed = true; }
+  return { sid, email: v.email, renewed };
+}
+async function startSession(env, email, draft) {
+  let prof = JSON.parse((await env.KV.get("p:" + email)) || "null");
+  if (!prof) prof = { email, created: new Date().toISOString(), ...clean(draft) };
+  prof.lastSignIn = new Date().toISOString();
+  await env.KV.put("p:" + email, JSON.stringify(prof));
+  const sid = rand();
+  await env.KV.put("s:" + sid, JSON.stringify({ email, at: Date.now() }), { expirationTtl: SESSION_TTL });
+  return { sid, prof };
 }
 
 export default {
   async fetch(req, env) {
-    const h = cors(req);
-    const url = new URL(req.url), path = url.pathname;
+    const res = await handle(req, env);
+    return res;
+  },
+};
+async function handle(req, env) {
+    const h0 = cors(req);
+    const url = new URL(req.url), path = url.pathname.replace(/^\/api(?=\/|$)/, "") || "/";
+    const fp = firstParty(req, url);
+    // Same-origin calls (grhappenings.com/api) send no Origin on GET; allow them as first-party.
+    const h = h0 || (fp ? {} : null);
+    if (h0) h0["Access-Control-Allow-Credentials"] = "true";
     if (req.method === "OPTIONS") return h ? new Response(null, { status: 204, headers: h }) : new Response(null, { status: 403 });
     if (path === "/" || path === "/health") return json(h || {}, { ok: true, service: "grh-profiles", emailMode: emailMode(env) });
     if (path === "/alerts/off" && (req.method === "GET" || req.method === "POST")) return alertsOff(req, env, url);
@@ -184,11 +223,12 @@ export default {
         if (!validEmail(email)) return json(h, { error: "Enter a valid email." }, 400);
         let ret = String(b.returnTo || env.SITE_URL);
         if (!ORIGINS.some(r => r.test(new URL(ret).origin))) ret = env.SITE_URL;
-        const tok = rand();
+        const tok = rand(), code = code6();
         await env.KV.put("t:" + tok, JSON.stringify({ email, draft: b.profile ? clean(b.profile) : null }), { expirationTtl: LINK_TTL });
+        await env.KV.put("c:" + email, JSON.stringify({ code, tok, n: 0 }), { expirationTtl: LINK_TTL }); // newest request wins
         const u = new URL(ret); u.searchParams.set("signin", tok);
-        const sent = await sendSignInEmail(env, email, u.toString());
-        return json(h, sent.preview ? { ok: true, preview: true, link: u.toString() } : { ok: true });
+        const sent = await sendSignInEmail(env, email, u.toString(), code);
+        return json(h, sent.preview ? { ok: true, preview: true, link: u.toString(), code } : { ok: true });
       }
       if (path === "/auth/verify" && req.method === "POST") {
         const b = await req.json().catch(() => ({}));
@@ -198,31 +238,47 @@ export default {
         if (!raw) return json(h, { error: "This link expired or was already used. Request a new one." }, 400);
         await env.KV.delete("t:" + tok);
         const { email, draft } = JSON.parse(raw);
-        let prof = JSON.parse((await env.KV.get("p:" + email)) || "null");
-        if (!prof) prof = { email, created: new Date().toISOString(), ...clean(draft) };
-        prof.lastSignIn = new Date().toISOString();
-        await env.KV.put("p:" + email, JSON.stringify(prof));
-        const sid = rand();
-        await env.KV.put("s:" + sid, email, { expirationTtl: SESSION_TTL });
-        return json(h, { ok: true, session: sid, profile: prof });
+        const c = JSON.parse((await env.KV.get("c:" + email)) || "null");
+        if (c && c.tok === tok) await env.KV.delete("c:" + email);
+        const { sid, prof } = await startSession(env, email, draft);
+        return withCookie(json(h, { ok: true, session: sid, profile: prof }), fp && setCookie(sid, url));
+      }
+      if (path === "/auth/code" && req.method === "POST") {
+        const b = await req.json().catch(() => ({}));
+        const email = String(b.email || "").trim().toLowerCase(), code = String(b.code || "").replace(/\D/g, "");
+        if (!validEmail(email) || code.length !== 6) return json(h, { error: "Enter your email and the 6-digit code." }, 400);
+        const c = JSON.parse((await env.KV.get("c:" + email)) || "null");
+        const bad = "That code isn't right, or it expired. Check the newest email or request a new code.";
+        if (!c) return json(h, { error: bad }, 400);
+        if (!safeEq(code, c.code)) {
+          if (++c.n >= CODE_TRIES) { await env.KV.delete("c:" + email); await env.KV.delete("t:" + c.tok); return json(h, { error: "Too many tries. Request a new code." }, 429); }
+          await env.KV.put("c:" + email, JSON.stringify(c), { expirationTtl: LINK_TTL });
+          return json(h, { error: bad }, 400);
+        }
+        const raw = await env.KV.get("t:" + c.tok);
+        await env.KV.delete("c:" + email); await env.KV.delete("t:" + c.tok);
+        if (!raw) return json(h, { error: bad }, 400);
+        const { sid, prof } = await startSession(env, email, JSON.parse(raw).draft);
+        return withCookie(json(h, { ok: true, session: sid, profile: prof }), fp && setCookie(sid, url));
       }
       const s = await session(req, env);
-      if (!s) return json(h, { error: "Not signed in." }, 401);
+      if (!s) return withCookie(json(h, { error: "Not signed in." }, 401), fp && sessionId(req) && setCookie("", url, 0));
+      const renew = fp && s.renewed ? setCookie(s.sid, url) : null;
       if (path === "/profile" && req.method === "GET") {
-        return json(h, { profile: JSON.parse((await env.KV.get("p:" + s.email)) || "null") || { email: s.email, ...clean() } });
+        return withCookie(json(h, { profile: JSON.parse((await env.KV.get("p:" + s.email)) || "null") || { email: s.email, ...clean() } }), renew);
       }
       if (path === "/profile" && (req.method === "PUT" || req.method === "POST")) {
         const old = JSON.parse((await env.KV.get("p:" + s.email)) || "{}");
         const prof = { ...old, email: s.email, ...clean(await req.json().catch(() => ({}))), updated: new Date().toISOString() };
         await env.KV.put("p:" + s.email, JSON.stringify(prof));
-        return json(h, { ok: true, profile: prof });
+        return withCookie(json(h, { ok: true, profile: prof }), renew);
       }
-      if (path === "/auth/signout" && req.method === "POST") { await env.KV.delete("s:" + s.sid); return json(h, { ok: true }); }
+      if (path === "/auth/signout" && req.method === "POST") { await env.KV.delete("s:" + s.sid); return withCookie(json(h, { ok: true }), fp && setCookie("", url, 0)); }
       if (path === "/account" && req.method === "DELETE") {
         await env.KV.delete("p:" + s.email); await env.KV.delete("s:" + s.sid);
-        return json(h, { ok: true, deleted: true });
+        return withCookie(json(h, { ok: true, deleted: true }), fp && setCookie("", url, 0));
       }
       return json(h, { error: "not found" }, 404);
     } catch (e) { console.log("error", e.message); return json(h, { error: "Server error." }, 500); }
-  },
-};
+}
+function withCookie(res, c) { if (c) res.headers.append("Set-Cookie", c); return res; }

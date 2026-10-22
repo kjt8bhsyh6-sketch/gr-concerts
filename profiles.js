@@ -1,7 +1,9 @@
 /* Visitor profiles: sign in by emailed link, pick interests, see "picks for you this week".
-   Backend: Cloudflare Worker grh-profiles (see EDITING.md). Session token kept in localStorage "grh-session". */
+   Backend: Cloudflare Worker grh-profiles (see EDITING.md). On grhappenings.com the API is same-origin (/api, Worker route) and the session is a first-party HttpOnly cookie
+   (1 year, rolling); the token is also kept in localStorage "grh-session" as a fallback (other hosts / old sessions).
+   iOS home-screen apps have their own storage, so sign-in also accepts the 6-digit code from the email. */
 (function () {
-  const API = "https://grh-profiles.grhappenings.workers.dev";
+  const API = location.hostname === "grhappenings.com" ? "/api" : (window.GRH_API || "https://grh-profiles.grhappenings.workers.dev");
   const KS = "grh-session", KP = "grh-profile";
   const hdr = document.querySelector("body > header, header"); if (!hdr) return;
   const INFO = /privacy|terms/.test(location.pathname);
@@ -24,7 +26,7 @@
   async function api(path, method, body) {
     const s = get(KS), h = { "Content-Type": "application/json" };
     if (s) h.Authorization = "Bearer " + s;
-    const r = await fetch(API + path, { method: method || "GET", headers: h, body: body ? JSON.stringify(body) : undefined });
+    const r = await fetch(API + path, { method: method || "GET", headers: h, credentials: API[0] === "/" ? "same-origin" : "omit", body: body ? JSON.stringify(body) : undefined });
     const j = await r.json().catch(() => ({}));
     if (r.status === 401) { put(KS, null); put(KP, null); }
     if (!r.ok) throw new Error(j.error || "Something went wrong. Try again.");
@@ -96,7 +98,8 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
 <div class="mp-step"><span class="mp-n">1</span><b>Your email</b><input class="mp-in mp-em" type="email" autocomplete="email" placeholder="you@example.com"><p class="muted" style="margin:.4rem 0 0">We'll email you a sign-in link. No password needed.</p></div>
 <div class="mp-step"><span class="mp-n">2</span><b>What do you like?</b>${interests(p)}</div>
 <div class="mp-step"><span class="mp-n">3</span><b>Alerts</b>${alertsUI(p)}</div>
-<button class="mp-save mp-go" type="button">Email me a sign-in link</button><div class="mp-msg"></div>
+<button class="mp-save mp-go" type="button">Email me a sign-in code</button><div class="mp-msg"></div>
+<div class="mp-step mp-codebox" hidden><b>Enter the 6-digit code from the email</b><input class="mp-in mp-code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" maxlength="6" placeholder="123456"><button class="mp-save mp-cgo" type="button">Sign in</button><p class="muted" style="margin:.4rem 0 0">Or tap the link in the email. Using the site from your home screen? Type the code here instead.</p></div>
 <p class="mp-links"><a href="privacy.html#profiles">What we store</a></p>`);
     s.querySelector(".mp-go").onclick = async () => {
       const b = s.querySelector(".mp-go"), m = s.querySelector(".mp-msg"), email = s.querySelector(".mp-em").value.trim();
@@ -106,13 +109,24 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
         const ret = location.origin + location.pathname;
         const r = await api("/auth/request", "POST", { email, profile: read(s), returnTo: ret });
         track("link-requested", "Profile: sign-in link requested");
-        m.innerHTML = `<p class="mp-ok">✓ Sign-in link sent to ${esc(email)}. It works for 15 minutes.</p>` +
-          (r.preview ? `<p class="mp-prev"><b>Preview mode</b> (email sending not set up yet): <a class="mp-plink" href="${esc(r.link)}">open your sign-in link</a></p>` : "");
-        b.textContent = "Send again";
-      } catch (e) { m.innerHTML = `<p class="mp-err">${esc(e.message)}</p>`; b.textContent = "Email me a sign-in link"; }
+        m.innerHTML = `<p class="mp-ok">✓ Sign-in code sent to ${esc(email)}. It works for 15 minutes.</p>` +
+          (r.preview ? `<p class="mp-prev"><b>Preview mode</b> (email sending not set up yet): code <b>${esc(r.code || "")}</b> or <a class="mp-plink" href="${esc(r.link)}">open your sign-in link</a></p>` : "");
+        b.textContent = "Send a new code"; s.querySelector(".mp-codebox").hidden = false; s.querySelector(".mp-code").focus();
+      } catch (e) { m.innerHTML = `<p class="mp-err">${esc(e.message)}</p>`; b.textContent = "Email me a sign-in code"; }
       b.disabled = false;
     };
+    const ci = s.querySelector(".mp-code"), cb = s.querySelector(".mp-cgo");
+    const submit = async () => {
+      const m = s.querySelector(".mp-msg"), email = s.querySelector(".mp-em").value.trim(), code = ci.value.replace(/\D/g, "");
+      if (code.length !== 6) { m.innerHTML = `<p class="mp-err">Enter the 6-digit code.</p>`; return; }
+      cb.disabled = true;
+      try { const r = await api("/auth/code", "POST", { email, code }); signedIn(r); close(); }
+      catch (e) { m.innerHTML = `<p class="mp-err">${esc(e.message)}</p>`; }
+      cb.disabled = false;
+    };
+    cb.onclick = submit; ci.oninput = () => { if (ci.value.replace(/\D/g, "").length === 6) submit(); };
   }
+  function signedIn(r) { put(KS, r.session); put(KP, r.profile); track("signin", "Profile: signed in"); refresh(); toast("You're signed in"); }
 
   function openProfile() {
     const p = Object.assign(blank(), get(KP) || {});
@@ -123,7 +137,7 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
     const m = s.querySelector(".mp-msg");
     s.querySelector(".mp-sv").onclick = async () => {
       try { const r = await api("/profile", "PUT", read(s)); put(KP, r.profile); track("saved", "Profile: saved"); refresh(); close(); toast("Profile saved"); }
-      catch (e) { m.innerHTML = `<p class="mp-err">${esc(e.message)}</p>`; if (!get(KS)) refresh(); }
+      catch (e) { m.innerHTML = `<p class="mp-err">${esc(e.message)}</p>`; if (!get(KP)) refresh(); }
     };
     s.querySelector(".mp-out").onclick = async e => { e.preventDefault(); try { await api("/auth/signout", "POST"); } catch (x) {} put(KS, null); put(KP, null); track("signout", "Profile: signed out"); refresh(); close(); toast("Signed out"); };
     s.querySelector(".mp-del").onclick = async e => {
@@ -166,7 +180,7 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
   }
 
   function refresh() {
-    const p = get(KP), signed = !!get(KS) && p;
+    const p = get(KP), signed = !!(p && p.email);
     pill.classList.toggle("mp-av", !!signed);
     pill.textContent = signed ? (p.email || "?")[0].toUpperCase() : "Sign in / Create profile";
     pill.setAttribute("aria-label", signed ? "Your profile (" + p.email + ")" : "Sign in or create a profile");
@@ -203,9 +217,10 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
     const q = new URLSearchParams(location.search), tok = q.get("signin");
     if (tok) {
       q.delete("signin"); history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "") + location.hash);
-      try { const r = await api("/auth/verify", "POST", { token: tok }); put(KS, r.session); put(KP, r.profile); track("signin", "Profile: signed in"); toast("You're signed in"); }
+      try { signedIn(await api("/auth/verify", "POST", { token: tok })); }
       catch (e) { toast(e.message); }
-    } else if (get(KS)) {
+    } else if (get(KS) || get(KP) || API[0] === "/") {
+      // Cookie (or stored token) re-validates and renews the session; a 401 clears local state, a network error keeps it.
       api("/profile").then(r => { put(KP, r.profile); refresh(); }).catch(() => refresh());
     }
     refresh();
