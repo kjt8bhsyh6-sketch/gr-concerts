@@ -62,6 +62,19 @@ DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
 URL:https://www.thebob.com/drgrins/comedian/index.html?id=1235
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-chloe-kimes-wsg-rowdy-fingers@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261023T200000
+DTEND;TZID=America/Detroit:20261023T230000
+SUMMARY:Chloe Kimes wsg Rowdy Fingers
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.ticketweb.com/eve
+ nt/chloe-kimes-rowdy-fingers-tip-top-deluxe-bar-tickets/15036843 (confirm
+  details with the venue)
+URL:https://www.ticketweb.com/event/chloe-kimes-rowdy-fingers-tip-top-delu
+ xe-bar-tickets/15036843
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-23-candlelight-a-haunted-evening-of-halloween-1nra34@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -151,6 +164,43 @@ DESCRIPTION:Latin\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/re
  confirm details with the venue)
 URL:https://www.ticketmaster.com/reggaeton-rave-18-grand-rapids-michigan-1
  0-23-2026/event/0800652FD5D7A578
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-autumn-weekends-live-music-selkie-included-rpjxsq@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261024T140000
+DTEND;TZID=America/Detroit:20261024T170000
+SUMMARY:Autumn Weekends Live Music: Selkie (included with admission)
+LOCATION:Frederik Meijer Gardens & Sculpture Park\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 2:00 PM. Tickets/info: https://tickets.meijergardens.or
+ g/ (confirm details with the venue)
+URL:https://tickets.meijergardens.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-nolan-patin-is-elvira-live-on-the-big-scre-qwm19i@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261024T190000
+DTEND;TZID=America/Detroit:20261024T220000
+SUMMARY:(Nolan Patin is) Elvira: Live on the Big Scream! (7 & 10 PM shows)
+LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:00 PM. Tickets/info: https://www.betkapopeproducti
+ ons.com/elvira (confirm details with the venue)
+URL:https://www.betkapopeproductions.com/elvira
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-mean-green-thundergoat-supergrudge-psython@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261024T200000
+DTEND;TZID=America/Detroit:20261024T230000
+SUMMARY:Mean Green\, Thundergoat\, Supergrudge\, Psython
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.ticketweb.com/event/
+ mean-green-thundergoat-supergrudge-psython-tip-top-deluxe-bar-tickets/143
+ 74284 (confirm details with the venue)
+URL:https://www.ticketweb.com/event/mean-green-thundergoat-supergrudge-psy
+ thon-tip-top-deluxe-bar-tickets/14374284
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-r-b-fest-90-s-00-s-r-b@gr-concerts
@@ -245,6 +295,19 @@ DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p
  the-big-room (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/88728565/the-insiderstribute-to-tom-pett
  y-wfleetwood-magic-grand-rapids-the-big-room
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-autumn-weekends-live-music-the-fall-upward-bibch1@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261025T140000
+DTEND;TZID=America/Detroit:20261025T170000
+SUMMARY:Autumn Weekends Live Music: The Fall Upwards Duo (included with ad
+ mission)
+LOCATION:Frederik Meijer Gardens & Sculpture Park\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 2:00 PM. Tickets/info: https://tickets.meijergardens.or
+ g/ (confirm details with the venue)
+URL:https://tickets.meijergardens.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-25-willey-central-acoustic-stew-music-guild@gr-concerts
@@ -399,6 +462,17 @@ URL:https://www.ticketweb.com/event/emma-bieniewicz-joe-dreams-the-pyramid
  -scheme-tickets/14335804
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-29-haggis-x-1@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261029T190000
+DTEND;TZID=America/Detroit:20261029T220000
+SUMMARY:Haggis X-1
+LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
+DESCRIPTION:Celtic Rock\, 7:00 PM. Tickets/info: https://www.themidtowngr.
+ com/Checkout/Haggis-X-1 (confirm details with the venue)
+URL:https://www.themidtowngr.com/Checkout/Haggis-X-1
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-29-ringling-bros-and-barnum-bailey-the-greate-5e2ffn@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -496,6 +570,33 @@ URL:https://www.etix.com/ticket/p/83427799/harryweenharry-styles-dance-nig
  ht-grand-rapids-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-after-dark-smooth-jazz-sessions@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261030T193000
+DTEND;TZID=America/Detroit:20261030T223000
+SUMMARY:After Dark: Smooth Jazz Sessions
+LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 7:30 PM. Tickets/info: https://www.eventbrite.com/e/aft
+ er-dark-smooth-jazz-sessions-tickets-2000043302357 (confirm details with 
+ the venue)
+URL:https://www.eventbrite.com/e/after-dark-smooth-jazz-sessions-tickets-2
+ 000043302357
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-king-sickabilly-with-kitten-and-the-tonics-1p47g5@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261030T200000
+DTEND;TZID=America/Detroit:20261030T230000
+SUMMARY:King Sickabilly With Kitten and The Tonics And Delilah DeWylde
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Rockabilly\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/king-sickabilly-kitten-and-the-tip-top-deluxe-bar-tickets/14300474 
+ (confirm details with the venue)
+URL:https://www.ticketweb.com/event/king-sickabilly-kitten-and-the-tip-top
+ -deluxe-bar-tickets/14300474
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-30-ringling-bros-and-barnum-bailey-the-greate-1kxs1i@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -573,6 +674,32 @@ DESCRIPTION:Punk\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/58
  ails with the venue)
 URL:https://www.etix.com/ticket/p/58944296/l7the-last-hurrah-tour-2026-gra
  nd-rapids-the-big-room
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-autumn-weekends-live-music-the-morning-yel-13f7dc@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261031T140000
+DTEND;TZID=America/Detroit:20261031T170000
+SUMMARY:Autumn Weekends Live Music: The Morning Yells (included with admis
+ sion)
+LOCATION:Frederik Meijer Gardens & Sculpture Park\, Grand Rapids\, MI
+DESCRIPTION:Country\, 2:00 PM. Tickets/info: https://tickets.meijergardens
+ .org/ (confirm details with the venue)
+URL:https://tickets.meijergardens.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-danger-dear-with-50-waves-of-grey@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261031T200000
+DTEND;TZID=America/Detroit:20261031T230000
+SUMMARY:Danger Dear with 50 Waves Of Grey
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.ticketweb.com/event/
+ danger-dear-50-waves-of-tip-top-deluxe-bar-tickets/14330344 (confirm deta
+ ils with the venue)
+URL:https://www.ticketweb.com/event/danger-dear-50-waves-of-tip-top-deluxe
+ -bar-tickets/14330344
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-ringling-bros-and-barnum-bailey-the-greate-10kong@gr-concer

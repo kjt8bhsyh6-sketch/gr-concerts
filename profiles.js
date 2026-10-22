@@ -10,7 +10,7 @@
   const pg = /sports/.test(location.pathname) ? "sports" : /seasonal/.test(location.pathname) ? "seasonal" : "concerts";
   const OPT = {
     genres: ["Rock", "Indie", "Comedy", "Country", "Folk", "Punk", "Metal", "Electronic", "Hip-Hop", "Jazz", "Classical", "Musical"],
-    venues: ["Pyramid Scheme", "Intersection", "GLC Live", "Van Andel", "DeVos", "Wealthy Theatre", "Dr. Grins", "St. Cecilia", "Civic Theatre", "Big Room"],
+    venues: ["Pyramid Scheme", "Intersection", "GLC Live", "Van Andel", "DeVos", "Wealthy Theatre", "Dr. Grins", "St. Cecilia", "Civic Theatre", "Big Room", "Meijer Gardens", "Tip Top", "Midtown"],
     teams: ["Griffins", "Gold", "Rise", "Whitecaps", "AC Grand Rapids"],
     gameTypes: ["Weekend", "Weeknight", "Matinee", "Home openers"],
     types: ["Holiday Lights", "Christmas Market", "Holiday Market", "Holiday Parade", "Holiday Exhibit", "Ghost Tour"],
