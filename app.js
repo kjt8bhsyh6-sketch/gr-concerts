@@ -34,14 +34,15 @@
   $('#updated').textContent = 'Last updated ' + LAST_UPDATED;
 
   const BIO = (typeof BIOS !== 'undefined' && BIOS) || {};
-  function actions(id, title, cal, link, label, aff, artist) {
+  function actions(id, title, cal, link, label, aff, artist, place) {
     const bio = artist && BIO[artist];
     return `<div class="actions${bio ? ' has-bio' : ''}">
       <a class="b primary" href="${h(link)}" target="_blank" rel="${aff ? 'sponsored noopener' : 'noopener'}">${label}</a>
       ${bio ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : ''}
       ${Marks.buttons(id)}
       <button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
-      ${cal ? `<button type="button" class="b ics" data-id="${id}">Apple</button><a class="b gcal" data-id="${id}" href="${h(cal)}" target="_blank" rel="noopener">Google</a>` : ''}
+      ${cal ? `<button type="button" class="b ics" data-id="${id}">Apple Cal</button><a class="b gcal" data-id="${id}" href="${h(cal)}" target="_blank" rel="noopener">Google Cal</a>` : ''}
+      ${place ? GRMAP.buttons(place) : ''}
     </div>`;
   }
   function concertCard(c) {
@@ -49,7 +50,7 @@
     return `<article class="card${isNew(c) ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
       <div class="badges"><span class="tag">${h(c.genre)}</span>${newBadge(c)}</div>
       <h3>${h(c.artist)}</h3><p>${h(c.venue)}</p><p>${fmt(c.date)} · ${h(c.time)}</p>${addedLine(c)}
-      ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist)}</article>`;
+      ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist, c.venue)}</article>`;
   }
   // ---- Just Announced: newest additions first (upcoming shows; seasonal events live on seasonal.html) ----
   const recent = [...shows.filter(c => ago(c.date) <= 0).map(c => ({ k: c.added, t: c.artist, s: `${c.venue} · ${fmt(c.date)}`, id: cid(c), n: isNew(c) }))]

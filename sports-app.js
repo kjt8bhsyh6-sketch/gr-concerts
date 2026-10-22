@@ -38,7 +38,7 @@
       <h3>${h(g.team)}</h3><p><strong>vs. ${h(g.opponent)}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>${addedLine(g)}
       <div class="actions${BIO[g.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a>
       ${whoBtn(id, g.team)}${goBtn(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
-      <button type="button" class="b ics" data-id="${id}">Apple</button><a class="b gcal" data-id="${id}" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google</a></div></article>`;
+      <button type="button" class="b ics" data-id="${id}">Apple Cal</button><a class="b gcal" data-id="${id}" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google Cal</a>${GRMAP.buttons(g.venue)}</div></article>`;
   }
   function note(n) {
     return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span>${newBadge(n)}</div>
