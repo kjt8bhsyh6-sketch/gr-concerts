@@ -3,7 +3,7 @@ main = "src/index.js"
 compatibility_date = "2026-10-01"
 workers_dev = true
 [vars]
-SITE_URL = "https://kjt8bhsyh6-sketch.github.io/gr-concerts/"
+SITE_URL = "https://grhappenings.com/"
 
 [[kv_namespaces]]
 binding = "KV"

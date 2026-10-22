@@ -8,7 +8,7 @@ const out = process.argv[2];
 const today = process.argv[3] || new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
 const days = (a, b) => (Date.parse(a) - Date.parse(b)) / 864e5;
 const fmt = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-const site = (CONFIG.SITE_URL || 'https://kjt8bhsyh6-sketch.github.io/gr-concerts/');
+const site = (CONFIG.SITE_URL || 'https://grhappenings.com/');
 const shows = CONCERTS.slice().sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
 const upcoming = shows.filter(c => days(c.date, today) >= 0);
 const fresh = upcoming.filter(c => days(today, c.added) <= 7);

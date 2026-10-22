@@ -1,0 +1,2 @@
+/index.html / 301
+# Host-level redirects (www / pages.dev -> apex) are not supported in _redirects; see docs/SWITCHOVER.md.
