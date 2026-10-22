@@ -7,6 +7,12 @@
 // otherwise it uses link. See EDITING.md for the rules. Example: affiliate:"https://..."
 const LAST_UPDATED = "Oct 22, 2026";
 const CONCERTS = [
+  { week:"this", artist:"Free Show: Mickey & The Heartthrobs + Secret Satan (no cover, 21+)", venue:"Speciation Artisan Ales", date:"2026-10-23", time:"9:00 PM", genre:"Punk", link:"https://speciationartisanales.com/events/matht-ss", added:"2026-10-22" },
+  { week:"this", artist:"Free Halloween Show: Garbage Angel (no cover, 21+)", venue:"Speciation Artisan Ales", date:"2026-10-24", time:"9:00 PM", genre:"Rock", link:"https://speciationartisanales.com/events/garbageangel-oct-2026", added:"2026-10-22" },
+  { week:"this", artist:"Jazz Jam w/ Tommy Pancy (Oct 25)", venue:"Speciation Artisan Ales", date:"2026-10-25", time:"5:00 PM", genre:"Jazz", link:"https://speciationartisanales.com/events/jazz-jam-10-25", added:"2026-10-22" },
+  { week:"next", artist:"Capella Fall Concert: Come Home (free)", venue:"Calvin University Chapel", date:"2026-10-30", time:"7:30 PM", genre:"Choral", link:"https://calvin.edu/events/capella-fall-concert-come-home-1793403000", added:"2026-10-22" },
+  { week:"next", artist:"Free Show Friday: The Moonrays (no cover)", venue:"Speciation Artisan Ales", date:"2026-10-30", time:"8:00 PM", genre:"Surf Rock", link:"https://speciationartisanales.com/events/the-moonrays-fun-times-in-space-2026-oct", added:"2026-10-22" },
+  { week:"next", artist:"Jazz Jam w/ Tommy Pancy (Nov 1)", venue:"Speciation Artisan Ales", date:"2026-11-01", time:"5:00 PM", genre:"Jazz", link:"https://speciationartisanales.com/events/jazz-jam-11-1", added:"2026-10-22" },
   { week:"this", artist:"Chloe Kimes wsg Rowdy Fingers", venue:"Tip Top Deluxe Bar & Grill", date:"2026-10-23", time:"8:00 PM", genre:"Country", link:"https://www.ticketweb.com/event/chloe-kimes-rowdy-fingers-tip-top-deluxe-bar-tickets/15036843", added:"2026-10-22" },
   { week:"this", artist:"Autumn Weekends Live Music: Selkie (included with admission)", venue:"Frederik Meijer Gardens & Sculpture Park", date:"2026-10-24", time:"2:00 PM", genre:"Folk", link:"https://tickets.meijergardens.org/", added:"2026-10-22" },
   { week:"this", artist:"(Nolan Patin is) Elvira: Live on the Big Scream! (7 & 10 PM shows)", venue:"Midtown GR (at Studio Park)", date:"2026-10-24", time:"7:00 PM", genre:"Theater", link:"https://www.betkapopeproductions.com/elvira", added:"2026-10-22" },

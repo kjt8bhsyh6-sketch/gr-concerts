@@ -62,6 +62,19 @@ DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
 URL:https://www.thebob.com/drgrins/comedian/index.html?id=1235
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-free-show-mickey-the-heartthrobs-secret-sa-7bx2md@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261023T210000
+DTEND;TZID=America/Detroit:20261024T000000
+SUMMARY:Free Show: Mickey & The Heartthrobs + Secret Satan (no cover\, 21+
+ )
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Punk\, 9:00 PM. Tickets/info: https://speciationartisanales.co
+ m/events/matht-ss (confirm details with the venue)
+URL:https://speciationartisanales.com/events/matht-ss
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-23-chloe-kimes-wsg-rowdy-fingers@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261023T200000
@@ -164,6 +177,17 @@ DESCRIPTION:Latin\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/re
  confirm details with the venue)
 URL:https://www.ticketmaster.com/reggaeton-rave-18-grand-rapids-michigan-1
  0-23-2026/event/0800652FD5D7A578
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-free-halloween-show-garbage-angel-no-cover-21@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261024T210000
+DTEND;TZID=America/Detroit:20261025T000000
+SUMMARY:Free Halloween Show: Garbage Angel (no cover\, 21+)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://speciationartisanales.co
+ m/events/garbageangel-oct-2026 (confirm details with the venue)
+URL:https://speciationartisanales.com/events/garbageangel-oct-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-24-autumn-weekends-live-music-selkie-included-rpjxsq@gr-concer
@@ -295,6 +319,17 @@ DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p
  the-big-room (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/88728565/the-insiderstribute-to-tom-pett
  y-wfleetwood-magic-grand-rapids-the-big-room
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-25-jazz-jam-w-tommy-pancy-oct-25@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261025T170000
+DTEND;TZID=America/Detroit:20261025T200000
+SUMMARY:Jazz Jam w/ Tommy Pancy (Oct 25)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
+ m/events/jazz-jam-10-25 (confirm details with the venue)
+URL:https://speciationartisanales.com/events/jazz-jam-10-25
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-25-autumn-weekends-live-music-the-fall-upward-bibch1@gr-concer
@@ -570,6 +605,30 @@ URL:https://www.etix.com/ticket/p/83427799/harryweenharry-styles-dance-nig
  ht-grand-rapids-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-capella-fall-concert-come-home-free@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261030T193000
+DTEND;TZID=America/Detroit:20261030T223000
+SUMMARY:Capella Fall Concert: Come Home (free)
+LOCATION:Calvin University Chapel\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://calvin.edu/events/cape
+ lla-fall-concert-come-home-1793403000 (confirm details with the venue)
+URL:https://calvin.edu/events/capella-fall-concert-come-home-1793403000
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-free-show-friday-the-moonrays-no-cover@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261030T200000
+DTEND;TZID=America/Detroit:20261030T230000
+SUMMARY:Free Show Friday: The Moonrays (no cover)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Surf Rock\, 8:00 PM. Tickets/info: https://speciationartisanal
+ es.com/events/the-moonrays-fun-times-in-space-2026-oct (confirm details w
+ ith the venue)
+URL:https://speciationartisanales.com/events/the-moonrays-fun-times-in-spa
+ ce-2026-oct
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-30-after-dark-smooth-jazz-sessions@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261030T193000
@@ -766,6 +825,17 @@ DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.ticketweb.com
  etails with the venue)
 URL:https://www.ticketweb.com/event/twerk-or-treat-4-ft-the-pyramid-scheme
  -tickets/14343904
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-jazz-jam-w-tommy-pancy-nov-1@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261101T170000
+DTEND;TZID=America/Detroit:20261101T200000
+SUMMARY:Jazz Jam w/ Tommy Pancy (Nov 1)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
+ m/events/jazz-jam-11-1 (confirm details with the venue)
+URL:https://speciationartisanales.com/events/jazz-jam-11-1
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-01-ringling-bros-and-barnum-bailey-the-greate-1ukjoy@gr-concer
