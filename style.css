@@ -139,3 +139,15 @@ body.bio-open{overflow:hidden}
 .card.mark-going{border-left:6px solid #7c3aed}
 .card.mark-interested{border-left:6px solid #0d9488}
 .season-h{grid-column:1/-1;margin:.8rem 0 0;font-size:1.15rem;border-bottom:2px solid var(--accent);padding-bottom:.2rem}.grid>.season-h:first-child{margin-top:0}
+/* ---- refresh button + pull-to-refresh (refresh.js) ---- */
+header{position:relative}
+.refresh-btn{position:absolute;top:.6rem;left:.6rem;top:calc(.6rem + env(safe-area-inset-top,0px));width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid #ffffff40;background:#ffffff14;color:#fff;cursor:pointer;padding:0;opacity:.85}
+.refresh-btn:hover,.refresh-btn:focus-visible{opacity:1;background:#ffffff26}
+.grh-refreshing .refresh-btn svg{animation:grhspin .8s linear infinite}
+.ptr{position:fixed;left:50%;top:0;top:env(safe-area-inset-top,0px);z-index:1000;width:36px;height:36px;border-radius:50%;background:#fff;box-shadow:0 2px 8px #0003;display:none;align-items:center;justify-content:center;opacity:0;transform:translate(-50%,-50px);pointer-events:none}
+.ptr.show{display:flex}
+.ptr-spin{width:18px;height:18px;border-radius:50%;border:2.5px solid var(--line);border-top-color:var(--accent)}
+.ptr.ready .ptr-spin{border-color:var(--accent);border-top-color:var(--line)}
+.ptr.spin .ptr-spin{animation:grhspin .8s linear infinite}
+@keyframes grhspin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.ptr.spin .ptr-spin,.grh-refreshing .refresh-btn svg{animation-duration:2s}}
