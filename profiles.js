@@ -1,6 +1,7 @@
 /* Visitor profiles: sign in by emailed link, pick interests, see "picks for you this week".
    Backend: Cloudflare Worker grh-profiles (see EDITING.md). On grhappenings.com the API is same-origin (/api, Worker route) and the session is a first-party HttpOnly cookie
-   (1 year, rolling); the token is also kept in localStorage "grh-session" as a fallback (other hosts / old sessions).
+   (90 days, sliding). On grhappenings.com the token is NOT kept in localStorage (an old copy is moved into the cookie, then removed);
+   only legacy hosts (github.io / pages.dev, which call workers.dev) keep it in localStorage "grh-session" as a Bearer token.
    iOS home-screen apps have their own storage, so sign-in also accepts the 6-digit code from the email. */
 (function () {
   const API = location.hostname === "grhappenings.com" ? "/api" : (window.GRH_API || "https://grh-profiles.grhappenings.workers.dev");
@@ -23,13 +24,15 @@
   const blank = () => ({ concerts: { genres: [], venues: [], artists: [] }, sports: { teams: [], gameTypes: [] }, seasonal: { types: [] }, alerts: { on: false, freq: "weekly" } });
   const track = (p, t) => { try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: "profile/" + p, title: t || p, event: true }); } catch (e) {} };
 
-  async function api(path, method, body) {
-    const s = get(KS), h = { "Content-Type": "application/json" };
+  const FP = API[0] === "/"; // same-origin /api: the HttpOnly cookie is the session
+  // bearer: send the localStorage token (legacy hosts always; on grhappenings.com only once, to migrate an old session into the cookie).
+  async function api(path, method, body, bearer = !FP) {
+    const s = bearer ? get(KS) : null, h = { "Content-Type": "application/json" };
     if (s) h.Authorization = "Bearer " + s;
-    const r = await fetch(API + path, { method: method || "GET", headers: h, credentials: API[0] === "/" ? "same-origin" : "omit", body: body ? JSON.stringify(body) : undefined });
+    const r = await fetch(API + path, { method: method || "GET", headers: h, credentials: FP ? "same-origin" : "omit", body: body ? JSON.stringify(body) : undefined });
     const j = await r.json().catch(() => ({}));
-    if (r.status === 401) { put(KS, null); put(KP, null); }
-    if (!r.ok) throw new Error(j.error || "Something went wrong. Try again.");
+    if (r.status === 401 && (bearer || !get(KS))) { put(KS, null); put(KP, null); }
+    if (!r.ok) { const e = new Error(j.error || (r.status === 429 ? "Too many tries. Please wait a few minutes and try again." : "Something went wrong. Try again.")); e.status = r.status; e.retryAfter = +j.retryAfter || 0; throw e; }
     return j;
   }
 
@@ -46,7 +49,7 @@ header{position:relative}
 details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}details.mp-d summary{font-weight:600;font-size:.92rem;cursor:pointer}
 .mp-in{font:inherit;width:100%;box-sizing:border-box;padding:.45rem;border:1px solid var(--line);border-radius:8px;margin-top:.5rem}
 .mp-step{border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;margin:.7rem 0}.mp-n{display:inline-block;width:1.4rem;height:1.4rem;border-radius:99px;background:var(--accent);color:#fff;text-align:center;font-size:.8rem;line-height:1.4rem;margin-right:.4rem}
-.mp-ok{color:var(--new);font-size:.85rem;margin:.5rem 0 0}.mp-err{color:#b91c1c;font-size:.85rem;margin:.5rem 0 0}.mp-prev{font-size:.8rem;background:#fffbea;border:1px dashed #e7b900;border-radius:8px;padding:.5rem;margin:.5rem 0 0;word-break:break-all}
+.mp-ok{color:var(--new);font-size:.85rem;margin:.5rem 0 0}.mp-err{color:#b91c1c;font-size:.85rem;margin:.5rem 0 0}.mp-wait{color:#92400e;background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:.45rem .6rem;font-size:.85rem;margin:.5rem 0 0}.mp-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.mp-prev{font-size:.8rem;background:#fffbea;border:1px dashed #e7b900;border-radius:8px;padding:.5rem;margin:.5rem 0 0;word-break:break-all}
 .mp-sw{float:right;width:2.6rem;height:1.5rem;border-radius:99px;background:#ccc;position:relative;border:0;padding:0;min-height:0;cursor:pointer}.mp-sw.on{background:var(--new)}.mp-sw:after{content:"";position:absolute;left:3px;top:3px;width:1.1rem;height:1.1rem;border-radius:99px;background:#fff;transition:left .15s}.mp-sw.on:after{left:calc(100% - 1.1rem - 3px)}
 .mp-off .mp-c{opacity:.45}.mp-save{display:flex;justify-content:center;width:100%;margin-top:1.2rem}.mp-links{text-align:center;margin:.8rem 0 0;font-size:.85rem}.mp-links a{margin:0 .6rem}
 .mp-strip{margin:0 0 1rem;border:1px solid #e7b900;background:#fffbea;border-radius:10px}.mp-strip summary{padding:.55rem .9rem;font-weight:600;font-size:.92rem;cursor:pointer;list-style:none}
@@ -98,7 +101,7 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
 <div class="mp-step"><span class="mp-n">1</span><b>Your email</b><input class="mp-in mp-em" type="email" autocomplete="email" placeholder="you@example.com"><p class="muted" style="margin:.4rem 0 0">We'll email you a sign-in link. No password needed.</p></div>
 <div class="mp-step"><span class="mp-n">2</span><b>What do you like?</b>${interests(p)}</div>
 <div class="mp-step"><span class="mp-n">3</span><b>Alerts</b>${alertsUI(p)}</div>
-<button class="mp-save mp-go" type="button">Email me a sign-in code</button><div class="mp-msg"></div>
+<div class="mp-hp" aria-hidden="true"><label>Leave this empty<input class="mp-web" type="text" name="website" tabindex="-1" autocomplete="off"></label></div><button class="mp-save mp-go" type="button">Email me a sign-in code</button><div class="mp-msg"></div>
 <div class="mp-step mp-codebox" hidden><b>Enter the 6-digit code from the email</b><input class="mp-in mp-code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]*" maxlength="6" placeholder="123456"><button class="mp-save mp-cgo" type="button">Sign in</button><p class="muted" style="margin:.4rem 0 0">Or tap the link in the email. Using the site from your home screen? Type the code here instead.</p></div>
 <p class="mp-links"><a href="privacy.html#profiles">What we store</a></p>`);
     s.querySelector(".mp-go").onclick = async () => {
@@ -107,12 +110,19 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
       b.disabled = true; b.textContent = "Sending…";
       try {
         const ret = location.origin + location.pathname;
-        const r = await api("/auth/request", "POST", { email, profile: read(s), returnTo: ret });
+        const r = await api("/auth/request", "POST", { email, profile: read(s), returnTo: ret, website: s.querySelector(".mp-web").value });
         track("link-requested", "Profile: sign-in link requested");
         m.innerHTML = `<p class="mp-ok">✓ Sign-in code sent to ${esc(email)}. It works for 15 minutes.</p>` +
           (r.preview ? `<p class="mp-prev"><b>Preview mode</b> (email sending not set up yet): code <b>${esc(r.code || "")}</b> or <a class="mp-plink" href="${esc(r.link)}">open your sign-in link</a></p>` : "");
         b.textContent = "Send a new code"; s.querySelector(".mp-codebox").hidden = false; s.querySelector(".mp-code").focus();
-      } catch (e) { m.innerHTML = `<p class="mp-err">${esc(e.message)}</p>`; b.textContent = "Email me a sign-in code"; }
+      } catch (e) {
+        m.innerHTML = `<p class="${e.status === 429 ? "mp-wait" : "mp-err"}">${e.status === 429 ? "⏳ " : ""}${esc(e.message)}</p>`; b.textContent = "Email me a sign-in code";
+        if (e.status === 429 && e.retryAfter) { // keep the button off until the wait is over
+          let left = Math.min(e.retryAfter, 3600); const lbl = b.textContent;
+          const t = setInterval(() => { if (--left <= 0 || !b.isConnected) { clearInterval(t); b.disabled = false; b.textContent = lbl; } else b.textContent = `Try again in ${left > 90 ? Math.ceil(left / 60) + " min" : left + "s"}`; }, 1000);
+          return;
+        }
+      }
       b.disabled = false;
     };
     const ci = s.querySelector(".mp-code"), cb = s.querySelector(".mp-cgo");
@@ -121,12 +131,12 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
       if (code.length !== 6) { m.innerHTML = `<p class="mp-err">Enter the 6-digit code.</p>`; return; }
       cb.disabled = true;
       try { const r = await api("/auth/code", "POST", { email, code }); signedIn(r); close(); }
-      catch (e) { m.innerHTML = `<p class="mp-err">${esc(e.message)}</p>`; }
+      catch (e) { m.innerHTML = `<p class="${e.status === 429 ? "mp-wait" : "mp-err"}">${e.status === 429 ? "⏳ " : ""}${esc(e.message)}</p>`; }
       cb.disabled = false;
     };
     cb.onclick = submit; ci.oninput = () => { if (ci.value.replace(/\D/g, "").length === 6) submit(); };
   }
-  function signedIn(r) { put(KS, r.session); put(KP, r.profile); track("signin", "Profile: signed in"); refresh(); toast("You're signed in"); }
+  function signedIn(r) { put(KS, FP ? null : r.session); put(KP, r.profile); track("signin", "Profile: signed in"); refresh(); toast("You're signed in"); }
 
   function openProfile() {
     const p = Object.assign(blank(), get(KP) || {});
@@ -221,8 +231,15 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
       q.delete("signin"); history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "") + location.hash);
       try { signedIn(await api("/auth/verify", "POST", { token: tok })); }
       catch (e) { toast(e.message); }
-    } else if (get(KS) || get(KP) || API[0] === "/") {
-      // Cookie (or stored token) re-validates and renews the session; a 401 clears local state, a network error keeps it.
+    } else if (FP) {
+      // grhappenings.com: the cookie re-validates and renews the session. If an old localStorage token exists and the cookie
+      // doesn't work, send the token once; the Worker answers with a cookie, then the localStorage copy is removed.
+      api("/profile").then(r => { put(KS, null); put(KP, r.profile); refresh(); }).catch(e => {
+        if (e.status === 401 && get(KS)) return api("/profile", "GET", null, true).then(r => api("/profile").then(() => { put(KS, null); put(KP, r.profile); refresh(); }, () => { put(KP, r.profile); refresh(); }));
+        refresh();
+      }).catch(() => refresh());
+    } else if (get(KS) || get(KP)) {
+      // Legacy hosts: the stored token re-validates the session; a 401 clears local state, a network error keeps it.
       api("/profile").then(r => { put(KP, r.profile); refresh(); }).catch(() => refresh());
     }
     refresh();

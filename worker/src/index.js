@@ -4,22 +4,40 @@
 // Served two ways: https://grhappenings.com/api/* (Worker route, first-party; sets HttpOnly cookie grh_s) and
 // https://grh-profiles.grhappenings.workers.dev/* (legacy; Bearer token only). The /api prefix is stripped.
 import { loadData, matchPicks, renderEmail, listProfiles, unsubSig, unsubUrl, checkLinks, venuePage } from "./alerts.js";
-const ORIGINS = [/^https:\/\/kjt8bhsyh6-sketch\.github\.io$/, /^https:\/\/(www\.)?grhappenings\.com$/, /^https:\/\/([a-z0-9-]+\.)?grhappenings\.pages\.dev$/, /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
-const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 365, RENEW_AFTER = 60 * 60 * 24 * 1000, CODE_TRIES = 5;
+// Production origins. github.io stays while the old GitHub Pages copy still forwards visitors (legacy, Bearer token only).
+const ORIGINS = [/^https:\/\/(www\.)?grhappenings\.com$/, /^https:\/\/kjt8bhsyh6-sketch\.github\.io$/];
+// Previews and local dev: only when the Worker var DEV is "1" (wrangler dev --var DEV:1). Never set DEV in production.
+const DEV_ORIGINS = [/^https:\/\/([a-z0-9-]+\.)?grhappenings\.pages\.dev$/, /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
+const isDev = env => String(env.DEV || "") === "1";
+const originOk = (env, o) => ORIGINS.some(r => r.test(o)) || (isDev(env) && DEV_ORIGINS.some(r => r.test(o)));
+const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 90, RENEW_AFTER = 60 * 60 * 24 * 1000, CODE_TRIES = 5; // 90-day sliding session
+// Sign-in rate limits (KV fixed windows; KV is eventually consistent, so these are approximate; the WAF rule is the hard limit).
+const EMAIL_COOLDOWN = 60, EMAIL_HOURLY = 5, IP_REQ = { n: 10, win: 600 }, IP_CODE = { n: 20, win: 600 };
 const COOKIE = "grh_s";
 // First-party cookie only when the browser talks to the Worker on the site's own host (grhappenings.com/api or localhost dev).
-const firstParty = (req, url) => { const o = req.headers.get("Origin"); return (!o || o === url.origin) && (url.hostname === "grhappenings.com" || url.hostname === "localhost" || url.hostname === "127.0.0.1"); };
+const firstParty = (req, url, env) => { const o = req.headers.get("Origin"); return (!o || o === url.origin) && (url.hostname === "grhappenings.com" || (isDev(env) && (url.hostname === "localhost" || url.hostname === "127.0.0.1"))); };
 const setCookie = (sid, url, maxAge = SESSION_TTL) => `${COOKIE}=${sid}; Max-Age=${maxAge}; Path=/api; HttpOnly; SameSite=Lax${url.protocol === "https:" ? "; Secure" : ""}`;
 const code6 = () => String(crypto.getRandomValues(new Uint32Array(1))[0] % 1000000).padStart(6, "0");
 const LIST = (a, n = 40) => Array.isArray(a) ? a.filter(x => typeof x === "string").map(x => x.trim().slice(0, 60)).filter(Boolean).slice(0, n) : [];
 
-function cors(req) {
+function cors(req, env) {
   const o = req.headers.get("Origin") || "";
-  const ok = ORIGINS.some(r => r.test(o));
+  const ok = originOk(env, o);
   return ok ? { "Access-Control-Allow-Origin": o, "Access-Control-Allow-Headers": "Content-Type, Authorization",
     "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS", "Vary": "Origin", "Access-Control-Max-Age": "86400" } : null;
 }
-const json = (h, body, status = 200) => new Response(JSON.stringify(body), { status, headers: { ...h, "Content-Type": "application/json" } });
+const json = (h, body, status = 200) => new Response(JSON.stringify(body), { status, headers: { ...h, "Content-Type": "application/json", "X-Content-Type-Options": "nosniff", "Cache-Control": "no-store" } });
+// Fixed-window counter in KV. Returns seconds to wait (0 = allowed). KV's minimum TTL is 60s.
+async function limited(env, key, max, win) {
+  const now = Math.floor(Date.now() / 1000);
+  let v = null; try { v = JSON.parse((await env.KV.get(key)) || "null"); } catch {}
+  if (!v || !(v.exp > now)) v = { n: 0, exp: now + win };
+  if (v.n >= max) return v.exp - now;
+  v.n++; await env.KV.put(key, JSON.stringify(v), { expiration: Math.max(v.exp, now + 60) });
+  return 0;
+}
+const waitMsg = s => `Too many sign-in attempts. Please wait ${s >= 90 ? Math.ceil(s / 60) + " minutes" : s + " seconds"} and try again.`;
+const tooMany = (h, s) => new Response(JSON.stringify({ error: waitMsg(s), retryAfter: s }), { status: 429, headers: { ...h, "Content-Type": "application/json", "X-Content-Type-Options": "nosniff", "Cache-Control": "no-store", "Retry-After": String(s) } });
 const rand = () => [...crypto.getRandomValues(new Uint8Array(32))].map(b => b.toString(16).padStart(2, "0")).join("");
 const validEmail = e => typeof e === "string" && e.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
 
@@ -40,6 +58,7 @@ function clean(p) {
 //   BREVO_API_KEY                         -> Brevo (legacy, optional)
 //   none                                  -> PREVIEW mode (link shown on screen; insecure, testing only)
 function emailMode(env) {
+  if (isDev(env) && env.FORCE_PREVIEW === "1") return "preview";
   if (env.GMAIL_RELAY_URL && env.GMAIL_RELAY_SECRET) return "gmail-relay";
   if (env.MAILJET_API_KEY && env.MAILJET_SECRET_KEY) return "mailjet";
   if (env.BREVO_API_KEY) return "brevo";
@@ -174,7 +193,8 @@ function sessionIds(req) {
 }
 const sessionId = req => sessionIds(req)[0] || null;
 async function session(req, env) {
-  for (const sid of sessionIds(req)) { const s = await session1(env, sid); if (s) return s; }
+  const c = (req.headers.get("Cookie") || "").match(new RegExp("(?:^|;\\s*)" + COOKIE + "=([a-f0-9]{64})"));
+  for (const sid of sessionIds(req)) { const s = await session1(env, sid); if (s) { s.viaCookie = !!(c && c[1] === sid); return s; } }
   return null;
 }
 async function session1(env, sid) {
@@ -205,9 +225,9 @@ export default {
   },
 };
 async function handle(req, env) {
-    const h0 = cors(req);
+    const h0 = cors(req, env);
     const url = new URL(req.url), path = url.pathname.replace(/^\/api(?=\/|$)/, "") || "/";
-    const fp = firstParty(req, url);
+    const fp = firstParty(req, url, env);
     // Same-origin calls (grhappenings.com/api) send no Origin on GET; allow them as first-party.
     const h = h0 || (fp ? {} : null);
     if (h0) h0["Access-Control-Allow-Credentials"] = "true";
@@ -221,12 +241,25 @@ async function handle(req, env) {
         const b = await req.json().catch(() => ({}));
         const email = String(b.email || "").trim().toLowerCase();
         if (!validEmail(email)) return json(h, { error: "Enter a valid email." }, 400);
-        let ret = String(b.returnTo || env.SITE_URL);
-        if (!ORIGINS.some(r => r.test(new URL(ret).origin))) ret = env.SITE_URL;
+        let ret = String(b.returnTo || env.SITE_URL), u;
+        try { u = new URL(ret); } catch { return json(h, { error: "Bad return address." }, 400); }
+        if (!originOk(env, u.origin)) u = new URL(env.SITE_URL);
+        // Honeypot: a hidden "website" field only bots fill in. Answer exactly like a real send, do nothing.
+        if (String(b.website || "").trim()) return json(h, { ok: true });
+        if (emailMode(env) === "preview" && !isDev(env)) return json(h, { error: "Sign-in email is temporarily unavailable. Please try again later." }, 503);
+        const ip = req.headers.get("CF-Connecting-IP") || "unknown";
+        let w = await limited(env, "rl:ip:" + ip, IP_REQ.n, IP_REQ.win);
+        if (!w) w = await limited(env, "rl:em1:" + email, 1, EMAIL_COOLDOWN);
+        if (!w) w = await limited(env, "rl:emh:" + email, EMAIL_HOURLY, 3600);
+        if (w) return tooMany(h, w);
+        const old = JSON.parse((await env.KV.get("c:" + email)) || "null");
+        if (old && (old.n || 0) >= CODE_TRIES) return json(h, { error: "Too many wrong codes. Wait 15 minutes, then request a new code." }, 429);
+        if (old && old.tok) await env.KV.delete("t:" + old.tok); // newest request wins; old link stops working
         const tok = rand(), code = code6();
         await env.KV.put("t:" + tok, JSON.stringify({ email, draft: b.profile ? clean(b.profile) : null }), { expirationTtl: LINK_TTL });
-        await env.KV.put("c:" + email, JSON.stringify({ code, tok, n: 0 }), { expirationTtl: LINK_TTL }); // newest request wins
-        const u = new URL(ret); u.searchParams.set("signin", tok);
+        // Wrong-code count carries over while a code is live, so asking for a new code doesn't reset the 5 tries.
+        await env.KV.put("c:" + email, JSON.stringify({ code, tok, n: old ? Math.min(old.n || 0, CODE_TRIES) : 0 }), { expirationTtl: LINK_TTL });
+        u.searchParams.set("signin", tok);
         const sent = await sendSignInEmail(env, email, u.toString(), code);
         return json(h, sent.preview ? { ok: true, preview: true, link: u.toString(), code } : { ok: true });
       }
@@ -247,11 +280,16 @@ async function handle(req, env) {
         const b = await req.json().catch(() => ({}));
         const email = String(b.email || "").trim().toLowerCase(), code = String(b.code || "").replace(/\D/g, "");
         if (!validEmail(email) || code.length !== 6) return json(h, { error: "Enter your email and the 6-digit code." }, 400);
+        const iw = await limited(env, "rl:ipc:" + (req.headers.get("CF-Connecting-IP") || "unknown"), IP_CODE.n, IP_CODE.win);
+        if (iw) return tooMany(h, iw);
         const c = JSON.parse((await env.KV.get("c:" + email)) || "null");
         const bad = "That code isn't right, or it expired. Check the newest email or request a new code.";
         if (!c) return json(h, { error: bad }, 400);
+        const locked = "Too many wrong codes. Wait 15 minutes, then request a new code (or tap the link in the email).";
+        if ((c.n || 0) >= CODE_TRIES) return json(h, { error: locked }, 429);
         if (!safeEq(code, c.code)) {
-          if (++c.n >= CODE_TRIES) { await env.KV.delete("c:" + email); await env.KV.delete("t:" + c.tok); return json(h, { error: "Too many tries. Request a new code." }, 429); }
+          // Lock: keep c: (with n at the limit) until it expires, so a fresh request can't reset the count.
+          if (++c.n >= CODE_TRIES) { await env.KV.put("c:" + email, JSON.stringify({ n: c.n }), { expirationTtl: LINK_TTL }); await env.KV.delete("t:" + c.tok); return json(h, { error: locked }, 429); }
           await env.KV.put("c:" + email, JSON.stringify(c), { expirationTtl: LINK_TTL });
           return json(h, { error: bad }, 400);
         }
@@ -263,7 +301,8 @@ async function handle(req, env) {
       }
       const s = await session(req, env);
       if (!s) return withCookie(json(h, { error: "Not signed in." }, 401), fp && sessionId(req) && setCookie("", url, 0));
-      const renew = fp && s.renewed ? setCookie(s.sid, url) : null;
+      // Renew the cookie on daily renewal, or move an old Bearer-only session (localStorage) into the cookie.
+      const renew = fp && (s.renewed || !s.viaCookie) ? setCookie(s.sid, url) : null;
       if (path === "/profile" && req.method === "GET") {
         return withCookie(json(h, { profile: JSON.parse((await env.KV.get("p:" + s.email)) || "null") || { email: s.email, ...clean() } }), renew);
       }

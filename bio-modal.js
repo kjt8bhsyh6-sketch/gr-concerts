@@ -7,7 +7,7 @@
   dlg.innerHTML = `<div class="bio-box" role="dialog" aria-modal="true" aria-labelledby="bio-title" tabindex="-1">
     <button type="button" class="bio-x" aria-label="Close">×</button><div class="bio-body"></div></div>`;
   document.body.appendChild(dlg);
-  const src = u => u ? `<p class="bio-src">Source: <a href="${h(u)}" target="_blank" rel="noopener">${h(new URL(u).hostname.replace(/^www\./, ''))}</a></p>` : '';
+  const src = u => u && /^https?:\/\//i.test(String(u)) ? `<p class="bio-src">Source: <a href="${h(u)}" target="_blank" rel="noopener">${h(new URL(u).hostname.replace(/^www\./, ''))}</a></p>` : '';
   let opener = null;
   function open(sections, btn) {
     sections = (sections || []).filter(s => s && s.text); if (!sections.length) return;

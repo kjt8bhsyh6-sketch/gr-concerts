@@ -1,2 +1,15 @@
+# Security headers for every page (Cloudflare Pages). The /api/* Worker sets its own headers.
+# CSP ships as Report-Only first: violations only show in the browser console. Once a week of
+# clean consoles (all pages, signed in + out, iPhone home-screen), rename it to Content-Security-Policy.
+# The sha256 is the one-line inline redirect <script> in the <head> of every page; if that script
+# changes, recompute: python3 -c "import re,hashlib,base64;print(base64.b64encode(hashlib.sha256(re.search(r'<script>(.*?)</script>',open('index.html').read(),re.S).group(1).encode()).digest()).decode())"
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'sha256-vxFVJGUu3qh5aYRvzvXjlWQkdsEvfJsmvb+DNtsta0s=' https://gc.zgo.at https://static.cloudflareinsights.com https://giscus.app; connect-src 'self' https://grhappenings.goatcounter.com https://cloudflareinsights.com https://grh-profiles.grhappenings.workers.dev; img-src 'self' data: https://grhappenings.goatcounter.com; style-src 'self' 'unsafe-inline' https://giscus.app; frame-src https://giscus.app; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self' https://buttondown.com
+
 https://:project.pages.dev/*
   X-Robots-Tag: noindex

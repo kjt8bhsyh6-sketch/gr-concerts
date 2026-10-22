@@ -4,6 +4,8 @@
   const C = (typeof CONFIG !== 'undefined' && CONFIG) || {}, NEW_DAYS = C.NEW_DAYS || 7, SITE = (C.SITE_URL || location.href.split(/[?#]/)[0].replace(/[^/]*$/, '')).replace(/\/?$/, '/') + 'seasonal.html';
   const $ = s => document.querySelector(s);
   const h = s => String(s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
+  // Security: card links must be http(s); anything else (e.g. javascript:) becomes '#'.
+  [typeof SEASONAL !== 'undefined' && SEASONAL, typeof CONCERTS !== 'undefined' && CONCERTS].forEach(a => a && a.forEach(x => ['link', 'affiliate'].forEach(k => { if (x[k] && !/^https?:\/\//i.test(String(x[k]))) x[k] = '#'; })));
   const qs = new URLSearchParams(location.search), qt = qs.get('today');
   const today = /^\d{4}-\d{2}-\d{2}$/.test(qt || '') ? qt : new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
   const ago = d => (Date.parse(today) - Date.parse(d)) / 864e5;
