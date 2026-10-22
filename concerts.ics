@@ -179,6 +179,31 @@ URL:https://www.ticketmaster.com/reggaeton-rave-18-grand-rapids-michigan-1
  0-23-2026/event/0800652FD5D7A578
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-resting-witch-face-2026-halloween-sketch-c-ebrwf9@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261023T190000
+DTEND;TZID=America/Detroit:20261023T220000
+SUMMARY:Resting Witch Face - 2026 Halloween Sketch Comedy Show (Oct 23–30)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/re
+ sting-witch-face-2026-halloween-sketch-comedy-show (confirm details with 
+ the venue)
+URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-sketch-c
+ omedy-show
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-battle-bots-improv-comedy-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261023T210000
+DTEND;TZID=America/Detroit:20261024T000000
+SUMMARY:Battle Bots Improv Comedy Show
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ba
+ ttle-bots-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/battle-bots-improv-comedy-show
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-24-free-halloween-show-garbage-angel-no-cover-21@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261024T210000
@@ -321,6 +346,28 @@ URL:https://www.etix.com/ticket/p/88728565/the-insiderstribute-to-tom-pett
  y-wfleetwood-magic-grand-rapids-the-big-room
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-24-midnight-society-creepy-improv-comedy@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261024T210000
+DTEND;TZID=America/Detroit:20261025T000000
+SUMMARY:Midnight Society – Creepy Improv Comedy
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/mi
+ dnight-society-creepy-improv-comedy (confirm details with the venue)
+URL:https://www.crowdwork.com/e/midnight-society-creepy-improv-comedy
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-late-night-comedy-lab@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261024T223000
+DTEND;TZID=America/Detroit:20261025T013000
+SUMMARY:Late-Night Comedy Lab
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 10:30 PM. Tickets/info: https://www.crowdwork.com/e/l
+ ate-night-comedy-lab (confirm details with the venue)
+URL:https://www.crowdwork.com/e/late-night-comedy-lab
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-25-jazz-jam-w-tommy-pancy-oct-25@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261025T170000
@@ -422,6 +469,19 @@ URL:https://www.ticketweb.com/event/slay-the-vote-20-the-pyramid-scheme-ti
  ckets/14356034
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-26-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261026T190000
+DTEND;TZID=America/Detroit:20261026T220000
+SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
+ medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
+ )
+URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
+ w
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-27-the-story-so-far@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261027T180000
@@ -469,6 +529,21 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  ils with the venue)
 URL:https://www.ticketweb.com/event/rehash-the-flooks-the-pyramid-scheme-t
  ickets/14888743
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-27-free-improv-jam-a-lama-ding-dong-stay-for-fz3s11@gr-concert
+ s
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261027T190000
+DTEND;TZID=America/Detroit:20261027T220000
+SUMMARY:FREE - Improv Jam-a-lama-ding-dong (Stay for the sing-song!) (Oct 
+ 27\, Nov 24\, Dec 29\, Jan 26)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/fr
+ ee-improv-jam-a-lama-ding-dong-stay-for-the-sing-song (confirm details wi
+ th the venue)
+URL:https://www.crowdwork.com/e/free-improv-jam-a-lama-ding-dong-stay-for-
+ the-sing-song
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-the-longest-johns-the-ends-of-the-earth-tour@gr-concerts
@@ -746,6 +821,17 @@ DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://fountainstreet.chur
 URL:https://fountainstreet.churchcenter.com/calendar/event/238246591
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-battle-bots-improv-comedy-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261030T210000
+DTEND;TZID=America/Detroit:20261031T000000
+SUMMARY:Battle Bots Improv Comedy Show
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ba
+ ttle-bots-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/battle-bots-improv-comedy-show
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-31-autumn-weekends-live-music-the-morning-yel-13f7dc@gr-concer
  ts
 DTSTAMP:20261022T120000Z
@@ -838,6 +924,20 @@ URL:https://www.ticketweb.com/event/twerk-or-treat-4-ft-the-pyramid-scheme
  -tickets/14343904
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-31-resting-witch-face-2026-halloween-night-sk-omz3en@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261031T190000
+DTEND;TZID=America/Detroit:20261031T220000
+SUMMARY:Resting Witch Face - 2026 Halloween NIGHT Sketch show & party
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/re
+ sting-witch-face-2026-halloween-night-sketch-show-party (confirm details 
+ with the venue)
+URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-night-sk
+ etch-show-party
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-01-jazz-jam-w-tommy-pancy-nov-1@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261101T170000
@@ -904,6 +1004,19 @@ DESCRIPTION:Punk\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event/
  details with the venue)
 URL:https://www.ticketweb.com/event/authority-zero-apocalyptour-the-pyrami
  d-scheme-tickets/14991313
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-02-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261102T190000
+DTEND;TZID=America/Detroit:20261102T220000
+SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
+ medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
+ )
+URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
+ w
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-the-string-cheese-incident-just-keep-spinn-d4afau@gr-concer
@@ -984,6 +1097,34 @@ URL:https://www.etix.com/ticket/p/43033245/chicks-in-the-office-the-just-b
  etween-us-tour-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-05-the-oregon-trail-grcc-players-nov-5-7@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261105T193000
+DTEND;TZID=America/Detroit:20261105T223000
+SUMMARY:The Oregon Trail (GRCC Players\, Nov 5–7)
+LOCATION:GRCC Spectrum Theater\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.grcc.edu/schools-
+ departments/theater/spectrum-theater/spectrum-theater-calendar (confirm d
+ etails with the venue)
+URL:https://www.grcc.edu/schools-departments/theater/spectrum-theater/spec
+ trum-theater-calendar
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-05-live-tcp-the-dispatch-and-friends-comedy-s-1bd7qm@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261105T190000
+DTEND;TZID=America/Detroit:20261105T220000
+SUMMARY:Live @TCP: The Dispatch (And friends!) - Comedy Show (Nov 5\, Dec 
+ 3\, Jan 7)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/li
+ ve-tcp-the-dispatch-and-friends-comedy-show (confirm details with the ven
+ ue)
+URL:https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-s
+ how
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-06-gr-symphony-midori-plays-shostakovich@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261106T193000
@@ -1046,6 +1187,29 @@ DESCRIPTION:Spoken Word\, 7:30 PM. Tickets/info: https://www.etix.com/tick
  the-big-room (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/81959088/andrea-gibsons-love-letter-from
  -the-afterlife-grand-rapids-the-big-room
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-battle-bots-improv-comedy-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261106T210000
+DTEND;TZID=America/Detroit:20261107T000000
+SUMMARY:Battle Bots Improv Comedy Show
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ba
+ ttle-bots-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/battle-bots-improv-comedy-show
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-breaking-the-news-improv-comedy-show-frida-1sjkuf@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261106T190000
+DTEND;TZID=America/Detroit:20261106T220000
+SUMMARY:Breaking (the) News! – Improv Comedy Show (Fridays\, Nov 6–Dec 4)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/br
+ eaking-the-news-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/breaking-the-news-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-gr-symphony-midori-plays-shostakovich@gr-concerts
@@ -1146,6 +1310,42 @@ DESCRIPTION:Latin\, 7:30 PM. Tickets/info: https://fountainstreet.churchce
 URL:https://fountainstreet.churchcenter.com/calendar/event/234752562
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-07-late-night-comedy-lab@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261107T223000
+DTEND;TZID=America/Detroit:20261108T013000
+SUMMARY:Late-Night Comedy Lab
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 10:30 PM. Tickets/info: https://www.crowdwork.com/e/l
+ ate-night-comedy-lab (confirm details with the venue)
+URL:https://www.crowdwork.com/e/late-night-comedy-lab
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-07-best-of-the-best-of-the-best-improv-comedy-54rhik@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261107T190000
+DTEND;TZID=America/Detroit:20261107T220000
+SUMMARY:Best of the Best (of the best) -Improv Comedy Show (Nov 7–Dec 5)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/be
+ st-of-the-best-of-the-best-improv-comedy-show-3980574c-23e3-4fcf-8d8f-157
+ e85b99da7 (confirm details with the venue)
+URL:https://www.crowdwork.com/e/best-of-the-best-of-the-best-improv-comedy
+ -show-3980574c-23e3-4fcf-8d8f-157e85b99da7
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-07-choose-your-own-improv-comedy-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261107T210000
+DTEND;TZID=America/Detroit:20261108T000000
+SUMMARY:Choose Your Own Improv – Comedy Show
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ch
+ oose-your-own-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/choose-your-own-improv-comedy-show
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-08-trivium-crown-in-the-grave-world-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261108T173000
@@ -1183,6 +1383,19 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
   details with the venue)
 URL:https://www.ticketweb.com/event/all-get-out-motherfolk-the-pyramid-sch
  eme-tickets/15040103
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-09-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261109T190000
+DTEND;TZID=America/Detroit:20261109T220000
+SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
+ medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
+ )
+URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
+ w
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-10-broadway-grand-rapids-maybe-happy-ending@gr-concerts
@@ -1309,6 +1522,17 @@ LOCATION:Fountain Street Church\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://fountainstreet.chur
  chcenter.com/calendar/event/240704039 (confirm details with the venue)
 URL:https://fountainstreet.churchcenter.com/calendar/event/240704039
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-12-live-tcp-man-vs-machine-improv-comedy-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261112T190000
+DTEND;TZID=America/Detroit:20261112T220000
+SUMMARY:LIVE@TCP - Man Vs Machine - Improv Comedy Show!
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/li
+ ve-tcp-man-vs-machine-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/live-tcp-man-vs-machine-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-13-gr-symphony-coffee-with-bob-grace-kim-violin@gr-concerts
@@ -1505,6 +1729,28 @@ URL:https://www.etix.com/ticket/p/32284731/northbound-grand-rapids-the-int
  ersection-the-mint
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-14-late-night-comedy-lab@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261114T223000
+DTEND;TZID=America/Detroit:20261115T013000
+SUMMARY:Late-Night Comedy Lab
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 10:30 PM. Tickets/info: https://www.crowdwork.com/e/l
+ ate-night-comedy-lab (confirm details with the venue)
+URL:https://www.crowdwork.com/e/late-night-comedy-lab
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-choose-your-own-improv-comedy-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261114T210000
+DTEND;TZID=America/Detroit:20261115T000000
+SUMMARY:Choose Your Own Improv – Comedy Show
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ch
+ oose-your-own-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/choose-your-own-improv-comedy-show
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-15-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261115T130000
@@ -1695,6 +1941,35 @@ URL:https://www.etix.com/ticket/p/55212461/ray-volpe-volpetron-eternal-tou
  r-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-19-live-tcp-the-dispatch-and-friends-comedy-s-uqi7og@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261119T190000
+DTEND;TZID=America/Detroit:20261119T220000
+SUMMARY:Live @TCP: The Dispatch (And friends!) - Comedy Show-RPPR
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/li
+ ve-tcp-the-dispatch-and-friends-comedy-show-rppr (confirm details with th
+ e venue)
+URL:https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-s
+ how-rppr
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-19-live-tcp-role-play-play-roll-after-the-dis-vr2myi@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261119T203000
+DTEND;TZID=America/Detroit:20261119T233000
+SUMMARY:Live @TCP: Role Play\, Play\, Roll! (After The Dispatch) (Nov 19\,
+  Dec 17)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:30 PM. Tickets/info: https://www.crowdwork.com/e/li
+ ve-tcp-role-play-play-roll-after-the-dispatch (confirm details with the v
+ enue)
+URL:https://www.crowdwork.com/e/live-tcp-role-play-play-roll-after-the-dis
+ patch
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-20-gr-symphony-messiah-by-candlelight@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261120T193000
@@ -1855,6 +2130,17 @@ DESCRIPTION:Live Music\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
  stache (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/44961666/canabliss-after-glow-tour-grand
  -rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-choose-your-own-improv-comedy-show@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261121T210000
+DTEND;TZID=America/Detroit:20261122T000000
+SUMMARY:Choose Your Own Improv – Comedy Show
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ch
+ oose-your-own-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/choose-your-own-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-22-why@gr-concerts
@@ -2047,6 +2333,31 @@ URL:https://www.etix.com/ticket/p/71725021/enmy-damnlast-20-years-standing
  -grand-rapids-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-28-squeaky-clean-battle-bots-improv-comedy-sh-ysaats@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261128T190000
+DTEND;TZID=America/Detroit:20261128T220000
+SUMMARY:SQUEAKY CLEAN Battle Bots Improv Comedy Show (Nov 28\, Jan 30)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/sq
+ ueaky-clean-battle-bots-improv-comedy-show (confirm details with the venu
+ e)
+URL:https://www.crowdwork.com/e/squeaky-clean-battle-bots-improv-comedy-sh
+ ow
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-squawk-box-improv-comedy-show-nov-28-jan-30@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261128T210000
+DTEND;TZID=America/Detroit:20261129T000000
+SUMMARY:Squawk Box Improv Comedy Show! (Nov 28\, Jan 30)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/sq
+ uawk-box-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/squawk-box-improv-comedy-show
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-29-love-actually-in-concert@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261129T150000
@@ -2174,6 +2485,17 @@ DESCRIPTION:Indie Rock\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  ils with the venue)
 URL:https://www.ticketweb.com/event/radiator-hospital-the-pyramid-scheme-t
  ickets/14343934
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-03-parade-jewish-theatre-grand-rapids-dec-3-13@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261203T193000
+DTEND;TZID=America/Detroit:20261203T223000
+SUMMARY:Parade (Jewish Theatre Grand Rapids\, Dec 3–13)
+LOCATION:GRCC Spectrum Theater\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.jtgr.org/season (
+ confirm details with the venue)
+URL:https://www.jtgr.org/season
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-04-gr-symphony-holiday-pops@gr-concerts
@@ -2311,6 +2633,17 @@ LOCATION:Fountain Street Church\, Grand Rapids\, MI
 DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://fountainstreet.churchc
  enter.com/calendar/event/208402552 (confirm details with the venue)
 URL:https://fountainstreet.churchcenter.com/calendar/event/208402552
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-jellybean-station-improv-comedy-show-dec-5-19@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261205T210000
+DTEND;TZID=America/Detroit:20261206T000000
+SUMMARY:Jellybean Station – Improv Comedy Show (Dec 5–19)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/je
+ llybean-station-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/jellybean-station-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
@@ -2563,6 +2896,17 @@ LOCATION:Fountain Street Church\, Grand Rapids\, MI
 DESCRIPTION:Folk\, 7:00 PM. Tickets/info: https://fountainstreet.churchcen
  ter.com/calendar/event/237792635 (confirm details with the venue)
 URL:https://fountainstreet.churchcenter.com/calendar/event/237792635
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-2026-winter-sketch-comedy-show-dec-12-jan-23@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261212T190000
+DTEND;TZID=America/Detroit:20261212T220000
+SUMMARY:2026 Winter Sketch Comedy Show (Dec 12–Jan 23)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/20
+ 26-winter-sketch-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/2026-winter-sketch-comedy-show
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
@@ -3443,6 +3787,18 @@ URL:https://www.scmcgr.org/concerts/the-chamber-music-society-of-lincoln-c
  enter-rhapsody-in-blue-2027
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-04-broken-glass-jewish-theatre-grand-rapids-feb-4-14@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270204T193000
+DTEND;TZID=America/Detroit:20270204T223000
+SUMMARY:Broken Glass (Jewish Theatre Grand Rapids\, Feb 4–14)
+LOCATION:GRCC Spectrum Theater\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.jtgr.org/season (
+ confirm details with the venue)
+URL:https://www.jtgr.org/season
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-05-as-i-lay-dying@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270205T193000
@@ -3812,6 +4168,19 @@ DESCRIPTION:Musical\, Showtimes on venue site. Tickets/info: https://www.d
  becomes-her (confirm details with the venue)
 URL:https://www.devosperformancehall.com/events/2027/broadway-grand-rapids
  -presents-death-becomes-her
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-04-a-mile-in-the-dark-actors-theatre-mar-4-13@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270304T190000
+DTEND;TZID=America/Detroit:20270304T220000
+SUMMARY:A Mile in the Dark (Actors' Theatre\, Mar 4–13)
+LOCATION:GRCC Spectrum Theater\, Grand Rapids\, MI
+DESCRIPTION:Theater\, Showtimes on venue site. Tickets/info: https://actor
+ stheatregrandrapids.org/programming/coming-soon/a-mile-in-the-dark/ (conf
+ irm details with the venue)
+URL:https://actorstheatregrandrapids.org/programming/coming-soon/a-mile-in
+ -the-dark/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-05-gr-symphony-coffee-with-marcelo-mary-beth-168re4@gr-concert
