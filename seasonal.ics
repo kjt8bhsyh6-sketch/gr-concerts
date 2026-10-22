@@ -34,6 +34,23 @@ URL:https://toursaroundmichigan.com/tour/grand-rapids-ghost-hunt-tour/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-24-hallowee-ones-parade-and-programming-at-meijer-ga@gr-season
+ al
+DTSTAMP:20261022T120000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261101
+SUMMARY:Hallowee-Ones: Parade and Programming at Meijer Gardens
+LOCATION:Lena Meijer Children's Garden\, Frederik Meijer Gardens\, 1000 E 
+ Beltline Ave NE\, Grand Rapids\, MI
+DESCRIPTION:Halloween Family Event. Sat Oct 24 & Sat Oct 31 · 10 AM–2 PM\;
+  costume parades 11 AM & 1 PM. Info: https://www.meijergardens.org/events
+ /hallowee-ones-parade-and-programming/ (confirm details with the organize
+ r)
+URL:https://www.meijergardens.org/events/hallowee-ones-parade-and-programm
+ ing/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-28-ghosts-of-the-grand-paranormal-indoor-walking-tou@gr-season
  al
 DTSTAMP:20261019T120000Z
@@ -129,6 +146,20 @@ DESCRIPTION:Holiday Lights. Nov 25–Jan 2 · Sun–Thu 5:30–9 PM\, Fri–Sat 
  0–10 PM. Info: https://christmasliteshow.com/drive-thru/ (confirm details
   with the organizer)
 URL:https://christmasliteshow.com/drive-thru/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-25-christmas-lite-show-memory-lane-train@gr-seasonal
+DTSTAMP:20261022T120000Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20270103
+SUMMARY:Christmas Lite Show – Memory Lane Train
+LOCATION:LMCU Ballpark\, 4500 W River Dr NE\, Comstock Park\, Grand Rapids
+ \, MI
+DESCRIPTION:Holiday Lights. Nov 25–Jan 2 · departures 5:30\, 6:30\, 7:30 P
+ M (+8:30 PM Fri–Sat)\, $40 per bench. Info: https://christmasliteshow.com
+ /memory-lane-train/ (confirm details with the organizer)
+URL:https://christmasliteshow.com/memory-lane-train/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

@@ -12,7 +12,7 @@
   const isNew = x => x.added && ago(x.added) >= 0 && ago(x.added) < NEW_DAYS;
   // ---- season sections: automatic from the type tag + title keywords (see EDITING.md) ----
   const KW = {
-    halloween: /halloween|\bghosts?\b|haunt|spooky|\bboo\b|\btrick\b|\btreat\b|nightmare|zombie|costume|pumpkin|harryween|scream|fright|(?!between\b)\w+ween\b/i,
+    halloween: /halloween|\bghosts?\b|haunt|spooky|\bboo\b|\btrick\b|\btreat\b|nightmare|zombie|costume|pumpkin|harryween|scream|creepy|fright|(?!between\b)\w+ween\b/i,
     thanksgiving: /thanksgiving|turkey|harvest/i,
     christmas: /christmas|xmas|holiday|santa|christkindl|\blights\b|tree lighting|enlighten|nutcracker|\bnoel\b|\byule|hanukkah|new year/i };
   const SECTIONS = [['halloween', 'Halloween'], ['thanksgiving', 'Thanksgiving'], ['christmas', 'Christmas & Holiday'], ['other', 'Other Seasonal']];
