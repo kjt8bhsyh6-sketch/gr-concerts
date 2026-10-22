@@ -155,14 +155,16 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
   const dfmt = s => { const d = new Date(s + "T12:00:00"); return d.toLocaleDateString("en-US", { weekday: "short" }) + " " + (d.getMonth() + 1) + "/" + d.getDate(); };
   const has = (list, val) => list.some(x => lc(val).includes(lc(x)) && x);
   const hour = t => { const m = /(\d+):(\d+)\s*(AM|PM)/i.exec(t || ""); return m ? (+m[1] % 12) + (/PM/i.test(m[3]) ? 12 : 0) : 19; };
+  const tkey = t => { const m = /(\d+):(\d+)\s*(AM|PM)/i.exec(t || ""); return m ? String((+m[1] % 12) + (/PM/i.test(m[3]) ? 12 : 0)).padStart(2, "0") + m[2] : "99"; };
   function picks(p) {
     const out = [];
     if (pg === "concerts" && typeof CONCERTS !== "undefined") {
       const c = p.concerts; if (!c.genres.length && !c.venues.length && !c.artists.length) return out;
       CONCERTS.filter(e => e.date >= today && e.date <= wkEnd).forEach(e => {
         if (has(c.genres, e.genre) || has(c.venues, e.venue) || c.artists.some(a => a.length > 1 && lc(e.artist).includes(lc(a))))
-          out.push([e.artist, dfmt(e.date) + " · " + e.time + " · " + e.venue, "show-" + GRICS.id(e)]);
+          out.push([e.artist, dfmt(e.date) + " · " + e.time + " · " + e.venue, "show-" + GRICS.id(e), e.date + " " + tkey(e.time)]);
       });
+      out.sort((x, y) => x[3] < y[3] ? -1 : x[3] > y[3] ? 1 : 0); // data isn't in date order: sort so same-day showtimes sit together
     } else if (pg === "sports" && typeof GAMES !== "undefined") {
       const s = p.sports; if (!s.teams.length && !s.gameTypes.length) return out;
       const first = {}; GAMES.slice().sort((a, b) => a.date < b.date ? -1 : 1).forEach(g => { first[g.team] = first[g.team] || g.date; });
@@ -189,7 +191,7 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
     if (!signed || INFO) return;
     const list = picks(Object.assign(blank(), p)), main = document.querySelector("main"); if (!main) return;
     strip = document.createElement("details"); strip.className = "mp-strip";
-    strip.innerHTML = list.length ? `<summary>★ ${list.length} pick${list.length === 1 ? "" : "s"} for you this week ▾</summary><ul>${list.slice(0, 12).map(e => `<li class="mp-pk"><a href="${PAGE}#${esc(e[2])}" data-id="${esc(e[2])}"><span><b>${esc(e[0])}</b>${esc(e[1])}</span><i aria-hidden="true">›</i></a></li>`).join("")}</ul>`
+    strip.innerHTML = list.length ? `<summary>★ ${list.length} pick${list.length === 1 ? "" : "s"} for you this week ▾</summary><ul>${list.map(e => `<li class="mp-pk"><a href="${PAGE}#${esc(e[2])}" data-id="${esc(e[2])}"><span><b>${esc(e[0])}</b>${esc(e[1])}</span><i aria-hidden="true">›</i></a></li>`).join("")}</ul>`
       : `<summary>★ No picks for you this week. <a href="#" class="mp-edit">Edit interests</a></summary>`;
     main.prepend(strip);
     strip.querySelectorAll(".mp-pk a").forEach(a => a.onclick = e => {
