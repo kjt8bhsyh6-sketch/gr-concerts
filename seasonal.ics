@@ -55,9 +55,9 @@ DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261225
 SUMMARY:Grand Rapids Christkindl Markt
 LOCATION:Downtown Market\, 435 Ionia Ave SW\, Grand Rapids\, MI
-DESCRIPTION:Christmas Market. Nov 18–Dec 24 · Wed–Sun (closed Mon/Tue & Th
- anksgiving). Info: https://christkindlmarktgr.com/ (confirm details with 
- the organizer)
+DESCRIPTION:Holiday Market. Nov 18–Dec 24 · Wed–Sun (closed Mon/Tue & Than
+ ksgiving). Info: https://christkindlmarktgr.com/ (confirm details with th
+ e organizer)
 URL:https://christkindlmarktgr.com/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -68,9 +68,9 @@ DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261224
 SUMMARY:Holiday Market at Studio Park
 LOCATION:Studio Park Piazza\, downtown\, Grand Rapids\, MI
-DESCRIPTION:Christmas Market. Nov 18–Dec 23 · Wed–Sun (closed Mon/Tue & Th
- anksgiving). Info: https://www.studioparkgr.com/holiday-market (confirm d
- etails with the organizer)
+DESCRIPTION:Holiday Market. Nov 18–Dec 23 · Wed–Sun (closed Mon/Tue & Than
+ ksgiving). Info: https://www.studioparkgr.com/holiday-market (confirm det
+ ails with the organizer)
 URL:https://www.studioparkgr.com/holiday-market
 TRANSP:TRANSPARENT
 END:VEVENT

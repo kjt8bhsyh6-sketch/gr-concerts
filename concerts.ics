@@ -735,6 +735,17 @@ URL:https://www.etix.com/ticket/p/58944296/l7the-last-hurrah-tour-2026-gra
  nd-rapids-the-big-room
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-pipe-screams-organ-concert@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261030T193000
+DTEND;TZID=America/Detroit:20261030T223000
+SUMMARY:Pipe Screams Organ Concert
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://fountainstreet.chur
+ chcenter.com/calendar/event/238246591 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/238246591
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-31-autumn-weekends-live-music-the-morning-yel-13f7dc@gr-concer
  ts
 DTSTAMP:20261022T120000Z
@@ -865,6 +876,19 @@ DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
  firm details with the venue)
 URL:https://www.ticketweb.com/event/flamingosis-bright-moments-the-pyramid
  -scheme-tickets/14192434
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-bach-chorale-of-grand-rapids-fall-charity-1kso2w@gr-concert
+ s
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261101T193000
+DTEND;TZID=America/Detroit:20261101T223000
+SUMMARY:Bach Chorale of Grand Rapids: Fall Charity Concert (with pianist A
+ lan Chiang)
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.tickettailor.co
+ m/events/fountainstreetchurch/2415882 (confirm details with the venue)
+URL:https://www.tickettailor.com/events/fountainstreetchurch/2415882
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-02-authority-zero-apocalyptour-2026-with-the-xkyij4@gr-concert
@@ -1111,6 +1135,17 @@ URL:https://www.etix.com/ticket/p/97224940/david-cross-grand-rapids-the-bi
  g-room
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-07-mexicuba-rhythms-without-borders@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261107T193000
+DTEND;TZID=America/Detroit:20261107T223000
+SUMMARY:MEXICUBA: Rhythms Without Borders
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Latin\, 7:30 PM. Tickets/info: https://fountainstreet.churchce
+ nter.com/calendar/event/234752562 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/234752562
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-08-trivium-crown-in-the-grave-world-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261108T173000
@@ -1263,6 +1298,17 @@ DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
   details with the venue)
 URL:https://www.etix.com/ticket/p/50445234/bryan-andrews-grand-rapids-the-
  intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-12-five-elements-piano-duo-recital@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261112T193000
+DTEND;TZID=America/Detroit:20261112T223000
+SUMMARY:Five Elements: Piano Duo Recital
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://fountainstreet.chur
+ chcenter.com/calendar/event/240704039 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/240704039
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-13-gr-symphony-coffee-with-bob-grace-kim-violin@gr-concerts
@@ -2182,6 +2228,17 @@ URL:https://www.ticketweb.com/event/michigander-3rd-annual-the-pyramid-sch
  eme-tickets/14319364
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-04-voices-in-hope-a-church-choir-festival@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261204T193000
+DTEND;TZID=America/Detroit:20261204T223000
+SUMMARY:Voices in Hope: A Church Choir Festival
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://fountainstreet.churchc
+ enter.com/calendar/event/228611624 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/228611624
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-05-gr-symphony-holiday-pops@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261205T140000
@@ -2243,6 +2300,17 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
   details with the venue)
 URL:https://www.ticketweb.com/event/michigander-3rd-annual-the-pyramid-sch
  eme-tickets/14319374
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-grand-rapids-women-s-chorus-winter-concert@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261205T193000
+DTEND;TZID=America/Detroit:20261205T223000
+SUMMARY:Grand Rapids Women's Chorus Winter Concert
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://fountainstreet.churchc
+ enter.com/calendar/event/208402552 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/208402552
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
@@ -2324,6 +2392,17 @@ DESCRIPTION:Live Music\, 6:00 PM. Tickets/info: https://www.ticketweb.com/
  ls with the venue)
 URL:https://www.ticketweb.com/event/trsh-gone-fishin-the-pyramid-scheme-ti
  ckets/14270694
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-06-grand-rapids-women-s-chorus-winter-concert@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261206T153000
+DTEND;TZID=America/Detroit:20261206T183000
+SUMMARY:Grand Rapids Women's Chorus Winter Concert
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 3:30 PM. Tickets/info: https://fountainstreet.churchc
+ enter.com/calendar/event/210474709 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/210474709
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-08-jeff-daniels@gr-concerts
@@ -2473,6 +2552,17 @@ DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
  elevation (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/45211863/heyz-something-different-tour-g
  rand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-michigan-mandolin-orchestra-christmas-concert@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261212T190000
+DTEND;TZID=America/Detroit:20261212T220000
+SUMMARY:Michigan Mandolin Orchestra Christmas Concert
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 7:00 PM. Tickets/info: https://fountainstreet.churchcen
+ ter.com/calendar/event/237792635 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/237792635
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
@@ -3056,6 +3146,17 @@ DESCRIPTION:Classical\, 8:45 PM. Tickets/info: https://grcmc.org/theatre/e
  ith the venue)
 URL:https://grcmc.org/theatre/event/candlelight-concert-coldplay-imagine-d
  ragons/1709
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-16-alan-chiang-concert-pianist@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270116T143000
+DTEND;TZID=America/Detroit:20270116T173000
+SUMMARY:Alan Chiang\, concert pianist
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 2:30 PM. Tickets/info: https://fountainstreet.chur
+ chcenter.com/calendar/event/223811161 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/223811161
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-17-broadway-grand-rapids-six@gr-concerts
@@ -3955,6 +4056,17 @@ URL:https://www.ticketmaster.com/ali-wong-live-grand-rapids-michigan-03-23
  -2027/event/0800652F9F465705
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-23-piano-recital-mijeong-lee@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270323T193000
+DTEND;TZID=America/Detroit:20270323T223000
+SUMMARY:Piano Recital: Mijeong Lee
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://fountainstreet.chur
+ chcenter.com/calendar/event/235688945 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/235688945
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-25-finding-nemo-jr-civic-theatre-production-m-qzsbb5@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -4076,6 +4188,19 @@ LOCATION:Wealthy Theatre\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 7:30 PM. Tickets/info: https://grcmc.org/event/steve-
  hofstetter/1672 (confirm details with the venue)
 URL:https://grcmc.org/event/steve-hofstetter/1672
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-10-amber-autry-happy-holler-tour@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270410T190000
+DTEND;TZID=America/Detroit:20270410T220000
+SUMMARY:Amber Autry: Happy Holler Tour
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
+ amber-autry-happy-holler-tour-grand-rapids-michigan-04-10-2027/event/0800
+ 65229B713B28 (confirm details with the venue)
+URL:https://www.ticketmaster.com/amber-autry-happy-holler-tour-grand-rapid
+ s-michigan-04-10-2027/event/080065229B713B28
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-11-josiah-queen-damascus-road-tour@gr-concerts
