@@ -1,7 +1,7 @@
 // grh-profiles: visitor profiles for Grand Rapids Happenings (Cloudflare Workers free plan + KV).
 // KV keys: p:<email> profile JSON · t:<token> magic link (15 min TTL) · s:<session> session (30 days)
 import { loadData, matchPicks, renderEmail, listProfiles, unsubSig, unsubUrl, checkLinks, venuePage } from "./alerts.js";
-const ORIGINS = [/^https:\/\/kjt8bhsyh6-sketch\.github\.io$/, /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
+const ORIGINS = [/^https:\/\/kjt8bhsyh6-sketch\.github\.io$/, /^https:\/\/(www\.)?grhappenings\.com$/, /^https:\/\/([a-z0-9-]+\.)?grhappenings\.pages\.dev$/, /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
 const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 30;
 const LIST = (a, n = 40) => Array.isArray(a) ? a.filter(x => typeof x === "string").map(x => x.trim().slice(0, 60)).filter(Boolean).slice(0, n) : [];
 
