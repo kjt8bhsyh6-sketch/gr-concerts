@@ -12,7 +12,7 @@
   const KW = {
     halloween: /halloween|\bghosts?\b|haunt|spooky|\bboo\b|\btrick\b|\btreat\b|nightmare|zombie|costume|pumpkin|harryween|scream|fright|(?!between\b)\w+ween\b/i,
     thanksgiving: /thanksgiving|turkey|harvest/i,
-    christmas: /christmas|xmas|holiday|santa|christkindl|\blights\b|tree lighting|enlighten|nutcracker|winter|\bnoel\b|\byule|hanukkah|new year/i };
+    christmas: /christmas|xmas|holiday|santa|christkindl|\blights\b|tree lighting|enlighten|nutcracker|\bnoel\b|\byule|hanukkah|new year/i };
   const SECTIONS = [['halloween', 'Halloween'], ['thanksgiving', 'Thanksgiving'], ['christmas', 'Christmas & Holiday'], ['other', 'Other Seasonal']];
   // A listing dated in October is Halloween-season if it matches ANY keyword (e.g. "Nightmare Before Christmas", Oct 30-31).
   // Nov-Feb listings check Christmas/Thanksgiving before Halloween (e.g. "The Ghosts of Christmas Eve" in December).
