@@ -138,3 +138,4 @@ body.bio-open{overflow:hidden}
 /* card accent stripe: violet = going, teal = interested (NEW keeps its gold glow) */
 .card.mark-going{border-left:6px solid #7c3aed}
 .card.mark-interested{border-left:6px solid #0d9488}
+.season-h{grid-column:1/-1;margin:.8rem 0 0;font-size:1.15rem;border-bottom:2px solid var(--accent);padding-bottom:.2rem}.grid>.season-h:first-child{margin-top:0}
