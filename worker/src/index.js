@@ -33,7 +33,7 @@ async function limited(env, key, max, win) {
   let v = null; try { v = JSON.parse((await env.KV.get(key)) || "null"); } catch {}
   if (!v || !(v.exp > now)) v = { n: 0, exp: now + win };
   if (v.n >= max) return v.exp - now;
-  v.n++; await env.KV.put(key, JSON.stringify(v), { expiration: Math.max(v.exp, now + 60) });
+  v.n++; await env.KV.put(key, JSON.stringify(v), { expirationTtl: Math.max(v.exp - now, 0) + 61 }); // KV needs TTL >= 60s; +61 avoids the edge
   return 0;
 }
 const waitMsg = s => `Too many sign-in attempts. Please wait ${s >= 90 ? Math.ceil(s / 60) + " minutes" : s + " seconds"} and try again.`;
