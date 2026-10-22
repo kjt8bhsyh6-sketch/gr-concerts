@@ -60,6 +60,8 @@ export const unsubSig = (env, email) => hmac(env.ADMIN_KEY, "alerts-off:" + emai
 export async function unsubUrl(env, base, email) { return `${base}/alerts/off?e=${encodeURIComponent(email)}&k=${await unsubSig(env, email)}`; }
 
 export const SUBJECTS = { weekly: "Your Grand Rapids picks this week", daily: "Your Grand Rapids picks: today's update", announced: "Just announced in Grand Rapids: your picks" };
+export const SENDER_NAME = "Grand Rapids Happenings";
+export const mailingAddress = env => env.MAILING_ADDRESS || "[Mailing address coming soon]";
 export function renderEmail(env, email, picks, offUrl, freq = "weekly") {
   const site = env.SITE_URL, page = k => k === "Concert" ? site : k === "Game" ? site + "sports.html" : site + "seasonal.html";
   const rows = picks.map(e => `<tr><td style="padding:12px 0;border-top:1px solid #e5e7eb">
@@ -77,10 +79,10 @@ ${e.link ? `<a href="${esc(e.link)}" style="display:inline-block;margin-top:6px;
 ${rows}
 <tr><td style="padding:18px 0 4px;border-top:1px solid #e5e7eb;text-align:center"><a href="${esc(site)}" style="display:inline-block;padding:10px 20px;background:#111827;color:#fff;border-radius:99px;text-decoration:none;font-weight:600">See all on Grand Rapids Happenings</a></td></tr>
 <tr><td style="padding-top:16px;font-size:12px;color:#6b7280;text-align:center">You get this because you turned on alerts in your Grand Rapids Happenings profile (${esc(email)}).<br>
-<a href="${esc(offUrl)}" style="color:#6b7280">Unsubscribe / manage alerts</a> · <a href="${esc(site)}" style="color:#6b7280">Edit your picks</a></td></tr>
+<a href="${esc(offUrl)}" style="color:#6b7280">Unsubscribe / manage alerts</a> · <a href="${esc(site)}" style="color:#6b7280">Edit your picks</a><br><br>${esc(SENDER_NAME)} · ${esc(mailingAddress(env))}</td></tr>
 </table></td></tr></table></body></html>`;
   const text = `Your Grand Rapids picks this week\n\n` + picks.map(e => `- ${e.title} | ${e.when}${e.time ? " " + e.time : ""} | ${e.venue || ""}\n  ${e.link || page(e.kind)}`).join("\n") +
-    `\n\nSee all on Grand Rapids Happenings: ${site}\nUnsubscribe / manage alerts: ${offUrl}\n`;
+    `\n\nSee all on Grand Rapids Happenings: ${site}\nUnsubscribe / manage alerts: ${offUrl}\n\n--\n${SENDER_NAME}\n${mailingAddress(env)}\n`;
   return { subject: SUBJECTS[freq] || SUBJECTS.weekly, html, text };
 }
 
@@ -106,7 +108,9 @@ export const VENUE_PAGES = [
   [/dr\.? grins|b\.o\.b/i, "https://www.thebob.com/drgrins/"],
   [/civic theatre/i, "https://grct.org/"],
 ];
-const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36";
+const UA = "GRHappeningsLinkCheck/1.0 (+https://grhappenings.com)";
+// Never fetched automatically: links to these sites stay in emails but are skipped by the link check.
+const NO_FETCH = /^https?:\/\/([^/]*\.)?(bandsintown\.com|songkick\.com)(\/|$)/i;
 const BOT_OK = new Set([401, 403, 202, 429, 999]);
 const MAX_CHECKS = 30, TIMEOUT = 6000;
 async function checkOne(url) {
@@ -126,6 +130,7 @@ export async function checkLinks(env, urls, { fresh = false } = {}) {
   const res = {}, todo = [];
   for (const u of [...new Set(urls.filter(Boolean))]) {
     const c = !fresh && await env.KV.get("lc:" + u);
+    if (NO_FETCH.test(u)) { res[u] = { status: "skipped", reason: "not auto-fetched" }; continue; }
     if (c) res[u] = { ...JSON.parse(c), cached: true }; else todo.push(u);
   }
   const now = todo.slice(0, MAX_CHECKS);

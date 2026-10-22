@@ -8,6 +8,7 @@ const out = process.argv[2];
 const today = process.argv[3] || new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
 const days = (a, b) => (Date.parse(a) - Date.parse(b)) / 864e5;
 const fmt = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+const MAILING_ADDRESS = (fs.readFileSync(require('path').join(__dirname, '..', 'worker', 'wrangler.toml'), 'utf8').match(/^MAILING_ADDRESS\s*=\s*"([^"]*)"/m) || [])[1] || '[Mailing address coming soon]';
 const site = (CONFIG.SITE_URL || 'https://grhappenings.com/');
 const shows = CONCERTS.slice().sort((a, b) => (a.date + a.time).localeCompare(b.date + b.time));
 const upcoming = shows.filter(c => days(c.date, today) >= 0);
@@ -21,5 +22,5 @@ md += `## 🆕 Just announced\n${fresh.length ? fresh.slice(0, 10).map(line).joi
 md += `## 🎸 This week\n${thisWeek.map(line).join('\n') || '_Quiet week!_'}\n\n`;
 md += `## 🎄 Seasonal events\n${SEASONAL.slice().sort((a, b) => a.sort.localeCompare(b.sort)).map(e => `- **${e.name}** · ${e.location} · ${e.when} · [Info](${e.link})`).join('\n')}\n\n`;
 md += `📅 Put every show in your calendar: subscribe to ${site}concerts.ics\n\n`;
-md += `Know a show we missed? Reply to this email.\n\n— The Canasta Club\n\n_Always confirm details with the venue._\n`;
+md += `Know a show we missed? Reply to this email.\n\n— The Canasta Club\n\n_Always confirm details with the venue._\n\n---\nGrand Rapids Happenings · ${MAILING_ADDRESS}\nUnsubscribe: {{ unsubscribe_url }}\n`;
 if (out) { fs.writeFileSync(out, md); console.log('Wrote', out); } else process.stdout.write(md);
