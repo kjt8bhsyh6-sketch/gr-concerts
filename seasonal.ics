@@ -34,6 +34,48 @@ URL:https://toursaroundmichigan.com/tour/grand-rapids-ghost-hunt-tour/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-the-haunted-forest-at-cannonsburg@gr-seasonal
+DTSTAMP:20261022T120000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261031
+SUMMARY:The Haunted Forest at Cannonsburg
+LOCATION:Cannonsburg Ski Area\, 6800 Cannonsburg Rd NE\, Belmont\, Grand R
+ apids\, MI
+DESCRIPTION:Haunted Attraction. Oct 23\, 24\, 29\, 30 · Fri–Sat 6:30–9 PM.
+  Info: https://cannonsburg.com/the-haunted-forest/ (confirm details with 
+ the organizer)
+URL:https://cannonsburg.com/the-haunted-forest/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-zoo-goes-boo-at-john-ball-zoo@gr-seasonal
+DTSTAMP:20261022T120000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261102
+SUMMARY:Zoo Goes Boo at John Ball Zoo
+LOCATION:John Ball Zoo\, 1300 W Fulton St\, Grand Rapids\, Grand Rapids\, 
+ MI
+DESCRIPTION:Zoo Halloween. Oct 23–25 & Oct 30–Nov 1 · 10 AM–5 PM (members 
+ 9–10 AM). Info: https://jbzoo.org/events/zoo-goes-boo/ (confirm details w
+ ith the organizer)
+URL:https://jbzoo.org/events/zoo-goes-boo/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-new-salem-corn-maze-witch-s-woods-haunted-corn-ma@gr-season
+ al
+DTSTAMP:20261022T120000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261101
+SUMMARY:New Salem Corn Maze – Witch's Woods & Haunted Corn Maze
+LOCATION:4516 24th St\, Dorr\, Grand Rapids\, MI
+DESCRIPTION:Corn Maze / Haunt. Daytime Oct 24\, 25\, 31 · 11 AM–6 PM\; nig
+ httime haunts open at dusk (ticket sales from 6:30 PM) · cash/check only.
+  Info: https://newsalemcornmaze.com/ (confirm details with the organizer)
+URL:https://newsalemcornmaze.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-24-hallowee-ones-parade-and-programming-at-meijer-ga@gr-season
  al
 DTSTAMP:20261022T120000Z
@@ -63,6 +105,18 @@ DESCRIPTION:Ghost Tour. Oct 28–29 · tours 5:30–8:30 PM. Info: https://www.
  kets-2002647431377 (confirm details with the organizer)
 URL:https://www.eventbrite.com/e/ghosts-of-the-grand-a-paranormal-indoor-w
  alking-tour-tickets-2002647431377
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-grand-rapids-halloween-bar-crawl-crawl-with-us@gr-seasonal
+DTSTAMP:20261022T120000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261101
+SUMMARY:Grand Rapids Halloween Bar Crawl (Crawl With US)
+LOCATION:19 downtown bars\, Grand Rapids\, Grand Rapids\, MI
+DESCRIPTION:Halloween Pub Crawl. Fri Oct 30 + Sat Oct 31. Info: https://cr
+ awlwith.us/grandrapids/halloween/ (confirm details with the organizer)
+URL:https://crawlwith.us/grandrapids/halloween/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -160,6 +214,50 @@ DESCRIPTION:Holiday Lights. Nov 25–Jan 2 · departures 5:30\, 6:30\, 7:30 P
  M (+8:30 PM Fri–Sat)\, $40 per bench. Info: https://christmasliteshow.com
  /memory-lane-train/ (confirm details with the organizer)
 URL:https://christmasliteshow.com/memory-lane-train/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-26-grand-rapids-public-schools-turkey-trot-34th-annu@gr-season
+ al
+DTSTAMP:20261022T120000Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Grand Rapids Public Schools Turkey Trot (34th annual)
+LOCATION:Start at Van Andel Arena\, 130 W Fulton St\, Grand Rapids\, Grand
+  Rapids\, MI
+DESCRIPTION:Turkey Trot. Thu Nov 26 · 10K 8 AM\, Mini Trot 8:10 AM\, 5K & 
+ 1-mile 8:30 AM. Info: https://runsignup.com/Race/MI/GrandRapids/GRPSThank
+ sgivingDayTurkeyTrot (confirm details with the organizer)
+URL:https://runsignup.com/Race/MI/GrandRapids/GRPSThanksgivingDayTurkeyTro
+ t
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-lowell-christmas-festivities-night-time-santa-par@gr-season
+ al
+DTSTAMP:20261022T120000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Lowell Christmas Festivities & Night-Time Santa Parade
+LOCATION:Downtown Lowell (S Broadway St to Main St)\, Grand Rapids\, MI
+DESCRIPTION:Holiday Parade. Sat Dec 5 · Santa on the Showboat 2–4 PM\; par
+ ade 6 PM. Info: https://www.discoverlowell.org/christmas-festivities/ (co
+ nfirm details with the organizer)
+URL:https://www.discoverlowell.org/christmas-festivities/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-grand-rapids-ballet-the-nutcracker@gr-seasonal
+DTSTAMP:20261022T120000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261221
+SUMMARY:Grand Rapids Ballet – The Nutcracker
+LOCATION:DeVos Performance Hall\, 303 Monroe Ave NW\, Grand Rapids\, Grand
+  Rapids\, MI
+DESCRIPTION:Nutcracker. Dec 11–13 & 18–20 · Fri 7:30 PM\, Sat 2 & 7:30 PM\
+ , Sun 2 PM. Info: https://grballet.com/grb_performance/the-nutcracker-202
+ 6/ (confirm details with the organizer)
+URL:https://grballet.com/grb_performance/the-nutcracker-2026/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
