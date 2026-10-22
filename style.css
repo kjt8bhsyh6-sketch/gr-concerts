@@ -25,7 +25,7 @@ a{color:var(--accent)}
 .few{grid-column:1/-1;font-style:italic;color:var(--muted)}
 
 /* ---- card buttons: Tickets on top, then 2x2 equal buttons, pinned to card bottom ---- */
-.actions{margin-top:auto;padding-top:.9rem;display:grid;grid-template-columns:1fr 1fr;gap:.45rem}
+.actions{margin-top:auto;padding-top:.9rem;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.45rem}
 .b,.btn,button{font:inherit;font-size:.85rem;font-weight:600;line-height:1.2;min-height:2.3rem;padding:.5rem .75rem;border-radius:8px;
   border:1px solid var(--line);background:#f1f1f6;color:var(--text);cursor:pointer;text-decoration:none;
   display:inline-flex;align-items:center;justify-content:center;text-align:center;white-space:nowrap}
@@ -139,3 +139,4 @@ body.bio-open{overflow:hidden}
 .card.mark-going{border-left:6px solid #7c3aed}
 .card.mark-interested{border-left:6px solid #0d9488}
 .season-h{grid-column:1/-1;margin:.8rem 0 0;font-size:1.15rem;border-bottom:2px solid var(--accent);padding-bottom:.2rem}.grid>.season-h:first-child{margin-top:0}
+.actions>.b{min-width:0;white-space:normal;overflow-wrap:anywhere}
