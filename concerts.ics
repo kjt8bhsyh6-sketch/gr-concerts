@@ -24,19 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-21-high-score-comedy-round-10@gr-concerts
-DTSTAMP:20261021T120000Z
-DTSTART;TZID=America/Detroit:20261021T200000
-DTEND;TZID=America/Detroit:20261021T230000
-SUMMARY:High Score Comedy: Round 10
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketweb.com/even
- t/high-score-comedy-round-10-the-pyramid-scheme-tickets/15040123 (confirm
-  details with the venue)
-URL:https://www.ticketweb.com/event/high-score-comedy-round-10-the-pyramid
- -scheme-tickets/15040123
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-22-phabies-ohly-kate-pillsbury@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261022T190000
@@ -1262,6 +1249,19 @@ URL:https://www.etix.com/ticket/p/61506047/leslie-jonesim-hot-tour-grand-r
  apids-the-big-room
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-14-northbound-with-fredde-gallo-hubb-21@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261114T210000
+DTEND;TZID=America/Detroit:20261115T000000
+SUMMARY:Northbound (with Fredde\, Gallo\, Hubb) (21+)
+LOCATION:The Mint (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/32284731/northbound-grand-rapids-the-intersection-the-mint (confirm d
+ etails with the venue)
+URL:https://www.etix.com/ticket/p/32284731/northbound-grand-rapids-the-int
+ ersection-the-mint
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-15-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261115T130000
@@ -2250,6 +2250,21 @@ URL:https://www.etix.com/ticket/p/76111988/truth-grand-rapids-the-intersec
  tion-elevation
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-11-midwest-skies-presents-the-4th-annual-ugly-f3cf0h@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261211T190000
+DTEND;TZID=America/Detroit:20261211T220000
+SUMMARY:Midwest Skies presents the 4th Annual Ugly Sweater Party ft. Hexin
+ g + On Vacation + American Cheese
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/midwest-skies-presents-the-4th-the-pyramid-scheme-tickets/14393174 
+ (confirm details with the venue)
+URL:https://www.ticketweb.com/event/midwest-skies-presents-the-4th-the-pyr
+ amid-scheme-tickets/14393174
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-12-heyz-something-different-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261212T210000
@@ -2413,6 +2428,21 @@ LOCATION:Wealthy Theatre\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 7:03 PM. Tickets/info: https://grcmc.org/event/river-
  city-improv/1644 (confirm details with the venue)
 URL:https://grcmc.org/event/river-city-improv/1644
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-18-the-american-hotel-system-s-2nd-annual-hom-1ybtrh@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261218T190000
+DTEND;TZID=America/Detroit:20261218T220000
+SUMMARY:The American Hotel System's 2nd Annual Hometown Hotel Holiday ft. 
+ Megan Stark + Low Light
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/the-american-hotel-systems-2nd-the-pyramid-scheme-tickets/14393154 
+ (confirm details with the venue)
+URL:https://www.ticketweb.com/event/the-american-hotel-systems-2nd-the-pyr
+ amid-scheme-tickets/14393154
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-19-jeff-daniels@gr-concerts
@@ -2653,6 +2683,19 @@ URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  brahms--wagner
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-09-grand-theft-after-dark@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270109T200000
+DTEND;TZID=America/Detroit:20270109T230000
+SUMMARY:Grand Theft After Dark
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/grand-theft-after-dark-the-pyramid-scheme-tickets/14377144 (confirm
+  details with the venue)
+URL:https://www.ticketweb.com/event/grand-theft-after-dark-the-pyramid-sch
+ eme-tickets/14377144
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-12-broadway-grand-rapids-six@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270112T193000
@@ -2731,6 +2774,30 @@ URL:https://www.etix.com/ticket/p/91296937/house-partya-sweaty-loveletter-
  to-the-2010s-rager-grand-rapids-the-intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-15-candlelight-queen-vs-the-beatles-jan-15@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270115T183000
+DTEND;TZID=America/Detroit:20270115T213000
+SUMMARY:Candlelight: Queen vs. The Beatles (Jan 15)
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://grcmc.org/theatre/e
+ vent/candlelight-tribute-to-queen-and-the-beatles/1729 (confirm details w
+ ith the venue)
+URL:https://grcmc.org/theatre/event/candlelight-tribute-to-queen-and-the-b
+ eatles/1729
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-15-candlelight-90s-hip-hop-on-strings@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270115T204500
+DTEND;TZID=America/Detroit:20270115T234500
+SUMMARY:Candlelight: 90s Hip-Hop on Strings
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 8:45 PM. Tickets/info: https://grcmc.org/event/can
+ dlelight-90s-hip-hop-on-strings/1730 (confirm details with the venue)
+URL:https://grcmc.org/event/candlelight-90s-hip-hop-on-strings/1730
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-16-broadway-grand-rapids-six@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270116T140000
@@ -2768,6 +2835,30 @@ DESCRIPTION:Comedy\, Time on ticket page. Tickets/info: https://www.ticket
  65282743BFF5 (confirm details with the venue)
 URL:https://www.ticketmaster.com/chris-fleming-live-grand-rapids-michigan-
  01-16-2027/event/080065282743BFF5
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-16-candlelight-tribute-to-michael-jackson@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270116T183000
+DTEND;TZID=America/Detroit:20270116T213000
+SUMMARY:Candlelight: Tribute to Michael Jackson
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://grcmc.org/event/can
+ dlelight-tribute-to-michael-jackson/1708 (confirm details with the venue)
+URL:https://grcmc.org/event/candlelight-tribute-to-michael-jackson/1708
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-16-candlelight-coldplay-imagine-dragons@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270116T204500
+DTEND;TZID=America/Detroit:20270116T234500
+SUMMARY:Candlelight: Coldplay & Imagine Dragons
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 8:45 PM. Tickets/info: https://grcmc.org/theatre/e
+ vent/candlelight-concert-coldplay-imagine-dragons/1709 (confirm details w
+ ith the venue)
+URL:https://grcmc.org/theatre/event/candlelight-concert-coldplay-imagine-d
+ ragons/1709
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-17-broadway-grand-rapids-six@gr-concerts
@@ -3027,6 +3118,19 @@ URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  ravels-rapsodie-espagnole
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-31-josh-rose-drew-nelson-acoustic-stew-music-guild@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270131T150000
+DTEND;TZID=America/Detroit:20270131T180000
+SUMMARY:Josh Rose & Drew Nelson – Acoustic Stew Music Guild
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/event/josh-ros
+ e-drew-nelson-acoustic-stew-music-guild/1742 (confirm details with the ve
+ nue)
+URL:https://grcmc.org/event/josh-rose-drew-nelson-acoustic-stew-music-guil
+ d/1742
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-04-chamber-music-society-of-lincoln-center-rh-47sgjv@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -3052,6 +3156,30 @@ DESCRIPTION:Metal\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p/8
  etails with the venue)
 URL:https://www.etix.com/ticket/p/84873412/as-i-lay-dying-grand-rapids-the
  -intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-05-candlelight-queen-vs-the-beatles-feb-5@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270205T183000
+DTEND;TZID=America/Detroit:20270205T213000
+SUMMARY:Candlelight: Queen vs. The Beatles (Feb 5)
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://grcmc.org/theatre/e
+ vent/candlelight-tribute-to-queen-and-the-beatles/1705 (confirm details w
+ ith the venue)
+URL:https://grcmc.org/theatre/event/candlelight-tribute-to-queen-and-the-b
+ eatles/1705
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-06-pop-scholars-improv-comedy-feb-6@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270206T200000
+DTEND;TZID=America/Detroit:20270206T230000
+SUMMARY:Pop Scholars: Improv Comedy (Feb 6)
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/event/pop-sc
+ holars-improv-comedy/1131 (confirm details with the venue)
+URL:https://grcmc.org/event/pop-scholars-improv-comedy/1131
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-07-all-things-equal-the-life-trials-of-ruth-b-hidbwa@gr-concer
@@ -3156,9 +3284,9 @@ DTSTART;TZID=America/Detroit:20270212T100000
 DTEND;TZID=America/Detroit:20270212T130000
 SUMMARY:GR Symphony: Coffee with Pearl (GR Symphony Chorus)
 LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 10:00 AM. Tickets/info: https://am.ticketmaster.co
- m/grsymphony/buy/ism/N0NPRjAyMTI= (confirm details with the venue)
-URL:https://am.ticketmaster.com/grsymphony/buy/ism/N0NPRjAyMTI=
+DESCRIPTION:Classical\, 10:00 AM. Tickets/info: https://www.grsymphony.org
+ /coffee-with-pearl (confirm details with the venue)
+URL:https://www.grsymphony.org/coffee-with-pearl
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-12-gr-symphony-light-beyond-shadows-gr-sympho-rouzby@gr-concer
@@ -3197,6 +3325,17 @@ DESCRIPTION:Dance Party\, 9:30 PM. Tickets/info: https://www.etix.com/tick
   details with the venue)
 URL:https://www.etix.com/ticket/p/75045829/2000s-rave-grand-rapids-the-int
  ersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-13-candlelight-valentine-s-day-special@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270213T204500
+DTEND;TZID=America/Detroit:20270213T234500
+SUMMARY:Candlelight: Valentine's Day Special
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 8:45 PM. Tickets/info: https://grcmc.org/event/can
+ dlelight-valentine-s-day-special/1731 (confirm details with the venue)
+URL:https://grcmc.org/event/candlelight-valentine-s-day-special/1731
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-17-riley-with-super-sometimes-leisure-hour-shoreline@gr-concer
@@ -3259,6 +3398,17 @@ DESCRIPTION:Country\, Time on ticket page. Tickets/info: https://www.ticke
  20-2027/event/0800654FD8DE66D8 (confirm details with the venue)
 URL:https://www.ticketmaster.com/buffalo-traffic-jam-pictures-of-you-grand
  -rapids-michigan-02-20-2027/event/0800654FD8DE66D8
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-20-river-city-improv-feb-20@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270220T190300
+DTEND;TZID=America/Detroit:20270220T220300
+SUMMARY:River City Improv (Feb 20)
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:03 PM. Tickets/info: https://grcmc.org/event/river-
+ city-improv/1646 (confirm details with the venue)
+URL:https://grcmc.org/event/river-city-improv/1646
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-21-shovels-rope@gr-concerts
@@ -3339,6 +3489,20 @@ URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  celebrating-beethoven
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-28-hawks-and-owls-string-band-acoustic-stew-m-x3ci31@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270228T150000
+DTEND;TZID=America/Detroit:20270228T180000
+SUMMARY:Hawks and Owls String Band – Acoustic Stew Music Guild
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/event/hawks-an
+ d-owls-string-band-acoustic-stew-music-guild/1738 (confirm details with t
+ he venue)
+URL:https://grcmc.org/event/hawks-and-owls-string-band-acoustic-stew-music
+ -guild/1738
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-02-broadway-grand-rapids-death-becomes-her-mar-2-7@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270302T190000
@@ -3412,6 +3576,17 @@ DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.etix.com/tick
  rsection-elevation (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/63954168/mega-80s-the-ultimate-80s-retro
  -party-grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-06-pop-scholars-improv-comedy-mar-6@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270306T200000
+DTEND;TZID=America/Detroit:20270306T230000
+SUMMARY:Pop Scholars: Improv Comedy (Mar 6)
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/event/pop-sc
+ holars-improv-comedy/1132 (confirm details with the venue)
+URL:https://grcmc.org/event/pop-scholars-improv-comedy/1132
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-07-tobymac-hits-deep-tour-2027-with-jeremy-ca-nt4z77@gr-concer
@@ -3546,6 +3721,30 @@ URL:https://www.ticketweb.com/event/lucas-zelnick-the-big-room-tickets/150
  05433
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-20-river-city-improv-mar-20@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270320T190300
+DTEND;TZID=America/Detroit:20270320T220300
+SUMMARY:River City Improv (Mar 20)
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:03 PM. Tickets/info: https://grcmc.org/event/river-
+ city-improv/1647 (confirm details with the venue)
+URL:https://grcmc.org/event/river-city-improv/1647
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-21-blue-water-ramblers-acoustic-stew-music-guild@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270321T150000
+DTEND;TZID=America/Detroit:20270321T180000
+SUMMARY:Blue Water Ramblers – Acoustic Stew Music Guild
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/event/blue-wat
+ er-ramblers-acoustic-stew-music-guild/1740 (confirm details with the venu
+ e)
+URL:https://grcmc.org/event/blue-water-ramblers-acoustic-stew-music-guild/
+ 1740
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-23-ali-wong-live@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270323T190000
@@ -3582,6 +3781,28 @@ DESCRIPTION:Jazz\, 7:30 PM. Tickets/info: https://www.scmcgr.org/concerts/
  nue)
 URL:https://www.scmcgr.org/concerts/cecile-mclorin-salvant-sullivan-fortne
  r-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-26-the-huey-lewis-and-the-news-experience@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270326T190000
+DTEND;TZID=America/Detroit:20270326T220000
+SUMMARY:The Huey Lewis and the News Experience
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://grcmc.org/event/the-h
+ uey-lewis-and-the-news-experience/1668 (confirm details with the venue)
+URL:https://grcmc.org/event/the-huey-lewis-and-the-news-experience/1668
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-27-the-blues-brothers-experience@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270327T190000
+DTEND;TZID=America/Detroit:20270327T220000
+SUMMARY:The Blues Brothers Experience
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://grcmc.org/event/the-b
+ lues-brothers-experience-1/1669 (confirm details with the venue)
+URL:https://grcmc.org/event/the-blues-brothers-experience-1/1669
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-02-gianmarco-soresi-the-misery-loves-tour@gr-concerts
@@ -3647,6 +3868,17 @@ DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://www.ticketmaster.com/
  8006529D0EA7D7B (confirm details with the venue)
 URL:https://www.ticketmaster.com/brit-floyd-animals-50-world-tour-grand-ra
  pids-michigan-04-09-2027/event/08006529D0EA7D7B
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-09-steve-hofstetter@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270409T193000
+DTEND;TZID=America/Detroit:20270409T223000
+SUMMARY:Steve Hofstetter
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:30 PM. Tickets/info: https://grcmc.org/event/steve-
+ hofstetter/1672 (confirm details with the venue)
+URL:https://grcmc.org/event/steve-hofstetter/1672
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-11-josiah-queen-damascus-road-tour@gr-concerts
@@ -3754,6 +3986,30 @@ URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  barber--bernstein
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-17-pop-scholars-improv-comedy-apr-17@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270417T200000
+DTEND;TZID=America/Detroit:20270417T230000
+SUMMARY:Pop Scholars: Improv Comedy (Apr 17)
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/event/pop-sc
+ holars-improv-comedy/1718 (confirm details with the venue)
+URL:https://grcmc.org/event/pop-scholars-improv-comedy/1718
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-18-ruth-max-bloomquist-acoustic-stew-music-guild@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270418T150000
+DTEND;TZID=America/Detroit:20270418T180000
+SUMMARY:Ruth & Max Bloomquist – Acoustic Stew Music Guild
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/event/ruth-max
+ -bloomquist-acoustic-stew-music-guild/1743 (confirm details with the venu
+ e)
+URL:https://grcmc.org/event/ruth-max-bloomquist-acoustic-stew-music-guild/
+ 1743
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-20-foy-vance@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270420T190000
@@ -3854,5 +4110,125 @@ DESCRIPTION:Opera\, Showtimes on venue site. Tickets/info: https://www.dev
  ls with the venue)
 URL:https://www.devosperformancehall.com/events/2027/opera-gr-presents-car
  men
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-05-world-famous-popovich-comedy-pet-theater@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270505T190000
+DTEND;TZID=America/Detroit:20270505T220000
+SUMMARY:World Famous POPOVICH Comedy Pet Theater
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Family Show\, 7:00 PM. Tickets/info: https://grcmc.org/event/w
+ orld-famous-popovich-comedy-pet-theater/1810 (confirm details with the ve
+ nue)
+URL:https://grcmc.org/event/world-famous-popovich-comedy-pet-theater/1810
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-07-carsie-blanton@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270507T190000
+DTEND;TZID=America/Detroit:20270507T220000
+SUMMARY:Carsie Blanton
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event/
+ carsie-blanton-the-pyramid-scheme-tickets/15002203 (confirm details with 
+ the venue)
+URL:https://www.ticketweb.com/event/carsie-blanton-the-pyramid-scheme-tick
+ ets/15002203
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-09-clap-your-hands-say-yeah@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270509T190000
+DTEND;TZID=America/Detroit:20270509T220000
+SUMMARY:Clap Your Hands Say Yeah
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Indie Rock\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/clap-your-hands-say-yeah-the-pyramid-scheme-tickets/14392794 (confi
+ rm details with the venue)
+URL:https://www.ticketweb.com/event/clap-your-hands-say-yeah-the-pyramid-s
+ cheme-tickets/14392794
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-19-judy-collins-sweet-judy-blue-eyes-farewell@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270519T193000
+DTEND;TZID=America/Detroit:20270519T223000
+SUMMARY:Judy Collins – Sweet Judy Blue Eyes: Farewell
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 7:30 PM. Tickets/info: https://www.scmcgr.org/concerts/
+ judy-collins-2027 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/judy-collins-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-06-11-stick-figure-enjoy-the-ride-tour-with-the-1wjjr1@gr-concert
+ s
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270611T183000
+DTEND;TZID=America/Detroit:20270611T213000
+SUMMARY:Stick Figure – Enjoy the Ride Tour (with The Elovaters\, Harry Mac
+ k)
+LOCATION:Acrisure Amphitheater\, Grand Rapids\, MI
+DESCRIPTION:Reggae\, 6:30 PM. Tickets/info: https://www.ticketmaster.com/k
+ ona-big-wave-presents-stick-figure-grand-rapids-michigan-06-11-2027/event
+ /080064BBAA797AE2 (confirm details with the venue)
+URL:https://www.ticketmaster.com/kona-big-wave-presents-stick-figure-grand
+ -rapids-michigan-06-11-2027/event/080064BBAA797AE2
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-07-26-eric-andre-subtle@gr-concerts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270726T190000
+DTEND;TZID=America/Detroit:20270726T220000
+SUMMARY:Eric Andre: Subtle
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/e
+ ric-andre-subtle-grand-rapids-michigan-07-26-2027/event/08006545F1F272F5 
+ (confirm details with the venue)
+URL:https://www.ticketmaster.com/eric-andre-subtle-grand-rapids-michigan-0
+ 7-26-2027/event/08006545F1F272F5
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-07-31-greta-van-fleet-into-the-beginning-tour-wi-1d2fcr@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270731T190000
+DTEND;TZID=America/Detroit:20270731T220000
+SUMMARY:Greta Van Fleet – Into the Beginning Tour (with Portugal. The Man\
+ , Friko)
+LOCATION:Acrisure Amphitheater\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/gre
+ ta-van-fleet-into-the-beginning-grand-rapids-michigan-07-31-2027/event/08
+ 00653CABC5444C (confirm details with the venue)
+URL:https://www.ticketmaster.com/greta-van-fleet-into-the-beginning-grand-
+ rapids-michigan-07-31-2027/event/0800653CABC5444C
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-08-11-broadway-grand-rapids-the-phantom-of-the-o-1nwldx@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270811T190000
+DTEND;TZID=America/Detroit:20270811T220000
+SUMMARY:Broadway Grand Rapids: The Phantom of the Opera (Aug 11–22)
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Musical\, Showtimes on venue site. Tickets/info: https://www.d
+ evosperformancehall.com/events/2027/broadway-grand-rapids-presents-phanto
+ m-of-the-opera (confirm details with the venue)
+URL:https://www.devosperformancehall.com/events/2027/broadway-grand-rapids
+ -presents-phantom-of-the-opera
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-08-12-matchbox-twenty-30th-anniversary-live-tour-1luokl@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270812T193000
+DTEND;TZID=America/Detroit:20270812T223000
+SUMMARY:Matchbox Twenty – 30th Anniversary Live Tour (with Matt Nathanson)
+LOCATION:Acrisure Amphitheater\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/mat
+ chbox-twenty-30-grand-rapids-michigan-08-12-2027/event/08006547E0547BA6 (
+ confirm details with the venue)
+URL:https://www.ticketmaster.com/matchbox-twenty-30-grand-rapids-michigan-
+ 08-12-2027/event/08006547E0547BA6
 END:VEVENT
 END:VCALENDAR

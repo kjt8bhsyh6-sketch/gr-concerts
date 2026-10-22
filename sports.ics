@@ -24,17 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-21-grand-rapids-griffins-vs-manitoba-moose@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261021T190000
-DTEND;TZID=America/Detroit:20261021T220000
-SUMMARY:Grand Rapids Griffins vs. Manitoba Moose
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
- venue.net/events/S (confirm details with the venue)
-URL:https://griffinshockey.evenue.net/events/S
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-23-grand-rapids-griffins-vs-cleveland-monsters@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261023T190000

@@ -1,17 +1,7 @@
 {
-  "generated": "2026-10-21",
-  "count": 81,
+  "generated": "2026-10-22",
+  "count": 83,
   "pending": [
-    {
-      "artist": "High Score Comedy: Round 10",
-      "week": "this",
-      "dates": [
-        "2026-10-21"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/high-score-comedy-round-10-the-pyramid-scheme-tickets/15040123",
-      "added": "2026-10-21"
-    },
     {
       "artist": "The People's Party ft. The Dinero Crew",
       "week": "this",
@@ -51,16 +41,6 @@
       "venue": "The Intersection (main room)",
       "link": "https://www.etix.com/ticket/p/37364607/bingo-locohalloween-grand-rapids-the-intersection",
       "added": "2026-10-21"
-    },
-    {
-      "artist": "SPITE – New World Killer Tour",
-      "week": "this",
-      "dates": [
-        "2026-10-25"
-      ],
-      "venue": "Elevation (at The Intersection)",
-      "link": "https://www.etix.com/ticket/p/51838751/skip-the-line-for-spite-grand-rapids-the-intersection-elevation",
-      "added": "2026-10-19"
     },
     {
       "artist": "The Blue Herons + The Great Black Night + Vida Eterna",
@@ -211,6 +191,16 @@
       "venue": "The Intersection (main room)",
       "link": "https://www.etix.com/ticket/p/57784142/boogie-t-grand-rapids-the-intersection",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Northbound (with Fredde, Gallo, Hubb) (21+)",
+      "week": "later",
+      "dates": [
+        "2026-11-14"
+      ],
+      "venue": "The Mint (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/32284731/northbound-grand-rapids-the-intersection-the-mint",
+      "added": "2026-10-22"
     },
     {
       "artist": "Swanson, Matthews & Bardolph – Acoustic Stew Music Guild",
@@ -423,16 +413,6 @@
       "added": "2026-10-19"
     },
     {
-      "artist": "Pop Scholars: Improv Comedy (Dec 5)",
-      "week": "later",
-      "dates": [
-        "2026-12-05"
-      ],
-      "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/event/pop-scholars-improv-comedy/1129",
-      "added": "2026-10-19"
-    },
-    {
       "artist": "J Oscar Bittinger: A Winter's Tune – Acoustic Stew Music Guild",
       "week": "later",
       "dates": [
@@ -493,6 +473,16 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "Midwest Skies presents the 4th Annual Ugly Sweater Party ft. Hexing + On Vacation + American Cheese",
+      "week": "later",
+      "dates": [
+        "2026-12-11"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/midwest-skies-presents-the-4th-the-pyramid-scheme-tickets/14393174",
+      "added": "2026-10-22"
+    },
+    {
       "artist": "HEYZ – Something Different Tour",
       "week": "later",
       "dates": [
@@ -551,6 +541,16 @@
       "venue": "Wealthy Theatre",
       "link": "https://grcmc.org/event/river-city-improv/1644",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "The American Hotel System's 2nd Annual Hometown Hotel Holiday ft. Megan Stark + Low Light",
+      "week": "later",
+      "dates": [
+        "2026-12-18"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/the-american-hotel-systems-2nd-the-pyramid-scheme-tickets/14393154",
+      "added": "2026-10-22"
     },
     {
       "artist": "Conflict For A Cause (with Annex Void, From This Point On, The Harbor Divide)",
@@ -623,14 +623,14 @@
       "added": "2026-10-19"
     },
     {
-      "artist": "Pop Scholars: Improv Comedy (Jan 9)",
+      "artist": "Grand Theft After Dark",
       "week": "later",
       "dates": [
         "2027-01-09"
       ],
-      "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/event/pop-scholars-improv-comedy/1130",
-      "added": "2026-10-19"
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/grand-theft-after-dark-the-pyramid-scheme-tickets/14377144",
+      "added": "2026-10-22"
     },
     {
       "artist": "House Party: A Sweaty Love-Letter To The 2010s Rager",
@@ -773,6 +773,16 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "River City Improv (Feb 20)",
+      "week": "later",
+      "dates": [
+        "2027-02-20"
+      ],
+      "venue": "Wealthy Theatre",
+      "link": "https://grcmc.org/event/river-city-improv/1646",
+      "added": "2026-10-22"
+    },
+    {
       "artist": "Youth Fountain + Not My Weekend + Beachglass + The Lonely Waiting Room",
       "week": "later",
       "dates": [
@@ -811,6 +821,16 @@
       "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/63954168/mega-80s-the-ultimate-80s-retro-party-grand-rapids-the-intersection-elevation",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "River City Improv (Mar 20)",
+      "week": "later",
+      "dates": [
+        "2027-03-20"
+      ],
+      "venue": "Wealthy Theatre",
+      "link": "https://grcmc.org/event/river-city-improv/1647",
+      "added": "2026-10-22"
     }
   ]
 }
