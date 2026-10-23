@@ -5449,6 +5449,18 @@ URL:https://www.ticketmaster.com/warren-zeiders-no-brakes-tour-grand-rapid
  s-michigan-04-15-2027/event/08006541B02463F9
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-15-short-circuit-jewish-theatre-grand-rapids-1shmb6@gr-concert
+ s
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270415T193000
+DTEND;TZID=America/Detroit:20270415T223000
+SUMMARY:Short Circuit (Jewish Theatre Grand Rapids\, Apr 15–May 2)
+LOCATION:Dog Story Theater\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.jtgr.org/2026-202
+ 7/short-circuit (confirm details with the venue)
+URL:https://www.jtgr.org/2026-2027/short-circuit
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-16-gr-symphony-barber-bernstein@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270416T190000

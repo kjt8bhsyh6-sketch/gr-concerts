@@ -89,13 +89,15 @@ await t("malformed returnTo -> 400; foreign returnTo -> falls back to SITE_URL",
   r = await post(m, "/auth/request", { email: "r2@example.com", returnTo: "https://evil.example/x" }); assert.equal(r.status, 200);
   assert.ok(sent.at(-1).text.includes("https://grhappenings.com/?signin="));
 });
-await t("CORS: localhost & pages.dev rejected without DEV; github.io allowed", async () => {
-  for (const o of ["http://localhost:8788", "http://127.0.0.1:3000", "https://abc.grhappenings.pages.dev"]) {
+await t("CORS: localhost rejected without DEV; pages.dev & github.io allowed", async () => {
+  for (const o of ["http://localhost:8788", "http://127.0.0.1:3000"]) {
     const r = await m.dispatchFetch("https://grh-profiles.grhappenings.workers.dev/auth/request", { method: "POST", headers: { Origin: o, "Content-Type": "application/json" }, body: "{}" });
     assert.equal(r.status, 403, o); assert.equal(r.headers.get("access-control-allow-origin"), null);
   }
-  const r = await m.dispatchFetch("https://grh-profiles.grhappenings.workers.dev/health", { method: "OPTIONS", headers: { Origin: "https://kjt8bhsyh6-sketch.github.io" } });
-  assert.equal(r.status, 204); assert.equal(r.headers.get("access-control-allow-origin"), "https://kjt8bhsyh6-sketch.github.io");
+  for (const o of ["https://kjt8bhsyh6-sketch.github.io", "https://grhappenings.pages.dev", "https://abc.grhappenings.pages.dev"]) {
+    const r = await m.dispatchFetch("https://grh-profiles.grhappenings.workers.dev/health", { method: "OPTIONS", headers: { Origin: o } });
+    assert.equal(r.status, 204, o); assert.equal(r.headers.get("access-control-allow-origin"), o);
+  }
   const x = await m.dispatchFetch(SITE + "/api/profile", { method: "OPTIONS", headers: { Origin: "https://evil.example" } }); assert.equal(x.status, 403);
 });
 await t("DEV=1 allows localhost; preview only with DEV", async () => {

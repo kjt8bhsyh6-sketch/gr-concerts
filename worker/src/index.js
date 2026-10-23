@@ -5,9 +5,9 @@
 // https://grh-profiles.grhappenings.workers.dev/* (legacy; Bearer token only). The /api prefix is stripped.
 import { loadData, matchPicks, renderEmail, listProfiles, unsubSig, unsubUrl, checkLinks, venuePage } from "./alerts.js";
 // Production origins. github.io stays while the old GitHub Pages copy still forwards visitors (legacy, Bearer token only).
-const ORIGINS = [/^https:\/\/(www\.)?grhappenings\.com$/, /^https:\/\/kjt8bhsyh6-sketch\.github\.io$/];
-// Previews and local dev: only when the Worker var DEV is "1" (wrangler dev --var DEV:1). Never set DEV in production.
-const DEV_ORIGINS = [/^https:\/\/([a-z0-9-]+\.)?grhappenings\.pages\.dev$/, /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
+const ORIGINS = [/^https:\/\/(www\.)?grhappenings\.com$/, /^https:\/\/([a-z0-9-]+\.)?grhappenings\.pages\.dev$/, /^https:\/\/kjt8bhsyh6-sketch\.github\.io$/];
+// Local dev: only when the Worker var DEV is "1" (wrangler dev --var DEV:1). Never set DEV in production.
+const DEV_ORIGINS = [/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
 const isDev = env => String(env.DEV || "") === "1";
 const originOk = (env, o) => ORIGINS.some(r => r.test(o)) || (isDev(env) && DEV_ORIGINS.some(r => r.test(o)));
 const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 90, RENEW_AFTER = 60 * 60 * 24 * 1000, CODE_TRIES = 5; // 90-day sliding session
@@ -15,7 +15,7 @@ const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 90, RENEW_AFTER = 60 * 60 * 2
 const EMAIL_COOLDOWN = 60, EMAIL_HOURLY = 5, IP_REQ = { n: 10, win: 600 }, IP_CODE = { n: 20, win: 600 };
 const COOKIE = "grh_s";
 // First-party cookie only when the browser talks to the Worker on the site's own host (grhappenings.com/api or localhost dev).
-const firstParty = (req, url, env) => { const o = req.headers.get("Origin"); return (!o || o === url.origin) && (url.hostname === "grhappenings.com" || (isDev(env) && (url.hostname === "localhost" || url.hostname === "127.0.0.1"))); };
+const firstParty = (req, url, env) => { const o = req.headers.get("Origin"); return (!o || o === url.origin) && (/^(www\.)?grhappenings\.com$/.test(url.hostname) || (isDev(env) && (url.hostname === "localhost" || url.hostname === "127.0.0.1"))); };
 const setCookie = (sid, url, maxAge = SESSION_TTL) => `${COOKIE}=${sid}; Max-Age=${maxAge}; Path=/api; HttpOnly; SameSite=Lax${url.protocol === "https:" ? "; Secure" : ""}`;
 const code6 = () => String(crypto.getRandomValues(new Uint32Array(1))[0] % 1000000).padStart(6, "0");
 const LIST = (a, n = 40) => Array.isArray(a) ? a.filter(x => typeof x === "string").map(x => x.trim().slice(0, 60)).filter(Boolean).slice(0, n) : [];

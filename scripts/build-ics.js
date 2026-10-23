@@ -11,7 +11,8 @@ console.log(`Wrote concerts.ics (${list.length} shows)`);
 const { GAMES, TEAMS } = loadData();
 if (GAMES.length) {
   const sp = t => (TEAMS.find(x => x.name === t) || {}).sport || 'Sports';
-  const ev = GAMES.slice().sort((a, b) => a.date.localeCompare(b.date)).map(g => ({ artist: `${g.team} vs. ${g.opponent}`, venue: g.venue, date: g.date, time: g.time, genre: sp(g.team), link: g.link, added: g.added }));
+  const hasVs = s => /^(vs\.|semifinal|championship|third-place|consolation)/i.test(s) || /\bvs\.\s/i.test(s);
+  const ev = GAMES.slice().sort((a, b) => a.date.localeCompare(b.date)).map(g => ({ artist: hasVs(g.opponent) ? `${g.team} — ${g.opponent}` : `${g.team} vs. ${g.opponent}`, venue: g.venue, date: g.date, time: g.time, genre: sp(g.team), link: g.link, added: g.added }));
   fs.writeFileSync(path.join(ROOT, 'sports.ics'), ics.calendar(ev, 'Grand Rapids Sports'));
   console.log(`Wrote sports.ics (${ev.length} games)`);
 }

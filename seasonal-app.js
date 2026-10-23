@@ -76,7 +76,7 @@
       <div class="actions"><a class="b primary" href="${h(e.link)}" target="_blank" rel="${e.c && e.c.affiliate ? 'sponsored noopener' : 'noopener'}">Info / tickets</a>
       ${Marks.buttons(id)}
       <button type="button" class="b share" data-id="${id}" data-title="${h(e.name)}">Share</button>
-      <button type="button" class="b ics" data-id="${id}">Apple</button><a class="b gcal" data-id="${id}" href="${h(calLink(e))}" target="_blank" rel="noopener">Google</a></div></article>`;
+      <button type="button" class="b ics" data-id="${id}">Apple Cal</button><a class="b gcal" data-id="${id}" href="${h(calLink(e))}" target="_blank" rel="noopener">Google Cal</a>${GRMAP.buttons(e.location)}</div></article>`;
   }
   // an event runs from `sort` to `end` (optional; one-day event if missing)
   const overlaps = (e, f, t) => e.sort <= t && (e.end || e.sort) >= f;

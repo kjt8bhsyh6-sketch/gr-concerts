@@ -4,7 +4,7 @@
    only legacy hosts (github.io / pages.dev, which call workers.dev) keep it in localStorage "grh-session" as a Bearer token.
    iOS home-screen apps have their own storage, so sign-in also accepts the 6-digit code from the email. */
 (function () {
-  const API = location.hostname === "grhappenings.com" ? "/api" : (window.GRH_API || "https://grh-profiles.grhappenings.workers.dev");
+  const API = /^(www\.)?grhappenings\.com$/.test(location.hostname) ? "/api" : (window.GRH_API || "https://grh-profiles.grhappenings.workers.dev");
   const KS = "grh-session", KP = "grh-profile";
   const hdr = document.querySelector("body > header, header"); if (!hdr) return;
   const INFO = /privacy|terms/.test(location.pathname);
@@ -29,8 +29,25 @@
   async function api(path, method, body, bearer = !FP) {
     const s = bearer ? get(KS) : null, h = { "Content-Type": "application/json" };
     if (s) h.Authorization = "Bearer " + s;
-    const r = await fetch(API + path, { method: method || "GET", headers: h, credentials: FP ? "same-origin" : "omit", body: body ? JSON.stringify(body) : undefined });
+    const send = (base, cred) => fetch(base + path, { method: method || "GET", headers: h, credentials: cred, body: body ? JSON.stringify(body) : undefined });
+    let r, viaFallback = false;
+    try {
+      r = await send(API, FP ? "same-origin" : "omit");
+    } catch (e1) {
+      await new Promise(ok => setTimeout(ok, 150));
+      try {
+        r = await send(API, FP ? "same-origin" : "omit");
+      } catch (e2) {
+        try {
+          r = await send(API === "/api" ? "https://grh-profiles.grhappenings.workers.dev" : "https://grhappenings.com/api", "omit");
+          viaFallback = true;
+        } catch (e3) {
+          throw new Error("Couldn't reach the sign-in server. Please check your connection and try again.");
+        }
+      }
+    }
     const j = await r.json().catch(() => ({}));
+    if (viaFallback) j.viaFallback = true;
     if (r.status === 401 && (bearer || !get(KS))) { put(KS, null); put(KP, null); }
     if (!r.ok) { const e = new Error(j.error || (r.status === 429 ? "Too many tries. Please wait a few minutes and try again." : "Something went wrong. Try again.")); e.status = r.status; e.retryAfter = +j.retryAfter || 0; throw e; }
     return j;
@@ -66,8 +83,9 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
   function close() { document.querySelectorAll(".mp-back,.mp-sheet").forEach(e => e.remove()); }
   function sheet(html) {
     close();
-    document.body.insertAdjacentHTML("beforeend", `<div class="mp-back"></div><div class="mp-sheet" role="dialog" aria-modal="true">${html}</div>`);
+    document.body.insertAdjacentHTML("beforeend", `<div class="mp-back mp-backdrop open"></div><div class="mp-sheet mp-modal" role="dialog" aria-modal="true">${html}</div>`);
     const s = document.querySelector(".mp-sheet");
+    s.setAttribute("aria-modal", "true");
     document.querySelector(".mp-back").onclick = close; s.querySelector(".mp-x").onclick = close;
     s.addEventListener("click", e => {
       const c = e.target.closest(".mp-c"); if (c) { if (c.dataset.one) s.querySelectorAll(`.mp-c[data-g="${c.dataset.g}"]`).forEach(x => x.classList.toggle("on", x === c)); else c.classList.toggle("on"); }
@@ -136,7 +154,7 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
     };
     cb.onclick = submit; ci.oninput = () => { if (ci.value.replace(/\D/g, "").length === 6) submit(); };
   }
-  function signedIn(r) { put(KS, FP ? null : r.session); put(KP, r.profile); track("signin", "Profile: signed in"); refresh(); toast("You're signed in"); }
+  function signedIn(r) { put(KS, (FP && !r.viaFallback) ? null : r.session); put(KP, r.profile); track("signin", "Profile: signed in"); refresh(); toast("You're signed in"); }
 
   function openProfile() {
     const p = Object.assign(blank(), get(KP) || {});
@@ -182,7 +200,8 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
         const dow = new Date(g.date + "T12:00:00").getDay(), h = hour(g.time);
         const types = { Weekend: dow === 0 || dow === 6 || (dow === 5 && h >= 17), Weeknight: dow >= 1 && dow <= 4 && h >= 17, Matinee: h < 17, "Home openers": first[g.team] === g.date };
         const teamOk = !s.teams.length || has(s.teams, g.team), typeOk = !s.gameTypes.length || s.gameTypes.some(t => types[t]);
-        if (teamOk && typeOk) out.push([g.team.replace(/^(Grand Rapids|West Michigan) /, "") + " vs. " + g.opponent, dfmt(g.date) + " · " + g.time + " · " + g.venue, "game-" + GRICS.id({ date: g.date, artist: g.team + " vs. " + g.opponent, time: g.time })]);
+        const hv = /^(vs\.|semifinal|championship|third-place|consolation)/i.test(g.opponent) || /\bvs\.\s/i.test(g.opponent);
+        if (teamOk && typeOk) out.push([g.team.replace(/^(Grand Rapids|West Michigan) /, "") + (hv ? " — " : " vs. ") + g.opponent, dfmt(g.date) + " · " + g.time + " · " + g.venue, "game-" + GRICS.id({ date: g.date, artist: g.team + (hv ? " — " : " vs. ") + g.opponent, time: g.time })]);
       });
     } else if (pg === "seasonal" && typeof SEASONAL !== "undefined") {
       const t = p.seasonal.types; if (!t.length) return out;

@@ -21,8 +21,11 @@
   }
   const fmt = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
   const sport = t => (TEAMS.find(x => x.name === t) || {}).sport || 'Sports';
+  const hasVs = s => /^(vs\.|semifinal|championship|third-place|consolation)/i.test(s) || /\bvs\.\s/i.test(s);
+  const oppLine = g => hasVs(g.opponent) ? g.opponent : 'vs. ' + g.opponent;
+  const gameTitle = g => hasVs(g.opponent) ? `${g.team} — ${g.opponent}` : `${g.team} vs. ${g.opponent}`;
   // shape each game like a concert so the shared calendar helpers (ics.js) work
-  const asEvent = g => ({ artist: `${g.team} vs. ${g.opponent}`, venue: g.venue, date: g.date, time: g.time, genre: sport(g.team), link: g.link, added: g.added });
+  const asEvent = g => ({ artist: gameTitle(g), venue: g.venue, date: g.date, time: g.time, genre: sport(g.team), link: g.link, added: g.added });
   const key = g => g.date + String(GRICS.to24(g.time)[0]).padStart(2, '0');
   const games = GAMES.filter(g => ago(g.date) <= 0).sort((a, b) => key(a).localeCompare(key(b))).map(g => Object.assign({}, g, { ev: asEvent(g) }));
   const gid = g => 'game-' + GRICS.id(g.ev);
@@ -34,17 +37,17 @@
   const bioSec = t => BIO[t] && { title: t, text: BIO[t].text, source: BIO[t].source };
   const goBtn = id => Marks.buttons(id);
   function card(g) {
-    const id = gid(g), title = `${g.team} vs. ${g.opponent}, ${fmt(g.date)}`;
+    const id = gid(g), title = `${gameTitle(g)}, ${fmt(g.date)}`;
     return `<article class="card${isNew(g) ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}">
       <div class="badges"><span class="tag">${h(sport(g.team))}</span>${newBadge(g)}</div>
-      <h3>${h(g.team)}</h3><p><strong>vs. ${h(g.opponent)}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>${addedLine(g)}
+      <h3>${h(g.team)}</h3><p><strong>${h(oppLine(g))}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>${addedLine(g)}
       <div class="actions${BIO[g.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a>
       ${whoBtn(id, g.team)}${goBtn(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
-      <button type="button" class="b ics" data-id="${id}">Apple</button><a class="b gcal" data-id="${id}" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google</a></div></article>`;
+      <button type="button" class="b ics" data-id="${id}">Apple Cal</button><a class="b gcal" data-id="${id}" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google Cal</a>${GRMAP.buttons(g.venue)}</div></article>`;
   }
   function note(n) {
     return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span>${newBadge(n)}</div>
-      <h3>${h(n.team)}</h3><p>${h(n.text)}</p>${addedLine(n)}<div class="actions${BIO[n.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a>${whoBtn('note-' + GRICS.slug(n.team), n.team)}</div></article>`;
+      <h3>${h(n.team)}</h3><p>${h(n.text)}</p>${addedLine(n)}<div class="actions${BIO[n.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a>${whoBtn('note-' + GRICS.slug(n.team), n.team)}${n.venue ? GRMAP.buttons(n.venue) : ''}</div></article>`;
   }
   const DR = DateRange.init({ today, lastDate: games.length ? games[games.length - 1].date : '', onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
   const weekEnd = DR.addD(today, 13 - ((new Date(today + 'T12:00').getDay() + 6) % 7));

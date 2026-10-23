@@ -468,4 +468,5 @@ const CONCERTS = [
   { week:"later", artist:"Roosevelt Diggs", venue:"Lowell Arts at Sound Check", date:"2027-04-24", time:"7:00 PM", genre:"Live Music", link:"https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check", added:"2026-10-23" },
   { week:"later", artist:"Phoebe in Winter (Actors' Theatre, May 6–15)", venue:"GRCC Spectrum Theater", date:"2027-05-06", time:"7:30 PM", genre:"Theater", link:"https://actorstheatregrandrapids.org/programming/coming-soon/phoebe-in-winter/", added:"2026-10-23" },
   { week:"later", artist:"Pizza Bagels (Jewish Theatre Grand Rapids, Jun 10–20)", venue:"GRCC Spectrum Theater", date:"2027-06-10", time:"7:30 PM", genre:"Theater", link:"https://www.jtgr.org/season", added:"2026-10-23" },
+  { week:"later", artist:"Short Circuit (Jewish Theatre Grand Rapids, Apr 15–May 2)", venue:"Dog Story Theater", date:"2027-04-15", time:"7:30 PM", genre:"Theater", link:"https://www.jtgr.org/2026-2027/short-circuit", added:"2026-10-23" },
 ];
