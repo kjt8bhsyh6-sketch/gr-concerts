@@ -62,6 +62,20 @@ URL:https://jbzoo.org/events/zoo-goes-boo/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-wizard-s-tea-afternoon-tea-at-high-tea-gr@gr-seasonal
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261102
+SUMMARY:Wizard's Tea Afternoon Tea at High Tea GR
+LOCATION:High Tea GR\, 1522 Wealthy St SE\, Grand Rapids\, MI
+DESCRIPTION:Halloween Tea. Through Nov 1 · Thu 11 AM–5:30 PM\, Fri–Sun 10 
+ AM–5:30 PM (last seating 4 PM) · Full Afternoon Tea $45\, Half $30\, Fair
+ y Tea (8 & under) $22. Info: https://www.highteagr.com/events/wizards-tea
+ -themed-menu (confirm details with the organizer)
+URL:https://www.highteagr.com/events/wizards-tea-themed-menu
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-24-new-salem-corn-maze-witch-s-woods-haunted-corn-ma@gr-season
  al
 DTSTAMP:20261022T120000Z
@@ -120,6 +134,63 @@ URL:https://crawlwith.us/grandrapids/halloween/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-31-saugatuck-family-pet-halloween-parade-and-park-pa@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Saugatuck Family & Pet Halloween Parade and Park Party
+LOCATION:Wicks Park & Corner of Butler & Mason St\, Saugatuck\, Grand Rapi
+ ds\, MI
+DESCRIPTION:Halloween Parade. Sat Oct 31 · lineup 10:15 AM at Butler & Mas
+ on\; parade & Wicks Park party through 1:30 PM. Info: https://saugatuck.c
+ om/event/family-halloween-pet-parade-and-party/ (confirm details with the
+  organizer)
+URL:https://saugatuck.com/event/family-halloween-pet-parade-and-party/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-trick-or-treat-at-the-felt-mansion@gr-seasonal
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Trick-or-Treat at the Felt Mansion
+LOCATION:Felt Estate\, 6597 138th Ave\, Holland\, Grand Rapids\, MI
+DESCRIPTION:Halloween Family Event. Sat Oct 31 · 1–3 PM · free indoor tric
+ k-or-treating in the historic mansion. Info: https://saugatuck.com/event/
+ trick-or-treat-at-the-felt-mansion/ (confirm details with the organizer)
+URL:https://saugatuck.com/event/trick-or-treat-at-the-felt-mansion/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-douglas-halloween-parade-for-adults-28th-annual@gr-seasonal
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Douglas Halloween Parade for Adults (28th Annual)
+LOCATION:Downtown Douglas\, 130 W Center St\, Douglas\, Grand Rapids\, MI
+DESCRIPTION:Halloween Parade. Sat Oct 31 · lineup 9 PM at Old Schoolhouse\
+ ; parade 10 PM–12 AM. Info: https://www.douglashalloween.com/ (confirm de
+ tails with the organizer)
+URL:https://www.douglashalloween.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-05-beauty-and-the-beast-themed-afternoon-tea-at-high@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261130
+SUMMARY:Beauty and the Beast Themed Afternoon Tea at High Tea GR
+LOCATION:High Tea GR\, 1522 Wealthy St SE\, Grand Rapids\, MI
+DESCRIPTION:Holiday Tea. Nov 5–Nov 29 · Thu 11 AM–5:30 PM\, Fri–Sun 10 AM–
+ 5:30 PM (last seating 4 PM) · Full Afternoon Tea $45\, Half $30\, Fairy T
+ ea (8 & under) $22. Info: https://www.highteagr.com/events/beauty-and-the
+ -beast-themed-menu (confirm details with the organizer)
+URL:https://www.highteagr.com/events/beauty-and-the-beast-themed-menu
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-18-grand-rapids-christkindl-markt@gr-seasonal
 DTSTAMP:20261019T120000Z
 DTSTART;VALUE=DATE:20261118
@@ -143,6 +214,21 @@ DESCRIPTION:Holiday Market. Nov 18–Dec 23 · Wed–Sun (closed Mon/Tue & Than
  ksgiving). Info: https://www.studioparkgr.com/holiday-market (confirm det
  ails with the organizer)
 URL:https://www.studioparkgr.com/holiday-market
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-holland-kerstmarkt-european-outdoor-christmas-mar@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261220
+SUMMARY:Holland Kerstmarkt (European Outdoor Christmas Market)
+LOCATION:8th Street Marketplace\, 150 W 8th St\, Holland\, Grand Rapids\, 
+ MI
+DESCRIPTION:Christmas Market. Select Fri–Sat Nov 20–Dec 19 · Fri 3–8 PM\, 
+ Sat 9 AM–7 PM · free admission\, 45 artisan & food booths. Info: https://
+ www.holland.org/kerstmarkt/ (confirm details with the organizer)
+URL:https://www.holland.org/kerstmarkt/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -233,6 +319,139 @@ URL:https://runsignup.com/Race/MI/GrandRapids/GRPSThanksgivingDayTurkeyTro
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-27-saugatuck-christmas-tree-lighting-in-wicks-park@gr-seasonal
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Saugatuck Christmas Tree Lighting in Wicks Park
+LOCATION:Wicks Park Gazebo\, 449 Water St\, Saugatuck\, Grand Rapids\, MI
+DESCRIPTION:Holiday Lights. Fri Nov 27 · 6–8 PM · tree lighting\, music & 
+ holiday treats. Info: https://saugatuck.com/event/saugatuck-christmas-tre
+ e-lighting/ (confirm details with the organizer)
+URL:https://saugatuck.com/event/saugatuck-christmas-tree-lighting/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-santa-claus-meet-greet-at-meijer-gardens@gr-seasonal
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261220
+SUMMARY:Santa Claus Meet & Greet at Meijer Gardens
+LOCATION:Frederik Meijer Gardens\, 1000 E Beltline Ave NE\, Grand Rapids\,
+  MI
+DESCRIPTION:Santa Visit. Saturdays Nov 28\, Dec 5\, 12\, 19 · 1–4 PM (incl
+ uded with admission). Info: https://www.meijergardens.org/christmas-holid
+ ay-traditions/ (confirm details with the organizer)
+URL:https://www.meijergardens.org/christmas-holiday-traditions/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-small-business-saturday-douglas-light-night-tree-@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Small Business Saturday & Douglas Light Night Tree Lighting with S
+ anta
+LOCATION:Beery Field\, 86 Center St\, Downtown Douglas\, Grand Rapids\, MI
+DESCRIPTION:Holiday Lights. Sat Nov 28 · Small Business Saturday 12–5 PM\;
+  Light Night tree lighting\, Santa & hot cocoa 6–7 PM. Info: https://saug
+ atuck.com/event/douglas-light-night/ (confirm details with the organizer)
+URL:https://saugatuck.com/event/douglas-light-night/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-01-downtown-holland-parade-of-lights-with-sinterklaa@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Downtown Holland Parade of Lights (with Sinterklaas)
+LOCATION:Downtown Holland\, 8th St from Columbia Ave to 150 W 8th St\, Gra
+ nd Rapids\, MI
+DESCRIPTION:Holiday Parade. Tue Dec 1 · starts 6:30 PM · 80+ illuminated f
+ loats & Sinterklaas arrival. Info: https://www.holland.org/parade-of-ligh
+ ts/ (confirm details with the organizer)
+URL:https://www.holland.org/parade-of-lights/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-01-dutch-winterfest-sinterklaas-shuffle-in-holland@gr-seasonal
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261206
+SUMMARY:Dutch Winterfest & Sinterklaas Shuffle in Holland
+LOCATION:Downtown Holland & Tulip Time Office\, 42 W 8th St\, Holland\, Gr
+ and Rapids\, MI
+DESCRIPTION:Holiday Festival. Dec 1–5 · Delft Downtown\, Dutch Skate\, Hol
+ iday Huis Tour & Sinterklaas Shuffle (Dec 4–5). Info: https://www.tulipti
+ me.com/dutch-winterfest (confirm details with the organizer)
+URL:https://www.tuliptime.com/dutch-winterfest
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-03-victorian-christmas-winter-afternoon-tea-at-high-@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20270201
+SUMMARY:Victorian Christmas & Winter Afternoon Tea at High Tea GR
+LOCATION:High Tea GR\, 1522 Wealthy St SE\, Grand Rapids\, MI
+DESCRIPTION:Holiday Tea. Dec 3–Jan 31 · Thu 11 AM–5:30 PM\, Fri–Sun 10 AM–
+ 5:30 PM (last seating 4 PM) · Full Afternoon Tea $45\, Half $30\, Fairy T
+ ea (8 & under) $22. Info: https://www.highteagr.com/events/victorian-chri
+ stmas-winter-themed-menu (confirm details with the organizer)
+URL:https://www.highteagr.com/events/victorian-christmas-winter-themed-men
+ u
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-03-uptown-shop-hop-eastown-holiday-tree-lighting-wit@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Uptown Shop Hop & Eastown Holiday Tree Lighting with Santa
+LOCATION:Harmony Brewing & Wealthy St SE\, 1551 Lake Dr SE\, Eastown\, Gra
+ nd Rapids\, MI
+DESCRIPTION:Santa Visit. Thu Dec 3 · Uptown Shop Hop & free Jolly Trolleys
+  3–9:30 PM\; Eastown Tree Lighting\, Santa photos & free hot cocoa 5–8 PM
+  (lighting 7 PM). Info: https://uptowngr.com/shop-hop/ (confirm details w
+ ith the organizer)
+URL:https://uptowngr.com/shop-hop/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-magic-at-the-mill-at-windmill-island-gardens@gr-seasonal
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261220
+SUMMARY:Magic at the Mill at Windmill Island Gardens
+LOCATION:Windmill Island Gardens\, 1 Lincoln Ave\, Holland\, Grand Rapids\
+ , MI
+DESCRIPTION:Holiday Lights. Fri–Sat Dec 4–5\, 11–12\, 18–19 · 5–9 PM · 1\,
+ 000 synchronized LED tulips\, Dutch street organ\, carousel & Sinterklaas
+  ($10 adults\, $5 ages 3–15\, advance tickets required). Info: https://ww
+ w.windmillisland.com/magic-at-the-mill (confirm details with the organize
+ r)
+URL:https://www.windmillisland.com/magic-at-the-mill
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-fennville-holiday-parade-tree-lighting@gr-seasonal
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Fennville Holiday Parade & Tree Lighting
+LOCATION:Downtown Fennville\, E Main St\, Fennville\, Grand Rapids\, MI
+DESCRIPTION:Holiday Parade. Fri Dec 4 · starts 6 PM. Info: https://saugatu
+ ck.com/event/fennville-holiday-parade-and-tree-lighting/ (confirm details
+  with the organizer)
+URL:https://saugatuck.com/event/fennville-holiday-parade-and-tree-lighting
+ /
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-05-lowell-christmas-festivities-night-time-santa-par@gr-season
  al
 DTSTAMP:20261022T120000Z
@@ -244,6 +463,68 @@ DESCRIPTION:Holiday Parade. Sat Dec 5 · Santa on the Showboat 2–4 PM\; par
  ade 6 PM. Info: https://www.discoverlowell.org/christmas-festivities/ (co
  nfirm details with the organizer)
 URL:https://www.discoverlowell.org/christmas-festivities/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-sca-outdoor-holiday-market-saugatuck-center-for-t@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:SCA Outdoor Holiday Market (Saugatuck Center for the Arts)
+LOCATION:Saugatuck Center for the Arts\, 400 Culver St\, Saugatuck\, Grand
+  Rapids\, MI
+DESCRIPTION:Holiday Market. Sat Dec 5 · 9 AM–3 PM · artisan market\, craft
+  cocktails & music under the pavilion. Info: https://sc4a.org/markets/ (c
+ onfirm details with the organizer)
+URL:https://sc4a.org/markets/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-saugatuck-whootville-christmas-parade@gr-seasonal
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Saugatuck Whootville Christmas Parade
+LOCATION:Downtown Saugatuck\, 102 Butler St\, Saugatuck\, Grand Rapids\, M
+ I
+DESCRIPTION:Holiday Parade. Sat Dec 5 · 11 AM–12 PM (lineup 10:15 AM at Ma
+ son & Griffith). Info: https://saugatuck.com/event/saugatuck-whootville-c
+ hristmas-parade/ (confirm details with the organizer)
+URL:https://saugatuck.com/event/saugatuck-whootville-christmas-parade/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-fennville-holiday-celebration-christmas-market-wi@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Fennville Holiday Celebration & Christmas Market (with Santa & Rei
+ ndeer)
+LOCATION:Downtown Fennville\, 100 S Maple St\, Fennville\, Grand Rapids\, 
+ MI
+DESCRIPTION:Santa Visit. Sat Dec 5 · Christmas Market 10 AM\; Holiday Cele
+ bration\, live reindeer & Santa 11 AM–7 PM. Info: https://saugatuck.com/e
+ vent/fennville-holiday-celebration/ (confirm details with the organizer)
+URL:https://saugatuck.com/event/fennville-holiday-celebration/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-06-a-dramatic-reading-of-charles-dickens-a-christmas@gr-season
+ al
+DTSTAMP:20261023T120000Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261219
+SUMMARY:A Dramatic Reading of Charles Dickens' A Christmas Carol at High T
+ ea GR (SOLD OUT)
+LOCATION:High Tea GR\, 1522 Wealthy St SE\, Grand Rapids\, MI
+DESCRIPTION:Holiday Tea. Sun Dec 6 (1:30 PM) & Fri Dec 18 (4:30 PM) · incl
+ udes condensed Christmas afternoon tea (SOLD OUT). Info: https://www.high
+ teagr.com/events/a-dramatic-reading-of-charles-dickens-a-christmas-carol 
+ (confirm details with the organizer)
+URL:https://www.highteagr.com/events/a-dramatic-reading-of-charles-dickens
+ -a-christmas-carol
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

@@ -10,10 +10,10 @@
   const pg = /sports/.test(location.pathname) ? "sports" : /seasonal/.test(location.pathname) ? "seasonal" : "concerts";
   const OPT = {
     genres: ["Rock", "Indie", "Comedy", "Country", "Folk", "Punk", "Metal", "Electronic", "Hip-Hop", "Jazz", "Classical", "Musical"],
-    venues: ["Pyramid Scheme", "Intersection", "GLC Live", "Van Andel", "DeVos", "Wealthy Theatre", "Dr. Grins", "St. Cecilia", "Civic Theatre", "Big Room", "Meijer Gardens", "Tip Top", "Midtown", "Speciation", "Calvin"],
+    venues: ["Pyramid Scheme", "Intersection", "GLC Live", "Van Andel", "DeVos", "Wealthy Theatre", "Dr. Grins", "St. Cecilia", "Civic Theatre", "Big Room", "Meijer Gardens", "Tip Top", "Midtown", "Speciation", "Calvin", "Park Theatre", "Jack H. Miller", "Knickerbocker", "Holland Civic Center", "Saugatuck Center", "Gun Lake Casino", "FireKeepers", "Soaring Eagle", "Four Winds"],
     teams: ["Griffins", "Gold", "Rise", "Whitecaps", "AC Grand Rapids"],
     gameTypes: ["Weekend", "Weeknight", "Matinee", "Home openers"],
-    types: ["Holiday Lights", "Christmas Market", "Holiday Market", "Holiday Parade", "Holiday Exhibit", "Ghost Tour"],
+    types: ["Holiday Lights", "Christmas Market", "Holiday Market", "Holiday Parade", "Holiday Exhibit", "Holiday Tea", "Santa Visit", "Ghost Tour"],
   };
   const FREQ = [["weekly", "Weekly"], ["daily", "Daily"], ["announced", "Just announced"]];
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));

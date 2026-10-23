@@ -107,6 +107,14 @@ export const VENUE_PAGES = [
   [/st\.? cecilia/i, "https://www.scmc-online.org/"],
   [/dr\.? grins|b\.o\.b/i, "https://www.thebob.com/drgrins/"],
   [/civic theatre/i, "https://grct.org/"],
+  [/park theatre/i, "https://parktheatreholland.org/"],
+  [/miller center|knickerbocker|dimnent|hope college/i, "https://hope.edu/arts/great-performance-series/"],
+  [/holland civic center/i, "https://hollandciviccenter.com/events/"],
+  [/saugatuck center/i, "https://sc4a.org/upcoming-events/"],
+  [/gun lake casino/i, "https://gunlakecasino.com/entertainment/"],
+  [/firekeepers/i, "https://firekeeperscasino.com/shows/"],
+  [/soaring eagle/i, "https://www.soaringeaglecasino.com/shows/"],
+  [/four winds|silver creek/i, "https://fourwindscasino.com/newbuffalo/entertainment/event-center/"],
 ];
 const UA = "GRHappeningsLinkCheck/1.0 (+https://grhappenings.com)";
 // Never fetched automatically: links to these sites stay in emails but are skipped by the link check.

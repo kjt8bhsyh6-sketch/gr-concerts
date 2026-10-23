@@ -178,6 +178,39 @@ DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ba
 URL:https://www.crowdwork.com/e/battle-bots-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-the-verve-pipe-sold-out@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261023T190000
+DTEND;TZID=America/Detroit:20261023T220000
+SUMMARY:The Verve Pipe (SOLD OUT)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://parktheatreholland.org/ 
+ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-minikiss-kiss-tribute-wawye-oasis@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261023T200000
+DTEND;TZID=America/Detroit:20261023T230000
+SUMMARY:MiniKiss (KISS Tribute\, Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com/ent
+ ertainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-the-rock-show-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261023T210000
+DTEND;TZID=America/Detroit:20261024T000000
+SUMMARY:The Rock Show (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/entert
+ ainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-24-free-halloween-show-garbage-angel-no-cover-21@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261024T210000
@@ -340,6 +373,70 @@ LOCATION:The Comedy Project\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 10:30 PM. Tickets/info: https://www.crowdwork.com/e/l
  ate-night-comedy-lab (confirm details with the venue)
 URL:https://www.crowdwork.com/e/late-night-comedy-lab
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-akeylah-wellington-plastic-plastic-party-p-1jwmk1@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261024T190000
+DTEND;TZID=America/Detroit:20261024T220000
+SUMMARY:akeylah wellington: plastic-plastic — party!-party! (Opening Recep
+ tion & Y2K Dance Party\, free)
+LOCATION:Saugatuck Center for the Arts\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 7:00 PM. Tickets/info: https://sc4a.org/event/pl
+ astic-plastic-party-party/ (confirm details with the venue)
+URL:https://sc4a.org/event/plastic-plastic-party-party/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-the-rocky-horror-picture-show-wawye-oasis-fxuqaq@gr-concert
+ s
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261024T210000
+DTEND;TZID=America/Detroit:20261025T000000
+SUMMARY:The Rocky Horror Picture Show (Wawyé Oasis at Gun Lake Casino)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 9:00 PM. Tickets/info: https://www.etix.com/ticket
+ /p/83090229/rocky-horror-picture-show-wayland-gun-lake-casino-resortwawye
+ -oasis (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/83090229/rocky-horror-picture-show-wayla
+ nd-gun-lake-casino-resortwawye-oasis
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-sugarland-the-ride-or-die-tour-21@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261024T200000
+DTEND;TZID=America/Detroit:20261024T230000
+SUMMARY:Sugarland – The Ride or Die Tour (21+)
+LOCATION:FireKeepers Casino Event Center\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://firekeeperscasino.com
+ /shows/sugarland/ (confirm details with the venue)
+URL:https://firekeeperscasino.com/shows/sugarland/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-matt-mathews-not-what-i-ordered-world-tour-g3dsxr@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261024T200000
+DTEND;TZID=America/Detroit:20261024T230000
+SUMMARY:Matt Mathews – Not What I Ordered World Tour (SOLD OUT\, 8 & 10:30
+  PM shows)
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com
+ /events/matt-mathews/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/matt-mathews/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-24-michael-carbonaro-wonderboy@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261024T200000
+DTEND;TZID=America/Detroit:20261024T230000
+SUMMARY:Michael Carbonaro: WONDERBOY
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketmaster.com/m
+ ichael-carbonaro-wonderboy-new-buffalo-michigan-10-24-2026/event/04006470
+ A81457E4 (confirm details with the venue)
+URL:https://www.ticketmaster.com/michael-carbonaro-wonderboy-new-buffalo-m
+ ichigan-10-24-2026/event/04006470A81457E4
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-25-jazz-jam-w-tommy-pancy-oct-25@gr-concerts
@@ -520,6 +617,18 @@ URL:https://www.crowdwork.com/e/free-improv-jam-a-lama-ding-dong-stay-for-
  the-sing-song
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-27-ptom-halloween-costume-party-ft-ions-tool-4q6zun@gr-concert
+ s
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261027T193000
+DTEND;TZID=America/Detroit:20261027T223000
+SUMMARY:PTOM Halloween Costume Party ft. IONS (Tool Tribute) + 9 Acts
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:30 PM. Tickets/info: https://parktheatreholland.org/ 
+ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-28-the-longest-johns-the-ends-of-the-earth-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261028T200000
@@ -652,6 +761,17 @@ DESCRIPTION:Dance Party\, 8:30 PM. Tickets/info: https://www.etix.com/tick
  tion-the-stache (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/83427799/harryweenharry-styles-dance-nig
  ht-grand-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-the-rocky-horror-picture-show-park-theatre@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261029T180000
+DTEND;TZID=America/Detroit:20261029T210000
+SUMMARY:The Rocky Horror Picture Show (Park Theatre)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 6:00 PM. Tickets/info: https://parktheatreholland.
+ org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-30-capella-fall-concert-come-home-free@gr-concerts
@@ -806,6 +926,67 @@ DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ba
 URL:https://www.crowdwork.com/e/battle-bots-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-trixy-tang-boys-gone-mild-rock-n-roll-hall-6tftt9@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261030T190000
+DTEND;TZID=America/Detroit:20261030T220000
+SUMMARY:Trixy Tang + Boys Gone Mild: Rock N Roll Halloween Costume Party
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://parktheatreholland.org/ 
+ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-bingo-loco-halloween-holland-civic-center-21@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261030T190000
+DTEND;TZID=America/Detroit:20261030T220000
+SUMMARY:Bingo Loco: Halloween (Holland Civic Center\, 21+)
+LOCATION:Holland Civic Center Place\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 7:00 PM. Tickets/info: https://hollandciviccente
+ r.com/event/bingo-loco-3/ (confirm details with the venue)
+URL:https://hollandciviccenter.com/event/bingo-loco-3/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-h2-dance-company-fall-concert-series-oct-3-h4c88s@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261030T193000
+DTEND;TZID=America/Detroit:20261030T223000
+SUMMARY:H2 Dance Company Fall Concert Series (Oct 30–31 & Nov 6–7\, free w
+ ith ticket)
+LOCATION:Knickerbocker Theatre (Hope College)\, Grand Rapids\, MI
+DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://calendar.hope.edu/event
+ /h2-performances-8227 (confirm details with the venue)
+URL:https://calendar.hope.edu/event/h2-performances-8227
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-hairbanger-s-ball-80-s-hair-rock-131-sport-1agk54@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261030T210000
+DTEND;TZID=America/Detroit:20261031T000000
+SUMMARY:Hairbanger's Ball – 80's Hair Rock (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:80s Tribute\, 9:00 PM. Tickets/info: https://www.etix.com/tick
+ et/p/70017547/hairbangers-ball-wayland-gun-lake-casino-resort131-sportsba
+ r-lounge (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/70017547/hairbangers-ball-wayland-gun-la
+ ke-casino-resort131-sportsbar-lounge
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-wheel-of-fortune-live-soaring-eagle@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261030T200000
+DTEND;TZID=America/Detroit:20261030T230000
+SUMMARY:Wheel of Fortune LIVE! (Soaring Eagle)
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 8:00 PM. Tickets/info: https://soaringeaglecasino.
+ com/events/wheel-of-fortune-live/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/wheel-of-fortune-live/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-31-autumn-weekends-live-music-the-morning-yel-13f7dc@gr-concer
  ts
 DTSTAMP:20261022T120000Z
@@ -912,6 +1093,55 @@ URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-night-sk
  etch-show-party
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-31-revolucio-n-de-amor-mana-tribute-grupo-sup-lfp7u2@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261031T190000
+DTEND;TZID=America/Detroit:20261031T220000
+SUMMARY:Revolución De Amor (Maná Tribute) + Grupo Super Nova: Fiesta de Ha
+ lloween
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Latin\, 7:00 PM. Tickets/info: https://parktheatreholland.org/
+  (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-halloween-pool-party-wawye-oasis@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261031T200000
+DTEND;TZID=America/Detroit:20261031T230000
+SUMMARY:Halloween Pool Party (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://gunlakecasino.com
+ /entertainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-the-static-age-90-s-00-s-hits-131-sportsba-1ma239@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261031T220000
+DTEND;TZID=America/Detroit:20261101T010000
+SUMMARY:The Static Age – 90's & 00's Hits (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 10:00 PM. Tickets/info: https://gunlakecasino.com/enter
+ tainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-wheel-of-fortune-live-oct-31@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261031T210000
+DTEND;TZID=America/Detroit:20261101T000000
+SUMMARY:Wheel of Fortune LIVE! (Oct 31)
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 9:00 PM. Tickets/info: https://www.ticketmaster.co
+ m/wheel-of-fortune-new-buffalo-michigan-10-31-2026/event/040064D0A0686B26
+  (confirm details with the venue)
+URL:https://www.ticketmaster.com/wheel-of-fortune-new-buffalo-michigan-10-
+ 31-2026/event/040064D0A0686B26
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-01-jazz-jam-w-tommy-pancy-nov-1@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261101T170000
@@ -963,6 +1193,19 @@ LOCATION:Fountain Street Church\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.tickettailor.co
  m/events/fountainstreetchurch/2415882 (confirm details with the venue)
 URL:https://www.tickettailor.com/events/fountainstreetchurch/2415882
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-01-wheel-of-fortune-live-nov-1-matinee@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261101T140000
+DTEND;TZID=America/Detroit:20261101T170000
+SUMMARY:Wheel of Fortune LIVE! (Nov 1 matinee)
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 2:00 PM. Tickets/info: https://www.ticketmaster.co
+ m/wheel-of-fortune-new-buffalo-michigan-11-01-2026/event/040064D0A0806B50
+  (confirm details with the venue)
+URL:https://www.ticketmaster.com/wheel-of-fortune-new-buffalo-michigan-11-
+ 01-2026/event/040064D0A0806B50
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-02-authority-zero-apocalyptour-2026-with-the-xkyij4@gr-concert
@@ -1291,6 +1534,51 @@ DESCRIPTION:Live Music\, 3:30 PM. Tickets/info: https://speciationartisana
 URL:https://speciationartisanales.com/events/skinnylimbs2026
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-06-the-soul-syndicate-funk-soul-disco-r-b@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261106T183000
+DTEND;TZID=America/Detroit:20261106T213000
+SUMMARY:The Soul Syndicate – Funk\, Soul\, Disco & R&B
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Soul / Funk\, 6:30 PM. Tickets/info: https://parktheatrehollan
+ d.org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-hope-college-orchestra-hymn-sing-concert@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261106T190000
+DTEND;TZID=America/Detroit:20261106T220000
+SUMMARY:Hope College Orchestra Hymn Sing Concert
+LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:00 PM. Tickets/info: https://calendar.hope.edu/e
+ vent/orchestra-concert (confirm details with the venue)
+URL:https://calendar.hope.edu/event/orchestra-concert
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-mandolin-with-brian-oberlin@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261106T190000
+DTEND;TZID=America/Detroit:20261106T220000
+SUMMARY:Mandolin with Brian Oberlin
+LOCATION:Saugatuck Center for the Arts\, Grand Rapids\, MI
+DESCRIPTION:Bluegrass\, 7:00 PM. Tickets/info: https://sc4a.org/event/mand
+ olin-with-brian-oberlin/ (confirm details with the venue)
+URL:https://sc4a.org/event/mandolin-with-brian-oberlin/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-completely-unchained-van-halen-tribute-waw-1oroe4@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261106T200000
+DTEND;TZID=America/Detroit:20261106T230000
+SUMMARY:Completely Unchained – Van Halen Tribute (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com/ent
+ ertainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-07-gr-symphony-midori-plays-shostakovich@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261107T193000
@@ -1460,6 +1748,28 @@ DESCRIPTION:Jazz\, 7:30 PM. Tickets/info: https://calvin.edu/events/jazz-b
 URL:https://calvin.edu/events/jazz-band-concert-1794097800
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-07-the-traveling-wilburys-revue@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261107T190000
+DTEND;TZID=America/Detroit:20261107T220000
+SUMMARY:The Traveling Wilburys Revue
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-07-the-all-american-rejects-21@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261107T200000
+DTEND;TZID=America/Detroit:20261107T230000
+SUMMARY:The All-American Rejects (21+)
+LOCATION:FireKeepers Casino Event Center\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://firekeeperscasino.com/sh
+ ows/the-all-american-rejects/ (confirm details with the venue)
+URL:https://firekeeperscasino.com/shows/the-all-american-rejects/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-08-trivium-crown-in-the-grave-world-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261108T173000
@@ -1508,6 +1818,17 @@ LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
 DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
  m/events/jazz-jam-11-8 (confirm details with the venue)
 URL:https://speciationartisanales.com/events/jazz-jam-11-8
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-08-kevin-farley@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261108T190000
+DTEND;TZID=America/Detroit:20261108T220000
+SUMMARY:Kevin Farley
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://parktheatreholland.org
+ / (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-09-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
@@ -1688,6 +2009,17 @@ DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://grcmc.org/event/born-
 URL:https://grcmc.org/event/born-with-teeth/1756
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-12-big-shrimp-fall-tour-2026-w-tiberius@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261112T190000
+DTEND;TZID=America/Detroit:20261112T220000
+SUMMARY:Big Shrimp – Fall Tour 2026 w/ Tiberius
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Jam Band\, 7:00 PM. Tickets/info: https://parktheatreholland.o
+ rg/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-13-gr-symphony-coffee-with-bob-grace-kim-violin@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261113T100000
@@ -1810,6 +2142,80 @@ DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://calvin.edu/events/s
  e venue)
 URL:https://calvin.edu/events/symphonic-band-concert-voices-americas-17946
  16200
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-laura-anglade-great-performance-series@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261113T193000
+DTEND;TZID=America/Detroit:20261113T223000
+SUMMARY:Laura Anglade (Great Performance Series)
+LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 7:30 PM. Tickets/info: https://calendar.hope.edu/event/
+ laura-anglade (confirm details with the venue)
+URL:https://calendar.hope.edu/event/laura-anglade
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-jazz-at-the-cinema-w-rufus-ferguson-ft-oli-sn6n0d@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261113T190000
+DTEND;TZID=America/Detroit:20261113T220000
+SUMMARY:Jazz at the Cinema w/ Rufus Ferguson ft. Olivia Van Goor (Nov 13 a
+ t 7 PM & Nov 14 at 4 & 7 PM)
+LOCATION:Saugatuck Center for the Arts\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 7:00 PM. Tickets/info: https://sc4a.org/event/jazz-at-t
+ he-cinema/ (confirm details with the venue)
+URL:https://sc4a.org/event/jazz-at-the-cinema/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-thunder-from-down-under-nov-13-at-7-9-pm-n-1eq1rd@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261113T190000
+DTEND;TZID=America/Detroit:20261113T220000
+SUMMARY:Thunder From Down Under (Nov 13 at 7 & 9 PM\, Nov 14 at 8 PM\; Waw
+ yé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 7:00 PM. Tickets/info: https://www.etix.com/ticket
+ /p/92622117/thunder-from-down-under-7pm-wayland-gun-lake-casino-resortwaw
+ ye-oasis (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/92622117/thunder-from-down-under-7pm-way
+ land-gun-lake-casino-resortwawye-oasis
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-sushi-roll-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261113T210000
+DTEND;TZID=America/Detroit:20261114T000000
+SUMMARY:Sushi Roll (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Pop / Rock\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/88117451/sushi-roll-wayland-gun-lake-casino-resort131-sportsbar-loung
+ e (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/88117451/sushi-roll-wayland-gun-lake-cas
+ ino-resort131-sportsbar-lounge
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-engelbert-humperdinck-21@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261113T200000
+DTEND;TZID=America/Detroit:20261113T230000
+SUMMARY:Engelbert Humperdinck (21+)
+LOCATION:FireKeepers Casino Event Center\, Grand Rapids\, MI
+DESCRIPTION:Pop\, 8:00 PM. Tickets/info: https://firekeeperscasino.com/sho
+ ws/engelbert-humperdinck/ (confirm details with the venue)
+URL:https://firekeeperscasino.com/shows/engelbert-humperdinck/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-kenny-g-live@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261113T200000
+DTEND;TZID=America/Detroit:20261113T230000
+SUMMARY:Kenny G Live
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com/e
+ vents/kenny-g/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/kenny-g/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-broadway-grand-rapids-maybe-happy-ending@gr-concerts
@@ -1976,6 +2382,41 @@ DESCRIPTION:Jazz\, 7:00 PM. Tickets/info: https://www.lowellarts.org/music
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-14-stache-bash-fundraiser-ft-nate-holley@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261114T130000
+DTEND;TZID=America/Detroit:20261114T160000
+SUMMARY:’Stache Bash Fundraiser ft. Nate Holley
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 1:00 PM. Tickets/info: https://parktheatreholland
+ .org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-slipknot-godsmack-tribute-night-tattered-t-nxnqv6@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261114T190000
+DTEND;TZID=America/Detroit:20261114T220000
+SUMMARY:Slipknot + Godsmack Tribute Night: Tattered & Torn + Awaken wsg Le
+ ddj
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://parktheatreholland.org/
+  (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14-hope-college-jazz-ensembles-concert@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261114T190000
+DTEND;TZID=America/Detroit:20261114T220000
+SUMMARY:Hope College Jazz Ensembles Concert
+LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 7:00 PM. Tickets/info: https://calendar.hope.edu/event/
+ jazz-ensembles-concert (confirm details with the venue)
+URL:https://calendar.hope.edu/event/jazz-ensembles-concert
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-15-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261115T130000
@@ -2138,6 +2579,17 @@ DESCRIPTION:Hip-Hop\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
  ache (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/69885022/token-im-leaving-soon-tour-gran
  d-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-18-chicago-live-in-concert@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261118T200000
+DTEND;TZID=America/Detroit:20261118T230000
+SUMMARY:Chicago Live in Concert
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com/e
+ vents/chicago/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/chicago/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-19-o-christmas-tea-a-british-comedy@gr-concerts
@@ -2344,6 +2796,28 @@ DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://speciationartisanales.co
 URL:https://speciationartisanales.com/events/jesseray-nov2026
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-20-chart-attack-the-punk-rock-party-band@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261120T190000
+DTEND;TZID=America/Detroit:20261120T220000
+SUMMARY:Chart Attack: The Punk Rock Party Band
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Punk\, 7:00 PM. Tickets/info: https://parktheatreholland.org/ 
+ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-hope-college-concert-band-performance@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261120T190000
+DTEND;TZID=America/Detroit:20261120T220000
+SUMMARY:Hope College Concert Band Performance
+LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:00 PM. Tickets/info: https://calendar.hope.edu/e
+ vent/concert-band-performance (confirm details with the venue)
+URL:https://calendar.hope.edu/event/concert-band-performance
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-21-gr-symphony-messiah-by-candlelight@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261121T193000
@@ -2427,6 +2901,54 @@ LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
 DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.themidtowngr.c
  om/shows-events/detail/Mike-Zito (confirm details with the venue)
 URL:https://www.themidtowngr.com/shows-events/detail/Mike-Zito
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-full-cord-roosevelt-diggs@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261121T190000
+DTEND;TZID=America/Detroit:20261121T220000
+SUMMARY:Full Cord & Roosevelt Diggs
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Bluegrass\, 7:00 PM. Tickets/info: https://parktheatreholland.
+ org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-p-s-dump-your-boyfriend-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261121T220000
+DTEND;TZID=America/Detroit:20261122T010000
+SUMMARY:P.S. Dump Your Boyfriend (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Funk / Pop\, 10:00 PM. Tickets/info: https://www.etix.com/tick
+ et/p/47626962/ps-dump-your-boyfriend-wayland-gun-lake-casino-resort131-sp
+ ortsbar-lounge (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/47626962/ps-dump-your-boyfriend-wayland-
+ gun-lake-casino-resort131-sportsbar-lounge
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-hunks-the-show@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261121T200000
+DTEND;TZID=America/Detroit:20261121T230000
+SUMMARY:HUNKS The Show
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 8:00 PM. Tickets/info: https://soaringeaglecasino.
+ com/events/hunks-the-show/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/hunks-the-show/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-rick-springfield@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261121T210000
+DTEND;TZID=America/Detroit:20261122T000000
+SUMMARY:Rick Springfield
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/ric
+ k-springfield-new-buffalo-michigan-11-21-2026/event/040064FDAAB3B0CB (con
+ firm details with the venue)
+URL:https://www.ticketmaster.com/rick-springfield-new-buffalo-michigan-11-
+ 21-2026/event/040064FDAAB3B0CB
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-22-why@gr-concerts
@@ -2584,6 +3106,30 @@ URL:https://speciationartisanales.com/events/the-moonrays-fun-times-in-spa
  ce-2026-nov
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-27-ptom-hunter-miles-present-a-comedy-show-vol-4@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261127T193000
+DTEND;TZID=America/Detroit:20261127T223000
+SUMMARY:PTOM + Hunter Miles Present: A Comedy Show Vol. 4
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:30 PM. Tickets/info: https://parktheatreholland.org
+ / (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-jedi-mind-trip-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261127T210000
+DTEND;TZID=America/Detroit:20261128T000000
+SUMMARY:Jedi Mind Trip (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://www.etix.com/ticket/p/79
+ 318279/jedi-mind-trip-wayland-gun-lake-casino-resort131-sportsbar-lounge 
+ (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/79318279/jedi-mind-trip-wayland-gun-lake
+ -casino-resort131-sportsbar-lounge
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-28-straight-no-chaser-make-spirits-bright-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261128T193000
@@ -2683,6 +3229,29 @@ DESCRIPTION:Folk\, 7:00 PM. Tickets/info: https://www.lowellarts.org/music
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-28-sonimanic-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261128T220000
+DTEND;TZID=America/Detroit:20261129T010000
+SUMMARY:Sonimanic (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 10:00 PM. Tickets/info: https://gunlakecasino.com/enter
+ tainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-the-rockin-holiday-bash-ft-hotel-californi-rgdlhw@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261128T180000
+DTEND;TZID=America/Detroit:20261128T210000
+SUMMARY:The Rockin' Holiday Bash ft. Hotel California (Eagles Tribute)
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Holiday\, 6:00 PM. Tickets/info: https://soaringeaglecasino.co
+ m/events/the-rockin-holiday-bash/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/the-rockin-holiday-bash/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-29-love-actually-in-concert@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261129T150000
@@ -2734,6 +3303,30 @@ DESCRIPTION:Holiday\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
  064E984E02F83 (confirm details with the venue)
 URL:https://www.ticketmaster.com/mannheim-steamroller-christmas-grand-rapi
  ds-michigan-12-01-2026/event/080064E984E02F83
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-02-tom-arnold-live-stand-up-comedy@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261202T190000
+DTEND;TZID=America/Detroit:20261202T220000
+SUMMARY:Tom Arnold – Live Stand-Up Comedy
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://parktheatreholland.org
+ / (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-02-just-in-the-nick-of-time-holland-community-imf633@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261202T190000
+DTEND;TZID=America/Detroit:20261202T220000
+SUMMARY:Just in the Nick of Time (Holland Community Theatre\, Dec 2–3\, Du
+ tch Winterfest)
+LOCATION:Holland Community Theatre\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:00 PM. Tickets/info: https://www.tuliptime.com/eve
+ nts/holland-community-theatre (confirm details with the venue)
+URL:https://www.tuliptime.com/events/holland-community-theatre
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-03-christmas-together-with-amy-grant-michael-w-smith@gr-concer
@@ -2823,6 +3416,17 @@ DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.jtgr.org/season (
 URL:https://www.jtgr.org/season
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-03-spafford-wsg-act-casual@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261203T180000
+DTEND;TZID=America/Detroit:20261203T210000
+SUMMARY:Spafford wsg Act Casual
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Jam Band\, 6:00 PM. Tickets/info: https://parktheatreholland.o
+ rg/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-04-gr-symphony-holiday-pops@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261204T193000
@@ -2908,6 +3512,55 @@ LOCATION:Calvin University Chapel\, Grand Rapids\, MI
 DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://calvin.edu/events/mess
  iah-1796430600 (confirm details with the venue)
 URL:https://calvin.edu/events/messiah-1796430600
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-winter-jazz-by-holland-concert-jazz-orches-11yd5y@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261204T190000
+DTEND;TZID=America/Detroit:20261204T220000
+SUMMARY:Winter Jazz by Holland Concert Jazz Orchestra (Dutch Winterfest)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 7:00 PM. Tickets/info: https://www.tuliptime.com/events
+ /holland-concert-jazz-orchestra (confirm details with the venue)
+URL:https://www.tuliptime.com/events/holland-concert-jazz-orchestra
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-rhymin-n-stealin-beastie-boys-tribute-wawye-oasis@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261204T200000
+DTEND;TZID=America/Detroit:20261204T230000
+SUMMARY:Rhymin' N Stealin' – Beastie Boys Tribute (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com/ent
+ ertainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-dj-drew-behringer-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261204T210000
+DTEND;TZID=America/Detroit:20261205T000000
+SUMMARY:DJ Drew Behringer (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/78847735/dj-drew-behringer-wayland-gun-lake-casino-resort131-sportsba
+ r-lounge (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/78847735/dj-drew-behringer-wayland-gun-l
+ ake-casino-resort131-sportsbar-lounge
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-clint-black-back-on-the-blacktop-tour-wsg-1usq0h@gr-concert
+ s
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261204T200000
+DTEND;TZID=America/Detroit:20261204T230000
+SUMMARY:Clint Black: Back on the Blacktop Tour wsg Collin Raye
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://soaringeaglecasino.co
+ m/events/clint-black/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/clint-black/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-05-gr-symphony-holiday-pops@gr-concerts
@@ -3017,6 +3670,52 @@ DESCRIPTION:Choral\, 3:00 PM. Tickets/info: https://calvin.edu/events/mess
 URL:https://calvin.edu/events/messiah-1796500800
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-05-mega-80-s-holland-s-ultimate-80-s-party@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261205T190000
+DTEND;TZID=America/Detroit:20261205T220000
+SUMMARY:MEGA 80's – Holland's Ultimate 80's Party
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:80s Tribute\, 7:00 PM. Tickets/info: https://parktheatrehollan
+ d.org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-hope-college-christmas-vespers-dec-5-at-4-1xjiut@gr-concert
+ s
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261205T163000
+DTEND;TZID=America/Detroit:20261205T193000
+SUMMARY:Hope College Christmas Vespers (Dec 5 at 4:30 PM & Dec 6 at 3:00 P
+ M)
+LOCATION:Dimnent Memorial Chapel (Hope College)\, Grand Rapids\, MI
+DESCRIPTION:Holiday\, 4:30 PM. Tickets/info: https://calendar.hope.edu/eve
+ nt/christmas-vespers-3072 (confirm details with the venue)
+URL:https://calendar.hope.edu/event/christmas-vespers-3072
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-michigan-io-holiday-show-dutch-winterfest@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261205T190000
+DTEND;TZID=America/Detroit:20261205T220000
+SUMMARY:Michigan-IO Holiday Show (Dutch Winterfest)
+LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 7:00 PM. Tickets/info: https://www.tuliptime.com/events
+ /michigan-io (confirm details with the venue)
+URL:https://www.tuliptime.com/events/michigan-io
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-latin-night-wawye-oasis@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261205T190000
+DTEND;TZID=America/Detroit:20261205T220000
+SUMMARY:Latin Night (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Latin\, 7:00 PM. Tickets/info: https://gunlakecasino.com/enter
+ tainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261206T140000
@@ -3109,6 +3808,18 @@ DESCRIPTION:Choral\, 3:30 PM. Tickets/info: https://fountainstreet.churchc
 URL:https://fountainstreet.churchcenter.com/calendar/event/210474709
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-06-story-spark-gifts-a-moth-inspired-storytel-14gj18@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261206T163000
+DTEND;TZID=America/Detroit:20261206T193000
+SUMMARY:Story Spark: Gifts – A Moth-Inspired Storytelling Event
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 4:30 PM. Tickets/info: https://parktheatreholland.
+ org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-08-jeff-daniels@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261208T193000
@@ -3193,6 +3904,18 @@ URL:https://www.ticketweb.com/event/honey-revenge-hunny-the-pyramid-scheme
  -tickets/14337304
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-10-tower-of-power-holiday-hits-tour-21@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261210T200000
+DTEND;TZID=America/Detroit:20261210T230000
+SUMMARY:Tower of Power – Holiday & Hits Tour (21+)
+LOCATION:FireKeepers Casino Event Center\, Grand Rapids\, MI
+DESCRIPTION:Soul / Funk\, 8:00 PM. Tickets/info: https://firekeeperscasino
+ .com/shows/tower-of-power-holiday-hits-tour/ (confirm details with the ve
+ nue)
+URL:https://firekeeperscasino.com/shows/tower-of-power-holiday-hits-tour/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-11-aoife-o-donovan-chris-thile@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261211T193000
@@ -3254,6 +3977,17 @@ LOCATION:Calvin University Chapel\, Grand Rapids\, MI
 DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://calvin.edu/events/calv
  in-alumni-choir-concert-1797035400 (confirm details with the venue)
 URL:https://calvin.edu/events/calvin-alumni-choir-concert-1797035400
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-uncaged-zac-brown-tribute-wawye-oasis@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261211T200000
+DTEND;TZID=America/Detroit:20261211T230000
+SUMMARY:Uncaged – Zac Brown Tribute (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com/ent
+ ertainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-12-heyz-something-different-tour@gr-concerts
@@ -3318,6 +4052,30 @@ DESCRIPTION:Bluegrass\, 7:00 PM. Tickets/info: https://www.lowellarts.org/
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-aaron-lewis-and-the-stateliners@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261212T200000
+DTEND;TZID=America/Detroit:20261212T230000
+SUMMARY:Aaron Lewis and the Stateliners
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://soaringeaglecasino.co
+ m/events/aaron-lewis/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/aaron-lewis/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-cirque-musica-holiday-wonderland@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261212T200000
+DTEND;TZID=America/Detroit:20261212T230000
+SUMMARY:Cirque Musica Holiday Wonderland
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Holiday\, 8:00 PM. Tickets/info: https://www.ticketmaster.com/
+ cirque-musica-holiday-wonderland-new-buffalo-michigan-12-12-2026/event/04
+ 0064E8A92EB6FB (confirm details with the venue)
+URL:https://www.ticketmaster.com/cirque-musica-holiday-wonderland-new-buff
+ alo-michigan-12-12-2026/event/040064E8A92EB6FB
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261213T190000
@@ -3369,6 +4127,17 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  with the venue)
 URL:https://www.ticketweb.com/event/scott-h-biram-tip-top-deluxe-bar-ticke
  ts/14330624
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-13-joe-marcinek-band-plays-the-grateful-dead@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261213T190000
+DTEND;TZID=America/Detroit:20261213T220000
+SUMMARY:Joe Marcinek Band Plays the Grateful Dead
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Jam Band\, 7:00 PM. Tickets/info: https://parktheatreholland.o
+ rg/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-14-the-meateater-christmas-tour@gr-concerts
@@ -3661,6 +4430,41 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.lowellarts.org
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-29-revisiting-creedence-21@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261229T200000
+DTEND;TZID=America/Detroit:20261229T230000
+SUMMARY:Revisiting Creedence (21+)
+LOCATION:FireKeepers Casino Event Center\, Grand Rapids\, MI
+DESCRIPTION:Classic Rock\, 8:00 PM. Tickets/info: https://firekeeperscasin
+ o.com/shows/revisiting-creedence/ (confirm details with the venue)
+URL:https://firekeeperscasino.com/shows/revisiting-creedence/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-29-great-white-and-quiet-riot@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261229T200000
+DTEND;TZID=America/Detroit:20261229T230000
+SUMMARY:Great White and Quiet Riot
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com/e
+ vents/great-white-and-quiet-riot/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/great-white-and-quiet-riot/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-31-new-year-s-eve-dj-pool-party-wawye-oasis@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261231T210000
+DTEND;TZID=America/Detroit:20270101T000000
+SUMMARY:New Year's Eve DJ Pool Party (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.etix.com/tick
+ et/p/66102519/new-years-eve-pool-party-wayland-gun-lake-casino-resortwawy
+ e-oasis (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/66102519/new-years-eve-pool-party-waylan
+ d-gun-lake-casino-resortwawye-oasis
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-02-river-city-improv-jan-2@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270102T190300
@@ -3697,6 +4501,19 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
   details with the venue)
 URL:https://www.ticketweb.com/event/the-burdens-boob-sweat-the-pyramid-sch
  eme-tickets/14376974
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-02-an-evening-with-niko-moon-wawye-oasis@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270102T200000
+DTEND;TZID=America/Detroit:20270102T230000
+SUMMARY:An Evening with Niko Moon (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
+ /69966901/niko-moon-wayland-gun-lake-casino-resortwawye-oasis (confirm de
+ tails with the venue)
+URL:https://www.etix.com/ticket/p/69966901/niko-moon-wayland-gun-lake-casi
+ no-resortwawye-oasis
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-03-harlem-globetrotters-rivalry-tour@gr-concerts
@@ -3827,6 +4644,19 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.lowellarts.org
  /music-concerts/lowell-arts-at-sound-check (confirm details with the venu
  e)
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-09-dave-matthews-band-pearl-jam-tributes-the-1kpm8w@gr-concert
+ s
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270109T190000
+DTEND;TZID=America/Detroit:20270109T220000
+SUMMARY:Dave Matthews Band + Pearl Jam Tributes: The Next Best of What's A
+ round + Lemon Yellow Sons (Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-12-broadway-grand-rapids-six@gr-concerts
@@ -4016,6 +4846,18 @@ DESCRIPTION:Jazz\, 11:00 AM. Tickets/info: https://www.meijergardens.org/e
 URL:https://www.meijergardens.org/events/jazz-brunch-with-dave-bennett/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-16-ozzy-osbourne-tribute-ozzy-rebourne-legend-1cm2cp@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270116T190000
+DTEND;TZID=America/Detroit:20270116T220000
+SUMMARY:Ozzy Osbourne Tribute: Ozzy REbourne (Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-17-broadway-grand-rapids-six@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270117T130000
@@ -4040,6 +4882,17 @@ DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event/
   venue)
 URL:https://www.ticketweb.com/event/jon-spencer-the-pyramid-scheme-tickets
  /14340194
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-21-camerata-nordica-octet-great-performance-series@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270121T193000
+DTEND;TZID=America/Detroit:20270121T223000
+SUMMARY:Camerata Nordica Octet (Great Performance Series)
+LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://hope.edu/arts/great
+ -performance-series/ (confirm details with the venue)
+URL:https://hope.edu/arts/great-performance-series/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-22-shapel-lacey-jan-22@gr-concerts
@@ -4169,6 +5022,19 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.lowellarts.org
  /music-concerts/lowell-arts-at-sound-check (confirm details with the venu
  e)
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-23-eagles-steve-miller-band-tributes-trixy-ta-1vv06v@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270123T190000
+DTEND;TZID=America/Detroit:20270123T220000
+SUMMARY:Eagles + Steve Miller Band Tributes: Trixy Tang + Klay N' The Mud 
+ (Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-27-dancing-with-the-stars-live@gr-concerts
@@ -4437,6 +5303,18 @@ DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/event/pop-sc
 URL:https://grcmc.org/event/pop-scholars-improv-comedy/1131
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-06-u2-inxs-tributes-without-u2-inxs-sensation-zs0bcq@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270206T190000
+DTEND;TZID=America/Detroit:20270206T220000
+SUMMARY:U2 + INXS Tributes: Without U2 + INXS Sensation (Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-07-all-things-equal-the-life-trials-of-ruth-b-hidbwa@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -4619,6 +5497,19 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.lowellarts.org
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-13-chubby-checker-king-of-the-twist@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270213T200000
+DTEND;TZID=America/Detroit:20270213T230000
+SUMMARY:Chubby Checker – King of the Twist
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Oldies / Rock\, 8:00 PM. Tickets/info: https://www.ticketmaste
+ r.com/chubby-checker-new-buffalo-michigan-02-13-2027/event/040065388D8559
+ 46 (confirm details with the venue)
+URL:https://www.ticketmaster.com/chubby-checker-new-buffalo-michigan-02-13
+ -2027/event/040065388D855946
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-17-riley-with-super-sometimes-leisure-hour-shoreline@gr-concer
  ts
 DTSTAMP:20261021T120000Z
@@ -4654,6 +5545,29 @@ DESCRIPTION:Family Show\, Showtimes on venue site. Tickets/info: https://w
  ww.vanandelarena.com/events/2027/disney-on-ice (confirm details with the 
  venue)
 URL:https://www.vanandelarena.com/events/2027/disney-on-ice
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-18-michael-allman-band-allman-brothers-celebr-149n2l@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270218T190000
+DTEND;TZID=America/Detroit:20270218T220000
+SUMMARY:Michael Allman Band – Allman Brothers Celebration (Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Southern Rock\, 7:00 PM. Tickets/info: https://parktheatreholl
+ and.org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-18-tom-segura-preposterous@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270218T200000
+DTEND;TZID=America/Detroit:20270218T230000
+SUMMARY:Tom Segura: Preposterous
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com
+ /events/tom-segura/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/tom-segura/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-19-dear-evan-hansen-civic-theatre-production-6vbcfk@gr-concert
@@ -4714,6 +5628,17 @@ LOCATION:Calvin University Chapel\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://calvin.edu/events/w
  ind-ensemble-concert-1803169800 (confirm details with the venue)
 URL:https://calvin.edu/events/wind-ensemble-concert-1803169800
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-20-rush-tribute-animation-legends-series@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270220T190000
+DTEND;TZID=America/Detroit:20270220T220000
+SUMMARY:RUSH Tribute: ANIMATION (Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-21-shovels-rope@gr-concerts
@@ -4794,6 +5719,17 @@ URL:https://www.themidtowngr.com/shows-events/detail/The-Insiders-A-Tribut
  e-to-Tom-Petty
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-26-ahren-belisle-live-stand-up-comedy@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270226T190000
+DTEND;TZID=America/Detroit:20270226T220000
+SUMMARY:Ahren Belisle – Live Stand-Up Comedy
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://parktheatreholland.org
+ / (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-27-gr-symphony-celebrating-beethoven@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270227T190000
@@ -4831,6 +5767,17 @@ LOCATION:Lowell Arts at Sound Check\, Grand Rapids\, MI
 DESCRIPTION:Folk\, 7:00 PM. Tickets/info: https://www.lowellarts.org/music
  -concerts/lowell-arts-at-sound-check (confirm details with the venue)
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-27-pink-floyd-tribute-in-the-flesh-legends-series@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270227T190000
+DTEND;TZID=America/Detroit:20270227T220000
+SUMMARY:Pink Floyd Tribute: In the Flesh (Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-28-hawks-and-owls-string-band-acoustic-stew-m-x3ci31@gr-concer
@@ -4969,6 +5916,18 @@ LOCATION:Wealthy Theatre\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/event/pop-sc
  holars-improv-comedy/1132 (confirm details with the venue)
 URL:https://grcmc.org/event/pop-scholars-improv-comedy/1132
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-06-stevie-ray-vaughan-tribute-texas-flood-leg-1w433p@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270306T190000
+DTEND;TZID=America/Detroit:20270306T220000
+SUMMARY:Stevie Ray Vaughan Tribute: Texas Flood (Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Blues\, 7:00 PM. Tickets/info: https://parktheatreholland.org/
+  (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-07-tobymac-hits-deep-tour-2027-with-jeremy-ca-nt4z77@gr-concer
@@ -5126,6 +6085,18 @@ DESCRIPTION:Comedy\, 7:03 PM. Tickets/info: https://grcmc.org/event/river-
 URL:https://grcmc.org/event/river-city-improv/1647
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-20-talking-heads-tribute-heads-in-motion-sold-mzdwqg@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270320T190000
+DTEND;TZID=America/Detroit:20270320T220000
+SUMMARY:Talking Heads Tribute: Heads in Motion (SOLD OUT\, Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-21-blue-water-ramblers-acoustic-stew-music-guild@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270321T150000
@@ -5236,6 +6207,19 @@ DESCRIPTION:Celtic Rock\, 7:00 PM. Tickets/info: https://www.lowellarts.or
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-27-jefferson-starship-and-john-waite@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270327T200000
+DTEND;TZID=America/Detroit:20270327T230000
+SUMMARY:Jefferson Starship and John Waite
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Classic Rock\, 8:00 PM. Tickets/info: https://www.ticketmaster
+ .com/jefferson-starship-and-john-waite-new-buffalo-michigan-03-27-2027/ev
+ ent/04006530987EEE65 (confirm details with the venue)
+URL:https://www.ticketmaster.com/jefferson-starship-and-john-waite-new-buf
+ falo-michigan-03-27-2027/event/04006530987EEE65
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-02-gianmarco-soresi-the-misery-loves-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270402T190000
@@ -5273,6 +6257,18 @@ DESCRIPTION:Classical\, 3:00 PM. Tickets/info: https://calvin.edu/events/t
 URL:https://calvin.edu/events/tiffany-engle-faculty-recital-1806778800
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-03-david-bowie-tribute-blue-genies-sold-out-l-1rr8k2@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270403T190000
+DTEND;TZID=America/Detroit:20270403T220000
+SUMMARY:David Bowie Tribute: Blue Genies (SOLD OUT\, Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-06-vlad-holiday-wilson-ave@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270406T190000
@@ -5308,6 +6304,19 @@ DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/i
  nt/08006536DA39836D (confirm details with the venue)
 URL:https://www.ticketmaster.com/iliza-shlesinger-free-nights-weekends-gra
  nd-rapids-michigan-04-08-2027/event/08006536DA39836D
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-08-actors-from-the-london-stage-king-lear-apr-e2topw@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270408T193000
+DTEND;TZID=America/Detroit:20270408T223000
+SUMMARY:Actors from the London Stage: King Lear (Apr 8–9\, Great Performan
+ ce Series)
+LOCATION:Knickerbocker Theatre (Hope College)\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://hope.edu/arts/great-p
+ erformance-series/ (confirm details with the venue)
+URL:https://hope.edu/arts/great-performance-series/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-09-brit-floyd-animals-50-world-tour@gr-concerts
@@ -5509,6 +6518,18 @@ DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/event/pop-sc
 URL:https://grcmc.org/event/pop-scholars-improv-comedy/1718
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-17-journey-tribute-the-rockshow-sold-out-lege-10vocj@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270417T190000
+DTEND;TZID=America/Detroit:20270417T220000
+SUMMARY:Journey Tribute: The RockShow (SOLD OUT\, Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-18-ruth-max-bloomquist-acoustic-stew-music-guild@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270418T150000
@@ -5531,6 +6552,17 @@ LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
 DESCRIPTION:Folk\, 7:00 PM. Tickets/info: https://www.scmcgr.org/concerts/
  foy-vance-2027 (confirm details with the venue)
 URL:https://www.scmcgr.org/concerts/foy-vance-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-21-chanticleer-great-performance-series@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270421T193000
+DTEND;TZID=America/Detroit:20270421T223000
+SUMMARY:Chanticleer (Great Performance Series)
+LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://hope.edu/arts/great-pe
+ rformance-series/ (confirm details with the venue)
+URL:https://hope.edu/arts/great-performance-series/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-22-jeff-dunham-inappropriate-contact@gr-concerts
@@ -5621,6 +6653,18 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.lowellarts.org
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-24-led-zeppelin-tribute-kashmir-sold-out-lege-1a18k8@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270424T190000
+DTEND;TZID=America/Detroit:20270424T220000
+SUMMARY:Led Zeppelin Tribute: Kashmir (SOLD OUT\, Legends Series)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-25-mercyme-with-ben-fuller-peter-burton@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270425T190000
@@ -5632,6 +6676,19 @@ DESCRIPTION:Christian\, 7:00 PM. Tickets/info: https://www.ticketmaster.co
  0800654DFB0C8F18 (confirm details with the venue)
 URL:https://www.ticketmaster.com/mercyme-ben-fuller-peter-burton-grand-rap
  ids-michigan-04-25-2027/event/0800654DFB0C8F18
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-25-powerman-5000-w-aesthetic-perfection-a-kil-tiyws2@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270425T190000
+DTEND;TZID=America/Detroit:20270425T220000
+SUMMARY:Powerman 5000 w/ Aesthetic Perfection + A Killer's Confession (SOL
+ D OUT)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://parktheatreholland.org/
+  (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-27-calvin-symphonic-band-concert-apr-27@gr-concerts
@@ -5826,6 +6883,21 @@ LOCATION:GRCC Spectrum Theater\, Grand Rapids\, MI
 DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.jtgr.org/season (
  confirm details with the venue)
 URL:https://www.jtgr.org/season
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-06-10-riley-green-that-s-just-me-tour-with-musca-1q8kpu@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270610T190000
+DTEND;TZID=America/Detroit:20270610T220000
+SUMMARY:Riley Green – That's Just Me Tour (with Muscadine Bloodline\, Jake
+  Worthington & Hannah McFarland\; Outdoors)
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://soaringeaglecasino.co
+ m/events/riley-green-thats-just-me-tour-2027/ (confirm details with the v
+ enue)
+URL:https://soaringeaglecasino.com/events/riley-green-thats-just-me-tour-2
+ 027/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-06-11-stick-figure-enjoy-the-ride-tour-with-the-1wjjr1@gr-concert
