@@ -10,12 +10,15 @@ export CLOUDFLARE_API_TOKEN CLOUDFLARE_ACCOUNT_ID
 cd "$REPO"
 git fetch -q origin main
 REF=$(git rev-parse origin/main)
-DIST=$(mktemp -d)
-trap 'rm -rf "$DIST"' EXIT
+WRAP=$(mktemp -d)
+trap 'rm -rf "$WRAP"' EXIT
+echo '{"name":"cf-pages-deploy"}' > "$WRAP/package.json"
+mkdir -p "$WRAP/node_modules/.cache/wrangler" "$WRAP/dist"
+DIST="$WRAP/dist"
 git archive "$REF" | tar -x -C "$DIST"
 rm -rf "$DIST/worker" "$DIST/scripts" "$DIST/.github" "$DIST/docs" "$DIST/EDITING.md"
-WR="${WRANGLER:-/workspace/cfdeploy/node_modules/.bin/wrangler}"
+WR="${WRANGLER:-$REPO/worker/node_modules/.bin/wrangler}"
 [ -x "$WR" ] || WR="npx -y wrangler@4"
-cd /workspace/cfdeploy 2>/dev/null || cd "$HOME"   # avoid read-only /node_modules cache
+cd "$WRAP"
 $WR pages deploy "$DIST" --project-name grhappenings --branch main --commit-hash "$REF" \
   --commit-message "$(git -C "$REPO" log -1 --format=%s "$REF" | cut -c1-300)"
