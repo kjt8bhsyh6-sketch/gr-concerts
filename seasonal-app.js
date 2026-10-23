@@ -95,8 +95,8 @@
       $('#range-n').textContent = `${l.length} event${l.length === 1 ? '' : 's'}` + (l.length < all.length ? ` (of ${all.length}, filters on)` : '');
       $('#range-list').innerHTML = grouped(l) || (all.length ? '<p class="few">No events match these filters.</p>' : '<p class="few">No seasonal events listed in those dates yet. We add new ones as they\'re announced, so check back soon.</p>');
     }
-    // default view: events ongoing or starting this week or next (today through the Sunday that ends next week)
-    const all = inR ? [] : list.filter(e => overlaps(e, today, weekEnd)), l = all.filter(ok); // empty while hidden: unique card ids
+    // default view: all upcoming seasonal events grouped by season (Halloween, Thanksgiving, Christmas & Holiday, Other Seasonal)
+    const all = inR ? [] : list.filter(e => (e.end || e.sort) >= today), l = all.filter(ok); // empty while hidden: unique card ids
     if (inR) $('#seasonal').innerHTML = ''; else $('#seasonal').innerHTML = grouped(l) || (all.length ? '<p class="few">Nothing matches.</p>' : '<p class="few">No seasonal events this week or next. Tap 📅 Pick dates to look further out.</p>');
     const n = list.filter(e => isNew(e) && (e.end || e.sort) >= today).length, el = $('#newcount'); el.hidden = !n;
     el.innerHTML = `<span class="new">NEW</span> <strong>${n}</strong> new listing${n === 1 ? '' : 's'} added this week`;

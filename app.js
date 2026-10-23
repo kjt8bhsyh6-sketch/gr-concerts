@@ -79,13 +79,16 @@
       $('#range-list').innerHTML = l.map(concertCard).join('') || (all.length ? '<p class="few">No shows match these filters.</p>' : '<p class="few">Nothing listed in those dates yet; check back, we add shows daily.</p>');
     }
     // week sections are hidden in range view; leave them empty so card ids stay unique (anchors, pick taps, marks)
+    const hasFilter = !!(v || g || mine || nw);
     ['this', 'next', 'later'].forEach(w => {
       if (inR) { document.getElementById(w).innerHTML = ''; return; }
-      const all = shows.filter(c => c.week === w), l = all.filter(ok), el = document.getElementById(w);
+      const all = shows.filter(c => c.week === w && endOf(c) >= today), l = all.filter(ok), el = document.getElementById(w);
       el.innerHTML = l.map(concertCard).join('') ||
         '<p class="few">No shows match these filters.</p>';
-      if (all.length < 3 && l.length === all.length) el.insertAdjacentHTML('beforeend', '<p class="few">Few shows found this week.</p>');
+      if (all.length < 3 && l.length === all.length && !hasFilter) el.insertAdjacentHTML('beforeend', '<p class="few">Few shows found this week.</p>');
     });
+    const laterEl = document.getElementById('later-sec');
+    if (laterEl) laterEl.hidden = inR || !hasFilter;
     newCount(shows.filter(c => ago(c.date) <= 0 && isNew(c)).length, $('#f-new'));
   }
   // ---- date range picker ("Looking for something further out?"): shared code in date-range.js ----
