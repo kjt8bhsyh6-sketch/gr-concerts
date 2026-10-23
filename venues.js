@@ -22,6 +22,7 @@ const VENUES = {
   "Fountain Street Church": "24 Fountain St NE, Grand Rapids, MI 49503",
   "Lowell Arts at Sound Check": "Sound Check, 621 E Main St, Lowell, MI 49331",
   "GRCC Spectrum Theater": "Spectrum Theater, 160 Fountain St NE, Grand Rapids, MI 49503",
+  "GRCC Albert P. Smith Music Center": "Albert P. Smith Music Center, 142 Ransom Ave NE, Grand Rapids, MI 49503",
   "Dog Story Theater": "340 State St SE, Grand Rapids, MI 49503",
   "The Comedy Project": "540 Leonard St NW, Suite B, Grand Rapids, MI 49504",
   "Tip Top Deluxe Bar & Grill": "760 Butterworth St SW, Grand Rapids, MI 49504",

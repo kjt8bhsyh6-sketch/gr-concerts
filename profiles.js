@@ -10,7 +10,7 @@
   const pg = /sports/.test(location.pathname) ? "sports" : /seasonal/.test(location.pathname) ? "seasonal" : "concerts";
   const OPT = {
     genres: ["Rock", "Indie", "Comedy", "Country", "Folk", "Punk", "Metal", "Electronic", "Hip-Hop", "Jazz", "Classical", "Musical", "Theater"],
-    venues: ["Pyramid Scheme", "Intersection", "GLC Live", "Van Andel", "DeVos", "Wealthy Theatre", "Dr. Grins", "St. Cecilia", "Civic Theatre", "Big Room", "Meijer Gardens", "Tip Top", "Midtown", "Speciation", "Calvin", "Fountain Street", "GRCC Spectrum", "Dog Story", "Comedy Project", "Lowell Arts", "GVSU Haas", "Acrisure", "Park Theatre", "Jack H. Miller", "Knickerbocker", "Holland Civic Center", "Holland Community Theatre", "Saugatuck Center", "Gun Lake Casino", "FireKeepers", "Soaring Eagle", "Four Winds"],
+    venues: ["Pyramid Scheme", "Intersection", "GLC Live", "Van Andel", "DeVos", "Wealthy Theatre", "Dr. Grins", "St. Cecilia", "Civic Theatre", "Big Room", "Meijer Gardens", "Tip Top", "Midtown", "Speciation", "Calvin", "Fountain Street", "GRCC Spectrum", "GRCC Albert P. Smith", "Dog Story", "Comedy Project", "Lowell Arts", "GVSU Haas", "Acrisure", "Park Theatre", "Jack H. Miller", "Knickerbocker", "Holland Civic Center", "Holland Community Theatre", "Saugatuck Center", "Gun Lake Casino", "FireKeepers", "Soaring Eagle", "Four Winds"],
     teams: ["Griffins", "Gold", "Rise", "Whitecaps", "AC Grand Rapids"],
     gameTypes: ["Weekend", "Weeknight", "Matinee", "Home openers"],
     types: ["Holiday Lights", "Christmas Market", "Holiday Market", "Holiday Parade", "Holiday Exhibit", "Holiday Tea", "Santa Visit", "Ghost Tour"],
@@ -204,7 +204,8 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
   const iso = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
   const T0 = new Date(), today = iso(T0), wkEnd = iso(new Date(T0.getFullYear(), T0.getMonth(), T0.getDate() + 6));
   const dfmt = s => { const d = new Date(s + "T12:00:00"); return d.toLocaleDateString("en-US", { weekday: "short" }) + " " + (d.getMonth() + 1) + "/" + d.getDate(); };
-  const has = (list, val) => list.some(x => lc(val).includes(lc(x)) && x);
+  const norm = s => lc(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/['’`´]s\b/g, "").replace(/['’`´.]/g, "").replace(/\bsaint\b/g, "st").replace(/[^a-z0-9]+/g, " ").trim();
+  const has = (list, val) => list.some(x => x && (norm(val).includes(norm(x)) || (x === "Classical" && /^(orchestral|choral)$/i.test(val))));
   const hour = t => { const m = /(\d+):(\d+)\s*(AM|PM)/i.exec(t || ""); return m ? (+m[1] % 12) + (/PM/i.test(m[3]) ? 12 : 0) : 19; };
   const tkey = t => { const m = /(\d+):(\d+)\s*(AM|PM)/i.exec(t || ""); return m ? String((+m[1] % 12) + (/PM/i.test(m[3]) ? 12 : 0)).padStart(2, "0") + m[2] : "99"; };
   function picks(p) {
@@ -212,7 +213,7 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
     if (pg === "concerts" && typeof CONCERTS !== "undefined") {
       const c = p.concerts; if (!c.genres.length && !c.venues.length && !c.artists.length) return out;
       CONCERTS.filter(e => e.date >= today && e.date <= wkEnd).forEach(e => {
-        if (has(c.genres, e.genre) || has(c.venues, e.venue) || c.artists.some(a => a.length > 1 && lc(e.artist).includes(lc(a))))
+        if (has(c.genres, e.genre) || has(c.venues, e.venue) || c.artists.some(a => { const na = norm(a); return na.length > 1 && norm(e.artist + " " + e.venue + " " + e.genre).includes(na); }))
           out.push([e.artist, dfmt(e.date) + " · " + e.time + " · " + e.venue, "show-" + GRICS.id(e), e.date + " " + tkey(e.time)]);
       });
       out.sort((x, y) => x[3] < y[3] ? -1 : x[3] > y[3] ? 1 : 0); // data isn't in date order: sort so same-day showtimes sit together

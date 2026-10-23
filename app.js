@@ -61,14 +61,33 @@
     `<li><a href="#${x.id}">${h(x.t)}</a> <span class="muted">${h(x.s)} · added ${fmt(x.k)}</span>${x.n ? ' <span class="new">NEW</span>' : ''}</li>`).join('')
     : '<li>Nothing new yet.</li>';
 
-  // ---- filters ----
+  // ---- filters & search (normalizes "Saint"/"St.", apostrophes like "Cecilia's" -> "cecilia", and diacritics) ----
   const uniq = k => [...new Set(shows.map(c => c[k]))].sort();
   const fill = (sel, vals) => sel.insertAdjacentHTML('beforeend', vals.map(v => `<option>${h(v)}</option>`).join(''));
   fill($('#f-venue'), uniq('venue')); fill($('#f-genre'), uniq('genre'));
+  const norm = s => String(s || '').toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/['’`´]s\b/g, '')
+    .replace(/['’`´.]/g, '')
+    .replace(/\bsaint\b/g, 'st')
+    .replace(/[^a-z0-9]+/g, ' ').trim();
+  const searchBlob = c => {
+    const bio = (BIO[c.artist] && BIO[c.artist].text) || '';
+    const extra = /^(classical|orchestral)$/i.test(c.genre) ? ' classical orchestral symphony concerto philharmonic' : '';
+    const vExtra = c.venue === 'St. Cecilia Music Center' ? ' saint cecilia royce auditorium' : '';
+    return norm(c.artist + ' ' + c.venue + ' ' + c.genre + ' ' + bio + extra + vExtra);
+  };
+  const qEl = $('#f-q');
+  if (qEl && qs.get('q')) qEl.value = qs.get('q');
 
   function render() {
     const v = $('#f-venue').value, g = $('#f-genre').value, mine = $('#f-mine').value, nw = $('#f-new').checked;
-    const ok = c => (!v || c.venue === v) && (!g || c.genre === g) && Marks.match(cid(c), mine) && (!nw || isNew(c));
+    const q = qEl ? norm(qEl.value) : '';
+    const qFiltered = q ? q.split(' ').filter(w => w && !/^(a|an|the|at|in|on|of|for|to|tonight|today)$/.test(w)) : [];
+    const qToks = qFiltered.length ? qFiltered : (q ? q.split(' ').filter(Boolean) : []);
+    const genreOk = c => !g || c.genre === g || ((g === 'Classical' || g === 'Orchestral') && (c.genre === 'Classical' || c.genre === 'Orchestral'));
+    const qOk = c => !qToks.length || (c._q || (c._q = searchBlob(c)), qToks.every(t => c._q.includes(t)));
+    const ok = c => (!v || c.venue === v) && genreOk(c) && Marks.match(cid(c), mine) && (!nw || isNew(c)) && qOk(c);
     const rg = range(), inR = !!rg;
     document.querySelectorAll('section.wk').forEach(x => x.hidden = inR); $('#range-sec').hidden = !inR;
     $('.subtitle').textContent = inR ? `Shows from ${md(rg[0])} to ${md(rg[1])}` : 'Concerts, This Week and Next';
@@ -79,7 +98,7 @@
       $('#range-list').innerHTML = l.map(concertCard).join('') || (all.length ? '<p class="few">No shows match these filters.</p>' : '<p class="few">Nothing listed in those dates yet; check back, we add shows daily.</p>');
     }
     // week sections are hidden in range view; leave them empty so card ids stay unique (anchors, pick taps, marks)
-    const hasFilter = !!(v || g || mine || nw);
+    const hasFilter = !!(v || g || mine || nw || qToks.length);
     ['this', 'next', 'later'].forEach(w => {
       if (inR) { document.getElementById(w).innerHTML = ''; return; }
       const all = shows.filter(c => c.week === w && endOf(c) >= today), l = all.filter(ok), el = document.getElementById(w);
@@ -94,7 +113,8 @@
   // ---- date range picker ("Looking for something further out?"): shared code in date-range.js ----
   const DR = DateRange.init({ today, lastDate: shows.map(endOf).sort().pop(), onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
   document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
-  $('#f-clear').addEventListener('click', () => { $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; render(); });
+  if (qEl) qEl.addEventListener('input', render);
+  $('#f-clear').addEventListener('click', () => { $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; if (qEl) qEl.value = ''; render(); });
   $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
   render();
 

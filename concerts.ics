@@ -211,6 +211,20 @@ DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/entert
 URL:https://gunlakecasino.com/entertainment/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-23-grcc-kent-philharmonic-orchestra-concert-r-ihxigg@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261023T193000
+DTEND;TZID=America/Detroit:20261023T223000
+SUMMARY:GRCC Kent Philharmonic Orchestra Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.grcc.edu/event
+ s/grcc-music-presents-kent-philharmonic-orchestra-3 (confirm details with
+  the venue)
+URL:https://www.grcc.edu/events/grcc-music-presents-kent-philharmonic-orch
+ estra-3
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-24-free-halloween-show-garbage-angel-no-cover-21@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261024T210000
@@ -629,6 +643,17 @@ DESCRIPTION:Rock\, 7:30 PM. Tickets/info: https://parktheatreholland.org/
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-27-grcc-choir-concert-royce-auditorium@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261027T193000
+DTEND;TZID=America/Detroit:20261027T223000
+SUMMARY:GRCC Choir Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://www.grcc.edu/events/gr
+ cc-music-presents-choral-concert (confirm details with the venue)
+URL:https://www.grcc.edu/events/grcc-music-presents-choral-concert
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-28-the-longest-johns-the-ends-of-the-earth-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261028T200000
@@ -772,6 +797,19 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Live Show\, 6:00 PM. Tickets/info: https://parktheatreholland.
  org/ (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-grcc-guitar-night-grand-rapids-guitar-duo-aumfvq@gr-concert
+ s
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261029T193000
+DTEND;TZID=America/Detroit:20261029T223000
+SUMMARY:GRCC Guitar Night: Grand Rapids Guitar Duo\, Folias Duo & Student 
+ Ensembles
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
+ /grcc-music-presents-guitar-night-0 (confirm details with the venue)
+URL:https://www.grcc.edu/events/grcc-music-presents-guitar-night-0
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-30-capella-fall-concert-come-home-free@gr-concerts
@@ -985,6 +1023,20 @@ LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
 DESCRIPTION:Live Show\, 8:00 PM. Tickets/info: https://soaringeaglecasino.
  com/events/wheel-of-fortune-live/ (confirm details with the venue)
 URL:https://soaringeaglecasino.com/events/wheel-of-fortune-live/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-grcc-campus-band-and-wind-ensemble-concert-vi9h5f@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261030T193000
+DTEND;TZID=America/Detroit:20261030T223000
+SUMMARY:GRCC Campus Band and Wind Ensemble Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
+ /grcc-music-presents-campus-band-wind-ensemble-concert (confirm details w
+ ith the venue)
+URL:https://www.grcc.edu/events/grcc-music-presents-campus-band-wind-ensem
+ ble-concert
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-autumn-weekends-live-music-the-morning-yel-13f7dc@gr-concer
@@ -1422,6 +1474,29 @@ URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
  vent/d659b1ed-2b90-4041-a45e-d01797316044
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-05-grcc-student-honor-recital-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261105T151500
+DTEND;TZID=America/Detroit:20261105T181500
+SUMMARY:GRCC Student Honor Recital (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 3:15 PM. Tickets/info: https://www.grcc.edu/events
+ /grcc-music-presents-student-honor-recital (confirm details with the venu
+ e)
+URL:https://www.grcc.edu/events/grcc-music-presents-student-honor-recital
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-05-grcc-flute-night-with-a-b-duo-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261105T193000
+DTEND;TZID=America/Detroit:20261105T223000
+SUMMARY:GRCC Flute Night with A/B Duo (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
+ /grcc-music-presents-flute-night-ab-duo (confirm details with the venue)
+URL:https://www.grcc.edu/events/grcc-music-presents-flute-night-ab-duo
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-06-gr-symphony-midori-plays-shostakovich@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261106T193000
@@ -1577,6 +1652,18 @@ LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
 DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com/ent
  ertainment/ (confirm details with the venue)
 URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06-grcc-voice-area-recital-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261106T193000
+DTEND;TZID=America/Detroit:20261106T223000
+SUMMARY:GRCC Voice Area Recital (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
+ /grcc-music-presents-voice-area-recital-0 (confirm details with the venue
+ )
+URL:https://www.grcc.edu/events/grcc-music-presents-voice-area-recital-0
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-07-gr-symphony-midori-plays-shostakovich@gr-concerts
@@ -1881,6 +1968,19 @@ DESCRIPTION:Indie Pop\, 8:00 PM. Tickets/info: https://www.etix.com/ticket
  tersection-elevation (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/65855219/almost-monday-thank-god-its-alm
  ost-monday-grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-10-grcc-percussion-area-recital-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261110T193000
+DTEND;TZID=America/Detroit:20261110T223000
+SUMMARY:GRCC Percussion Area Recital (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
+ /grcc-music-presents-percussion-area-recital-0 (confirm details with the 
+ venue)
+URL:https://www.grcc.edu/events/grcc-music-presents-percussion-area-recita
+ l-0
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-11-broadway-grand-rapids-maybe-happy-ending@gr-concerts
@@ -2218,6 +2318,17 @@ DESCRIPTION:Jazz\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com/e
 URL:https://soaringeaglecasino.com/events/kenny-g/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-13-kent-philharmonic-orchestra-chamber-concert@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261113T193000
+DTEND;TZID=America/Detroit:20261113T223000
+SUMMARY:Kent Philharmonic Orchestra Chamber Concert
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-14-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261114T140000
@@ -2540,6 +2651,19 @@ DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.ticketmaster.com/tri
  t/08006513CDCC984A (confirm details with the venue)
 URL:https://www.ticketmaster.com/triumph-the-rock-roll-machine-reloaded-gr
  and-rapids-michigan-11-17-2026/event/08006513CDCC984A
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-17-grcc-woodwind-brass-area-recital-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261117T193000
+DTEND;TZID=America/Detroit:20261117T223000
+SUMMARY:GRCC Woodwind & Brass Area Recital (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
+ /grcc-music-presents-woodwind-brass-area-recital (confirm details with th
+ e venue)
+URL:https://www.grcc.edu/events/grcc-music-presents-woodwind-brass-area-re
+ cital
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-18-bad-momz-of-comedy@gr-concerts
@@ -3303,6 +3427,17 @@ DESCRIPTION:Holiday\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
  064E984E02F83 (confirm details with the venue)
 URL:https://www.ticketmaster.com/mannheim-steamroller-christmas-grand-rapi
  ds-michigan-12-01-2026/event/080064E984E02F83
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-01-grcc-jazz-night@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261201T193000
+DTEND;TZID=America/Detroit:20261201T223000
+SUMMARY:GRCC Jazz Night
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 7:30 PM. Tickets/info: https://www.grcc.edu/events/grcc
+ -music-presents-jazz-night-1 (confirm details with the venue)
+URL:https://www.grcc.edu/events/grcc-music-presents-jazz-night-1
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-02-tom-arnold-live-stand-up-comedy@gr-concerts
@@ -4076,6 +4211,18 @@ URL:https://www.ticketmaster.com/cirque-musica-holiday-wonderland-new-buff
  alo-michigan-12-12-2026/event/040064E8A92EB6FB
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-schubert-male-chorus-christmas-concert-sno-tsk3og@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261212T193000
+DTEND;TZID=America/Detroit:20261212T223000
+SUMMARY:Schubert Male Chorus Christmas Concert: Snowprints in Song
+LOCATION:Calvin University Chapel\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://www.schubertmalechorus
+ .org/concertsevents-calendar/ (confirm details with the venue)
+URL:https://www.schubertmalechorus.org/concertsevents-calendar/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261213T190000
@@ -4280,6 +4427,20 @@ DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.ticketweb.com/eve
   (confirm details with the venue)
 URL:https://www.ticketweb.com/event/the-bootstrap-boys-winter-solstice-tip
  -top-deluxe-bar-tickets/14362974
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-18-grcc-kent-philharmonic-orchestra-concert-r-1tcg74@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261218T193000
+DTEND;TZID=America/Detroit:20261218T223000
+SUMMARY:GRCC Kent Philharmonic Orchestra Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.grcc.edu/event
+ s/grcc-music-presents-kent-philharmonic-orchestra-4 (confirm details with
+  the venue)
+URL:https://www.grcc.edu/events/grcc-music-presents-kent-philharmonic-orch
+ estra-4
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-19-jeff-daniels@gr-concerts
@@ -4858,6 +5019,21 @@ DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-16-st-cecilia-youth-philharmonic-winter-conce-39ymi1@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270116T193000
+DTEND;TZID=America/Detroit:20270116T223000
+SUMMARY:St. Cecilia Youth Philharmonic Winter Concert: Mozart Piano Concer
+ to No. 12 (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.scmcgr.org/sch
+ ool-of-music/youth-programs/concerto-competition (confirm details with th
+ e venue)
+URL:https://www.scmcgr.org/school-of-music/youth-programs/concerto-competi
+ tion
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-17-broadway-grand-rapids-six@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270117T130000
@@ -5424,6 +5600,17 @@ DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
 URL:https://www.thebob.com/drgrins/comedian/index.html?id=1504
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-11-grcc-faculty-recital@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270211T193000
+DTEND;TZID=America/Detroit:20270211T223000
+SUMMARY:GRCC Faculty Recital
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-12-gr-symphony-coffee-with-pearl-gr-symphony-chorus@gr-concert
  s
 DTSTAMP:20261019T120000Z
@@ -5570,6 +5757,17 @@ DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com
 URL:https://soaringeaglecasino.com/events/tom-segura/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-18-grcc-flute-night@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270218T193000
+DTEND;TZID=America/Detroit:20270218T223000
+SUMMARY:GRCC Flute Night
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-19-dear-evan-hansen-civic-theatre-production-6vbcfk@gr-concert
  s
 DTSTAMP:20261020T120000Z
@@ -5580,6 +5778,18 @@ LOCATION:Grand Rapids Civic Theatre\, Grand Rapids\, MI
 DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://grct.ludus.com/show_p
  age.php?show_id=200512557 (confirm details with the venue)
 URL:https://grct.ludus.com/show_page.php?show_id=200512557
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-19-grcc-campus-band-and-wind-ensemble-concert-1k4gcn@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270219T193000
+DTEND;TZID=America/Detroit:20270219T223000
+SUMMARY:GRCC Campus Band and Wind Ensemble Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-20-buffalo-traffic-jam-pictures-of-you-tour@gr-concerts
@@ -5652,6 +5862,17 @@ DESCRIPTION:Americana\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
 URL:https://www.scmcgr.org/concerts/shovels-rope-2027
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-23-grcc-choir-concert-royce-auditorium@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270223T193000
+DTEND;TZID=America/Detroit:20270223T223000
+SUMMARY:GRCC Choir Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://www.grcc.edu/schools-d
+ epartments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-24-dropkick-murphys@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270224T190000
@@ -5678,6 +5899,17 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  details with the venue)
 URL:https://www.ticketweb.com/event/youth-fountain-not-my-the-pyramid-sche
  me-tickets/14335814
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-25-grcc-college-orchestra-concert@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270225T193000
+DTEND;TZID=America/Detroit:20270225T223000
+SUMMARY:GRCC College Orchestra Concert
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.grcc.edu/schoo
+ ls-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-26-gr-symphony-celebrating-beethoven@gr-concerts
@@ -5728,6 +5960,18 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://parktheatreholland.org
  / (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-26-grcc-kent-philharmonic-orchestra-concert-r-b2y785@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270226T193000
+DTEND;TZID=America/Detroit:20270226T223000
+SUMMARY:GRCC Kent Philharmonic Orchestra Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.grcc.edu/schoo
+ ls-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-27-gr-symphony-celebrating-beethoven@gr-concerts
@@ -5792,6 +6036,19 @@ DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/event/hawks-an
  he venue)
 URL:https://grcmc.org/event/hawks-and-owls-string-band-acoustic-stew-music
  -guild/1738
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-28-grand-rapids-youth-symphony-classical-orch-97nots@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270228T150000
+DTEND;TZID=America/Detroit:20270228T180000
+SUMMARY:Grand Rapids Youth Symphony & Classical Orchestra Winter Concert (
+ Piano Concerto Winner)
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 3:00 PM. Tickets/info: https://www.grysco.org/con
+ certs (confirm details with the venue)
+URL:https://www.grysco.org/concerts
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-01-calvin-symphonic-band-rockford-community-band@gr-concerts
@@ -5945,6 +6202,17 @@ URL:https://www.ticketmaster.com/tobymac-with-jeremy-camp-seph-schlueter-g
  rand-rapids-michigan-03-07-2027/event/08006518E266A674
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-11-grcc-jazz-ensemble-concert@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270311T193000
+DTEND;TZID=America/Detroit:20270311T223000
+SUMMARY:GRCC Jazz Ensemble Concert
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 7:30 PM. Tickets/info: https://www.grcc.edu/schools-dep
+ artments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-12-monster-jam-mar-12-14@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270312T190000
@@ -6008,6 +6276,19 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.lowellarts.org
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-13-grand-rapids-women-s-chorus-cabaret-a-nigh-jivgm8@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270313T170000
+DTEND;TZID=America/Detroit:20270313T200000
+SUMMARY:Grand Rapids Women's Chorus Cabaret: A Night at the Movies (5:00 &
+  8:00 PM shows)
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 5:00 PM. Tickets/info: https://grwc.org/ (confirm det
+ ails with the venue)
+URL:https://grwc.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-14-denny-love-show-love-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270314T190000
@@ -6019,6 +6300,17 @@ DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/
  he venue)
 URL:https://www.etix.com/ticket/p/60807376/denny-love-grand-rapids-the-int
  ersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-14-grcc-honor-band-2027-concert-royce-auditorium@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270314T163000
+DTEND;TZID=America/Detroit:20270314T193000
+SUMMARY:GRCC Honor Band 2027 Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 4:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-18-chamber-music-society-of-lincoln-center-st-fx0y7p@gr-concer
@@ -6173,6 +6465,18 @@ URL:https://www.scmcgr.org/concerts/cecile-mclorin-salvant-sullivan-fortne
  r-2027
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-25-grcc-international-guitar-series-paloma-chaprnka@gr-concert
+ s
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270325T193000
+DTEND;TZID=America/Detroit:20270325T223000
+SUMMARY:GRCC International Guitar Series: Paloma Chaprnka
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-26-the-huey-lewis-and-the-news-experience@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270326T190000
@@ -6220,6 +6524,28 @@ URL:https://www.ticketmaster.com/jefferson-starship-and-john-waite-new-buf
  falo-michigan-03-27-2027/event/04006530987EEE65
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-01-grcc-student-honor-recital-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270401T151500
+DTEND;TZID=America/Detroit:20270401T181500
+SUMMARY:GRCC Student Honor Recital (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 3:15 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-01-grcc-piano-area-recital@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270401T193000
+DTEND;TZID=America/Detroit:20270401T223000
+SUMMARY:GRCC Piano Area Recital
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-02-gianmarco-soresi-the-misery-loves-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270402T190000
@@ -6231,6 +6557,17 @@ DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/g
  ent/0800654598BE2D4B (confirm details with the venue)
 URL:https://www.ticketmaster.com/gianmarco-soresi-the-misery-loves-tour-gr
  and-rapids-michigan-04-02-2027/event/0800654598BE2D4B
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-02-kent-philharmonic-orchestra-chamber-concert@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270402T193000
+DTEND;TZID=America/Detroit:20270402T223000
+SUMMARY:Kent Philharmonic Orchestra Chamber Concert
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-03-justin-willman-one-for-the-ages@gr-concerts
@@ -6280,6 +6617,17 @@ DESCRIPTION:Indie\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event
  ails with the venue)
 URL:https://www.ticketweb.com/event/vlad-holiday-wilson-ave-the-pyramid-sc
  heme-tickets/14364554
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-06-grcc-percussion-area-recital-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270406T193000
+DTEND;TZID=America/Detroit:20270406T223000
+SUMMARY:GRCC Percussion Area Recital (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-07-calvin-jazz-band-spring-concert@gr-concerts
@@ -6343,6 +6691,18 @@ DESCRIPTION:Comedy\, 7:30 PM. Tickets/info: https://grcmc.org/event/steve-
 URL:https://grcmc.org/event/steve-hofstetter/1672
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-09-grcc-campus-band-and-wind-ensemble-concert-dih3s7@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270409T193000
+DTEND;TZID=America/Detroit:20270409T223000
+SUMMARY:GRCC Campus Band and Wind Ensemble Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-10-amber-autry-happy-holler-tour@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270410T190000
@@ -6366,6 +6726,17 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.lowellarts.org
  /music-concerts/lowell-arts-at-sound-check (confirm details with the venu
  e)
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-10-grcc-music-pianorama-2027@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270410T130000
+DTEND;TZID=America/Detroit:20270410T160000
+SUMMARY:GRCC Music: PIANORAMA! 2027
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 1:00 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-11-josiah-queen-damascus-road-tour@gr-concerts
@@ -6431,6 +6802,28 @@ URL:https://www.ticketmaster.com/staind-break-the-cycle-25th-anniversary-g
  rand-rapids-michigan-04-13-2027/event/0800653DDD089A23
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-13-grcc-woodwind-brass-area-recital-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270413T193000
+DTEND;TZID=America/Detroit:20270413T223000
+SUMMARY:GRCC Woodwind & Brass Area Recital (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-14-grcc-jazz-night@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270414T193000
+DTEND;TZID=America/Detroit:20270414T223000
+SUMMARY:GRCC Jazz Night
+LOCATION:GRCC Spectrum Theater\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 7:30 PM. Tickets/info: https://www.grcc.edu/schools-dep
+ artments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-15-branford-marsalis-dianne-reeves-celebrate-1on8zg@gr-concert
  s
 DTSTAMP:20261019T120000Z
@@ -6470,6 +6863,17 @@ DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.jtgr.org/2026-202
 URL:https://www.jtgr.org/2026-2027/short-circuit
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-15-grcc-string-night-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270415T193000
+DTEND;TZID=America/Detroit:20270415T223000
+SUMMARY:GRCC String Night (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-16-gr-symphony-barber-bernstein@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270416T190000
@@ -6492,6 +6896,17 @@ LOCATION:Calvin University Chapel\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://calvin.edu/events/w
  ind-ensemble-concert-1807918200 (confirm details with the venue)
 URL:https://calvin.edu/events/wind-ensemble-concert-1807918200
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-16-grcc-choir-concert-royce-auditorium@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270416T193000
+DTEND;TZID=America/Detroit:20270416T223000
+SUMMARY:GRCC Choir Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://www.grcc.edu/schools-d
+ epartments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-17-gr-symphony-barber-bernstein@gr-concerts
@@ -6543,6 +6958,18 @@ URL:https://grcmc.org/event/ruth-max-bloomquist-acoustic-stew-music-guild/
  1743
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-19-grcc-composition-and-recording-technology-1kyko6@gr-concert
+ s
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270419T193000
+DTEND;TZID=America/Detroit:20270419T223000
+SUMMARY:GRCC Composition and Recording Technology Showcase
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-20-foy-vance@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270420T190000
@@ -6552,6 +6979,17 @@ LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
 DESCRIPTION:Folk\, 7:00 PM. Tickets/info: https://www.scmcgr.org/concerts/
  foy-vance-2027 (confirm details with the venue)
 URL:https://www.scmcgr.org/concerts/foy-vance-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-20-grcc-voice-area-recital-free@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270420T193000
+DTEND;TZID=America/Detroit:20270420T223000
+SUMMARY:GRCC Voice Area Recital (free)
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-21-chanticleer-great-performance-series@gr-concerts
@@ -6591,6 +7029,17 @@ DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
  clarinet-quintets-2027 (confirm details with the venue)
 URL:https://www.scmcgr.org/concerts/the-chamber-music-society-of-lincoln-c
  enter-mozart-brahms-the-great-clarinet-quintets-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-22-grcc-trombone-choir-concert@gr-concerts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270422T193000
+DTEND;TZID=America/Detroit:20270422T223000
+SUMMARY:GRCC Trombone Choir Concert
+LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
+ s-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-23-our-town-civic-theatre-production-apr-23-may-2@gr-concerts
@@ -6766,6 +7215,18 @@ URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  mahlers-resurrection-symphony
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-05-07-grcc-kent-philharmonic-orchestra-concert-r-qwpmpn@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270507T193000
+DTEND;TZID=America/Detroit:20270507T223000
+SUMMARY:GRCC Kent Philharmonic Orchestra Concert (Royce Auditorium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.grcc.edu/schoo
+ ls-departments/music/ensembles (confirm details with the venue)
+URL:https://www.grcc.edu/schools-departments/music/ensembles
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-05-08-gr-symphony-mahler-s-resurrection-symphony@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20270508T190000
@@ -6808,6 +7269,19 @@ URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  the-music-of-billy-joel---the-piano-mans-greatest-hits
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-05-14-grand-rapids-youth-choruses-all-chorus-spr-1xsifj@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270514T190000
+DTEND;TZID=America/Detroit:20270514T220000
+SUMMARY:Grand Rapids Youth Choruses: All Chorus Spring Concert (Royce Audi
+ torium)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:00 PM. Tickets/info: https://gryouthchorus.org/even
+ ts/ (confirm details with the venue)
+URL:https://gryouthchorus.org/events/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-05-15-gr-symphony-the-music-of-billy-joel-the-pi-1lq9mo@gr-concer
  ts
 DTSTAMP:20261023T120000Z
@@ -6822,6 +7296,19 @@ DESCRIPTION:Orchestral\, Showtimes on venue site. Tickets/info: https://ww
  )
 URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  the-music-of-billy-joel---the-piano-mans-greatest-hits
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-16-grand-rapids-youth-symphony-classical-orch-jj3p90@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270516T150000
+DTEND;TZID=America/Detroit:20270516T180000
+SUMMARY:Grand Rapids Youth Symphony & Classical Orchestra Spring Concert (
+ Skip Gates Concerto Winners)
+LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 3:00 PM. Tickets/info: https://www.grysco.org/con
+ certs (confirm details with the venue)
+URL:https://www.grysco.org/concerts
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-05-19-judy-collins-sweet-judy-blue-eyes-farewell@gr-concerts
@@ -6859,6 +7346,19 @@ DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/c
  800652BDD1C94A5 (confirm details with the venue)
 URL:https://www.ticketmaster.com/charlie-berens-the-lost-and-found-grand-r
  apids-michigan-05-22-2027/event/0800652BDD1C94A5
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-22-grand-rapids-women-s-chorus-spring-concert-o3fx4w@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20270522T193000
+DTEND;TZID=America/Detroit:20270522T223000
+SUMMARY:Grand Rapids Women's Chorus Spring Concert (May 22 at 7:30 PM & Ma
+ y 23 at 3:00 PM)
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://grwc.org/ (confirm det
+ ails with the venue)
+URL:https://grwc.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-06-04-les-mise-rables-civic-theatre-production-jun-4-20@gr-concer
