@@ -1,17 +1,7 @@
 {
-  "generated": "2026-10-22",
-  "count": 87,
+  "generated": "2026-10-23",
+  "count": 176,
   "pending": [
-    {
-      "artist": "Chloe Kimes wsg Rowdy Fingers",
-      "week": "this",
-      "dates": [
-        "2026-10-23"
-      ],
-      "venue": "Tip Top Deluxe Bar & Grill",
-      "link": "https://www.ticketweb.com/event/chloe-kimes-rowdy-fingers-tip-top-deluxe-bar-tickets/15036843",
-      "added": "2026-10-22"
-    },
     {
       "artist": "The People's Party ft. The Dinero Crew",
       "week": "this",
@@ -31,6 +21,18 @@
       "venue": "GLC Live at 20 Monroe",
       "link": "https://www.ticketmaster.com/reggaeton-rave-18-grand-rapids-michigan-10-23-2026/event/0800652FD5D7A578",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "Battle Bots Improv Comedy Show",
+      "week": "this",
+      "dates": [
+        "2026-10-23",
+        "2026-10-30",
+        "2026-11-06"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/battle-bots-improv-comedy-show",
+      "added": "2026-10-22"
     },
     {
       "artist": "Mean Green, Thundergoat, Supergrudge, Psython",
@@ -63,6 +65,28 @@
       "added": "2026-10-21"
     },
     {
+      "artist": "Midnight Society – Creepy Improv Comedy",
+      "week": "this",
+      "dates": [
+        "2026-10-24"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/midnight-society-creepy-improv-comedy",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Late-Night Comedy Lab",
+      "week": "this",
+      "dates": [
+        "2026-10-24",
+        "2026-11-07",
+        "2026-11-14"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/late-night-comedy-lab",
+      "added": "2026-10-22"
+    },
+    {
       "artist": "The Blue Herons + The Great Black Night + Vida Eterna",
       "week": "this",
       "dates": [
@@ -81,6 +105,28 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/slay-the-vote-20-the-pyramid-scheme-tickets/14356034",
       "added": "2026-10-21"
+    },
+    {
+      "artist": "Comedy Outlet Mondays – Open-mic Variety Show!",
+      "week": "next",
+      "dates": [
+        "2026-10-26",
+        "2026-11-02",
+        "2026-11-09"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-show",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "FREE - Improv Jam-a-lama-ding-dong (Stay for the sing-song!) (Oct 27, Nov 24, Dec 29, Jan 26)",
+      "week": "next",
+      "dates": [
+        "2026-10-27"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/free-improv-jam-a-lama-ding-dong-stay-for-the-sing-song",
+      "added": "2026-10-22"
     },
     {
       "artist": "Emma Bieniewicz + Joe Dreams + Statice",
@@ -173,6 +219,106 @@
       "added": "2026-10-21"
     },
     {
+      "artist": "Resting Witch Face - 2026 Halloween NIGHT Sketch show & party",
+      "week": "next",
+      "dates": [
+        "2026-10-31"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/resting-witch-face-2026-halloween-night-sketch-show-party",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Calvin Campus Choir & Women's Chorale Concert",
+      "week": "later",
+      "dates": [
+        "2026-11-03"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/campus-choir-and-womens-chorale-concert-1793752200",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "The Po' Ramblin' Boys wsg Round Creek String Band and Red Thyme Duo",
+      "week": "later",
+      "dates": [
+        "2026-11-04"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/the-po-ramblin-boys-round-tip-top-deluxe-bar-tickets/15045093",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "GVSU New Music Ensemble Fall Concert",
+      "week": "later",
+      "dates": [
+        "2026-11-04"
+      ],
+      "venue": "GVSU Haas Center for Performing Arts",
+      "link": "https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/9a0f476d-a7f9-4ceb-86b1-e2a88c06e5e9",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "The Oregon Trail (GRCC Players, Nov 5–7)",
+      "week": "later",
+      "dates": [
+        "2026-11-05"
+      ],
+      "venue": "GRCC Spectrum Theater",
+      "link": "https://www.grcc.edu/schools-departments/theater/spectrum-theater/spectrum-theater-calendar",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Live @TCP: The Dispatch (And friends!) - Comedy Show (Nov 5, Dec 3, Jan 7)",
+      "week": "later",
+      "dates": [
+        "2026-11-05"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-show",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Faculty Artist Recital: Dan Graser, saxophone",
+      "week": "later",
+      "dates": [
+        "2026-11-05"
+      ],
+      "venue": "GVSU Haas Center for Performing Arts",
+      "link": "https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/d659b1ed-2b90-4041-a45e-d01797316044",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Breaking (the) News! – Improv Comedy Show (Fridays, Nov 6–Dec 4)",
+      "week": "later",
+      "dates": [
+        "2026-11-06"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/breaking-the-news-improv-comedy-show",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "North By North with Saint Maybe, Quilter, Wilson Ave, Low Light",
+      "week": "later",
+      "dates": [
+        "2026-11-06"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/north-by-north-with-saint-tip-top-deluxe-bar-tickets/15021843",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Free Show: The Skinny Limbs & Languor (no cover)",
+      "week": "later",
+      "dates": [
+        "2026-11-06"
+      ],
+      "venue": "Speciation Artisan Ales",
+      "link": "https://speciationartisanales.com/events/skinnylimbs2026",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "Mega 80's – The Ultimate 80's Retro Party (Nov 7)",
       "week": "later",
       "dates": [
@@ -181,6 +327,68 @@
       "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/42446718/mega-80s-the-ultimate-80s-retro-party-grand-rapids-the-intersection-elevation",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "MEXICUBA: Rhythms Without Borders",
+      "week": "later",
+      "dates": [
+        "2026-11-07"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://fountainstreet.churchcenter.com/calendar/event/234752562",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Best of the Best (of the best) -Improv Comedy Show (Nov 7–Dec 5)",
+      "week": "later",
+      "dates": [
+        "2026-11-07"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/best-of-the-best-of-the-best-improv-comedy-show-3980574c-23e3-4fcf-8d8f-157e85b99da7",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Choose Your Own Improv – Comedy Show",
+      "week": "later",
+      "dates": [
+        "2026-11-07",
+        "2026-11-14",
+        "2026-11-21"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/choose-your-own-improv-comedy-show",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Yacht Rocket",
+      "week": "later",
+      "dates": [
+        "2026-11-07"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/yacht-rocket-tip-top-deluxe-bar-tickets/15036853",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "River City Improv (Nov 7)",
+      "week": "later",
+      "dates": [
+        "2026-11-07"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Calvin Jazz Band Concert",
+      "week": "later",
+      "dates": [
+        "2026-11-07"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/jazz-band-concert-1794097800",
+      "added": "2026-10-23"
     },
     {
       "artist": "All Get Out + Motherfolk + Saint Blonde",
@@ -203,6 +411,36 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "Five Elements: Piano Duo Recital",
+      "week": "later",
+      "dates": [
+        "2026-11-12"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://fountainstreet.churchcenter.com/calendar/event/240704039",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "LIVE@TCP - Man Vs Machine - Improv Comedy Show!",
+      "week": "later",
+      "dates": [
+        "2026-11-12"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/live-tcp-man-vs-machine-improv-comedy-show",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Eddie Clendening and the Blue Ribbon Boys wsg Kitten and The Tonics",
+      "week": "later",
+      "dates": [
+        "2026-11-12"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/eddie-clendening-and-the-blue-tip-top-deluxe-bar-tickets/14298914",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "Resavoir + Harmolodics",
       "week": "later",
       "dates": [
@@ -211,6 +449,26 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/resavoir-harmolodics-the-pyramid-scheme-tickets/15012863",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Free Show Friday: deadbeatdad (no cover, 21+)",
+      "week": "later",
+      "dates": [
+        "2026-11-13"
+      ],
+      "venue": "Speciation Artisan Ales",
+      "link": "https://speciationartisanales.com/events/deadbeatdad1113",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Calvin Symphonic Band: Voices of the Americas",
+      "week": "later",
+      "dates": [
+        "2026-11-13"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/symphonic-band-concert-voices-americas-1794616200",
+      "added": "2026-10-23"
     },
     {
       "artist": "Ain't Nothing Like Family – Ms. Wilkins Goes To Court",
@@ -243,6 +501,26 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "Calvin Wind Ensemble: Holding Tensions",
+      "week": "later",
+      "dates": [
+        "2026-11-14"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/wind-ensemble-concert-holding-tensions-1794702600",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Eastown Swing Band",
+      "week": "later",
+      "dates": [
+        "2026-11-14"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "Swanson, Matthews & Bardolph – Acoustic Stew Music Guild",
       "week": "later",
       "dates": [
@@ -261,6 +539,16 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/mdop-tonguecutter-boob-the-pyramid-scheme-tickets/14348714",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Calvin Gospel Choir Concert",
+      "week": "later",
+      "dates": [
+        "2026-11-15"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/gospel-choir-concert-1794776400",
+      "added": "2026-10-23"
     },
     {
       "artist": "Bad Momz of Comedy",
@@ -303,6 +591,26 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "Live @TCP: The Dispatch (And friends!) - Comedy Show-RPPR",
+      "week": "later",
+      "dates": [
+        "2026-11-19"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-show-rppr",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Live @TCP: Role Play, Play, Roll! (After The Dispatch) (Nov 19, Dec 17)",
+      "week": "later",
+      "dates": [
+        "2026-11-19"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/live-tcp-role-play-play-roll-after-the-dispatch",
+      "added": "2026-10-22"
+    },
+    {
       "artist": "Candlelight: The Best of Hans Zimmer",
       "week": "later",
       "dates": [
@@ -321,6 +629,26 @@
       "venue": "Wealthy Theatre",
       "link": "https://grcmc.org/theatre/events",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "Subspace: Descend Into the Underground (with Gettoblaster, Pixcie, Cod3r) (18+)",
+      "week": "later",
+      "dates": [
+        "2026-11-20"
+      ],
+      "venue": "The Mint (at The Intersection)",
+      "link": "https://sectionlive.com/event/subspace-descend-into-the-underground/the-mint/grand-rapids-michigan/",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Free Show Friday: Reverend Jesse Ray (no cover, 21+)",
+      "week": "later",
+      "dates": [
+        "2026-11-20"
+      ],
+      "venue": "Speciation Artisan Ales",
+      "link": "https://speciationartisanales.com/events/jesseray-nov2026",
+      "added": "2026-10-23"
     },
     {
       "artist": "River City Improv (Nov 21)",
@@ -413,6 +741,46 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "SQUEAKY CLEAN Battle Bots Improv Comedy Show (Nov 28, Jan 30)",
+      "week": "later",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/squeaky-clean-battle-bots-improv-comedy-show",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Squawk Box Improv Comedy Show! (Nov 28, Jan 30)",
+      "week": "later",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/squawk-box-improv-comedy-show",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Silver Creek Revival, Blinker Fluid, Rowdy Fingers & The Ready Boys",
+      "week": "later",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/silver-creek-revival-blinker-fluid-tip-top-deluxe-bar-tickets/14354134",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Josh Rose & the Founding Fathers, with Kyle Joe",
+      "week": "later",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "1976/1986: A Tribute",
       "week": "later",
       "dates": [
@@ -451,6 +819,78 @@
       "venue": "Wealthy Theatre",
       "link": "https://grcmc.org/theatre/event/candlelight-tribute-to-queen-and-the-beatles/1805",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "Parade (Jewish Theatre Grand Rapids, Dec 3–13)",
+      "week": "later",
+      "dates": [
+        "2026-12-03"
+      ],
+      "venue": "GRCC Spectrum Theater",
+      "link": "https://www.jtgr.org/season",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Voices in Hope: A Church Choir Festival",
+      "week": "later",
+      "dates": [
+        "2026-12-04"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://fountainstreet.churchcenter.com/calendar/event/228611624",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Clownvis Presley wsg Vlad's Skeletal Circus",
+      "week": "later",
+      "dates": [
+        "2026-12-04"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/clownvis-presley-vlads-skeletal-circus-tip-top-deluxe-bar-tickets/14310444",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Handel's Messiah (Calvin, 107th season)",
+      "week": "later",
+      "dates": [
+        "2026-12-04",
+        "2026-12-05"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/messiah-1796430600",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Grand Rapids Women's Chorus Winter Concert",
+      "week": "later",
+      "dates": [
+        "2026-12-05",
+        "2026-12-06"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://fountainstreet.churchcenter.com/calendar/event/208402552",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Jellybean Station – Improv Comedy Show (Dec 5–19)",
+      "week": "later",
+      "dates": [
+        "2026-12-05"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/jellybean-station-improv-comedy-show",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "River City Improv (Dec 5)",
+      "week": "later",
+      "dates": [
+        "2026-12-05"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
+      "added": "2026-10-23"
     },
     {
       "artist": "J Oscar Bittinger: A Winter's Tune – Acoustic Stew Music Guild",
@@ -523,6 +963,16 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "Calvin Alumni Choir Christmas Concert",
+      "week": "later",
+      "dates": [
+        "2026-12-11"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/calvin-alumni-choir-concert-1797035400",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "HEYZ – Something Different Tour",
       "week": "later",
       "dates": [
@@ -531,6 +981,46 @@
       "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/45211863/heyz-something-different-tour-grand-rapids-the-intersection-elevation",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "Michigan Mandolin Orchestra Christmas Concert",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://fountainstreet.churchcenter.com/calendar/event/237792635",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "2026 Winter Sketch Comedy Show (Dec 12–Jan 23)",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/2026-winter-sketch-comedy-show",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Calvin Wind Ensemble: Sleigh Ride Around the World (family Christmas show)",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/wind-ensemble-sleigh-ride-around-world-1797087600",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Round Creek String Band, with Red Thyme",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
     },
     {
       "artist": "Kill The Mood + The Half Notes + The Burdens + Redbelly",
@@ -593,6 +1083,16 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "The Bootstrap Boys Winter Solstice Party wsg Rowdy Fingers & the Ready Boys",
+      "week": "later",
+      "dates": [
+        "2026-12-18"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/the-bootstrap-boys-winter-solstice-tip-top-deluxe-bar-tickets/14362974",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "Conflict For A Cause (with Annex Void, From This Point On, The Harbor Divide)",
       "week": "later",
       "dates": [
@@ -601,6 +1101,36 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/cause-for-conflict-presents-conflict-the-pyramid-scheme-tickets/15013023",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Chris Casello Trio",
+      "week": "later",
+      "dates": [
+        "2026-12-19"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/chris-casello-trio-tip-top-deluxe-bar-tickets/14330584",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Bradley Sinclair and The Corey Sound (6 & 9 PM shows)",
+      "week": "later",
+      "dates": [
+        "2026-12-19"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/Bradley-Sinclair-and-The-Corey-Sound",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Sweet Dee and the Wild Honeys, with Bobcat Opossum",
+      "week": "later",
+      "dates": [
+        "2026-12-26"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
     },
     {
       "artist": "River City Improv (Jan 2)",
@@ -673,6 +1203,16 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "Money Soup, with Austin Benzing Band",
+      "week": "later",
+      "dates": [
+        "2027-01-09"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "House Party: A Sweaty Love-Letter To The 2010s Rager",
       "week": "later",
       "dates": [
@@ -693,6 +1233,26 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "Alan Chiang, concert pianist",
+      "week": "later",
+      "dates": [
+        "2027-01-16"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://fountainstreet.churchcenter.com/calendar/event/223811161",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Jazz Brunch with Dave Bennett (21+)",
+      "week": "later",
+      "dates": [
+        "2027-01-16"
+      ],
+      "venue": "Frederik Meijer Gardens & Sculpture Park",
+      "link": "https://www.meijergardens.org/events/jazz-brunch-with-dave-bennett/",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "Shapel Lacey (Jan 22)",
       "week": "later",
       "dates": [
@@ -701,6 +1261,16 @@
       "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/30505216/shapel-lacey-grand-rapids-the-intersection-elevation",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "The Deltaz",
+      "week": "later",
+      "dates": [
+        "2027-01-22"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/the-deltaz-tip-top-deluxe-bar-tickets/14355574",
+      "added": "2026-10-23"
     },
     {
       "artist": "Natalie Cuomo",
@@ -733,6 +1303,26 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "Pop Scholars Improv Comedy (Jan 23)",
+      "week": "later",
+      "dates": [
+        "2027-01-23"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/Pop-Scholars-Improv-Comedy",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "The Go Rounds",
+      "week": "later",
+      "dates": [
+        "2027-01-23"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "Emo Night Karaoke",
       "week": "later",
       "dates": [
@@ -763,6 +1353,56 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "Candlelight: Tribute to Michael Jackson (Jan 30)",
+      "week": "later",
+      "dates": [
+        "2027-01-30"
+      ],
+      "venue": "Wealthy Theatre",
+      "link": "https://grcmc.org/event/candlelight-tribute-to-michael-jackson/1816",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Candlelight: The Best of Hans Zimmer (Jan 30)",
+      "week": "later",
+      "dates": [
+        "2027-01-30"
+      ],
+      "venue": "Wealthy Theatre",
+      "link": "https://grcmc.org/theatre/event/candlelight-the-best-of-hans-zimmer/1817",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Jazz Brunch with Demetrius \"Krayon\" Nabors (21+)",
+      "week": "later",
+      "dates": [
+        "2027-01-30"
+      ],
+      "venue": "Frederik Meijer Gardens & Sculpture Park",
+      "link": "https://www.meijergardens.org/events/jazz-brunch-with-demetrius-krayon-nabors/",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Winter Nights: Grand Rapids Ballet",
+      "week": "later",
+      "dates": [
+        "2027-02-02"
+      ],
+      "venue": "Frederik Meijer Gardens & Sculpture Park",
+      "link": "https://www.meijergardens.org/events/winter-nights-grand-rapids-ballet-2/",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Broken Glass (Jewish Theatre Grand Rapids, Feb 4–14)",
+      "week": "later",
+      "dates": [
+        "2027-02-04"
+      ],
+      "venue": "GRCC Spectrum Theater",
+      "link": "https://www.jtgr.org/season",
+      "added": "2026-10-22"
+    },
+    {
       "artist": "All Things Equal – The Life & Trials of Ruth Bader Ginsburg",
       "week": "later",
       "dates": [
@@ -771,6 +1411,16 @@
       "venue": "DeVos Performance Hall",
       "link": "https://www.ticketmaster.com/all-things-equal-the-life-trials-grand-rapids-michigan-02-07-2027/event/08006529D2AE81D8",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "Winter Nights: Great Lakes Brass – Fat Tuesday Celebration",
+      "week": "later",
+      "dates": [
+        "2027-02-09"
+      ],
+      "venue": "Frederik Meijer Gardens & Sculpture Park",
+      "link": "https://www.meijergardens.org/events/winter-nights-great-lakes-brass-fat-tuesday-celebration/",
+      "added": "2026-10-23"
     },
     {
       "artist": "Olivia Carter (Feb 11–13)",
@@ -791,6 +1441,16 @@
       "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/75045829/2000s-rave-grand-rapids-the-intersection-elevation",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "Nathan Walton & the Remedy, with Y-Not",
+      "week": "later",
+      "dates": [
+        "2027-02-13"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
     },
     {
       "artist": "Riley! (with Super Sometimes, Leisure Hour, Shoreline)",
@@ -823,6 +1483,26 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "Pop Scholars Improv Comedy (Feb 20)",
+      "week": "later",
+      "dates": [
+        "2027-02-20"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/Pop-Scholars-Improv-Comedy",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Calvin Wind Ensemble Concert (Feb 20)",
+      "week": "later",
+      "dates": [
+        "2027-02-20"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/wind-ensemble-concert-1803169800",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "Youth Fountain + Not My Weekend + Beachglass + The Lonely Waiting Room",
       "week": "later",
       "dates": [
@@ -831,6 +1511,66 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/youth-fountain-not-my-the-pyramid-scheme-tickets/14335814",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "The Insiders: A Tribute to Tom Petty",
+      "week": "later",
+      "dates": [
+        "2027-02-26"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/The-Insiders-A-Tribute-to-Tom-Petty",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "The Insiders: A Traveling Wilburys Tribute",
+      "week": "later",
+      "dates": [
+        "2027-02-27"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/The-Insiders-A-Traveling-Wilburys-Tribute",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Writer's Round: Drew Nelson, Darcy Wilkin, Eric Engblade & Laura Fawley",
+      "week": "later",
+      "dates": [
+        "2027-02-27"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Calvin Symphonic Band & Rockford Community Band",
+      "week": "later",
+      "dates": [
+        "2027-03-01"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/symphonic-band-rockford-community-band-concert-1803947400",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "A Mile in the Dark (Actors' Theatre, Mar 4–13)",
+      "week": "later",
+      "dates": [
+        "2027-03-04"
+      ],
+      "venue": "GRCC Spectrum Theater",
+      "link": "https://actorstheatregrandrapids.org/programming/coming-soon/a-mile-in-the-dark/",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Calvin Orchestra Concerto Tour Concert",
+      "week": "later",
+      "dates": [
+        "2027-03-04"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/orchestra-concerto-tour-concert-1804204800",
+      "added": "2026-10-23"
     },
     {
       "artist": "Geoffrey Asmus",
@@ -863,6 +1603,16 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "August the Band, with Dave's at 7",
+      "week": "later",
+      "dates": [
+        "2027-03-13"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "River City Improv (Mar 20)",
       "week": "later",
       "dates": [
@@ -871,6 +1621,158 @@
       "venue": "Wealthy Theatre",
       "link": "https://grcmc.org/event/river-city-improv/1647",
       "added": "2026-10-22"
+    },
+    {
+      "artist": "Piano Recital: Mijeong Lee",
+      "week": "later",
+      "dates": [
+        "2027-03-23"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://fountainstreet.churchcenter.com/calendar/event/235688945",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Calvin Campus Choir & Women's Chorale Spring Concert",
+      "week": "later",
+      "dates": [
+        "2027-03-23"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/campus-choir-and-womens-chorale-spring-concert-1805844600",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Trillium Irish Band, with Ironwood",
+      "week": "later",
+      "dates": [
+        "2027-03-27"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Tiffany Engle Faculty Recital (saxophone)",
+      "week": "later",
+      "dates": [
+        "2027-04-03"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/tiffany-engle-faculty-recital-1806778800",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Calvin Jazz Band Spring Concert",
+      "week": "later",
+      "dates": [
+        "2027-04-07"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/jazz-band-concert-1807140600",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Amber Autry: Happy Holler Tour",
+      "week": "later",
+      "dates": [
+        "2027-04-10"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://www.ticketmaster.com/amber-autry-happy-holler-tour-grand-rapids-michigan-04-10-2027/event/080065229B713B28",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Candid Antics, with Space Bar",
+      "week": "later",
+      "dates": [
+        "2027-04-10"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Calvin Gospel Choir Spring Concert",
+      "week": "later",
+      "dates": [
+        "2027-04-11"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/gospel-choir-concert-1807473600",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Calvin Wind Ensemble Concert (Apr 16)",
+      "week": "later",
+      "dates": [
+        "2027-04-16"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/wind-ensemble-concert-1807918200",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Calvin Orchestra Concert",
+      "week": "later",
+      "dates": [
+        "2027-04-23"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/orchestra-concert-1808523000",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Roosevelt Diggs",
+      "week": "later",
+      "dates": [
+        "2027-04-24"
+      ],
+      "venue": "Lowell Arts at Sound Check",
+      "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Calvin Symphonic Band Concert (Apr 27)",
+      "week": "later",
+      "dates": [
+        "2027-04-27"
+      ],
+      "venue": "Calvin University Chapel",
+      "link": "https://calvin.edu/events/symphonic-band-concert-1808868600",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "GR Symphony: Mahler's \"Resurrection\" Symphony",
+      "week": "later",
+      "dates": [
+        "2027-05-07",
+        "2027-05-08"
+      ],
+      "venue": "DeVos Performance Hall",
+      "link": "https://www.devosperformancehall.com/events/2027/gr-symphony-presents-mahlers-resurrection-symphony",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "GR Symphony: The Music of Billy Joel – The Piano Man's Greatest Hits",
+      "week": "later",
+      "dates": [
+        "2027-05-14",
+        "2027-05-15"
+      ],
+      "venue": "DeVos Performance Hall",
+      "link": "https://www.devosperformancehall.com/events/2027/gr-symphony-presents-the-music-of-billy-joel---the-piano-mans-greatest-hits",
+      "added": "2026-10-23"
+    },
+    {
+      "artist": "Michael Blaustein – Bad Bad Boy",
+      "week": "later",
+      "dates": [
+        "2027-05-21"
+      ],
+      "venue": "DeVos Performance Hall",
+      "link": "https://www.ticketmaster.com/michael-blaustein-bad-bad-boy-grand-rapids-michigan-05-21-2027/event/08006545D249597E",
+      "added": "2026-10-23"
     }
   ]
 }
