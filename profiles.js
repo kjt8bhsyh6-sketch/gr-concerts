@@ -1,8 +1,7 @@
 /* Visitor profiles: sign in by emailed link, pick interests, see "picks for you this week".
-   Backend: Cloudflare Worker grh-profiles (see EDITING.md). On grhappenings.com the API is same-origin (/api, Worker route) and the session is a first-party HttpOnly cookie
-   (90 days, sliding). On grhappenings.com the token is NOT kept in localStorage (an old copy is moved into the cookie, then removed);
-   only legacy hosts (github.io / pages.dev, which call workers.dev) keep it in localStorage "grh-session" as a Bearer token.
-   iOS home-screen apps have their own storage, so sign-in also accepts the 6-digit code from the email. */
+   Backend: Cloudflare Worker grh-profiles (see EDITING.md). Sessions stay active until Sign out (or Delete my account).
+   Triple-redundant persistence: first-party HttpOnly cookie (Path=/, 400-day renewed daily) + localStorage + IndexedDB ("grh-auth"),
+   with self-healing across all three layers on every load so iOS Safari, PWAs, and transient network glitches never log users out. */
 (function () {
   const API = /^(www\.)?grhappenings\.com$/.test(location.hostname) ? "/api" : (window.GRH_API || "https://grh-profiles.grhappenings.workers.dev");
   const KS = "grh-session", KP = "grh-profile";
@@ -21,13 +20,38 @@
   const lc = s => String(s || "").toLowerCase();
   const get = k => { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } };
   const put = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+  let memS = get(KS), memP = get(KP);
+  function openIdb() {
+    return new Promise(ok => {
+      try {
+        const q = indexedDB.open("grh-auth", 1);
+        q.onupgradeneeded = () => q.result.createObjectStore("kv");
+        q.onsuccess = () => ok(q.result);
+        q.onerror = q.onblocked = () => ok(null);
+      } catch (e) { ok(null); }
+    });
+  }
+  const idbGet = k => openIdb().then(db => !db ? null : new Promise(ok => {
+    try { const r = db.transaction("kv", "readonly").objectStore("kv").get(k); r.onsuccess = () => ok(r.result ?? null); r.onerror = () => ok(null); } catch (e) { ok(null); }
+  }));
+  const idbPut = (k, v) => openIdb().then(db => !db ? null : new Promise(ok => {
+    try { const tx = db.transaction("kv", "readwrite"), st = tx.objectStore("kv"); v == null ? st.delete(k) : st.put(v, k); tx.oncomplete = tx.onerror = () => ok(); } catch (e) { ok(); }
+  }));
+  function saveAuth(session, profile) {
+    if (session) { memS = session; put(KS, session); idbPut(KS, session); }
+    if (profile) { memP = profile; put(KP, profile); idbPut(KP, profile); }
+  }
+  function clearAuth() {
+    memS = null; memP = null;
+    put(KS, null); put(KP, null);
+    idbPut(KS, null); idbPut(KP, null);
+  }
   const blank = () => ({ concerts: { genres: [], venues: [], artists: [] }, sports: { teams: [], gameTypes: [] }, seasonal: { types: [] }, alerts: { on: false, freq: "weekly" } });
   const track = (p, t) => { try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: "profile/" + p, title: t || p, event: true }); } catch (e) {} };
 
-  const FP = API[0] === "/"; // same-origin /api: the HttpOnly cookie is the session
-  // bearer: send the localStorage token (legacy hosts always; on grhappenings.com only once, to migrate an old session into the cookie).
-  async function api(path, method, body, bearer = !FP) {
-    const s = bearer ? get(KS) : null, h = { "Content-Type": "application/json" };
+  const FP = API[0] === "/"; // same-origin /api sends & renews the first-party HttpOnly cookie
+  async function api(path, method, body, tokOverride) {
+    const s = tokOverride || get(KS) || memS, h = { "Content-Type": "application/json" };
     if (s) h.Authorization = "Bearer " + s;
     const send = (base, cred) => fetch(base + path, { method: method || "GET", headers: h, credentials: cred, body: body ? JSON.stringify(body) : undefined });
     let r, viaFallback = false;
@@ -48,8 +72,7 @@
     }
     const j = await r.json().catch(() => ({}));
     if (viaFallback) j.viaFallback = true;
-    if (r.status === 401 && (bearer || !get(KS))) { put(KS, null); put(KP, null); }
-    if (!r.ok) { const e = new Error(j.error || (r.status === 429 ? "Too many tries. Please wait a few minutes and try again." : "Something went wrong. Try again.")); e.status = r.status; e.retryAfter = +j.retryAfter || 0; throw e; }
+    if (!r.ok) { const e = new Error(j.error || (r.status === 429 ? "Too many tries. Please wait a few minutes and try again." : "Something went wrong. Try again.")); e.status = r.status; e.viaFallback = viaFallback; e.retryAfter = +j.retryAfter || 0; throw e; }
     return j;
   }
 
@@ -154,23 +177,23 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
     };
     cb.onclick = submit; ci.oninput = () => { if (ci.value.replace(/\D/g, "").length === 6) submit(); };
   }
-  function signedIn(r) { put(KS, (FP && !r.viaFallback) ? null : r.session); put(KP, r.profile); track("signin", "Profile: signed in"); refresh(); toast("You're signed in"); }
+  function signedIn(r) { saveAuth(r.session, r.profile); track("signin", "Profile: signed in"); refresh(); toast("You're signed in"); }
 
   function openProfile() {
-    const p = Object.assign(blank(), get(KP) || {});
+    const p = Object.assign(blank(), get(KP) || memP || {});
     const s = sheet(`<h3>Your profile <button type="button" class="mp-x" aria-label="Close">✕</button></h3><p class="muted" style="margin:-.6rem 0 .4rem">${esc(p.email || "")}</p>
 ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${alertsUI(p)}</div>
 <button class="mp-save mp-sv" type="button">Save</button><div class="mp-msg"></div>
 <p class="mp-links"><a href="#" class="mp-out">Sign out</a><a href="#" class="mp-del">Delete my account</a></p>`);
     const m = s.querySelector(".mp-msg");
     s.querySelector(".mp-sv").onclick = async () => {
-      try { const r = await api("/profile", "PUT", read(s)); put(KP, r.profile); track("saved", "Profile: saved"); refresh(); close(); toast("Profile saved"); }
-      catch (e) { m.innerHTML = `<p class="mp-err">${esc(e.message)}</p>`; if (!get(KP)) refresh(); }
+      try { const r = await api("/profile", "PUT", read(s)); saveAuth(r.session, r.profile); track("saved", "Profile: saved"); refresh(); close(); toast("Profile saved"); }
+      catch (e) { m.innerHTML = `<p class="mp-err">${esc(e.message)}</p>`; if (!get(KP) && !memP) refresh(); }
     };
-    s.querySelector(".mp-out").onclick = async e => { e.preventDefault(); try { await api("/auth/signout", "POST"); } catch (x) {} put(KS, null); put(KP, null); track("signout", "Profile: signed out"); refresh(); close(); toast("Signed out"); };
+    s.querySelector(".mp-out").onclick = async e => { e.preventDefault(); try { await api("/auth/signout", "POST"); } catch (x) {} clearAuth(); track("signout", "Profile: signed out"); refresh(); close(); toast("Signed out"); };
     s.querySelector(".mp-del").onclick = async e => {
       e.preventDefault(); if (!confirm("Delete your profile and email address from our records? This can't be undone.")) return;
-      try { await api("/account", "DELETE"); put(KS, null); put(KP, null); track("deleted", "Profile: deleted"); refresh(); close(); toast("Account deleted"); }
+      try { await api("/account", "DELETE"); clearAuth(); track("deleted", "Profile: deleted"); refresh(); close(); toast("Account deleted"); }
       catch (x) { m.innerHTML = `<p class="mp-err">${esc(x.message)}</p>`; }
     };
   }
@@ -211,7 +234,7 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
   }
 
   function refresh() {
-    const p = get(KP), signed = !!(p && p.email);
+    const p = get(KP) || memP, signed = !!(p && p.email);
     pill.classList.toggle("mp-av", !!signed);
     pill.textContent = signed ? (p.email || "?")[0].toUpperCase() : "Sign in / Create profile";
     pill.setAttribute("aria-label", signed ? "Your profile (" + p.email + ")" : "Sign in or create a profile");
@@ -244,24 +267,46 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
   // arriving via page.html#card-id (e.g. a pick link from another page): highlight once the cards are rendered
   if (/^#(show|game|ev)-/.test(location.hash)) setTimeout(() => { const c = document.getElementById(location.hash.slice(1)); if (c) focusCard(c); }, 150);
 
+  async function syncAuth() {
+    let lsS = get(KS) || memS, lsP = get(KP) || memP;
+    if (!lsS || !lsP) {
+      const [idbS, idbP] = await Promise.all([idbGet(KS), idbGet(KP)]);
+      if (!lsS && idbS) { lsS = idbS; memS = idbS; put(KS, idbS); }
+      if (!lsP && idbP) { lsP = idbP; memP = idbP; put(KP, idbP); refresh(); }
+    } else {
+      idbPut(KS, lsS); idbPut(KP, lsP);
+    }
+    if (!FP && !lsS && !lsP) return;
+    try {
+      const r = await api("/profile");
+      if (r && r.profile) { saveAuth(r.session || lsS, r.profile); refresh(); }
+    } catch (e) {
+      if (e && e.status === 401 && !e.viaFallback) {
+        const idbS = await idbGet(KS);
+        if (idbS && idbS !== lsS) {
+          try {
+            const r2 = await api("/profile", "GET", null, idbS);
+            if (r2 && r2.profile) { saveAuth(r2.session || idbS, r2.profile); refresh(); return; }
+          } catch (e2) {
+            if (!e2 || e2.status !== 401 || e2.viaFallback) return;
+          }
+        }
+        clearAuth(); refresh();
+      }
+    }
+  }
+
   async function boot() {
+    refresh();
     const q = new URLSearchParams(location.search), tok = q.get("signin");
     if (tok) {
       q.delete("signin"); history.replaceState(null, "", location.pathname + (q.toString() ? "?" + q : "") + location.hash);
-      try { signedIn(await api("/auth/verify", "POST", { token: tok })); }
+      try { signedIn(await api("/auth/verify", "POST", { token: tok })); return; }
       catch (e) { toast(e.message); }
-    } else if (FP) {
-      // grhappenings.com: the cookie re-validates and renews the session. If an old localStorage token exists and the cookie
-      // doesn't work, send the token once; the Worker answers with a cookie, then the localStorage copy is removed.
-      api("/profile").then(r => { put(KS, null); put(KP, r.profile); refresh(); }).catch(e => {
-        if (e.status === 401 && get(KS)) return api("/profile", "GET", null, true).then(r => api("/profile").then(() => { put(KS, null); put(KP, r.profile); refresh(); }, () => { put(KP, r.profile); refresh(); }));
-        refresh();
-      }).catch(() => refresh());
-    } else if (get(KS) || get(KP)) {
-      // Legacy hosts: the stored token re-validates the session; a 401 clears local state, a network error keeps it.
-      api("/profile").then(r => { put(KP, r.profile); refresh(); }).catch(() => refresh());
     }
-    refresh();
+    await syncAuth();
   }
   boot();
+  addEventListener("pageshow", e => { if (e.persisted) syncAuth(); });
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && (!get(KS) || !get(KP))) syncAuth(); });
 })();

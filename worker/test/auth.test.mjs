@@ -32,13 +32,16 @@ await t("request ok, second request for same email within 60s -> 429 with Retry-
   assert.match(j.error, /wait \d+ seconds/); assert.ok(j.retryAfter > 0 && j.retryAfter <= 60); assert.ok(+r.headers.get("retry-after") > 0);
   assert.equal(sent.length, 1);
 });
-await t("code verify -> session, cookie HttpOnly Secure SameSite=Lax Path=/api Max-Age=90d", async () => {
+await t("code verify -> session, cookie HttpOnly Secure SameSite=Lax Path=/ Max-Age=400d, profile returns session for self-healing", async () => {
   const r = await post(m, "/auth/code", { email: "a@example.com", code: lastCode() });
   assert.equal(r.status, 200); const j = await r.json(); assert.match(j.session, /^[a-f0-9]{64}$/);
   const c = r.headers.get("set-cookie");
-  for (const p of ["grh_s=" + j.session, "Max-Age=7776000", "Path=/api", "HttpOnly", "SameSite=Lax", "Secure"]) assert.ok(c.includes(p), p + " in " + c);
-  const p = await m.dispatchFetch(SITE + "/api/profile", { headers: { Cookie: "grh_s=" + j.session } });
-  assert.equal(p.status, 200); assert.equal((await p.json()).profile.email, "a@example.com");
+  for (const p of ["grh_s=" + j.session, "Max-Age=34560000", "Path=/;", "HttpOnly", "SameSite=Lax", "Secure"]) assert.ok(c.includes(p), p + " in " + c);
+  const p = await m.dispatchFetch(SITE + "/api/profile", { headers: { Cookie: "grh_s=" + "0".repeat(64) + "; grh_s=" + j.session } });
+  assert.equal(p.status, 200);
+  const pj = await p.json();
+  assert.equal(pj.profile.email, "a@example.com");
+  assert.equal(pj.session, j.session);
 });
 await t("old Bearer-only session on grhappenings.com gets moved into the cookie", async () => {
   await post(m, "/auth/request", { email: "bearer@example.com" });

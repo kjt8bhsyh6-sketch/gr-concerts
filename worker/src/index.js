@@ -1,6 +1,6 @@
 // grh-profiles: visitor profiles for Grand Rapids Happenings (Cloudflare Workers free plan + KV).
 // KV keys: p:<email> profile JSON · t:<token> magic link (15 min TTL) · c:<email> 6-digit code for that link (15 min, 5 tries)
-//          s:<session> {email,at} session (1 year, rolling: TTL renewed at most once a day on use)
+//          s:<session> {email,at} session (non-expiring in KV until sign-out/delete; 400-day cookie renewed at most once a day)
 // Served two ways: https://grhappenings.com/api/* (Worker route, first-party; sets HttpOnly cookie grh_s) and
 // https://grh-profiles.grhappenings.workers.dev/* (legacy; Bearer token only). The /api prefix is stripped.
 import { loadData, matchPicks, renderEmail, listProfiles, unsubSig, unsubUrl, checkLinks, venuePage } from "./alerts.js";
@@ -10,13 +10,14 @@ const ORIGINS = [/^https:\/\/(www\.)?grhappenings\.com$/, /^https:\/\/([a-z0-9-]
 const DEV_ORIGINS = [/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/];
 const isDev = env => String(env.DEV || "") === "1";
 const originOk = (env, o) => ORIGINS.some(r => r.test(o)) || (isDev(env) && DEV_ORIGINS.some(r => r.test(o)));
-const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 90, RENEW_AFTER = 60 * 60 * 24 * 1000, CODE_TRIES = 5; // 90-day sliding session
+const LINK_TTL = 900, SESSION_TTL = 60 * 60 * 24 * 400, RENEW_AFTER = 60 * 60 * 24 * 1000, CODE_TRIES = 5; // 400-day cookie (RFC 6265bis max), permanent KV session
 // Sign-in rate limits (KV fixed windows; KV is eventually consistent, so these are approximate; the WAF rule is the hard limit).
 const EMAIL_COOLDOWN = 60, EMAIL_HOURLY = 5, IP_REQ = { n: 10, win: 600 }, IP_CODE = { n: 20, win: 600 };
 const COOKIE = "grh_s";
 // First-party cookie only when the browser talks to the Worker on the site's own host (grhappenings.com/api or localhost dev).
 const firstParty = (req, url, env) => { const o = req.headers.get("Origin"); return (!o || o === url.origin) && (/^(www\.)?grhappenings\.com$/.test(url.hostname) || (isDev(env) && (url.hostname === "localhost" || url.hostname === "127.0.0.1"))); };
-const setCookie = (sid, url, maxAge = SESSION_TTL) => `${COOKIE}=${sid}; Max-Age=${maxAge}; Path=/api; HttpOnly; SameSite=Lax${url.protocol === "https:" ? "; Secure" : ""}`;
+const setCookie = (sid, url, maxAge = SESSION_TTL, path = "/") => `${COOKIE}=${sid}; Max-Age=${maxAge}; Path=${path}; HttpOnly; SameSite=Lax${url.protocol === "https:" ? "; Secure" : ""}`;
+const clearCookies = (res, fp, url) => (fp && (res.headers.append("Set-Cookie", setCookie("", url, 0, "/")), res.headers.append("Set-Cookie", setCookie("", url, 0, "/api"))), res);
 const code6 = () => String(crypto.getRandomValues(new Uint32Array(1))[0] % 1000000).padStart(6, "0");
 const LIST = (a, n = 40) => Array.isArray(a) ? a.filter(x => typeof x === "string").map(x => x.trim().slice(0, 60)).filter(Boolean).slice(0, n) : [];
 
@@ -185,16 +186,17 @@ async function adminAlerts(req, env, url) {
   return json({}, { dryRun: false, sent: results.filter(x => x.ok).length, failed: results.filter(x => !x.ok).length, ...summary, results });
 }
 
-// Candidate session ids: first-party cookie first, then Bearer token (localStorage fallback / workers.dev).
+// Candidate session ids: all first-party cookies (Path=/ and any legacy Path=/api) first, then Bearer token.
+const cookieSids = req => [...(req.headers.get("Cookie") || "").matchAll(new RegExp("(?:^|;\\s*)" + COOKIE + "=([a-f0-9]{64})", "g"))].map(m => m[1]);
 function sessionIds(req) {
-  const c = (req.headers.get("Cookie") || "").match(new RegExp("(?:^|;\\s*)" + COOKIE + "=([a-f0-9]{64})"));
+  const c = cookieSids(req);
   const m = (req.headers.get("Authorization") || "").match(/^Bearer ([a-f0-9]{64})$/);
-  return [...new Set([c && c[1], m && m[1]].filter(Boolean))];
+  return [...new Set([...c, m && m[1]].filter(Boolean))];
 }
 const sessionId = req => sessionIds(req)[0] || null;
 async function session(req, env) {
-  const c = (req.headers.get("Cookie") || "").match(new RegExp("(?:^|;\\s*)" + COOKIE + "=([a-f0-9]{64})"));
-  for (const sid of sessionIds(req)) { const s = await session1(env, sid); if (s) { s.viaCookie = !!(c && c[1] === sid); return s; } }
+  const c = cookieSids(req);
+  for (const sid of sessionIds(req)) { const s = await session1(env, sid); if (s) { s.viaCookie = c.includes(sid); return s; } }
   return null;
 }
 async function session1(env, sid) {
@@ -205,7 +207,7 @@ async function session1(env, sid) {
   // A deleted account invalidates every session for that email (profile must still exist).
   if (!(await env.KV.get("p:" + v.email))) { await env.KV.delete("s:" + sid); return null; }
   let renewed = false;
-  if (Date.now() - (v.at || 0) > RENEW_AFTER) { await env.KV.put("s:" + sid, JSON.stringify({ email: v.email, at: Date.now() }), { expirationTtl: SESSION_TTL }); renewed = true; }
+  if (Date.now() - (v.at || 0) > RENEW_AFTER) { await env.KV.put("s:" + sid, JSON.stringify({ email: v.email, at: Date.now() })); renewed = true; }
   return { sid, email: v.email, renewed };
 }
 async function startSession(env, email, draft) {
@@ -214,7 +216,7 @@ async function startSession(env, email, draft) {
   prof.lastSignIn = new Date().toISOString();
   await env.KV.put("p:" + email, JSON.stringify(prof));
   const sid = rand();
-  await env.KV.put("s:" + sid, JSON.stringify({ email, at: Date.now() }), { expirationTtl: SESSION_TTL });
+  await env.KV.put("s:" + sid, JSON.stringify({ email, at: Date.now() }));
   return { sid, prof };
 }
 
@@ -300,22 +302,22 @@ async function handle(req, env) {
         return withCookie(json(h, { ok: true, session: sid, profile: prof }), fp && setCookie(sid, url));
       }
       const s = await session(req, env);
-      if (!s) return withCookie(json(h, { error: "Not signed in." }, 401), fp && sessionId(req) && setCookie("", url, 0));
-      // Renew the cookie on daily renewal, or move an old Bearer-only session (localStorage) into the cookie.
+      if (!s) return clearCookies(json(h, { error: "Not signed in." }, 401), fp && sessionId(req), url);
+      // Renew the cookie on daily renewal, or heal the cookie when authenticated via Bearer token.
       const renew = fp && (s.renewed || !s.viaCookie) ? setCookie(s.sid, url) : null;
       if (path === "/profile" && req.method === "GET") {
-        return withCookie(json(h, { profile: JSON.parse((await env.KV.get("p:" + s.email)) || "null") || { email: s.email, ...clean() } }), renew);
+        return withCookie(json(h, { session: s.sid, profile: JSON.parse((await env.KV.get("p:" + s.email)) || "null") || { email: s.email, ...clean() } }), renew);
       }
       if (path === "/profile" && (req.method === "PUT" || req.method === "POST")) {
         const old = JSON.parse((await env.KV.get("p:" + s.email)) || "{}");
         const prof = { ...old, email: s.email, ...clean(await req.json().catch(() => ({}))), updated: new Date().toISOString() };
         await env.KV.put("p:" + s.email, JSON.stringify(prof));
-        return withCookie(json(h, { ok: true, profile: prof }), renew);
+        return withCookie(json(h, { ok: true, session: s.sid, profile: prof }), renew);
       }
-      if (path === "/auth/signout" && req.method === "POST") { await env.KV.delete("s:" + s.sid); return withCookie(json(h, { ok: true }), fp && setCookie("", url, 0)); }
+      if (path === "/auth/signout" && req.method === "POST") { for (const id of sessionIds(req)) await env.KV.delete("s:" + id); return clearCookies(json(h, { ok: true }), fp, url); }
       if (path === "/account" && req.method === "DELETE") {
-        await env.KV.delete("p:" + s.email); await env.KV.delete("s:" + s.sid);
-        return withCookie(json(h, { ok: true, deleted: true }), fp && setCookie("", url, 0));
+        await env.KV.delete("p:" + s.email); for (const id of sessionIds(req)) await env.KV.delete("s:" + id);
+        return clearCookies(json(h, { ok: true, deleted: true }), fp, url);
       }
       return json(h, { error: "not found" }, 404);
     } catch (e) { console.log("error", e.message); return json(h, { error: "Server error." }, 500); }

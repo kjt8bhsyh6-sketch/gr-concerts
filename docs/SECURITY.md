@@ -5,10 +5,10 @@
   Permissions-Policy, and a CSP shipped as **Content-Security-Policy-Report-Only** (logs violations in the browser console, blocks nothing).
 - Worker (`worker/src/index.js`): JSON responses send `nosniff` + `Cache-Control: no-store`; sign-in rate limits in KV
   (per email: 1 request / 60 s and 5 / hour; per IP: 10 requests and 20 code checks / 10 min; 5 wrong codes lock that email for 15 min,
-  and asking for a new code doesn't reset the count); honeypot field `website`; 90-day sliding sessions; CORS/returnTo allowlist
+  and asking for a new code doesn't reset the count); honeypot field `website`; non-expiring KV sessions + 400-day sliding cookies; CORS/returnTo allowlist
   = grhappenings.com, www, github.io (localhost/pages.dev previews and preview mode only with `DEV=1`); preview mode without DEV -> 503;
   malformed returnTo -> 400.
-- Front end: on grhappenings.com the session lives only in the HttpOnly cookie (old localStorage token is migrated, then deleted);
+- Front end: the session is persisted in the HttpOnly cookie (Path=/), localStorage, and IndexedDB with mutual self-healing;
   card/bio links must be http(s) or become `#`.
 
 ## Turning the CSP on for real
