@@ -2977,6 +2977,19 @@ URL:https://www.etix.com/ticket/p/40328864/rumours-atla-fleetwood-mac-trib
  ute-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-22-grand-rapids-youth-symphony-classical-orch-1c2poj@gr-concer
+ ts
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=America/Detroit:20261122T150000
+DTEND;TZID=America/Detroit:20261122T180000
+SUMMARY:Grand Rapids Youth Symphony & Classical Orchestra 2026 Fall Concer
+ t
+LOCATION:Northview Performing Arts Center\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 3:00 PM. Tickets/info: https://www.grysco.org/con
+ certs (confirm details with the venue)
+URL:https://www.grysco.org/concerts
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-23-catch-your-breath-not-broken-enough-tour@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20261123T190000
@@ -3575,6 +3588,19 @@ DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://soaringeaglecasino.co
 URL:https://soaringeaglecasino.com/events/clint-black/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-04-calvin-theatre-company-the-miracle-worker@gr-concerts
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=America/Detroit:20261204T193000
+DTEND;TZID=America/Detroit:20261204T223000
+SUMMARY:Calvin Theatre Company: The Miracle Worker
+LOCATION:Gezon Auditorium (Calvin University)\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
+ vin-theatre-company-miracle-worker-1796430600 (confirm details with the v
+ enue)
+URL:https://calvin.edu/events/calvin-theatre-company-miracle-worker-179643
+ 0600
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-05-gr-symphony-holiday-pops@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261205T140000
@@ -3726,6 +3752,32 @@ LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
 DESCRIPTION:Latin\, 7:00 PM. Tickets/info: https://gunlakecasino.com/enter
  tainment/ (confirm details with the venue)
 URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-calvin-theatre-company-the-miracle-worker@gr-concerts
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=America/Detroit:20261205T140000
+DTEND;TZID=America/Detroit:20261205T170000
+SUMMARY:Calvin Theatre Company: The Miracle Worker
+LOCATION:Gezon Auditorium (Calvin University)\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 2:00 PM. Tickets/info: https://calvin.edu/events/cal
+ vin-theatre-company-miracle-worker-1796497200 (confirm details with the v
+ enue)
+URL:https://calvin.edu/events/calvin-theatre-company-miracle-worker-179649
+ 7200
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-calvin-theatre-company-the-miracle-worker@gr-concerts
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=America/Detroit:20261205T193000
+DTEND;TZID=America/Detroit:20261205T223000
+SUMMARY:Calvin Theatre Company: The Miracle Worker
+LOCATION:Gezon Auditorium (Calvin University)\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
+ vin-theatre-company-miracle-worker-1796517000 (confirm details with the v
+ enue)
+URL:https://calvin.edu/events/calvin-theatre-company-miracle-worker-179651
+ 7000
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
@@ -3928,6 +3980,19 @@ DESCRIPTION:Soul / Funk\, 8:00 PM. Tickets/info: https://firekeeperscasino
 URL:https://firekeeperscasino.com/shows/tower-of-power-holiday-hits-tour/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-10-calvin-theatre-company-the-miracle-worker@gr-concerts
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=America/Detroit:20261210T193000
+DTEND;TZID=America/Detroit:20261210T223000
+SUMMARY:Calvin Theatre Company: The Miracle Worker
+LOCATION:Gezon Auditorium (Calvin University)\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
+ vin-theatre-company-miracle-worker-1796949000 (confirm details with the v
+ enue)
+URL:https://calvin.edu/events/calvin-theatre-company-miracle-worker-179694
+ 9000
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-11-aoife-o-donovan-chris-thile@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261211T193000
@@ -4000,6 +4065,19 @@ LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
 DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com/ent
  ertainment/ (confirm details with the venue)
 URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-calvin-theatre-company-the-miracle-worker@gr-concerts
+DTSTAMP:20261024T120000Z
+DTSTART;TZID=America/Detroit:20261211T193000
+DTEND;TZID=America/Detroit:20261211T223000
+SUMMARY:Calvin Theatre Company: The Miracle Worker
+LOCATION:Gezon Auditorium (Calvin University)\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
+ vin-theatre-company-miracle-worker-1797035400 (confirm details with the v
+ enue)
+URL:https://calvin.edu/events/calvin-theatre-company-miracle-worker-179703
+ 5400
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-12-heyz-something-different-tour@gr-concerts

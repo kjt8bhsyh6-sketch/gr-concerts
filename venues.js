@@ -18,6 +18,8 @@ const VENUES = {
   "Speciation Artisan Ales": "928 Wealthy St SE, Grand Rapids, MI 49506",
   "Midtown GR (at Studio Park)": "Midtown at Studio Park, 123 Ionia Ave SW, Grand Rapids, MI 49503",
   "Calvin University Chapel": "3201 Burton St SE, Grand Rapids, MI 49546",
+  "Gezon Auditorium (Calvin University)": "Spoelhof University Center, 3201 Burton St SE, Grand Rapids, MI 49546",
+  "Northview Performing Arts Center": "4451 Hunsberger Ave NE, Grand Rapids, MI 49525",
   "GVSU Haas Center for Performing Arts": "Haas Center for Performing Arts, 1 Campus Dr, Allendale, MI 49401",
   "Fountain Street Church": "24 Fountain St NE, Grand Rapids, MI 49503",
   "Lowell Arts at Sound Check": "Sound Check, 621 E Main St, Lowell, MI 49331",
