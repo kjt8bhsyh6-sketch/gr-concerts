@@ -4,7 +4,7 @@
 //   link = the team's OFFICIAL ticket page, added = the date you added it (NEW badge for 7 days).
 // SEASON_NOTES: teams not playing right now get a short note card instead of games.
 // Remove a team's note once its games are listed in GAMES.
-const SPORTS_UPDATED = "Oct 23, 2026";
+const SPORTS_UPDATED = "Oct 24, 2026";
 const TEAMS = [
   { name:"Grand Rapids Griffins", sport:"Hockey (AHL)", site:"https://griffinshockey.com/schedule/home-schedule" },
   { name:"Grand Rapids Gold", sport:"Basketball (NBA G League)", site:"https://grandrapids.gleague.nba.com/schedule" },
@@ -15,7 +15,6 @@ const TEAMS = [
   { name:"Great Lakes Invitational", sport:"Hockey (NCAA)", site:"https://www.vanandelarena.com/events/2026/great-lakes-invitational" },
 ];
 const GAMES = [
-  { team:"Grand Rapids Griffins", opponent:"Cleveland Monsters", date:"2026-10-23", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Cleveland Monsters", date:"2026-10-24", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Texas Stars", date:"2026-11-04", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Milwaukee Admirals", date:"2026-11-06", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },

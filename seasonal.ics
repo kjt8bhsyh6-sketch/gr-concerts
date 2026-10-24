@@ -361,6 +361,22 @@ URL:https://saugatuck.com/event/douglas-light-night/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-30-eastown-holiday-craft-event-ornaments-letters-to-@gr-season
+ al
+DTSTAMP:20261024T120000Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Eastown Holiday Craft Event (ornaments & letters to Santa)
+LOCATION:Eastown Community Association office\, 415 Ethel Ave SE\, Eastown
+ \, Grand Rapids\, MI
+DESCRIPTION:Holiday Family Event. Mon Nov 30 · 5–7 PM · free\, all ages: m
+ ake an ornament for the Eastown Tree Lighting & mail letters to Santa at 
+ the North Pole Express Mailbox. Info: https://www.eastown.org/events (con
+ firm details with the organizer)
+URL:https://www.eastown.org/events
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-01-downtown-holland-parade-of-lights-with-sinterklaa@gr-season
  al
 DTSTAMP:20261023T120000Z

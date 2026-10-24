@@ -76,6 +76,7 @@ const VENUES = {
   "Saugatuck Center for the Arts, 400 Culver St, Saugatuck": "Saugatuck Center for the Arts, 400 Culver St, Saugatuck, MI 49453",
   "Downtown Saugatuck, 102 Butler St, Saugatuck": "Downtown Saugatuck, 102 Butler St, Saugatuck, MI 49453",
   "Downtown Fennville, 100 S Maple St, Fennville": "Downtown Fennville, 100 S Maple St, Fennville, MI 49408",
+  "Eastown Community Association office, 415 Ethel Ave SE, Eastown": "Eastown Community Association, 415 Ethel Ave SE, Grand Rapids, MI 49506",
 };
 (function (root) {
   const NEAR = /\b(MI|Michigan|Grand Rapids|Grandville|Walker|Wyoming|Kentwood|Ada|Comstock Park|Rockford|Lowell|Allendale|Jenison|Hudsonville|Cascade|East Grand Rapids|Byron Center|Caledonia|Holland|Zeeland|Sparta|Cedar Springs|Belmont|Standale|Coopersville|Grand Haven|Dorr|Saugatuck|Douglas|Fennville|Wayland|Battle Creek|New Buffalo|Mt\.? Pleasant|Mount Pleasant)\b/;

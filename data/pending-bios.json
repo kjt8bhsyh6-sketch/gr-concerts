@@ -1,39 +1,7 @@
 {
-  "generated": "2026-10-23",
-  "count": 175,
+  "generated": "2026-10-24",
+  "count": 168,
   "pending": [
-    {
-      "artist": "The People's Party ft. The Dinero Crew",
-      "week": "this",
-      "dates": [
-        "2026-10-23"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/the-peoples-party-ft-the-the-pyramid-scheme-tickets/14300754",
-      "added": "2026-10-19"
-    },
-    {
-      "artist": "Reggaeton Rave (18+)",
-      "week": "this",
-      "dates": [
-        "2026-10-23"
-      ],
-      "venue": "GLC Live at 20 Monroe",
-      "link": "https://www.ticketmaster.com/reggaeton-rave-18-grand-rapids-michigan-10-23-2026/event/0800652FD5D7A578",
-      "added": "2026-10-19"
-    },
-    {
-      "artist": "Battle Bots Improv Comedy Show",
-      "week": "this",
-      "dates": [
-        "2026-10-23",
-        "2026-10-30",
-        "2026-11-06"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/battle-bots-improv-comedy-show",
-      "added": "2026-10-22"
-    },
     {
       "artist": "Mean Green, Thundergoat, Supergrudge, Psython",
       "week": "this",
@@ -65,28 +33,6 @@
       "added": "2026-10-21"
     },
     {
-      "artist": "Midnight Society – Creepy Improv Comedy",
-      "week": "this",
-      "dates": [
-        "2026-10-24"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/midnight-society-creepy-improv-comedy",
-      "added": "2026-10-22"
-    },
-    {
-      "artist": "Late-Night Comedy Lab",
-      "week": "this",
-      "dates": [
-        "2026-10-24",
-        "2026-11-07",
-        "2026-11-14"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/late-night-comedy-lab",
-      "added": "2026-10-22"
-    },
-    {
       "artist": "The Blue Herons + The Great Black Night + Vida Eterna",
       "week": "this",
       "dates": [
@@ -105,28 +51,6 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/slay-the-vote-20-the-pyramid-scheme-tickets/14356034",
       "added": "2026-10-21"
-    },
-    {
-      "artist": "Comedy Outlet Mondays – Open-mic Variety Show!",
-      "week": "next",
-      "dates": [
-        "2026-10-26",
-        "2026-11-02",
-        "2026-11-09"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-show",
-      "added": "2026-10-22"
-    },
-    {
-      "artist": "FREE - Improv Jam-a-lama-ding-dong (Stay for the sing-song!) (Oct 27, Nov 24, Dec 29, Jan 26)",
-      "week": "next",
-      "dates": [
-        "2026-10-27"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/free-improv-jam-a-lama-ding-dong-stay-for-the-sing-song",
-      "added": "2026-10-22"
     },
     {
       "artist": "Emma Bieniewicz + Joe Dreams + Statice",
@@ -217,16 +141,6 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/twerk-or-treat-4-ft-the-pyramid-scheme-tickets/14343904",
       "added": "2026-10-21"
-    },
-    {
-      "artist": "Resting Witch Face - 2026 Halloween NIGHT Sketch show & party",
-      "week": "next",
-      "dates": [
-        "2026-10-31"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/resting-witch-face-2026-halloween-night-sketch-show-party",
-      "added": "2026-10-22"
     },
     {
       "artist": "Calvin Campus Choir & Women's Chorale Concert",
@@ -679,6 +593,16 @@
       "venue": "The Stache (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/44961666/canabliss-after-glow-tour-grand-rapids-the-intersection-the-stache",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Crooked Root",
+      "week": "later",
+      "dates": [
+        "2026-11-21"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/crooked-root-tip-top-deluxe-bar-tickets/14397974",
+      "added": "2026-10-24"
     },
     {
       "artist": "Rumours ATL: A Fleetwood Mac Tribute",
