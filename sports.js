@@ -4,7 +4,7 @@
 //   link = the team's OFFICIAL ticket page, added = the date you added it (NEW badge for 7 days).
 // SEASON_NOTES: teams not playing right now get a short note card instead of games.
 // Remove a team's note once its games are listed in GAMES.
-const SPORTS_UPDATED = "Oct 24, 2026";
+const SPORTS_UPDATED = "Oct 25, 2026";
 const TEAMS = [
   { name:"Grand Rapids Griffins", sport:"Hockey (AHL)", site:"https://griffinshockey.com/schedule/home-schedule" },
   { name:"Grand Rapids Gold", sport:"Basketball (NBA G League)", site:"https://grandrapids.gleague.nba.com/schedule" },
@@ -15,7 +15,6 @@ const TEAMS = [
   { name:"Great Lakes Invitational", sport:"Hockey (NCAA)", site:"https://www.vanandelarena.com/events/2026/great-lakes-invitational" },
 ];
 const GAMES = [
-  { team:"Grand Rapids Griffins", opponent:"Cleveland Monsters", date:"2026-10-24", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Texas Stars", date:"2026-11-04", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Milwaukee Admirals", date:"2026-11-06", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Rockford IceHogs", date:"2026-11-11", time:"11:00 AM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
@@ -70,12 +69,24 @@ const GAMES = [
   { team:"Grand Rapids Gold", opponent:"Raptors 905", date:"2027-03-09", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-20" },
   { team:"Grand Rapids Gold", opponent:"Long Island Nets", date:"2027-03-20", time:"12:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-20" },
   { team:"Grand Rapids Gold", opponent:"Osceola Magic", date:"2027-03-27", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-20" },
+  { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-02", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-03", time:"2:00 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-04", time:"2:00 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"South Bend Cubs", date:"2027-04-13", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"South Bend Cubs", date:"2027-04-14", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"South Bend Cubs", date:"2027-04-15", time:"12:07 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"South Bend Cubs", date:"2027-04-16", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"South Bend Cubs", date:"2027-04-17", time:"2:00 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"South Bend Cubs", date:"2027-04-18", time:"2:00 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-27", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-28", time:"12:07 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-29", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
+  { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-30", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
   { team:"The Battleground 2k26", opponent:"Michigan Wolverines vs. Houston Cougars", date:"2026-10-25", time:"1:00 PM", venue:"Van Andel Arena", link:"https://www.vanandelarena.com/events/2026/the-battleground-2k26", added:"2026-10-23" },
   { team:"Great Lakes Invitational", opponent:"Semifinals: Michigan Tech vs. Western Michigan (3:30 PM) & Michigan State vs. Lindenwood (7:00 PM)", date:"2026-12-29", time:"3:30 PM & 7:00 PM", venue:"Van Andel Arena", link:"https://www.vanandelarena.com/events/2026/great-lakes-invitational", added:"2026-10-23" },
   { team:"Great Lakes Invitational", opponent:"Third-Place Game (3:30 PM) & Championship Game (7:00 PM)", date:"2026-12-30", time:"3:30 PM & 7:00 PM", venue:"Van Andel Arena", link:"https://www.vanandelarena.com/events/2026/great-lakes-invitational", added:"2026-10-23" },
 ];
 const SEASON_NOTES = [
   { team:"Grand Rapids Rise", venue:"Van Andel Arena", text:"The 2027 season starts in January at Van Andel Arena. The full schedule hasn't been released yet.", link:"https://provolleyball.com/teams/grand-rapids-rise", added:"2026-10-19" },
-  { team:"West Michigan Whitecaps", venue:"LMCU Ballpark", text:"The season is over. The 2027 schedule is out: the home opener is Friday, April 2, 2027, vs. the Lake County Captains at LMCU Ballpark (Comstock Park). Game times haven't been posted yet.", link:"https://www.milb.com/west-michigan/schedule", added:"2026-10-19" },
   { team:"AC Grand Rapids", venue:"Amway Stadium", text:"New pro soccer club (MLS NEXT Pro). The first home match is Friday, March 19, 2027, at the new Amway Stadium (230 Winter Ave NW, downtown Westside). Opponent TBA.", link:"https://www.acgrandrapids.com/friday-night-lights-inaugural-home-opener-set-for-friday-march-19-2027/", added:"2026-10-19" },
 ];

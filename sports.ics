@@ -24,17 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-24-grand-rapids-griffins-vs-cleveland-monsters@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261024T190000
-DTEND;TZID=America/Detroit:20261024T220000
-SUMMARY:Grand Rapids Griffins vs. Cleveland Monsters
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
- venue.net/events/S (confirm details with the venue)
-URL:https://griffinshockey.evenue.net/events/S
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-25-the-battleground-2k26-michigan-wolverines-j9cg3j@gr-concert
  s
 DTSTAMP:20261023T120000Z
@@ -659,6 +648,18 @@ DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
 URL:https://griffinshockey.evenue.net/events/S
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-02-west-michigan-whitecaps-vs-lake-county-captains@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270402T183500
+DTEND;TZID=America/Detroit:20270402T213500
+SUMMARY:West Michigan Whitecaps vs. Lake County Captains
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 6:35 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-03-grand-rapids-griffins-vs-colorado-eagles@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270403T190000
@@ -668,5 +669,149 @@ LOCATION:Van Andel Arena\, Grand Rapids\, MI
 DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
  venue.net/events/S (confirm details with the venue)
 URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-03-west-michigan-whitecaps-vs-lake-county-captains@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270403T140000
+DTEND;TZID=America/Detroit:20270403T170000
+SUMMARY:West Michigan Whitecaps vs. Lake County Captains
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 2:00 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-04-west-michigan-whitecaps-vs-lake-county-captains@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270404T140000
+DTEND;TZID=America/Detroit:20270404T170000
+SUMMARY:West Michigan Whitecaps vs. Lake County Captains
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 2:00 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-13-west-michigan-whitecaps-vs-south-bend-cubs@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270413T183500
+DTEND;TZID=America/Detroit:20270413T213500
+SUMMARY:West Michigan Whitecaps vs. South Bend Cubs
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 6:35 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-14-west-michigan-whitecaps-vs-south-bend-cubs@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270414T183500
+DTEND;TZID=America/Detroit:20270414T213500
+SUMMARY:West Michigan Whitecaps vs. South Bend Cubs
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 6:35 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-15-west-michigan-whitecaps-vs-south-bend-cubs@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270415T120700
+DTEND;TZID=America/Detroit:20270415T150700
+SUMMARY:West Michigan Whitecaps vs. South Bend Cubs
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 12:07 PM. Tickets/info: https://www
+ .milb.com/west-michigan/tickets/single-game-tickets (confirm details with
+  the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-16-west-michigan-whitecaps-vs-south-bend-cubs@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270416T183500
+DTEND;TZID=America/Detroit:20270416T213500
+SUMMARY:West Michigan Whitecaps vs. South Bend Cubs
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 6:35 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-17-west-michigan-whitecaps-vs-south-bend-cubs@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270417T140000
+DTEND;TZID=America/Detroit:20270417T170000
+SUMMARY:West Michigan Whitecaps vs. South Bend Cubs
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 2:00 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-18-west-michigan-whitecaps-vs-south-bend-cubs@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270418T140000
+DTEND;TZID=America/Detroit:20270418T170000
+SUMMARY:West Michigan Whitecaps vs. South Bend Cubs
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 2:00 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-27-west-michigan-whitecaps-vs-lake-county-captains@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270427T183500
+DTEND;TZID=America/Detroit:20270427T213500
+SUMMARY:West Michigan Whitecaps vs. Lake County Captains
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 6:35 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-28-west-michigan-whitecaps-vs-lake-county-captains@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270428T120700
+DTEND;TZID=America/Detroit:20270428T150700
+SUMMARY:West Michigan Whitecaps vs. Lake County Captains
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 12:07 PM. Tickets/info: https://www
+ .milb.com/west-michigan/tickets/single-game-tickets (confirm details with
+  the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-29-west-michigan-whitecaps-vs-lake-county-captains@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270429T183500
+DTEND;TZID=America/Detroit:20270429T213500
+SUMMARY:West Michigan Whitecaps vs. Lake County Captains
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 6:35 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-30-west-michigan-whitecaps-vs-lake-county-captains@gr-concerts
+DTSTAMP:20261025T120000Z
+DTSTART;TZID=America/Detroit:20270430T183500
+DTEND;TZID=America/Detroit:20270430T213500
+SUMMARY:West Michigan Whitecaps vs. Lake County Captains
+LOCATION:LMCU Ballpark\, Grand Rapids\, MI
+DESCRIPTION:Baseball (MiLB\, High-A)\, 6:35 PM. Tickets/info: https://www.
+ milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
+ the venue)
+URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
 END:VEVENT
 END:VCALENDAR
