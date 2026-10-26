@@ -38,81 +38,6 @@ URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-sketch-c
  omedy-show
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-25-jazz-jam-w-tommy-pancy-oct-25@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261025T170000
-DTEND;TZID=America/Detroit:20261025T200000
-SUMMARY:Jazz Jam w/ Tommy Pancy (Oct 25)
-LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
-DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
- m/events/jazz-jam-10-25 (confirm details with the venue)
-URL:https://speciationartisanales.com/events/jazz-jam-10-25
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-autumn-weekends-live-music-the-fall-upward-bibch1@gr-concer
- ts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261025T140000
-DTEND;TZID=America/Detroit:20261025T170000
-SUMMARY:Autumn Weekends Live Music: The Fall Upwards Duo (included with ad
- mission)
-LOCATION:Frederik Meijer Gardens & Sculpture Park\, Grand Rapids\, MI
-DESCRIPTION:Folk\, 2:00 PM. Tickets/info: https://tickets.meijergardens.or
- g/ (confirm details with the venue)
-URL:https://tickets.meijergardens.org/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-willey-central-acoustic-stew-music-guild@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261025T150000
-DTEND;TZID=America/Detroit:20261025T180000
-SUMMARY:Willey Central – Acoustic Stew Music Guild
-LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/event/willey-c
- entral-acoustic-stew-music-guild/1737 (confirm details with the venue)
-URL:https://grcmc.org/event/willey-central-acoustic-stew-music-guild/1737
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-spite-new-world-killer-tour@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261025T190000
-DTEND;TZID=America/Detroit:20261025T220000
-SUMMARY:SPITE – New World Killer Tour
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/5
- 1838751/skip-the-line-for-spite-grand-rapids-the-intersection-elevation (
- confirm details with the venue)
-URL:https://www.etix.com/ticket/p/51838751/skip-the-line-for-spite-grand-r
- apids-the-intersection-elevation
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-all-them-witches-with-emma-ruth-rundle@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261025T200000
-DTEND;TZID=America/Detroit:20261025T230000
-SUMMARY:All Them Witches (with Emma Ruth Rundle)
-LOCATION:The Intersection (main room)\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/31
- 205246/skip-the-line-for-all-them-witches-grand-rapids-the-intersection (
- confirm details with the venue)
-URL:https://www.etix.com/ticket/p/31205246/skip-the-line-for-all-them-witc
- hes-grand-rapids-the-intersection
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-25-the-blue-herons-the-great-black-night-vida-eterna@gr-concer
- ts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261025T190000
-DTEND;TZID=America/Detroit:20261025T220000
-SUMMARY:The Blue Herons + The Great Black Night + Vida Eterna
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
- event/the-blue-herons-the-the-pyramid-scheme-tickets/15031303 (confirm de
- tails with the venue)
-URL:https://www.ticketweb.com/event/the-blue-herons-the-the-pyramid-scheme
- -tickets/15031303
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-26-dark-divine@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261026T190000
@@ -599,6 +524,17 @@ URL:https://www.etix.com/ticket/p/70017547/hairbangers-ball-wayland-gun-la
  ke-casino-resort131-sportsbar-lounge
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-10-30-louder-now-2000-s-emo-pop-punk-wawye-oasis@gr-concerts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261030T200000
+DTEND;TZID=America/Detroit:20261030T230000
+SUMMARY:Louder Now – 2000's Emo & Pop-Punk (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Pop-Punk\, 8:00 PM. Tickets/info: https://gunlakecasino.com/en
+ tertainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-10-30-wheel-of-fortune-live-soaring-eagle@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261030T200000
@@ -1046,19 +982,6 @@ DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/li
  ue)
 URL:https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-s
  how
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-05-the-surfrajettes-wsg-kitten-and-the-tonics@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261105T190000
-DTEND;TZID=America/Detroit:20261105T220000
-SUMMARY:The Surfrajettes wsg Kitten and the Tonics
-LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
-DESCRIPTION:Surf Rock\, 7:00 PM. Tickets/info: https://www.ticketweb.com/e
- vent/the-surfrajettes-wsg-kitten-and-tip-top-deluxe-bar-tickets/14294954 
- (confirm details with the venue)
-URL:https://www.ticketweb.com/event/the-surfrajettes-wsg-kitten-and-tip-to
- p-deluxe-bar-tickets/14294954
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-05-faculty-artist-recital-dan-graser-saxophone@gr-concerts
@@ -1892,13 +1815,12 @@ DESCRIPTION:Jazz\, 7:00 PM. Tickets/info: https://sc4a.org/event/jazz-at-t
 URL:https://sc4a.org/event/jazz-at-the-cinema/
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-13-thunder-from-down-under-nov-13-at-7-9-pm-n-1eq1rd@gr-concer
+UID:2026-11-13-thunder-from-down-under-nov-13-at-7-9-pm-w-1amptr@gr-concer
  ts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261113T190000
 DTEND;TZID=America/Detroit:20261113T220000
-SUMMARY:Thunder From Down Under (Nov 13 at 7 & 9 PM\, Nov 14 at 8 PM\; Waw
- yé Oasis)
+SUMMARY:Thunder From Down Under (Nov 13 at 7 & 9 PM\; Wawyé Oasis)
 LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
 DESCRIPTION:Live Show\, 7:00 PM. Tickets/info: https://www.etix.com/ticket
  /p/92622117/thunder-from-down-under-7pm-wayland-gun-lake-casino-resortwaw
@@ -2152,6 +2074,19 @@ DESCRIPTION:Jazz\, 7:00 PM. Tickets/info: https://calendar.hope.edu/event/
 URL:https://calendar.hope.edu/event/jazz-ensembles-concert
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-14-mersiv-pool-party-wawye-oasis@gr-concerts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261114T200000
+DTEND;TZID=America/Detroit:20261114T230000
+SUMMARY:Mersiv – Pool Party (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, 8:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/32357244/mersiv-pool-party-wayland-gun-lake-casino-resortwawye-oasis 
+ (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/32357244/mersiv-pool-party-wayland-gun-l
+ ake-casino-resortwawye-oasis
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-15-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261115T130000
@@ -2249,6 +2184,17 @@ LOCATION:Calvin University Chapel\, Grand Rapids\, MI
 DESCRIPTION:Choral\, 4:00 PM. Tickets/info: https://calvin.edu/events/gosp
  el-choir-concert-1794776400 (confirm details with the venue)
 URL:https://calvin.edu/events/gospel-choir-concert-1794776400
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-15-jazz-jam-w-tommy-pancy-nov-15@gr-concerts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261115T170000
+DTEND;TZID=America/Detroit:20261115T200000
+SUMMARY:Jazz Jam w/ Tommy Pancy (Nov 15)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
+ m/events/jazz-jam-11-15 (confirm details with the venue)
+URL:https://speciationartisanales.com/events/jazz-jam-11-15
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-16-kottonmouth-kings@gr-concerts
@@ -2564,6 +2510,28 @@ LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:00 PM. Tickets/info: https://calendar.hope.edu/e
  vent/concert-band-performance (confirm details with the venue)
 URL:https://calendar.hope.edu/event/concert-band-performance
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-starfarm-80-s-hits-wawye-oasis@gr-concerts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261120T200000
+DTEND;TZID=America/Detroit:20261120T230000
+SUMMARY:Starfarm – 80's Hits (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:80s Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com
+ /entertainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-semple-rock-hits-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261120T210000
+DTEND;TZID=America/Detroit:20261121T000000
+SUMMARY:Semple – Rock Hits (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/entert
+ ainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-21-gr-symphony-messiah-by-candlelight@gr-concerts
@@ -2913,6 +2881,17 @@ DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://www.etix.com/ticket/p/79
  (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/79318279/jedi-mind-trip-wayland-gun-lake
  -casino-resort131-sportsbar-lounge
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-family-tradition-band-country-wawye-oasis@gr-concerts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261127T200000
+DTEND;TZID=America/Detroit:20261127T230000
+SUMMARY:Family Tradition Band – Country (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://gunlakecasino.com/ent
+ ertainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-straight-no-chaser-make-spirits-bright-tour@gr-concerts
@@ -4378,6 +4357,30 @@ DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.etix.com/tick
  e-oasis (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/66102519/new-years-eve-pool-party-waylan
  d-gun-lake-casino-resortwawye-oasis
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-31-nye-countdown-with-brena-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261231T210000
+DTEND;TZID=America/Detroit:20270101T000000
+SUMMARY:NYE Countdown with Brena (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 9:00 PM. Tickets/info: https://gunlakecasino.com/
+ entertainment/ (confirm details with the venue)
+URL:https://gunlakecasino.com/entertainment/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-31-neon-lights-vegas-nights-new-year-s-eve-pa-18h4l4@gr-concer
+ ts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261231T210000
+DTEND;TZID=America/Detroit:20270101T000000
+SUMMARY:Neon Lights Vegas Nights – New Year's Eve Party (live band & DJ TB
+ A\, Entertainment Hall)
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://soaringeaglecasin
+ o.com/events/neon-lights-vegas-nights/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/neon-lights-vegas-nights/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-02-river-city-improv-jan-2@gr-concerts

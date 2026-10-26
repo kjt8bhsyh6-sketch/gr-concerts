@@ -24,19 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-25-the-battleground-2k26-michigan-wolverines-j9cg3j@gr-concert
- s
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261025T130000
-DTEND;TZID=America/Detroit:20261025T160000
-SUMMARY:The Battleground 2k26 — Michigan Wolverines vs. Houston Cougars
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Basketball (NCAA)\, 1:00 PM. Tickets/info: https://www.vanande
- larena.com/events/2026/the-battleground-2k26 (confirm details with the ve
- nue)
-URL:https://www.vanandelarena.com/events/2026/the-battleground-2k26
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-04-grand-rapids-griffins-vs-texas-stars@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261104T190000

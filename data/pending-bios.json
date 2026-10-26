@@ -1,20 +1,10 @@
 {
-  "generated": "2026-10-25",
-  "count": 162,
+  "generated": "2026-10-26",
+  "count": 170,
   "pending": [
     {
-      "artist": "The Blue Herons + The Great Black Night + Vida Eterna",
-      "week": "this",
-      "dates": [
-        "2026-10-25"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/the-blue-herons-the-the-pyramid-scheme-tickets/15031303",
-      "added": "2026-10-20"
-    },
-    {
       "artist": "Slay The Vote 2.0 (18+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-10-26"
       ],
@@ -24,7 +14,7 @@
     },
     {
       "artist": "HARRYWEEN: Harry Styles Dance Night",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-10-29"
       ],
@@ -34,7 +24,7 @@
     },
     {
       "artist": "Dancin' With The Devil ft. Garbage Angel (18+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-10-30"
       ],
@@ -44,7 +34,7 @@
     },
     {
       "artist": "Gasolina Halloween Party (18+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-10-30"
       ],
@@ -53,8 +43,18 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "Louder Now – 2000's Emo & Pop-Punk (Wawyé Oasis)",
+      "week": "this",
+      "dates": [
+        "2026-10-30"
+      ],
+      "venue": "Gun Lake Casino Resort",
+      "link": "https://gunlakecasino.com/entertainment/",
+      "added": "2026-10-26"
+    },
+    {
       "artist": "Broadway Rave – Musical Theater Dance Party",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-10-31"
       ],
@@ -64,7 +64,7 @@
     },
     {
       "artist": "Daft Disko (French House & Disco Halloween)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-10-31"
       ],
@@ -74,7 +74,7 @@
     },
     {
       "artist": "Twerk or Treat 4 ft. DJ Omega Supreme + DJ Composition + Deeechild + DJ Jodi Dro",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-10-31"
       ],
@@ -84,7 +84,7 @@
     },
     {
       "artist": "Calvin Campus Choir & Women's Chorale Concert",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-03"
       ],
@@ -94,7 +94,7 @@
     },
     {
       "artist": "The Po' Ramblin' Boys wsg Round Creek String Band and Red Thyme Duo",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-04"
       ],
@@ -104,7 +104,7 @@
     },
     {
       "artist": "GVSU New Music Ensemble Fall Concert",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-04"
       ],
@@ -114,7 +114,7 @@
     },
     {
       "artist": "The Oregon Trail (GRCC Players, Nov 5–7)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-05"
       ],
@@ -124,7 +124,7 @@
     },
     {
       "artist": "Live @TCP: The Dispatch (And friends!) - Comedy Show (Nov 5, Dec 3, Jan 7)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-05"
       ],
@@ -134,7 +134,7 @@
     },
     {
       "artist": "Faculty Artist Recital: Dan Graser, saxophone",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-05"
       ],
@@ -144,7 +144,7 @@
     },
     {
       "artist": "Breaking (the) News! – Improv Comedy Show (Fridays, Nov 6–Dec 4)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-06"
       ],
@@ -154,7 +154,7 @@
     },
     {
       "artist": "North By North with Saint Maybe, Quilter, Wilson Ave, Low Light",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-06"
       ],
@@ -164,7 +164,7 @@
     },
     {
       "artist": "Free Show: The Skinny Limbs & Languor (no cover)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-06"
       ],
@@ -174,7 +174,7 @@
     },
     {
       "artist": "Mega 80's – The Ultimate 80's Retro Party (Nov 7)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-07"
       ],
@@ -184,7 +184,7 @@
     },
     {
       "artist": "MEXICUBA: Rhythms Without Borders",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-07"
       ],
@@ -194,7 +194,7 @@
     },
     {
       "artist": "Best of the Best (of the best) -Improv Comedy Show (Nov 7–Dec 5)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-07"
       ],
@@ -204,7 +204,7 @@
     },
     {
       "artist": "Choose Your Own Improv – Comedy Show",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-07",
         "2026-11-14",
@@ -216,7 +216,7 @@
     },
     {
       "artist": "Yacht Rocket",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-07"
       ],
@@ -226,7 +226,7 @@
     },
     {
       "artist": "River City Improv (Nov 7)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-07"
       ],
@@ -236,7 +236,7 @@
     },
     {
       "artist": "Calvin Jazz Band Concert",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-07"
       ],
@@ -246,7 +246,7 @@
     },
     {
       "artist": "All Get Out + Motherfolk + Saint Blonde",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-08"
       ],
@@ -325,6 +325,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Thunder From Down Under (Nov 13 at 7 & 9 PM; Wawyé Oasis)",
+      "week": "later",
+      "dates": [
+        "2026-11-13"
+      ],
+      "venue": "Gun Lake Casino Resort",
+      "link": "https://www.etix.com/ticket/p/92622117/thunder-from-down-under-7pm-wayland-gun-lake-casino-resortwawye-oasis",
+      "added": "2026-10-23"
+    },
+    {
       "artist": "Ain't Nothing Like Family – Ms. Wilkins Goes To Court",
       "week": "later",
       "dates": [
@@ -375,6 +385,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Mersiv – Pool Party (Wawyé Oasis)",
+      "week": "later",
+      "dates": [
+        "2026-11-14"
+      ],
+      "venue": "Gun Lake Casino Resort",
+      "link": "https://www.etix.com/ticket/p/32357244/mersiv-pool-party-wayland-gun-lake-casino-resortwawye-oasis",
+      "added": "2026-10-26"
+    },
+    {
       "artist": "Swanson, Matthews & Bardolph – Acoustic Stew Music Guild",
       "week": "later",
       "dates": [
@@ -403,6 +423,16 @@
       "venue": "Calvin University Chapel",
       "link": "https://calvin.edu/events/gospel-choir-concert-1794776400",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Jazz Jam w/ Tommy Pancy (Nov 15)",
+      "week": "later",
+      "dates": [
+        "2026-11-15"
+      ],
+      "venue": "Speciation Artisan Ales",
+      "link": "https://speciationartisanales.com/events/jazz-jam-11-15",
+      "added": "2026-10-26"
     },
     {
       "artist": "Bad Momz of Comedy",
@@ -505,6 +535,26 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Starfarm – 80's Hits (Wawyé Oasis)",
+      "week": "later",
+      "dates": [
+        "2026-11-20"
+      ],
+      "venue": "Gun Lake Casino Resort",
+      "link": "https://gunlakecasino.com/entertainment/",
+      "added": "2026-10-26"
+    },
+    {
+      "artist": "Semple – Rock Hits (131 Sportsbar & Lounge)",
+      "week": "later",
+      "dates": [
+        "2026-11-20"
+      ],
+      "venue": "Gun Lake Casino Resort",
+      "link": "https://gunlakecasino.com/entertainment/",
+      "added": "2026-10-26"
+    },
+    {
       "artist": "River City Improv (Nov 21)",
       "week": "later",
       "dates": [
@@ -573,6 +623,16 @@
       "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/99256957/desmond-jones-grand-rapids-the-intersection-elevation",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Family Tradition Band – Country (Wawyé Oasis)",
+      "week": "later",
+      "dates": [
+        "2026-11-27"
+      ],
+      "venue": "Gun Lake Casino Resort",
+      "link": "https://gunlakecasino.com/entertainment/",
+      "added": "2026-10-26"
     },
     {
       "artist": "Candlelight: Mozart vs Beethoven (Nov 28)",
@@ -984,6 +1044,26 @@
       "venue": "Lowell Arts at Sound Check",
       "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "NYE Countdown with Brena (131 Sportsbar & Lounge)",
+      "week": "later",
+      "dates": [
+        "2026-12-31"
+      ],
+      "venue": "Gun Lake Casino Resort",
+      "link": "https://gunlakecasino.com/entertainment/",
+      "added": "2026-10-26"
+    },
+    {
+      "artist": "Neon Lights Vegas Nights – New Year's Eve Party (live band & DJ TBA, Entertainment Hall)",
+      "week": "later",
+      "dates": [
+        "2026-12-31"
+      ],
+      "venue": "Soaring Eagle Casino & Resort",
+      "link": "https://soaringeaglecasino.com/events/neon-lights-vegas-nights/",
+      "added": "2026-10-26"
     },
     {
       "artist": "River City Improv (Jan 2)",

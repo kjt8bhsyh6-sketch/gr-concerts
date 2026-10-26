@@ -4,14 +4,13 @@
 //   link = the team's OFFICIAL ticket page, added = the date you added it (NEW badge for 7 days).
 // SEASON_NOTES: teams not playing right now get a short note card instead of games.
 // Remove a team's note once its games are listed in GAMES.
-const SPORTS_UPDATED = "Oct 25, 2026";
+const SPORTS_UPDATED = "Oct 26, 2026";
 const TEAMS = [
   { name:"Grand Rapids Griffins", sport:"Hockey (AHL)", site:"https://griffinshockey.com/schedule/home-schedule" },
   { name:"Grand Rapids Gold", sport:"Basketball (NBA G League)", site:"https://grandrapids.gleague.nba.com/schedule" },
   { name:"Grand Rapids Rise", sport:"Volleyball (MLV)", site:"https://provolleyball.com/teams/grand-rapids-rise" },
   { name:"West Michigan Whitecaps", sport:"Baseball (MiLB, High-A)", site:"https://www.milb.com/west-michigan/schedule" },
   { name:"AC Grand Rapids", sport:"Soccer (MLS NEXT Pro)", site:"https://www.acgrandrapids.com/" },
-  { name:"The Battleground 2k26", sport:"Basketball (NCAA)", site:"https://www.vanandelarena.com/events/2026/the-battleground-2k26" },
   { name:"Great Lakes Invitational", sport:"Hockey (NCAA)", site:"https://www.vanandelarena.com/events/2026/great-lakes-invitational" },
 ];
 const GAMES = [
@@ -82,7 +81,6 @@ const GAMES = [
   { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-28", time:"12:07 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
   { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-29", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
   { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-30", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
-  { team:"The Battleground 2k26", opponent:"Michigan Wolverines vs. Houston Cougars", date:"2026-10-25", time:"1:00 PM", venue:"Van Andel Arena", link:"https://www.vanandelarena.com/events/2026/the-battleground-2k26", added:"2026-10-23" },
   { team:"Great Lakes Invitational", opponent:"Semifinals: Michigan Tech vs. Western Michigan (3:30 PM) & Michigan State vs. Lindenwood (7:00 PM)", date:"2026-12-29", time:"3:30 PM & 7:00 PM", venue:"Van Andel Arena", link:"https://www.vanandelarena.com/events/2026/great-lakes-invitational", added:"2026-10-23" },
   { team:"Great Lakes Invitational", opponent:"Third-Place Game (3:30 PM) & Championship Game (7:00 PM)", date:"2026-12-30", time:"3:30 PM & 7:00 PM", venue:"Van Andel Arena", link:"https://www.vanandelarena.com/events/2026/great-lakes-invitational", added:"2026-10-23" },
 ];
