@@ -8,7 +8,7 @@ routes = [{ pattern = "grhappenings.com/api/*", zone_name = "grhappenings.com" }
 [vars]
 SITE_URL = "https://grhappenings.com/"
 # CAN-SPAM postal address shown in every email footer (Worker alerts + scripts/weekly-email.js). Never a home address.
-MAILING_ADDRESS = "[Mailing address coming soon]"
+MAILING_ADDRESS = "The Canasta Club, PO Box 140186, Grand Rapids, MI 49504"
 
 [[kv_namespaces]]
 binding = "KV"
