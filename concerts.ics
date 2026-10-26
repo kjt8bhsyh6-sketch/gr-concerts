@@ -4268,6 +4268,28 @@ URL:https://www.themidtowngr.com/shows-events/detail/Bradley-Sinclair-and-
  The-Corey-Sound
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-19-grand-rapids-youth-chorus-holiday-concert-4-pm@gr-concerts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261219T160000
+DTEND;TZID=America/Detroit:20261219T190000
+SUMMARY:Grand Rapids Youth Chorus Holiday Concert (4 PM)
+LOCATION:Mayflower Congregational Church\, Grand Rapids\, MI
+DESCRIPTION:Holiday\, 4:00 PM. Tickets/info: https://gryouthchorus.org/eve
+ nt/holiday-concert-4pm/ (confirm details with the venue)
+URL:https://gryouthchorus.org/event/holiday-concert-4pm/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-grand-rapids-youth-chorus-holiday-concert-7-pm@gr-concerts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20261219T190000
+DTEND;TZID=America/Detroit:20261219T220000
+SUMMARY:Grand Rapids Youth Chorus Holiday Concert (7 PM)
+LOCATION:Mayflower Congregational Church\, Grand Rapids\, MI
+DESCRIPTION:Holiday\, 7:00 PM. Tickets/info: https://gryouthchorus.org/eve
+ nt/holiday-concert-7pm/ (confirm details with the venue)
+URL:https://gryouthchorus.org/event/holiday-concert-7pm/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-20-possessed-by-paul-james-with-coleman-williams@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261220T190000
@@ -5225,6 +5247,21 @@ URL:https://grcmc.org/theatre/event/candlelight-tribute-to-queen-and-the-b
  eatles/1705
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-05-calvin-theatre-company-lab-series-an-eveni-10h67h@gr-concer
+ ts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20270205T193000
+DTEND;TZID=America/Detroit:20270205T223000
+SUMMARY:Calvin Theatre Company Lab Series: An Evening with Ionesco
+LOCATION:Lab Theatre\, Spoelhof University Center (Calvin University)\, Gr
+ and Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
+ vin-theatre-company-lab-series-evening-ionesco-1801873800 (confirm detail
+ s with the venue)
+URL:https://calvin.edu/events/calvin-theatre-company-lab-series-evening-io
+ nesco-1801873800
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-06-pop-scholars-improv-comedy-feb-6@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270206T200000
@@ -5246,6 +5283,20 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
  g/ (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-06-calvin-theatre-company-lab-series-an-eveni-1tpy17@gr-concer
+ ts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20270206T193000
+DTEND;TZID=America/Detroit:20270206T223000
+SUMMARY:Calvin Theatre Company Lab Series: An Evening with Ionesco
+LOCATION:Gezon Auditorium (Calvin University)\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
+ vin-theatre-company-lab-series-evening-ionesco-1801960200 (confirm detail
+ s with the venue)
+URL:https://calvin.edu/events/calvin-theatre-company-lab-series-evening-io
+ nesco-1801960200
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-07-all-things-equal-the-life-trials-of-ruth-b-hidbwa@gr-concer
@@ -5944,6 +5995,18 @@ DESCRIPTION:Blues\, 7:00 PM. Tickets/info: https://parktheatreholland.org/
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-06-grand-rapids-youth-chorus-free-community-c-kw0k8c@gr-concer
+ ts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20270306T103000
+DTEND;TZID=America/Detroit:20270306T133000
+SUMMARY:Grand Rapids Youth Chorus Free Community Concert (free)
+LOCATION:Park Congregational Church\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 10:30 AM. Tickets/info: https://gryouthchorus.org/eve
+ nt/free-community-concert-2/ (confirm details with the venue)
+URL:https://gryouthchorus.org/event/free-community-concert-2/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-07-tobymac-hits-deep-tour-2027-with-jeremy-ca-nt4z77@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -5957,6 +6020,20 @@ DESCRIPTION:Christian\, Showtimes on venue site. Tickets/info: https://www
  chigan-03-07-2027/event/08006518E266A674 (confirm details with the venue)
 URL:https://www.ticketmaster.com/tobymac-with-jeremy-camp-seph-schlueter-g
  rand-rapids-michigan-03-07-2027/event/08006518E266A674
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-07-grand-rapids-youth-chorus-at-second-reform-1ax1ve@gr-concer
+ ts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20270307T160000
+DTEND;TZID=America/Detroit:20270307T190000
+SUMMARY:Grand Rapids Youth Chorus at Second Reformed Church Concert Series
+LOCATION:Second Reformed Church (Zeeland)\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 4:00 PM. Tickets/info: https://gryouthchorus.org/even
+ t/youth-chorus-at-second-reformed-church-concert-series/ (confirm details
+  with the venue)
+URL:https://gryouthchorus.org/event/youth-chorus-at-second-reformed-church
+ -concert-series/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-11-grcc-jazz-ensemble-concert@gr-concerts
@@ -6700,6 +6777,18 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
  g/ (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-17-grand-rapids-youth-chorus-mosaic-singers-c-1pf5s4@gr-concer
+ ts
+DTSTAMP:20261026T120000Z
+DTSTART;TZID=America/Detroit:20270417T190000
+DTEND;TZID=America/Detroit:20270417T220000
+SUMMARY:Grand Rapids Youth Chorus: Mosaic Singers Composer Showcase
+LOCATION:Covenant Fine Arts Center (Calvin University)\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:00 PM. Tickets/info: https://gryouthchorus.org/even
+ t/mosaic-singers-composer-showcase/ (confirm details with the venue)
+URL:https://gryouthchorus.org/event/mosaic-singers-composer-showcase/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-18-ruth-max-bloomquist-acoustic-stew-music-guild@gr-concerts
