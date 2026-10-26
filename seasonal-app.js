@@ -69,12 +69,26 @@
   const calLink = (e, mark) => e.c ? GRICS.google(e.c, mark) : gcal(e, mark);
   const gcalFix = ev => { const a = ev.target.closest('a.gcal'); if (!a || !a.dataset.id) return; const e = byId(a.dataset.id); if (e) a.href = calLink(e, Marks.state(a.dataset.id)); };
   document.addEventListener('click', gcalFix, true); document.addEventListener('auxclick', gcalFix, true); document.addEventListener('contextmenu', gcalFix, true);
+  function dateRail(date, time, end) {
+    const dt = new Date(date + 'T12:00');
+    const wd = dt.toLocaleDateString('en-US', { weekday: 'short' });
+    const md = dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    if (end && end > date) {
+      const emd = new Date(end + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      return `<div class="date-rail date-rail-range"><span class="date-rail-date">${h(md)}</span><span class="date-rail-end">– ${h(emd)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
+    }
+    return `<div class="date-rail"><span class="date-rail-wd">${h(wd)}</span><span class="date-rail-date">${h(md)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
+  }
   function card(e) {
     const id = sid(e), nw = isNew(e);
-    return `<article class="card${nw ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-id="${id}"><div class="badges"><span class="tag">${h(e.type)}</span>${nw ? '<span class="new">NEW</span>' : ''}</div>
-      <h3>${h(e.name)}</h3><p>${h(e.location)}</p><p>${h(e.when)}</p>${nw ? `<p class="added-on">Added ${new Date(e.added + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>` : ''}
-      <div class="actions"><a class="b primary" href="${h(e.link)}" target="_blank" rel="${e.c && e.c.affiliate ? 'sponsored noopener' : 'noopener'}">Info / tickets</a>
-      ${Marks.buttons(id)}
+    const time = e.c ? e.c.time : '';
+    const end = !e.c && e.end && e.end !== e.sort ? e.end : '';
+    return `<article class="card${nw ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-id="${id}">
+      <div class="card-main">${dateRail(e.sort, time, end)}
+      <div class="card-body"><h3>${h(e.name)}${nw ? '<span class="new">NEW</span>' : ''}</h3><p class="card-venue">${h(e.location)}</p><p class="card-tags"><span class="tag">${h(e.type)}</span></p>
+      ${e.c ? '' : `<p class="when">${h(e.when)}</p>`}${nw ? `<p class="added-on">Added ${new Date(e.added + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>` : ''}</div>
+      <div class="card-cta"><a class="b primary" href="${h(e.link)}" target="_blank" rel="${e.c && e.c.affiliate ? 'sponsored noopener' : 'noopener'}">Info / tickets</a></div></div>
+      <div class="actions">${Marks.buttons(id)}
       <button type="button" class="b share" data-id="${id}" data-title="${h(e.name)}">Share</button>
       <button type="button" class="b ics" data-id="${id}">Apple Cal</button><a class="b gcal" data-id="${id}" href="${h(calLink(e))}" target="_blank" rel="noopener">Google Cal</a>${GRMAP.buttons(e.location)}</div></article>`;
   }

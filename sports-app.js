@@ -36,18 +36,32 @@
   const whoBtn = (id, team) => BIO[team] ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : '';
   const bioSec = t => BIO[t] && { title: t, text: BIO[t].text, source: BIO[t].source };
   const goBtn = id => Marks.buttons(id);
+  function dateRail(date, time, end) {
+    const dt = new Date(date + 'T12:00');
+    const wd = dt.toLocaleDateString('en-US', { weekday: 'short' });
+    const md = dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    if (end && end > date) {
+      const emd = new Date(end + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      return `<div class="date-rail date-rail-range"><span class="date-rail-date">${h(md)}</span><span class="date-rail-end">– ${h(emd)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
+    }
+    return `<div class="date-rail"><span class="date-rail-wd">${h(wd)}</span><span class="date-rail-date">${h(md)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
+  }
   function card(g) {
     const id = gid(g), title = `${gameTitle(g)}, ${fmt(g.date)}`;
     return `<article class="card${isNew(g) ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}">
-      <div class="badges"><span class="tag">${h(sport(g.team))}</span>${newBadge(g)}</div>
-      <h3>${h(g.team)}</h3><p><strong>${h(oppLine(g))}</strong></p><p>${h(g.venue)}</p><p>${fmt(g.date)} · ${h(g.time)}</p>${addedLine(g)}
-      <div class="actions${BIO[g.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a>
-      ${whoBtn(id, g.team)}${goBtn(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
+      <div class="card-main">${dateRail(g.date, g.time)}
+      <div class="card-body"><h3>${h(g.team)}${newBadge(g)}</h3><p class="card-opp"><strong>${h(oppLine(g))}</strong></p><p class="card-venue">${h(g.venue)}</p><p class="card-tags"><span class="tag">${h(sport(g.team))}</span></p>${addedLine(g)}</div>
+      <div class="card-cta"><a class="b primary" href="${h(g.link)}" target="_blank" rel="noopener">Tickets</a></div></div>
+      <div class="actions${BIO[g.team] ? ' has-bio' : ''}">${whoBtn(id, g.team)}${goBtn(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
       <button type="button" class="b ics" data-id="${id}">Apple Cal</button><a class="b gcal" data-id="${id}" href="${h(GRICS.google(g.ev))}" target="_blank" rel="noopener">Google Cal</a>${GRMAP.buttons(g.venue)}</div></article>`;
   }
   function note(n) {
-    return `<article class="card note-card${isNew(n) ? ' is-new' : ''}"><div class="badges"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span>${newBadge(n)}</div>
-      <h3>${h(n.team)}</h3><p>${h(n.text)}</p>${addedLine(n)}<div class="actions${BIO[n.team] ? ' has-bio' : ''}"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a>${whoBtn('note-' + GRICS.slug(n.team), n.team)}${n.venue ? GRMAP.buttons(n.venue) : ''}</div></article>`;
+    const bar = `${whoBtn('note-' + GRICS.slug(n.team), n.team)}${n.venue ? GRMAP.buttons(n.venue) : ''}`;
+    return `<article class="card note-card${isNew(n) ? ' is-new' : ''}">
+      <div class="card-main"><div class="date-rail date-rail-note"><span class="date-rail-wd">Off</span><span class="date-rail-date">Season</span></div>
+      <div class="card-body"><h3>${h(n.team)}${newBadge(n)}</h3><p class="card-tags"><span class="tag">${h(sport(n.team))}</span><span class="tag off">Off-season</span></p><p>${h(n.text)}</p>${addedLine(n)}</div>
+      <div class="card-cta"><a class="b primary" href="${h(n.link)}" target="_blank" rel="noopener">Season info</a></div></div>
+      ${bar ? `<div class="actions${BIO[n.team] ? ' has-bio' : ''}">${bar}</div>` : ''}</article>`;
   }
   const DR = DateRange.init({ today, lastDate: games.length ? games[games.length - 1].date : '', onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
   const weekEnd = DR.addD(today, 13 - ((new Date(today + 'T12:00').getDay() + 6) % 7));

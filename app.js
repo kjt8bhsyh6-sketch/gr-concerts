@@ -36,23 +36,36 @@
   $('#updated').textContent = 'Last updated ' + LAST_UPDATED;
 
   const BIO = (typeof BIOS !== 'undefined' && BIOS) || {};
+  // Date rail: weekday + calendar date + time (ET). Same facts the old "Fri, Oct 30 · 8:00 PM" line carried.
+  function dateRail(date, time, end) {
+    const dt = new Date(date + 'T12:00');
+    const wd = dt.toLocaleDateString('en-US', { weekday: 'short' });
+    const md = dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    if (end && end > date) {
+      const emd = new Date(end + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      return `<div class="date-rail date-rail-range"><span class="date-rail-date">${h(md)}</span><span class="date-rail-end">– ${h(emd)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
+    }
+    return `<div class="date-rail"><span class="date-rail-wd">${h(wd)}</span><span class="date-rail-date">${h(md)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
+  }
   function actions(id, title, cal, link, label, aff, artist, place) {
     const bio = artist && BIO[artist];
-    return `<div class="actions${bio ? ' has-bio' : ''}">
-      <a class="b primary" href="${h(link)}" target="_blank" rel="${aff ? 'sponsored noopener' : 'noopener'}">${label}</a>
+    const cta = `<div class="card-cta"><a class="b primary" href="${h(link)}" target="_blank" rel="${aff ? 'sponsored noopener' : 'noopener'}">${label}</a></div>`;
+    const bar = `<div class="actions${bio ? ' has-bio' : ''}">
       ${bio ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : ''}
       ${Marks.buttons(id)}
       <button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
       ${cal ? `<button type="button" class="b ics" data-id="${id}">Apple Cal</button><a class="b gcal" data-id="${id}" href="${h(cal)}" target="_blank" rel="noopener">Google Cal</a>` : ''}
       ${place ? GRMAP.buttons(place) : ''}
     </div>`;
+    return { cta, bar };
   }
   function concertCard(c) {
     const id = cid(c);
+    const act = actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist, c.venue);
     return `<article class="card${isNew(c) ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
-      <div class="badges"><span class="tag">${h(c.genre)}</span>${newBadge(c)}</div>
-      <h3>${h(c.artist)}</h3><p>${h(c.venue)}</p><p>${fmt(c.date)} · ${h(c.time)}</p>${addedLine(c)}
-      ${actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist, c.venue)}</article>`;
+      <div class="card-main">${dateRail(c.date, c.time)}
+      <div class="card-body"><h3>${h(c.artist)}${newBadge(c)}</h3><p class="card-venue">${h(c.venue)}</p><p class="card-tags"><span class="tag">${h(c.genre)}</span></p>${addedLine(c)}</div>
+      ${act.cta}</div>${act.bar}</article>`;
   }
   // ---- Just Announced: newest additions first (upcoming shows; seasonal events live on seasonal.html) ----
   const recent = [...shows.filter(c => ago(c.date) <= 0).map(c => ({ k: c.added, t: c.artist, s: `${c.venue} · ${fmt(c.date)}`, id: cid(c), n: isNew(c) }))]
