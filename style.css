@@ -1,17 +1,18 @@
-/* Colors: navy chrome. Gold is the NEW badge and its wash. Going / Interested keep their marks. */
+/* Colors: navy chrome. NEW is a cool slate pill. Going is blue. Interested stays teal. */
 :root{
   --bg:#f7f7fb;--text:#1b1b2f;--navy:var(--text);--navy-hover:#2c2c4e;--accent:var(--navy);
   --header:#14142a;--header-deep:#0e0e1c;
   --card:#fff;--new:#16a34a;--line:#e3e3ec;--muted:#666;
-  --gold:#facc15;--gold-ink:#92400e;--gold-wash:#fffbea;
-  --going:#ffd54a;--going-line:#e7b900;
-  --interested-bg:#ccfbf1;--interested:#0d9488;--interested-ink:#115e59;--mark-going:#7c3aed;
+  --new-bg:#e4e8f4;--new-ink:var(--navy);--new-line:#9aa3bf;
+  --going:#dbeafe;--going-line:#2563eb;--going-ink:#1e3a8a;
+  --interested-bg:#ccfbf1;--interested:#0d9488;--interested-ink:#115e59;--mark-going:#2563eb;
   --focus:var(--navy);--focus-on-navy:#fff
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.4}
 .mast{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:linear-gradient(180deg,var(--header) 0%,var(--header-deep) 100%)}
-.brand{position:absolute;inset:0;z-index:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;margin:0;opacity:.13;pointer-events:none;user-select:none}
+.fx{position:absolute;width:0;height:0;overflow:hidden}
+.brand{position:absolute;inset:0;z-index:0;width:100%;height:100%;max-width:none;object-fit:contain;object-position:center;margin:0;opacity:.36;pointer-events:none;user-select:none;filter:url(#cityscape)}
 header{position:relative;z-index:1;background:transparent;color:#fff;padding:3.6rem 4.5rem 1rem;text-align:center}
 h1{margin:0;font-size:clamp(1.6rem,5vw,2.8rem);line-height:1.15}
 #updated{opacity:.92;font-size:.9rem;margin:.6rem 0 0}
@@ -31,7 +32,7 @@ a{color:var(--navy)}
 .card.is-new{border-color:var(--new);box-shadow:0 0 0 1px var(--new),0 2px 8px #0000000d}
 .card.flash{box-shadow:0 0 0 4px var(--accent)}
 .tag,.new{display:inline-block;border-radius:99px;padding:.15rem .6rem;font-size:.72rem;font-weight:600;color:#fff;vertical-align:middle}
-.tag{background:var(--accent)}.new{background:var(--new);font-weight:700;letter-spacing:.03em;margin-left:.35rem}
+.tag{background:var(--accent)}.new{background:var(--new-bg);color:var(--new-ink);border:1px solid var(--new-line);font-weight:800;letter-spacing:.03em;margin-left:.35rem}
 .few{grid-column:1/-1;font-style:italic;color:var(--muted)}
 
 /* ---- card buttons: Tickets in the rail row; labeled actions in a slim bar ---- */
@@ -45,7 +46,7 @@ a{color:var(--navy)}
 .b.primary,.btn,button[type=submit]{background:var(--navy);border-color:var(--navy);color:#fff}
 .b.primary{grid-column:1/-1;font-size:.95rem}
 .b.primary:hover,.btn:hover,button[type=submit]:hover{filter:none;background:var(--navy-hover)}
-.b.going.on{background:var(--going);border-color:var(--going-line)}
+.b.going.on{background:var(--going);border-color:var(--going-line);color:var(--going-ink)}
 .btn.ghost{background:#fff;color:var(--navy);border-color:var(--navy)}
 .btn.ghost:hover{background:#eef0f6;filter:none}
 .b:focus-visible,.btn:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
@@ -60,17 +61,22 @@ header :focus-visible{outline-color:var(--focus-on-navy)}
 .just li a{font-weight:600;text-decoration:none}.just li a:hover{text-decoration:underline}
 .just li .new{margin-left:0;order:-1}
 
-/* ---- filter bar: equal columns. Concerts is 3+3; sports/seasonal (no search) is one row of 4. ---- */
-.filters{display:grid;grid-template-columns:minmax(0,1fr);gap:.7rem;align-items:end;background:var(--card);border:1px solid var(--line);
-  border-radius:12px;padding:.9rem 1rem 1rem}
+/* ---- filter bar: equal field row, then a compact tools row (not stretched under those columns) ---- */
+.filters{display:flex;flex-direction:column;gap:.85rem;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem 1rem}
+.filter-fields{display:grid;grid-template-columns:minmax(0,1fr);gap:.7rem}
+.filter-tools{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem .85rem}
 .filters label{display:flex;align-items:center;gap:.45rem;font-size:.9rem;font-weight:600;min-width:0;min-height:44px}
-.filters label:has(select),.filters label:has(input[type=search]){flex-direction:column;align-items:stretch;justify-content:flex-end;gap:.3rem;min-height:0}
+.filter-fields label{flex-direction:column;align-items:stretch;justify-content:flex-end;gap:.3rem;min-height:0}
 .filters select,.filters input[type=search]{font:inherit;font-size:.9rem;padding:.45rem .6rem;border:1px solid #c5c5d4;border-radius:8px;background:#fff;min-width:0;width:100%;min-height:44px}
+.filter-tools label:has(select){flex:0 1 auto}
+.filter-tools select{width:13.5rem;max-width:100%}
 .filters input[type=checkbox]{width:1.25rem;height:1.25rem;accent-color:var(--navy);margin:0}
-.filters #f-clear{margin-left:0;width:100%;min-height:44px}
+.filters #f-clear{margin:0;width:auto;min-width:5.5rem;min-height:44px;padding-inline:1.1rem}
 @media (min-width:720px){
-  .filters{grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem 1rem}
-  .filters:not(:has(#f-q)){grid-template-columns:repeat(4,minmax(0,1fr))}
+  .filter-fields{grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem 1rem}
+  .filters:not(:has(#f-q)){flex-direction:row;align-items:flex-end;gap:1rem 1.25rem}
+  .filters:not(:has(#f-q)) .filter-fields{flex:0 1 22rem;grid-template-columns:minmax(0,1fr)}
+  .filters:not(:has(#f-q)) .filter-tools{flex:1 1 auto}
 }
 
 /* ---- signup / calendar / submit boxes ---- */
@@ -112,13 +118,13 @@ footer p{margin:.3rem 0}.mail-addr,.disclosure{font-size:.82rem}
 body.bio-open{overflow:hidden}
 .bio-box h3{margin:1rem 0 .4rem;font-size:1rem;padding-top:.75rem;border-top:1px solid #eee}
 
-/* ---- NEW this week: gold pill in the card's top corner, warm tint + glow; older cards stay plain ---- */
+/* ---- NEW this week: slate pill; older cards stay plain ---- */
 .card{position:relative}
-.new{background:var(--gold);color:var(--text);font-weight:800;letter-spacing:.06em;box-shadow:0 1px 2px #0003}
-.card.is-new{background:#fff;border-color:var(--gold);box-shadow:0 0 0 2px var(--gold),0 4px 14px #00000014}
+.new{background:var(--new-bg);color:var(--new-ink);border:1px solid var(--new-line);font-weight:800;letter-spacing:.06em}
+.card.is-new{background:#fff;border-color:var(--new-line);box-shadow:0 0 0 2px var(--new-line),0 4px 14px #00000014}
 .card h3 .new{position:static;margin-left:.45rem;vertical-align:middle}
-.added-on{font-size:.78rem!important;color:var(--gold-ink);font-weight:600}
-.newcount{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;background:var(--gold-wash);border:1px solid var(--line);border-radius:12px;padding:.6rem .9rem;margin:0 0 1rem;font-size:.95rem}
+.added-on{font-size:.78rem!important;color:#3d4668;font-weight:600}
+.newcount{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;background:#eef1f8;border:1px solid var(--new-line);border-radius:12px;padding:.6rem .9rem;margin:0 0 1rem;font-size:.95rem}
 .newcount .new{margin-left:0}
 .newcount .newtoggle{margin-left:auto;font:inherit;font-size:.85rem;font-weight:700;min-height:44px;padding:.4rem .8rem;border-radius:99px;border:1px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer}
 .newcount .newtoggle[aria-pressed="true"]{background:var(--navy);color:#fff}
@@ -152,10 +158,10 @@ body.bio-open{overflow:hidden}
 .range .b.primary{grid-column:auto}
 /* ---- "I'm interested" (♥) next to "I'm going" (★); the two are exclusive (marks.js) ---- */
 .b.interested.on{background:var(--interested-bg);border-color:var(--interested);color:var(--interested-ink)}
-.b.going.on{color:var(--text)}
+.b.going.on{color:var(--going-ink)}
 /* odd button left over at the end of the 2-column grid spans the full row */
 .actions:not(.has-bio)>.b:last-child:nth-child(even),.actions.has-bio>.b:last-child:nth-child(odd){grid-column:1/-1}
-/* card accent stripe: violet = going, teal = interested (NEW keeps its gold glow) */
+/* card accent stripe: blue = going, teal = interested */
 .card.mark-going{border-left:6px solid var(--mark-going)}
 .card.mark-interested{border-left:6px solid var(--interested)}
 .season-h{grid-column:1/-1;margin:.8rem 0 0;font-size:1.15rem;border-bottom:2px solid var(--accent);padding-bottom:.2rem}.grid>.season-h:first-child{margin-top:0}
@@ -172,7 +178,12 @@ header{position:relative}
 .ptr.spin .ptr-spin{animation:grhspin .8s linear infinite}
 @keyframes grhspin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.ptr.spin .ptr-spin,.grh-refreshing .refresh-btn svg{animation-duration:2s}}
-@media (max-width:640px){header{padding-top:3.6rem}}
+@media (max-width:640px){
+  header{padding-top:3.6rem}
+  .filter-tools{flex-direction:column;align-items:stretch}
+  .filter-tools label:has(select){flex-direction:column;align-items:stretch}
+  .filter-tools select,.filters #f-clear{width:100%}
+}
 .mast :focus-visible{outline-color:var(--focus-on-navy)}
 
 /* ---- date-rail cards (design preview): navy day/time, then title, tickets, labeled actions ---- */
