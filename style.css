@@ -1,18 +1,20 @@
-/* Colors: navy chrome matches the date-rail. Gold is NEW only. Going / Interested keep their own marks. */
+/* Colors: navy chrome. Gold is the NEW badge and its wash. Going / Interested keep their marks. */
 :root{
   --bg:#f7f7fb;--text:#1b1b2f;--navy:var(--text);--navy-hover:#2c2c4e;--accent:var(--navy);
+  --header:#14142a;--header-deep:#0e0e1c;
   --card:#fff;--new:#16a34a;--line:#e3e3ec;--muted:#666;
-  --gold:#facc15;--gold-line:#f59e0b;--gold-ink:#92400e;--gold-deep:#b45309;--gold-wash:#fffbea;
+  --gold:#facc15;--gold-ink:#92400e;--gold-wash:#fffbea;
   --going:#ffd54a;--going-line:#e7b900;
   --interested-bg:#ccfbf1;--interested:#0d9488;--interested-ink:#115e59;--mark-going:#7c3aed;
   --focus:var(--navy);--focus-on-navy:#fff
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.4}
-header{background:var(--text);color:#fff;padding:1.15rem 1rem 1.25rem;text-align:center}
-.brand{display:block;width:min(210px,62vw);height:auto;margin:.15rem auto .4rem}
+.mast{position:relative;isolation:isolate;overflow:hidden;color:#fff;background:linear-gradient(180deg,var(--header) 0%,var(--header-deep) 100%)}
+.brand{position:absolute;inset:0;z-index:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;margin:0;opacity:.13;pointer-events:none;user-select:none}
+header{position:relative;z-index:1;background:transparent;color:#fff;padding:3.6rem 4.5rem 1rem;text-align:center}
 h1{margin:0;font-size:clamp(1.6rem,5vw,2.8rem);line-height:1.15}
-#updated{opacity:.75;font-size:.9rem;margin:.6rem 0 0}
+#updated{opacity:.92;font-size:.9rem;margin:.6rem 0 0}
 main{max-width:1100px;margin:auto;padding:1rem}
 h2{border-bottom:3px solid var(--accent);padding-bottom:.3rem;margin:1.6rem 0 1rem;font-size:1.35rem}
 section>h2:first-child{margin-top:0}
@@ -50,21 +52,26 @@ a{color:var(--navy)}
 header :focus-visible{outline-color:var(--focus-on-navy)}
 
 /* ---- Just Announced ---- */
-.just{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--new);border-radius:12px;padding:1rem 1.2rem}
-.just h2{border-bottom-color:var(--new)}
+.just{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:12px;padding:1rem 1.2rem}
+.just h2{border-bottom-color:var(--navy)}
 .just ul{list-style:none;margin:0;padding:0}
 .just li{display:flex;flex-wrap:wrap;align-items:center;gap:.15rem .5rem;padding:.5rem 0;border-bottom:1px solid var(--line)}
 .just li:last-child{border-bottom:0}
 .just li a{font-weight:600;text-decoration:none}.just li a:hover{text-decoration:underline}
 .just li .new{margin-left:0;order:-1}
 
-/* ---- filter bar ---- */
-.filters{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;background:var(--card);border:1px solid var(--line);
-  border-radius:12px;padding:.75rem 1rem}
-.filters label{display:flex;align-items:center;gap:.4rem;font-size:.9rem;font-weight:600}
-.filters select,.filters input[type=search]{font:inherit;font-size:.9rem;padding:.45rem .5rem;border:1px solid #cfcfda;border-radius:8px;background:#fff;min-width:0;max-width:100%}
-.filters input[type=checkbox]{width:1.1rem;height:1.1rem;accent-color:var(--navy);margin:0}
-.filters #f-clear{margin-left:auto}
+/* ---- filter bar: equal columns. Concerts is 3+3; sports/seasonal (no search) is one row of 4. ---- */
+.filters{display:grid;grid-template-columns:minmax(0,1fr);gap:.7rem;align-items:end;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:.9rem 1rem 1rem}
+.filters label{display:flex;align-items:center;gap:.45rem;font-size:.9rem;font-weight:600;min-width:0;min-height:44px}
+.filters label:has(select),.filters label:has(input[type=search]){flex-direction:column;align-items:stretch;justify-content:flex-end;gap:.3rem;min-height:0}
+.filters select,.filters input[type=search]{font:inherit;font-size:.9rem;padding:.45rem .6rem;border:1px solid #c5c5d4;border-radius:8px;background:#fff;min-width:0;width:100%;min-height:44px}
+.filters input[type=checkbox]{width:1.25rem;height:1.25rem;accent-color:var(--navy);margin:0}
+.filters #f-clear{margin-left:0;width:100%;min-height:44px}
+@media (min-width:720px){
+  .filters{grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem 1rem}
+  .filters:not(:has(#f-q)){grid-template-columns:repeat(4,minmax(0,1fr))}
+}
 
 /* ---- signup / calendar / submit boxes ---- */
 .signup{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.2rem;box-shadow:0 2px 8px #0000000d}
@@ -81,11 +88,6 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.9rem}
 @media (max-width:560px){
   main{padding:.75rem}
   .grid{gap:.85rem}
-  .filters{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.6rem}
-  .filters select,.filters input[type=search]{width:100%}
-  .filters label:has(select),.filters label:has(input[type=search]){flex-direction:column;align-items:stretch;gap:.25rem}
-  .filters label:has(input[type=search]){grid-column:1/-1}
-  .filters #f-clear{margin-left:0;grid-column:1/-1}
   .just{padding:.9rem}
 }
 .badges{display:flex;flex-wrap:wrap;gap:.3rem}.badges .new{margin-left:0}
@@ -113,31 +115,28 @@ body.bio-open{overflow:hidden}
 /* ---- NEW this week: gold pill in the card's top corner, warm tint + glow; older cards stay plain ---- */
 .card{position:relative}
 .new{background:var(--gold);color:var(--text);font-weight:800;letter-spacing:.06em;box-shadow:0 1px 2px #0003}
-.card.is-new{background:#fff;border-color:var(--gold-line);box-shadow:0 0 0 2px var(--gold-line),0 4px 14px #f59e0b40}
+.card.is-new{background:#fff;border-color:var(--gold);box-shadow:0 0 0 2px var(--gold),0 4px 14px #00000014}
 .card h3 .new{position:static;margin-left:.45rem;vertical-align:middle}
 .added-on{font-size:.78rem!important;color:var(--gold-ink);font-weight:600}
-.newcount{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;background:var(--gold-wash);border:1px solid var(--gold-line);border-radius:12px;padding:.6rem .9rem;margin:0 0 1rem;font-size:.95rem}
+.newcount{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;background:var(--gold-wash);border:1px solid var(--line);border-radius:12px;padding:.6rem .9rem;margin:0 0 1rem;font-size:.95rem}
 .newcount .new{margin-left:0}
-.newcount .newtoggle{margin-left:auto;font:inherit;font-size:.85rem;font-weight:700;padding:.4rem .8rem;border-radius:99px;border:1px solid var(--gold-deep);background:#fff;color:var(--gold-ink);cursor:pointer}
-.newcount .newtoggle[aria-pressed="true"]{background:var(--gold-deep);color:#fff}
-.just{border-left-color:var(--gold-line)}.just h2{border-bottom-color:var(--gold-line)}
+.newcount .newtoggle{margin-left:auto;font:inherit;font-size:.85rem;font-weight:700;min-height:44px;padding:.4rem .8rem;border-radius:99px;border:1px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer}
+.newcount .newtoggle[aria-pressed="true"]{background:var(--navy);color:#fff}
+.just{border-left-color:var(--navy)}.just h2{border-bottom-color:var(--navy)}
 
 /* ---- header subtitle + Concerts | Sports | Seasonal ---- */
-.subtitle{margin:.35rem 0 0;font-size:clamp(1rem,3.2vw,1.25rem);font-weight:600;color:#ffffffd9}
-.segtoggle{display:flex;justify-content:center;align-items:center;gap:.25rem;margin:.85rem auto .25rem;padding:0 .75rem;max-width:26rem}
+.subtitle{margin:.35rem 0 0;font-size:clamp(1rem,3.2vw,1.25rem);font-weight:600;color:#fff}
+.segtoggle{position:relative;z-index:1;display:flex;justify-content:center;align-items:center;gap:.25rem;margin:0 auto;padding:.15rem .75rem .9rem;max-width:26rem;background:transparent}
 .segtoggle a{flex:1;text-align:center;text-decoration:none;font-weight:700;font-size:1rem;min-height:44px;display:flex;align-items:center;justify-content:center;
-  border:2px solid transparent;border-radius:99px;color:var(--text);background:transparent;padding:0 .5rem}
-.segtoggle a[aria-current=page]{background:var(--text);color:#fff;border-color:var(--text)}
-.segtoggle a:not([aria-current]):hover{background:color-mix(in srgb,var(--navy) 8%,transparent)}
+  border:0;border-bottom:3px solid transparent;border-radius:0;color:#fff;background:transparent;padding:.4rem .5rem}
+.segtoggle a[aria-current=page]{background:transparent;color:#fff;border-bottom-color:#fff}
+.segtoggle a:not([aria-current]):hover{background:transparent;border-bottom-color:#ffffff80}
+.segtoggle a:focus-visible{outline-color:var(--focus-on-navy)}
 @media (max-width:440px){.segtoggle a{font-size:.95rem;padding:0 .3rem}}
 @media (min-width:760px){
-  header{padding-bottom:.35rem}
-  .brand{width:168px;margin-top:.25rem}
-  .segtoggle{max-width:none;margin:0;padding:.15rem 1rem .85rem;gap:.35rem;background:var(--text)}
-  .segtoggle a{flex:0 1 auto;color:#fff;background:transparent;border:0;border-bottom:3px solid transparent;border-radius:0;padding:.4rem .9rem}
-  .segtoggle a[aria-current=page]{color:#fff;background:transparent;border-bottom-color:#fff}
-  .segtoggle a:not([aria-current]):hover{background:transparent;border-bottom-color:#ffffff80}
-  .segtoggle a:focus-visible{outline-color:var(--focus-on-navy)}
+  header{padding:3.2rem 4.5rem .35rem}
+  .segtoggle{max-width:none;padding:.15rem 1rem .95rem;gap:.35rem}
+  .segtoggle a{flex:0 1 auto;padding:.4rem .9rem}
 }
 /* date range picker */
 .range{background:var(--card);border:1px solid #e4e4ec;border-radius:12px;padding:.75rem 1rem;margin:0 0 1rem}
@@ -174,6 +173,7 @@ header{position:relative}
 @keyframes grhspin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.ptr.spin .ptr-spin,.grh-refreshing .refresh-btn svg{animation-duration:2s}}
 @media (max-width:640px){header{padding-top:3.6rem}}
+.mast :focus-visible{outline-color:var(--focus-on-navy)}
 
 /* ---- date-rail cards (design preview): navy day/time, then title, tickets, labeled actions ---- */
 .card-main{display:flex;flex-direction:column;min-width:0}

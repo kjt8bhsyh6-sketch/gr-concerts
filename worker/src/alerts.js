@@ -68,12 +68,12 @@ export function renderEmail(env, email, picks, offUrl, freq = "weekly") {
 <div style="font-size:12px;color:#6b7280;text-transform:uppercase;letter-spacing:.04em">${esc(e.kind)}</div>
 <div style="font-size:17px;font-weight:700;color:#111827;margin:2px 0">${esc(e.title)}</div>
 <div style="font-size:14px;color:#374151">${esc(e.when)}${e.time ? " · " + esc(e.time) : ""}${e.venue ? " · " + esc(e.venue) : ""}</div>
-${e.link ? `<a href="${esc(e.link)}" style="display:inline-block;margin-top:6px;padding:6px 14px;background:#b45309;color:#fff;border-radius:99px;text-decoration:none;font-size:14px;font-weight:600">${e.seasonal ? "Details" : e.venueLink ? "Venue page" : "Tickets"}</a>` : `<a href="${esc(page(e.kind))}" style="font-size:14px">Details</a>`}
+${e.link ? `<a href="${esc(e.link)}" style="display:inline-block;margin-top:6px;padding:6px 14px;background:#1b1b2f;color:#fff;border-radius:99px;text-decoration:none;font-size:14px;font-weight:600">${e.seasonal ? "Details" : e.venueLink ? "Venue page" : "Tickets"}</a>` : `<a href="${esc(page(e.kind))}" style="font-size:14px">Details</a>`}
 </td></tr>`).join("");
   const html = `<!doctype html><html><body style="margin:0;background:#f3f4f6;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:24px 12px">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background:#fff;border-radius:14px;padding:24px">
-<tr><td><div style="font-size:13px;color:#b45309;font-weight:700">GRAND RAPIDS HAPPENINGS</div>
+<tr><td><div style="font-size:13px;color:#1b1b2f;font-weight:700">GRAND RAPIDS HAPPENINGS</div>
 <h1 style="font-size:24px;margin:6px 0 4px;color:#111827">Your Grand Rapids picks this week</h1>
 <p style="margin:0 0 12px;color:#4b5563;font-size:15px">${picks.length} event${picks.length === 1 ? "" : "s"} matching your picks, this week and next.</p></td></tr>
 ${rows}

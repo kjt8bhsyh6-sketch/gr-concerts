@@ -69,6 +69,8 @@
   const calLink = (e, mark) => e.c ? GRICS.google(e.c, mark) : gcal(e, mark);
   const gcalFix = ev => { const a = ev.target.closest('a.gcal'); if (!a || !a.dataset.id) return; const e = byId(a.dataset.id); if (e) a.href = calLink(e, Marks.state(a.dataset.id)); };
   document.addEventListener('click', gcalFix, true); document.addEventListener('auxclick', gcalFix, true); document.addEventListener('contextmenu', gcalFix, true);
+  const BIO = (typeof BIOS !== 'undefined' && BIOS) || {};
+  const bioKey = e => { const key = (e.c && e.c.artist) || ''; return key && BIO[key] ? key : ''; };
   function dateRail(date, time, end) {
     const dt = new Date(date + 'T12:00');
     const wd = dt.toLocaleDateString('en-US', { weekday: 'short' });
@@ -83,12 +85,13 @@
     const id = sid(e), nw = isNew(e);
     const time = e.c ? e.c.time : '';
     const end = !e.c && e.end && e.end !== e.sort ? e.end : '';
+    const who = bioKey(e) ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : '';
     return `<article class="card${nw ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-id="${id}">
       <div class="card-main">${dateRail(e.sort, time, end)}
       <div class="card-body"><h3>${h(e.name)}${nw ? '<span class="new">NEW</span>' : ''}</h3><p class="card-venue">${h(e.location)}</p><p class="card-tags"><span class="tag">${h(e.type)}</span></p>
       ${e.c ? '' : `<p class="when">${h(e.when)}</p>`}${nw ? `<p class="added-on">Added ${new Date(e.added + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>` : ''}</div>
       <div class="card-cta"><a class="b primary" href="${h(e.link)}" target="_blank" rel="${e.c && e.c.affiliate ? 'sponsored noopener' : 'noopener'}">Info / tickets</a></div></div>
-      <div class="actions">${Marks.buttons(id)}
+      <div class="actions${who ? ' has-bio' : ''}">${who}${Marks.buttons(id)}
       <button type="button" class="b share" data-id="${id}" data-title="${h(e.name)}">Share</button>
       <button type="button" class="b ics" data-id="${id}">Apple Cal</button><a class="b gcal" data-id="${id}" href="${h(calLink(e))}" target="_blank" rel="noopener">Google Cal</a>${GRMAP.buttons(e.location)}</div></article>`;
   }
@@ -121,6 +124,11 @@
   function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => t.hidden = true, 2500); }
   document.addEventListener('click', async ev => {
     const b = ev.target.closest('button'); if (!b) return; const id = b.dataset.id;
+    if (b.classList.contains('whois')) {
+      const e = byId(id), key = e && bioKey(e), bio = key && BIO[key];
+      if (bio) BioModal.open([{ title: key, text: bio.text, source: bio.source }], b);
+      return;
+    }
     if (Marks.handle(b)) {
       if ($('#f-mine').value) render();
     } else if (b.classList.contains('share')) {
