@@ -79,6 +79,10 @@
   };
   const qEl = $('#f-q');
   if (qEl && qs.get('q')) qEl.value = qs.get('q');
+  // Coming Up (#later-sec) stays hidden until a filter is on. A Just Announced click or
+  // a #show- deep link to a card in that section pins it open so the target is on screen.
+  // Cleared when the visitor changes filters or hits Clear (render() then hides it again).
+  let pinLater = false;
 
   function render() {
     const v = $('#f-venue').value, g = $('#f-genre').value, mine = $('#f-mine').value, nw = $('#f-new').checked;
@@ -107,15 +111,31 @@
       if (all.length < 3 && l.length === all.length && !hasFilter) el.insertAdjacentHTML('beforeend', '<p class="few">Few shows found this week.</p>');
     });
     const laterEl = document.getElementById('later-sec');
-    if (laterEl) laterEl.hidden = inR || !hasFilter;
+    if (laterEl) laterEl.hidden = inR || (!hasFilter && !pinLater);
     newCount(shows.filter(c => ago(c.date) <= 0 && isNew(c)).length, $('#f-new'));
+  }
+  // Scroll to a card. If it lives in hidden Coming Up, pin that section open and re-render
+  // first — render() replaces the card nodes, so the scroll target is looked up again after.
+  function openCard(id) {
+    if (!id) return;
+    const laterEl = document.getElementById('later-sec');
+    let el = document.getElementById(id);
+    if (el && laterEl && laterEl.contains(el) && laterEl.hidden) {
+      pinLater = true;
+      render();
+      el = document.getElementById(id);
+    }
+    if (!el) return;
+    el.scrollIntoView();
+    el.classList.add('flash');
   }
   // ---- date range picker ("Looking for something further out?"): shared code in date-range.js ----
   const DR = DateRange.init({ today, lastDate: shows.map(endOf).sort().pop(), onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
-  document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
-  if (qEl) qEl.addEventListener('input', render);
-  $('#f-clear').addEventListener('click', () => { $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; if (qEl) qEl.value = ''; render(); });
-  $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
+  const unpinLater = () => { pinLater = false; };
+  document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', () => { unpinLater(); render(); }));
+  if (qEl) qEl.addEventListener('input', () => { unpinLater(); render(); });
+  $('#f-clear').addEventListener('click', () => { unpinLater(); $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; if (qEl) qEl.value = ''; render(); });
+  $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { unpinLater(); const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
   render();
 
   // ---- buttons (event delegation) ----
@@ -171,5 +191,14 @@
       'reactions-enabled': '1', 'input-position': 'top', theme: 'light', lang: 'en', loading: 'lazy' }).forEach(([k, v]) => gs.setAttribute('data-' + k, v));
     $('#giscus').appendChild(gs);
   }
-  if (location.hash) { const t = document.getElementById(location.hash.slice(1)); if (t) { t.scrollIntoView(); t.classList.add('flash'); } }
+  const just = $('#just');
+  if (just) just.addEventListener('click', ev => {
+    const a = ev.target.closest('a[href^="#"]'); if (!a) return;
+    const id = decodeURIComponent(a.getAttribute('href').slice(1)); if (!id) return;
+    ev.preventDefault();
+    openCard(id);
+    if (location.hash !== '#' + id) history.pushState(null, '', '#' + id);
+  });
+  window.addEventListener('hashchange', () => { if (location.hash.length > 1) openCard(decodeURIComponent(location.hash.slice(1))); });
+  if (location.hash.length > 1) openCard(decodeURIComponent(location.hash.slice(1)));
 })();
