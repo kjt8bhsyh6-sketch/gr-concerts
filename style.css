@@ -1,5 +1,12 @@
-/* Colors: change these to restyle the site */
-:root{--bg:#f7f7fb;--text:#1b1b2f;--accent:#e4572e;--card:#fff;--new:#16a34a;--line:#e3e3ec;--muted:#666}
+/* Colors: navy chrome matches the date-rail. Gold is NEW only. Going / Interested keep their own marks. */
+:root{
+  --bg:#f7f7fb;--text:#1b1b2f;--navy:var(--text);--navy-hover:#2c2c4e;--accent:var(--navy);
+  --card:#fff;--new:#16a34a;--line:#e3e3ec;--muted:#666;
+  --gold:#facc15;--gold-line:#f59e0b;--gold-ink:#92400e;--gold-deep:#b45309;--gold-wash:#fffbea;
+  --going:#ffd54a;--going-line:#e7b900;
+  --interested-bg:#ccfbf1;--interested:#0d9488;--interested-ink:#115e59;--mark-going:#7c3aed;
+  --focus:var(--navy);--focus-on-navy:#fff
+}
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.4}
 header{background:var(--text);color:#fff;padding:1.15rem 1rem 1.25rem;text-align:center}
@@ -10,7 +17,7 @@ main{max-width:1100px;margin:auto;padding:1rem}
 h2{border-bottom:3px solid var(--accent);padding-bottom:.3rem;margin:1.6rem 0 1rem;font-size:1.35rem}
 section>h2:first-child{margin-top:0}
 main>section{margin-bottom:1.5rem}
-a{color:var(--accent)}
+a{color:var(--navy)}
 .note,.muted{color:var(--muted)}.muted{font-size:.85rem}
 
 /* ---- cards: one full-width date-rail card per row ---- */
@@ -33,12 +40,14 @@ a{color:var(--accent)}
   border:1px solid var(--line);background:#f1f1f6;color:var(--text);cursor:pointer;text-decoration:none;
   display:inline-flex;align-items:center;justify-content:center;text-align:center;white-space:nowrap}
 .b:hover,button:hover{background:#e6e6ef}
-.b.primary,.btn,button[type=submit]{background:var(--accent);border-color:var(--accent);color:#fff}
+.b.primary,.btn,button[type=submit]{background:var(--navy);border-color:var(--navy);color:#fff}
 .b.primary{grid-column:1/-1;font-size:.95rem}
-.b.primary:hover,.btn:hover,button[type=submit]:hover{filter:brightness(.93);background:var(--accent)}
-.b.going.on{background:#ffd54a;border-color:#e7b900}
-.btn.ghost{background:#fff;color:var(--accent)}
-.b:focus-visible,.btn:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
+.b.primary:hover,.btn:hover,button[type=submit]:hover{filter:none;background:var(--navy-hover)}
+.b.going.on{background:var(--going);border-color:var(--going-line)}
+.btn.ghost{background:#fff;color:var(--navy);border-color:var(--navy)}
+.btn.ghost:hover{background:#eef0f6;filter:none}
+.b:focus-visible,.btn:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+header :focus-visible{outline-color:var(--focus-on-navy)}
 
 /* ---- Just Announced ---- */
 .just{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--new);border-radius:12px;padding:1rem 1.2rem}
@@ -54,7 +63,7 @@ a{color:var(--accent)}
   border-radius:12px;padding:.75rem 1rem}
 .filters label{display:flex;align-items:center;gap:.4rem;font-size:.9rem;font-weight:600}
 .filters select,.filters input[type=search]{font:inherit;font-size:.9rem;padding:.45rem .5rem;border:1px solid #cfcfda;border-radius:8px;background:#fff;min-width:0;max-width:100%}
-.filters input[type=checkbox]{width:1.1rem;height:1.1rem;accent-color:var(--accent);margin:0}
+.filters input[type=checkbox]{width:1.1rem;height:1.1rem;accent-color:var(--navy);margin:0}
 .filters #f-clear{margin-left:auto}
 
 /* ---- signup / calendar / submit boxes ---- */
@@ -83,7 +92,7 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.9rem}
 /* footer links + text pages (privacy / terms) */
 footer p{margin:.3rem 0}.mail-addr,.disclosure{font-size:.82rem}
 .footlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.2rem;margin-top:.8rem}
-.footlinks a{color:var(--accent);font-weight:600;text-decoration:none}.footlinks a:hover{text-decoration:underline}
+.footlinks a{color:var(--navy);font-weight:700;text-decoration:none}.footlinks a:hover{text-decoration:underline}
 .doc{max-width:760px}.doc section{margin-bottom:1rem}.doc p{line-height:1.55}
 /* top nav (Concerts / Sports) + sports note cards */
 .tag.off{background:#6b7280}.note-card p{color:var(--text)}
@@ -103,15 +112,15 @@ body.bio-open{overflow:hidden}
 
 /* ---- NEW this week: gold pill in the card's top corner, warm tint + glow; older cards stay plain ---- */
 .card{position:relative}
-.new{background:#facc15;color:#1b1b2f;font-weight:800;letter-spacing:.06em;box-shadow:0 1px 2px #0003}
-.card.is-new{background:#fff;border-color:#f59e0b;box-shadow:0 0 0 2px #f59e0b,0 4px 14px #f59e0b40}
+.new{background:var(--gold);color:var(--text);font-weight:800;letter-spacing:.06em;box-shadow:0 1px 2px #0003}
+.card.is-new{background:#fff;border-color:var(--gold-line);box-shadow:0 0 0 2px var(--gold-line),0 4px 14px #f59e0b40}
 .card h3 .new{position:static;margin-left:.45rem;vertical-align:middle}
-.added-on{font-size:.78rem!important;color:#92400e;font-weight:600}
-.newcount{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;background:#fffbea;border:1px solid #f59e0b;border-radius:12px;padding:.6rem .9rem;margin:0 0 1rem;font-size:.95rem}
+.added-on{font-size:.78rem!important;color:var(--gold-ink);font-weight:600}
+.newcount{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;background:var(--gold-wash);border:1px solid var(--gold-line);border-radius:12px;padding:.6rem .9rem;margin:0 0 1rem;font-size:.95rem}
 .newcount .new{margin-left:0}
-.newcount .newtoggle{margin-left:auto;font:inherit;font-size:.85rem;font-weight:700;padding:.4rem .8rem;border-radius:99px;border:1px solid #b45309;background:#fff;color:#92400e;cursor:pointer}
-.newcount .newtoggle[aria-pressed="true"]{background:#b45309;color:#fff}
-.just{border-left-color:#f59e0b}.just h2{border-bottom-color:#f59e0b}
+.newcount .newtoggle{margin-left:auto;font:inherit;font-size:.85rem;font-weight:700;padding:.4rem .8rem;border-radius:99px;border:1px solid var(--gold-deep);background:#fff;color:var(--gold-ink);cursor:pointer}
+.newcount .newtoggle[aria-pressed="true"]{background:var(--gold-deep);color:#fff}
+.just{border-left-color:var(--gold-line)}.just h2{border-bottom-color:var(--gold-line)}
 
 /* ---- header subtitle + Concerts | Sports | Seasonal ---- */
 .subtitle{margin:.35rem 0 0;font-size:clamp(1rem,3.2vw,1.25rem);font-weight:600;color:#ffffffd9}
@@ -119,7 +128,7 @@ body.bio-open{overflow:hidden}
 .segtoggle a{flex:1;text-align:center;text-decoration:none;font-weight:700;font-size:1rem;min-height:44px;display:flex;align-items:center;justify-content:center;
   border:2px solid transparent;border-radius:99px;color:var(--text);background:transparent;padding:0 .5rem}
 .segtoggle a[aria-current=page]{background:var(--text);color:#fff;border-color:var(--text)}
-.segtoggle a:not([aria-current]):hover{background:#1b1b2f12}
+.segtoggle a:not([aria-current]):hover{background:color-mix(in srgb,var(--navy) 8%,transparent)}
 @media (max-width:440px){.segtoggle a{font-size:.95rem;padding:0 .3rem}}
 @media (min-width:760px){
   header{padding-bottom:.35rem}
@@ -128,24 +137,28 @@ body.bio-open{overflow:hidden}
   .segtoggle a{flex:0 1 auto;color:#fff;background:transparent;border:0;border-bottom:3px solid transparent;border-radius:0;padding:.4rem .9rem}
   .segtoggle a[aria-current=page]{color:#fff;background:transparent;border-bottom-color:#fff}
   .segtoggle a:not([aria-current]):hover{background:transparent;border-bottom-color:#ffffff80}
+  .segtoggle a:focus-visible{outline-color:var(--focus-on-navy)}
 }
 /* date range picker */
 .range{background:var(--card);border:1px solid #e4e4ec;border-radius:12px;padding:.75rem 1rem;margin:0 0 1rem}
 .range-ask{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-weight:600}
 .r-dates{display:flex;flex-wrap:wrap;gap:.75rem;margin:.75rem 0 .5rem}
 .r-dates label{display:flex;flex-direction:column;font-size:.85rem;gap:.25rem;flex:1 1 9rem}
-.r-dates input{font:inherit;min-height:2.4rem;padding:.3rem .5rem;border:1px solid #ccc;border-radius:8px}
+.r-dates input{font:inherit;min-height:44px;padding:.3rem .5rem;border:1px solid #ccc;border-radius:8px}
 .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:.25rem 0 .5rem}
-.chip{border-radius:99px;border:2px solid var(--accent);color:var(--accent);background:var(--card);padding:.35rem .8rem}
+.chip{border-radius:99px;border:2px solid var(--navy);color:var(--navy);background:var(--card);padding:.35rem .8rem;min-height:44px}
+.chip:hover{background:color-mix(in srgb,var(--navy) 8%,white)}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip.on:hover{background:var(--navy-hover)}
 .range .b.primary{grid-column:auto}
 /* ---- "I'm interested" (♥) next to "I'm going" (★); the two are exclusive (marks.js) ---- */
-.b.interested.on{background:#ccfbf1;border-color:#0d9488;color:#115e59}
+.b.interested.on{background:var(--interested-bg);border-color:var(--interested);color:var(--interested-ink)}
 .b.going.on{color:var(--text)}
 /* odd button left over at the end of the 2-column grid spans the full row */
 .actions:not(.has-bio)>.b:last-child:nth-child(even),.actions.has-bio>.b:last-child:nth-child(odd){grid-column:1/-1}
 /* card accent stripe: violet = going, teal = interested (NEW keeps its gold glow) */
-.card.mark-going{border-left:6px solid #7c3aed}
-.card.mark-interested{border-left:6px solid #0d9488}
+.card.mark-going{border-left:6px solid var(--mark-going)}
+.card.mark-interested{border-left:6px solid var(--interested)}
 .season-h{grid-column:1/-1;margin:.8rem 0 0;font-size:1.15rem;border-bottom:2px solid var(--accent);padding-bottom:.2rem}.grid>.season-h:first-child{margin-top:0}
 .actions>.b{min-width:44px;white-space:nowrap}
 /* ---- refresh button + pull-to-refresh (refresh.js) ---- */
@@ -155,8 +168,8 @@ header{position:relative}
 .grh-refreshing .refresh-btn svg{animation:grhspin .8s linear infinite}
 .ptr{position:fixed;left:50%;top:0;top:env(safe-area-inset-top,0px);z-index:1000;width:36px;height:36px;border-radius:50%;background:#fff;box-shadow:0 2px 8px #0003;display:none;align-items:center;justify-content:center;opacity:0;transform:translate(-50%,-50px);pointer-events:none}
 .ptr.show{display:flex}
-.ptr-spin{width:18px;height:18px;border-radius:50%;border:2.5px solid var(--line);border-top-color:var(--accent)}
-.ptr.ready .ptr-spin{border-color:var(--accent);border-top-color:var(--line)}
+.ptr-spin{width:18px;height:18px;border-radius:50%;border:2.5px solid var(--line);border-top-color:var(--navy)}
+.ptr.ready .ptr-spin{border-color:var(--navy);border-top-color:var(--line)}
 .ptr.spin .ptr-spin{animation:grhspin .8s linear infinite}
 @keyframes grhspin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.ptr.spin .ptr-spin,.grh-refreshing .refresh-btn svg{animation-duration:2s}}
@@ -164,7 +177,7 @@ header{position:relative}
 
 /* ---- date-rail cards (design preview): navy day/time, then title, tickets, labeled actions ---- */
 .card-main{display:flex;flex-direction:column;min-width:0}
-.date-rail{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15rem .45rem;background:var(--text);color:#fff;padding:.7rem 1rem;min-height:44px}
+.date-rail{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15rem .45rem;background:var(--navy);color:#fff;padding:.7rem 1rem;min-height:44px}
 .date-rail-wd,.date-rail-date,.date-rail-end{font-weight:800;letter-spacing:.04em;font-size:1rem;text-transform:uppercase}
 .date-rail-date,.date-rail-end{font-weight:700}
 .date-rail-wd + .date-rail-date::before{content:"· ";opacity:.75;font-weight:700}
@@ -174,11 +187,11 @@ header{position:relative}
 .card-body{padding:.85rem 1rem .25rem;min-width:0}
 .card-venue{font-weight:600}
 .card-tags{margin:.4rem 0 .15rem}
-.card .tag{background:#eef0f6;color:var(--text);border:1px solid #d5d7e4}
-.card .tag.off{background:#e5e7eb;color:var(--text)}
+.card .tag{background:#eef0f6;color:var(--navy);border:1px solid var(--line)}
+.card .tag.off{background:#e5e7eb;color:var(--navy)}
 .card-cta{padding:.35rem 1rem .9rem}
-.card-cta .b.primary{width:100%;min-height:44px;grid-column:auto;background:var(--text);border-color:var(--text);color:#fff;font-size:1rem}
-.card-cta .b.primary:hover{background:#2c2c4e;filter:none}
+.card-cta .b.primary{width:100%;min-height:44px;grid-column:auto;font-size:1rem}
+.card-cta .b.primary:focus-visible{outline-color:var(--focus-on-navy)}
 .when{color:var(--muted);font-size:.95rem}
 .card :focus-visible{outline-offset:-3px}
 @media (min-width:760px){

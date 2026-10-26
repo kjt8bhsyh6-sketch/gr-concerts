@@ -23,18 +23,19 @@
     const chips = [['Next 30 days', today, addD(today, 30)], ['Next 3 months', today, addM(today, 3)], ['Next 6 months', today, clampD(addM(today, 6))]];
     for (let i = 0; i <= 2; i++) { const m = mo + i, yy = y + Math.floor((m - 1) / 12), mm = (m - 1) % 12 + 1, st = `${yy}-${String(mm).padStart(2, '0')}-01`;
       chips.push([new Date(st + 'T12:00').toLocaleDateString('en-US', { month: 'long' }), i ? st : today, clampD(monEnd(yy, mm))]); }
-    $('#r-chips').innerHTML = chips.map(c => `<button type="button" class="chip" data-f="${c[1]}" data-t="${c[2]}">${c[0]}</button>`).join('');
+    $('#r-chips').innerHTML = chips.map(c => `<button type="button" class="chip" data-f="${c[1]}" data-t="${c[2]}" aria-pressed="false">${c[0]}</button>`).join('');
+    const markChips = () => { const on = range(); document.querySelectorAll('#r-chips .chip').forEach(c => { const hit = !!(on && c.dataset.f === rFrom && c.dataset.t === rTo); c.classList.toggle('on', hit); c.setAttribute('aria-pressed', hit); }); };
     const openP = on => { $('#r-panel').hidden = !on; $('#r-open').setAttribute('aria-expanded', on); };
     function applyRange(f, t) {
       rFrom = f; rTo = t; const u = new URL(location.href);
       if (range()) { u.searchParams.set('from', f); u.searchParams.set('to', t); } else { u.searchParams.delete('from'); u.searchParams.delete('to'); }
-      history.replaceState(null, '', u); onChange();
+      history.replaceState(null, '', u); markChips(); onChange();
     }
     $('#r-open').addEventListener('click', () => openP($('#r-panel').hidden));
     $('#r-chips').addEventListener('click', ev => { const c = ev.target.closest('.chip'); if (!c) return; rf.value = c.dataset.f; rt.value = c.dataset.t; rt.min = rf.value; applyRange(c.dataset.f, c.dataset.t); });
     $('#r-go').addEventListener('click', () => { if (rf.value && rt.value && rf.value <= rt.value) applyRange(rf.value, rt.value); else toast('Pick a From date before the To date.'); });
     $('#r-back').addEventListener('click', () => { applyRange(null, null); openP(false); rf.value = defFrom; rt.value = addD(defFrom, 30); rt.min = defFrom; });
-    if (range()) openP(true);
+    markChips(); if (range()) openP(true);
     return { range, md, addD };
   }
   window.DateRange = { init, md, addD };
