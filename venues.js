@@ -67,7 +67,7 @@ const VENUES = {
   "Start at Van Andel Arena, 130 W Fulton St, Grand Rapids": "Van Andel Arena, 130 W Fulton St, Grand Rapids, MI 49503",
   "Downtown Lowell (S Broadway St to Main St)": "E Main St & S Broadway St, Lowell, MI 49331",
   "DeVos Performance Hall, 303 Monroe Ave NW, Grand Rapids": "DeVos Performance Hall, 303 Monroe Ave NW, Grand Rapids, MI 49503",
-  "The Pyramid Scheme, 68 Commerce Dr SW": "The Pyramid Scheme, 68 Commerce Ave SW, Grand Rapids, MI 49503",
+  "The Pyramid Scheme, 68 Commerce Ave SW": "The Pyramid Scheme, 68 Commerce Ave SW, Grand Rapids, MI 49503",
   "High Tea GR, 1522 Wealthy St SE": "High Tea GR, 1522 Wealthy St SE, Grand Rapids, MI 49506",
   "Harmony Brewing & Wealthy St SE, 1551 Lake Dr SE, Eastown": "Harmony Brewing Company, 1551 Lake Dr SE, Grand Rapids, MI 49506",
   "Wicks Park & Corner of Butler & Mason St, Saugatuck": "Wicks Park, 449 Water St, Saugatuck, MI 49453",
