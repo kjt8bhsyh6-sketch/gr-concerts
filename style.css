@@ -27,7 +27,7 @@ main>section{margin-bottom:1.5rem}
 a{color:var(--navy)}
 .note,.muted{color:var(--muted)}.muted{font-size:.85rem}
 
-/* ---- cards: one full-width date-rail card per row ---- */
+/* ---- cards: one column on a phone, two columns with a center rule when wide ---- */
 .grid{display:flex;flex-direction:column;gap:1rem}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0;box-shadow:0 2px 8px #0000000d;
   display:flex;flex-direction:column;min-width:0;overflow:hidden}
@@ -222,4 +222,30 @@ header{position:relative}
   .card-body{flex:1;display:flex;flex-direction:column;justify-content:center;padding:.9rem 1rem}
   .card-cta{flex:0 0 auto;display:flex;align-items:center;padding:.9rem 1rem .9rem 0}
   .card-cta .b.primary{width:auto;min-width:7.5rem;padding:.55rem 1.15rem}
+}
+@media (min-width:840px){
+  .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:2rem;row-gap:.9rem;
+    background-image:linear-gradient(#3c3c58,#3c3c58);
+    background-size:1px 100%;background-repeat:no-repeat;background-position:center center}
+  .grid>.season-h,.grid>.few{background:var(--bg);position:relative;z-index:1}
+  .card h3{font-size:1.05rem;margin-bottom:.25rem}
+  .card p{font-size:.92rem}
+  .date-rail{min-width:5.75rem;max-width:7rem;padding:.5rem .35rem;gap:.1rem}
+  .date-rail-wd{font-size:.95rem}
+  .date-rail-date,.date-rail-end,.date-rail-time{font-size:.82rem;white-space:nowrap}
+  .date-rail-tz{font-size:.68rem}
+  .card-body{padding:.6rem .7rem}
+  .card-cta{padding:.5rem .65rem .5rem 0}
+  .card-cta .b.primary{min-width:44px;min-height:44px;font-size:.88rem;padding:.4rem .65rem}
+  .actions{padding:.2rem .3rem;gap:.15rem}
+  .actions>.b{font-size:.75rem;padding:.35rem .45rem}
+  .card h3 .new{font-size:.72rem;padding:.18rem .48rem;margin-left:.3rem}
+}
+@media (min-width:1100px){
+  .date-rail{min-width:6rem;max-width:7.25rem;padding:.6rem .4rem}
+  .date-rail-wd{font-size:1.05rem}
+  .date-rail-date,.date-rail-end,.date-rail-time{font-size:.88rem}
+  .card h3{font-size:1.12rem}
+  .card-body{padding:.7rem .8rem}
+  .card-cta .b.primary{padding:.45rem .8rem}
 }
