@@ -150,6 +150,7 @@ body.bio-open{overflow:hidden}
   .segtoggle a{padding:.4rem .9rem}
 }
 .b.ics,.b.gcal,.b.map,a.btn.cal-mark{min-width:44px;min-height:44px;padding:.45rem .7rem}
+.b.map{gap:.35rem}
 .b.ics svg,.b.gcal svg,.b.map svg,a.btn.cal-mark svg{width:20px;height:20px;display:block}
 /* date range picker */
 .range{background:var(--card);border:1px solid #e4e4ec;border-radius:12px;padding:.75rem 1rem;margin:0 0 1rem}
