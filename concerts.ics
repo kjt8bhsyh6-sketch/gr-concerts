@@ -6570,6 +6570,18 @@ DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
 URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-09-avant-theatre-ballet-visions-of-degas-an-o-571y2u@gr-concer
+ ts
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Detroit:20270409T193000
+DTEND;TZID=America/Detroit:20270409T223000
+SUMMARY:Avant Theatre Ballet: Visions of Degas (An Original Ballet)
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://fountainstreet.churchce
+ nter.com/calendar/event/228264461 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/228264461
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-10-amber-autry-happy-holler-tour@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270410T190000
@@ -6654,6 +6666,18 @@ LOCATION:Calvin University Chapel\, Grand Rapids\, MI
 DESCRIPTION:Choral\, 4:00 PM. Tickets/info: https://calvin.edu/events/gosp
  el-choir-concert-1807473600 (confirm details with the venue)
 URL:https://calvin.edu/events/gospel-choir-concert-1807473600
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-11-avant-theatre-ballet-visions-of-degas-an-o-or1v1f@gr-concer
+ ts
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Detroit:20270411T140000
+DTEND;TZID=America/Detroit:20270411T170000
+SUMMARY:Avant Theatre Ballet: Visions of Degas (An Original Ballet)
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Dance\, 2:00 PM. Tickets/info: https://fountainstreet.churchce
+ nter.com/calendar/event/228266947 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/228266947
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-13-staind-break-the-cycle-25th-anniversary@gr-concerts
@@ -6822,6 +6846,18 @@ LOCATION:Covenant Fine Arts Center (Calvin University)\, Grand Rapids\, MI
 DESCRIPTION:Choral\, 7:00 PM. Tickets/info: https://gryouthchorus.org/even
  t/mosaic-singers-composer-showcase/ (confirm details with the venue)
 URL:https://gryouthchorus.org/event/mosaic-singers-composer-showcase/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-17-avant-theatre-ballet-visions-of-degas-an-o-1gc0h1@gr-concer
+ ts
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Detroit:20270417T193000
+DTEND;TZID=America/Detroit:20270417T223000
+SUMMARY:Avant Theatre Ballet: Visions of Degas (An Original Ballet)
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://fountainstreet.churchce
+ nter.com/calendar/event/239719819 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/239719819
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-18-ruth-max-bloomquist-acoustic-stew-music-guild@gr-concerts
