@@ -1,17 +1,7 @@
 {
-  "generated": "2026-10-26",
-  "count": 170,
+  "generated": "2026-10-27",
+  "count": 172,
   "pending": [
-    {
-      "artist": "Slay The Vote 2.0 (18+)",
-      "week": "this",
-      "dates": [
-        "2026-10-26"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/slay-the-vote-20-the-pyramid-scheme-tickets/14356034",
-      "added": "2026-10-21"
-    },
     {
       "artist": "HARRYWEEN: Harry Styles Dance Night",
       "week": "this",
@@ -49,7 +39,7 @@
         "2026-10-30"
       ],
       "venue": "Gun Lake Casino Resort",
-      "link": "https://gunlakecasino.com/entertainment/",
+      "link": "https://gunlakecasino.com/event/louder-now-3/",
       "added": "2026-10-26"
     },
     {
@@ -59,7 +49,7 @@
         "2026-10-31"
       ],
       "venue": "The Stache (at The Intersection)",
-      "link": "https://www.sectionlive.com/the-intersection/events",
+      "link": "https://www.etix.com/ticket/p/79820442/broadway-rave-a-musical-theater-dance-party-grand-rapids-the-intersection-the-stache",
       "added": "2026-10-19"
     },
     {
@@ -69,7 +59,7 @@
         "2026-10-31"
       ],
       "venue": "Elevation (at The Intersection)",
-      "link": "https://www.sectionlive.com/the-intersection/events",
+      "link": "https://www.etix.com/ticket/p/93300488/daft-disko-a-french-house-disco-halloween-grand-rapids-the-intersection-elevation",
       "added": "2026-10-19"
     },
     {
@@ -541,7 +531,7 @@
         "2026-11-20"
       ],
       "venue": "Gun Lake Casino Resort",
-      "link": "https://gunlakecasino.com/entertainment/",
+      "link": "https://gunlakecasino.com/event/starfarm/",
       "added": "2026-10-26"
     },
     {
@@ -551,7 +541,7 @@
         "2026-11-20"
       ],
       "venue": "Gun Lake Casino Resort",
-      "link": "https://gunlakecasino.com/entertainment/",
+      "link": "https://gunlakecasino.com/event/semple/",
       "added": "2026-10-26"
     },
     {
@@ -631,7 +621,7 @@
         "2026-11-27"
       ],
       "venue": "Gun Lake Casino Resort",
-      "link": "https://gunlakecasino.com/entertainment/",
+      "link": "https://gunlakecasino.com/event/family-tradition-band-2/",
       "added": "2026-10-26"
     },
     {
@@ -934,6 +924,26 @@
       "venue": "Lowell Arts at Sound Check",
       "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Bingo Loco Presents Name That Song",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "The Intersection (main room)",
+      "link": "https://www.etix.com/ticket/p/59283938/bingo-loco-presents-name-that-song-grand-rapids-the-intersection",
+      "added": "2026-10-27"
+    },
+    {
+      "artist": "Girl's Choral Academy Christmas Concert",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://fountainstreet.churchcenter.com/calendar/event/241034801",
+      "added": "2026-10-27"
     },
     {
       "artist": "Kill The Mood + The Half Notes + The Burdens + Redbelly",
@@ -1574,6 +1584,16 @@
       "venue": "Calvin University Chapel",
       "link": "https://calvin.edu/events/campus-choir-and-womens-chorale-spring-concert-1805844600",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Ninth Key",
+      "week": "later",
+      "dates": [
+        "2027-03-26"
+      ],
+      "venue": "The Stache (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/65789691/ninth-key-grand-rapids-the-intersection-the-stache",
+      "added": "2026-10-27"
     },
     {
       "artist": "Trillium Irish Band, with Ironwood",

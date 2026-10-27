@@ -38,45 +38,6 @@ URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-sketch-c
  omedy-show
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-26-dark-divine@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261026T190000
-DTEND;TZID=America/Detroit:20261026T220000
-SUMMARY:Dark Divine
-LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/6
- 7206187/skip-the-line-for-dark-divine-grand-rapids-the-intersection-the-s
- tache (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/67206187/skip-the-line-for-dark-divine-g
- rand-rapids-the-intersection-the-stache
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-26-slay-the-vote-2-0-18@gr-concerts
-DTSTAMP:20261021T120000Z
-DTSTART;TZID=America/Detroit:20261026T190000
-DTEND;TZID=America/Detroit:20261026T220000
-SUMMARY:Slay The Vote 2.0 (18+)
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Dance Party\, 7:00 PM. Tickets/info: https://www.ticketweb.com
- /event/slay-the-vote-20-the-pyramid-scheme-tickets/14356034 (confirm deta
- ils with the venue)
-URL:https://www.ticketweb.com/event/slay-the-vote-20-the-pyramid-scheme-ti
- ckets/14356034
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-26-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261026T190000
-DTEND;TZID=America/Detroit:20261026T220000
-SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
- medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
- )
-URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
- w
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-27-the-story-so-far@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261027T180000
@@ -172,11 +133,11 @@ DTSTART;TZID=America/Detroit:20261028T200000
 DTEND;TZID=America/Detroit:20261028T230000
 SUMMARY:The Longest Johns – The Ends Of The Earth Tour
 LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Folk\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/84
- 259194/skip-the-line-for-the-longest-johns-grand-rapids-the-intersection-
- elevation (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/84259194/skip-the-line-for-the-longest-j
- ohns-grand-rapids-the-intersection-elevation
+DESCRIPTION:Folk\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/75
+ 525446/the-longest-johns-the-ends-of-the-earth-tour-grand-rapids-the-inte
+ rsection-elevation (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/75525446/the-longest-johns-the-ends-of-t
+ he-earth-tour-grand-rapids-the-intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-28-emma-bieniewicz-joe-dreams-statice@gr-concerts
@@ -238,10 +199,10 @@ DTEND;TZID=America/Detroit:20261029T223000
 SUMMARY:American Aquarium
 LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
 DESCRIPTION:Americana\, 7:30 PM. Tickets/info: https://www.etix.com/ticket
- /p/83396174/skip-the-line-for-american-aquarium-grand-rapids-the-intersec
- tion-elevation (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/83396174/skip-the-line-for-american-aqua
- rium-grand-rapids-the-intersection-elevation
+ /p/63031211/american-aquarium-grand-rapids-the-intersection-elevation (co
+ nfirm details with the venue)
+URL:https://www.etix.com/ticket/p/63031211/american-aquarium-grand-rapids-
+ the-intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-chamber-music-society-of-lincoln-center-dv-xewc67@gr-concer
@@ -266,10 +227,10 @@ DTEND;TZID=America/Detroit:20261029T230000
 SUMMARY:Chris Webby – Webby's Arcade Tour
 LOCATION:The Intersection (main room)\, Grand Rapids\, MI
 DESCRIPTION:Hip-Hop\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
- /78733901/skip-the-line-for-chris-webby-grand-rapids-the-intersection (co
- nfirm details with the venue)
-URL:https://www.etix.com/ticket/p/78733901/skip-the-line-for-chris-webby-g
- rand-rapids-the-intersection
+ /80498824/chris-webby-webbys-arcade-tour-grand-rapids-the-intersection (c
+ onfirm details with the venue)
+URL:https://www.etix.com/ticket/p/80498824/chris-webby-webbys-arcade-tour-
+ grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-29-noah-gundersen-rites-of-spring-us-tour-wit-i5rfg6@gr-concer
@@ -872,19 +833,6 @@ DESCRIPTION:Bluegrass\, 7:00 PM. Tickets/info: https://www.ticketweb.com/e
  rm details with the venue)
 URL:https://www.ticketweb.com/event/the-po-ramblin-boys-round-tip-top-delu
  xe-bar-tickets/15045093
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-04-king-of-drag-the-royal-tour@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261104T200000
-DTEND;TZID=America/Detroit:20261104T230000
-SUMMARY:King of Drag: The Royal Tour
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Drag Show\, 8:00 PM. Tickets/info: https://www.ticketweb.com/e
- vent/king-of-drag-the-royal-the-pyramid-scheme-tickets/15019593 (confirm 
- details with the venue)
-URL:https://www.ticketweb.com/event/king-of-drag-the-royal-the-pyramid-sch
- eme-tickets/15019593
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-gvsu-new-music-ensemble-fall-concert@gr-concerts
@@ -2216,6 +2164,19 @@ DESCRIPTION:Hip-Hop\, 7:00 PM. Tickets/info: https://www.ticketweb.com/eve
   with the venue)
 URL:https://www.ticketweb.com/event/kottonmouth-kings-the-pyramid-scheme-t
  ickets/14319294
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-16-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Detroit:20261116T190000
+DTEND;TZID=America/Detroit:20261116T220000
+SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
+ medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
+ )
+URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
+ w
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-17-triumph-the-rock-roll-machine-reloaded@gr-concerts
@@ -3914,6 +3875,30 @@ DESCRIPTION:Bluegrass\, 7:00 PM. Tickets/info: https://www.lowellarts.org/
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-bingo-loco-presents-name-that-song@gr-concerts
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Detroit:20261212T183000
+DTEND;TZID=America/Detroit:20261212T213000
+SUMMARY:Bingo Loco Presents Name That Song
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Party / Game Show\, 6:30 PM. Tickets/info: https://www.etix.co
+ m/ticket/p/59283938/bingo-loco-presents-name-that-song-grand-rapids-the-i
+ ntersection (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/59283938/bingo-loco-presents-name-that-s
+ ong-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-girl-s-choral-academy-christmas-concert@gr-concerts
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Detroit:20261212T120000
+DTEND;TZID=America/Detroit:20261212T150000
+SUMMARY:Girl's Choral Academy Christmas Concert
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 12:00 PM. Tickets/info: https://fountainstreet.church
+ center.com/calendar/event/241034801 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/241034801
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-12-aaron-lewis-and-the-stateliners@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261212T200000
@@ -5051,11 +5036,12 @@ URL:https://www.etix.com/ticket/p/52782004/the-hip-abduction-lost-coast-to
  ur-grand-rapids-the-intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-01-28-feeble-little-horse-bitknot-tour-with-snuggle@gr-concerts
+UID:2027-01-28-feeble-little-horse-bitknot-tour-with-snug-5q2ohc@gr-concer
+ ts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270128T190000
 DTEND;TZID=America/Detroit:20270128T220000
-SUMMARY:feeble little horse – Bitknot Tour (with Snuggle)
+SUMMARY:feeble little horse – Bitknot Tour (with Snuggle) (SOLD OUT)
 LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
 DESCRIPTION:Indie Rock\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  event/feeble-little-horse-bitknot-tour-the-pyramid-scheme-tickets/1492862
@@ -5253,6 +5239,19 @@ DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://grcmc.org/theatre/e
  ith the venue)
 URL:https://grcmc.org/theatre/event/candlelight-tribute-to-queen-and-the-b
  eatles/1705
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-05-spag-this-is-spag-tour@gr-concerts
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Detroit:20270205T210000
+DTEND;TZID=America/Detroit:20270206T000000
+SUMMARY:SPAG – This Is SPAG Tour
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/58616711/spag-this-is-spag-tour-grand-rapids-the-intersection-the-sta
+ che (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/58616711/spag-this-is-spag-tour-grand-ra
+ pids-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-05-calvin-theatre-company-lab-series-an-eveni-10h67h@gr-concer
@@ -5954,6 +5953,19 @@ URL:https://www.etix.com/ticket/p/51052541/geoffrey-asmus-grand-rapids-the
  -intersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-05-wynonna-judd-the-hard-truth-tour@gr-concerts
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Detroit:20270305T190000
+DTEND;TZID=America/Detroit:20270305T220000
+SUMMARY:Wynonna Judd – The Hard Truth Tour
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
+ wynonna-judd-the-hard-truth-tour-grand-rapids-michigan-03-05-2027/event/0
+ 8006554AB803D9A (confirm details with the venue)
+URL:https://www.ticketmaster.com/wynonna-judd-the-hard-truth-tour-grand-ra
+ pids-michigan-03-05-2027/event/08006554AB803D9A
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-06-matt-schuster-acoustic-nights-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270306T190000
@@ -6328,6 +6340,19 @@ LOCATION:Wealthy Theatre\, Grand Rapids\, MI
 DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://grcmc.org/event/the-h
  uey-lewis-and-the-news-experience/1668 (confirm details with the venue)
 URL:https://grcmc.org/event/the-huey-lewis-and-the-news-experience/1668
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-26-ninth-key@gr-concerts
+DTSTAMP:20261027T120000Z
+DTSTART;TZID=America/Detroit:20270326T193000
+DTEND;TZID=America/Detroit:20270326T223000
+SUMMARY:Ninth Key
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:30 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/65789691/ninth-key-grand-rapids-the-intersection-the-stache (confirm 
+ details with the venue)
+URL:https://www.etix.com/ticket/p/65789691/ninth-key-grand-rapids-the-inte
+ rsection-the-stache
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-27-the-blues-brothers-experience@gr-concerts
