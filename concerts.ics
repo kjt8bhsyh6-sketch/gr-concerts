@@ -38,95 +38,6 @@ URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-sketch-c
  omedy-show
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-27-the-story-so-far@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261027T180000
-DTEND;TZID=America/Detroit:20261027T210000
-SUMMARY:The Story So Far
-LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Punk\, 6:00 PM. Tickets/info: https://www.ticketmaster.com/the
- -story-so-far-grand-rapids-michigan-10-27-2026/event/08006487EFA691A3 (co
- nfirm details with the venue)
-URL:https://www.ticketmaster.com/the-story-so-far-grand-rapids-michigan-10
- -27-2026/event/08006487EFA691A3
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-27-outlander-in-concert@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261027T193000
-DTEND;TZID=America/Detroit:20261027T223000
-SUMMARY:Outlander In Concert
-LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
-DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.devosperforman
- cehall.com/events/2026/outlander-in-concert (confirm details with the ven
- ue)
-URL:https://www.devosperformancehall.com/events/2026/outlander-in-concert
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-27-evan-honer-it-s-an-even-longer-road-tour@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261027T200000
-DTEND;TZID=America/Detroit:20261027T230000
-SUMMARY:Evan Honer – It's An Even Longer Road Tour
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Folk\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/53
- 053310/evan-honer-its-a-longer-road-tour-grand-rapids-the-intersection-el
- evation (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/53053310/evan-honer-its-a-longer-road-to
- ur-grand-rapids-the-intersection-elevation
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-27-rehash-the-flooks-vert-terms@gr-concerts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261027T190000
-DTEND;TZID=America/Detroit:20261027T220000
-SUMMARY:Rehash + The Flooks + Vert Terms
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
- event/rehash-the-flooks-the-pyramid-scheme-tickets/14888743 (confirm deta
- ils with the venue)
-URL:https://www.ticketweb.com/event/rehash-the-flooks-the-pyramid-scheme-t
- ickets/14888743
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-27-free-improv-jam-a-lama-ding-dong-stay-for-fz3s11@gr-concert
- s
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261027T190000
-DTEND;TZID=America/Detroit:20261027T220000
-SUMMARY:FREE - Improv Jam-a-lama-ding-dong (Stay for the sing-song!) (Oct 
- 27\, Nov 24\, Dec 29\, Jan 26)
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/fr
- ee-improv-jam-a-lama-ding-dong-stay-for-the-sing-song (confirm details wi
- th the venue)
-URL:https://www.crowdwork.com/e/free-improv-jam-a-lama-ding-dong-stay-for-
- the-sing-song
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-27-ptom-halloween-costume-party-ft-ions-tool-4q6zun@gr-concert
- s
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261027T193000
-DTEND;TZID=America/Detroit:20261027T223000
-SUMMARY:PTOM Halloween Costume Party ft. IONS (Tool Tribute) + 9 Acts
-LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 7:30 PM. Tickets/info: https://parktheatreholland.org/ 
- (confirm details with the venue)
-URL:https://parktheatreholland.org/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-27-grcc-choir-concert-royce-auditorium@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261027T193000
-DTEND;TZID=America/Detroit:20261027T223000
-SUMMARY:GRCC Choir Concert (Royce Auditorium)
-LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
-DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://www.grcc.edu/events/gr
- cc-music-presents-choral-concert (confirm details with the venue)
-URL:https://www.grcc.edu/events/grcc-music-presents-choral-concert
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-28-the-longest-johns-the-ends-of-the-earth-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261028T200000
@@ -283,6 +194,19 @@ LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
  /grcc-music-presents-guitar-night-0 (confirm details with the venue)
 URL:https://www.grcc.edu/events/grcc-music-presents-guitar-night-0
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-emo-night-free-21@gr-concerts
+DTSTAMP:20261028T120000Z
+DTSTART;TZID=America/Detroit:20261029T170000
+DTEND;TZID=America/Detroit:20261029T200000
+SUMMARY:Emo Night (free\, 21+)
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Emo\, 5:00 PM. Tickets/info: https://www.ticketweb.com/event/e
+ mo-night-tip-top-deluxe-bar-tickets/14403674 (confirm details with the ve
+ nue)
+URL:https://www.ticketweb.com/event/emo-night-tip-top-deluxe-bar-tickets/1
+ 4403674
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-30-capella-fall-concert-come-home-free@gr-concerts
@@ -793,6 +717,19 @@ URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
  w
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-02-metal-mondays-free-21@gr-concerts
+DTSTAMP:20261028T120000Z
+DTSTART;TZID=America/Detroit:20261102T150000
+DTEND;TZID=America/Detroit:20261102T180000
+SUMMARY:Metal Mondays (free\, 21+)
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Metal\, 3:00 PM. Tickets/info: https://www.ticketweb.com/event
+ /metal-mondays-tip-top-deluxe-bar-tickets/14403694 (confirm details with 
+ the venue)
+URL:https://www.ticketweb.com/event/metal-mondays-tip-top-deluxe-bar-ticke
+ ts/14403694
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-03-calvin-campus-choir-women-s-chorale-concert@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261103T193000
@@ -804,6 +741,19 @@ DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://calvin.edu/events/camp
  venue)
 URL:https://calvin.edu/events/campus-choir-and-womens-chorale-concert-1793
  752200
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-03-tip-top-tuesday-comedy-free-21@gr-concerts
+DTSTAMP:20261028T120000Z
+DTSTART;TZID=America/Detroit:20261103T210000
+DTEND;TZID=America/Detroit:20261104T000000
+SUMMARY:Tip Top Tuesday Comedy (free\, 21+)
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.ticketweb.com/even
+ t/tip-top-tuesday-comedy-tip-top-deluxe-bar-tickets/14403704 (confirm det
+ ails with the venue)
+URL:https://www.ticketweb.com/event/tip-top-tuesday-comedy-tip-top-deluxe-
+ bar-tickets/14403704
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-04-the-string-cheese-incident-just-keep-spinn-d4afau@gr-concer
@@ -2737,6 +2687,21 @@ URL:https://www.ticketweb.com/event/high-score-comedy-round-11-the-pyramid
  -scheme-tickets/15040133
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-24-free-improv-jam-a-lama-ding-dong-stay-for-1rmv6r@gr-concert
+ s
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20261124T190000
+DTEND;TZID=America/Detroit:20261124T220000
+SUMMARY:FREE - Improv Jam-a-lama-ding-dong (Stay for the sing-song!) (Nov 
+ 24\, Dec 29\, Jan 26)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/fr
+ ee-improv-jam-a-lama-ding-dong-stay-for-the-sing-song (confirm details wi
+ th the venue)
+URL:https://www.crowdwork.com/e/free-improv-jam-a-lama-ding-dong-stay-for-
+ the-sing-song
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-25-underoath-define-the-great-line-20th-anniv-6ycfdq@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -3497,6 +3462,19 @@ DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
  enue)
 URL:https://calvin.edu/events/calvin-theatre-company-miracle-worker-179651
  7000
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-vespa-and-together-again@gr-concerts
+DTSTAMP:20261028T120000Z
+DTSTART;TZID=America/Detroit:20261205T200000
+DTEND;TZID=America/Detroit:20261205T230000
+SUMMARY:Vespa and Together Again
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Indie Rock\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/vespa-and-together-again-tip-top-deluxe-bar-tickets/14403644 (confi
+ rm details with the venue)
+URL:https://www.ticketweb.com/event/vespa-and-together-again-tip-top-delux
+ e-bar-tickets/14403644
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
@@ -4283,6 +4261,19 @@ DESCRIPTION:Holiday\, 7:00 PM. Tickets/info: https://gryouthchorus.org/eve
 URL:https://gryouthchorus.org/event/holiday-concert-7pm/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-19-emo-nite@gr-concerts
+DTSTAMP:20261028T120000Z
+DTSTART;TZID=America/Detroit:20261219T210000
+DTEND;TZID=America/Detroit:20261220T000000
+SUMMARY:Emo Nite
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.etix.com/tick
+ et/p/83786413/emo-nite-grand-rapids-the-intersection-elevation (confirm d
+ etails with the venue)
+URL:https://www.etix.com/ticket/p/83786413/emo-nite-grand-rapids-the-inter
+ section-elevation
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-20-possessed-by-paul-james-with-coleman-williams@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261220T190000
@@ -4603,6 +4594,17 @@ DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
  irm details with the venue)
 URL:https://www.ticketmaster.com/six-touring-grand-rapids-michigan-01-12-2
  027/event/080064FDC7A2A742
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-12-northview-high-school-choirs-concert@gr-concerts
+DTSTAMP:20261028T120000Z
+DTSTART;TZID=America/Detroit:20270112T173000
+DTEND;TZID=America/Detroit:20270112T203000
+SUMMARY:Northview High School Choirs Concert
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 5:30 PM. Tickets/info: https://fountainstreet.churchc
+ enter.com/calendar/event/241104974 (confirm details with the venue)
+URL:https://fountainstreet.churchcenter.com/calendar/event/241104974
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-13-broadway-grand-rapids-six@gr-concerts

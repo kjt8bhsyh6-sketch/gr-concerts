@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-27",
-  "count": 172,
+  "generated": "2026-10-28",
+  "count": 177,
   "pending": [
     {
       "artist": "HARRYWEEN: Harry Styles Dance Night",
@@ -11,6 +11,16 @@
       "venue": "The Stache (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/83427799/harryweenharry-styles-dance-night-grand-rapids-the-intersection-the-stache",
       "added": "2026-10-21"
+    },
+    {
+      "artist": "Emo Night (free, 21+)",
+      "week": "this",
+      "dates": [
+        "2026-10-29"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/emo-night-tip-top-deluxe-bar-tickets/14403674",
+      "added": "2026-10-28"
     },
     {
       "artist": "Dancin' With The Devil ft. Garbage Angel (18+)",
@@ -73,6 +83,16 @@
       "added": "2026-10-21"
     },
     {
+      "artist": "Metal Mondays (free, 21+)",
+      "week": "next",
+      "dates": [
+        "2026-11-02"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/metal-mondays-tip-top-deluxe-bar-tickets/14403694",
+      "added": "2026-10-28"
+    },
+    {
       "artist": "Calvin Campus Choir & Women's Chorale Concert",
       "week": "next",
       "dates": [
@@ -81,6 +101,16 @@
       "venue": "Calvin University Chapel",
       "link": "https://calvin.edu/events/campus-choir-and-womens-chorale-concert-1793752200",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Tip Top Tuesday Comedy (free, 21+)",
+      "week": "next",
+      "dates": [
+        "2026-11-03"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/tip-top-tuesday-comedy-tip-top-deluxe-bar-tickets/14403704",
+      "added": "2026-10-28"
     },
     {
       "artist": "The Po' Ramblin' Boys wsg Round Creek String Band and Red Thyme Duo",
@@ -171,16 +201,6 @@
       "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/42446718/mega-80s-the-ultimate-80s-retro-party-grand-rapids-the-intersection-elevation",
       "added": "2026-10-20"
-    },
-    {
-      "artist": "MEXICUBA: Rhythms Without Borders",
-      "week": "next",
-      "dates": [
-        "2026-11-07"
-      ],
-      "venue": "Fountain Street Church",
-      "link": "https://fountainstreet.churchcenter.com/calendar/event/234752562",
-      "added": "2026-10-22"
     },
     {
       "artist": "Best of the Best (of the best) -Improv Comedy Show (Nov 7–Dec 5)",
@@ -796,6 +816,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Vespa and Together Again",
+      "week": "later",
+      "dates": [
+        "2026-12-05"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/vespa-and-together-again-tip-top-deluxe-bar-tickets/14403644",
+      "added": "2026-10-28"
+    },
+    {
       "artist": "J Oscar Bittinger: A Winter's Tune – Acoustic Stew Music Guild",
       "week": "later",
       "dates": [
@@ -1046,6 +1076,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Emo Nite",
+      "week": "later",
+      "dates": [
+        "2026-12-19"
+      ],
+      "venue": "Elevation (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/83786413/emo-nite-grand-rapids-the-intersection-elevation",
+      "added": "2026-10-28"
+    },
+    {
       "artist": "Sweet Dee and the Wild Honeys, with Bobcat Opossum",
       "week": "later",
       "dates": [
@@ -1154,6 +1194,16 @@
       "venue": "Lowell Arts at Sound Check",
       "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Northview High School Choirs Concert",
+      "week": "later",
+      "dates": [
+        "2027-01-12"
+      ],
+      "venue": "Fountain Street Church",
+      "link": "https://fountainstreet.churchcenter.com/calendar/event/241104974",
+      "added": "2026-10-28"
     },
     {
       "artist": "House Party: A Sweaty Love-Letter To The 2010s Rager",
