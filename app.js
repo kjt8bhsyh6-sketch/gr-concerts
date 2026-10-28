@@ -53,9 +53,9 @@
       <div class="read-maps">${GRMAP.buttons(c.venue)}</div>
       <p class="read-tags"><span class="tag read-tag">${h(c.genre)}</span></p>
       ${addedLine(c)}
+      ${GRPane.ticketsHTML(c.affiliate || c.link, 'Tickets', aff)}
       ${GRPane.bioHTML(bio ? [{ title: c.artist, text: bio.text, source: bio.source }] : [])}
       <div class="read-actions">${Marks.buttons(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(share)}">Share</button>${GRPane.calHTML(id, GRICS.google(c))}</div>
-      ${GRPane.ticketsHTML(c.affiliate || c.link, 'Tickets', aff)}
     </article>`;
   }
   // ---- Just Announced: newest additions first (upcoming shows; seasonal events live on seasonal.html) ----

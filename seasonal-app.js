@@ -92,9 +92,9 @@
       <div class="read-maps">${GRMAP.buttons(e.location)}</div>
       <p class="read-tags"><span class="tag read-tag">${h(e.type)}</span>${season ? ` <span class="tag read-tag">${h(season)}</span>` : ''}</p>
       ${isNew(e) ? `<p class="added-on">Added ${new Date(e.added + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>` : ''}
+      ${GRPane.ticketsHTML(e.link, 'Tickets', aff)}
       ${GRPane.bioHTML(bio ? [{ title: key, text: bio.text, source: bio.source }] : [])}
       <div class="read-actions">${Marks.buttons(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(e.name)}">Share</button>${GRPane.calHTML(id, calLink(e))}</div>
-      ${GRPane.ticketsHTML(e.link, 'Tickets', aff)}
     </article>`;
   }
   // an event runs from `sort` to `end` (optional; one-day event if missing)

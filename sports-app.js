@@ -53,9 +53,9 @@
       <div class="read-maps">${GRMAP.buttons(g.venue)}</div>
       <p class="read-tags"><span class="tag read-tag">${h(sport(g.team))}</span></p>
       ${addedLine(g)}
+      ${GRPane.ticketsHTML(g.link, 'Tickets', false)}
       ${GRPane.bioHTML(bios)}
       <div class="read-actions">${Marks.buttons(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>${GRPane.calHTML(id, GRICS.google(g.ev))}</div>
-      ${GRPane.ticketsHTML(g.link, 'Tickets', false)}
     </article>`;
   }
   function noteDetail(n) {
@@ -65,10 +65,10 @@
       <p class="read-when">Off-season</p>
       ${n.venue ? `<p class="read-place">${h(n.venue)}</p><div class="read-maps">${GRMAP.buttons(n.venue)}</div>` : ''}
       <p class="read-tags"><span class="tag read-tag">${h(sport(n.team))}</span> <span class="tag read-tag off">Off-season</span></p>
-      <p class="read-extra">${h(n.text)}</p>
       ${addedLine(n)}
-      ${GRPane.bioHTML(bio ? [bio] : [])}
       ${GRPane.ticketsHTML(n.link, 'Season info', false)}
+      <p class="read-extra">${h(n.text)}</p>
+      ${GRPane.bioHTML(bio ? [bio] : [])}
     </article>`;
   }
   const DR = DateRange.init({ today, lastDate: games.length ? games[games.length - 1].date : '', onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;

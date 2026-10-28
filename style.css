@@ -270,7 +270,7 @@ button.agenda-row .row-body{min-width:0;padding:0}
 .tag.read-tag{background:var(--day);color:#323130;border:1px solid var(--fluent-line);font-weight:650}
 .tag.read-tag.off{background:#e5e7eb;color:var(--navy)}
 .read-extra{margin:.65rem 0 0;line-height:1.5}
-.read-bio{margin:1rem 0 .4rem;padding:.85rem .95rem;background:#faf9f8;border:1px solid var(--fluent-line);border-radius:8px}
+.read-bio{margin:.35rem 0 .4rem;padding:.85rem .95rem;background:#faf9f8;border:1px solid var(--fluent-line);border-radius:8px}
 .read-bio h3{margin:.85rem 0 .3rem;padding:0;border:0;font-size:1rem}
 .read-bio h3:first-child{margin-top:0}
 .read-bio p{margin:0 0 .6rem;line-height:1.5}
@@ -279,7 +279,7 @@ button.agenda-row .row-body{min-width:0;padding:0}
 .read-actions .b{gap:.35rem;min-height:44px}
 .read-cals{display:contents}
 .read-actions svg,.read-maps svg{width:18px;height:18px;display:block;flex:0 0 auto}
-.read-cta{margin:.85rem 0 .2rem}
+.read-cta{margin:.55rem 0 .15rem}
 a.read-tickets.b.primary{grid-column:auto;width:100%;max-width:22rem;min-height:48px;padding:.6rem 1.1rem;border-radius:4px;font-size:1.02rem;font-weight:700;background:var(--ms);border-color:var(--ms);color:#fff}
 a.read-tickets.b.primary:hover{background:var(--ms-hover);border-color:var(--ms-hover);filter:none;color:#fff}
 .read-ftc{margin:.45rem 0 0;max-width:36rem;font-size:.8rem;color:var(--muted);line-height:1.45}
