@@ -7,7 +7,8 @@
   --going:#dbeafe;--going-line:#2563eb;--going-ink:#1e3a8a;
   --interested-bg:#ccfbf1;--interested:#0d9488;--interested-ink:#115e59;--mark-going:#2563eb;
   --focus:var(--navy);--focus-on-navy:#fff;
-  --fluent:#0f6cbd;--fluent-hover:#115ea3;--fluent-line:#edebe9;--fluent-ink:#201f1e;--fluent-muted:#605e5c
+  --fluent:#0f6cbd;--fluent-hover:#115ea3;--fluent-line:#edebe9;--fluent-ink:#201f1e;--fluent-muted:#605e5c;
+  --ms:#0078D4;--ms-hover:#106EBE;--ms-sel:#deecf9;--day:#f3f2f1
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.4}
@@ -22,6 +23,7 @@ header:has(.mast-search){grid-template-columns:minmax(0,1fr) minmax(0,max-conten
 h1{margin:0;font-size:clamp(1.65rem,5.4vw,2.45rem);line-height:1.15}
 #updated{opacity:.92;font-size:.9rem;margin:.6rem 0 0}
 main{max-width:1100px;margin:auto;padding:1rem}
+main:has(.workspace){max-width:1240px}
 h2{border-bottom:3px solid var(--accent);padding-bottom:.3rem;margin:1.6rem 0 1rem;font-size:1.35rem}
 section>h2:first-child{margin-top:0}
 main>section{margin-bottom:1.5rem}
@@ -197,62 +199,86 @@ header{position:relative}
 }
 .mast :focus-visible{outline-color:var(--focus-on-navy)}
 
-/* ---- Outlook agenda rows: time | title + venue | maps | Tickets ---- */
+/* ---- Three-pane agenda: week rail | dense list | reading pane ---- */
+.workspace{display:flex;flex-direction:column;background:#fff;border:1px solid var(--fluent-line);border-radius:8px;overflow:hidden;min-height:24rem}
+.rail{display:flex;flex-direction:row;background:#faf9f8;border-bottom:1px solid var(--fluent-line)}
+button.rail-btn{flex:1 1 0;display:flex;align-items:center;justify-content:center;gap:.4rem;min-height:44px;margin:0;padding:.5rem .55rem;font:inherit;font-weight:650;font-size:.92rem;line-height:1.2;white-space:nowrap;color:var(--fluent-ink);background:transparent;border:0;border-radius:0;box-shadow:none;cursor:pointer}
+button.rail-btn:hover{background:var(--day)}
+button.rail-btn[aria-pressed="true"]{background:var(--ms-sel);color:var(--ms);box-shadow:inset 0 -3px 0 var(--ms)}
+button.rail-btn[aria-pressed="true"]:hover{background:var(--ms-sel)}
+.rail-count{font-size:.75rem;font-weight:700;color:var(--fluent-muted);background:#fff;border-radius:99px;min-width:1.35rem;padding:.05rem .4rem;text-align:center}
+button.rail-btn[aria-pressed="true"] .rail-count{color:var(--ms)}
+.listpane{min-width:0}
+.listpane .grid{border:0;border-radius:0;background:transparent}
+.list-note{margin:0;padding:.55rem .85rem;background:#faf9f8;border-bottom:1px solid var(--fluent-line);font-size:.88rem;color:var(--fluent-ink)}
 .day{display:flex;flex-direction:column;min-width:0}
-.day + .day,.grid>.season-h + .day{border-top:1px solid var(--fluent-line)}
-.day-h{margin:0;padding:.85rem 1rem .2rem;font-size:1.05rem;font-weight:700;line-height:1.3;color:var(--fluent-ink);background:#fff}
-.grid>.season-h{margin:0;padding:.65rem 1rem .4rem;font-size:1rem;background:#f3f2f1;border-bottom:1px solid var(--fluent-line)}
-.grid>.few{margin:0;padding:.85rem 1rem}
-.card{display:grid;grid-template-columns:4.85rem minmax(0,1fr) auto;grid-template-areas:"time body tickets" "maps maps maps" "acts acts acts";column-gap:.6rem;row-gap:.1rem;align-items:start;padding:.45rem .7rem .35rem}
-.card:not(:has(.row-maps)){grid-template-areas:"time body tickets" "acts acts acts"}
-.card:not(:has(.row-actions)){grid-template-areas:"time body tickets" "maps maps maps"}
-.card:not(:has(.row-maps)):not(:has(.row-actions)){grid-template-areas:"time body tickets"}
-.day .card:last-child{border-bottom:0}
-.row-time{grid-area:time;padding-top:.45rem;color:var(--fluent-muted);font-size:.92rem;font-weight:600;line-height:1.25}
-.row-time time{font-weight:600}
-.row-tz{display:block;font-size:.72rem;font-weight:800;letter-spacing:.04em}
-.row-thru{display:block;margin-top:.12rem;font-size:.75rem;font-weight:600;color:var(--fluent-muted)}
-.tk-short{display:none}
-@media (max-width:799px){
-  a.row-tickets .tk-full{display:none}
-  a.row-tickets .tk-short{display:inline}
+.workspace .day-h{margin:0;padding:.4rem .85rem;font-size:.92rem;font-weight:700;line-height:1.3;color:var(--fluent-ink);background:var(--day);border:0;border-bottom:1px solid var(--fluent-line)}
+.grid>.few{margin:0;padding:1rem .9rem}
+button.agenda-row{display:grid;grid-template-columns:4.85rem minmax(0,1fr);gap:.15rem .7rem;align-items:start;width:100%;min-height:44px;margin:0;padding:.5rem .75rem .5rem .7rem;text-align:left;font:inherit;font-weight:400;line-height:1.3;white-space:normal;color:var(--fluent-ink);background:#fff;border:0;border-bottom:1px solid var(--fluent-line);border-radius:0;box-shadow:none;cursor:pointer}
+button.agenda-row:hover{background:#faf9f8}
+button.agenda-row[aria-selected="true"]{background:var(--ms-sel);box-shadow:inset 3px 0 0 var(--ms)}
+button.agenda-row[aria-selected="true"]:hover{background:var(--ms-sel)}
+button.agenda-row.mark-going:not([aria-selected="true"]){box-shadow:inset 3px 0 0 var(--mark-going)}
+button.agenda-row.mark-interested:not([aria-selected="true"]){box-shadow:inset 3px 0 0 var(--interested)}
+button.agenda-row.mark-going .row-title::after{content:" ★";color:var(--mark-going)}
+button.agenda-row.mark-interested .row-title::after{content:" ♥";color:var(--interested)}
+button.agenda-row.flash{outline:3px solid var(--ms);outline-offset:-3px}
+button.agenda-row:focus-visible,button.rail-btn:focus-visible{outline:3px solid var(--ms);outline-offset:-3px;z-index:1}
+button.agenda-row .row-time{padding:0;color:var(--fluent-muted);font-size:.85rem;font-weight:650;line-height:1.25}
+button.agenda-row .row-time time{font-weight:650}
+button.agenda-row .row-tz{display:block;font-size:.68rem;font-weight:800;letter-spacing:.04em}
+button.agenda-row .row-thru{display:block;margin-top:.1rem;font-size:.72rem;font-weight:600}
+button.agenda-row .row-time.is-long{font-size:.75rem}
+button.agenda-row .row-body{min-width:0;padding:0}
+.row-title{display:block;font-weight:700;font-size:.95rem;overflow-wrap:anywhere}
+.row-preview{display:block;margin-top:.08rem;color:var(--fluent-muted);font-size:.82rem;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.readpane{min-width:0;background:#fff}
+.read-body{padding:1rem 1.15rem 1.5rem}
+.read-empty{margin:0;padding:1.6rem .2rem;color:var(--fluent-muted)}
+.read-card .read-title{margin:0 0 .35rem;padding:0;border:0;font-size:1.4rem;line-height:1.25;overflow-wrap:anywhere}
+.read-title .new{font-size:.72rem;letter-spacing:.06em;padding:.18rem .48rem;margin-left:.45rem;vertical-align:middle}
+.read-when{margin:0;color:var(--fluent-muted);font-weight:650}
+.read-place{margin:.75rem 0 .15rem;font-size:1.02rem;font-weight:700}
+.read-maps{display:flex;flex-wrap:wrap;gap:.35rem;margin:.3rem 0 .7rem}
+.read-maps .b.map{background:#fff;border:1px solid var(--fluent-line);color:var(--fluent-ink);min-height:44px;padding:.4rem .75rem;gap:.35rem;font-weight:650}
+.read-maps .b.map:hover{background:var(--day)}
+.read-tags{margin:.15rem 0 .35rem}
+.tag.read-tag{background:var(--day);color:#323130;border:1px solid var(--fluent-line);font-weight:650}
+.tag.read-tag.off{background:#e5e7eb;color:var(--navy)}
+.read-extra{margin:.65rem 0 0;line-height:1.5}
+.read-bio{margin:1rem 0 .4rem;padding:.85rem .95rem;background:#faf9f8;border:1px solid var(--fluent-line);border-radius:8px}
+.read-bio h3{margin:.85rem 0 .3rem;padding:0;border:0;font-size:1rem}
+.read-bio h3:first-child{margin-top:0}
+.read-bio p{margin:0 0 .6rem;line-height:1.5}
+.read-bio .bio-src{margin:0 0 .2rem;font-size:.8rem;color:var(--muted)}
+.read-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;margin:1rem 0 .25rem}
+.read-actions .b{gap:.35rem;min-height:44px}
+.read-cals{display:contents}
+.read-actions svg,.read-maps svg{width:18px;height:18px;display:block;flex:0 0 auto}
+.read-cta{margin:.85rem 0 .2rem}
+a.read-tickets.b.primary{grid-column:auto;width:100%;max-width:22rem;min-height:48px;padding:.6rem 1.1rem;border-radius:4px;font-size:1.02rem;font-weight:700;background:var(--ms);border-color:var(--ms);color:#fff}
+a.read-tickets.b.primary:hover{background:var(--ms-hover);border-color:var(--ms-hover);filter:none;color:#fff}
+.read-ftc{margin:.45rem 0 0;max-width:36rem;font-size:.8rem;color:var(--muted);line-height:1.45}
+.read-back{margin:.65rem .75rem .15rem;min-height:44px;padding:.45rem .9rem;background:#fff;border:1px solid var(--fluent-line);color:var(--ms);font-weight:700}
+.read-back:hover{background:var(--ms-sel)}
+@media (max-width:899px){
+  .readpane{display:none}
+  body.is-reading .mast,body.is-reading footer,body.is-reading main>*:not(.workspace),body.is-reading .rail,body.is-reading .listpane{display:none}
+  body.is-reading .readpane{display:block;min-height:100dvh}
+  body.is-reading main{padding:0;max-width:none}
+  body.is-reading .workspace{border:0;border-radius:0;min-height:100dvh}
 }
-.row-time.is-long{font-size:.78rem;padding-top:.35rem}
-.row-body{grid-area:body;min-width:0;padding-top:.28rem}
-.card-venue{color:var(--fluent-muted);font-weight:400}
-.card-opp{margin:.05rem 0 0;font-size:.92rem}
-.card-tags{margin:.2rem 0 0}
-.card .tag{background:#f3f2f1;color:#323130;border:1px solid var(--fluent-line);font-weight:600}
-.card .tag.off{background:#e5e7eb;color:var(--navy)}
-.added-on{font-size:.78rem!important;color:#3d4668;font-weight:600}
-.when{color:var(--fluent-muted);font-size:.88rem}
-.row-maps{grid-area:maps;display:flex;flex-wrap:wrap;align-items:center;gap:.1rem}
-.row-maps .b.map{background:transparent;border-color:transparent;color:var(--fluent-muted);font-weight:600;min-height:44px;padding:.35rem .5rem}
-.row-maps .b.map:hover{background:#f3f2f1}
-.row-actions{grid-area:acts;margin:0;padding:.05rem 0 .1rem;border:0;background:transparent;gap:.1rem .15rem}
-.card .actions>.b{min-height:44px;background:transparent;border-color:transparent}
-.card:hover{background:#faf9f8}
-.card.is-new:hover{background:#eef3f9}
-.card.mark-going:hover{background:#e7f1ff}
-.card.mark-interested:hover{background:#e7f7f4}
-a.row-tickets.b.primary{grid-area:tickets;align-self:start;width:auto;min-width:44px;min-height:44px;margin-top:.15rem;padding:.4rem .7rem;grid-column:auto;border-radius:4px;font-size:.92rem;font-weight:600;background:transparent;border-color:transparent;color:var(--fluent)}
-a.row-tickets.b.primary:hover{background:#eff6fc;border-color:transparent;filter:none;color:var(--fluent-hover)}
-.card :focus-visible{outline-offset:2px}
-@media (min-width:800px){
-  .card,.card:not(:has(.row-maps)),.card:not(:has(.row-actions)),.card:not(:has(.row-maps)):not(:has(.row-actions)){
-    grid-template-columns:7.25rem minmax(0,1fr) auto auto;column-gap:.85rem;align-items:center;padding:.4rem 1rem .35rem .85rem}
-  .card{grid-template-areas:"time body maps tickets" "time acts maps tickets"}
-  .card:not(:has(.row-maps)){grid-template-columns:7.25rem minmax(0,1fr) auto;grid-template-areas:"time body tickets" "time acts tickets"}
-  .card:not(:has(.row-actions)){grid-template-areas:"time body maps tickets"}
-  .card:not(:has(.row-maps)):not(:has(.row-actions)){grid-template-columns:7.25rem minmax(0,1fr) auto;grid-template-areas:"time body tickets"}
-  .row-time{padding-top:0}
-  .row-body{padding-top:0}
-  .row-maps,.row-actions{align-self:center}
-  a.row-tickets.b.primary{align-self:center;margin-top:0;padding:.45rem 1rem;background:var(--fluent);border-color:var(--fluent);color:#fff;min-width:6.5rem}
-  a.row-tickets.b.primary:hover{background:var(--fluent-hover);border-color:var(--fluent-hover);color:#fff}
+@media (min-width:900px){
+  .workspace{display:grid;grid-template-columns:12.25rem minmax(0,1.2fr) minmax(17rem,.95fr);grid-template-rows:minmax(28rem,calc(100dvh - 11rem));min-height:32rem}
+  .rail{flex-direction:column;border-bottom:0;border-right:1px solid var(--fluent-line);padding:.35rem 0;overflow:auto}
+  button.rail-btn{flex:0 0 auto;justify-content:space-between;padding:.6rem .85rem .6rem .75rem;text-align:left}
+  button.rail-btn[aria-pressed="true"]{box-shadow:inset 3px 0 0 var(--ms)}
+  .listpane,.readpane{overflow:auto;min-height:0}
+  .workspace .day-h{position:sticky;top:0;z-index:1}
+  .read-bar{display:none}
 }
 @media (max-width:560px){
-  .grid{border-radius:6px}
-  .day-h{padding:.75rem .7rem .15rem;font-size:1rem}
-  .card{padding:.4rem .55rem .3rem;column-gap:.45rem}
+  .workspace{border-radius:6px}
+  button.agenda-row{padding:.48rem .55rem .48rem .5rem;column-gap:.45rem;grid-template-columns:4.35rem minmax(0,1fr)}
+  .workspace .day-h{padding:.4rem .6rem}
 }

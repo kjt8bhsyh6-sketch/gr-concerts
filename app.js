@@ -31,58 +31,32 @@
   const shows = CONCERTS.slice().sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
 
   // ---- favorites ("I'm going" / "I'm interested"): shared code in marks.js, stored only in this browser ----
-  Marks.seedDemo(shows.filter(c => c.week === 'this').map(cid));
+  Marks.seedDemo(shows.filter(c => c.week === 'this' && endOf(c) >= today).map(cid));
 
   $('#updated').textContent = 'Last updated ' + LAST_UPDATED;
 
   const BIO = (typeof BIOS !== 'undefined' && BIOS) || {};
-  // Agenda row: clock (and ET) in the left column. The day lives in the group header. A multi-night end date stays on the clock.
-  const shortMD = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-  function timeCell(date, time, end) {
-    const span = end && end > date;
-    if (!time) return `<div class="row-time is-long"><time datetime="${h(date)}">${h(shortMD(date))}${span ? ` – ${h(shortMD(end))}` : ''}</time></div>`;
-    const clock = /^(\d{1,2}):(\d{2})\s*([AP]M)$/i.exec(time);
-    let dt = date;
-    if (clock) { let hh = +clock[1] % 12; if (/p/i.test(clock[3])) hh += 12; dt = `${date}T${String(hh).padStart(2, '0')}:${clock[2]}`; }
-    const thru = span ? `<span class="row-thru">– ${h(shortMD(end))}</span>` : '';
-    return `<div class="row-time${time.length > 8 ? ' is-long' : ''}"><time datetime="${h(dt)}">${h(time)}</time><span class="row-tz">ET</span>${thru}</div>`;
-  }
-  function groupDays(items, dateOf, renderItem, tag) {
-    const t = tag || 'h3';
-    let html = '', last = '', buf = '', label = '';
-    const flush = () => { if (buf) html += `<section class="day"><${t} class="day-h">${h(label)}</${t}>${buf}</section>`; };
-    items.forEach(item => {
-      const d = dateOf(item);
-      if (d !== last) {
-        flush(); buf = ''; last = d;
-        label = new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-      }
-      buf += renderItem(item);
-    });
-    flush();
-    return html;
-  }
-  function actions(id, title, cal, link, label, aff, artist, place) {
-    const bio = artist && BIO[artist];
-    const shortLabel = /ticket/i.test(label) ? 'Tickets' : 'Info';
-    const tickets = `<a class="b primary row-tickets" href="${h(link)}" target="_blank" rel="${aff ? 'sponsored noopener' : 'noopener'}" aria-label="${h(label)}"><span class="tk-full">${h(label)}</span><span class="tk-short">${shortLabel}</span></a>`;
-    const maps = place ? `<div class="row-maps">${GRMAP.buttons(place)}</div>` : '';
-    const bar = `<div class="actions row-actions${bio ? ' has-bio' : ''}">
-      ${bio ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : ''}
-      ${Marks.buttons(id)}
-      <button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
-      ${cal ? `<button type="button" class="b ics" data-id="${id}" aria-label="Add to Apple Calendar" title="Add to Apple Calendar"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.4 6.6c-.7.8-1.8 1.4-2.9 1.3-.1-1.1.4-2.3 1.1-3 0 0 .1 0 .1-.1.8-.7 2.1-1.2 3.2-1.2.1 1.2-.3 2.3-1.5 3zm.6 1.6c-1.8-.1-3.3 1-4.1 1-.9 0-2.2-1-3.6-1-1.9 0-3.6 1.1-4.6 2.8-2 3.4-.5 8.4 1.4 11.2.9 1.4 2 2.9 3.4 2.8 1.4 0 1.9-.9 3.5-.9s2.1.9 3.5.9c1.5 0 2.4-1.3 3.3-2.7 1-1.6 1.5-3.1 1.5-3.2-.1 0-2.9-1.1-2.9-4.4 0-2.7 2.2-4 2.3-4.1-1.3-1.8-3.2-2.1-3.7-2.4z"/></svg></button><a class="b gcal" data-id="${id}" href="${h(cal)}" target="_blank" rel="noopener" aria-label="Add to Google Calendar" title="Add to Google Calendar"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M21.6 12.3c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.8 3-4.3 3-7.3z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.5l-3.2-2.5c-.9.6-2 .9-3.4.9-2.6 0-4.8-1.8-5.6-4.2H3.1v2.6A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.4 13.7a6 6 0 0 1 0-3.4V7.7H3.1a10 10 0 0 0 0 8.6l3.3-2.6z"/><path fill="#EA4335" d="M12 5.8c1.5 0 2.8.5 3.8 1.5l2.9-2.9C16.9 2.8 14.7 2 12 2a10 10 0 0 0-8.9 5.7l3.3 2.6c.8-2.4 3-4.5 5.6-4.5z"/></svg></a>` : ''}
-    </div>`;
-    return { tickets, maps, bar };
-  }
-  function concertCard(c) {
-    const id = cid(c);
+  const WEEKS = GRPane.weeks(today);
+  const WEEK_NAME = { this: 'This Week', next: 'Next Week', later: 'Later' };
+  function concertRow(c) {
     const end = endOf(c);
-    const act = actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist, c.venue);
-    return `<article class="card agenda-row${isNew(c) ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
-      ${timeCell(c.date, c.time, end > c.date ? end : '')}
-      <div class="row-body"><h4 class="row-title">${h(c.artist)}${newBadge(c)}</h4><p class="card-venue">${h(c.venue)}</p><p class="card-tags"><span class="tag">${h(c.genre)}</span></p>${addedLine(c)}</div>
-      ${act.maps}${act.tickets}${act.bar}</article>`;
+    return GRPane.rowHTML(cid(c), GRPane.timeCell(c.date, c.time, end > c.date ? end : ''), `${h(c.artist)}${newBadge(c)}`, `${h(c.venue)} · ${h(c.genre)}`, isNew(c) ? ' is-new' : '');
+  }
+  function detailHTML(c) {
+    if (!c) return '';
+    const id = cid(c), end = endOf(c), bio = BIO[c.artist], aff = !!c.affiliate;
+    const share = c.artist + ' at ' + c.venue + ', ' + fmt(c.date);
+    return `<article class="read-card">
+      <h2 class="read-title" id="read-title">${h(c.artist)}${newBadge(c)}</h2>
+      <p class="read-when"><time datetime="${h(c.date)}">${h(GRPane.whenLine(c.date, c.time, end > c.date ? end : ''))}</time></p>
+      <p class="read-place">${h(c.venue)}</p>
+      <div class="read-maps">${GRMAP.buttons(c.venue)}</div>
+      <p class="read-tags"><span class="tag read-tag">${h(c.genre)}</span></p>
+      ${addedLine(c)}
+      ${GRPane.bioHTML(bio ? [{ title: c.artist, text: bio.text, source: bio.source }] : [])}
+      <div class="read-actions">${Marks.buttons(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(share)}">Share</button>${GRPane.calHTML(id, GRICS.google(c))}</div>
+      ${GRPane.ticketsHTML(c.affiliate || c.link, 'Tickets', aff)}
+    </article>`;
   }
   // ---- Just Announced: newest additions first (upcoming shows; seasonal events live on seasonal.html) ----
   const recent = [...shows.filter(c => ago(c.date) <= 0).map(c => ({ k: c.added, t: c.artist, s: `${c.venue} · ${fmt(c.date)}`, id: cid(c), n: isNew(c) }))]
@@ -109,11 +83,8 @@
   };
   const qEl = $('#f-q');
   if (qEl && qs.get('q')) qEl.value = qs.get('q');
-  // Coming Up (#later-sec) stays hidden until a filter is on. A Just Announced click or
-  // a #show- deep link to a card in that section pins it open so the target is on screen.
-  // Cleared when the visitor changes filters or hits Clear (render() then hides it again).
-  let pinLater = false;
 
+  let pane, booted = false, lockWeek = false;
   function render() {
     const v = $('#f-venue').value, g = $('#f-genre').value, mine = $('#f-mine').value, nw = $('#f-new').checked;
     const q = qEl ? norm(qEl.value) : '';
@@ -122,50 +93,54 @@
     const genreOk = c => !g || c.genre === g || ((g === 'Classical' || g === 'Orchestral') && (c.genre === 'Classical' || c.genre === 'Orchestral'));
     const qOk = c => !qToks.length || (c._q || (c._q = searchBlob(c)), qToks.every(t => c._q.includes(t)));
     const ok = c => (!v || c.venue === v) && genreOk(c) && Marks.match(cid(c), mine) && (!nw || isNew(c)) && qOk(c);
-    const rg = range(), inR = !!rg;
-    document.querySelectorAll('section.wk').forEach(x => x.hidden = inR); $('#range-sec').hidden = !inR;
-    $('.subtitle').textContent = inR ? `Shows from ${md(rg[0])} to ${md(rg[1])}` : 'Concerts, This Week and Next';
-    if (inR) {
-      const all = shows.filter(c => c.date <= rg[1] && endOf(c) >= rg[0]), l = all.filter(ok);
-      $('#range-h').textContent = `Shows from ${md(rg[0])} to ${md(rg[1])}`;
-      $('#range-n').textContent = `${l.length} show${l.length === 1 ? '' : 's'}` + (l.length < all.length ? ` (of ${all.length}, filters on)` : '');
-      $('#range-list').innerHTML = l.length ? groupDays(l, c => c.date, concertCard) : (all.length ? '<p class="few">No shows match these filters.</p>' : '<p class="few">Nothing listed in those dates yet; check back, we add shows daily.</p>');
-    }
-    // week sections are hidden in range view; leave them empty so card ids stay unique (anchors, pick taps, marks)
+    const rg = range(), inR = !!rg, wk = pane.week();
     const hasFilter = !!(v || g || mine || nw || qToks.length);
-    ['this', 'next', 'later'].forEach(w => {
-      if (inR) { document.getElementById(w).innerHTML = ''; return; }
-      const all = shows.filter(c => c.week === w && endOf(c) >= today), l = all.filter(ok), el = document.getElementById(w);
-      el.innerHTML = l.length ? groupDays(l, c => c.date, concertCard) :
-        '<p class="few">No shows match these filters.</p>';
-      if (all.length < 3 && l.length === all.length && !hasFilter) el.insertAdjacentHTML('beforeend', '<p class="few">Few shows found this week.</p>');
-    });
-    const laterEl = document.getElementById('later-sec');
-    if (laterEl) laterEl.hidden = inR || (!hasFilter && !pinLater);
-    newCount(shows.filter(c => ago(c.date) <= 0 && isNew(c)).length, $('#f-new'));
-  }
-  // Scroll to a card. If it lives in hidden Coming Up, pin that section open and re-render
-  // first — render() replaces the card nodes, so the scroll target is looked up again after.
-  function openCard(id) {
-    if (!id) return;
-    const laterEl = document.getElementById('later-sec');
-    let el = document.getElementById(id);
-    if (el && laterEl && laterEl.contains(el) && laterEl.hidden) {
-      pinLater = true;
-      render();
-      el = document.getElementById(id);
+    const upcoming = w => shows.filter(c => c.week === w && endOf(c) >= today);
+    const counts = { this: upcoming('this').filter(ok).length, next: upcoming('next').filter(ok).length, later: upcoming('later').filter(ok).length };
+    const all = inR ? shows.filter(c => c.date <= rg[1] && endOf(c) >= rg[0]) : upcoming(wk);
+    const list = all.filter(ok);
+    if (!booted) {
+      booted = true;
+      if (!inR && !location.hash && !list.length) {
+        const jump = ['this', 'next', 'later'].find(w => counts[w]);
+        if (jump && jump !== wk) { pane.setWeek(jump); render(); return; }
+      }
     }
-    if (!el) return;
-    el.scrollIntoView();
-    el.classList.add('flash');
+    $('.subtitle').textContent = inR ? `Shows from ${md(rg[0])} to ${md(rg[1])}` : `Concerts, ${WEEK_NAME[wk]}`;
+    const note = $('#list-note');
+    if (inR) {
+      note.hidden = false;
+      note.textContent = `${list.length} show${list.length === 1 ? '' : 's'}` + (list.length < all.length ? ` (of ${all.length}, filters on)` : '') + ` from ${md(rg[0])} to ${md(rg[1])}`;
+    } else note.hidden = true;
+    const windowStart = inR ? rg[0] : WEEKS.ranges[wk][0];
+    const empty = all.length ? 'No shows match these filters.' : (inR ? 'Nothing listed in those dates yet; check back, we add shows daily.' : (wk === 'this' ? 'No shows this week.' : wk === 'next' ? 'No shows next week.' : 'Nothing listed later yet.'));
+    const agenda = $('#agenda');
+    agenda.innerHTML = list.length ? GRPane.groupDays(list, c => GRPane.anchorDate(c.date, endOf(c), windowStart, today), concertRow, today) : `<p class="few">${empty}</p>`;
+    if (!inR && wk === 'this' && list.length && list.length === all.length && all.length < 3 && !hasFilter) agenda.insertAdjacentHTML('beforeend', '<p class="few">Few shows found this week.</p>');
+    pane.setCounts(counts);
+    pane.afterRender(list.map(cid));
+    newCount(shows.filter(c => ago(c.date) <= 0 && isNew(c)).length, $('#f-new'));
   }
   // ---- date range picker ("Looking for something further out?"): shared code in date-range.js ----
   const DR = DateRange.init({ today, lastDate: shows.map(endOf).sort().pop(), onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
-  const unpinLater = () => { pinLater = false; };
-  document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', () => { unpinLater(); render(); }));
-  if (qEl) qEl.addEventListener('input', () => { unpinLater(); render(); });
-  $('#f-clear').addEventListener('click', () => { unpinLater(); $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; if (qEl) qEl.value = ''; render(); });
-  $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { unpinLater(); const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
+  pane = GRPane.attach({
+    weekOf: id => { const c = shows.find(c => cid(c) === id); return c ? c.week : null; },
+    inRange: () => !!range(),
+    clearRange() { lockWeek = true; $('#r-back').click(); lockWeek = false; },
+    render,
+    detail: id => detailHTML(shows.find(c => cid(c) === id)),
+    emptyDetail: () => `<p class="read-empty">${range() ? 'Nothing in those dates to open.' : 'Nothing to open ' + (WEEK_NAME[pane.week()] || 'here').toLowerCase() + '.'}</p>`,
+    listLabel: () => range() ? 'Shows in the selected dates' : WEEK_NAME[pane.week()] + ' shows'
+  });
+  $('#r-back').addEventListener('click', () => { if (!lockWeek) pane.setWeek('this'); }, true);
+  document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
+  if (qEl) qEl.addEventListener('input', render);
+  $('#f-clear').addEventListener('click', () => { $('#f-venue').value = $('#f-genre').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; if (qEl) qEl.value = ''; render(); });
+  $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
+  $('#just').addEventListener('click', ev => {
+    const a = ev.target.closest('a[href^="#"]'); if (!a) return;
+    if (pane.openId(a.getAttribute('href').slice(1))) ev.preventDefault();
+  });
   render();
 
   // ---- buttons (event delegation) ----
@@ -183,8 +158,6 @@
       const url = SITE + '#' + id, title = b.dataset.title;
       if (navigator.share) { try { await navigator.share({ title, text: title + ' — Grand Rapids Happenings', url }); return; } catch (e) { if (e.name === 'AbortError') return; } }
       try { await navigator.clipboard.writeText(url); toast('Link copied!'); } catch (e) { window.prompt('Copy this link:', url); }
-    } else if (b.classList.contains('whois')) {
-      const c = byId(id); if (c) openBio(c, b);
     } else if (b.classList.contains('ics')) {
       const c = byId(id); if (!c) return;
       const blob = new Blob([GRICS.calendar([c], c.artist, Marks.state(id))], { type: 'text/calendar' });
@@ -193,8 +166,7 @@
     }
   });
 
-  // ---- "Who is this?" pop-up: shared code in bio-modal.js, text from bios.js ----
-  function openBio(c, opener) { const bio = BIO[c.artist]; if (bio) BioModal.open([{ title: c.artist, text: bio.text, source: bio.source }], opener); }
+  // Bios render in the reading pane (bios.js). bio-modal.js stays available if a page still opens it.
 
   // ---- calendar subscribe links ----
   const feed = SITE.replace(/\/?$/, '/') + 'concerts.ics';
@@ -221,14 +193,4 @@
       'reactions-enabled': '1', 'input-position': 'top', theme: 'light', lang: 'en', loading: 'lazy' }).forEach(([k, v]) => gs.setAttribute('data-' + k, v));
     $('#giscus').appendChild(gs);
   }
-  const just = $('#just');
-  if (just) just.addEventListener('click', ev => {
-    const a = ev.target.closest('a[href^="#"]'); if (!a) return;
-    const id = decodeURIComponent(a.getAttribute('href').slice(1)); if (!id) return;
-    ev.preventDefault();
-    openCard(id);
-    if (location.hash !== '#' + id) history.pushState(null, '', '#' + id);
-  });
-  window.addEventListener('hashchange', () => { if (location.hash.length > 1) openCard(decodeURIComponent(location.hash.slice(1))); });
-  if (location.hash.length > 1) openCard(decodeURIComponent(location.hash.slice(1)));
 })();

@@ -18,7 +18,7 @@ window.Marks = (function () {
     const s = state(id);
     ['going', 'interested'].forEach(k => document.querySelectorAll(`button.${k}[data-id="${id}"]`).forEach(x => {
       const on = s === k; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); x.textContent = label(k, on); }));
-    document.querySelectorAll(`article.card[id="${id}"]`).forEach(c => { c.classList.toggle('mark-going', s === 'going'); c.classList.toggle('mark-interested', s === 'interested'); });
+    document.querySelectorAll(`#${id}.agenda-row, article.card#${id}`).forEach(c => { c.classList.toggle('mark-going', s === 'going'); c.classList.toggle('mark-interested', s === 'interested'); });
   }
   // returns true if the click was a mark button (and handled it)
   function handle(b) {
