@@ -169,6 +169,7 @@ body.bio-open{overflow:hidden}
   .subtitle{font-size:1.12rem}
   .brand{width:7.5rem;border-radius:12px}
   .mast-copy{text-align:center}
+  .subtitle,#updated{display:block;min-height:1.35em;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .mast-search{align-self:center;width:auto;max-width:13.25rem;justify-self:end}
   .segtoggle{justify-content:center;width:100%;gap:.2rem .45rem}
   .segtoggle a{font-size:1.08rem;padding:.4rem 1rem}

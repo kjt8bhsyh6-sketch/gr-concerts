@@ -101,10 +101,16 @@
   const overlaps = (e, f, t) => e.sort <= t && (e.end || e.sort) >= f;
   const DR = DateRange.init({ today, lastDate: list.map(e => e.end || e.sort).sort().pop(), onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
   $('#f-type').insertAdjacentHTML('beforeend', [...new Set(list.map(e => e.type))].sort().map(t => `<option>${h(t)}</option>`).join(''));
+  const norm = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  const qEl = $('#f-q');
+  if (qEl && qs.get('q')) qEl.value = qs.get('q');
+  const qOk = e => { const q = qEl ? norm(qEl.value) : ''; if (!q) return true; const blob = norm([e.name, e.location, e.type, e.when].filter(Boolean).join(' ')); return q.split(' ').filter(Boolean).every(tok => blob.includes(tok)); };
+  const upd = $('#updated');
+  if (upd) { const latest = list.map(e => e.added).filter(Boolean).sort().pop(); if (latest) upd.textContent = 'Last updated ' + new Date(latest + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
   let pane, booted = false, lockWeek = false;
   function render() {
     const t = $('#f-type').value, mine = $('#f-mine').value, nw = $('#f-new').checked;
-    const ok = e => (!t || e.type === t) && Marks.match(sid(e), mine) && (!nw || isNew(e));
+    const ok = e => (!t || e.type === t) && Marks.match(sid(e), mine) && (!nw || isNew(e)) && qOk(e);
     const rg = range(), inR = !!rg, wk = pane.week();
     const live = list.filter(alive);
     const counts = {
@@ -147,7 +153,8 @@
   });
   $('#r-back').addEventListener('click', () => { if (!lockWeek) pane.setWeek('this'); }, true);
   document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
-  $('#f-clear').addEventListener('click', () => { $('#f-type').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; render(); });
+  if (qEl) qEl.addEventListener('input', render);
+  $('#f-clear').addEventListener('click', () => { $('#f-type').value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; if (qEl) qEl.value = ''; render(); });
   render();
   function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => t.hidden = true, 2500); }
   document.addEventListener('click', async ev => {

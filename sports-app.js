@@ -74,11 +74,15 @@
   const DR = DateRange.init({ today, lastDate: games.length ? games[games.length - 1].date : '', onChange: () => render(), toast: m => toast(m) }), range = DR.range, md = DR.md;
   const sel = $('#f-team');
   sel.insertAdjacentHTML('beforeend', TEAMS.map(t => `<option>${h(t.name)}</option>`).join(''));
-  const teamNotes = () => SEASON_NOTES.filter(n => !sel.value || n.team === sel.value);
+  const norm = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  const qEl = $('#f-q');
+  if (qEl && qs.get('q')) qEl.value = qs.get('q');
+  const qOk = (...parts) => { const q = qEl ? norm(qEl.value) : ''; if (!q) return true; const blob = norm(parts.filter(Boolean).join(' ')); return q.split(' ').filter(Boolean).every(tok => blob.includes(tok)); };
+  const teamNotes = () => SEASON_NOTES.filter(n => (!sel.value || n.team === sel.value) && qOk(n.team, n.venue, n.text, sport(n.team)));
   let pane, booted = false, lockWeek = false;
   function render() {
     const t = sel.value, mine = $('#f-mine').value, nw = $('#f-new').checked;
-    const ok = g => (!t || g.team === t) && Marks.match(gid(g), mine) && (!nw || isNew(g));
+    const ok = g => (!t || g.team === t) && Marks.match(gid(g), mine) && (!nw || isNew(g)) && qOk(g.team, g.opponent, g.venue, sport(g.team));
     const rg = range(), inR = !!rg, wk = pane.week();
     const notes = teamNotes();
     const counts = {
@@ -127,7 +131,8 @@
   });
   $('#r-back').addEventListener('click', () => { if (!lockWeek) pane.setWeek('this'); }, true);
   document.querySelectorAll('.filters select, .filters input').forEach(x => x.addEventListener('change', render));
-  $('#f-clear').addEventListener('click', () => { sel.value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; render(); });
+  if (qEl) qEl.addEventListener('input', render);
+  $('#f-clear').addEventListener('click', () => { sel.value = ''; $('#f-mine').value = ''; $('#f-new').checked = false; if (qEl) qEl.value = ''; render(); });
   $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
   render();
 
