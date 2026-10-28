@@ -59,14 +59,24 @@ a{color:var(--navy)}
 .b:focus-visible,.btn:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 header :focus-visible{outline-color:var(--focus-on-navy)}
 
-/* ---- Just Announced ---- */
+/* ---- Just Announced: one column, then two, then three equal columns ---- */
 .just{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--navy);border-radius:12px;padding:1rem 1.2rem}
 .just h2{border-bottom-color:var(--navy)}
-.just ul{list-style:none;margin:0;padding:0}
-.just li{display:flex;flex-wrap:wrap;align-items:center;gap:.15rem .5rem;padding:.5rem 0;border-bottom:1px solid var(--line)}
+.just ul{display:grid;grid-template-columns:minmax(0,1fr);gap:0;list-style:none;margin:0;padding:0}
+.just li{display:flex;flex-wrap:wrap;align-items:center;align-content:center;gap:.15rem .5rem;min-width:0;min-height:44px;margin:0;padding:.5rem .1rem;border-bottom:1px solid var(--fluent-line)}
 .just li:last-child{border-bottom:0}
-.just li a{font-weight:600;text-decoration:none}.just li a:hover{text-decoration:underline}
+.just li a{font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;overflow-wrap:anywhere}
+.just li a:hover{text-decoration:underline}
+.just li .muted{min-width:0}
 .just li .new{margin-left:0;order:-1}
+@media (min-width:720px){
+  .just ul{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:1.5rem}
+  .just li,.just li:last-child{border-bottom:0;box-shadow:inset 0 -1px 0 var(--fluent-line);padding:.55rem .7rem}
+  .just li .muted{flex:1 1 100%}
+}
+@media (min-width:1100px){
+  .just ul{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
 
 /* ---- filter bar: equal field row, then a compact tools row (not stretched under those columns) ---- */
 .filters{display:flex;flex-direction:column;gap:.85rem;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem 1rem}
