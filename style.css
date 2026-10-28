@@ -13,15 +13,15 @@
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.4}
 .mast{position:relative;color:#fff;background:linear-gradient(180deg,var(--header) 0%,var(--header-deep) 100%)}
-.brand{position:relative;z-index:0;grid-area:brand;justify-self:center;width:8.25rem;height:auto;aspect-ratio:480/315;max-width:none;object-fit:contain;object-position:center;margin:0;padding:0;border-radius:12px;background:#f4f4f4;box-shadow:0 0 0 2px #ffffff55;pointer-events:none;user-select:none}
-header{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr);grid-template-areas:"brand" "copy" "nav";justify-items:center;align-items:center;row-gap:.4rem;background:transparent;color:#fff;padding:3.6rem 1rem .95rem;text-align:center}
-header:has(.mast-search){grid-template-columns:minmax(0,1fr) minmax(0,max-content) minmax(0,1fr);grid-template-areas:". brand ." "copy copy copy" ". nav ." ". search ."}
-.mast-copy{grid-area:copy;width:100%;min-width:0;position:relative;z-index:1;text-align:center}
-.mast-search{grid-area:search;width:0;min-width:100%;max-width:100%;justify-self:stretch;position:relative;z-index:1;text-align:left}
-.mast-search label{display:block;margin:0 0 .3rem;font-size:.85rem;font-weight:700;color:#fff}
-.mast-search input{font:inherit;font-size:1rem;width:100%;min-width:0;min-height:44px;padding:.45rem .7rem;border:2px solid #fff;border-radius:8px;background:#fff;color:var(--text)}
-h1{margin:0;font-size:clamp(1.65rem,5.4vw,2.45rem);line-height:1.15}
-#updated{opacity:.92;font-size:.9rem;margin:.6rem 0 0}
+.brand{position:relative;z-index:0;grid-area:brand;justify-self:start;align-self:center;width:4.15rem;height:auto;aspect-ratio:480/315;max-width:none;object-fit:contain;object-position:center;margin:0;padding:0;border-radius:8px;background:#f4f4f4;box-shadow:0 0 0 2px #ffffff55;pointer-events:none;user-select:none}
+header{position:relative;z-index:1;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"brand copy" "nav nav";justify-items:start;align-items:center;column-gap:.65rem;row-gap:.2rem;background:transparent;color:#fff;padding:.5rem 5.75rem .5rem 3.9rem;text-align:left}
+header:has(.mast-search){grid-template-areas:"brand copy" "nav nav" "search search"}
+.mast-copy{grid-area:copy;width:100%;min-width:0;position:relative;z-index:1;text-align:left}
+.mast-search{grid-area:search;width:100%;min-width:0;max-width:100%;justify-self:stretch;position:relative;z-index:1;text-align:left}
+.mast-search label{display:block;margin:0 0 .15rem;font-size:.75rem;font-weight:700;color:#fff}
+.mast-search input{font:inherit;font-size:1rem;width:100%;min-width:0;min-height:44px;padding:.4rem .7rem;border:2px solid #fff;border-radius:8px;background:#fff;color:var(--text)}
+h1{margin:0;font-size:clamp(1.28rem,2.5vw,1.7rem);line-height:1.15}
+#updated{opacity:.92;font-size:.78rem;margin:.1rem 0 0}
 main{max-width:1100px;margin:auto;padding:1rem}
 main:has(.workspace){max-width:1240px}
 h2{border-bottom:3px solid var(--accent);padding-bottom:.3rem;margin:1.6rem 0 1rem;font-size:1.35rem}
@@ -148,8 +148,8 @@ body.bio-open{overflow:hidden}
 .just{border-left-color:var(--navy)}.just h2{border-bottom-color:var(--navy)}
 
 /* ---- header subtitle + Concerts | Sports | Seasonal ---- */
-.subtitle{margin:.35rem 0 0;font-size:clamp(1rem,3.2vw,1.25rem);font-weight:600;color:#fff}
-.segtoggle{position:relative;z-index:1;grid-area:nav;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.1rem .2rem;margin:0;padding:0;width:max-content;max-width:100%;background:transparent}
+.subtitle{margin:.1rem 0 0;font-size:.95rem;font-weight:600;color:#fff}
+.segtoggle{position:relative;z-index:1;grid-area:nav;display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;gap:.1rem .2rem;margin:0;padding:0;width:auto;max-width:100%;background:transparent}
 .segtoggle a{flex:0 1 auto;text-align:center;text-decoration:none;font-weight:700;font-size:1rem;min-height:44px;display:flex;align-items:center;justify-content:center;
   border:0;border-bottom:3px solid transparent;border-radius:0;color:#fff;background:transparent;padding:.4rem .55rem}
 .segtoggle a[aria-current=page]{background:transparent;color:#fff;border-bottom-color:#fff}
@@ -157,8 +157,10 @@ body.bio-open{overflow:hidden}
 .segtoggle a:focus-visible{outline-color:var(--focus-on-navy)}
 @media (max-width:440px){.segtoggle a{font-size:.95rem;padding:0 .4rem}}
 @media (min-width:760px){
-  header{padding:3.85rem 1.25rem 1rem}
-  .brand{width:10.5rem}
+  header{padding:.55rem 6.4rem .55rem 4.15rem;column-gap:.85rem}
+  header:has(.mast-search){grid-template-columns:auto minmax(0,1fr) minmax(13rem,22rem);grid-template-areas:"brand copy search" "brand nav search"}
+  .brand{width:5.1rem}
+  .mast-search{align-self:center;width:auto}
   .segtoggle{gap:.15rem .35rem}
   .segtoggle a{padding:.4rem .9rem}
 }
@@ -202,7 +204,7 @@ header{position:relative}
 @keyframes grhspin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.ptr.spin .ptr-spin,.grh-refreshing .refresh-btn svg{animation-duration:2s}}
 @media (max-width:640px){
-  header{padding-top:3.6rem}
+  header{padding:.45rem 5.6rem .45rem 3.85rem}
   .filter-tools{flex-direction:column;align-items:stretch}
   .filter-tools label:has(select){flex-direction:column;align-items:stretch}
   .filter-tools select,.filters #f-clear{width:100%}
