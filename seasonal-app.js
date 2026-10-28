@@ -40,7 +40,7 @@
   const concerts = ALL_CONCERTS.map(c => ({ c, sec: season(c.artist, c.date) })).filter(x => x.sec && x.sec !== 'outside' && endOf(x.c) >= today) // past shows hidden, as on the Concerts page
     .map(({ c, sec }) => ({ c, sec, type: 'Concert', name: c.artist, location: c.venue, when: `${fmt(c.date)} · ${c.time}`, sort: c.date, end: endOf(c) > c.date ? endOf(c) : undefined, link: c.affiliate || c.link, added: c.added }));
   const list = events.concat(concerts).sort((a, b) => a.sort.localeCompare(b.sort) || (a.c ? GRICS.startISO(a.c) : '').localeCompare(b.c ? GRICS.startISO(b.c) : ''));
-  const grouped = l => SECTIONS.map(([k, label]) => { const x = l.filter(e => e.sec === k); return x.length ? `<h3 class="season-h" id="sec-${k}">${label} <span class="muted">(${x.length})</span></h3>` + x.map(card).join('') : ''; }).join('');
+  const grouped = l => SECTIONS.map(([k, label]) => { const x = l.filter(e => e.sec === k); return x.length ? `<h3 class="season-h" id="sec-${k}">${label} <span class="muted">(${x.length})</span></h3>` + groupDays(x, e => e.sort, e => card(e, 'h5'), 'h4') : ''; }).join('');
   Marks.seedDemo(list.map(sid)); // going / interested marks: shared code in marks.js
   // ---- per-card calendar (all-day, spans sort..end; DTEND/Google end are exclusive, so the day after `end`) ----
   // seasonal.js has no structured time field, so events are all-day; the "when" text goes in the description.
@@ -71,29 +71,46 @@
   document.addEventListener('click', gcalFix, true); document.addEventListener('auxclick', gcalFix, true); document.addEventListener('contextmenu', gcalFix, true);
   const BIO = (typeof BIOS !== 'undefined' && BIOS) || {};
   const bioKey = e => { const key = (e.c && e.c.artist) || ''; return key && BIO[key] ? key : ''; };
-  function dateRail(date, time, end) {
-    const dt = new Date(date + 'T12:00');
-    const wd = dt.toLocaleDateString('en-US', { weekday: 'short' });
-    const md = dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    if (end && end > date) {
-      const emd = new Date(end + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      return `<div class="date-rail date-rail-range"><span class="date-rail-date">${h(md)}</span><span class="date-rail-end">– ${h(emd)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
-    }
-    return `<div class="date-rail"><span class="date-rail-wd">${h(wd)}</span><span class="date-rail-date">${h(md)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
+  const shortMD = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  function timeCell(date, time, end) {
+    const span = end && end > date;
+    if (!time) return `<div class="row-time is-long"><time datetime="${h(date)}">${h(shortMD(date))}${span ? ` – ${h(shortMD(end))}` : ''}</time></div>`;
+    const clock = /^(\d{1,2}):(\d{2})\s*([AP]M)$/i.exec(time);
+    let dt = date;
+    if (clock) { let hh = +clock[1] % 12; if (/p/i.test(clock[3])) hh += 12; dt = `${date}T${String(hh).padStart(2, '0')}:${clock[2]}`; }
+    const thru = span ? `<span class="row-thru">– ${h(shortMD(end))}</span>` : '';
+    return `<div class="row-time${time.length > 8 ? ' is-long' : ''}"><time datetime="${h(dt)}">${h(time)}</time><span class="row-tz">ET</span>${thru}</div>`;
   }
-  function card(e) {
+  function groupDays(items, dateOf, renderItem, tag) {
+    const t = tag || 'h3';
+    let html = '', last = '', buf = '', label = '';
+    const flush = () => { if (buf) html += `<section class="day"><${t} class="day-h">${h(label)}</${t}>${buf}</section>`; };
+    items.forEach(item => {
+      const d = dateOf(item);
+      if (d !== last) {
+        flush(); buf = ''; last = d;
+        label = new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+      }
+      buf += renderItem(item);
+    });
+    flush();
+    return html;
+  }
+  function card(e, titleTag) {
     const id = sid(e), nw = isNew(e);
+    const tag = titleTag || 'h4';
     const time = e.c ? e.c.time : '';
-    const end = !e.c && e.end && e.end !== e.sort ? e.end : '';
+    const end = e.end && e.end !== e.sort ? e.end : '';
     const who = bioKey(e) ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : '';
-    return `<article class="card${nw ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-id="${id}">
-      <div class="card-main">${dateRail(e.sort, time, end)}
-      <div class="card-body"><h3>${h(e.name)}${nw ? '<span class="new">NEW</span>' : ''}</h3><p class="card-venue">${h(e.location)}</p><p class="card-tags"><span class="tag">${h(e.type)}</span></p>
+    return `<article class="card agenda-row${nw ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-id="${id}">
+      ${timeCell(e.sort, time, end)}
+      <div class="row-body"><${tag} class="row-title">${h(e.name)}${nw ? '<span class="new">NEW</span>' : ''}</${tag}><p class="card-venue">${h(e.location)}</p><p class="card-tags"><span class="tag">${h(e.type)}</span></p>
       ${e.c ? '' : `<p class="when">${h(e.when)}</p>`}${nw ? `<p class="added-on">Added ${new Date(e.added + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>` : ''}</div>
-      <div class="card-cta"><a class="b primary" href="${h(e.link)}" target="_blank" rel="${e.c && e.c.affiliate ? 'sponsored noopener' : 'noopener'}">Info / tickets</a></div></div>
-      <div class="actions${who ? ' has-bio' : ''}">${who}${Marks.buttons(id)}
+      <div class="row-maps">${GRMAP.buttons(e.location)}</div>
+      <a class="b primary row-tickets" href="${h(e.link)}" target="_blank" rel="${e.c && e.c.affiliate ? 'sponsored noopener' : 'noopener'}" aria-label="Info / tickets"><span class="tk-full">Info / tickets</span><span class="tk-short">Tickets</span></a>
+      <div class="actions row-actions${who ? ' has-bio' : ''}">${who}${Marks.buttons(id)}
       <button type="button" class="b share" data-id="${id}" data-title="${h(e.name)}">Share</button>
-      <button type="button" class="b ics" data-id="${id}" aria-label="Add to Apple Calendar" title="Add to Apple Calendar"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.4 6.6c-.7.8-1.8 1.4-2.9 1.3-.1-1.1.4-2.3 1.1-3 0 0 .1 0 .1-.1.8-.7 2.1-1.2 3.2-1.2.1 1.2-.3 2.3-1.5 3zm.6 1.6c-1.8-.1-3.3 1-4.1 1-.9 0-2.2-1-3.6-1-1.9 0-3.6 1.1-4.6 2.8-2 3.4-.5 8.4 1.4 11.2.9 1.4 2 2.9 3.4 2.8 1.4 0 1.9-.9 3.5-.9s2.1.9 3.5.9c1.5 0 2.4-1.3 3.3-2.7 1-1.6 1.5-3.1 1.5-3.2-.1 0-2.9-1.1-2.9-4.4 0-2.7 2.2-4 2.3-4.1-1.3-1.8-3.2-2.1-3.7-2.4z"/></svg></button><a class="b gcal" data-id="${id}" href="${h(calLink(e))}" target="_blank" rel="noopener" aria-label="Add to Google Calendar" title="Add to Google Calendar"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M21.6 12.3c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.8 3-4.3 3-7.3z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.5l-3.2-2.5c-.9.6-2 .9-3.4.9-2.6 0-4.8-1.8-5.6-4.2H3.1v2.6A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.4 13.7a6 6 0 0 1 0-3.4V7.7H3.1a10 10 0 0 0 0 8.6l3.3-2.6z"/><path fill="#EA4335" d="M12 5.8c1.5 0 2.8.5 3.8 1.5l2.9-2.9C16.9 2.8 14.7 2 12 2a10 10 0 0 0-8.9 5.7l3.3 2.6c.8-2.4 3-4.5 5.6-4.5z"/></svg></a>${GRMAP.buttons(e.location)}</div></article>`;
+      <button type="button" class="b ics" data-id="${id}" aria-label="Add to Apple Calendar" title="Add to Apple Calendar"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.4 6.6c-.7.8-1.8 1.4-2.9 1.3-.1-1.1.4-2.3 1.1-3 0 0 .1 0 .1-.1.8-.7 2.1-1.2 3.2-1.2.1 1.2-.3 2.3-1.5 3zm.6 1.6c-1.8-.1-3.3 1-4.1 1-.9 0-2.2-1-3.6-1-1.9 0-3.6 1.1-4.6 2.8-2 3.4-.5 8.4 1.4 11.2.9 1.4 2 2.9 3.4 2.8 1.4 0 1.9-.9 3.5-.9s2.1.9 3.5.9c1.5 0 2.4-1.3 3.3-2.7 1-1.6 1.5-3.1 1.5-3.2-.1 0-2.9-1.1-2.9-4.4 0-2.7 2.2-4 2.3-4.1-1.3-1.8-3.2-2.1-3.7-2.4z"/></svg></button><a class="b gcal" data-id="${id}" href="${h(calLink(e))}" target="_blank" rel="noopener" aria-label="Add to Google Calendar" title="Add to Google Calendar"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M21.6 12.3c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.8 3-4.3 3-7.3z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.5l-3.2-2.5c-.9.6-2 .9-3.4.9-2.6 0-4.8-1.8-5.6-4.2H3.1v2.6A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.4 13.7a6 6 0 0 1 0-3.4V7.7H3.1a10 10 0 0 0 0 8.6l3.3-2.6z"/><path fill="#EA4335" d="M12 5.8c1.5 0 2.8.5 3.8 1.5l2.9-2.9C16.9 2.8 14.7 2 12 2a10 10 0 0 0-8.9 5.7l3.3 2.6c.8-2.4 3-4.5 5.6-4.5z"/></svg></a></div></article>`;
   }
   // an event runs from `sort` to `end` (optional; one-day event if missing)
   const overlaps = (e, f, t) => e.sort <= t && (e.end || e.sort) >= f;

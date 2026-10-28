@@ -36,36 +36,53 @@
   $('#updated').textContent = 'Last updated ' + LAST_UPDATED;
 
   const BIO = (typeof BIOS !== 'undefined' && BIOS) || {};
-  // Date rail: weekday + calendar date + time (ET). Same facts the old "Fri, Oct 30 · 8:00 PM" line carried.
-  function dateRail(date, time, end) {
-    const dt = new Date(date + 'T12:00');
-    const wd = dt.toLocaleDateString('en-US', { weekday: 'short' });
-    const md = dt.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    if (end && end > date) {
-      const emd = new Date(end + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-      return `<div class="date-rail date-rail-range"><span class="date-rail-date">${h(md)}</span><span class="date-rail-end">– ${h(emd)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
-    }
-    return `<div class="date-rail"><span class="date-rail-wd">${h(wd)}</span><span class="date-rail-date">${h(md)}</span>${time ? `<span class="date-rail-time">${h(time)}</span><span class="date-rail-tz">ET</span>` : ''}</div>`;
+  // Agenda row: clock (and ET) in the left column. The day lives in the group header. A multi-night end date stays on the clock.
+  const shortMD = d => new Date(d + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  function timeCell(date, time, end) {
+    const span = end && end > date;
+    if (!time) return `<div class="row-time is-long"><time datetime="${h(date)}">${h(shortMD(date))}${span ? ` – ${h(shortMD(end))}` : ''}</time></div>`;
+    const clock = /^(\d{1,2}):(\d{2})\s*([AP]M)$/i.exec(time);
+    let dt = date;
+    if (clock) { let hh = +clock[1] % 12; if (/p/i.test(clock[3])) hh += 12; dt = `${date}T${String(hh).padStart(2, '0')}:${clock[2]}`; }
+    const thru = span ? `<span class="row-thru">– ${h(shortMD(end))}</span>` : '';
+    return `<div class="row-time${time.length > 8 ? ' is-long' : ''}"><time datetime="${h(dt)}">${h(time)}</time><span class="row-tz">ET</span>${thru}</div>`;
+  }
+  function groupDays(items, dateOf, renderItem, tag) {
+    const t = tag || 'h3';
+    let html = '', last = '', buf = '', label = '';
+    const flush = () => { if (buf) html += `<section class="day"><${t} class="day-h">${h(label)}</${t}>${buf}</section>`; };
+    items.forEach(item => {
+      const d = dateOf(item);
+      if (d !== last) {
+        flush(); buf = ''; last = d;
+        label = new Date(d + 'T12:00').toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+      }
+      buf += renderItem(item);
+    });
+    flush();
+    return html;
   }
   function actions(id, title, cal, link, label, aff, artist, place) {
     const bio = artist && BIO[artist];
-    const cta = `<div class="card-cta"><a class="b primary" href="${h(link)}" target="_blank" rel="${aff ? 'sponsored noopener' : 'noopener'}">${label}</a></div>`;
-    const bar = `<div class="actions${bio ? ' has-bio' : ''}">
+    const shortLabel = /ticket/i.test(label) ? 'Tickets' : 'Info';
+    const tickets = `<a class="b primary row-tickets" href="${h(link)}" target="_blank" rel="${aff ? 'sponsored noopener' : 'noopener'}" aria-label="${h(label)}"><span class="tk-full">${h(label)}</span><span class="tk-short">${shortLabel}</span></a>`;
+    const maps = place ? `<div class="row-maps">${GRMAP.buttons(place)}</div>` : '';
+    const bar = `<div class="actions row-actions${bio ? ' has-bio' : ''}">
       ${bio ? `<button type="button" class="b whois" data-id="${id}" aria-haspopup="dialog">Who is this?</button>` : ''}
       ${Marks.buttons(id)}
       <button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>
       ${cal ? `<button type="button" class="b ics" data-id="${id}" aria-label="Add to Apple Calendar" title="Add to Apple Calendar"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.4 6.6c-.7.8-1.8 1.4-2.9 1.3-.1-1.1.4-2.3 1.1-3 0 0 .1 0 .1-.1.8-.7 2.1-1.2 3.2-1.2.1 1.2-.3 2.3-1.5 3zm.6 1.6c-1.8-.1-3.3 1-4.1 1-.9 0-2.2-1-3.6-1-1.9 0-3.6 1.1-4.6 2.8-2 3.4-.5 8.4 1.4 11.2.9 1.4 2 2.9 3.4 2.8 1.4 0 1.9-.9 3.5-.9s2.1.9 3.5.9c1.5 0 2.4-1.3 3.3-2.7 1-1.6 1.5-3.1 1.5-3.2-.1 0-2.9-1.1-2.9-4.4 0-2.7 2.2-4 2.3-4.1-1.3-1.8-3.2-2.1-3.7-2.4z"/></svg></button><a class="b gcal" data-id="${id}" href="${h(cal)}" target="_blank" rel="noopener" aria-label="Add to Google Calendar" title="Add to Google Calendar"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M21.6 12.3c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.8 3-4.3 3-7.3z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.6-2.5l-3.2-2.5c-.9.6-2 .9-3.4.9-2.6 0-4.8-1.8-5.6-4.2H3.1v2.6A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.4 13.7a6 6 0 0 1 0-3.4V7.7H3.1a10 10 0 0 0 0 8.6l3.3-2.6z"/><path fill="#EA4335" d="M12 5.8c1.5 0 2.8.5 3.8 1.5l2.9-2.9C16.9 2.8 14.7 2 12 2a10 10 0 0 0-8.9 5.7l3.3 2.6c.8-2.4 3-4.5 5.6-4.5z"/></svg></a>` : ''}
-      ${place ? GRMAP.buttons(place) : ''}
     </div>`;
-    return { cta, bar };
+    return { tickets, maps, bar };
   }
   function concertCard(c) {
     const id = cid(c);
+    const end = endOf(c);
     const act = actions(id, c.artist + ' at ' + c.venue + ', ' + fmt(c.date), GRICS.google(c), c.affiliate || c.link, 'Tickets / info', !!c.affiliate, c.artist, c.venue);
-    return `<article class="card${isNew(c) ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
-      <div class="card-main">${dateRail(c.date, c.time)}
-      <div class="card-body"><h3>${h(c.artist)}${newBadge(c)}</h3><p class="card-venue">${h(c.venue)}</p><p class="card-tags"><span class="tag">${h(c.genre)}</span></p>${addedLine(c)}</div>
-      ${act.cta}</div>${act.bar}</article>`;
+    return `<article class="card agenda-row${isNew(c) ? ' is-new' : ''}${Marks.cardClass(id)}" id="${id}" data-venue="${h(c.venue)}" data-genre="${h(c.genre)}" data-id="${id}">
+      ${timeCell(c.date, c.time, end > c.date ? end : '')}
+      <div class="row-body"><h4 class="row-title">${h(c.artist)}${newBadge(c)}</h4><p class="card-venue">${h(c.venue)}</p><p class="card-tags"><span class="tag">${h(c.genre)}</span></p>${addedLine(c)}</div>
+      ${act.maps}${act.tickets}${act.bar}</article>`;
   }
   // ---- Just Announced: newest additions first (upcoming shows; seasonal events live on seasonal.html) ----
   const recent = [...shows.filter(c => ago(c.date) <= 0).map(c => ({ k: c.added, t: c.artist, s: `${c.venue} · ${fmt(c.date)}`, id: cid(c), n: isNew(c) }))]
@@ -112,14 +129,14 @@
       const all = shows.filter(c => c.date <= rg[1] && endOf(c) >= rg[0]), l = all.filter(ok);
       $('#range-h').textContent = `Shows from ${md(rg[0])} to ${md(rg[1])}`;
       $('#range-n').textContent = `${l.length} show${l.length === 1 ? '' : 's'}` + (l.length < all.length ? ` (of ${all.length}, filters on)` : '');
-      $('#range-list').innerHTML = l.map(concertCard).join('') || (all.length ? '<p class="few">No shows match these filters.</p>' : '<p class="few">Nothing listed in those dates yet; check back, we add shows daily.</p>');
+      $('#range-list').innerHTML = l.length ? groupDays(l, c => c.date, concertCard) : (all.length ? '<p class="few">No shows match these filters.</p>' : '<p class="few">Nothing listed in those dates yet; check back, we add shows daily.</p>');
     }
     // week sections are hidden in range view; leave them empty so card ids stay unique (anchors, pick taps, marks)
     const hasFilter = !!(v || g || mine || nw || qToks.length);
     ['this', 'next', 'later'].forEach(w => {
       if (inR) { document.getElementById(w).innerHTML = ''; return; }
       const all = shows.filter(c => c.week === w && endOf(c) >= today), l = all.filter(ok), el = document.getElementById(w);
-      el.innerHTML = l.map(concertCard).join('') ||
+      el.innerHTML = l.length ? groupDays(l, c => c.date, concertCard) :
         '<p class="few">No shows match these filters.</p>';
       if (all.length < 3 && l.length === all.length && !hasFilter) el.insertAdjacentHTML('beforeend', '<p class="few">Few shows found this week.</p>');
     });

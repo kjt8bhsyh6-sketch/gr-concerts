@@ -6,7 +6,8 @@
   --new-bg:var(--navy);--new-ink:#fff;--new-line:var(--navy);
   --going:#dbeafe;--going-line:#2563eb;--going-ink:#1e3a8a;
   --interested-bg:#ccfbf1;--interested:#0d9488;--interested-ink:#115e59;--mark-going:#2563eb;
-  --focus:var(--navy);--focus-on-navy:#fff
+  --focus:var(--navy);--focus-on-navy:#fff;
+  --fluent:#0f6cbd;--fluent-hover:#115ea3;--fluent-line:#edebe9;--fluent-ink:#201f1e;--fluent-muted:#605e5c
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.4}
@@ -27,14 +28,14 @@ main>section{margin-bottom:1.5rem}
 a{color:var(--navy)}
 .note,.muted{color:var(--muted)}.muted{font-size:.85rem}
 
-/* ---- cards: one column on a phone, two columns with a center rule when wide ---- */
-.grid{display:flex;flex-direction:column;gap:1rem}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0;box-shadow:0 2px 8px #0000000d;
-  display:flex;flex-direction:column;min-width:0;overflow:hidden}
-.card h3{margin:0 0 .35rem;font-size:1.25rem;line-height:1.25;overflow-wrap:anywhere}
-.card p{margin:.2rem 0;font-size:1rem;overflow-wrap:anywhere}
-.card.is-new{border-color:var(--navy);box-shadow:0 0 0 2px var(--navy),0 4px 14px #0000001a}
-.card.flash{box-shadow:0 0 0 4px var(--accent)}
+/* ---- listings: one Outlook-style agenda (day groups + dense rows). Not cards. ---- */
+.grid{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--fluent-line);border-radius:8px}
+.card{background:#fff;border:0;border-bottom:1px solid var(--fluent-line);border-radius:0;padding:0;box-shadow:none;
+  display:block;min-width:0;overflow:visible}
+.row-title{margin:0;font-size:1rem;font-weight:700;line-height:1.3;color:var(--fluent-ink);overflow-wrap:anywhere}
+.card p{margin:.12rem 0 0;font-size:.92rem;overflow-wrap:anywhere}
+.card.is-new{background:#f4f7fb;box-shadow:inset 3px 0 0 var(--navy)}
+.card.flash{outline:3px solid var(--fluent);outline-offset:-3px}
 .tag,.new{display:inline-block;border-radius:99px;padding:.15rem .6rem;font-size:.72rem;font-weight:600;color:#fff;vertical-align:middle}
 .tag{background:var(--accent)}.new{background:var(--new-bg);color:#fff;border:0;font-size:.9rem;font-weight:800;letter-spacing:.08em;line-height:1.1;padding:.36rem .82rem;margin-left:.4rem;box-shadow:0 1px 2px #00000040}
 .few{grid-column:1/-1;font-style:italic;color:var(--muted)}
@@ -97,7 +98,7 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.9rem}
 /* ---- phones ---- */
 @media (max-width:560px){
   main{padding:.75rem}
-  .grid{gap:.85rem}
+  .grid{gap:0}
   .just{padding:.9rem}
 }
 .badges{display:flex;flex-wrap:wrap;gap:.3rem}.badges .new{margin-left:0}
@@ -122,11 +123,11 @@ footer p{margin:.3rem 0}.mail-addr,.disclosure{font-size:.82rem}
 body.bio-open{overflow:hidden}
 .bio-box h3{margin:1rem 0 .4rem;font-size:1rem;padding-top:.75rem;border-top:1px solid #eee}
 
-/* ---- NEW this week: solid navy pill on white cards ---- */
+/* ---- NEW this week: solid navy pill beside the title ---- */
 .card{position:relative}
 .new{background:var(--new-bg);color:#fff;border:0;font-weight:800;letter-spacing:.08em}
-.card.is-new{background:#fff;border-color:var(--navy);box-shadow:0 0 0 2px var(--navy),0 4px 14px #0000001a}
-.card h3 .new{position:static;margin-left:.45rem;vertical-align:middle}
+.card.is-new{background:#f4f7fb;box-shadow:inset 3px 0 0 var(--navy)}
+.row-title .new{position:static;margin-left:.4rem;vertical-align:middle;font-size:.72rem;letter-spacing:.06em;padding:.18rem .48rem}
 .added-on{font-size:.78rem!important;color:#3d4668;font-weight:600}
 .newcount{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;background:#eef1f8;border:1px solid var(--new-line);border-radius:12px;padding:.6rem .9rem;margin:0 0 1rem;font-size:.95rem}
 .newcount .new{margin-left:0}
@@ -169,9 +170,11 @@ body.bio-open{overflow:hidden}
 .b.going.on{color:var(--going-ink)}
 /* odd button left over at the end of the 2-column grid spans the full row */
 .actions:not(.has-bio)>.b:last-child:nth-child(even),.actions.has-bio>.b:last-child:nth-child(odd){grid-column:1/-1}
-/* card accent stripe: blue = going, teal = interested */
-.card.mark-going{border-left:6px solid var(--mark-going)}
-.card.mark-interested{border-left:6px solid var(--interested)}
+/* row accent: blue = going, teal = interested (inset so the list doesn't shift) */
+.card.mark-going{box-shadow:inset 4px 0 0 var(--mark-going);background:#f3f8ff}
+.card.mark-interested{box-shadow:inset 4px 0 0 var(--interested);background:#f2fbf9}
+.card.is-new.mark-going{box-shadow:inset 4px 0 0 var(--mark-going)}
+.card.is-new.mark-interested{box-shadow:inset 4px 0 0 var(--interested)}
 .season-h{grid-column:1/-1;margin:.8rem 0 0;font-size:1.15rem;border-bottom:2px solid var(--accent);padding-bottom:.2rem}.grid>.season-h:first-child{margin-top:0}
 .actions>.b{min-width:44px;white-space:nowrap}
 /* ---- refresh button + pull-to-refresh (refresh.js) ---- */
@@ -194,58 +197,62 @@ header{position:relative}
 }
 .mast :focus-visible{outline-color:var(--focus-on-navy)}
 
-/* ---- date-rail cards (design preview): navy day/time, then title, tickets, labeled actions ---- */
-.card-main{display:flex;flex-direction:column;min-width:0}
-.date-rail{display:flex;flex-wrap:wrap;align-items:baseline;gap:.15rem .45rem;background:var(--navy);color:#fff;padding:.7rem 1rem;min-height:44px}
-.date-rail-wd,.date-rail-date,.date-rail-end{font-weight:800;letter-spacing:.04em;font-size:1rem;text-transform:uppercase}
-.date-rail-date,.date-rail-end{font-weight:700}
-.date-rail-wd + .date-rail-date::before{content:"· ";opacity:.75;font-weight:700}
-.date-rail-time{margin-left:auto;font-weight:800;font-size:1rem;line-height:1.2;text-align:right}
-.date-rail-tz{font-size:.75rem;font-weight:800;letter-spacing:.06em}
-.date-rail-end{margin-left:auto;text-align:right}
-.card-body{padding:.85rem 1rem .25rem;min-width:0}
-.card-venue{font-weight:600}
-.card-tags{margin:.4rem 0 .15rem}
-.card .tag{background:#eef0f6;color:var(--navy);border:1px solid var(--line)}
+/* ---- Outlook agenda rows: time | title + venue | maps | Tickets ---- */
+.day{display:flex;flex-direction:column;min-width:0}
+.day + .day,.grid>.season-h + .day{border-top:1px solid var(--fluent-line)}
+.day-h{margin:0;padding:.85rem 1rem .2rem;font-size:1.05rem;font-weight:700;line-height:1.3;color:var(--fluent-ink);background:#fff}
+.grid>.season-h{margin:0;padding:.65rem 1rem .4rem;font-size:1rem;background:#f3f2f1;border-bottom:1px solid var(--fluent-line)}
+.grid>.few{margin:0;padding:.85rem 1rem}
+.card{display:grid;grid-template-columns:4.85rem minmax(0,1fr) auto;grid-template-areas:"time body tickets" "maps maps maps" "acts acts acts";column-gap:.6rem;row-gap:.1rem;align-items:start;padding:.45rem .7rem .35rem}
+.card:not(:has(.row-maps)){grid-template-areas:"time body tickets" "acts acts acts"}
+.card:not(:has(.row-actions)){grid-template-areas:"time body tickets" "maps maps maps"}
+.card:not(:has(.row-maps)):not(:has(.row-actions)){grid-template-areas:"time body tickets"}
+.day .card:last-child{border-bottom:0}
+.row-time{grid-area:time;padding-top:.45rem;color:var(--fluent-muted);font-size:.92rem;font-weight:600;line-height:1.25}
+.row-time time{font-weight:600}
+.row-tz{display:block;font-size:.72rem;font-weight:800;letter-spacing:.04em}
+.row-thru{display:block;margin-top:.12rem;font-size:.75rem;font-weight:600;color:var(--fluent-muted)}
+.tk-short{display:none}
+@media (max-width:799px){
+  a.row-tickets .tk-full{display:none}
+  a.row-tickets .tk-short{display:inline}
+}
+.row-time.is-long{font-size:.78rem;padding-top:.35rem}
+.row-body{grid-area:body;min-width:0;padding-top:.28rem}
+.card-venue{color:var(--fluent-muted);font-weight:400}
+.card-opp{margin:.05rem 0 0;font-size:.92rem}
+.card-tags{margin:.2rem 0 0}
+.card .tag{background:#f3f2f1;color:#323130;border:1px solid var(--fluent-line);font-weight:600}
 .card .tag.off{background:#e5e7eb;color:var(--navy)}
-.card-cta{padding:.35rem 1rem .9rem}
-.card-cta .b.primary{width:100%;min-height:44px;grid-column:auto;font-size:1rem}
-.card-cta .b.primary:focus-visible{outline-color:var(--focus-on-navy)}
-.when{color:var(--muted);font-size:.95rem}
-.card :focus-visible{outline-offset:-3px}
-@media (min-width:760px){
-  .card-main{flex-direction:row;align-items:stretch}
-  .date-rail{flex:0 0 auto;width:auto;min-width:7.5rem;max-width:11rem;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:.15rem;padding:.9rem .6rem}
-  .date-rail-wd + .date-rail-date::before{content:none}
-  .date-rail-time,.date-rail-end{margin-left:0;text-align:center}
-  .date-rail-wd{font-size:1.15rem}
-  .card-body{flex:1;display:flex;flex-direction:column;justify-content:center;padding:.9rem 1rem}
-  .card-cta{flex:0 0 auto;display:flex;align-items:center;padding:.9rem 1rem .9rem 0}
-  .card-cta .b.primary{width:auto;min-width:7.5rem;padding:.55rem 1.15rem}
+.added-on{font-size:.78rem!important;color:#3d4668;font-weight:600}
+.when{color:var(--fluent-muted);font-size:.88rem}
+.row-maps{grid-area:maps;display:flex;flex-wrap:wrap;align-items:center;gap:.1rem}
+.row-maps .b.map{background:transparent;border-color:transparent;color:var(--fluent-muted);font-weight:600;min-height:44px;padding:.35rem .5rem}
+.row-maps .b.map:hover{background:#f3f2f1}
+.row-actions{grid-area:acts;margin:0;padding:.05rem 0 .1rem;border:0;background:transparent;gap:.1rem .15rem}
+.card .actions>.b{min-height:44px;background:transparent;border-color:transparent}
+.card:hover{background:#faf9f8}
+.card.is-new:hover{background:#eef3f9}
+.card.mark-going:hover{background:#e7f1ff}
+.card.mark-interested:hover{background:#e7f7f4}
+a.row-tickets.b.primary{grid-area:tickets;align-self:start;width:auto;min-width:44px;min-height:44px;margin-top:.15rem;padding:.4rem .7rem;grid-column:auto;border-radius:4px;font-size:.92rem;font-weight:600;background:transparent;border-color:transparent;color:var(--fluent)}
+a.row-tickets.b.primary:hover{background:#eff6fc;border-color:transparent;filter:none;color:var(--fluent-hover)}
+.card :focus-visible{outline-offset:2px}
+@media (min-width:800px){
+  .card,.card:not(:has(.row-maps)),.card:not(:has(.row-actions)),.card:not(:has(.row-maps)):not(:has(.row-actions)){
+    grid-template-columns:7.25rem minmax(0,1fr) auto auto;column-gap:.85rem;align-items:center;padding:.4rem 1rem .35rem .85rem}
+  .card{grid-template-areas:"time body maps tickets" "time acts maps tickets"}
+  .card:not(:has(.row-maps)){grid-template-columns:7.25rem minmax(0,1fr) auto;grid-template-areas:"time body tickets" "time acts tickets"}
+  .card:not(:has(.row-actions)){grid-template-areas:"time body maps tickets"}
+  .card:not(:has(.row-maps)):not(:has(.row-actions)){grid-template-columns:7.25rem minmax(0,1fr) auto;grid-template-areas:"time body tickets"}
+  .row-time{padding-top:0}
+  .row-body{padding-top:0}
+  .row-maps,.row-actions{align-self:center}
+  a.row-tickets.b.primary{align-self:center;margin-top:0;padding:.45rem 1rem;background:var(--fluent);border-color:var(--fluent);color:#fff;min-width:6.5rem}
+  a.row-tickets.b.primary:hover{background:var(--fluent-hover);border-color:var(--fluent-hover);color:#fff}
 }
-@media (min-width:840px){
-  .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:2rem;row-gap:.9rem;
-    background-image:linear-gradient(#3c3c58,#3c3c58);
-    background-size:1px 100%;background-repeat:no-repeat;background-position:center center}
-  .grid>.season-h,.grid>.few{background:var(--bg);position:relative;z-index:1}
-  .card h3{font-size:1.05rem;margin-bottom:.25rem}
-  .card p{font-size:.92rem}
-  .date-rail{min-width:5.75rem;max-width:7rem;padding:.5rem .35rem;gap:.1rem}
-  .date-rail-wd{font-size:.95rem}
-  .date-rail-date,.date-rail-end,.date-rail-time{font-size:.82rem;white-space:nowrap}
-  .date-rail-tz{font-size:.68rem}
-  .card-body{padding:.6rem .7rem}
-  .card-cta{padding:.5rem .65rem .5rem 0}
-  .card-cta .b.primary{min-width:44px;min-height:44px;font-size:.88rem;padding:.4rem .65rem}
-  .actions{padding:.2rem .3rem;gap:.15rem}
-  .actions>.b{font-size:.75rem;padding:.35rem .45rem}
-  .card h3 .new{font-size:.72rem;padding:.18rem .48rem;margin-left:.3rem}
-}
-@media (min-width:1100px){
-  .date-rail{min-width:6rem;max-width:7.25rem;padding:.6rem .4rem}
-  .date-rail-wd{font-size:1.05rem}
-  .date-rail-date,.date-rail-end,.date-rail-time{font-size:.88rem}
-  .card h3{font-size:1.12rem}
-  .card-body{padding:.7rem .8rem}
-  .card-cta .b.primary{padding:.45rem .8rem}
+@media (max-width:560px){
+  .grid{border-radius:6px}
+  .day-h{padding:.75rem .7rem .15rem;font-size:1rem}
+  .card{padding:.4rem .55rem .3rem;column-gap:.45rem}
 }
