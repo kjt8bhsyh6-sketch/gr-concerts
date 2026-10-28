@@ -75,7 +75,13 @@ header :focus-visible{outline-color:var(--focus-on-navy)}
   .just li .muted{flex:1 1 100%}
 }
 @media (min-width:1100px){
-  .just ul{grid-template-columns:repeat(3,minmax(0,1fr))}
+  main>.just{padding:.3rem .65rem .15rem;margin-bottom:.55rem}
+  .just h2{margin:0 0 .1rem;padding-bottom:.08rem;font-size:.9rem}
+  .just ul{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:.55rem}
+  .just li,.just li:last-child{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-areas:"pill title" "pill meta";align-items:center;column-gap:.4rem;row-gap:0;min-height:0;padding:.12rem .3rem .16rem}
+  .just li .new{grid-area:pill;align-self:center}
+  .just li a{grid-area:title;min-height:1.75rem;padding:.2rem 0;font-size:.8rem;line-height:1.2;display:flex;align-items:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .just li .muted{grid-area:meta;flex:none;font-size:.7rem;line-height:1.25;white-space:normal;overflow:visible}
 }
 
 /* ---- filter bar: equal field row, then a compact tools row (not stretched under those columns) ---- */
