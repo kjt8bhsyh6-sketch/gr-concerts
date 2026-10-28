@@ -157,11 +157,12 @@ body.bio-open{overflow:hidden}
 .segtoggle a:focus-visible{outline-color:var(--focus-on-navy)}
 @media (max-width:440px){.segtoggle a{font-size:.95rem;padding:0 .4rem}}
 @media (min-width:760px){
-  header{padding:.55rem 6.4rem .55rem 4.15rem;column-gap:.85rem}
+  header{grid-template-areas:"brand copy" "brand nav";padding:.55rem 6.4rem .55rem 4.15rem;column-gap:.85rem}
   header:has(.mast-search){grid-template-columns:auto minmax(0,1fr) minmax(13rem,22rem);grid-template-areas:"brand copy search" "brand nav search"}
   .brand{width:5.1rem}
+  .mast-copy{text-align:center}
   .mast-search{align-self:center;width:auto}
-  .segtoggle{gap:.15rem .35rem}
+  .segtoggle{justify-content:center;width:100%;gap:.15rem .35rem}
   .segtoggle a{padding:.4rem .9rem}
 }
 .b.ics,.b.gcal,.b.map,a.btn.cal-mark{min-width:44px;min-height:44px;padding:.45rem .7rem}
