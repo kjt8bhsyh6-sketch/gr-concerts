@@ -82,6 +82,7 @@ const VENUES = {
   "Downtown Fennville, E Main St, Fennville": "Downtown Fennville, 100 E Main St, Fennville, MI 49408",
   "Saugatuck Center for the Arts, 400 Culver St, Saugatuck": "Saugatuck Center for the Arts, 400 Culver St, Saugatuck, MI 49453",
   "Downtown Saugatuck, 102 Butler St, Saugatuck": "Downtown Saugatuck, 102 Butler St, Saugatuck, MI 49453",
+  "Riverside Pavilion, 48 Water St, Saugatuck": "Riverside Pavilion, 48 Water St, Saugatuck, MI 49453",
   "Downtown Fennville, 100 S Maple St, Fennville": "Downtown Fennville, 100 S Maple St, Fennville, MI 49408",
   "Eastown Community Association office, 415 Ethel Ave SE, Eastown": "Eastown Community Association, 415 Ethel Ave SE, Grand Rapids, MI 49506",
 };

@@ -191,6 +191,18 @@ URL:https://www.highteagr.com/events/beauty-and-the-beast-themed-menu
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-05-art-coast-food-wine-festival@gr-seasonal
+DTSTAMP:20261028T120000Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261108
+SUMMARY:Art Coast Food & Wine Festival
+LOCATION:Riverside Pavilion\, 48 Water St\, Saugatuck\, Grand Rapids\, MI
+DESCRIPTION:Food & Wine Festival. Nov 5–7 · Thu–Sat. Info: https://saugatu
+ ck.com/art-coast-food-wine-festival/ (confirm details with the organizer)
+URL:https://saugatuck.com/art-coast-food-wine-festival/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-18-grand-rapids-christkindl-markt@gr-seasonal
 DTSTAMP:20261019T120000Z
 DTSTART;VALUE=DATE:20261118
@@ -568,6 +580,20 @@ DESCRIPTION:Holiday Market. Sun Dec 20 · starts 4 PM. Info: https://www.ti
  4355814 (confirm details with the organizer)
 URL:https://www.ticketweb.com/event/last-chance-holiday-market-the-pyramid
  -scheme-tickets/14355814
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-14-trolls-a-field-study-at-meijer-gardens@gr-seasonal
+DTSTAMP:20261028T120000Z
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20271101
+SUMMARY:Trolls: A Field Study at Meijer Gardens
+LOCATION:Frederik Meijer Gardens\, 1000 E Beltline Ave NE\, Grand Rapids\,
+  MI
+DESCRIPTION:Sculpture Exhibit. May 14–Oct 31\, 2027 · included with genera
+ l admission. Info: https://www.meijergardens.org/trolls/ (confirm details
+  with the organizer)
+URL:https://www.meijergardens.org/trolls/
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
