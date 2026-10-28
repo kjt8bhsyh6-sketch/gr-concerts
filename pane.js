@@ -96,13 +96,27 @@
     if (rr.top < pr.top) pane.scrollTop -= pr.top - rr.top;
     else if (rr.bottom > pr.bottom) pane.scrollTop += rr.bottom - pr.bottom;
   }
+  // Put the selected agenda row at the top of the middle column. A sticky day header stays above it.
+  function scrollRowToTop(row) {
+    const pane = row.closest('.listpane');
+    const head = row.closest('.day') && row.closest('.day').querySelector('.day-h');
+    const sticky = head && getComputedStyle(head).position === 'sticky';
+    const headH = sticky ? head.getBoundingClientRect().height : 0;
+    if (!pane || pane.scrollHeight <= pane.clientHeight + 4) {
+      row.scrollIntoView({ block: 'start', inline: 'nearest' });
+      if (headH) window.scrollBy(0, -headH);
+      return;
+    }
+    const top = row.getBoundingClientRect().top - pane.getBoundingClientRect().top + pane.scrollTop;
+    pane.scrollTop = Math.max(0, top - headH);
+  }
   function attach(opts) {
     const workspace = document.getElementById('workspace');
     const agenda = document.getElementById('agenda');
     const read = document.getElementById('read-body');
     const back = document.getElementById('read-back');
     const rail = document.querySelector('.rail');
-    let week = 'this', selected = '', detailOpen = false;
+    let week = 'this', selected = '', detailOpen = false, pinTop = false;
     const flashed = new Set();
     const hashNow = () => location.hash.replace(/^#/, '');
     const opening = hashNow();
@@ -144,14 +158,17 @@
       if (o.open === false) detailOpen = false;
       markRows();
       writeDetail();
-      showDetail();
       if (o.hash) setHash(selected);
       const row = selected && document.getElementById(selected);
-      if (o.scroll && row) scrollRowInto(row);
+      if (o.toTop) pinTop = true;
+      if (o.toTop && row) scrollRowToTop(row);
+      else if (o.scroll && row) scrollRowInto(row);
+      showDetail();
       if (o.focus === 'row' && row) row.focus({ preventScroll: true });
-      if (o.focus === 'back' && !desktop() && back) back.focus();
+      if (o.focus === 'back' && !desktop() && back) back.focus({ preventScroll: true });
     }
-    function openId(id) {
+    function openId(id, extra) {
+      extra = extra || {};
       if (!id || !opts.weekOf || !opts.weekOf(id)) return false;
       if (!document.getElementById(id)) {
         const inR = !!(opts.inRange && opts.inRange());
@@ -162,7 +179,7 @@
         else if (opts.render) opts.render();
         if (!document.getElementById(id)) return false;
       }
-      select(id, { open: true, hash: true, scroll: true, focus: desktop() ? 'row' : 'back' });
+      select(id, { open: true, hash: true, scroll: !extra.toTop, toTop: !!extra.toTop, focus: desktop() ? 'row' : 'back' });
       return true;
     }
     rail.addEventListener('click', ev => {
@@ -182,6 +199,7 @@
     agenda.addEventListener('click', ev => {
       const row = ev.target.closest('.agenda-row');
       if (!row) return;
+      pinTop = false;
       select(row.id, { open: true, hash: true, scroll: desktop(), focus: desktop() ? 'row' : 'back' });
     });
     agenda.addEventListener('keydown', ev => {
@@ -204,7 +222,8 @@
       detailOpen = false;
       showDetail();
       const row = selected && document.getElementById(selected);
-      if (row) row.focus();
+      if (row && pinTop) scrollRowToTop(row);
+      if (row) row.focus({ preventScroll: true });
     });
     document.addEventListener('keydown', ev => {
       if (ev.key !== 'Escape' || desktop() || !document.body.classList.contains('is-reading')) return;

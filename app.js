@@ -139,7 +139,7 @@
   $('#newcount') && $('#newcount').addEventListener('click', ev => { if (ev.target.closest('.newtoggle')) { const cb = $('#f-new'); cb.checked = !cb.checked; render(); } });
   $('#just').addEventListener('click', ev => {
     const a = ev.target.closest('a[href^="#"]'); if (!a) return;
-    if (pane.openId(a.getAttribute('href').slice(1))) ev.preventDefault();
+    if (pane.openId(a.getAttribute('href').slice(1), { toTop: true })) ev.preventDefault();
   });
   render();
 
