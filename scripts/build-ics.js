@@ -4,6 +4,7 @@ const fs = require('fs'), path = require('path');
 const { loadData, ROOT } = require('./load-data');
 const ics = require('../ics.js');
 const { CONCERTS } = loadData();
+ics.disambiguate(CONCERTS);
 const list = CONCERTS.slice().sort((a, b) => a.date.localeCompare(b.date));
 fs.writeFileSync(path.join(ROOT, 'concerts.ics'), ics.calendar(list, 'Grand Rapids Concerts'));
 console.log(`Wrote concerts.ics (${list.length} shows)`);

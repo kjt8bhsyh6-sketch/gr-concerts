@@ -9,7 +9,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()
-  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'sha256-vxFVJGUu3qh5aYRvzvXjlWQkdsEvfJsmvb+DNtsta0s=' https://gc.zgo.at https://static.cloudflareinsights.com https://giscus.app; connect-src 'self' https://grhappenings.goatcounter.com https://cloudflareinsights.com https://grh-profiles.grhappenings.workers.dev; img-src 'self' data: https://grhappenings.goatcounter.com; style-src 'self' 'unsafe-inline' https://giscus.app; frame-src https://giscus.app; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self' https://buttondown.com
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'sha256-K7+sZA6IULUugyK3q+IEN/jFfOG0jfw/k0hZf1lslj0=' https://gc.zgo.at https://static.cloudflareinsights.com https://giscus.app; connect-src 'self' https://grhappenings.goatcounter.com https://cloudflareinsights.com https://grh-profiles.grhappenings.workers.dev; img-src 'self' data: https://grhappenings.goatcounter.com; style-src 'self' 'unsafe-inline' https://giscus.app; frame-src https://giscus.app; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self' https://buttondown.com
 
 https://:project.pages.dev/*
   X-Robots-Tag: noindex

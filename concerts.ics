@@ -1469,9 +1469,9 @@ DTSTART;TZID=America/Detroit:20261112T190000
 DTEND;TZID=America/Detroit:20261112T220000
 SUMMARY:The Diners – Short Order Improv
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://grcmc.org/theatre/even
- ts (confirm details with the venue)
-URL:https://grcmc.org/theatre/events
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://grcmc.org/event/the-di
+ ners-short-order-improv/1786 (confirm details with the venue)
+URL:https://grcmc.org/event/the-diners-short-order-improv/1786
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-12-hot-water-music-signals-midwest-rodeo-boys-1qbsjd@gr-concer
@@ -1814,9 +1814,11 @@ DTSTART;TZID=America/Detroit:20261114T190000
 DTEND;TZID=America/Detroit:20261114T220000
 SUMMARY:Ain't Nothing Like Family – Ms. Wilkins Goes To Court
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Theater\, 7:00 PM. Tickets/info: https://grcmc.org/theatre/eve
- nts (confirm details with the venue)
-URL:https://grcmc.org/theatre/events
+DESCRIPTION:Theater\, 7:00 PM. Tickets/info: https://grcmc.org/event/ain-t
+ -nothing-like-family-ms-wilkins-goes-to-court/1811 (confirm details with 
+ the venue)
+URL:https://grcmc.org/event/ain-t-nothing-like-family-ms-wilkins-goes-to-c
+ ourt/1811
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-choir-choir-choir-landslide-an-epic-fleetw-1hd4tc@gr-concer
@@ -2050,9 +2052,11 @@ DTSTART;TZID=America/Detroit:20261115T150000
 DTEND;TZID=America/Detroit:20261115T180000
 SUMMARY:Swanson\, Matthews & Bardolph – Acoustic Stew Music Guild
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/theatre/events
-  (confirm details with the venue)
-URL:https://grcmc.org/theatre/events
+DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/event/swanson-
+ matthews-bardolph-acoustic-stew-music-guild/1741 (confirm details with th
+ e venue)
+URL:https://grcmc.org/event/swanson-matthews-bardolph-acoustic-stew-music-
+ guild/1741
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-15-mdop-tonguecutter-boob-sweat-dog-skull@gr-concerts
@@ -2161,9 +2165,9 @@ DTSTART;TZID=America/Detroit:20261118T200000
 DTEND;TZID=America/Detroit:20261118T230000
 SUMMARY:Bad Momz of Comedy
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/theatre/even
- ts (confirm details with the venue)
-URL:https://grcmc.org/theatre/events
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/event/bad-mo
+ mz-of-comedy/1765 (confirm details with the venue)
+URL:https://grcmc.org/event/bad-momz-of-comedy/1765
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-18-midwinter-haunt-me-forever-tour-with-what-1u2z1y@gr-concert
@@ -2205,15 +2209,26 @@ DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com/e
 URL:https://soaringeaglecasino.com/events/chicago/
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-19-o-christmas-tea-a-british-comedy@gr-concerts
+UID:2026-11-19-o-christmas-tea-a-british-comedy-3-00-pm@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261119T150000
 DTEND;TZID=America/Detroit:20261119T180000
 SUMMARY:O Christmas Tea: A British Comedy
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 3:00 PM & 7:30 PM. Tickets/info: https://grcmc.org/th
- eatre/events (confirm details with the venue)
-URL:https://grcmc.org/theatre/events
+DESCRIPTION:Comedy\, 3:00 PM. Tickets/info: https://grcmc.org/event/o-chri
+ stmas-tea-a-british-comedy/1809 (confirm details with the venue)
+URL:https://grcmc.org/event/o-christmas-tea-a-british-comedy/1809
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-19-o-christmas-tea-a-british-comedy-7-30-pm@gr-concerts
+DTSTAMP:20261019T120000Z
+DTSTART;TZID=America/Detroit:20261119T193000
+DTEND;TZID=America/Detroit:20261119T223000
+SUMMARY:O Christmas Tea: A British Comedy
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:30 PM. Tickets/info: https://grcmc.org/event/o-chri
+ stmas-tea-a-british-comedy/1693 (confirm details with the venue)
+URL:https://grcmc.org/event/o-christmas-tea-a-british-comedy/1693
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-19-dustin-nickerson@gr-concerts
@@ -2325,9 +2340,9 @@ DTSTART;TZID=America/Detroit:20261120T183000
 DTEND;TZID=America/Detroit:20261120T213000
 SUMMARY:Candlelight: The Best of Hans Zimmer
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://grcmc.org/theatre/e
- vents (confirm details with the venue)
-URL:https://grcmc.org/theatre/events
+DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://feverup.com/m/26514
+ 1 (confirm details with the venue)
+URL:https://feverup.com/m/265141
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-20-candlelight-queen-vs-the-beatles-nov-20@gr-concerts
@@ -2337,8 +2352,10 @@ DTEND;TZID=America/Detroit:20261120T234500
 SUMMARY:Candlelight: Queen vs. The Beatles (Nov 20)
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 8:45 PM. Tickets/info: https://grcmc.org/theatre/e
- vents (confirm details with the venue)
-URL:https://grcmc.org/theatre/events
+ vent/candlelight-tribute-to-queen-and-the-beatles/1704 (confirm details w
+ ith the venue)
+URL:https://grcmc.org/theatre/event/candlelight-tribute-to-queen-and-the-b
+ eatles/1704
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-20-nicole-atkins-drama-2026-tour-with-john-ga-1ohkz9@gr-concer
@@ -2470,9 +2487,9 @@ DTSTART;TZID=America/Detroit:20261121T190300
 DTEND;TZID=America/Detroit:20261121T220300
 SUMMARY:River City Improv (Nov 21)
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:03 PM. Tickets/info: https://grcmc.org/theatre/even
- ts (confirm details with the venue)
-URL:https://grcmc.org/theatre/events
+DESCRIPTION:Comedy\, 7:03 PM. Tickets/info: https://grcmc.org/event/river-
+ city-improv/1643 (confirm details with the venue)
+URL:https://grcmc.org/event/river-city-improv/1643
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-21-hawthorne-heights-20th-anniversary-of-if-o-ja71vb@gr-concer
@@ -2847,9 +2864,9 @@ DTSTART;TZID=America/Detroit:20261128T183000
 DTEND;TZID=America/Detroit:20261128T213000
 SUMMARY:Candlelight: Mozart vs Beethoven (Nov 28)
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://grcmc.org/theatre/e
- vents (confirm details with the venue)
-URL:https://grcmc.org/theatre/events
+DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://grcmc.org/event/can
+ dlelight-mozart-vs-beethoven/1802 (confirm details with the venue)
+URL:https://grcmc.org/event/candlelight-mozart-vs-beethoven/1802
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-candlelight-80s-rock-anthems@gr-concerts
@@ -3120,9 +3137,9 @@ DTSTART;TZID=America/Detroit:20261203T193000
 DTEND;TZID=America/Detroit:20261203T223000
 SUMMARY:Parade (Jewish Theatre Grand Rapids\, Dec 3–13)
 LOCATION:GRCC Spectrum Theater\, Grand Rapids\, MI
-DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.jtgr.org/season (
- confirm details with the venue)
-URL:https://www.jtgr.org/season
+DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.jtgr.org/2026-202
+ 7/parade (confirm details with the venue)
+URL:https://www.jtgr.org/2026-2027/parade
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-03-spafford-wsg-act-casual@gr-concerts
@@ -3438,7 +3455,8 @@ DESCRIPTION:Latin\, 7:00 PM. Tickets/info: https://gunlakecasino.com/enter
 URL:https://gunlakecasino.com/entertainment/
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-05-calvin-theatre-company-the-miracle-worker@gr-concerts
+UID:2026-12-05-calvin-theatre-company-the-miracle-worker-2-00-pm@gr-concer
+ ts
 DTSTAMP:20261024T120000Z
 DTSTART;TZID=America/Detroit:20261205T140000
 DTEND;TZID=America/Detroit:20261205T170000
@@ -3451,7 +3469,8 @@ URL:https://calvin.edu/events/calvin-theatre-company-miracle-worker-179649
  7200
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-05-calvin-theatre-company-the-miracle-worker@gr-concerts
+UID:2026-12-05-calvin-theatre-company-the-miracle-worker-7-30-pm@gr-concer
+ ts
 DTSTAMP:20261024T120000Z
 DTSTART;TZID=America/Detroit:20261205T193000
 DTEND;TZID=America/Detroit:20261205T223000
@@ -4840,9 +4859,9 @@ DTSTART;TZID=America/Detroit:20270121T193000
 DTEND;TZID=America/Detroit:20270121T223000
 SUMMARY:Camerata Nordica Octet (Great Performance Series)
 LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://hope.edu/arts/great
- -performance-series/ (confirm details with the venue)
-URL:https://hope.edu/arts/great-performance-series/
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://calendar.hope.edu/e
+ vent/camerata-nordica-octet (confirm details with the venue)
+URL:https://calendar.hope.edu/event/camerata-nordica-octet
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-22-shapel-lacey-jan-22@gr-concerts
@@ -5212,9 +5231,9 @@ DTSTART;TZID=America/Detroit:20270204T193000
 DTEND;TZID=America/Detroit:20270204T223000
 SUMMARY:Broken Glass (Jewish Theatre Grand Rapids\, Feb 4–14)
 LOCATION:GRCC Spectrum Theater\, Grand Rapids\, MI
-DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.jtgr.org/season (
- confirm details with the venue)
-URL:https://www.jtgr.org/season
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.jtgr.org/2026-202
+ 7/broken-glass (confirm details with the venue)
+URL:https://www.jtgr.org/2026-2027/broken-glass
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-05-as-i-lay-dying@gr-concerts
@@ -6531,9 +6550,11 @@ DTEND;TZID=America/Detroit:20270408T223000
 SUMMARY:Actors from the London Stage: King Lear (Apr 8–9\, Great Performan
  ce Series)
 LOCATION:Knickerbocker Theatre (Hope College)\, Grand Rapids\, MI
-DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://hope.edu/arts/great-p
- erformance-series/ (confirm details with the venue)
-URL:https://hope.edu/arts/great-performance-series/
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calendar.hope.edu/eve
+ nt/actors-from-the-london-stage-in-king-lear (confirm details with the ve
+ nue)
+URL:https://calendar.hope.edu/event/actors-from-the-london-stage-in-king-l
+ ear
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-09-brit-floyd-animals-50-world-tour@gr-concerts
@@ -6915,9 +6936,9 @@ DTSTART;TZID=America/Detroit:20270421T193000
 DTEND;TZID=America/Detroit:20270421T223000
 SUMMARY:Chanticleer (Great Performance Series)
 LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
-DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://hope.edu/arts/great-pe
- rformance-series/ (confirm details with the venue)
-URL:https://hope.edu/arts/great-performance-series/
+DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://calendar.hope.edu/even
+ t/chanticleer (confirm details with the venue)
+URL:https://calendar.hope.edu/event/chanticleer
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-22-jeff-dunham-inappropriate-contact@gr-concerts
@@ -7195,8 +7216,8 @@ SUMMARY:Grand Rapids Youth Choruses: All Chorus Spring Concert (Royce Audi
  torium)
 LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
 DESCRIPTION:Choral\, 7:00 PM. Tickets/info: https://gryouthchorus.org/even
- ts/ (confirm details with the venue)
-URL:https://gryouthchorus.org/events/
+ t/all-chorus-spring-concert/ (confirm details with the venue)
+URL:https://gryouthchorus.org/event/all-chorus-spring-concert/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-05-15-gr-symphony-the-music-of-billy-joel-the-pi-1lq9mo@gr-concer
@@ -7297,9 +7318,9 @@ DTSTART;TZID=America/Detroit:20270610T193000
 DTEND;TZID=America/Detroit:20270610T223000
 SUMMARY:Pizza Bagels (Jewish Theatre Grand Rapids\, Jun 10–20)
 LOCATION:GRCC Spectrum Theater\, Grand Rapids\, MI
-DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.jtgr.org/season (
- confirm details with the venue)
-URL:https://www.jtgr.org/season
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.jtgr.org/2026-202
+ 7/pizza-bagels (confirm details with the venue)
+URL:https://www.jtgr.org/2026-2027/pizza-bagels
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-06-10-riley-green-that-s-just-me-tour-with-musca-1q8kpu@gr-concer

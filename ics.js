@@ -24,7 +24,19 @@
   // short stable hash (FNV-1a, base36) so long titles cut at 60 chars stay unique
   const hash = s => { let x = 2166136261; for (let i = 0; i < s.length; i++) { x ^= s.charCodeAt(i); x = Math.imul(x, 16777619); } return (x >>> 0).toString(36).slice(0, 6); };
   // card / UID id. Short titles keep their old id; long ones get a hash of the full title + time.
-  const id = c => { const f = slugAll(c.date + '-' + c.artist); return f.length <= 60 ? f : f.slice(0, 53).replace(/-$/, '') + '-' + hash(f + '|' + (c.time || '')); };
+  // A second show on the same date with the same title (matinee and evening) sets disambiguate
+  // so the two cards, hash links, and calendar UIDs do not collapse into one.
+  const id = c => {
+    const extra = c.disambiguate && c.time ? '-' + c.time : '';
+    const f = slugAll(c.date + '-' + c.artist + extra);
+    return f.length <= 60 ? f : f.slice(0, 53).replace(/-$/, '') + '-' + hash(f + '|' + (c.time || ''));
+  };
+  function disambiguate(list) {
+    const counts = {};
+    (list || []).forEach(c => { const k = slugAll(c.date + '-' + c.artist); counts[k] = (counts[k] || 0) + 1; });
+    (list || []).forEach(c => { if (counts[slugAll(c.date + '-' + c.artist)] > 1) c.disambiguate = true; });
+    return list;
+  }
   const esc = s => String(s).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
   function fold(line) { const o = []; while (line.length > 74) { o.push(line.slice(0, 74)); line = ' ' + line.slice(74); } o.push(line); return o.join('\r\n'); }
   const VTZ = ['BEGIN:VTIMEZONE', 'TZID:America/Detroit', 'BEGIN:DAYLIGHT', 'TZOFFSETFROM:-0500', 'TZOFFSETTO:-0400', 'TZNAME:EDT',
@@ -52,6 +64,7 @@
       ctz: TZ, location: c.venue + ', Grand Rapids, MI', details: `Tickets/info: ${c.link}` });
     return 'https://calendar.google.com/calendar/render?' + q;
   }
-  const api = { calendar, google, title, id, slug, startISO: c => iso(parts(c)), endISO: c => iso(parts(c, 3)), to24 };
+  if (typeof CONCERTS !== 'undefined') disambiguate(CONCERTS);
+  const api = { calendar, google, title, id, slug, disambiguate, startISO: c => iso(parts(c)), endISO: c => iso(parts(c, 3)), to24 };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.GRICS = api;
 })(this);
