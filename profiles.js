@@ -78,9 +78,12 @@
 
   document.head.insertAdjacentHTML("beforeend", `<style>
 header{position:relative}
-.mp-pill{position:absolute;top:10px;right:10px;margin:0;height:44px;min-height:44px;padding:0 .7rem;border-radius:99px;font-size:.78rem;font-weight:700;line-height:1;background:#fff;border:1px solid var(--line);color:var(--text);cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.25);white-space:nowrap}
-.mp-pill:hover{filter:brightness(.95)}
+.mp-tools{position:absolute;top:10px;right:10px;z-index:3;display:flex;align-items:center;gap:.4rem}
+.mp-pill{margin:0;height:44px;min-height:44px;padding:0 .7rem;border-radius:99px;font-size:.78rem;font-weight:700;line-height:1;background:#fff;border:1px solid var(--line);color:var(--text);cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.25);white-space:nowrap}
+.mp-pill:hover,.mp-xchip:hover{filter:brightness(.95)}
 .mp-pill.mp-av{width:44px;height:44px;min-height:44px;padding:0;font-weight:700;font-size:1rem;background:var(--accent);color:#fff;border-color:#fff}
+.mp-xchip{display:inline-flex;align-items:center;justify-content:center;gap:.35rem;box-sizing:border-box;height:44px;min-height:44px;min-width:44px;padding:0 .75rem;border-radius:99px;font-size:.78rem;font-weight:700;line-height:1;background:#fff;border:1px solid var(--line);color:var(--text);text-decoration:none;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.25);cursor:pointer}
+.mp-xchip svg{width:1.05em;height:1.05em;display:block;flex:0 0 auto}
 .mp-back{position:fixed;inset:0;background:#0006;z-index:50}.mp-sheet{position:fixed;left:0;right:0;bottom:0;max-width:640px;margin:0 auto;background:#fff;border-radius:18px 18px 0 0;padding:1rem 1.2rem 1.4rem;z-index:51;max-height:88vh;overflow:auto;box-shadow:0 -4px 20px #0002}
 .mp-sheet h3{margin:.2rem 0 1rem;font-size:1.15rem;display:flex;justify-content:space-between;align-items:center}.mp-x{background:none;border:0;min-height:0;padding:0;font-size:1.3rem;cursor:pointer}
 .mp-l{font-size:.8rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:1rem 0 .4rem}.mp-h{font-weight:700;margin:.9rem 0 0}
@@ -99,7 +102,17 @@ details.mp-d{border-top:1px solid var(--line);margin-top:1rem;padding-top:.7rem}
 @media (prefers-reduced-motion:reduce){.card.mp-hl,.agenda-row.mp-hl{animation:none;box-shadow:0 0 0 4px var(--accent)}}
 </style>`);
 
-  const pill = document.createElement("button"); pill.type = "button"; pill.className = "mp-pill"; hdr.classList.add("mp-has"); hdr.appendChild(pill);
+  // @GRHappen17 only (https://x.com/GRHappen17). Never @grhappenings — that handle is Visit Grand Rapids, MN.
+  const tools = document.createElement("div"); tools.className = "mp-tools";
+  const xchip = document.createElement("a");
+  xchip.className = "mp-xchip";
+  xchip.href = "https://x.com/GRHappen17";
+  xchip.target = "_blank";
+  xchip.rel = "noopener me";
+  xchip.setAttribute("aria-label", "Follow Grand Rapids Happenings on X (@GRHappen17)");
+  xchip.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg><span>@GRHappen17</span>';
+  const pill = document.createElement("button"); pill.type = "button"; pill.className = "mp-pill";
+  tools.append(xchip, pill); hdr.classList.add("mp-has"); hdr.appendChild(tools);
   let strip = null;
 
   function close() { document.querySelectorAll(".mp-back,.mp-sheet").forEach(e => e.remove()); }
