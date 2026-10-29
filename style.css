@@ -164,7 +164,7 @@ body.bio-open{overflow:hidden}
 .segtoggle a:focus-visible{outline:3px solid var(--ms);outline-offset:-3px;z-index:1}
 @media (max-width:440px){.segtoggle{max-width:calc(100% - 1rem)}.segtoggle a{font-size:.92rem;padding:.45rem .4rem}}
 @media (min-width:760px){
-  header{grid-template-columns:auto minmax(0,1fr);grid-template-areas:"brand copy";padding:.55rem 6.4rem .55rem 4.15rem;column-gap:1rem}
+  header{grid-template-columns:auto minmax(0,1fr);grid-template-areas:"brand copy";padding:3.65rem 1.1rem .75rem;column-gap:1rem}
   header:has(.mast-search){grid-template-columns:auto minmax(0,1fr) 13.25rem;grid-template-areas:"brand copy search"}
   header h1{font-size:clamp(1.9rem,2.6vw,2.45rem);white-space:normal}
   .subtitle{font-size:1.12rem}
@@ -173,6 +173,11 @@ body.bio-open{overflow:hidden}
   .subtitle,#updated{display:block;min-height:1.35em;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .mast-search{align-self:center;width:auto;max-width:13.25rem;justify-self:end}
   .segtoggle a{font-size:1.05rem;padding:.45rem 1.35rem}
+}
+/* Wide mast: keep the corner cluster (X chip + Sign in) in the top-right without covering search or the title. */
+@media (min-width:1000px){
+  header{padding:.55rem 16.25rem .55rem 4.15rem}
+  header:not(:has(.mast-search)){padding:3.65rem 1.25rem .75rem}
 }
 @media (min-width:1100px){
   .brand{width:10.5rem}
