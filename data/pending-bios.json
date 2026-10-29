@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-28",
-  "count": 177,
+  "generated": "2026-10-29",
+  "count": 176,
   "pending": [
     {
       "artist": "HARRYWEEN: Harry Styles Dance Night",
@@ -113,16 +113,6 @@
       "added": "2026-10-28"
     },
     {
-      "artist": "The Po' Ramblin' Boys wsg Round Creek String Band and Red Thyme Duo",
-      "week": "next",
-      "dates": [
-        "2026-11-04"
-      ],
-      "venue": "Tip Top Deluxe Bar & Grill",
-      "link": "https://www.ticketweb.com/event/the-po-ramblin-boys-round-tip-top-deluxe-bar-tickets/15045093",
-      "added": "2026-10-23"
-    },
-    {
       "artist": "GVSU New Music Ensemble Fall Concert",
       "week": "next",
       "dates": [
@@ -131,16 +121,6 @@
       "venue": "GVSU Haas Center for Performing Arts",
       "link": "https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/9a0f476d-a7f9-4ceb-86b1-e2a88c06e5e9",
       "added": "2026-10-23"
-    },
-    {
-      "artist": "The Oregon Trail (GRCC Players, Nov 5–7)",
-      "week": "next",
-      "dates": [
-        "2026-11-05"
-      ],
-      "venue": "GRCC Spectrum Theater",
-      "link": "https://www.grcc.edu/schools-departments/theater/spectrum-theater/spectrum-theater-calendar",
-      "added": "2026-10-22"
     },
     {
       "artist": "Live @TCP: The Dispatch (And friends!) - Comedy Show (Nov 5, Dec 3, Jan 7)",
@@ -271,7 +251,7 @@
         "2026-11-12"
       ],
       "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/events",
+      "link": "https://grcmc.org/event/the-diners-short-order-improv/1786",
       "added": "2026-10-19"
     },
     {
@@ -351,7 +331,7 @@
         "2026-11-14"
       ],
       "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/events",
+      "link": "https://grcmc.org/event/ain-t-nothing-like-family-ms-wilkins-goes-to-court/1811",
       "added": "2026-10-19"
     },
     {
@@ -411,7 +391,7 @@
         "2026-11-15"
       ],
       "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/events",
+      "link": "https://grcmc.org/event/swanson-matthews-bardolph-acoustic-stew-music-guild/1741",
       "added": "2026-10-19"
     },
     {
@@ -451,7 +431,7 @@
         "2026-11-18"
       ],
       "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/events",
+      "link": "https://grcmc.org/event/bad-momz-of-comedy/1765",
       "added": "2026-10-19"
     },
     {
@@ -468,10 +448,11 @@
       "artist": "O Christmas Tea: A British Comedy",
       "week": "later",
       "dates": [
+        "2026-11-19",
         "2026-11-19"
       ],
       "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/events",
+      "link": "https://grcmc.org/event/o-christmas-tea-a-british-comedy/1809",
       "added": "2026-10-19"
     },
     {
@@ -511,7 +492,7 @@
         "2026-11-20"
       ],
       "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/events",
+      "link": "https://feverup.com/m/265141",
       "added": "2026-10-19"
     },
     {
@@ -521,7 +502,7 @@
         "2026-11-20"
       ],
       "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/events",
+      "link": "https://grcmc.org/theatre/event/candlelight-tribute-to-queen-and-the-beatles/1704",
       "added": "2026-10-19"
     },
     {
@@ -571,7 +552,7 @@
         "2026-11-21"
       ],
       "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/events",
+      "link": "https://grcmc.org/event/river-city-improv/1643",
       "added": "2026-10-19"
     },
     {
@@ -651,7 +632,7 @@
         "2026-11-28"
       ],
       "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/events",
+      "link": "https://grcmc.org/event/candlelight-mozart-vs-beethoven/1802",
       "added": "2026-10-19"
     },
     {
@@ -761,7 +742,7 @@
         "2026-12-03"
       ],
       "venue": "GRCC Spectrum Theater",
-      "link": "https://www.jtgr.org/season",
+      "link": "https://www.jtgr.org/2026-2027/parade",
       "added": "2026-10-22"
     },
     {
@@ -1392,7 +1373,7 @@
         "2027-02-04"
       ],
       "venue": "GRCC Spectrum Theater",
-      "link": "https://www.jtgr.org/season",
+      "link": "https://www.jtgr.org/2026-2027/broken-glass",
       "added": "2026-10-22"
     },
     {
@@ -1424,6 +1405,16 @@
       "venue": "Dr. Grins (at The B.O.B.)",
       "link": "https://www.thebob.com/drgrins/comedian/index.html?id=1504",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "Kawaii Rave",
+      "week": "later",
+      "dates": [
+        "2027-02-12"
+      ],
+      "venue": "The Stache (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/50028042/kawaii-rave-grand-rapids-the-intersection-the-stache",
+      "added": "2026-10-29"
     },
     {
       "artist": "2000's Rave – Party Like It's 2003",

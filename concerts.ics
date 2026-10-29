@@ -38,32 +38,6 @@ URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-sketch-c
  omedy-show
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-28-the-longest-johns-the-ends-of-the-earth-tour@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261028T200000
-DTEND;TZID=America/Detroit:20261028T230000
-SUMMARY:The Longest Johns – The Ends Of The Earth Tour
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Folk\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/75
- 525446/the-longest-johns-the-ends-of-the-earth-tour-grand-rapids-the-inte
- rsection-elevation (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/75525446/the-longest-johns-the-ends-of-t
- he-earth-tour-grand-rapids-the-intersection-elevation
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-28-emma-bieniewicz-joe-dreams-statice@gr-concerts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261028T190000
-DTEND;TZID=America/Detroit:20261028T220000
-SUMMARY:Emma Bieniewicz + Joe Dreams + Statice
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
- event/emma-bieniewicz-joe-dreams-the-pyramid-scheme-tickets/14335804 (con
- firm details with the venue)
-URL:https://www.ticketweb.com/event/emma-bieniewicz-joe-dreams-the-pyramid
- -scheme-tickets/14335804
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-29-haggis-x-1@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261029T190000
@@ -1971,11 +1945,13 @@ DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://parktheatreholland.org/
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-14-hope-college-jazz-ensembles-concert@gr-concerts
+UID:2026-11-14-hope-college-jazz-ensembles-an-evening-of-fzdut0@gr-concert
+ s
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261114T190000
 DTEND;TZID=America/Detroit:20261114T220000
-SUMMARY:Hope College Jazz Ensembles Concert
+SUMMARY:Hope College Jazz Ensembles: An Evening of Jazz – A Tribute to the
+  Count Basie Orchestra
 LOCATION:Jack H. Miller Center for Musical Arts\, Grand Rapids\, MI
 DESCRIPTION:Jazz\, 7:00 PM. Tickets/info: https://calendar.hope.edu/event/
  jazz-ensembles-concert (confirm details with the venue)
@@ -3496,6 +3472,19 @@ URL:https://www.ticketweb.com/event/vespa-and-together-again-tip-top-delux
  e-bar-tickets/14403644
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-05-the-rock-and-roll-playhouse@gr-concerts
+DTSTAMP:20261029T120000Z
+DTSTART;TZID=America/Detroit:20261205T120000
+DTEND;TZID=America/Detroit:20261205T150000
+SUMMARY:The Rock and Roll Playhouse
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Family\, 12:00 PM. Tickets/info: https://www.etix.com/ticket/p
+ /40124216/the-rock-and-roll-playhouse-grand-rapids-the-intersection-the-s
+ tache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/40124216/the-rock-and-roll-playhouse-gra
+ nd-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261206T140000
@@ -5006,6 +4995,19 @@ DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-24-alexandra-kay-the-one-woman-show@gr-concerts
+DTSTAMP:20261029T120000Z
+DTSTART;TZID=America/Detroit:20270124T200000
+DTEND;TZID=America/Detroit:20270124T230000
+SUMMARY:Alexandra Kay – The One Woman Show
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
+ /92374492/alexandra-kay-the-one-woman-show-grand-rapids-the-intersection 
+ (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/92374492/alexandra-kay-the-one-woman-sho
+ w-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-27-dancing-with-the-stars-live@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270127T193000
@@ -5482,6 +5484,19 @@ DESCRIPTION:Comedy\, Time on ticket page. Tickets/info: https://www.ticket
  7/event/080064F0A0D457A5 (confirm details with the venue)
 URL:https://www.ticketmaster.com/ryan-hamilton-making-good-time-grand-rapi
  ds-michigan-02-12-2027/event/080064F0A0D457A5
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-12-kawaii-rave@gr-concerts
+DTSTAMP:20261029T120000Z
+DTSTART;TZID=America/Detroit:20270212T213000
+DTEND;TZID=America/Detroit:20270213T003000
+SUMMARY:Kawaii Rave
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 9:30 PM. Tickets/info: https://www.etix.com/tick
+ et/p/50028042/kawaii-rave-grand-rapids-the-intersection-the-stache (confi
+ rm details with the venue)
+URL:https://www.etix.com/ticket/p/50028042/kawaii-rave-grand-rapids-the-in
+ tersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-13-2000-s-rave-party-like-it-s-2003@gr-concerts
