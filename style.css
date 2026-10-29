@@ -124,6 +124,10 @@ footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.9rem}
 footer p{margin:.3rem 0}.mail-addr,.disclosure{font-size:.82rem}
 .footlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.2rem;margin-top:.8rem}
 .footlinks a{color:var(--navy);font-weight:700;text-decoration:none}.footlinks a:hover{text-decoration:underline}
+/* X account only: https://x.com/GRHappen17. Never @grhappenings (Visit Grand Rapids, MN). */
+.xfoot{margin:.9rem 0 0}
+.xfoot a{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-height:44px;min-width:44px;padding:.4rem 1rem;border-radius:99px;border:1px solid var(--navy);background:#fff;color:var(--navy);font-weight:700;line-height:1.2;text-decoration:none}
+.xfoot a:hover{background:#eef0f6}
 .doc{max-width:760px}.doc section{margin-bottom:1rem}.doc p{line-height:1.55}
 /* top nav (Concerts / Sports) + sports note cards */
 .tag.off{background:#6b7280}.note-card p{color:var(--text)}
@@ -164,7 +168,7 @@ body.bio-open{overflow:hidden}
 .segtoggle a:focus-visible{outline:3px solid var(--ms);outline-offset:-3px;z-index:1}
 @media (max-width:440px){.segtoggle{max-width:calc(100% - 1rem)}.segtoggle a{font-size:.92rem;padding:.45rem .4rem}}
 @media (min-width:760px){
-  header{grid-template-columns:auto minmax(0,1fr);grid-template-areas:"brand copy";padding:3.65rem 1.1rem .75rem;column-gap:1rem}
+  header{grid-template-columns:auto minmax(0,1fr);grid-template-areas:"brand copy";padding:.55rem 6.4rem .55rem 4.15rem;column-gap:1rem}
   header:has(.mast-search){grid-template-columns:auto minmax(0,1fr) 13.25rem;grid-template-areas:"brand copy search"}
   header h1{font-size:clamp(1.9rem,2.6vw,2.45rem);white-space:normal}
   .subtitle{font-size:1.12rem}
@@ -173,11 +177,6 @@ body.bio-open{overflow:hidden}
   .subtitle,#updated{display:block;min-height:1.35em;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .mast-search{align-self:center;width:auto;max-width:13.25rem;justify-self:end}
   .segtoggle a{font-size:1.05rem;padding:.45rem 1.35rem}
-}
-/* Wide mast: keep the corner cluster (X chip + Sign in) in the top-right without covering search or the title. */
-@media (min-width:1000px){
-  header{padding:.55rem 16.25rem .55rem 4.15rem}
-  header:not(:has(.mast-search)){padding:3.65rem 1.25rem .75rem}
 }
 @media (min-width:1100px){
   .brand{width:10.5rem}
