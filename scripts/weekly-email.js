@@ -22,5 +22,5 @@ md += `## 🆕 Just announced\n${fresh.length ? fresh.slice(0, 10).map(line).joi
 md += `## 🎸 This week\n${thisWeek.map(line).join('\n') || '_Quiet week!_'}\n\n`;
 md += `## 🎄 Seasonal events\n${SEASONAL.slice().sort((a, b) => a.sort.localeCompare(b.sort)).map(e => `- **${e.name}** · ${e.location} · ${e.when} · [Info](${e.link})`).join('\n')}\n\n`;
 md += `📅 Put every show in your calendar: subscribe to ${site}concerts.ics\n\n`;
-md += `Know a show we missed? Reply to this email.\n\n— The Canasta Club\n\n_Always confirm details with the venue._\n\n---\nGrand Rapids Happenings · ${MAILING_ADDRESS}\nUnsubscribe: {{ unsubscribe_url }}\n`;
+md += `Know a show we missed? Reply to this email.\n\n— The Canasta Club LLC\n\n_Always confirm details with the venue._\n\n---\nGrand Rapids Happenings · ${MAILING_ADDRESS}\nUnsubscribe: {{ unsubscribe_url }}\n`;
 if (out) { fs.writeFileSync(out, md); console.log('Wrote', out); } else process.stdout.write(md);
