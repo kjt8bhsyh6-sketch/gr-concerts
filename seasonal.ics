@@ -107,21 +107,6 @@ URL:https://www.meijergardens.org/events/hallowee-ones-parade-and-programm
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-28-ghosts-of-the-grand-paranormal-indoor-walking-tou@gr-season
- al
-DTSTAMP:20261019T120000Z
-DTSTART;VALUE=DATE:20261028
-DTEND;VALUE=DATE:20261030
-SUMMARY:Ghosts of the Grand – Paranormal Indoor Walking Tour (21+)
-LOCATION:Amway Grand Plaza\, 187 Monroe Ave NW\, Grand Rapids\, MI
-DESCRIPTION:Ghost Tour. Oct 28–29 · tours 5:30–8:30 PM. Info: https://www.
- eventbrite.com/e/ghosts-of-the-grand-a-paranormal-indoor-walking-tour-tic
- kets-2002647431377 (confirm details with the organizer)
-URL:https://www.eventbrite.com/e/ghosts-of-the-grand-a-paranormal-indoor-w
- alking-tour-tickets-2002647431377
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-30-grand-rapids-halloween-bar-crawl-crawl-with-us@gr-seasonal
 DTSTAMP:20261022T120000Z
 DTSTART;VALUE=DATE:20261030
@@ -256,6 +241,22 @@ DESCRIPTION:Holiday Parade. Sat Nov 21 · parade 5 PM\; Santa arrives ~6:30
   PM\; tree lighting 6:45 PM. Info: https://grsantaparade.com/ (confirm de
  tails with the organizer)
 URL:https://grsantaparade.com/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-saugatuck-turkey-trot-2026-fun-run-benefiting-chr@gr-season
+ al
+DTSTAMP:20261030T120000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Saugatuck Turkey Trot 2026 (fun run benefiting Christian Neighbors
+ )
+LOCATION:Wick's Park Bar & Grille\, 449 Water St\, Saugatuck\, Grand Rapid
+ s\, MI
+DESCRIPTION:Turkey Trot. Sat Nov 21 · 11 AM · non-timed ~3.5-mile run/walk
+  from Wicks Park. Info: https://saugatuck.com/event/turkey-trot-2025/ (co
+ nfirm details with the organizer)
+URL:https://saugatuck.com/event/turkey-trot-2025/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -552,6 +553,22 @@ DESCRIPTION:Holiday Tea. Sun Dec 6 (2–4 PM) & Fri Dec 18 (5:30–8 PM). Info
  a-christmas-carol (confirm details with the organizer)
 URL:https://www.highteagr.com/events/a-dramatic-reading-of-charles-dickens
  -a-christmas-carol
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-09-santa-visits-on-the-lowell-showboat-incl-nite-of-@gr-season
+ al
+DTSTAMP:20261030T120000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261220
+SUMMARY:Santa Visits on the Lowell Showboat (incl. Nite of Cheer)
+LOCATION:Lowell Showboat\, 110 Riverwalk Plaza\, Lowell\, Grand Rapids\, M
+ I
+DESCRIPTION:Santa Visit. Wed Dec 9 & 16 · 4:30–7 PM\; Fri Dec 11 Nite of C
+ heer · Santa 4–7:30 PM\, cocoa & cookies 5:30–7:30 PM\; Sat Dec 12 & 19 ·
+  10 AM–1 PM · outdoor line. Info: https://www.discoverlowell.org/christma
+ s-festivities/ (confirm details with the organizer)
+URL:https://www.discoverlowell.org/christmas-festivities/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

@@ -1,27 +1,7 @@
 {
-  "generated": "2026-10-29",
-  "count": 176,
+  "generated": "2026-10-30",
+  "count": 174,
   "pending": [
-    {
-      "artist": "HARRYWEEN: Harry Styles Dance Night",
-      "week": "this",
-      "dates": [
-        "2026-10-29"
-      ],
-      "venue": "The Stache (at The Intersection)",
-      "link": "https://www.etix.com/ticket/p/83427799/harryweenharry-styles-dance-night-grand-rapids-the-intersection-the-stache",
-      "added": "2026-10-21"
-    },
-    {
-      "artist": "Emo Night (free, 21+)",
-      "week": "this",
-      "dates": [
-        "2026-10-29"
-      ],
-      "venue": "Tip Top Deluxe Bar & Grill",
-      "link": "https://www.ticketweb.com/event/emo-night-tip-top-deluxe-bar-tickets/14403674",
-      "added": "2026-10-28"
-    },
     {
       "artist": "Dancin' With The Devil ft. Garbage Angel (18+)",
       "week": "this",
@@ -163,16 +143,6 @@
       "added": "2026-10-23"
     },
     {
-      "artist": "Free Show: The Skinny Limbs & Languor (no cover)",
-      "week": "next",
-      "dates": [
-        "2026-11-06"
-      ],
-      "venue": "Speciation Artisan Ales",
-      "link": "https://speciationartisanales.com/events/skinnylimbs2026",
-      "added": "2026-10-23"
-    },
-    {
       "artist": "Mega 80's – The Ultimate 80's Retro Party (Nov 7)",
       "week": "next",
       "dates": [
@@ -293,16 +263,6 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/resavoir-harmolodics-the-pyramid-scheme-tickets/15012863",
       "added": "2026-10-20"
-    },
-    {
-      "artist": "Free Show Friday: deadbeatdad (no cover, 21+)",
-      "week": "later",
-      "dates": [
-        "2026-11-13"
-      ],
-      "venue": "Speciation Artisan Ales",
-      "link": "https://speciationartisanales.com/events/deadbeatdad1113",
-      "added": "2026-10-23"
     },
     {
       "artist": "Calvin Symphonic Band: Voices of the Americas",
@@ -1077,6 +1037,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Pinball Disco ft. The DJ Bob Marino + Drop Catch + Slim Buddha + The Seventh",
+      "week": "later",
+      "dates": [
+        "2026-12-27"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/pinball-disco-ft-the-dj-the-pyramid-scheme-tickets/14403364",
+      "added": "2026-10-30"
+    },
+    {
       "artist": "NYE Countdown with Brena (131 Sportsbar & Lounge)",
       "week": "later",
       "dates": [
@@ -1415,6 +1385,16 @@
       "venue": "The Stache (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/50028042/kawaii-rave-grand-rapids-the-intersection-the-stache",
       "added": "2026-10-29"
+    },
+    {
+      "artist": "CRIMEWAVE: A Post-Punk & Darkwave Party",
+      "week": "later",
+      "dates": [
+        "2027-02-12"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/crimewave-a-post-punk-the-pyramid-scheme-tickets/14403384",
+      "added": "2026-10-30"
     },
     {
       "artist": "2000's Rave – Party Like It's 2003",

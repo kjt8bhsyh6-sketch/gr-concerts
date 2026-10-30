@@ -38,151 +38,6 @@ URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-sketch-c
  omedy-show
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-29-haggis-x-1@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261029T190000
-DTEND;TZID=America/Detroit:20261029T220000
-SUMMARY:Haggis X-1
-LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
-DESCRIPTION:Celtic Rock\, 7:00 PM. Tickets/info: https://www.themidtowngr.
- com/Checkout/Haggis-X-1 (confirm details with the venue)
-URL:https://www.themidtowngr.com/Checkout/Haggis-X-1
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-ringling-bros-and-barnum-bailey-the-greate-5e2ffn@gr-concer
- ts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261029T190000
-DTEND;TZID=America/Detroit:20261029T220000
-SUMMARY:Ringling Bros. and Barnum & Bailey: The Greatest Show On Earth
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Family Show\, 7:00 PM. Tickets/info: https://www.ticketmaster.
- com/ringling-bros-and-barnum-bailey-presents-grand-rapids-michigan-10-29-
- 2026/event/0800642CD051623C (confirm details with the venue)
-URL:https://www.ticketmaster.com/ringling-bros-and-barnum-bailey-presents-
- grand-rapids-michigan-10-29-2026/event/0800642CD051623C
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-blue-october-the-foiled-20th-anniversary-w-hxz3fj@gr-concer
- ts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261029T190000
-DTEND;TZID=America/Detroit:20261029T220000
-SUMMARY:Blue October – The Foiled 20th Anniversary World Tour
-LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/blu
- e-october-the-foiled-20th-anniversary-grand-rapids-michigan-10-29-2026/ev
- ent/080064650A25D587 (confirm details with the venue)
-URL:https://www.ticketmaster.com/blue-october-the-foiled-20th-anniversary-
- grand-rapids-michigan-10-29-2026/event/080064650A25D587
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-american-aquarium@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261029T193000
-DTEND;TZID=America/Detroit:20261029T223000
-SUMMARY:American Aquarium
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Americana\, 7:30 PM. Tickets/info: https://www.etix.com/ticket
- /p/63031211/american-aquarium-grand-rapids-the-intersection-elevation (co
- nfirm details with the venue)
-URL:https://www.etix.com/ticket/p/63031211/american-aquarium-grand-rapids-
- the-intersection-elevation
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-chamber-music-society-of-lincoln-center-dv-xewc67@gr-concer
- ts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261029T193000
-DTEND;TZID=America/Detroit:20261029T223000
-SUMMARY:Chamber Music Society of Lincoln Center: Dvořák\, Debussy\, and Ch
- aminade
-LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
- erts/the-chamber-music-society-of-lincoln-center-dvorak-debussy-and-chami
- nade-2026 (confirm details with the venue)
-URL:https://www.scmcgr.org/concerts/the-chamber-music-society-of-lincoln-c
- enter-dvorak-debussy-and-chaminade-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-chris-webby-webby-s-arcade-tour@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261029T200000
-DTEND;TZID=America/Detroit:20261029T230000
-SUMMARY:Chris Webby – Webby's Arcade Tour
-LOCATION:The Intersection (main room)\, Grand Rapids\, MI
-DESCRIPTION:Hip-Hop\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
- /80498824/chris-webby-webbys-arcade-tour-grand-rapids-the-intersection (c
- onfirm details with the venue)
-URL:https://www.etix.com/ticket/p/80498824/chris-webby-webbys-arcade-tour-
- grand-rapids-the-intersection
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-noah-gundersen-rites-of-spring-us-tour-wit-i5rfg6@gr-concer
- ts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261029T183000
-DTEND;TZID=America/Detroit:20261029T213000
-SUMMARY:Noah Gundersen – Rites of Spring US Tour (with Runnner\, Breakup S
- hoes)
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Indie Folk\, 6:30 PM. Tickets/info: https://www.ticketweb.com/
- event/noah-gundersen-rites-of-spring-the-pyramid-scheme-tickets/14938823 
- (confirm details with the venue)
-URL:https://www.ticketweb.com/event/noah-gundersen-rites-of-spring-the-pyr
- amid-scheme-tickets/14938823
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-harryween-harry-styles-dance-night@gr-concerts
-DTSTAMP:20261021T120000Z
-DTSTART;TZID=America/Detroit:20261029T203000
-DTEND;TZID=America/Detroit:20261029T233000
-SUMMARY:HARRYWEEN: Harry Styles Dance Night
-LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Dance Party\, 8:30 PM. Tickets/info: https://www.etix.com/tick
- et/p/83427799/harryweenharry-styles-dance-night-grand-rapids-the-intersec
- tion-the-stache (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/83427799/harryweenharry-styles-dance-nig
- ht-grand-rapids-the-intersection-the-stache
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-the-rocky-horror-picture-show-park-theatre@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261029T180000
-DTEND;TZID=America/Detroit:20261029T210000
-SUMMARY:The Rocky Horror Picture Show (Park Theatre)
-LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
-DESCRIPTION:Live Show\, 6:00 PM. Tickets/info: https://parktheatreholland.
- org/ (confirm details with the venue)
-URL:https://parktheatreholland.org/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-grcc-guitar-night-grand-rapids-guitar-duo-aumfvq@gr-concert
- s
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261029T193000
-DTEND;TZID=America/Detroit:20261029T223000
-SUMMARY:GRCC Guitar Night: Grand Rapids Guitar Duo\, Folias Duo & Student 
- Ensembles
-LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
- /grcc-music-presents-guitar-night-0 (confirm details with the venue)
-URL:https://www.grcc.edu/events/grcc-music-presents-guitar-night-0
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-29-emo-night-free-21@gr-concerts
-DTSTAMP:20261028T120000Z
-DTSTART;TZID=America/Detroit:20261029T170000
-DTEND;TZID=America/Detroit:20261029T200000
-SUMMARY:Emo Night (free\, 21+)
-LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
-DESCRIPTION:Emo\, 5:00 PM. Tickets/info: https://www.ticketweb.com/event/e
- mo-night-tip-top-deluxe-bar-tickets/14403674 (confirm details with the ve
- nue)
-URL:https://www.ticketweb.com/event/emo-night-tip-top-deluxe-bar-tickets/1
- 4403674
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-30-capella-fall-concert-come-home-free@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261030T193000
@@ -1645,17 +1500,6 @@ LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
 DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.themidtowngr.c
  om/shows-events/detail/Whitehorse (confirm details with the venue)
 URL:https://www.themidtowngr.com/shows-events/detail/Whitehorse
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-13-free-show-friday-deadbeatdad-no-cover-21@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261113T210000
-DTEND;TZID=America/Detroit:20261114T000000
-SUMMARY:Free Show Friday: deadbeatdad (no cover\, 21+)
-LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
-DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://speciationartisana
- les.com/events/deadbeatdad1113 (confirm details with the venue)
-URL:https://speciationartisanales.com/events/deadbeatdad1113
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-13-calvin-symphonic-band-voices-of-the-americas@gr-concerts
@@ -4338,6 +4182,21 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.lowellarts.org
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-27-pinball-disco-ft-the-dj-bob-marino-drop-ca-wr3ogo@gr-concer
+ ts
+DTSTAMP:20261030T120000Z
+DTSTART;TZID=America/Detroit:20261227T200000
+DTEND;TZID=America/Detroit:20261227T230000
+SUMMARY:Pinball Disco ft. The DJ Bob Marino + Drop Catch + Slim Buddha + T
+ he Seventh
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://www.ticketweb.com
+ /event/pinball-disco-ft-the-dj-the-pyramid-scheme-tickets/14403364 (confi
+ rm details with the venue)
+URL:https://www.ticketweb.com/event/pinball-disco-ft-the-dj-the-pyramid-sc
+ heme-tickets/14403364
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-29-revisiting-creedence-21@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261229T200000
@@ -5238,6 +5097,19 @@ DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.jtgr.org/2026-202
 URL:https://www.jtgr.org/2026-2027/broken-glass
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-04-winter-jam-2027-crowder-anne-wilson-andy-m-1s6t8j@gr-concer
+ ts
+DTSTAMP:20261030T120000Z
+DTSTART;TZID=America/Detroit:20270204T190000
+DTEND;TZID=America/Detroit:20270204T220000
+SUMMARY:Winter Jam 2027 (Crowder\, Anne Wilson\, Andy Mineo\, Terrian\, Re
+ d\, NewSong)
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Christian\, 7:00 PM. Tickets/info: https://www.vanandelarena.c
+ om/events/2027/winter-jam (confirm details with the venue)
+URL:https://www.vanandelarena.com/events/2027/winter-jam
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-05-as-i-lay-dying@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270205T193000
@@ -5497,6 +5369,19 @@ DESCRIPTION:Dance Party\, 9:30 PM. Tickets/info: https://www.etix.com/tick
  rm details with the venue)
 URL:https://www.etix.com/ticket/p/50028042/kawaii-rave-grand-rapids-the-in
  tersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-12-crimewave-a-post-punk-darkwave-party@gr-concerts
+DTSTAMP:20261030T120000Z
+DTSTART;TZID=America/Detroit:20270212T200000
+DTEND;TZID=America/Detroit:20270212T230000
+SUMMARY:CRIMEWAVE: A Post-Punk & Darkwave Party
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://www.ticketweb.com
+ /event/crimewave-a-post-punk-the-pyramid-scheme-tickets/14403384 (confirm
+  details with the venue)
+URL:https://www.ticketweb.com/event/crimewave-a-post-punk-the-pyramid-sche
+ me-tickets/14403384
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-13-2000-s-rave-party-like-it-s-2003@gr-concerts
@@ -6000,6 +5885,19 @@ DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
  8006554AB803D9A (confirm details with the venue)
 URL:https://www.ticketmaster.com/wynonna-judd-the-hard-truth-tour-grand-ra
  pids-michigan-03-05-2027/event/08006554AB803D9A
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-05-joe-list@gr-concerts
+DTSTAMP:20261030T120000Z
+DTSTART;TZID=America/Detroit:20270305T190000
+DTEND;TZID=America/Detroit:20270305T220000
+SUMMARY:Joe List
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.ticketweb.com/even
+ t/joe-list-the-wealthy-theatre-tickets/14404524 (confirm details with the
+  venue)
+URL:https://www.ticketweb.com/event/joe-list-the-wealthy-theatre-tickets/1
+ 4404524
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-06-matt-schuster-acoustic-nights-tour@gr-concerts
