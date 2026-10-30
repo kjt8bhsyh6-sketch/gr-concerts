@@ -111,8 +111,9 @@ All three pages (Concerts, Sports, Seasonal) share one picker in `date-range.js`
 - Seasonal: the rail splits events by the week they run (a multi-day event can appear in more than one week). The picker shows "Events from X to Y": any event whose `sort`–`end` dates overlap the range. So keep `end` filled in. The season name (Halloween, Thanksgiving, Christmas & Holiday) shows on the detail.
 
 ## Email signup + calendar boxes (all pages, added Oct 19, 2026)
-- Every page has the same two boxes at the bottom, above the footer: **Get weekly alerts by email** and **Every … in your calendar**.
-- All email boxes use the one Buttondown list `grconcerts` (form action `https://buttondown.com/api/emails/embed-subscribe/grconcerts`). Don't create other lists; only the heading/blurb text changes per page.
+- Every page has the same two boxes at the bottom, above the footer: an email signup and **Every … in your calendar**.
+- Concerts heading is **Get this week's shows in your inbox**. Blurb: "Free weekly note from Grand Rapids Happenings — concerts, comedy, and local events near you. No spam." The note under every form is "You'll get one email a week. Unsubscribe anytime." and the address line is "The Canasta Club LLC · P.O. Box 140186 · Grand Rapids, MI 49504". Sports and Seasonal keep their section-specific first lines; the note and address match.
+- All email boxes use the one Buttondown list `grhappenings` (form action `https://buttondown.com/api/emails/embed-subscribe/grhappenings`). Don't create other lists; only the heading/blurb text changes per page.
 - Calendar feeds: Concerts → `concerts.ics`, Sports → `sports.ics` (home games), Seasonal → `seasonal.ics`. The subscribe links are filled in by `app.js`, `sports-app.js` and `seasonal-app.js` from `CONFIG.SITE_URL`.
 - `node scripts/build-ics.js` rebuilds all three. Seasonal events become all-day events from `sort` through `end`. The file's DTEND is the day after `end`, because calendar apps treat the end date as exclusive. Each event's description has the event's type, `when`, and `link`. Re-run the script after editing `concerts.js`, `sports.js` or `seasonal.js`.
 
