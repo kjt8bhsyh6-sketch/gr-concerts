@@ -294,6 +294,17 @@ DESCRIPTION:Basketball (NBA G League)\, 7:00 PM. Tickets/info: https://www
 URL:https://www.gofevo.com/group/2026274315?ref=W
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-07-grand-rapids-rise-vs-orlando-valkyries@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270107T190000
+DTEND;TZID=America/Detroit:20270107T220000
+SUMMARY:Grand Rapids Rise vs. Orlando Valkyries
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-08-grand-rapids-gold-vs-college-park-skyhawks@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270108T190000
@@ -325,6 +336,17 @@ LOCATION:Van Andel Arena\, Grand Rapids\, MI
 DESCRIPTION:Hockey (AHL)\, 4:00 PM. Tickets/info: https://griffinshockey.e
  venue.net/events/S (confirm details with the venue)
 URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-14-grand-rapids-rise-vs-columbus-fury@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270114T190000
+DTEND;TZID=America/Detroit:20270114T220000
+SUMMARY:Grand Rapids Rise vs. Columbus Fury
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-15-grand-rapids-griffins-vs-hamilton-hammers@gr-concerts
@@ -371,6 +393,17 @@ DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
 URL:https://griffinshockey.evenue.net/events/S
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-28-grand-rapids-rise-vs-minnesota-forge@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270128T190000
+DTEND;TZID=America/Detroit:20270128T220000
+SUMMARY:Grand Rapids Rise vs. Minnesota Forge
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-29-grand-rapids-griffins-vs-chicago-wolves@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270129T190000
@@ -380,6 +413,17 @@ LOCATION:Van Andel Arena\, Grand Rapids\, MI
 DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
  venue.net/events/S (confirm details with the venue)
 URL:https://griffinshockey.evenue.net/events/S
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-30-grand-rapids-rise-vs-atlanta-vibe@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270130T190000
+DTEND;TZID=America/Detroit:20270130T220000
+SUMMARY:Grand Rapids Rise vs. Atlanta Vibe
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-31-grand-rapids-griffins-vs-rockford-icehogs@gr-concerts
@@ -481,6 +525,39 @@ DESCRIPTION:Basketball (NBA G League)\, 7:00 PM. Tickets/info: https://www
 URL:https://www.gofevo.com/group/2026274315?ref=W
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-14-grand-rapids-rise-vs-omaha-supernovas@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270214T190000
+DTEND;TZID=America/Detroit:20270214T220000
+SUMMARY:Grand Rapids Rise vs. Omaha Supernovas
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-24-grand-rapids-rise-vs-dc-flight@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270224T190000
+DTEND;TZID=America/Detroit:20270224T220000
+SUMMARY:Grand Rapids Rise vs. DC Flight
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-26-grand-rapids-rise-vs-dallas-pulse@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270226T190000
+DTEND;TZID=America/Detroit:20270226T220000
+SUMMARY:Grand Rapids Rise vs. Dallas Pulse
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-27-grand-rapids-griffins-vs-texas-stars@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270227T190000
@@ -558,6 +635,17 @@ DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
 URL:https://griffinshockey.evenue.net/events/S
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-17-grand-rapids-rise-vs-atlanta-vibe@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270317T190000
+DTEND;TZID=America/Detroit:20270317T220000
+SUMMARY:Grand Rapids Rise vs. Atlanta Vibe
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-19-grand-rapids-griffins-vs-rockford-icehogs@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270319T190000
@@ -589,6 +677,17 @@ LOCATION:Van Andel Arena\, Grand Rapids\, MI
 DESCRIPTION:Basketball (NBA G League)\, 12:00 PM. Tickets/info: https://ww
  w.gofevo.com/group/2026274315?ref=W (confirm details with the venue)
 URL:https://www.gofevo.com/group/2026274315?ref=W
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-21-grand-rapids-rise-vs-los-angeles-thunder@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270321T190000
+DTEND;TZID=America/Detroit:20270321T220000
+SUMMARY:Grand Rapids Rise vs. Los Angeles Thunder
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-24-grand-rapids-griffins-vs-chicago-wolves@gr-concerts
@@ -682,6 +781,39 @@ DESCRIPTION:Baseball (MiLB\, High-A)\, 2:00 PM. Tickets/info: https://www.
 URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-04-grand-rapids-rise-vs-indy-ignite@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270404T190000
+DTEND;TZID=America/Detroit:20270404T220000
+SUMMARY:Grand Rapids Rise vs. Indy Ignite
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-07-grand-rapids-rise-vs-norcal-rumble@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270407T190000
+DTEND;TZID=America/Detroit:20270407T220000
+SUMMARY:Grand Rapids Rise vs. NorCal Rumble
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-10-grand-rapids-rise-vs-vegas-thrill@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270410T190000
+DTEND;TZID=America/Detroit:20270410T220000
+SUMMARY:Grand Rapids Rise vs. Vegas Thrill
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-13-west-michigan-whitecaps-vs-south-bend-cubs@gr-concerts
 DTSTAMP:20261025T120000Z
 DTSTART;TZID=America/Detroit:20270413T183500
@@ -752,6 +884,17 @@ DESCRIPTION:Baseball (MiLB\, High-A)\, 2:00 PM. Tickets/info: https://www.
  milb.com/west-michigan/tickets/single-game-tickets (confirm details with 
  the venue)
 URL:https://www.milb.com/west-michigan/tickets/single-game-tickets
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-18-grand-rapids-rise-vs-dc-flight@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270418T190000
+DTEND;TZID=America/Detroit:20270418T220000
+SUMMARY:Grand Rapids Rise vs. DC Flight
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Volleyball (MLV)\, Time TBA. Tickets/info: https://provolleyba
+ ll.com/teams/grand-rapids-rise/schedule (confirm details with the venue)
+URL:https://provolleyball.com/teams/grand-rapids-rise/schedule
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-27-west-michigan-whitecaps-vs-lake-county-captains@gr-concerts

@@ -24,260 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-23-resting-witch-face-2026-halloween-sketch-c-ebrwf9@gr-concer
- ts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261023T190000
-DTEND;TZID=America/Detroit:20261023T220000
-SUMMARY:Resting Witch Face - 2026 Halloween Sketch Comedy Show (Oct 23–30)
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/re
- sting-witch-face-2026-halloween-sketch-comedy-show (confirm details with 
- the venue)
-URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-sketch-c
- omedy-show
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-capella-fall-concert-come-home-free@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261030T193000
-DTEND;TZID=America/Detroit:20261030T223000
-SUMMARY:Capella Fall Concert: Come Home (free)
-LOCATION:Calvin University Chapel\, Grand Rapids\, MI
-DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://calvin.edu/events/cape
- lla-fall-concert-come-home-1793403000 (confirm details with the venue)
-URL:https://calvin.edu/events/capella-fall-concert-come-home-1793403000
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-free-show-friday-the-moonrays-no-cover@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261030T200000
-DTEND;TZID=America/Detroit:20261030T230000
-SUMMARY:Free Show Friday: The Moonrays (no cover)
-LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
-DESCRIPTION:Surf Rock\, 8:00 PM. Tickets/info: https://speciationartisanal
- es.com/events/the-moonrays-fun-times-in-space-2026-oct (confirm details w
- ith the venue)
-URL:https://speciationartisanales.com/events/the-moonrays-fun-times-in-spa
- ce-2026-oct
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-after-dark-smooth-jazz-sessions@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261030T193000
-DTEND;TZID=America/Detroit:20261030T223000
-SUMMARY:After Dark: Smooth Jazz Sessions
-LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
-DESCRIPTION:Jazz\, 7:30 PM. Tickets/info: https://www.eventbrite.com/e/aft
- er-dark-smooth-jazz-sessions-tickets-2000043302357 (confirm details with 
- the venue)
-URL:https://www.eventbrite.com/e/after-dark-smooth-jazz-sessions-tickets-2
- 000043302357
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-king-sickabilly-with-kitten-and-the-tonics-1p47g5@gr-concer
- ts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261030T200000
-DTEND;TZID=America/Detroit:20261030T230000
-SUMMARY:King Sickabilly With Kitten and The Tonics And Delilah DeWylde
-LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
-DESCRIPTION:Rockabilly\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
- event/king-sickabilly-kitten-and-the-tip-top-deluxe-bar-tickets/14300474 
- (confirm details with the venue)
-URL:https://www.ticketweb.com/event/king-sickabilly-kitten-and-the-tip-top
- -deluxe-bar-tickets/14300474
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-ringling-bros-and-barnum-bailey-the-greate-1kxs1i@gr-concer
- ts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261030T190000
-DTEND;TZID=America/Detroit:20261030T220000
-SUMMARY:Ringling Bros. and Barnum & Bailey: The Greatest Show On Earth
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Family Show\, 7:00 PM. Tickets/info: https://www.ticketmaster.
- com/ringling-bros-and-barnum-bailey-presents-grand-rapids-michigan-10-30-
- 2026/event/0800642CD05D6249 (confirm details with the venue)
-URL:https://www.ticketmaster.com/ringling-bros-and-barnum-bailey-presents-
- grand-rapids-michigan-10-30-2026/event/0800642CD05D6249
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-dancin-with-the-devil-ft-garbage-angel-18@gr-concerts
-DTSTAMP:20261021T120000Z
-DTSTART;TZID=America/Detroit:20261030T190000
-DTEND;TZID=America/Detroit:20261030T220000
-SUMMARY:Dancin' With The Devil ft. Garbage Angel (18+)
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
- event/betka-pope-productions-presents-dancin-the-pyramid-scheme-tickets/1
- 4953043 (confirm details with the venue)
-URL:https://www.ticketweb.com/event/betka-pope-productions-presents-dancin
- -the-pyramid-scheme-tickets/14953043
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-gr-symphony-the-nightmare-before-christmas-3n899a@gr-concer
- ts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261030T193000
-DTEND;TZID=America/Detroit:20261030T223000
-SUMMARY:GR Symphony: The Nightmare Before Christmas in Concert
-LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
-DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.devosperforman
- cehall.com/events/2026/gr-symphony-presents-disney-tim-burtons-the-nightm
- are-before-christmas-in-concert-live-to-film (confirm details with the ve
- nue)
-URL:https://www.devosperformancehall.com/events/2026/gr-symphony-presents-
- disney-tim-burtons-the-nightmare-before-christmas-in-concert-live-to-film
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-gasolina-halloween-party-18@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261030T210000
-DTEND;TZID=America/Detroit:20261031T000000
-SUMMARY:Gasolina Halloween Party (18+)
-LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Latin\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/ga
- solina-halloween-party-18-grand-rapids-michigan-10-30-2026/event/08006515
- C351C394 (confirm details with the venue)
-URL:https://www.ticketmaster.com/gasolina-halloween-party-18-grand-rapids-
- michigan-10-30-2026/event/08006515C351C394
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-noche-de-banda-banda-recoditos-banda-machos@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261030T210000
-DTEND;TZID=America/Detroit:20261031T000000
-SUMMARY:Noche de Banda: Banda Recoditos & Banda Machos
-LOCATION:The Intersection (main room)\, Grand Rapids\, MI
-DESCRIPTION:Regional Mexican\, 9:00 PM. Tickets/info: https://www.etix.com
- /ticket/p/43839623/noche-de-banda-featuring-banda-recoditos-banda-machos-
- grand-rapids-the-intersection (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/43839623/noche-de-banda-featuring-banda-
- recoditos-banda-machos-grand-rapids-the-intersection
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-l7-the-last-hurrah-tour-with-vial@gr-concerts
-DTSTAMP:20261021T120000Z
-DTSTART;TZID=America/Detroit:20261030T200000
-DTEND;TZID=America/Detroit:20261030T230000
-SUMMARY:L7: The Last Hurrah Tour (with VIAL)
-LOCATION:The Big Room\, Grand Rapids\, MI
-DESCRIPTION:Punk\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/58
- 944296/l7the-last-hurrah-tour-2026-grand-rapids-the-big-room (confirm det
- ails with the venue)
-URL:https://www.etix.com/ticket/p/58944296/l7the-last-hurrah-tour-2026-gra
- nd-rapids-the-big-room
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-pipe-screams-organ-concert@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261030T193000
-DTEND;TZID=America/Detroit:20261030T223000
-SUMMARY:Pipe Screams Organ Concert
-LOCATION:Fountain Street Church\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://fountainstreet.chur
- chcenter.com/calendar/event/238246591 (confirm details with the venue)
-URL:https://fountainstreet.churchcenter.com/calendar/event/238246591
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-battle-bots-improv-comedy-show@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261030T210000
-DTEND;TZID=America/Detroit:20261031T000000
-SUMMARY:Battle Bots Improv Comedy Show
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ba
- ttle-bots-improv-comedy-show (confirm details with the venue)
-URL:https://www.crowdwork.com/e/battle-bots-improv-comedy-show
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-trixy-tang-boys-gone-mild-rock-n-roll-hall-6tftt9@gr-concer
- ts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261030T190000
-DTEND;TZID=America/Detroit:20261030T220000
-SUMMARY:Trixy Tang + Boys Gone Mild: Rock N Roll Halloween Costume Party
-LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://parktheatreholland.org/ 
- (confirm details with the venue)
-URL:https://parktheatreholland.org/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-bingo-loco-halloween-holland-civic-center-21@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261030T190000
-DTEND;TZID=America/Detroit:20261030T220000
-SUMMARY:Bingo Loco: Halloween (Holland Civic Center\, 21+)
-LOCATION:Holland Civic Center Place\, Grand Rapids\, MI
-DESCRIPTION:Dance Party\, 7:00 PM. Tickets/info: https://hollandciviccente
- r.com/event/bingo-loco-3/ (confirm details with the venue)
-URL:https://hollandciviccenter.com/event/bingo-loco-3/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-h2-dance-company-fall-concert-series-oct-3-h4c88s@gr-concer
- ts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261030T193000
-DTEND;TZID=America/Detroit:20261030T223000
-SUMMARY:H2 Dance Company Fall Concert Series (Oct 30–31 & Nov 6–7\, free w
- ith ticket)
-LOCATION:Knickerbocker Theatre (Hope College)\, Grand Rapids\, MI
-DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://calendar.hope.edu/event
- /h2-performances-8227 (confirm details with the venue)
-URL:https://calendar.hope.edu/event/h2-performances-8227
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-hairbanger-s-ball-80-s-hair-rock-131-sport-1agk54@gr-concer
- ts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261030T210000
-DTEND;TZID=America/Detroit:20261031T000000
-SUMMARY:Hairbanger's Ball – 80's Hair Rock (131 Sportsbar & Lounge)
-LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
-DESCRIPTION:80s Tribute\, 9:00 PM. Tickets/info: https://www.etix.com/tick
- et/p/70017547/hairbangers-ball-wayland-gun-lake-casino-resort131-sportsba
- r-lounge (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/70017547/hairbangers-ball-wayland-gun-la
- ke-casino-resort131-sportsbar-lounge
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-louder-now-2000-s-emo-pop-punk-wawye-oasis@gr-concerts
-DTSTAMP:20261026T120000Z
-DTSTART;TZID=America/Detroit:20261030T200000
-DTEND;TZID=America/Detroit:20261030T230000
-SUMMARY:Louder Now – 2000's Emo & Pop-Punk (Wawyé Oasis)
-LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
-DESCRIPTION:Pop-Punk\, 8:00 PM. Tickets/info: https://gunlakecasino.com/ev
- ent/louder-now-3/ (confirm details with the venue)
-URL:https://gunlakecasino.com/event/louder-now-3/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-wheel-of-fortune-live-soaring-eagle@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261030T200000
-DTEND;TZID=America/Detroit:20261030T230000
-SUMMARY:Wheel of Fortune LIVE! (Soaring Eagle)
-LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
-DESCRIPTION:Live Show\, 8:00 PM. Tickets/info: https://soaringeaglecasino.
- com/events/wheel-of-fortune-live/ (confirm details with the venue)
-URL:https://soaringeaglecasino.com/events/wheel-of-fortune-live/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-grcc-campus-band-and-wind-ensemble-concert-vi9h5f@gr-concer
- ts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261030T193000
-DTEND;TZID=America/Detroit:20261030T223000
-SUMMARY:GRCC Campus Band and Wind Ensemble Concert (Royce Auditorium)
-LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
- /grcc-music-presents-campus-band-wind-ensemble-concert (confirm details w
- ith the venue)
-URL:https://www.grcc.edu/events/grcc-music-presents-campus-band-wind-ensem
- ble-concert
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-31-bard-to-go-grand-valley-shakespeare-festiv-71y3n5@gr-concer
  ts
 DTSTAMP:20261024T120000Z
@@ -414,6 +160,19 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Latin\, 7:00 PM. Tickets/info: https://parktheatreholland.org/
   (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-31-h2-dance-company-fall-concert-series-oct-3-j5za2f@gr-concer
+ ts
+DTSTAMP:20261023T120000Z
+DTSTART;TZID=America/Detroit:20261031T193000
+DTEND;TZID=America/Detroit:20261031T223000
+SUMMARY:H2 Dance Company Fall Concert Series (Oct 30–31 & Nov 6–7\, free w
+ ith ticket)
+LOCATION:Knickerbocker Theatre (Hope College)\, Grand Rapids\, MI
+DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://calendar.hope.edu/event
+ /h2-performances-8227 (confirm details with the venue)
+URL:https://calendar.hope.edu/event/h2-performances-8227
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-10-31-halloween-pool-party-wawye-oasis@gr-concerts
@@ -625,6 +384,19 @@ DESCRIPTION:Classical\, 7:00 PM. Tickets/info: https://www.gvsu.edu/mtd/mo
  2a88c06e5e9 (confirm details with the venue)
 URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
  vent/9a0f476d-a7f9-4ceb-86b1-e2a88c06e5e9
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-04-king-of-drag-the-royal-tour@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20261104T200000
+DTEND;TZID=America/Detroit:20261104T230000
+SUMMARY:King of Drag: The Royal Tour
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 8:00 PM (doors 7:00 PM). Tickets/info: https://www
+ .ticketweb.com/event/king-of-drag-the-royal-the-pyramid-scheme-tickets/15
+ 019593 (confirm details with the venue)
+URL:https://www.ticketweb.com/event/king-of-drag-the-royal-the-pyramid-sch
+ eme-tickets/15019593
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-05-be-la-fleck-my-bluegrass-heart@gr-concerts
@@ -1391,6 +1163,20 @@ DESCRIPTION:Jam Band\, 7:00 PM. Tickets/info: https://parktheatreholland.o
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-12-guest-artist-recital-beltline-bones-trombo-grqxt4@gr-concer
+ ts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20261112T120000
+DTEND;TZID=America/Detroit:20261112T150000
+SUMMARY:Guest Artist Recital: Beltline Bones (trombone quartet)
+LOCATION:GVSU Haas Center for Performing Arts\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 12:00 PM. Tickets/info: https://www.gvsu.edu/mtd/m
+ odule/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/42fb0222-db6f-4b57-8102-
+ fd10225176a9 (confirm details with the venue)
+URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
+ vent/42fb0222-db6f-4b57-8102-fd10225176a9
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-13-gr-symphony-coffee-with-bob-grace-kim-violin@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261113T100000
@@ -1597,6 +1383,19 @@ LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
  s-departments/music/ensembles (confirm details with the venue)
 URL:https://www.grcc.edu/schools-departments/music/ensembles
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-the-bookstore-theatre-at-grand-valley-nov-13-21@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20261113T193000
+DTEND;TZID=America/Detroit:20261113T223000
+SUMMARY:The Bookstore (Theatre at Grand Valley\, Nov 13–21)
+LOCATION:GVSU Haas Center for Performing Arts\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.gvsu.edu/mtd/modu
+ le/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/afebfa7b-523b-4699-ba65-807
+ cfd985e1a (confirm details with the venue)
+URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
+ vent/afebfa7b-523b-4699-ba65-807cfd985e1a
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-broadway-grand-rapids-maybe-happy-ending@gr-concerts
@@ -2288,6 +2087,17 @@ LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
 DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/event/
  semple/ (confirm details with the venue)
 URL:https://gunlakecasino.com/event/semple/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-battle-bots-improv-comedy-show@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20261120T210000
+DTEND;TZID=America/Detroit:20261121T000000
+SUMMARY:Battle Bots Improv Comedy Show
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ba
+ ttle-bots-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/battle-bots-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-21-gr-symphony-messiah-by-candlelight@gr-concerts
@@ -4932,6 +4742,19 @@ URL:https://www.ticketweb.com/event/feeble-little-horse-bitknot-tour-the-p
  yramid-scheme-tickets/14928623
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-28-tray-wellington@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270128T190000
+DTEND;TZID=America/Detroit:20270128T220000
+SUMMARY:Tray Wellington
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Bluegrass\, 7:00 PM. Tickets/info: https://www.ticketweb.com/e
+ vent/tray-wellington-tip-top-deluxe-bar-tickets/14407194 (confirm details
+  with the venue)
+URL:https://www.ticketweb.com/event/tray-wellington-tip-top-deluxe-bar-tic
+ kets/14407194
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-29-tommy-emmanuel-cgp-living-in-the-light-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270129T193000
@@ -6405,6 +6228,19 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
  g/ (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-03-gyasi@gr-concerts
+DTSTAMP:20261031T120000Z
+DTSTART;TZID=America/Detroit:20270403T200000
+DTEND;TZID=America/Detroit:20270403T230000
+SUMMARY:Gyasi
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/61
+ 939875/gyasi-grand-rapids-the-intersection-the-stache (confirm details wi
+ th the venue)
+URL:https://www.etix.com/ticket/p/61939875/gyasi-grand-rapids-the-intersec
+ tion-the-stache
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-06-vlad-holiday-wilson-ave@gr-concerts

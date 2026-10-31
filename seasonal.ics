@@ -34,20 +34,6 @@ URL:https://toursaroundmichigan.com/tour/grand-rapids-ghost-hunt-tour/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-23-the-haunted-forest-at-cannonsburg@gr-seasonal
-DTSTAMP:20261022T120000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261031
-SUMMARY:The Haunted Forest at Cannonsburg
-LOCATION:Cannonsburg Ski Area\, 6800 Cannonsburg Rd NE\, Belmont\, Grand R
- apids\, MI
-DESCRIPTION:Haunted Attraction. Oct 23\, 24\, 29\, 30 · Fri–Sat 6:30–9 PM.
-  Info: https://cannonsburg.com/the-haunted-forest/ (confirm details with 
- the organizer)
-URL:https://cannonsburg.com/the-haunted-forest/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-23-zoo-goes-boo-at-john-ball-zoo@gr-seasonal
 DTSTAMP:20261022T120000Z
 DTSTART;VALUE=DATE:20261023
