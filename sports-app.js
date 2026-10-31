@@ -158,7 +158,7 @@
     eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     homeTeam: { '@type': 'SportsTeam', name: g.team }, awayTeam: { '@type': 'SportsTeam', name: g.opponent },
     location: { '@type': 'Place', name: g.venue, address: { '@type': 'PostalAddress', addressLocality: 'Grand Rapids', addressRegion: 'MI', addressCountry: 'US' } },
-    url: g.link, offers: { '@type': 'Offer', url: g.link } }));
+    url: g.link, ...GRICS.eventLd(g.ev, BIO[g.team] && BIO[g.team].text) }));
   const s = document.createElement('script'); s.type = 'application/ld+json'; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
   // ---- calendar subscribe links ----
   { const base = (C.SITE_URL || location.href.split(/[?#]/)[0].replace(/[^/]*$/, '')).replace(/\/?$/, '/'), feed = base + 'sports.ics', wc = feed.replace(/^https?:/, 'webcal:');

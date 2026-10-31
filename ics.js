@@ -1,4 +1,5 @@
 // Calendar helpers shared by the web page (app.js) and scripts/build-ics.js. No need to edit.
+// eventLd() adds recommended schema.org Event fields for app.js and sports-app.js.
 (function (root) {
   const TZ = 'America/Detroit';
   function to24(t) { // "7:30 PM" -> [19,30]; unknown -> [19,0]
@@ -65,6 +66,31 @@
     return 'https://calendar.google.com/calendar/render?' + q;
   }
   if (typeof CONCERTS !== 'undefined') disambiguate(CONCERTS);
-  const api = { calendar, google, title, id, slug, disambiguate, startISO: c => iso(parts(c)), endISO: c => iso(parts(c, 3)), to24 };
+  // Site logo already published on grhappenings.com (web app icon). Not a photo of any show.
+  const BRAND_IMAGE = 'https://grhappenings.com/icons/icon-512.png';
+  function eventDescription(c, bio) {
+    const text = bio && String(bio).trim();
+    if (text) return text;
+    const genre = c.genre ? String(c.genre).trim() : '';
+    const venue = c.venue ? String(c.venue).trim() : '';
+    const time = c.time ? String(c.time).trim() : '';
+    const place = genre && venue ? genre + ' at ' + venue : (genre || venue);
+    const head = [place, time].filter(Boolean).join('. ');
+    return (head ? head + '. ' : '') + 'Tickets/info via primary source.';
+  }
+  // Recommended Event fields we can fill from a listing. No price: concerts.js and sports.js have none.
+  function eventLd(c, bio) {
+    const link = c.link && /^https?:\/\//i.test(c.link) ? c.link : '';
+    const offers = { '@type': 'Offer', priceCurrency: 'USD' };
+    if (link) { offers.url = link; offers.availability = 'https://schema.org/InStock'; }
+    if (/^\d{4}-\d{2}-\d{2}$/.test(c.added || '')) offers.validFrom = c.added;
+    const out = { endDate: iso(parts(c, 3)), description: eventDescription(c, bio), image: BRAND_IMAGE, offers };
+    if (c.venue) {
+      out.organizer = { '@type': 'Organization', name: c.venue };
+      if (link) out.organizer.url = link;
+    }
+    return out;
+  }
+  const api = { calendar, google, title, id, slug, disambiguate, startISO: c => iso(parts(c)), endISO: c => iso(parts(c, 3)), to24, eventLd };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.GRICS = api;
 })(this);

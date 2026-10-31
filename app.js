@@ -179,7 +179,8 @@
     '@context': 'https://schema.org', '@type': /^(Theater|Comedy|Musical|Live Show|Family Show)$/.test(c.genre) ? 'Event' : 'MusicEvent', name: c.artist, startDate: GRICS.startISO(c),
     eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: { '@type': 'Place', name: c.venue, address: { '@type': 'PostalAddress', ...((typeof VENUES !== 'undefined' && VENUES[c.venue]) ? { streetAddress: VENUES[c.venue] } : {}), addressLocality: 'Grand Rapids', addressRegion: 'MI', addressCountry: 'US' } },
-    performer: { '@type': 'PerformingGroup', name: c.artist }, url: c.link, offers: { '@type': 'Offer', url: c.link }
+    performer: { '@type': 'PerformingGroup', name: c.artist }, url: c.link,
+    ...GRICS.eventLd(c, BIO[c.artist] && BIO[c.artist].text)
   }));
   const s = document.createElement('script'); s.type = 'application/ld+json'; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
 
