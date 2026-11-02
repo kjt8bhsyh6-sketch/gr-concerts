@@ -7,146 +7,6 @@ X-WR-CALNAME:Grand Rapids Seasonal Events
 X-WR-TIMEZONE:America/Detroit
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 BEGIN:VEVENT
-UID:2026-10-19-grand-rapids-ghost-tour-tours-around-michigan@gr-seasonal
-DTSTAMP:20261019T120000Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261101
-SUMMARY:Grand Rapids Ghost Tour (Tours Around Michigan)
-LOCATION:Lyon Square\, 296 Lyon St NW\, Grand Rapids\, MI
-DESCRIPTION:Ghost Tour. Daily through Oct 31 (runs year-round) · evening t
- ours\, see site for times. Info: https://toursaroundmichigan.com/tour/gra
- nd-rapids-ghost-tour/ (confirm details with the organizer)
-URL:https://toursaroundmichigan.com/tour/grand-rapids-ghost-tour/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-19-grand-rapids-ghost-hunt-tour-tours-around-michiga@gr-season
- al
-DTSTAMP:20261019T120000Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261101
-SUMMARY:Grand Rapids Ghost Hunt Tour (Tours Around Michigan)
-LOCATION:40 Monroe Center NW (outside Shinola)\, Grand Rapids\, MI
-DESCRIPTION:Ghost Tour. Daily through Oct 31 (runs year-round) · see site 
- for times. Info: https://toursaroundmichigan.com/tour/grand-rapids-ghost-
- hunt-tour/ (confirm details with the organizer)
-URL:https://toursaroundmichigan.com/tour/grand-rapids-ghost-hunt-tour/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-zoo-goes-boo-at-john-ball-zoo@gr-seasonal
-DTSTAMP:20261022T120000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261102
-SUMMARY:Zoo Goes Boo at John Ball Zoo
-LOCATION:John Ball Zoo\, 1300 W Fulton St\, Grand Rapids\, Grand Rapids\, 
- MI
-DESCRIPTION:Zoo Halloween. Oct 23–25 & Oct 30–Nov 1 · 10 AM–5 PM (members 
- 9–10 AM). Info: https://jbzoo.org/events/zoo-goes-boo/ (confirm details w
- ith the organizer)
-URL:https://jbzoo.org/events/zoo-goes-boo/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-23-wizard-s-tea-afternoon-tea-at-high-tea-gr@gr-seasonal
-DTSTAMP:20261023T120000Z
-DTSTART;VALUE=DATE:20261023
-DTEND;VALUE=DATE:20261102
-SUMMARY:Wizard's Tea Afternoon Tea at High Tea GR
-LOCATION:High Tea GR\, 1522 Wealthy St SE\, Grand Rapids\, MI
-DESCRIPTION:Halloween Tea. Through Nov 1 · Thu 11 AM–5:30 PM\, Fri–Sun 10 
- AM–5:30 PM (last seating 4 PM) · Full Afternoon Tea $45\, Half $30\, Fair
- y Tea (8 & under) $22. Info: https://www.highteagr.com/events/wizards-tea
- -themed-menu (confirm details with the organizer)
-URL:https://www.highteagr.com/events/wizards-tea-themed-menu
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-new-salem-corn-maze-witch-s-woods-haunted-corn-ma@gr-season
- al
-DTSTAMP:20261022T120000Z
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261101
-SUMMARY:New Salem Corn Maze – Witch's Woods & Haunted Corn Maze
-LOCATION:4516 24th St\, Dorr\, Grand Rapids\, MI
-DESCRIPTION:Corn Maze / Haunt. Daytime Oct 24\, 25\, 31 · 11 AM–6 PM\; nig
- httime haunts open at dusk (ticket sales from 6:30 PM) · cash/check only.
-  Info: https://newsalemcornmaze.com/ (confirm details with the organizer)
-URL:https://newsalemcornmaze.com/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-24-hallowee-ones-parade-and-programming-at-meijer-ga@gr-season
- al
-DTSTAMP:20261022T120000Z
-DTSTART;VALUE=DATE:20261024
-DTEND;VALUE=DATE:20261101
-SUMMARY:Hallowee-Ones: Parade and Programming at Meijer Gardens
-LOCATION:Lena Meijer Children's Garden\, Frederik Meijer Gardens\, 1000 E 
- Beltline Ave NE\, Grand Rapids\, MI
-DESCRIPTION:Halloween Family Event. Sat Oct 24 & Sat Oct 31 · 10 AM–2 PM\;
-  costume parades 11 AM & 1 PM. Info: https://www.meijergardens.org/events
- /hallowee-ones-parade-and-programming/ (confirm details with the organize
- r)
-URL:https://www.meijergardens.org/events/hallowee-ones-parade-and-programm
- ing/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-30-grand-rapids-halloween-bar-crawl-crawl-with-us@gr-seasonal
-DTSTAMP:20261022T120000Z
-DTSTART;VALUE=DATE:20261030
-DTEND;VALUE=DATE:20261101
-SUMMARY:Grand Rapids Halloween Bar Crawl (Crawl With US)
-LOCATION:19 downtown bars\, Grand Rapids\, Grand Rapids\, MI
-DESCRIPTION:Halloween Pub Crawl. Fri Oct 30 + Sat Oct 31. Info: https://cr
- awlwith.us/grandrapids/halloween/ (confirm details with the organizer)
-URL:https://crawlwith.us/grandrapids/halloween/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-saugatuck-family-pet-halloween-parade-and-park-pa@gr-season
- al
-DTSTAMP:20261023T120000Z
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
-SUMMARY:Saugatuck Family & Pet Halloween Parade and Park Party
-LOCATION:Wicks Park & Corner of Butler & Mason St\, Saugatuck\, Grand Rapi
- ds\, MI
-DESCRIPTION:Halloween Parade. Sat Oct 31 · lineup 10:15 AM at Butler & Mas
- on\; parade & Wicks Park party through 1:30 PM. Info: https://saugatuck.c
- om/event/family-halloween-pet-parade-and-party/ (confirm details with the
-  organizer)
-URL:https://saugatuck.com/event/family-halloween-pet-parade-and-party/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-trick-or-treat-at-the-felt-mansion@gr-seasonal
-DTSTAMP:20261023T120000Z
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
-SUMMARY:Trick-or-Treat at the Felt Mansion
-LOCATION:Felt Estate\, 6597 138th Ave\, Holland\, Grand Rapids\, MI
-DESCRIPTION:Halloween Family Event. Sat Oct 31 · 1–3 PM · free indoor tric
- k-or-treating in the historic mansion. Info: https://saugatuck.com/event/
- trick-or-treat-at-the-felt-mansion/ (confirm details with the organizer)
-URL:https://saugatuck.com/event/trick-or-treat-at-the-felt-mansion/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-douglas-halloween-parade-for-adults-28th-annual@gr-seasonal
-DTSTAMP:20261023T120000Z
-DTSTART;VALUE=DATE:20261031
-DTEND;VALUE=DATE:20261101
-SUMMARY:Douglas Halloween Parade for Adults (28th Annual)
-LOCATION:Downtown Douglas\, 130 W Center St\, Douglas\, Grand Rapids\, MI
-DESCRIPTION:Halloween Parade. Sat Oct 31 · lineup 9 PM at Old Schoolhouse\
- ; parade 10 PM–12 AM. Info: https://www.douglashalloween.com/ (confirm de
- tails with the organizer)
-URL:https://www.douglashalloween.com/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-05-beauty-and-the-beast-themed-afternoon-tea-at-high@gr-season
  al
 DTSTAMP:20261023T120000Z
@@ -360,6 +220,21 @@ URL:https://saugatuck.com/event/douglas-light-night/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-28-saugatuck-douglas-holiday-cookie-tour@gr-seasonal
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Saugatuck/Douglas Holiday Cookie Tour
+LOCATION:Downtown Saugatuck\, 102 Butler St\, Saugatuck\, Grand Rapids\, M
+ I
+DESCRIPTION:Holiday Cookie Tour. Sat Nov 28 · 1–3 PM · open-house stroll s
+ ampling holiday cookies (with recipes) at Saugatuck/Douglas inns · $5 per
+  person. Info: https://saugatuck.com/event/saugatuck-douglas-holiday-cook
+ ie-tour/ (confirm details with the organizer)
+URL:https://saugatuck.com/event/saugatuck-douglas-holiday-cookie-tour/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-30-eastown-holiday-craft-event-ornaments-letters-to-@gr-season
  al
 DTSTAMP:20261024T120000Z
@@ -402,6 +277,23 @@ DESCRIPTION:Holiday Festival. Dec 1–5 · Delft Downtown\, Dutch Skate\, Hol
  iday Huis Tour & Sinterklaas Shuffle (Dec 4–5). Info: https://www.tulipti
  me.com/dutch-winterfest (confirm details with the organizer)
 URL:https://www.tuliptime.com/dutch-winterfest
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-01-cultural-sounds-of-the-season-with-santa-at-meije@gr-season
+ al
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261216
+SUMMARY:Cultural Sounds of the Season with Santa at Meijer Gardens
+LOCATION:Frederik Meijer Gardens\, 1000 E Beltline Ave NE\, Grand Rapids\,
+  MI
+DESCRIPTION:Santa Visit. Tuesdays Dec 1\, 8 & 15 · 6–8 PM · seasonal music
+  and a visit with Santa. Info: https://www.meijergardens.org/events/cultu
+ ral-sounds-of-the-season-with-santa/?occurrence=2026-12-01 (confirm detai
+ ls with the organizer)
+URL:https://www.meijergardens.org/events/cultural-sounds-of-the-season-wit
+ h-santa/?occurrence=2026-12-01
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -523,6 +415,23 @@ DESCRIPTION:Santa Visit. Sat Dec 5 · Christmas Market 10 AM\; Holiday Cele
  bration\, live reindeer & Santa 11 AM–7 PM. Info: https://saugatuck.com/e
  vent/fennville-holiday-celebration/ (confirm details with the organizer)
 URL:https://saugatuck.com/event/fennville-holiday-celebration/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-sensory-friendly-santa-meet-and-greet-at-meijer-g@gr-season
+ al
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261213
+SUMMARY:Sensory-Friendly Santa Meet and Greet at Meijer Gardens
+LOCATION:Frederik Meijer Gardens\, 1000 E Beltline Ave NE\, Grand Rapids\,
+  MI
+DESCRIPTION:Santa Visit. Sat Dec 5 & Sat Dec 12 · 10 AM–12 PM · calmer San
+ ta visit designed for children with autism or sensory-processing disabili
+ ties. Info: https://www.meijergardens.org/events/sensory-friendly-santa-m
+ eet-and-greet/?occurrence=2026-12-05 (confirm details with the organizer)
+URL:https://www.meijergardens.org/events/sensory-friendly-santa-meet-and-g
+ reet/?occurrence=2026-12-05
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

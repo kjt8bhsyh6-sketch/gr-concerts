@@ -1,40 +1,10 @@
 {
-  "generated": "2026-10-31",
-  "count": 170,
+  "generated": "2026-11-02",
+  "count": 164,
   "pending": [
     {
-      "artist": "Broadway Rave – Musical Theater Dance Party",
-      "week": "this",
-      "dates": [
-        "2026-10-31"
-      ],
-      "venue": "The Stache (at The Intersection)",
-      "link": "https://www.etix.com/ticket/p/79820442/broadway-rave-a-musical-theater-dance-party-grand-rapids-the-intersection-the-stache",
-      "added": "2026-10-19"
-    },
-    {
-      "artist": "Daft Disko (French House & Disco Halloween)",
-      "week": "this",
-      "dates": [
-        "2026-10-31"
-      ],
-      "venue": "Elevation (at The Intersection)",
-      "link": "https://www.etix.com/ticket/p/93300488/daft-disko-a-french-house-disco-halloween-grand-rapids-the-intersection-elevation",
-      "added": "2026-10-19"
-    },
-    {
-      "artist": "Twerk or Treat 4 ft. DJ Omega Supreme + DJ Composition + Deeechild + DJ Jodi Dro",
-      "week": "this",
-      "dates": [
-        "2026-10-31"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/twerk-or-treat-4-ft-the-pyramid-scheme-tickets/14343904",
-      "added": "2026-10-21"
-    },
-    {
       "artist": "Metal Mondays (free, 21+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-02"
       ],
@@ -43,18 +13,8 @@
       "added": "2026-10-28"
     },
     {
-      "artist": "Calvin Campus Choir & Women's Chorale Concert",
-      "week": "next",
-      "dates": [
-        "2026-11-03"
-      ],
-      "venue": "Calvin University Chapel",
-      "link": "https://calvin.edu/events/campus-choir-and-womens-chorale-concert-1793752200",
-      "added": "2026-10-23"
-    },
-    {
       "artist": "Tip Top Tuesday Comedy (free, 21+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-03"
       ],
@@ -64,7 +24,7 @@
     },
     {
       "artist": "King of Drag: The Royal Tour",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-04"
       ],
@@ -74,7 +34,7 @@
     },
     {
       "artist": "Live @TCP: The Dispatch (And friends!) - Comedy Show (Nov 5, Dec 3, Jan 7)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-05"
       ],
@@ -84,7 +44,7 @@
     },
     {
       "artist": "Breaking (the) News! – Improv Comedy Show (Fridays, Nov 6–Dec 4)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-06"
       ],
@@ -94,7 +54,7 @@
     },
     {
       "artist": "North By North with Saint Maybe, Quilter, Wilson Ave, Low Light",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-06"
       ],
@@ -104,7 +64,7 @@
     },
     {
       "artist": "Mega 80's – The Ultimate 80's Retro Party (Nov 7)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-07"
       ],
@@ -114,7 +74,7 @@
     },
     {
       "artist": "Best of the Best (of the best) -Improv Comedy Show (Nov 7–Dec 5)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-07"
       ],
@@ -124,7 +84,7 @@
     },
     {
       "artist": "Choose Your Own Improv – Comedy Show",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-07",
         "2026-11-14",
@@ -136,7 +96,7 @@
     },
     {
       "artist": "Yacht Rocket",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-07"
       ],
@@ -146,7 +106,7 @@
     },
     {
       "artist": "River City Improv (Nov 7)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-07"
       ],
@@ -155,18 +115,8 @@
       "added": "2026-10-23"
     },
     {
-      "artist": "Calvin Jazz Band Concert",
-      "week": "next",
-      "dates": [
-        "2026-11-07"
-      ],
-      "venue": "Calvin University Chapel",
-      "link": "https://calvin.edu/events/jazz-band-concert-1794097800",
-      "added": "2026-10-23"
-    },
-    {
       "artist": "All Get Out + Motherfolk + Saint Blonde",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-08"
       ],
@@ -176,7 +126,7 @@
     },
     {
       "artist": "The Diners – Short Order Improv",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-12"
       ],
@@ -186,7 +136,7 @@
     },
     {
       "artist": "Five Elements: Piano Duo Recital",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-12"
       ],
@@ -196,7 +146,7 @@
     },
     {
       "artist": "LIVE@TCP - Man Vs Machine - Improv Comedy Show!",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-12"
       ],
@@ -206,7 +156,7 @@
     },
     {
       "artist": "Eddie Clendening and the Blue Ribbon Boys wsg Kitten and The Tonics",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-12"
       ],
@@ -216,7 +166,7 @@
     },
     {
       "artist": "Resavoir + Harmolodics",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-13"
       ],
@@ -225,18 +175,8 @@
       "added": "2026-10-20"
     },
     {
-      "artist": "Calvin Symphonic Band: Voices of the Americas",
-      "week": "later",
-      "dates": [
-        "2026-11-13"
-      ],
-      "venue": "Calvin University Chapel",
-      "link": "https://calvin.edu/events/symphonic-band-concert-voices-americas-1794616200",
-      "added": "2026-10-23"
-    },
-    {
       "artist": "Thunder From Down Under (Nov 13 at 7 & 9 PM; Wawyé Oasis)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-13"
       ],
@@ -245,8 +185,18 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Together Again and Alex Austin's All Stars",
+      "week": "next",
+      "dates": [
+        "2026-11-13"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/together-again-and-alex-austins-tip-top-deluxe-bar-tickets/14412104",
+      "added": "2026-11-02"
+    },
+    {
       "artist": "Ain't Nothing Like Family – Ms. Wilkins Goes To Court",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-14"
       ],
@@ -256,7 +206,7 @@
     },
     {
       "artist": "Boogie T (18+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-14"
       ],
@@ -266,7 +216,7 @@
     },
     {
       "artist": "Northbound (with Fredde, Gallo, Hubb) (21+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-14"
       ],
@@ -275,18 +225,8 @@
       "added": "2026-10-22"
     },
     {
-      "artist": "Calvin Wind Ensemble: Holding Tensions",
-      "week": "later",
-      "dates": [
-        "2026-11-14"
-      ],
-      "venue": "Calvin University Chapel",
-      "link": "https://calvin.edu/events/wind-ensemble-concert-holding-tensions-1794702600",
-      "added": "2026-10-23"
-    },
-    {
       "artist": "Eastown Swing Band",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-14"
       ],
@@ -296,7 +236,7 @@
     },
     {
       "artist": "Mersiv – Pool Party (Wawyé Oasis)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-14"
       ],
@@ -306,7 +246,7 @@
     },
     {
       "artist": "Swanson, Matthews & Bardolph – Acoustic Stew Music Guild",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-15"
       ],
@@ -316,33 +256,13 @@
     },
     {
       "artist": "MDOP + Tonguecutter + Boob Sweat + Dog Skull",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-15"
       ],
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/mdop-tonguecutter-boob-the-pyramid-scheme-tickets/14348714",
       "added": "2026-10-20"
-    },
-    {
-      "artist": "Calvin Gospel Choir Concert",
-      "week": "later",
-      "dates": [
-        "2026-11-15"
-      ],
-      "venue": "Calvin University Chapel",
-      "link": "https://calvin.edu/events/gospel-choir-concert-1794776400",
-      "added": "2026-10-23"
-    },
-    {
-      "artist": "Jazz Jam w/ Tommy Pancy (Nov 15)",
-      "week": "later",
-      "dates": [
-        "2026-11-15"
-      ],
-      "venue": "Speciation Artisan Ales",
-      "link": "https://speciationartisanales.com/events/jazz-jam-11-15",
-      "added": "2026-10-26"
     },
     {
       "artist": "Bad Momz of Comedy",
@@ -807,6 +727,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Firebird Sweet",
+      "week": "later",
+      "dates": [
+        "2026-12-11"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/firebird-sweet-tip-top-deluxe-bar-tickets/14412114",
+      "added": "2026-11-02"
+    },
+    {
       "artist": "HEYZ – Something Different Tour",
       "week": "later",
       "dates": [
@@ -875,6 +805,16 @@
       "venue": "Fountain Street Church",
       "link": "https://fountainstreet.churchcenter.com/calendar/event/241034801",
       "added": "2026-10-27"
+    },
+    {
+      "artist": "Pretoria + Low Phase + Faintly Macabre",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/pretoria-low-phase-the-pyramid-scheme-tickets/14403374",
+      "added": "2026-11-02"
     },
     {
       "artist": "Kill The Mood + The Half Notes + The Burdens + Redbelly",

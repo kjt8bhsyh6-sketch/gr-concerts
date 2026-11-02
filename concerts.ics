@@ -24,144 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-10-31-bard-to-go-grand-valley-shakespeare-festiv-71y3n5@gr-concer
- ts
-DTSTAMP:20261024T120000Z
-DTSTART;TZID=America/Detroit:20261031T140000
-DTEND;TZID=America/Detroit:20261031T170000
-SUMMARY:Bard to Go: Grand Valley Shakespeare Festival (free public perform
- ance)
-LOCATION:GVSU Haas Center for Performing Arts\, Grand Rapids\, MI
-DESCRIPTION:Theater\, 2:00 PM. Tickets/info: https://www.gvsu.edu/mtd/modu
- le/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/7131ce4b-e019-46a5-b3ee-781
- d713e7410 (confirm details with the venue)
-URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
- vent/7131ce4b-e019-46a5-b3ee-781d713e7410
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-autumn-weekends-live-music-the-morning-yel-13f7dc@gr-concer
- ts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261031T140000
-DTEND;TZID=America/Detroit:20261031T170000
-SUMMARY:Autumn Weekends Live Music: The Morning Yells (included with admis
- sion)
-LOCATION:Frederik Meijer Gardens & Sculpture Park\, Grand Rapids\, MI
-DESCRIPTION:Country\, 2:00 PM. Tickets/info: https://tickets.meijergardens
- .org/ (confirm details with the venue)
-URL:https://tickets.meijergardens.org/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-danger-dear-with-50-waves-of-grey@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261031T200000
-DTEND;TZID=America/Detroit:20261031T230000
-SUMMARY:Danger Dear with 50 Waves Of Grey
-LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.ticketweb.com/event/
- danger-dear-50-waves-of-tip-top-deluxe-bar-tickets/14330344 (confirm deta
- ils with the venue)
-URL:https://www.ticketweb.com/event/danger-dear-50-waves-of-tip-top-deluxe
- -bar-tickets/14330344
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-ringling-bros-and-barnum-bailey-the-greate-10kong@gr-concer
- ts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261031T100000
-DTEND;TZID=America/Detroit:20261031T130000
-SUMMARY:Ringling Bros. and Barnum & Bailey: The Greatest Show On Earth
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Family Show\, 10:00 AM. Tickets/info: https://www.ticketmaster
- .com/ringling-bros-and-barnum-bailey-presents-grand-rapids-michigan-10-31
- -2026/event/0800642CD061624C (confirm details with the venue)
-URL:https://www.ticketmaster.com/ringling-bros-and-barnum-bailey-presents-
- grand-rapids-michigan-10-31-2026/event/0800642CD061624C
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-gr-symphony-the-nightmare-before-christmas-13mbxp@gr-concer
- ts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261031T143000
-DTEND;TZID=America/Detroit:20261031T173000
-SUMMARY:GR Symphony: The Nightmare Before Christmas in Concert
-LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
-DESCRIPTION:Orchestral\, 2:30 PM. Tickets/info: https://www.devosperforman
- cehall.com/events/2026/gr-symphony-presents-disney-tim-burtons-the-nightm
- are-before-christmas-in-concert-live-to-film (confirm details with the ve
- nue)
-URL:https://www.devosperformancehall.com/events/2026/gr-symphony-presents-
- disney-tim-burtons-the-nightmare-before-christmas-in-concert-live-to-film
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-broadway-rave-musical-theater-dance-party@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261031T200000
-DTEND;TZID=America/Detroit:20261031T230000
-SUMMARY:Broadway Rave – Musical Theater Dance Party
-LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://www.etix.com/tick
- et/p/79820442/broadway-rave-a-musical-theater-dance-party-grand-rapids-th
- e-intersection-the-stache (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/79820442/broadway-rave-a-musical-theater
- -dance-party-grand-rapids-the-intersection-the-stache
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-daft-disko-french-house-disco-halloween@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261031T210000
-DTEND;TZID=America/Detroit:20261101T000000
-SUMMARY:Daft Disko (French House & Disco Halloween)
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
- t/p/93300488/daft-disko-a-french-house-disco-halloween-grand-rapids-the-i
- ntersection-elevation (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/93300488/daft-disko-a-french-house-disco
- -halloween-grand-rapids-the-intersection-elevation
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-twerk-or-treat-4-ft-dj-omega-supreme-dj-co-1qzgdh@gr-concer
- ts
-DTSTAMP:20261021T120000Z
-DTSTART;TZID=America/Detroit:20261031T210000
-DTEND;TZID=America/Detroit:20261101T000000
-SUMMARY:Twerk or Treat 4 ft. DJ Omega Supreme + DJ Composition + Deeechild
-  + DJ Jodi Dro
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.ticketweb.com
- /event/twerk-or-treat-4-ft-the-pyramid-scheme-tickets/14343904 (confirm d
- etails with the venue)
-URL:https://www.ticketweb.com/event/twerk-or-treat-4-ft-the-pyramid-scheme
- -tickets/14343904
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-resting-witch-face-2026-halloween-night-sk-omz3en@gr-concer
- ts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261031T190000
-DTEND;TZID=America/Detroit:20261031T220000
-SUMMARY:Resting Witch Face - 2026 Halloween NIGHT Sketch show & party
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/re
- sting-witch-face-2026-halloween-night-sketch-show-party (confirm details 
- with the venue)
-URL:https://www.crowdwork.com/e/resting-witch-face-2026-halloween-night-sk
- etch-show-party
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-revolucio-n-de-amor-mana-tribute-grupo-sup-lfp7u2@gr-concer
- ts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261031T190000
-DTEND;TZID=America/Detroit:20261031T220000
-SUMMARY:Revolución De Amor (Maná Tribute) + Grupo Super Nova: Fiesta de Ha
- lloween
-LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
-DESCRIPTION:Latin\, 7:00 PM. Tickets/info: https://parktheatreholland.org/
-  (confirm details with the venue)
-URL:https://parktheatreholland.org/
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-10-31-h2-dance-company-fall-concert-series-oct-3-j5za2f@gr-concer
  ts
 DTSTAMP:20261023T120000Z
@@ -173,108 +35,6 @@ LOCATION:Knickerbocker Theatre (Hope College)\, Grand Rapids\, MI
 DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://calendar.hope.edu/event
  /h2-performances-8227 (confirm details with the venue)
 URL:https://calendar.hope.edu/event/h2-performances-8227
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-halloween-pool-party-wawye-oasis@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261031T200000
-DTEND;TZID=America/Detroit:20261031T230000
-SUMMARY:Halloween Pool Party (Wawyé Oasis)
-LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
-DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://gunlakecasino.com
- /entertainment/ (confirm details with the venue)
-URL:https://gunlakecasino.com/entertainment/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-the-static-age-90-s-00-s-hits-131-sportsba-1ma239@gr-concer
- ts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261031T220000
-DTEND;TZID=America/Detroit:20261101T010000
-SUMMARY:The Static Age – 90's & 00's Hits (131 Sportsbar & Lounge)
-LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 10:00 PM. Tickets/info: https://gunlakecasino.com/enter
- tainment/ (confirm details with the venue)
-URL:https://gunlakecasino.com/entertainment/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-10-31-wheel-of-fortune-live-oct-31@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261031T210000
-DTEND;TZID=America/Detroit:20261101T000000
-SUMMARY:Wheel of Fortune LIVE! (Oct 31)
-LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
-DESCRIPTION:Live Show\, 9:00 PM. Tickets/info: https://www.ticketmaster.co
- m/wheel-of-fortune-new-buffalo-michigan-10-31-2026/event/040064D0A0686B26
-  (confirm details with the venue)
-URL:https://www.ticketmaster.com/wheel-of-fortune-new-buffalo-michigan-10-
- 31-2026/event/040064D0A0686B26
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-jazz-jam-w-tommy-pancy-nov-1@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261101T170000
-DTEND;TZID=America/Detroit:20261101T200000
-SUMMARY:Jazz Jam w/ Tommy Pancy (Nov 1)
-LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
-DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
- m/events/jazz-jam-11-1 (confirm details with the venue)
-URL:https://speciationartisanales.com/events/jazz-jam-11-1
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-ringling-bros-and-barnum-bailey-the-greate-1ukjoy@gr-concer
- ts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261101T130000
-DTEND;TZID=America/Detroit:20261101T160000
-SUMMARY:Ringling Bros. and Barnum & Bailey: The Greatest Show On Earth
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Family Show\, 1:00 PM & 5:00 PM. Tickets/info: https://www.tic
- ketmaster.com/ringling-bros-and-barnum-bailey-presents-grand-rapids-michi
- gan-11-01-2026/event/0800642CD06C6250 (confirm details with the venue)
-URL:https://www.ticketmaster.com/ringling-bros-and-barnum-bailey-presents-
- grand-rapids-michigan-11-01-2026/event/0800642CD06C6250
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-flamingosis-bright-moments-10th-anniversar-1accfd@gr-concer
- ts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261101T200000
-DTEND;TZID=America/Detroit:20261101T230000
-SUMMARY:Flamingosis – Bright Moments 10th Anniversary (with Pablo Eskobear
- \, Drop Catch)
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
- event/flamingosis-bright-moments-the-pyramid-scheme-tickets/14192434 (con
- firm details with the venue)
-URL:https://www.ticketweb.com/event/flamingosis-bright-moments-the-pyramid
- -scheme-tickets/14192434
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-bach-chorale-of-grand-rapids-fall-charity-1kso2w@gr-concert
- s
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261101T193000
-DTEND;TZID=America/Detroit:20261101T223000
-SUMMARY:Bach Chorale of Grand Rapids: Fall Charity Concert (with pianist A
- lan Chiang)
-LOCATION:Fountain Street Church\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.tickettailor.co
- m/events/fountainstreetchurch/2415882 (confirm details with the venue)
-URL:https://www.tickettailor.com/events/fountainstreetchurch/2415882
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-01-wheel-of-fortune-live-nov-1-matinee@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261101T140000
-DTEND;TZID=America/Detroit:20261101T170000
-SUMMARY:Wheel of Fortune LIVE! (Nov 1 matinee)
-LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
-DESCRIPTION:Live Show\, 2:00 PM. Tickets/info: https://www.ticketmaster.co
- m/wheel-of-fortune-new-buffalo-michigan-11-01-2026/event/040064D0A0806B50
-  (confirm details with the venue)
-URL:https://www.ticketmaster.com/wheel-of-fortune-new-buffalo-michigan-11-
- 01-2026/event/040064D0A0806B50
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-02-authority-zero-apocalyptour-2026-with-the-xkyij4@gr-concert
@@ -1398,6 +1158,19 @@ URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
  vent/afebfa7b-523b-4699-ba65-807cfd985e1a
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-13-together-again-and-alex-austin-s-all-stars@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261113T200000
+DTEND;TZID=America/Detroit:20261113T230000
+SUMMARY:Together Again and Alex Austin's All Stars
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/together-again-and-alex-austins-tip-top-deluxe-bar-tickets/14412104
+  (confirm details with the venue)
+URL:https://www.ticketweb.com/event/together-again-and-alex-austins-tip-to
+ p-deluxe-bar-tickets/14412104
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-14-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261114T140000
@@ -2295,6 +2068,17 @@ DESCRIPTION:Orchestral\, 3:00 PM. Tickets/info: https://www.grysco.org/con
 URL:https://www.grysco.org/concerts
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-22-jazz-jam-w-tommy-pancy-nov-22@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261122T170000
+DTEND;TZID=America/Detroit:20261122T200000
+SUMMARY:Jazz Jam w/ Tommy Pancy (Nov 22)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
+ m/events/jazz-jam-11-22 (confirm details with the venue)
+URL:https://speciationartisanales.com/events/jazz-jam-11-22
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-23-catch-your-breath-not-broken-enough-tour@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20261123T190000
@@ -2683,6 +2467,19 @@ LOCATION:Holland Community Theatre\, Grand Rapids\, MI
 DESCRIPTION:Theater\, 7:00 PM. Tickets/info: https://www.tuliptime.com/eve
  nts/holland-community-theatre (confirm details with the venue)
 URL:https://www.tuliptime.com/events/holland-community-theatre
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-02-ted-vigil-s-rocky-mountain-christmas@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261202T193000
+DTEND;TZID=America/Detroit:20261202T223000
+SUMMARY:Ted Vigil's Rocky Mountain Christmas
+LOCATION:Holland Civic Center Place\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 7:30 PM. Tickets/info: https://hollandciviccenter.com/e
+ vent/ted-vigils-rocky-mountain-christmas/ (confirm details with the venue
+ )
+URL:https://hollandciviccenter.com/event/ted-vigils-rocky-mountain-christm
+ as/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-03-christmas-together-with-amy-grant-michael-w-smith@gr-concer
@@ -3139,6 +2936,19 @@ URL:https://www.etix.com/ticket/p/40124216/the-rock-and-roll-playhouse-gra
  nd-rapids-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-05-a-jazzy-little-christmas-with-lakeshore-co-14k1rc@gr-concer
+ ts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261205T190000
+DTEND;TZID=America/Detroit:20261205T220000
+SUMMARY:A Jazzy Little Christmas with Lakeshore Community Chorus (Dec 5 at
+  7 PM & Dec 6 at 4 PM)
+LOCATION:Saugatuck Center for the Arts\, Grand Rapids\, MI
+DESCRIPTION:Choral\, 7:00 PM. Tickets/info: https://sc4a.org/event/a-jazzy
+ -little-christmas-lcc/ (confirm details with the venue)
+URL:https://sc4a.org/event/a-jazzy-little-christmas-lcc/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261206T140000
@@ -3241,6 +3051,17 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Live Show\, 4:30 PM. Tickets/info: https://parktheatreholland.
  org/ (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-07-celtic-angels-christmas@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261207T193000
+DTEND;TZID=America/Detroit:20261207T223000
+SUMMARY:Celtic Angels Christmas
+LOCATION:Holland Civic Center Place\, Grand Rapids\, MI
+DESCRIPTION:Celtic\, 7:30 PM. Tickets/info: https://hollandciviccenter.com
+ /event/celtic-angels-christmas/ (confirm details with the venue)
+URL:https://hollandciviccenter.com/event/celtic-angels-christmas/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-08-jeff-daniels@gr-concerts
@@ -3439,6 +3260,19 @@ URL:https://calvin.edu/events/calvin-theatre-company-miracle-worker-179703
  5400
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-11-firebird-sweet@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261211T200000
+DTEND;TZID=America/Detroit:20261211T230000
+SUMMARY:Firebird Sweet
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/firebird-sweet-tip-top-deluxe-bar-tickets/14412114 (confirm details
+  with the venue)
+URL:https://www.ticketweb.com/event/firebird-sweet-tip-top-deluxe-bar-tick
+ ets/14412114
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-12-heyz-something-different-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261212T210000
@@ -3573,6 +3407,19 @@ LOCATION:Calvin University Chapel\, Grand Rapids\, MI
 DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://www.schubertmalechorus
  .org/concertsevents-calendar/ (confirm details with the venue)
 URL:https://www.schubertmalechorus.org/concertsevents-calendar/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-pretoria-low-phase-faintly-macabre@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261212T190000
+DTEND;TZID=America/Detroit:20261212T220000
+SUMMARY:Pretoria + Low Phase + Faintly Macabre
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Alternative\, Doors 7:00 PM. Tickets/info: https://www.ticketw
+ eb.com/event/pretoria-low-phase-the-pyramid-scheme-tickets/14403374 (conf
+ irm details with the venue)
+URL:https://www.ticketweb.com/event/pretoria-low-phase-the-pyramid-scheme-
+ tickets/14403374
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
@@ -3752,6 +3599,18 @@ LOCATION:Wealthy Theatre\, Grand Rapids\, MI
 DESCRIPTION:Holiday\, 8:45 PM. Tickets/info: https://grcmc.org/event/candl
  elight-christmas-carols-on-strings/1706 (confirm details with the venue)
 URL:https://grcmc.org/event/candlelight-christmas-carols-on-strings/1706
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-17-dailey-vincent-candy-canes-coal@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261217T193000
+DTEND;TZID=America/Detroit:20261217T223000
+SUMMARY:Dailey & Vincent: Candy Canes & Coal
+LOCATION:Holland Civic Center Place\, Grand Rapids\, MI
+DESCRIPTION:Bluegrass\, 7:30 PM. Tickets/info: https://hollandciviccenter.
+ com/event/dailey-vincent-candy-canes-coal/ (confirm details with the venu
+ e)
+URL:https://hollandciviccenter.com/event/dailey-vincent-candy-canes-coal/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-18-river-city-improv-dec-18@gr-concerts
@@ -6011,6 +5870,19 @@ DESCRIPTION:Folk\, 3:00 PM. Tickets/info: https://grcmc.org/event/blue-wat
  e)
 URL:https://grcmc.org/event/blue-water-ramblers-acoustic-stew-music-guild/
  1740
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-21-lucas-zelnick@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20270321T180000
+DTEND;TZID=America/Detroit:20270321T210000
+SUMMARY:Lucas Zelnick
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Doors 6:00 PM. Tickets/info: https://www.ticketweb.co
+ m/event/lucas-zelnick-the-big-room-tickets/14404284 (confirm details with
+  the venue)
+URL:https://www.ticketweb.com/event/lucas-zelnick-the-big-room-tickets/144
+ 04284
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-23-ali-wong-live@gr-concerts
