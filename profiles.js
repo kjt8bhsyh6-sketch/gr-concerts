@@ -10,7 +10,7 @@
   const pg = /sports/.test(location.pathname) ? "sports" : /seasonal/.test(location.pathname) ? "seasonal" : "concerts";
   const OPT = {
     genres: ["Rock", "Indie", "Comedy", "Country", "Folk", "Punk", "Metal", "Electronic", "Hip-Hop", "Jazz", "Classical", "Musical", "Theater"],
-    venues: ["Pyramid Scheme", "Intersection", "GLC Live", "Van Andel", "DeVos", "Wealthy Theatre", "Dr. Grins", "St. Cecilia", "Civic Theatre", "Big Room", "Meijer Gardens", "Tip Top", "Midtown", "Speciation", "Calvin", "Fountain Street", "GRCC Spectrum", "GRCC Albert P. Smith", "Dog Story", "Comedy Project", "Lowell Arts", "GVSU Haas", "Acrisure", "Park Theatre", "Jack H. Miller", "Knickerbocker", "Holland Civic Center", "Holland Community Theatre", "Saugatuck Center", "Gun Lake Casino", "FireKeepers", "Soaring Eagle", "Four Winds"],
+    venues: ["Pyramid Scheme", "Intersection", "GLC Live", "Van Andel", "DeVos", "Wealthy Theatre", "Dr. Grins", "St. Cecilia", "Civic Theatre", "Big Room", "Meijer Gardens", "Tip Top", "Midtown", "Speciation", "Calvin", "Fountain Street", "GRCC Spectrum", "GRCC Albert P. Smith", "Dog Story", "Comedy Project", "Lowell Arts", "GVSU Haas", "Acrisure", "Park Theatre", "Jack H. Miller", "Knickerbocker", "Holland Civic Center", "Holland Community Theatre", "Saugatuck Center", "Woman's Club", "Coral Gables", "Gun Lake Casino", "FireKeepers", "Soaring Eagle", "Four Winds"],
     teams: ["Griffins", "Gold", "Rise", "Whitecaps", "AC Grand Rapids"],
     gameTypes: ["Weekend", "Weeknight", "Matinee", "Home openers"],
     types: ["Holiday Lights", "Christmas Market", "Holiday Market", "Holiday Parade", "Holiday Exhibit", "Holiday Tea", "Santa Visit", "Ghost Tour"],

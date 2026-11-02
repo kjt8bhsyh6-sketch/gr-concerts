@@ -660,6 +660,17 @@ DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://firekeeperscasino.com/sh
 URL:https://firekeeperscasino.com/shows/the-all-american-rejects/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-07-steve-iott-carl-sobel@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261107T200000
+DTEND;TZID=America/Detroit:20261107T230000
+SUMMARY:Steve Iott & Carl Sobel
+LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
+ m/product/steve-iott-carl-sobel/20 (confirm details with the venue)
+URL:https://www.saugatuckcomedy.com/product/steve-iott-carl-sobel/20
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-08-trivium-crown-in-the-grave-world-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261108T173000
@@ -719,6 +730,19 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://parktheatreholland.org
  / (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-08-msu-professors-of-jazz@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261108T160000
+DTEND;TZID=America/Detroit:20261108T190000
+SUMMARY:MSU Professors of Jazz
+LOCATION:Saugatuck Woman's Club\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 4:00 PM. Tickets/info: https://www.eventbrite.com/e/msu
+ -professors-of-jazz-tickets-2002839865954 (confirm details with the venue
+ )
+URL:https://www.eventbrite.com/e/msu-professors-of-jazz-tickets-2002839865
+ 954
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-09-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
@@ -1387,6 +1411,17 @@ URL:https://www.etix.com/ticket/p/32357244/mersiv-pool-party-wayland-gun-l
  ake-casino-resortwawye-oasis
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-14-esteban-touma-mike-all@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261114T200000
+DTEND;TZID=America/Detroit:20261114T230000
+SUMMARY:Esteban Touma & Mike All
+LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
+ m/product/esteban-touma-mike-all/51 (confirm details with the venue)
+URL:https://www.saugatuckcomedy.com/product/esteban-touma-mike-all/51
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-15-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261115T130000
@@ -2030,6 +2065,17 @@ URL:https://www.ticketmaster.com/rick-springfield-new-buffalo-michigan-11-
  21-2026/event/040064FDAAB3B0CB
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-21-cam-rowe-kate-brindle@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261121T200000
+DTEND;TZID=America/Detroit:20261121T230000
+SUMMARY:Cam Rowe & Kate Brindle
+LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
+ m/product/cam-rowe-kate-brindle/31 (confirm details with the venue)
+URL:https://www.saugatuckcomedy.com/product/cam-rowe-kate-brindle/31
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-22-why@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20261122T190000
@@ -2379,6 +2425,17 @@ LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
 DESCRIPTION:Holiday\, 6:00 PM. Tickets/info: https://soaringeaglecasino.co
  m/events/the-rockin-holiday-bash/ (confirm details with the venue)
 URL:https://soaringeaglecasino.com/events/the-rockin-holiday-bash/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-brent-terhune-dan-turco@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261128T200000
+DTEND;TZID=America/Detroit:20261128T230000
+SUMMARY:Brent TerHune & Dan Turco
+LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
+ m/product/brent-terhune-dan-turco/26 (confirm details with the venue)
+URL:https://www.saugatuckcomedy.com/product/brent-terhune-dan-turco/26
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-29-love-actually-in-concert@gr-concerts
@@ -3422,6 +3479,19 @@ URL:https://www.ticketweb.com/event/pretoria-low-phase-the-pyramid-scheme-
  tickets/14403374
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-adam-burke-seth-davis@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261212T200000
+DTEND;TZID=America/Detroit:20261212T230000
+SUMMARY:Adam Burke & Seth Davis
+LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
+ m/product/adam-burke-seth-davis/TG5UONSCTK36UT744CLACVDG (confirm details
+  with the venue)
+URL:https://www.saugatuckcomedy.com/product/adam-burke-seth-davis/TG5UONSC
+ TK36UT744CLACVDG
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261213T190000
@@ -3795,6 +3865,19 @@ URL:https://www.etix.com/ticket/p/83786413/emo-nite-grand-rapids-the-inter
  section-elevation
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-19-michael-mcdaniel-pat-sievert@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20261219T200000
+DTEND;TZID=America/Detroit:20261219T230000
+SUMMARY:Michael McDaniel & Pat Sievert
+LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
+ m/product/michael-mcdaniel-pat-sievert/R6IQGXHIDSH3CRPGGRIHLX4K (confirm 
+ details with the venue)
+URL:https://www.saugatuckcomedy.com/product/michael-mcdaniel-pat-sievert/R
+ 6IQGXHIDSH3CRPGGRIHLX4K
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-20-possessed-by-paul-james-with-coleman-williams@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261220T190000
@@ -4117,6 +4200,19 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
  g/ (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-09-jayson-cross-tba@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20270109T200000
+DTEND;TZID=America/Detroit:20270109T230000
+SUMMARY:Jayson Cross & TBA
+LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
+ m/product/jayson-cross-tba/4RRNCHGAOIH62BPGCBL6ZSQO (confirm details with
+  the venue)
+URL:https://www.saugatuckcomedy.com/product/jayson-cross-tba/4RRNCHGAOIH62
+ BPGCBL6ZSQO
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-12-broadway-grand-rapids-six@gr-concerts
@@ -4725,6 +4821,17 @@ DESCRIPTION:Jazz\, 11:00 AM. Tickets/info: https://www.meijergardens.org/e
   venue)
 URL:https://www.meijergardens.org/events/jazz-brunch-with-demetrius-krayon
  -nabors/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-30-keith-lenart-kate-brindle@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20270130T200000
+DTEND;TZID=America/Detroit:20270130T230000
+SUMMARY:Keith Lenart & Kate Brindle
+LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
+ m/product/keith-lenart-kate-brindle/15 (confirm details with the venue)
+URL:https://www.saugatuckcomedy.com/product/keith-lenart-kate-brindle/15
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-31-josh-rose-drew-nelson-acoustic-stew-music-guild@gr-concerts
@@ -5440,6 +5547,17 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
  g/ (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-27-matt-lauria-tba@gr-concerts
+DTSTAMP:20261102T120000Z
+DTSTART;TZID=America/Detroit:20270227T200000
+DTEND;TZID=America/Detroit:20270227T230000
+SUMMARY:Matt Lauria & TBA
+LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
+ m/product/matt-lauria-tba/32 (confirm details with the venue)
+URL:https://www.saugatuckcomedy.com/product/matt-lauria-tba/32
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-28-hawks-and-owls-string-band-acoustic-stew-m-x3ci31@gr-concer
