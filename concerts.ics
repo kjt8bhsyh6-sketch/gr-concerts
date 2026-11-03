@@ -37,47 +37,6 @@ DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://calendar.hope.edu/event
 URL:https://calendar.hope.edu/event/h2-performances-8227
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-02-authority-zero-apocalyptour-2026-with-the-xkyij4@gr-concert
- s
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261102T190000
-DTEND;TZID=America/Detroit:20261102T220000
-SUMMARY:Authority Zero – Apocalyptour 2026 (with The Raging Nathans\, Bayl
- ey Gottfried\, Misplaced Memories)
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Punk\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event/
- authority-zero-apocalyptour-the-pyramid-scheme-tickets/14991313 (confirm 
- details with the venue)
-URL:https://www.ticketweb.com/event/authority-zero-apocalyptour-the-pyrami
- d-scheme-tickets/14991313
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-02-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261102T190000
-DTEND;TZID=America/Detroit:20261102T220000
-SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
- medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
- )
-URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
- w
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-02-metal-mondays-free-21@gr-concerts
-DTSTAMP:20261028T120000Z
-DTSTART;TZID=America/Detroit:20261102T150000
-DTEND;TZID=America/Detroit:20261102T180000
-SUMMARY:Metal Mondays (free\, 21+)
-LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
-DESCRIPTION:Metal\, 3:00 PM. Tickets/info: https://www.ticketweb.com/event
- /metal-mondays-tip-top-deluxe-bar-tickets/14403694 (confirm details with 
- the venue)
-URL:https://www.ticketweb.com/event/metal-mondays-tip-top-deluxe-bar-ticke
- ts/14403694
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-03-calvin-campus-choir-women-s-chorale-concert@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261103T193000
@@ -2076,11 +2035,11 @@ DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
 URL:https://www.saugatuckcomedy.com/product/cam-rowe-kate-brindle/31
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-22-why@gr-concerts
+UID:2026-11-22-why-with-serengeti@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20261122T190000
 DTEND;TZID=America/Detroit:20261122T220000
-SUMMARY:WHY?
+SUMMARY:WHY? (with Serengeti)
 LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
 DESCRIPTION:Indie\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event
  /why-the-pyramid-scheme-tickets/15002953 (confirm details with the venue)
@@ -2136,6 +2095,19 @@ DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/45
  tion-elevation (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/45992257/catch-your-breath-not-broken-en
  ough-tour-grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-23-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
+DTSTAMP:20261103T120000Z
+DTSTART;TZID=America/Detroit:20261123T190000
+DTEND;TZID=America/Detroit:20261123T220000
+SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
+ medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
+ )
+URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
+ w
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-24-don-broco-with-windwaker@gr-concerts
@@ -4215,6 +4187,21 @@ URL:https://www.saugatuckcomedy.com/product/jayson-cross-tba/4RRNCHGAOIH62
  BPGCBL6ZSQO
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-09-winter-wheat-music-festival-2027-wheatland-av9a3p@gr-concer
+ ts
+DTSTAMP:20261103T120000Z
+DTSTART;TZID=America/Detroit:20270109T130000
+DTEND;TZID=America/Detroit:20270109T160000
+SUMMARY:Winter Wheat Music Festival 2027 (Wheatland Music Organization\; 1
+ 2 artists\, 2 stages\, all ages)
+LOCATION:The Intersection\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 1:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/93802476/winter-wheat-music-festival-2027-grand-rapids-the-intersecti
+ on (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/93802476/winter-wheat-music-festival-202
+ 7-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-12-broadway-grand-rapids-six@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270112T193000
@@ -4747,6 +4734,19 @@ URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  ravels-rapsodie-espagnole
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-29-that-arena-rock-show@gr-concerts
+DTSTAMP:20261103T120000Z
+DTSTART;TZID=America/Detroit:20270129T210000
+DTEND;TZID=America/Detroit:20270130T000000
+SUMMARY:That Arena Rock Show
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/
+ that-arena-rock-show-new-buffalo-michigan-01-29-2027/event/0400655CA96481
+ 65 (confirm details with the venue)
+URL:https://www.ticketmaster.com/that-arena-rock-show-new-buffalo-michigan
+ -01-29-2027/event/0400655CA9648165
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-30-kpop-night-k-winterland@gr-concerts
 DTSTAMP:20261021T120000Z
 DTSTART;TZID=America/Detroit:20270130T190000
@@ -5002,6 +5002,18 @@ DESCRIPTION:Theater\, 3:00 PM. Tickets/info: https://www.ticketmaster.com/
  8006529D2AE81D8 (confirm details with the venue)
 URL:https://www.ticketmaster.com/all-things-equal-the-life-trials-grand-ra
  pids-michigan-02-07-2027/event/08006529D2AE81D8
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-07-we-them-ones-comedy-tour-mike-epps-hosted-1lr1wv@gr-concert
+ s
+DTSTAMP:20261103T120000Z
+DTSTART;TZID=America/Detroit:20270207T190000
+DTEND;TZID=America/Detroit:20270207T220000
+SUMMARY:We Them Ones Comedy Tour (Mike Epps\, hosted by Deon Cole)
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.vanandelarena.com/
+ events/2027/we-them-ones (confirm details with the venue)
+URL:https://www.vanandelarena.com/events/2027/we-them-ones
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-09-broadway-grand-rapids-beauty-and-the-beast-1o8unk@gr-concer

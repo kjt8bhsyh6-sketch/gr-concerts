@@ -1,17 +1,7 @@
 {
-  "generated": "2026-11-02",
-  "count": 164,
+  "generated": "2026-11-03",
+  "count": 172,
   "pending": [
-    {
-      "artist": "Metal Mondays (free, 21+)",
-      "week": "this",
-      "dates": [
-        "2026-11-02"
-      ],
-      "venue": "Tip Top Deluxe Bar & Grill",
-      "link": "https://www.ticketweb.com/event/metal-mondays-tip-top-deluxe-bar-tickets/14403694",
-      "added": "2026-10-28"
-    },
     {
       "artist": "Tip Top Tuesday Comedy (free, 21+)",
       "week": "this",
@@ -113,6 +103,16 @@
       "venue": "Midtown GR (at Studio Park)",
       "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Steve Iott & Carl Sobel",
+      "week": "this",
+      "dates": [
+        "2026-11-07"
+      ],
+      "venue": "Coral Gables (Saugatuck)",
+      "link": "https://www.saugatuckcomedy.com/product/steve-iott-carl-sobel/20",
+      "added": "2026-11-02"
     },
     {
       "artist": "All Get Out + Motherfolk + Saint Blonde",
@@ -243,6 +243,16 @@
       "venue": "Gun Lake Casino Resort",
       "link": "https://www.etix.com/ticket/p/32357244/mersiv-pool-party-wayland-gun-lake-casino-resortwawye-oasis",
       "added": "2026-10-26"
+    },
+    {
+      "artist": "Esteban Touma & Mike All",
+      "week": "next",
+      "dates": [
+        "2026-11-14"
+      ],
+      "venue": "Coral Gables (Saugatuck)",
+      "link": "https://www.saugatuckcomedy.com/product/esteban-touma-mike-all/51",
+      "added": "2026-11-02"
     },
     {
       "artist": "Swanson, Matthews & Bardolph – Acoustic Stew Music Guild",
@@ -426,6 +436,16 @@
       "added": "2026-10-24"
     },
     {
+      "artist": "Cam Rowe & Kate Brindle",
+      "week": "later",
+      "dates": [
+        "2026-11-21"
+      ],
+      "venue": "Coral Gables (Saugatuck)",
+      "link": "https://www.saugatuckcomedy.com/product/cam-rowe-kate-brindle/31",
+      "added": "2026-11-02"
+    },
+    {
       "artist": "Rumours ATL: A Fleetwood Mac Tribute",
       "week": "later",
       "dates": [
@@ -534,6 +554,16 @@
       "venue": "Lowell Arts at Sound Check",
       "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Brent TerHune & Dan Turco",
+      "week": "later",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "Coral Gables (Saugatuck)",
+      "link": "https://www.saugatuckcomedy.com/product/brent-terhune-dan-turco/26",
+      "added": "2026-11-02"
     },
     {
       "artist": "1976/1986: A Tribute",
@@ -817,6 +847,16 @@
       "added": "2026-11-02"
     },
     {
+      "artist": "Adam Burke & Seth Davis",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "Coral Gables (Saugatuck)",
+      "link": "https://www.saugatuckcomedy.com/product/adam-burke-seth-davis/TG5UONSCTK36UT744CLACVDG",
+      "added": "2026-11-02"
+    },
+    {
       "artist": "Kill The Mood + The Half Notes + The Burdens + Redbelly",
       "week": "later",
       "dates": [
@@ -925,6 +965,16 @@
       "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/83786413/emo-nite-grand-rapids-the-intersection-elevation",
       "added": "2026-10-28"
+    },
+    {
+      "artist": "Michael McDaniel & Pat Sievert",
+      "week": "later",
+      "dates": [
+        "2026-12-19"
+      ],
+      "venue": "Coral Gables (Saugatuck)",
+      "link": "https://www.saugatuckcomedy.com/product/michael-mcdaniel-pat-sievert/R6IQGXHIDSH3CRPGGRIHLX4K",
+      "added": "2026-11-02"
     },
     {
       "artist": "Sweet Dee and the Wild Honeys, with Bobcat Opossum",
@@ -1045,6 +1095,16 @@
       "venue": "Lowell Arts at Sound Check",
       "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Jayson Cross & TBA",
+      "week": "later",
+      "dates": [
+        "2027-01-09"
+      ],
+      "venue": "Coral Gables (Saugatuck)",
+      "link": "https://www.saugatuckcomedy.com/product/jayson-cross-tba/4RRNCHGAOIH62BPGCBL6ZSQO",
+      "added": "2026-11-02"
     },
     {
       "artist": "Northview High School Choirs Concert",
@@ -1227,6 +1287,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Keith Lenart & Kate Brindle",
+      "week": "later",
+      "dates": [
+        "2027-01-30"
+      ],
+      "venue": "Coral Gables (Saugatuck)",
+      "link": "https://www.saugatuckcomedy.com/product/keith-lenart-kate-brindle/15",
+      "added": "2026-11-02"
+    },
+    {
       "artist": "Winter Nights: Grand Rapids Ballet",
       "week": "later",
       "dates": [
@@ -1405,6 +1475,16 @@
       "venue": "Lowell Arts at Sound Check",
       "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Matt Lauria & TBA",
+      "week": "later",
+      "dates": [
+        "2027-02-27"
+      ],
+      "venue": "Coral Gables (Saugatuck)",
+      "link": "https://www.saugatuckcomedy.com/product/matt-lauria-tba/32",
+      "added": "2026-11-02"
     },
     {
       "artist": "Calvin Symphonic Band & Rockford Community Band",

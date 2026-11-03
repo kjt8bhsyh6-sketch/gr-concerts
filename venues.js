@@ -7,6 +7,7 @@ const VENUES = {
   "Van Andel Arena": "130 W Fulton St, Grand Rapids, MI 49503",
   "DeVos Performance Hall": "303 Monroe Ave NW, Grand Rapids, MI 49503",
   "GLC Live at 20 Monroe": "11 Ottawa Ave NW, Grand Rapids, MI 49503",
+  "The Intersection": "133 Cesar E. Chavez Ave SW, Grand Rapids, MI 49503",
   "The Intersection (main room)": "The Intersection, 133 Cesar E. Chavez Ave SW, Grand Rapids, MI 49503",
   "The Stache (at The Intersection)": "The Intersection, 133 Cesar E. Chavez Ave SW, Grand Rapids, MI 49503",
   "Elevation (at The Intersection)": "The Intersection, 133 Cesar E. Chavez Ave SW, Grand Rapids, MI 49503",
