@@ -37,87 +37,6 @@ DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://calendar.hope.edu/event
 URL:https://calendar.hope.edu/event/h2-performances-8227
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-03-calvin-campus-choir-women-s-chorale-concert@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261103T193000
-DTEND;TZID=America/Detroit:20261103T223000
-SUMMARY:Calvin Campus Choir & Women's Chorale Concert
-LOCATION:Calvin University Chapel\, Grand Rapids\, MI
-DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://calvin.edu/events/camp
- us-choir-and-womens-chorale-concert-1793752200 (confirm details with the 
- venue)
-URL:https://calvin.edu/events/campus-choir-and-womens-chorale-concert-1793
- 752200
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-03-tip-top-tuesday-comedy-free-21@gr-concerts
-DTSTAMP:20261028T120000Z
-DTSTART;TZID=America/Detroit:20261103T210000
-DTEND;TZID=America/Detroit:20261104T000000
-SUMMARY:Tip Top Tuesday Comedy (free\, 21+)
-LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.ticketweb.com/even
- t/tip-top-tuesday-comedy-tip-top-deluxe-bar-tickets/14403704 (confirm det
- ails with the venue)
-URL:https://www.ticketweb.com/event/tip-top-tuesday-comedy-tip-top-deluxe-
- bar-tickets/14403704
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-04-the-string-cheese-incident-just-keep-spinn-d4afau@gr-concer
- ts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261104T180000
-DTEND;TZID=America/Detroit:20261104T210000
-SUMMARY:The String Cheese Incident – Just Keep Spinning Tour
-LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Jam\, 6:00 PM. Tickets/info: https://www.ticketmaster.com/the-
- string-cheese-incident-just-keep-grand-rapids-michigan-11-04-2026/event/0
- 80064F8CB39B6AE (confirm details with the venue)
-URL:https://www.ticketmaster.com/the-string-cheese-incident-just-keep-gran
- d-rapids-michigan-11-04-2026/event/080064F8CB39B6AE
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-04-the-po-ramblin-boys-wsg-round-creek-string-19m183@gr-concer
- ts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261104T190000
-DTEND;TZID=America/Detroit:20261104T220000
-SUMMARY:The Po' Ramblin' Boys wsg Round Creek String Band and Red Thyme Du
- o
-LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
-DESCRIPTION:Bluegrass\, 7:00 PM. Tickets/info: https://www.ticketweb.com/e
- vent/the-po-ramblin-boys-round-tip-top-deluxe-bar-tickets/15045093 (confi
- rm details with the venue)
-URL:https://www.ticketweb.com/event/the-po-ramblin-boys-round-tip-top-delu
- xe-bar-tickets/15045093
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-04-gvsu-new-music-ensemble-fall-concert@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261104T190000
-DTEND;TZID=America/Detroit:20261104T220000
-SUMMARY:GVSU New Music Ensemble Fall Concert
-LOCATION:GVSU Haas Center for Performing Arts\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:00 PM. Tickets/info: https://www.gvsu.edu/mtd/mo
- dule/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/9a0f476d-a7f9-4ceb-86b1-e
- 2a88c06e5e9 (confirm details with the venue)
-URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
- vent/9a0f476d-a7f9-4ceb-86b1-e2a88c06e5e9
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-04-king-of-drag-the-royal-tour@gr-concerts
-DTSTAMP:20261031T120000Z
-DTSTART;TZID=America/Detroit:20261104T200000
-DTEND;TZID=America/Detroit:20261104T230000
-SUMMARY:King of Drag: The Royal Tour
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Live Show\, 8:00 PM (doors 7:00 PM). Tickets/info: https://www
- .ticketweb.com/event/king-of-drag-the-royal-the-pyramid-scheme-tickets/15
- 019593 (confirm details with the venue)
-URL:https://www.ticketweb.com/event/king-of-drag-the-royal-the-pyramid-sch
- eme-tickets/15019593
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-05-be-la-fleck-my-bluegrass-heart@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261105T193000
@@ -780,6 +699,19 @@ DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
  990303F06 (confirm details with the venue)
 URL:https://www.ticketmaster.com/maybe-happy-ending-touring-grand-rapids-m
  ichigan-11-11-2026/event/0800651990303F06
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-11-holland-american-legion-band-s-veterans-concert@gr-concerts
+DTSTAMP:20261105T120000Z
+DTSTART;TZID=America/Detroit:20261111T190000
+DTEND;TZID=America/Detroit:20261111T220000
+SUMMARY:Holland American Legion Band's Veterans Concert
+LOCATION:Holland Civic Center Place\, Grand Rapids\, MI
+DESCRIPTION:Concert Band\, 7:00 PM. Tickets/info: https://hollandciviccent
+ er.com/event/holland-american-legion-bands-veterans-concert/ (confirm det
+ ails with the venue)
+URL:https://hollandciviccenter.com/event/holland-american-legion-bands-vet
+ erans-concert/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-12-broadway-grand-rapids-maybe-happy-ending@gr-concerts
@@ -2978,6 +2910,18 @@ DESCRIPTION:Choral\, 7:00 PM. Tickets/info: https://sc4a.org/event/a-jazzy
 URL:https://sc4a.org/event/a-jazzy-little-christmas-lcc/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-05-hairmania-80-s-hard-rock-tribute-131-sport-303z5l@gr-concer
+ ts
+DTSTAMP:20261104T120000Z
+DTSTART;TZID=America/Detroit:20261205T210000
+DTEND;TZID=America/Detroit:20261206T000000
+SUMMARY:Hairmania – 80's Hard Rock Tribute (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 9:00 PM. Tickets/info: https://gunlakecasino.com/eve
+ nt/hairmania-4/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/hairmania-4/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261206T140000
@@ -3302,6 +3246,17 @@ URL:https://www.ticketweb.com/event/firebird-sweet-tip-top-deluxe-bar-tick
  ets/14412114
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-11-the-spazmatics-80-s-hits-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261104T120000Z
+DTSTART;TZID=America/Detroit:20261211T210000
+DTEND;TZID=America/Detroit:20261212T000000
+SUMMARY:The Spazmatics – 80's Hits (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:80s Tribute\, 9:00 PM. Tickets/info: https://gunlakecasino.com
+ /event/the-spazmatics/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/the-spazmatics/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-12-heyz-something-different-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261212T210000
@@ -3462,6 +3417,18 @@ DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
   with the venue)
 URL:https://www.saugatuckcomedy.com/product/adam-burke-seth-davis/TG5UONSC
  TK36UT744CLACVDG
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-hairbanger-s-ball-80-s-hair-rock-131-sport-1qhea5@gr-concer
+ ts
+DTSTAMP:20261104T120000Z
+DTSTART;TZID=America/Detroit:20261212T210000
+DTEND;TZID=America/Detroit:20261213T000000
+SUMMARY:Hairbanger's Ball – 80's Hair Rock (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 9:00 PM. Tickets/info: https://gunlakecasino.com/eve
+ nt/hairbangers-ball-3/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/hairbangers-ball-3/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
@@ -3710,6 +3677,18 @@ URL:https://www.grcc.edu/events/grcc-music-presents-kent-philharmonic-orch
  estra-4
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-18-the-skeletones-r-b-and-funk-131-sportsbar-lounge@gr-concert
+ s
+DTSTAMP:20261104T120000Z
+DTSTART;TZID=America/Detroit:20261218T210000
+DTEND;TZID=America/Detroit:20261219T000000
+SUMMARY:The Skeletones – R&B and Funk (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:R&B / Funk\, 9:00 PM. Tickets/info: https://gunlakecasino.com/
+ event/theskeletones/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/theskeletones/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-19-jeff-daniels@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261219T150000
@@ -3850,6 +3829,17 @@ URL:https://www.saugatuckcomedy.com/product/michael-mcdaniel-pat-sievert/R
  6IQGXHIDSH3CRPGGRIHLX4K
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-19-too-hype-crew-90s-hip-hop-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261104T120000Z
+DTSTART;TZID=America/Detroit:20261219T210000
+DTEND;TZID=America/Detroit:20261220T000000
+SUMMARY:Too Hype Crew – 90s Hip Hop (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Hip-Hop\, 9:00 PM. Tickets/info: https://gunlakecasino.com/eve
+ nt/too-hype-crew-3/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/too-hype-crew-3/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-20-possessed-by-paul-james-with-coleman-williams@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261220T190000
@@ -3904,6 +3894,17 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.lowellarts.org
  /music-concerts/lowell-arts-at-sound-check (confirm details with the venu
  e)
 URL:https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-26-jedi-mind-trip-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261104T120000Z
+DTSTART;TZID=America/Detroit:20261226T210000
+DTEND;TZID=America/Detroit:20261227T000000
+SUMMARY:Jedi Mind Trip (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/event/
+ jedi-mind-trip-2-2/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/jedi-mind-trip-2-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-27-pinball-disco-ft-the-dj-bob-marino-drop-ca-wr3ogo@gr-concer
@@ -4606,6 +4607,18 @@ DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-23-rob-schneider-21@gr-concerts
+DTSTAMP:20261105T120000Z
+DTSTART;TZID=America/Detroit:20270123T190000
+DTEND;TZID=America/Detroit:20270123T220000
+SUMMARY:Rob Schneider (21+)
+LOCATION:FireKeepers Casino Event Center\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Doors 7:00 PM\, show 8:00 PM. Tickets/info: https://f
+ irekeeperscasino.com/shows/rob-schneider/ (confirm details with the venue
+ )
+URL:https://firekeeperscasino.com/shows/rob-schneider/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-24-alexandra-kay-the-one-woman-show@gr-concerts
 DTSTAMP:20261029T120000Z
 DTSTART;TZID=America/Detroit:20270124T200000
@@ -4990,6 +5003,20 @@ URL:https://calvin.edu/events/calvin-theatre-company-lab-series-evening-io
  nesco-1801960200
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-06-eaglemania-the-world-s-greatest-eagles-tri-1i5nsa@gr-concer
+ ts
+DTSTAMP:20261105T120000Z
+DTSTART;TZID=America/Detroit:20270206T210000
+DTEND;TZID=America/Detroit:20270207T000000
+SUMMARY:EagleMania – The World's Greatest Eagles Tribute Band
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/
+ eaglemania-the-worlds-greatest-eagles-tribute-new-buffalo-michigan-02-06-
+ 2027/event/0400655CAE6788B3 (confirm details with the venue)
+URL:https://www.ticketmaster.com/eaglemania-the-worlds-greatest-eagles-tri
+ bute-new-buffalo-michigan-02-06-2027/event/0400655CAE6788B3
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-07-all-things-equal-the-life-trials-of-ruth-b-hidbwa@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -5305,6 +5332,19 @@ DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
 URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-18-vincent-mason-when-you-re-not-around-tour-2027@gr-concerts
+DTSTAMP:20261104T120000Z
+DTSTART;TZID=America/Detroit:20270218T190000
+DTEND;TZID=America/Detroit:20270218T220000
+SUMMARY:Vincent Mason – When You're Not Around Tour 2027
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
+ vincent-mason-when-youre-not-around-grand-rapids-michigan-02-18-2027/even
+ t/08006562FF7E8E42 (confirm details with the venue)
+URL:https://www.ticketmaster.com/vincent-mason-when-youre-not-around-grand
+ -rapids-michigan-02-18-2027/event/08006562FF7E8E42
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-19-dear-evan-hansen-civic-theatre-production-6vbcfk@gr-concert
  s
 DTSTAMP:20261020T120000Z
@@ -5511,6 +5551,33 @@ DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.grcc.edu/schoo
 URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-26-liquid-stranger-presents-electric-helix-wi-csk0mo@gr-concer
+ ts
+DTSTAMP:20261104T120000Z
+DTSTART;TZID=America/Detroit:20270226T200000
+DTEND;TZID=America/Detroit:20270226T230000
+SUMMARY:Liquid Stranger Presents: Electric Helix (with Sully\, Twopercent\
+ , Chozen\; 18+)
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, Doors 8:00 PM\, show 9:00 PM. Tickets/info: https
+ ://www.etix.com/ticket/p/70767530/liquid-stranger-presentselectric-helix-
+ grand-rapids-the-intersection (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/70767530/liquid-stranger-presentselectri
+ c-helix-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-26-sebastian-bach-warrant-21@gr-concerts
+DTSTAMP:20261105T120000Z
+DTSTART;TZID=America/Detroit:20270226T190000
+DTEND;TZID=America/Detroit:20270226T220000
+SUMMARY:Sebastian Bach & Warrant (21+)
+LOCATION:FireKeepers Casino Event Center\, Grand Rapids\, MI
+DESCRIPTION:Rock\, Doors 7:00 PM\, show 8:00 PM. Tickets/info: https://fir
+ ekeeperscasino.com/shows/sebastian-bach-warrant/ (confirm details with th
+ e venue)
+URL:https://firekeeperscasino.com/shows/sebastian-bach-warrant/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-27-gr-symphony-celebrating-beethoven@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270227T190000
@@ -5570,6 +5637,20 @@ LOCATION:Coral Gables (Saugatuck)\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
  m/product/matt-lauria-tba/32 (confirm details with the venue)
 URL:https://www.saugatuckcomedy.com/product/matt-lauria-tba/32
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-27-the-castellows-on-the-highway-tour-with-la-eos0u0@gr-concer
+ ts
+DTSTAMP:20261104T120000Z
+DTSTART;TZID=America/Detroit:20270227T183000
+DTEND;TZID=America/Detroit:20270227T213000
+SUMMARY:The Castellows – On The Highway Tour (with Lance Roark)
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Country\, Doors 6:30 PM\, show 7:30 PM. Tickets/info: https://
+ www.etix.com/ticket/p/62152569/the-castellows-on-the-highway-tour-grand-r
+ apids-the-intersection-the-stache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/62152569/the-castellows-on-the-highway-t
+ our-grand-rapids-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-28-hawks-and-owls-string-band-acoustic-stew-m-x3ci31@gr-concer
@@ -6356,7 +6437,7 @@ DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://fountainstreet.churchce
 URL:https://fountainstreet.churchcenter.com/calendar/event/228264461
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-04-10-amber-autry-happy-holler-tour@gr-concerts
+UID:2027-04-10-amber-autry-happy-holler-tour-7-00-pm@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270410T190000
 DTEND;TZID=America/Detroit:20270410T220000
@@ -6390,6 +6471,19 @@ LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 1:00 PM. Tickets/info: https://www.grcc.edu/school
  s-departments/music (confirm details with the venue)
 URL:https://www.grcc.edu/schools-departments/music
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-10-amber-autry-happy-holler-tour-4-00-pm@gr-concerts
+DTSTAMP:20261105T120000Z
+DTSTART;TZID=America/Detroit:20270410T160000
+DTEND;TZID=America/Detroit:20270410T190000
+SUMMARY:Amber Autry: Happy Holler Tour
+LOCATION:Fountain Street Church\, Grand Rapids\, MI
+DESCRIPTION:Country\, 4:00 PM. Tickets/info: https://www.ticketmaster.com/
+ amber-autry-happy-holler-tour-grand-rapids-michigan-04-10-2027/event/0800
+ 6535834E23C7 (confirm details with the venue)
+URL:https://www.ticketmaster.com/amber-autry-happy-holler-tour-grand-rapid
+ s-michigan-04-10-2027/event/08006535834E23C7
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-11-josiah-queen-damascus-road-tour@gr-concerts

@@ -1,17 +1,7 @@
 {
-  "generated": "2026-11-04",
+  "generated": "2026-11-05",
   "count": 171,
   "pending": [
-    {
-      "artist": "King of Drag: The Royal Tour",
-      "week": "this",
-      "dates": [
-        "2026-11-04"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/king-of-drag-the-royal-the-pyramid-scheme-tickets/15019593",
-      "added": "2026-10-31"
-    },
     {
       "artist": "Live @TCP: The Dispatch (And friends!) - Comedy Show (Nov 5, Dec 3, Jan 7)",
       "week": "this",
@@ -113,6 +103,16 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/all-get-out-motherfolk-the-pyramid-scheme-tickets/15040103",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Holland American Legion Band's Veterans Concert",
+      "week": "next",
+      "dates": [
+        "2026-11-11"
+      ],
+      "venue": "Holland Civic Center Place",
+      "link": "https://hollandciviccenter.com/event/holland-american-legion-bands-veterans-concert/",
+      "added": "2026-11-05"
     },
     {
       "artist": "The Diners – Short Order Improv",
@@ -1620,6 +1620,7 @@
       "artist": "Amber Autry: Happy Holler Tour",
       "week": "later",
       "dates": [
+        "2027-04-10",
         "2027-04-10"
       ],
       "venue": "Fountain Street Church",
