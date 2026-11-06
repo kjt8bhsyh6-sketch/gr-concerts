@@ -37,30 +37,6 @@ DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://calendar.hope.edu/event
 URL:https://calendar.hope.edu/event/h2-performances-8227
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-05-be-la-fleck-my-bluegrass-heart@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261105T193000
-DTEND;TZID=America/Detroit:20261105T223000
-SUMMARY:Béla Fleck – My Bluegrass Heart
-LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
-DESCRIPTION:Bluegrass\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
- erts/bela-fleck-my-bluegrass-heart-2026 (confirm details with the venue)
-URL:https://www.scmcgr.org/concerts/bela-fleck-my-bluegrass-heart-2026
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-05-hotel-california-the-original-eagles-tribute@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261105T193000
-DTEND;TZID=America/Detroit:20261105T223000
-SUMMARY:Hotel California – The Original Eagles Tribute
-LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Tribute\, 7:30 PM. Tickets/info: https://grcmc.org/event/hotel
- -california-the-original-eagles-tribute/1486 (confirm details with the ve
- nue)
-URL:https://grcmc.org/event/hotel-california-the-original-eagles-tribute/1
- 486
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-05-raanan-hershberg-nov-5-7@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261105T190000
@@ -71,34 +47,6 @@ DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
  ebob.com/drgrins/comedian/index.html?id=1289 (confirm details with the ve
  nue)
 URL:https://www.thebob.com/drgrins/comedian/index.html?id=1289
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-05-psychostick-texas-toast-chainsaw-massacre-ti1agw@gr-concert
- s
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261105T190000
-DTEND;TZID=America/Detroit:20261105T220000
-SUMMARY:Psychostick + Texas Toast Chainsaw Massacre + Plethora + Dirtflesh
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event
- /psychostick-texas-toast-chainsaw-the-pyramid-scheme-tickets/14270644 (co
- nfirm details with the venue)
-URL:https://www.ticketweb.com/event/psychostick-texas-toast-chainsaw-the-p
- yramid-scheme-tickets/14270644
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-05-chicks-in-the-office-the-just-between-us-tour-18@gr-concert
- s
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261105T193000
-DTEND;TZID=America/Detroit:20261105T223000
-SUMMARY:Chicks in the Office – The Just Between Us Tour (18+)
-LOCATION:The Intersection (main room)\, Grand Rapids\, MI
-DESCRIPTION:Live Show\, 7:30 PM. Tickets/info: https://www.etix.com/ticket
- /p/43033245/chicks-in-the-office-the-just-between-us-tour-grand-rapids-th
- e-intersection (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/43033245/chicks-in-the-office-the-just-b
- etween-us-tour-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-05-the-oregon-trail-grcc-players-nov-5-7@gr-concerts
@@ -112,57 +60,6 @@ DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://www.grcc.edu/schools-
  etails with the venue)
 URL:https://www.grcc.edu/schools-departments/theater/spectrum-theater/spec
  trum-theater-calendar
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-05-live-tcp-the-dispatch-and-friends-comedy-s-1bd7qm@gr-concer
- ts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261105T190000
-DTEND;TZID=America/Detroit:20261105T220000
-SUMMARY:Live @TCP: The Dispatch (And friends!) - Comedy Show (Nov 5\, Dec 
- 3\, Jan 7)
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/li
- ve-tcp-the-dispatch-and-friends-comedy-show (confirm details with the ven
- ue)
-URL:https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-s
- how
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-05-faculty-artist-recital-dan-graser-saxophone@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261105T193000
-DTEND;TZID=America/Detroit:20261105T223000
-SUMMARY:Faculty Artist Recital: Dan Graser\, saxophone
-LOCATION:GVSU Haas Center for Performing Arts\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.gvsu.edu/mtd/mo
- dule/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/d659b1ed-2b90-4041-a45e-d
- 01797316044 (confirm details with the venue)
-URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
- vent/d659b1ed-2b90-4041-a45e-d01797316044
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-05-grcc-student-honor-recital-free@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261105T151500
-DTEND;TZID=America/Detroit:20261105T181500
-SUMMARY:GRCC Student Honor Recital (free)
-LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 3:15 PM. Tickets/info: https://www.grcc.edu/events
- /grcc-music-presents-student-honor-recital (confirm details with the venu
- e)
-URL:https://www.grcc.edu/events/grcc-music-presents-student-honor-recital
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-05-grcc-flute-night-with-a-b-duo-free@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261105T193000
-DTEND;TZID=America/Detroit:20261105T223000
-SUMMARY:GRCC Flute Night with A/B Duo (free)
-LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
- /grcc-music-presents-flute-night-ab-duo (confirm details with the venue)
-URL:https://www.grcc.edu/events/grcc-music-presents-flute-night-ab-duo
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-06-gr-symphony-midori-plays-shostakovich@gr-concerts
@@ -4057,6 +3954,20 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  (confirm details with the venue)
 URL:https://www.ticketweb.com/event/loners-club-x-lucid-lyfestyles-the-pyr
  amid-scheme-tickets/14376504
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-07-live-tcp-the-dispatch-and-friends-comedy-s-e2xmye@gr-concer
+ ts
+DTSTAMP:20261022T120000Z
+DTSTART;TZID=America/Detroit:20270107T190000
+DTEND;TZID=America/Detroit:20270107T220000
+SUMMARY:Live @TCP: The Dispatch (And friends!) - Comedy Show (Jan 7)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/li
+ ve-tcp-the-dispatch-and-friends-comedy-show (confirm details with the ven
+ ue)
+URL:https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-s
+ how
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-08-deric-cahill-natural-consequences@gr-concerts
