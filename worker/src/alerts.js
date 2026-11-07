@@ -4,11 +4,11 @@ const lc = s => String(s || "").toLowerCase();
 const has = (list, val) => list.some(x => x && lc(val).includes(lc(x)));
 const hour = t => { const m = /(\d+):(\d+)\s*(AM|PM)/i.exec(t || ""); return m ? (+m[1] % 12) + (/PM/i.test(m[3]) ? 12 : 0) : 19; };
 // Detroit local date as YYYY-MM-DD
-const isoDet = d => new Intl.DateTimeFormat("en-CA", { timeZone: "America/Detroit", year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
+export const isoDet = d => new Intl.DateTimeFormat("en-CA", { timeZone: "America/Detroit", year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
 const dfmt = s => { const d = new Date(s + "T12:00:00Z"); return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", timeZone: "UTC" }); };
 
 // Parse the one-object-per-line data files (const NAME = [ { k:"v", ... }, ... ]) without eval.
-function parseArr(src, name) {
+export function parseArr(src, name) {
   const i = src.indexOf("const " + name); if (i < 0) return [];
   const body = src.slice(i, src.indexOf("];", i));
   const out = [];

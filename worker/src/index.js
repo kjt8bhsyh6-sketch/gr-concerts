@@ -3,6 +3,7 @@
 //          s:<session> {email,at} session (non-expiring in KV until sign-out/delete; 400-day cookie renewed at most once a day)
 // Served two ways: https://grhappenings.com/api/* (Worker route, first-party; sets HttpOnly cookie grh_s) and
 // https://grh-profiles.grhappenings.workers.dev/* (legacy; Bearer token only). The /api prefix is stripped.
+import { publicEvents } from "./public-events.js";
 import { loadData, matchPicks, renderEmail, listProfiles, unsubSig, unsubUrl, checkLinks, venuePage } from "./alerts.js";
 // Production origins. github.io stays while the old GitHub Pages copy still forwards visitors (legacy, Bearer token only).
 const ORIGINS = [/^https:\/\/(www\.)?grhappenings\.com$/, /^https:\/\/([a-z0-9-]+\.)?grhappenings\.pages\.dev$/, /^https:\/\/kjt8bhsyh6-sketch\.github\.io$/];
@@ -227,8 +228,10 @@ export default {
   },
 };
 async function handle(req, env) {
-    const h0 = cors(req, env);
     const url = new URL(req.url), path = url.pathname.replace(/^\/api(?=\/|$)/, "") || "/";
+    // Public read-only events feed (open CORS, cached 10 min); handled before the credentialed-CORS/auth paths.
+    if (path === "/public/events") return publicEvents(req, env);
+    const h0 = cors(req, env);
     const fp = firstParty(req, url, env);
     // Same-origin calls (grhappenings.com/api) send no Origin on GET; allow them as first-party.
     const h = h0 || (fp ? {} : null);
