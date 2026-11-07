@@ -72,5 +72,6 @@ export async function publicEvents(req, env) {
     res = new Response(body, { headers: { ...HDR, "Content-Type": "application/json; charset=utf-8", "Cache-Control": `public, max-age=${TTL}`, "X-Content-Type-Options": "nosniff" } });
     await cache.put(key, res.clone());
   }
+  res = new Response(res.body, res); res.headers.set("Cache-Control", `public, max-age=${TTL}`); // cache hits come back with the zone browser TTL; restore ours
   return req.method === "HEAD" ? new Response(null, { status: res.status, headers: res.headers }) : res;
 }
