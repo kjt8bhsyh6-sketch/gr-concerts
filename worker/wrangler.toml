@@ -13,3 +13,9 @@ MAILING_ADDRESS = "P.O. Box 140186, Grand Rapids, MI 49504"
 [[kv_namespaces]]
 binding = "KV"
 id = "3e4bc178e90940eaa813a8db724e1db9"
+
+# Outbound ticket-click log (no cookies/IP). Query via Cloudflare D1 console or API.
+[[d1_databases]]
+binding = "CLICKS"
+database_name = "grh-clicks"
+database_id = "d2e6ab28-38b6-4bff-bfbd-d85963e60db8"

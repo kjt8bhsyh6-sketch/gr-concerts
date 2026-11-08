@@ -77,6 +77,26 @@
     } catch (e) {}
   }, true);
 
+  /* First-party outbound ticket/affiliate click log (no cookies, no IP, query strings dropped server-side).
+     POST /api/public/click via sendBeacon; see worker/src/click.js. */
+  var TICKET_HOST = /(ticketmaster|livenation|stubhub|seatgeek|vividseats|axs|etix|ticketweb|evenue|eventbrite|ludus|gofevo|seetickets|tix|ticket|impact|sjv\.io|7eer|flexoffers)/i;
+  var clickLog = function (a) {
+    try {
+      if (!navigator.sendBeacon || !/(^|\.)grhappenings\.com$/.test(location.hostname)) return;
+      var host = new URL(a.href).hostname; if (!host || host === location.hostname) return;
+      var rc = a.closest('article.read-card'), c = rc || card(a);
+      var tickets = a.matches('a.primary, .read-tickets'), aff = /sponsored/.test(a.getAttribute('rel') || '');
+      if (!tickets && !aff && !(c && TICKET_HOST.test(host))) return;
+      var tEl = c && c.querySelector('.read-title, h3'), vEl = c && c.querySelector('.read-place, h3 + p');
+      var ev = tEl ? tEl.textContent.replace(/\s*NEW\s*$/, '').trim() : '';
+      var payload = { e: ev, v: (c && c.getAttribute('data-venue')) || (vEl ? vEl.textContent.trim() : ''), u: a.href, c: aff ? 'affiliate' : tickets ? 'tickets' : 'venue', p: page };
+      navigator.sendBeacon('/api/public/click', new Blob([JSON.stringify(payload)], { type: 'text/plain' }));
+    } catch (e) {}
+  };
+  document.addEventListener('click', function (ev) {
+    try { var a = ev.target && ev.target.closest && ev.target.closest('a[href]'); if (a && /^https?:/.test(a.href)) clickLog(a); } catch (e) {}
+  }, true);
+
   /* alert sign-up: start = first focus on the email field, complete = form submitted */
   var started = {};
   document.addEventListener('focusin', function (ev) {
