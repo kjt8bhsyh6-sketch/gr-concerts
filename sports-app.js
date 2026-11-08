@@ -53,7 +53,7 @@
       <div class="read-maps">${GRMAP.buttons(g.venue)}</div>
       <p class="read-tags"><span class="tag read-tag">${h(sport(g.team))}</span></p>
       ${addedLine(g)}
-      ${GRPane.ticketsHTML(g.link, 'Tickets', false)}
+      ${GRPane.ticketsHTML(g.link, 'Tickets', false, window.GRPlan && GRPlan.buttonHTML({ id: id, title: gameTitle(g), date: g.date, time: g.time, venue: g.venue, category: sport(g.team), url: g.link, when: GRPane.whenLine(g.date, g.time) }))}
       ${GRPane.bioHTML(bios)}
       <div class="read-actions">${Marks.buttons(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(title)}">Share</button>${GRPane.calHTML(id, GRICS.google(g.ev))}</div>
     </article>`;
