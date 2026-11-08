@@ -81,10 +81,10 @@
   function calHTML(id, href) {
     return `<div class="read-cals"><button type="button" class="b ics" data-id="${escape(id)}" aria-label="Add to Apple Calendar" title="Add to Apple Calendar">${APPLE}<span>Apple</span></button><a class="b gcal" data-id="${escape(id)}" href="${escape(href || '#')}" target="_blank" rel="noopener" aria-label="Add to Google Calendar" title="Add to Google Calendar">${GOOGLE}<span>Google</span></a></div>`;
   }
-  function ticketsHTML(href, label, affiliate) {
+  function ticketsHTML(href, label, affiliate, plan) {
     const rel = affiliate ? 'sponsored noopener' : 'noopener';
     const note = affiliate ? '<p class="read-ftc">Affiliate link. We may earn a small commission at no extra cost to you. <a href="about.html#disclosure">Learn more</a>.</p>' : '';
-    return `<p class="read-cta"><a class="b primary read-tickets" href="${escape(href)}" target="_blank" rel="${rel}">${escape(label || 'Tickets')}</a></p>${note}`;
+    return `<div class="read-cta">${plan || ''}<a class="b primary read-tickets" href="${escape(href)}" target="_blank" rel="${rel}">${escape(label || 'Tickets')}</a></div>${note}`;
   }
   function scrollRowInto(row) {
     const pane = row.closest('.listpane');
@@ -227,7 +227,7 @@
     });
     document.addEventListener('keydown', ev => {
       if (ev.key !== 'Escape' || desktop() || !document.body.classList.contains('is-reading')) return;
-      if (document.querySelector('.mp-sheet, .bio-overlay:not([hidden])')) return;
+      if (document.querySelector('.mp-sheet, .bio-overlay:not([hidden]), dialog[open]')) return;
       ev.preventDefault();
       if (back) back.click();
     });
