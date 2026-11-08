@@ -3,7 +3,8 @@
    Triple-redundant persistence: first-party HttpOnly cookie (Path=/, 400-day renewed daily) + localStorage + IndexedDB ("grh-auth"),
    with self-healing across all three layers on every load so iOS Safari, PWAs, and transient network glitches never log users out. */
 (function () {
-  const API = /^(www\.)?grhappenings\.com$/.test(location.hostname) ? "/api" : (window.GRH_API || "https://grh-profiles.grhappenings.workers.dev");
+  const STAGING_COPY = location.hostname === "kjt8bhsyh6-sketch.github.io";
+  const API = STAGING_COPY ? "" : (/^(www\.)?grhappenings\.com$/.test(location.hostname) ? "/api" : (window.GRH_API || "https://grh-profiles.grhappenings.workers.dev"));
   const KS = "grh-session", KP = "grh-profile";
   const hdr = document.querySelector("body > header, header"); if (!hdr) return;
   const INFO = /privacy|terms/.test(location.pathname);
@@ -51,6 +52,7 @@
 
   const FP = API[0] === "/"; // same-origin /api sends & renews the first-party HttpOnly cookie
   async function api(path, method, body, tokOverride) {
+    if (STAGING_COPY) { const e = new Error("Accounts are off on this test copy."); e.status = 0; throw e; }
     const s = tokOverride || get(KS) || memS, h = { "Content-Type": "application/json" };
     if (s) h.Authorization = "Bearer " + s;
     const send = (base, cred) => fetch(base + path, { method: method || "GET", headers: h, credentials: cred, body: body ? JSON.stringify(body) : undefined });
@@ -311,7 +313,15 @@ ${interests(p)}<div style="border-top:1px solid var(--line);margin-top:1rem">${a
     }
     await syncAuth();
   }
-  boot();
-  addEventListener("pageshow", e => { if (e.persisted) syncAuth(); });
-  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && (!get(KS) || !get(KP))) syncAuth(); });
+  if (STAGING_COPY) {
+    pill.textContent = "Accounts off";
+    pill.setAttribute("aria-label", "Accounts are off on this test copy");
+    pill.onclick = () => {
+      sheet(`<h3>Accounts off <button type="button" class="mp-x" aria-label="Close">✕</button></h3><p>Accounts are off on this test copy. Sign-in, profiles, and alerts are not available here.</p>`);
+    };
+  } else {
+    boot();
+    addEventListener("pageshow", e => { if (e.persisted) syncAuth(); });
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && (!get(KS) || !get(KP))) syncAuth(); });
+  }
 })();

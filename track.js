@@ -1,6 +1,8 @@
 /* Analytics: GoatCounter events (one delegated listener, no visible behavior changes)
    + optional Cloudflare Web Analytics beacon. See docs/ANALYTICS.md. */
 (function () {
+  /* Staging copy on GitHub Pages must not send analytics or click logs. */
+  if (location.hostname === "kjt8bhsyh6-sketch.github.io") return;
   /* Cloudflare Web Analytics site token (public, safe to commit). Empty = beacon off.
      Get it from Cloudflare dashboard > Web Analytics > grhappenings.com > Manage site. */
   var CF_BEACON_TOKEN = '';
