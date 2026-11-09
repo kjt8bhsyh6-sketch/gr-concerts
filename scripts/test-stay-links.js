@@ -21,12 +21,13 @@ function listing(extra) {
   }, extra);
 }
 
-test('Stay22 URL uses the documented Allez shape', () => {
+test('Stay22 URL targets the verified hotel address, not a property id', () => {
   const href = Stay.stayHref(listing());
   const url = new URL(href);
   assert.equal(url.origin + url.pathname, 'https://www.stay22.com/allez/roam');
   assert.equal(url.searchParams.get('aid'), 'grhappenings');
-  assert.equal(url.searchParams.get('address'), DEVOS);
+  assert.equal(url.searchParams.get('address'), '187 Monroe Avenue NW, Grand Rapids, MI 49503');
+  assert.equal(url.searchParams.get('hotelname'), 'Amway Grand Plaza');
   assert.equal(url.searchParams.get('checkin'), '2026-11-08');
   assert.equal(url.searchParams.get('checkout'), '2026-11-09');
   assert.equal(url.searchParams.get('campaign'), 'grh_concerts_devos_2026_11_08');
@@ -34,38 +35,40 @@ test('Stay22 URL uses the documented Allez shape', () => {
   assert.equal(url.searchParams.get('lat'), null);
   assert.equal(url.searchParams.get('lng'), null);
   assert.equal(url.searchParams.get('utm_source'), null);
-  assert.equal(href.includes('checkin=&'), false);
+  assert.equal(href.includes(DEVOS), false);
   assert.equal(/-/.test(url.searchParams.get('campaign')), false);
-  assert.match(href, /address=303%20Monroe%20Ave%20NW%2C%20Grand%20Rapids%2C%20MI%2049503/);
 });
 
-test('placement skips symphony, free, church, school, clubs, and missing addresses', () => {
+test('every non-symphony venue with an address gets a hotel or the area fallback', () => {
   assert.equal(Stay.stayHref(listing({ title: 'GR Symphony: Midori Plays Shostakovich', genre: 'Classical' })), '');
-  assert.equal(Stay.stayHref(listing({ title: 'Free Play 55: A/B Duo', venue: 'GVSU Haas Center for Performing Arts', address: 'Haas Center for Performing Arts, 1 Campus Dr, Allendale, MI 49401' })), '');
-  assert.equal(Stay.stayHref(listing({ title: 'Choir concert', venue: 'Fountain Street Church', address: '24 Fountain St NE, Grand Rapids, MI 49503' })), '');
-  assert.equal(Stay.stayHref(listing({ title: 'Student recital', venue: 'Calvin University Chapel', address: '3201 Burton St SE, Grand Rapids, MI 49546' })), '');
-  assert.equal(Stay.stayHref(listing({ title: 'All Get Out', venue: 'The Pyramid Scheme', address: '68 Commerce Ave SW, Grand Rapids, MI 49503' })), '');
   assert.equal(Stay.stayHref(listing({ address: '', venue: 'Somewhere new' })), '');
-  const paid = Stay.stayHref(listing({ title: 'Iliza Shlesinger – Free Nights & Weekends', date: '2027-04-08' }));
-  assert.match(paid, /checkin=2027-04-08/);
-  assert.match(paid, /checkout=2027-04-09/);
-  const multi = Stay.stayHref(listing({
-    title: 'Raanan Hershberg (Nov 5–7)',
-    venue: 'Dr. Grins (at The B.O.B.)',
-    address: 'The B.O.B., 20 Monroe Ave NW, Grand Rapids, MI 49503',
-    date: '2026-11-05',
-    end: '2026-11-07'
-  }));
-  assert.match(multi, /campaign=grh_concerts_dr_grins_at_the_b_o_b_2026_11_05/);
-  assert.equal(Stay.decide(listing({ venue: 'Van Andel Arena', address: VAN_ANDEL })), 'named-venue');
-  assert.equal(Stay.decide(listing({ venue: 'GLC Live at 20 Monroe', address: GLC })), 'named-venue');
-  assert.equal(Stay.decide(listing({ venue: 'Acrisure Amphitheater', address: '201 Market Ave SW, Grand Rapids, MI 49503' })), 'named-venue');
+  assert.equal(Stay.stayHref(listing({ date: '' })), '');
+  const club = new URL(Stay.stayHref(listing({ title: 'All Get Out', venue: 'The Pyramid Scheme', address: '68 Commerce Ave SW, Grand Rapids, MI 49503' })));
+  assert.equal(club.searchParams.get('hotelname'), 'CityFlatsHotel Grand Rapids');
+  const church = new URL(Stay.stayHref(listing({ title: 'Choir concert', venue: 'Fountain Street Church', address: '24 Fountain St NE, Grand Rapids, MI 49503' })));
+  assert.equal(church.searchParams.get('hotelname'), 'CityFlatsHotel Grand Rapids');
+  const school = new URL(Stay.stayHref(listing({ title: 'Student recital', venue: 'GVSU Haas Center for Performing Arts', address: 'Haas Center for Performing Arts, 1 Campus Dr, Allendale, MI 49401' })));
+  assert.equal(school.searchParams.get('address'), '4869 Becker Drive, Allendale, MI 49401');
+  const casino = new URL(Stay.stayHref(listing({ title: 'A show', venue: 'Gun Lake Casino Resort', address: 'Gun Lake Casino Resort, 1123 129th Ave, Wayland, MI 49348' })));
+  assert.equal(casino.searchParams.get('hotelname'), 'Gun Lake Casino Resort');
+  assert.equal(casino.searchParams.get('address'), '1123 129th Avenue, Wayland, MI 49348');
+  const far = Stay.stayHref(listing({ title: 'A show', venue: 'Lowell Arts at Sound Check', address: 'Sound Check, 621 E Main St, Lowell, MI 49331' }));
+  const farUrl = new URL(far);
+  assert.equal(farUrl.searchParams.get('hotelname'), null);
+  assert.equal(farUrl.searchParams.get('address'), 'Sound Check, 621 E Main St, Lowell, MI 49331');
+  const html = Stay.buttonsHTML({ title: 'A show', venue: 'Lowell Arts at Sound Check', date: '2026-11-20', page: 'concerts' }, { 'Lowell Arts at Sound Check': 'Sound Check, 621 E Main St, Lowell, MI 49331' }, { VIATOR_MCID: '' });
+  assert.match(html, />Hotels near Lowell Arts at Sound Check</);
+  assert.equal(html.includes('read-stay-place'), false);
+  assert.equal(Stay.hotelFor('DeVos Performance Hall').meters, 304);
+  assert.equal(Stay.hotelFor('DeVos Performance Hall').hotel, 'Amway Grand Plaza');
 });
 
 test('buttons stay out of the Tickets control and hide Viator without a real mcid', () => {
   const html = Stay.buttonsHTML(listing(), null, { VIATOR_MCID: '' });
   assert.match(html, /class="b read-stay"/);
   assert.match(html, />Stay nearby</);
+  assert.match(html, /Amway Grand Plaza/);
+  assert.match(html, /About 4 min walk/);
   assert.match(html, /rel="sponsored nofollow noopener"/);
   assert.match(html, /target="_blank"/);
   assert.match(html, new RegExp(Stay.FTC.replace(/[.]/g, '\\.')));
@@ -117,7 +120,8 @@ test('named venues in venues.js resolve without inventing a city', () => {
     genre: 'Comedy',
     page: 'concerts'
   }, ctx.VENUES, { VIATOR_MCID: '' });
-  assert.match(html, /address=130%20W%20Fulton%20St/);
+  assert.match(html, /address=11%20Monroe%20Avenue%20NW/);
+  assert.match(html, /Courtyard by Marriott Grand Rapids Downtown/);
   assert.equal(html.includes('viator.com'), false);
 });
 
