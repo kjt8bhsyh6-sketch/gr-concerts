@@ -23,6 +23,14 @@ Loaded on every page via `count.js`; events come from `track.js` (one delegated 
 | `referrer/<host>` | Arrived from another site (once per session) |
 | `app/launch-standalone` | Opened as home-screen app |
 | `profile/link-requested`, `profile/signin`, `profile/pick-open`, `profile/saved`, `profile/signout`, `profile/deleted` | Account events (profiles.js) |
+| `filter/search` | Search box (`#f-q`) settled. Debounced (400ms) or sent on the search event (Enter). The path is only this; typed text is normalized for de-dupe, truncated to 80 characters, and not sent. |
+| `filter/venue/<venue>` | Venue select (`#f-venue`). Example: `filter/venue/st-cecilia-music-center`. "All venues" is `filter/venue/all-venues`. |
+| `filter/genre/<genre>` | Genre select (`#f-genre`). Example: `filter/genre/hip-hop`. "All genres" is `filter/genre/all-genres`. |
+| `filter/new/on`, `filter/new/off` | New only checkbox (`#f-new`) |
+| `filter/mine/everything`, `filter/mine/all`, `filter/mine/going`, `filter/mine/interested` | My shows select (`#f-mine`): Everything, Going + Interested, Going only, Interested only |
+| `filter/clear` | Clear button (`#f-clear`) |
+
+Slugs are lowercase, punctuation becomes hyphens, and each segment is cut at 80 characters. The same `#f-q`, `#f-new`, `#f-mine`, and `#f-clear` ids on Sports and Seasonal use these paths. Team and type selects are not events.
 
 Tip: tag links you share, e.g. `https://grhappenings.com/?utm_source=instagram&utm_medium=social&utm_campaign=halloween`.
 
