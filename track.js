@@ -1,6 +1,102 @@
 /* Analytics: GoatCounter events (one delegated listener, no visible behavior changes)
    + optional Cloudflare Web Analytics beacon. See docs/ANALYTICS.md. */
 (function () {
+  var slug = function (s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'unknown'; };
+
+  /* Concerts filters from app.js (#f-q, #f-venue, #f-genre, #f-new, #f-mine, #f-clear).
+     Search is always the path filter/search. The typed text is not sent. */
+  var FILTER_CONTROLS = { 'f-venue': 'venue', 'f-genre': 'genre', 'f-new': 'new', 'f-mine': 'mine' };
+  var SEARCH_DEBOUNCE_MS = 400;
+  var filterPath = function (control, value) {
+    var name = slug(control);
+    if (name === 'search') {
+      var key = slug(value);
+      if (key === 'unknown') return null;
+      return { path: 'filter/search', title: 'Search', key: key };
+    }
+    if (name === 'clear') return { path: 'filter/clear', title: 'Clear filters', key: 'clear' };
+    if (name === 'unknown') return null;
+    var bit = slug(value);
+    return { path: 'filter/' + name + '/' + bit, title: 'Filter: ' + name, key: name + '/' + bit };
+  };
+  var controlValue = function (el) {
+    if (!el) return '';
+    if (el.type === 'checkbox') return el.checked ? 'on' : 'off';
+    if (el.value) return el.value;
+    var opt = el.options && el.selectedIndex >= 0 && el.options[el.selectedIndex];
+    return (opt && opt.text) || '';
+  };
+  var bindFilterEvents = function (doc, send, timers) {
+    var searchTimer = null, searchKey = '', queued = null;
+    var schedule = timers && timers.schedule ? timers.schedule : function (fn, ms) { return setTimeout(fn, ms); };
+    var cancel = timers && timers.cancel ? timers.cancel : function (id) { clearTimeout(id); };
+    var delay = timers && typeof timers.delay === 'number' ? timers.delay : SEARCH_DEBOUNCE_MS;
+    var sendFilter = function (ev) {
+      if (!ev || !ev.path) return;
+      try { console.debug('[grh] filter', ev.path); } catch (e) {}
+      send(ev.path, ev.title);
+    };
+    var dropSearchTimer = function () {
+      if (searchTimer) { cancel(searchTimer); searchTimer = null; }
+      queued = null;
+    };
+    doc.addEventListener('input', function (ev) {
+      try {
+        var t = ev.target;
+        if (!t || t.id !== 'f-q') return;
+        dropSearchTimer();
+        queued = filterPath('search', t.value);
+        if (!queued) { searchKey = ''; return; }
+        searchTimer = schedule(function () {
+          searchTimer = null;
+          var pending = queued;
+          queued = null;
+          if (!pending || pending.key === searchKey) return;
+          searchKey = pending.key;
+          sendFilter(pending);
+        }, delay);
+      } catch (e) {}
+    }, true);
+    doc.addEventListener('search', function (ev) {
+      try {
+        var t = ev.target;
+        if (!t || t.id !== 'f-q') return;
+        dropSearchTimer();
+        var pending = filterPath('search', t.value);
+        if (!pending) { searchKey = ''; return; }
+        if (pending.key === searchKey) return;
+        searchKey = pending.key;
+        sendFilter(pending);
+      } catch (e) {}
+    }, true);
+    doc.addEventListener('change', function (ev) {
+      try {
+        var t = ev.target;
+        if (!t || !FILTER_CONTROLS[t.id]) return;
+        sendFilter(filterPath(FILTER_CONTROLS[t.id], controlValue(t)));
+      } catch (e) {}
+    }, true);
+    doc.addEventListener('click', function (ev) {
+      try {
+        var node = ev.target;
+        var t = node && node.closest ? node.closest('#f-clear') : null;
+        if (!t) return;
+        sendFilter(filterPath('clear', ''));
+      } catch (e) {}
+    }, true);
+  };
+
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+      slug: slug,
+      filterPath: filterPath,
+      controlValue: controlValue,
+      bindFilterEvents: bindFilterEvents,
+      FILTER_CONTROLS: FILTER_CONTROLS,
+      SEARCH_DEBOUNCE_MS: SEARCH_DEBOUNCE_MS
+    };
+  }
+
   /* Staging copy on GitHub Pages must not send analytics or click logs. */
   if (location.hostname === "kjt8bhsyh6-sketch.github.io") return;
   /* Cloudflare Web Analytics site token (public, safe to commit). Empty = beacon off.
@@ -16,7 +112,6 @@
   } catch (e) {}
 
   var page = (location.pathname.split('/').pop() || 'index.html').replace(/\.html$/, '') || 'index';
-  var slug = function (s) { return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'unknown'; };
   var queue = [];
   var send = function (path, title) {
     try {
@@ -107,4 +202,6 @@
   document.addEventListener('submit', function (ev) {
     try { var f = ev.target; if (f && f.closest && f.closest('.signup') && f.querySelector('input[type=email]')) send('tap/' + page + '/email-signup/' + page, 'Email signup (' + page + ')'); } catch (e) {}
   }, true);
+
+  bindFilterEvents(document, send, null);
 })();
