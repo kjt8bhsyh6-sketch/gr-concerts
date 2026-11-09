@@ -93,6 +93,7 @@
       <p class="read-tags"><span class="tag read-tag">${h(e.type)}</span>${season ? ` <span class="tag read-tag">${h(season)}</span>` : ''}</p>
       ${isNew(e) ? `<p class="added-on">Added ${new Date(e.added + 'T12:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</p>` : ''}
       ${GRPane.ticketsHTML(e.link, 'Tickets', aff, window.GRPlan && GRPlan.buttonHTML({ id: id, title: e.name, date: e.sort, end: end, time: time, venue: e.location, category: e.type, url: e.link, when: e.when || GRPane.whenLine(e.sort, time, end) }))}
+      ${window.GRStay ? GRStay.buttonsHTML({ title: e.name, venue: e.location, date: e.sort, end: end, genre: e.type, page: 'seasonal' }) : ''}
       ${GRPane.bioHTML(bio ? [{ title: key, text: bio.text, source: bio.source }] : [])}
       <div class="read-actions">${Marks.buttons(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(e.name)}">Share</button>${GRPane.calHTML(id, calLink(e))}</div>
     </article>`;
