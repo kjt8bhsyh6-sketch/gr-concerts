@@ -84,6 +84,15 @@ header :focus-visible{outline-color:var(--focus-on-navy)}
 }
 .just li:not(:has(.new)){grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "meta";column-gap:0}
 .just li:not(:has(a)){display:block}
+/* Phone collapse uses the existing phones breakpoint (max-width: 560px). From 561px up the list stays open and this control is not shown. */
+.just-toggle{display:none}
+@media (max-width:560px){
+  .just-toggle{display:flex;align-items:center;justify-content:space-between;gap:.75rem;box-sizing:border-box;width:100%;min-height:44px;margin:.15rem 0 .35rem;padding:.5rem .75rem;border:1px solid var(--navy);border-radius:8px;background:var(--card);color:var(--navy);font:inherit;font-size:.9rem;font-weight:700;line-height:1.2;text-align:left;cursor:pointer;white-space:normal}
+  .just-toggle:hover{background:color-mix(in srgb,var(--navy) 8%,white)}
+  .just-toggle::after{content:"";flex:0 0 auto;width:.5rem;height:.5rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-.15rem) rotate(45deg)}
+  .just.is-open .just-toggle::after{transform:translateY(.12rem) rotate(225deg)}
+  .just:not(.is-open) > #just{display:none}
+}
 
 /* ---- filter bar: equal field row, then a compact tools row (not stretched under those columns) ---- */
 .filters{display:flex;flex-direction:column;gap:.85rem;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem 1rem}
