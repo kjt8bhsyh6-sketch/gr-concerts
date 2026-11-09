@@ -131,7 +131,7 @@
     if (start != null) {
       const end = calendarEnd(date, time);
       const cap = start + 4 * 3600 * 1000;
-      const after = end == null ? start + 2.5 * 3600 * 1000 : Math.min(end, cap);
+      const after = end == null ? null : Math.min(end, cap);
       return { dinnerAt: dinnerAt(start, nowMs), start: start, end: end, after: after, hasClock: true };
     }
     let five = null;
@@ -147,11 +147,22 @@
     if (startMs != null && dinnerMs < startMs) return 'Dinner before, around ' + clock;
     return 'Dinner around ' + clock;
   }
-  function drinksHeading(afterMs, startMs) {
-    if (afterMs == null) return 'Drinks after the event';
-    const clock = timeOnly(afterMs);
-    if (startMs != null && afterMs < startMs) return 'Drinks around ' + clock;
-    return 'Drinks after, around ' + clock;
+  const DINNER_NOT_BEFORE = 'This dinner is not a pre-show meal. It is at or after the listed start, or it overlaps the show. You can change the date and time.';
+  const DINNER_NO_CLOCK = 'This listing has no start clock, so this site does not know when it ends. No end time is shown. The time in the dinner fields is only a suggestion, not a show time. You can change the date and time.';
+  const DRINKS_ESTIMATE = 'This end is an estimate from the site\'s 3-hour calendar assumption, not a time the venue published. The show may still be going.';
+  const DRINKS_UNKNOWN = 'There is no known end time. This is not a venue-official end, and the show is not marked finished.';
+  function drinksHeading(afterMs) {
+    if (afterMs == null) return 'Drinks';
+    return 'Drinks around ' + timeOnly(afterMs);
+  }
+  function dinnerWarning(dinnerMs, startMs) {
+    if (startMs == null) return DINNER_NO_CLOCK;
+    if (dinnerMs != null && dinnerMs >= startMs) return DINNER_NOT_BEFORE;
+    return '';
+  }
+  function drinksWarning(hasClock, endMs) {
+    if (!hasClock || endMs == null) return DRINKS_UNKNOWN;
+    return DRINKS_ESTIMATE;
   }
   function clockRange(startMs, endMs) {
     if (stamp(startMs, 'yyyy-MM-dd') === stamp(endMs, 'yyyy-MM-dd')) return timeOnly(startMs) + '–' + timeOnly(endMs) + ' ET';
@@ -386,7 +397,9 @@
       '<button type="button" class="b" id="plan-more" aria-label="More people">+</button></div>',
       '<div class="plan-when"><label>Dinner at <input id="plan-date" type="date" required aria-describedby="plan-dinner-error"></label><label>Time (ET) <input id="plan-time" type="time" step="1800" required aria-describedby="plan-dinner-error"></label></div>',
       '<p id="plan-dinner-error" class="plan-error" role="alert" hidden></p>',
-      '<p class="plan-note">Book opens a reservation provider. It may retain your group and date; verify all details there. We cannot see live tables or confirm reservations.</p></section>',
+      '<p class="plan-note">Book opens a reservation provider. It may retain your group and date; verify all details there. We cannot see live tables or confirm reservations.</p>',
+      '<p id="plan-dinner-warn" class="plan-warn" role="status"></p>',
+      '<p id="plan-drinks-warn" class="plan-warn" role="status"></p></section>',
       '<p id="plan-weather" class="plan-note">Forecast temporarily unavailable</p>',
       '<div class="plan-transport" id="plan-transport">',
       '<button type="button" class="b" id="plan-parking">Parking</button>',
@@ -643,6 +656,15 @@
     function spotTime(kind) {
       return kind === 'drinks' && state.after != null ? state.after : state.dinnerAt;
     }
+    function paintWarnings() {
+      const dinner = $('plan-dinner-warn');
+      const drinks = $('plan-drinks-warn');
+      const dinnerText = state.dinnerOk || !state.hasClock ? dinnerWarning(state.dinnerOk ? state.dinnerAt : null, state.hasClock ? state.start : null) : '';
+      dinner.hidden = !dinnerText;
+      dinner.textContent = dinnerText;
+      drinks.textContent = drinksWarning(state.hasClock, state.end);
+      drinks.hidden = false;
+    }
     function renderSpots() {
       const box = $('plan-spots');
       if (state.loading) {
@@ -654,7 +676,7 @@
       const dinnerTitle = state.dinnerOk ? dinnerHeading(state.dinnerAt, state.start) : 'Dinner';
       const blocks = [
         ['dinner', dinnerTitle, state.dinner, 3],
-        ['drinks', drinksHeading(state.after, state.start), state.drinks, 3],
+        ['drinks', drinksHeading(state.after), state.drinks, 3],
         ['parking', 'Parking near the venue', state.parking, state.parkingShown]
       ];
       box.innerHTML = blocks.map(block => sectionHTML(block[0], block[1], block[2], block[3])).join('');
@@ -664,7 +686,8 @@
       const empty = state.failed
         ? 'Nearby search is unavailable right now. Try again when you\'re online.'
         : 'Nothing found nearby.';
-      const note = kind === 'parking' ? '<p class="plan-note">Tap a parking spot to compare it with the event venue. Prices and open spaces are not verified.</p>' : '';
+      const warn = kind === 'dinner' ? ($('plan-dinner-warn').textContent ? '<p class="plan-warn">' + escapeHtml($('plan-dinner-warn').textContent) + '</p>' : '') : kind === 'drinks' ? '<p class="plan-warn">' + escapeHtml($('plan-drinks-warn').textContent) + '</p>' : '';
+      const note = (kind === 'parking' ? '<p class="plan-note">Tap a parking spot to compare it with the event venue. Prices and open spaces are not verified.</p>' : '') + warn;
       const body = shown.length ? shown.map((spot, index) => spotHTML(kind, spot, index)).join('') : '<p class="plan-note">' + empty + '</p>';
       return '<section class="plan-sec" id="plan-sec-' + kind + '"><h3>' + escapeHtml(title) + '</h3>' + note + body + '</section>';
     }
@@ -849,8 +872,9 @@
       const span = $('plan-show-span');
       if (plan.hasClock && plan.end != null) {
         span.hidden = false;
-        span.textContent = 'Calendar event: ' + clockRange(plan.start, plan.end) + '.';
+        span.textContent = 'The downloaded calendar uses ' + clockRange(plan.start, plan.end) + '. That end is a 3-hour assumption, not a venue-published time.';
       } else { span.hidden = true; span.textContent = ''; }
+      paintWarnings();
       $('plan-show-venue').textContent = state.event.venue;
       $('plan-cal').dataset.id = state.event.id;
       $('plan-gcal').dataset.id = state.event.id;
@@ -898,7 +922,7 @@
     $('plan-more').addEventListener('click', () => { $('plan-party').value = String(clampParty(readParty() + 1)); renderSpots(); });
     $('plan-party').addEventListener('change', () => { readParty(); renderSpots(); });
     ['plan-date', 'plan-time'].forEach(id => {
-      const onEdit = () => { if (!applyDinnerInputs()) state.book = ''; renderSpots(); };
+      const onEdit = () => { if (!applyDinnerInputs()) state.book = ''; paintWarnings(); renderSpots(); };
       $(id).addEventListener('change', onEdit);
       $(id).addEventListener('input', onEdit);
     });
@@ -1013,7 +1037,9 @@
     buttonHTML: buttonHTML, mount: mount, escapeHtml: escapeHtml, haversine: haversine, validCoord: validCoord,
     walkText: walkText, straightLineLabel: straightLineLabel, parseClock: parseClock, startMillis: startMillis,
     dinnerAt: dinnerAt, initialDinner: initialDinner, calendarEnd: calendarEnd, dinnerHeading: dinnerHeading,
-    drinksHeading: drinksHeading, parseDinnerInputs: parseDinnerInputs, clockRange: clockRange, clampParty: clampParty, cityFromQuery: cityFromQuery,
+    drinksHeading: drinksHeading, dinnerWarning: dinnerWarning, drinksWarning: drinksWarning,
+    DINNER_NOT_BEFORE: DINNER_NOT_BEFORE, DINNER_NO_CLOCK: DINNER_NO_CLOCK, DRINKS_ESTIMATE: DRINKS_ESTIMATE, DRINKS_UNKNOWN: DRINKS_UNKNOWN,
+    parseDinnerInputs: parseDinnerInputs, clockRange: clockRange, clampParty: clampParty, cityFromQuery: cityFromQuery,
     stamp: stamp, formatStamp: formatStamp, timeOnly: timeOnly, nearest: nearest, compactLabel: compactLabel,
     forecastPick: forecastPick, beyondRange: beyondRange, bookingLinks: bookingLinks, rideLinks: rideLinks,
     shareText: shareText, bookingShare: bookingShare, applySave: applySave, worldPoint: worldPoint,
