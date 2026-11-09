@@ -332,6 +332,8 @@ a.read-tickets.b.primary:hover{background:var(--ms-hover);border-color:var(--ms-
 .read-travel .b{background:#fff;border:1px solid var(--fluent-line);color:var(--ms);font-weight:700}
 .read-travel .b:hover{background:var(--ms-sel);color:var(--ms)}
 .read-travel .read-ftc{margin:0;flex:1 1 16rem}
+.read-stay-place{margin:0;font-weight:700}
+.read-stay-meta{margin:0;color:var(--muted);font-size:.85rem}
 .plan-dialog,.plan-ask{border:0;padding:0;color:var(--text);background:#fff;max-width:calc(100vw - 1rem)}
 .plan-dialog{width:min(40rem,calc(100vw - 1rem));max-height:min(92dvh,calc(100vh - 1rem));overflow:auto;border-radius:12px;box-shadow:0 10px 30px #0000004d}
 .plan-ask{width:min(28rem,calc(100vw - 1rem));border-radius:12px;padding:1rem 1rem .9rem}

@@ -32,25 +32,17 @@
     return /\bGR Symphony\b|\bGrand Rapids Symphony\b/i.test(String(title || ''));
   }
   // A title that merely contains "free" (Free Nights, Free Beer) is still a paid show.
-  function isFreeListing(title, genre) {
-    const t = String(title || '');
-    const g = String(genre || '');
-    if (/^free\b/i.test(t)) return true;
-    if (/^free$/i.test(g.trim())) return true;
-    return /\bfree admission\b|\bno cover\b|\bno charge\b|\badmission is free\b/i.test(t + ' ' + g);
+  function hotelBook() {
+    if (typeof STAY_HOTELS !== 'undefined' && STAY_HOTELS && STAY_HOTELS.STAY_HOTELS) return STAY_HOTELS;
+    if (typeof require === 'function') {
+      try { return require('./stay-hotels.js'); } catch (e) {}
+    }
+    return null;
   }
-  function isChurch(venue, address) {
-    return /\b(church|chapel|congregational)\b/i.test(String(venue || '') + ' ' + String(address || ''));
-  }
-  function isSchool(venue, address) {
-    return /\b(university|college|school|grcc|gvsu|calvin)\b|haas center|knickerbocker|dimnent|covenant fine arts|gezon auditorium|spoelhof|northview performing|jack h\. miller|hope college/i.test(String(venue || '') + ' ' + String(address || ''));
-  }
-  // Spec names plus Acrisure, the arena-scale outdoor room. Calvin is a school and is excluded above.
-  function isNamedStay(venue, address) {
-    return /van andel arena|devos performance hall|glc live at 20 monroe|meijer gardens|acrisure amphitheater/i.test(String(venue || '') + ' ' + String(address || ''));
-  }
-  function isMultiDay(date, end) {
-    return isIso(date) && isIso(end) && end > date;
+  function hotelFor(venue) {
+    const book = hotelBook();
+    const map = book && book.STAY_HOTELS;
+    return map && venue && map[venue] ? map[venue] : null;
   }
   function resolveAddress(item, venues) {
     if (item && item.address) return String(item.address).trim();
@@ -65,13 +57,8 @@
     const address = item.address || '';
     if (!address) return 'no-address';
     if (isSymphony(title)) return 'symphony';
-    if (isFreeListing(title, item.genre)) return 'free';
-    if (isChurch(venue, address)) return 'church';
-    if (isSchool(venue, address)) return 'school';
     if (!isIso(item.date)) return 'no-date';
-    if (isNamedStay(venue, address)) return 'named-venue';
-    if (isMultiDay(item.date, item.end)) return 'multi-day';
-    return 'not-overnight';
+    return 'stay';
   }
   function placeToken(venue) {
     const v = String(venue || '').toLowerCase();
@@ -87,14 +74,17 @@
     return 'grh_' + p + '_' + placeToken(venue) + '_' + String(date).replace(/-/g, '_');
   }
   function stayHref(item) {
-    const address = item.address || '';
-    if (decide(item) !== 'named-venue' && decide(item) !== 'multi-day') return '';
+    if (decide(item) !== 'stay') return '';
+    const hotel = hotelFor(item.venue);
+    const address = hotel ? hotel.address : item.address;
     const checkin = item.date;
     const checkout = addDays(checkin, 1);
     const campaign = campaignFor(item.page, item.venue, checkin);
     if (/-/.test(campaign)) return '';
-    return 'https://www.stay22.com/allez/roam?aid=' + encodeURIComponent(AID)
-      + '&address=' + encodeURIComponent(address)
+    let href = 'https://www.stay22.com/allez/roam?aid=' + encodeURIComponent(AID)
+      + '&address=' + encodeURIComponent(address);
+    if (hotel) href += '&hotelname=' + encodeURIComponent(hotel.hotel);
+    return href
       + '&checkin=' + encodeURIComponent(checkin)
       + '&checkout=' + encodeURIComponent(checkout)
       + '&campaign=' + encodeURIComponent(campaign)
@@ -115,14 +105,26 @@
     const mcid = realMcid(item.mcid);
     if (!mcid) return '';
     if (!isGrandRapids(item.address)) return '';
-    if (decide(item) !== 'named-venue' && decide(item) !== 'multi-day') return '';
+    if (decide(item) !== 'stay') return '';
     return 'https://www.viator.com' + VIATOR_PATH
       + '?pid=' + VIATOR_PID
       + '&mcid=' + encodeURIComponent(mcid)
       + '&medium=link';
   }
-  function linkHTML(href, label, kind) {
-    return '<div class="read-travel-item"><a class="b read-' + kind + '" href="' + escapeHtml(href) + '" target="_blank" rel="sponsored nofollow noopener">' + escapeHtml(label) + '</a><p class="read-ftc">' + FTC + '</p></div>';
+  function anchorHTML(href, label, kind) {
+    return '<a class="b read-' + kind + '" href="' + escapeHtml(href) + '" target="_blank" rel="sponsored nofollow noopener">' + escapeHtml(label) + '</a>';
+  }
+  function stayBlock(listing) {
+    const href = stayHref(listing);
+    if (!href) return '';
+    const hotel = hotelFor(listing.venue);
+    const book = hotelBook();
+    const ftc = '<p class="read-ftc">' + FTC + '</p>';
+    if (!hotel) {
+      return '<div class="read-travel-item">' + anchorHTML(href, 'Hotels near ' + (listing.venue || 'the venue'), 'stay') + ftc + '</div>';
+    }
+    const meta = book && book.distanceLabel ? book.distanceLabel(hotel.meters) : '';
+    return '<div class="read-travel-item"><p class="read-stay-place">' + escapeHtml(hotel.hotel) + '</p><p class="read-stay-meta">' + escapeHtml(meta) + '</p>' + anchorHTML(href, 'Stay nearby', 'stay') + ftc + '</div>';
   }
   function buttonsHTML(item, venues, config) {
     const address = resolveAddress(item || {}, venues);
@@ -137,10 +139,11 @@
       address: address,
       mcid: cfg.VIATOR_MCID
     };
-    const stay = stayHref(listing);
-    const via = viatorHref(listing);
+    const stay = stayBlock(listing);
+    const viaHref = viatorHref(listing);
+    const via = viaHref ? '<div class="read-travel-item">' + anchorHTML(viaHref, 'Things to do in Grand Rapids', 'viator') + '<p class="read-ftc">' + FTC + '</p></div>' : '';
     if (!stay && !via) return '';
-    return '<div class="read-travel">' + (stay ? linkHTML(stay, 'Stay nearby', 'stay') : '') + (via ? linkHTML(via, 'Things to do in Grand Rapids', 'viator') : '') + '</div>';
+    return '<div class="read-travel">' + stay + via + '</div>';
   }
 
   return {
@@ -153,6 +156,7 @@
     realMcid: realMcid,
     isGrandRapids: isGrandRapids,
     resolveAddress: resolveAddress,
+    hotelFor: hotelFor,
     buttonsHTML: buttonsHTML
   };
 });

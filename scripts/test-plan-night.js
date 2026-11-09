@@ -160,7 +160,7 @@ test('the button escapes text and the three corridors call it', () => {
   ['index.html', 'sports.html', 'seasonal.html'].forEach(file => {
     const htmlFile = fs.readFileSync(path.join(root, file), 'utf8');
     assert.match(htmlFile, /plan-night\.js\?v=202611081926/);
-    assert.match(htmlFile, /style\.css\?v=202611091500/);
+    assert.match(htmlFile, /style\.css\?v=202611091520/);
     assert.match(htmlFile, /noindex,nofollow/);
   });
   assert.match(fs.readFileSync(path.join(root, 'sports-app.js'), 'utf8'), /function noteDetail/);
