@@ -118,10 +118,21 @@
     return hourMs + Math.ceil(elapsed / 1800 - 1e-9) * 1800 * 1000;
   }
   function roundHalfHour(ms) { return dinnerAt(ms + 2 * 3600 * 1000, ms); }
+  // Same wall-clock plus three hours as ics.js parts(c, 3), which is the DTEND the site already serves.
+  function calendarEnd(date, time) {
+    const clock = parseClock(time);
+    if (!clock || !/^\d{4}-\d{2}-\d{2}$/.test(date || '')) return null;
+    const parts = date.split('-').map(Number);
+    const utc = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2], clock.h + 3, clock.mi));
+    return zonedToMs(utc.getUTCFullYear(), utc.getUTCMonth() + 1, utc.getUTCDate(), utc.getUTCHours(), utc.getUTCMinutes());
+  }
   function initialDinner(date, time, nowMs) {
     const start = startMillis(date, time);
     if (start != null) {
-      return { dinnerAt: dinnerAt(start, nowMs), start: start, after: start + 2.5 * 3600 * 1000, hasClock: true };
+      const end = calendarEnd(date, time);
+      const cap = start + 4 * 3600 * 1000;
+      const after = end == null ? start + 2.5 * 3600 * 1000 : Math.min(end, cap);
+      return { dinnerAt: dinnerAt(start, nowMs), start: start, end: end, after: after, hasClock: true };
     }
     let five = null;
     if (/^\d{4}-\d{2}-\d{2}$/.test(date || '')) {
@@ -129,7 +140,36 @@
       five = zonedToMs(parts[0], parts[1], parts[2], 17, 0);
     }
     const raw = five == null ? nowMs : Math.max(nowMs, five);
-    return { dinnerAt: roundHalfHour(raw), start: null, after: null, hasClock: false };
+    return { dinnerAt: roundHalfHour(raw), start: null, end: null, after: null, hasClock: false };
+  }
+  function dinnerHeading(dinnerMs, startMs) {
+    const clock = timeOnly(dinnerMs);
+    if (startMs != null && dinnerMs < startMs) return 'Dinner before, around ' + clock;
+    return 'Dinner around ' + clock;
+  }
+  function drinksHeading(afterMs, startMs) {
+    if (afterMs == null) return 'Drinks after the event';
+    const clock = timeOnly(afterMs);
+    if (startMs != null && afterMs < startMs) return 'Drinks around ' + clock;
+    return 'Drinks after, around ' + clock;
+  }
+  function clockRange(startMs, endMs) {
+    if (stamp(startMs, 'yyyy-MM-dd') === stamp(endMs, 'yyyy-MM-dd')) return timeOnly(startMs) + '–' + timeOnly(endMs) + ' ET';
+    return formatStamp(startMs) + ' – ' + formatStamp(endMs);
+  }
+  function parseDinnerInputs(date, time) {
+    if (!date || !time) return { ok: false, message: 'Enter a dinner date and time.' };
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !/^\d{2}:\d{2}$/.test(time)) return { ok: false, message: 'Enter a dinner date and time.' };
+    const dateParts = date.split('-').map(Number);
+    const clock = time.split(':').map(Number);
+    const y = dateParts[0], mo = dateParts[1], d = dateParts[2], h = clock[0], mi = clock[1];
+    if (mo < 1 || mo > 12 || d < 1 || d > 31 || h > 23 || mi > 59) return { ok: false, message: 'That dinner date or time is not valid.' };
+    const dinnerAtMs = zonedToMs(y, mo, d, h, mi);
+    const back = zonedParts(dinnerAtMs);
+    if (back.y !== y || back.mo !== mo || back.d !== d || back.h !== h || back.mi !== mi) {
+      return { ok: false, message: 'That dinner date or time is not valid.' };
+    }
+    return { ok: true, dinnerAt: dinnerAtMs, message: '' };
   }
   function clampParty(value) {
     const n = Math.round(Number(value));
@@ -338,13 +378,14 @@
     dialog.innerHTML = [
       '<div class="plan-head"><h2 id="plan-title" tabindex="-1">Plan my night</h2><button type="button" class="b" id="plan-done">Done</button></div>',
       '<div class="plan-body">',
-      '<section class="plan-sec"><h3>The show</h3><p id="plan-show-title" class="plan-strong"></p><p id="plan-show-when" class="plan-note"></p><p id="plan-show-venue" class="plan-note"></p></section>',
+      '<section class="plan-sec"><h3>The show</h3><p id="plan-show-title" class="plan-strong"></p><p id="plan-show-when" class="plan-note"></p><p id="plan-show-span" class="plan-note" hidden></p><p id="plan-show-venue" class="plan-note"></p></section>',
       '<p id="plan-notice" class="plan-note" role="status" hidden></p>',
       '<section class="plan-sec"><h3>Your group</h3>',
       '<div class="plan-stepper"><button type="button" class="b" id="plan-less" aria-label="Fewer people">−</button>',
       '<label>Party of <input id="plan-party" type="number" min="1" max="20" step="1" inputmode="numeric" value="2"></label>',
       '<button type="button" class="b" id="plan-more" aria-label="More people">+</button></div>',
-      '<div class="plan-when"><label>Dinner at <input id="plan-date" type="date"></label><label>Time (ET) <input id="plan-time" type="time" step="1800"></label></div>',
+      '<div class="plan-when"><label>Dinner at <input id="plan-date" type="date" required aria-describedby="plan-dinner-error"></label><label>Time (ET) <input id="plan-time" type="time" step="1800" required aria-describedby="plan-dinner-error"></label></div>',
+      '<p id="plan-dinner-error" class="plan-error" role="alert" hidden></p>',
       '<p class="plan-note">Book opens a reservation provider. It may retain your group and date; verify all details there. We cannot see live tables or confirm reservations.</p></section>',
       '<p id="plan-weather" class="plan-note">Forecast temporarily unavailable</p>',
       '<div class="plan-transport" id="plan-transport">',
@@ -360,9 +401,8 @@
       '<a class="b gcal" id="plan-gcal" href="#" target="_blank" rel="noopener noreferrer">Google</a>',
       '<button type="button" class="b" id="plan-share">Share plan</button></div>',
       '<p id="plan-share-box" class="plan-copy" hidden></p></section>',
-      '<section class="plan-sec" id="plan-records" hidden><h3>Saved on this browser</h3>',
-      '<p class="plan-note">Your own reservation records. Book with the provider first, then save here. Removing a record does not cancel the restaurant reservation. This test site does not schedule reminders.</p>',
-      '<div id="plan-record-list"></div></section>',
+      '<p id="plan-record-note" class="plan-note">Your own reservation records. Book with the provider first, then save here. Removing a record does not cancel the restaurant reservation. This test site does not schedule reminders.</p>',
+      '<section class="plan-sec" id="plan-records" hidden><h3>Saved on this browser</h3><div id="plan-record-list"></div></section>',
       '<p id="plan-attr" class="plan-note" hidden></p>',
       '</div>'
     ].join('');
@@ -372,7 +412,7 @@
     ask.innerHTML = '<h2 id="plan-ask-title">Did you book?</h2><p id="plan-ask-msg"></p><div class="row"><button type="button" class="b primary" id="plan-ask-yes">Yes, save my booking</button><button type="button" class="b" id="plan-ask-no">Not yet</button></div>';
     document.body.appendChild(dialog);
     document.body.appendChild(ask);
-    [dialog, ask].forEach(node => node.addEventListener('keydown', ev => { if (ev.key === 'Escape') ev.stopPropagation(); }));
+    ask.addEventListener('keydown', ev => { if (ev.key === 'Escape') ev.stopPropagation(); });
 
     const $ = id => document.getElementById(id);
     const state = { event: null, party: 2, dinnerAt: Date.now(), start: null, after: null, hasClock: false, venue: null, dinner: [], drinks: [], parking: [], parkingShown: 3, loading: false, failed: false, preview: '', book: '', selected: null, pending: null, notice: '', opener: null, gen: 0, weatherNote: '' };
@@ -390,15 +430,16 @@
       $('plan-party').value = String(state.party);
       return state.party;
     }
-    function readDinner() {
-      const date = $('plan-date').value;
-      const time = $('plan-time').value;
-      if (/^\d{4}-\d{2}-\d{2}$/.test(date) && /^\d{2}:\d{2}$/.test(time)) {
-        const parts = date.split('-').map(Number);
-        const clock = time.split(':').map(Number);
-        state.dinnerAt = zonedToMs(parts[0], parts[1], parts[2], clock[0], clock[1]);
-      }
-      return state.dinnerAt;
+    function applyDinnerInputs() {
+      const parsed = parseDinnerInputs($('plan-date').value, $('plan-time').value);
+      const error = $('plan-dinner-error');
+      $('plan-date').setAttribute('aria-invalid', parsed.ok ? 'false' : 'true');
+      $('plan-time').setAttribute('aria-invalid', parsed.ok ? 'false' : 'true');
+      error.hidden = parsed.ok;
+      error.textContent = parsed.ok ? '' : parsed.message;
+      state.dinnerOk = parsed.ok;
+      if (parsed.ok) state.dinnerAt = parsed.dinnerAt;
+      return parsed.ok;
     }
     function writeDinnerInputs() {
       $('plan-date').value = stamp(state.dinnerAt, 'yyyy-MM-dd');
@@ -600,7 +641,7 @@
       attr.innerHTML = '<a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Weather: Open-Meteo · CC BY 4.0</a> · Forecast data · latest update ' + escapeHtml(updated);
     }
     function spotTime(kind) {
-      return kind === 'drinks' && state.after != null ? state.after : readDinner();
+      return kind === 'drinks' && state.after != null ? state.after : state.dinnerAt;
     }
     function renderSpots() {
       const box = $('plan-spots');
@@ -610,9 +651,10 @@
         return;
       }
       box.setAttribute('aria-busy', 'false');
+      const dinnerTitle = state.dinnerOk ? dinnerHeading(state.dinnerAt, state.start) : 'Dinner';
       const blocks = [
-        ['dinner', 'Dinner before, around ' + timeOnly(readDinner()), state.dinner, 3],
-        ['drinks', state.after != null ? 'Drinks after, around ' + timeOnly(state.after) : 'Drinks after the event', state.drinks, 3],
+        ['dinner', dinnerTitle, state.dinner, 3],
+        ['drinks', drinksHeading(state.after, state.start), state.drinks, 3],
         ['parking', 'Parking near the venue', state.parking, state.parkingShown]
       ];
       box.innerHTML = blocks.map(block => sectionHTML(block[0], block[1], block[2], block[3])).join('');
@@ -785,8 +827,10 @@
       const plan = initialDinner(state.event.date, state.event.time, Date.now());
       state.dinnerAt = plan.dinnerAt;
       state.start = plan.start;
+      state.end = plan.end;
       state.after = plan.after;
       state.hasClock = plan.hasClock;
+      state.dinnerOk = true;
       state.party = 2;
       state.venue = null;
       state.dinner = [];
@@ -802,9 +846,21 @@
       writeDinnerInputs();
       $('plan-show-title').textContent = state.event.title;
       $('plan-show-when').textContent = state.event.when;
+      const span = $('plan-show-span');
+      if (plan.hasClock && plan.end != null) {
+        span.hidden = false;
+        span.textContent = 'Calendar event: ' + clockRange(plan.start, plan.end) + '.';
+      } else { span.hidden = true; span.textContent = ''; }
       $('plan-show-venue').textContent = state.event.venue;
       $('plan-cal').dataset.id = state.event.id;
       $('plan-gcal').dataset.id = state.event.id;
+      const listed = document.querySelector('.read-actions a.gcal');
+      const listedHref = listed && listed.getAttribute('href');
+      $('plan-gcal').href = listedHref && listedHref !== '#' ? listed.href : '#';
+      $('plan-dinner-error').hidden = true;
+      $('plan-dinner-error').textContent = '';
+      $('plan-date').setAttribute('aria-invalid', 'false');
+      $('plan-time').setAttribute('aria-invalid', 'false');
       $('plan-share-box').hidden = true;
       setNotice('');
       paintPending();
@@ -827,14 +883,25 @@
       open(opener);
     });
     $('plan-done').addEventListener('click', () => dialog.close());
-    dialog.addEventListener('close', () => {
+    const restoreOpener = () => {
       state.gen++;
-      if (state.opener && state.opener.isConnected) state.opener.focus();
-    });
+      const opener = state.opener;
+      if (!opener || !opener.isConnected) return;
+      const guard = ev => { if (ev.target !== opener) opener.focus(); };
+      document.addEventListener('focusin', guard, true);
+      opener.focus();
+      setTimeout(() => { document.removeEventListener('focusin', guard, true); if (opener.isConnected) opener.focus(); }, 0);
+    };
+    dialog.addEventListener('cancel', restoreOpener);
+    dialog.addEventListener('close', restoreOpener);
     $('plan-less').addEventListener('click', () => { $('plan-party').value = String(clampParty(readParty() - 1)); renderSpots(); });
     $('plan-more').addEventListener('click', () => { $('plan-party').value = String(clampParty(readParty() + 1)); renderSpots(); });
     $('plan-party').addEventListener('change', () => { readParty(); renderSpots(); });
-    ['plan-date', 'plan-time'].forEach(id => $(id).addEventListener('change', () => { readDinner(); renderSpots(); }));
+    ['plan-date', 'plan-time'].forEach(id => {
+      const onEdit = () => { if (!applyDinnerInputs()) state.book = ''; renderSpots(); };
+      $(id).addEventListener('change', onEdit);
+      $(id).addEventListener('input', onEdit);
+    });
     $('plan-parking').addEventListener('click', () => {
       state.parkingShown = 8;
       renderSpots();
@@ -856,6 +923,7 @@
     $('plan-spots').addEventListener('click', ev => {
       const book = ev.target.closest('button.plan-book');
       if (book) {
+        if (!applyDinnerInputs()) return;
         const key = book.getAttribute('data-kind') + ':' + book.getAttribute('data-index');
         state.book = state.book === key ? '' : key;
         renderSpots();
@@ -873,6 +941,7 @@
       }
       const link = ev.target.closest('a[data-provider]');
       if (!link || link.getAttribute('data-provider') === 'Directions') return;
+      if (!applyDinnerInputs()) { ev.preventDefault(); return; }
       begin(link.getAttribute('data-kind'), +link.getAttribute('data-index'), link.getAttribute('data-provider'), link.getAttribute('href'));
     });
     $('plan-pending-btn').addEventListener('click', openAsk);
@@ -883,7 +952,9 @@
       if (document.visibilityState === 'visible' && state.pending && dialog.open) openAsk();
     });
     $('plan-share').addEventListener('click', async () => {
-      readParty(); readDinner();
+      readParty();
+      const savedForEvent = bookings().some(item => item.event && item.event.id === state.event.id);
+      if (!savedForEvent && !applyDinnerInputs()) return;
       const text = shareText({
         event: state.event, party: state.party, dinnerAt: state.dinnerAt, selected: state.selected,
         dinner: state.dinner, drinks: state.drinks, bookings: bookings()
@@ -941,7 +1012,8 @@
   return {
     buttonHTML: buttonHTML, mount: mount, escapeHtml: escapeHtml, haversine: haversine, validCoord: validCoord,
     walkText: walkText, straightLineLabel: straightLineLabel, parseClock: parseClock, startMillis: startMillis,
-    dinnerAt: dinnerAt, initialDinner: initialDinner, clampParty: clampParty, cityFromQuery: cityFromQuery,
+    dinnerAt: dinnerAt, initialDinner: initialDinner, calendarEnd: calendarEnd, dinnerHeading: dinnerHeading,
+    drinksHeading: drinksHeading, parseDinnerInputs: parseDinnerInputs, clockRange: clockRange, clampParty: clampParty, cityFromQuery: cityFromQuery,
     stamp: stamp, formatStamp: formatStamp, timeOnly: timeOnly, nearest: nearest, compactLabel: compactLabel,
     forecastPick: forecastPick, beyondRange: beyondRange, bookingLinks: bookingLinks, rideLinks: rideLinks,
     shareText: shareText, bookingShare: bookingShare, applySave: applySave, worldPoint: worldPoint,

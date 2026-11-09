@@ -363,3 +363,5 @@ a.read-tickets.b.primary:hover{background:var(--ms-hover);border-color:var(--ms-
 .plan-dialog .b.primary:hover,.plan-ask .b.primary:hover{background:var(--ms-hover);border-color:var(--ms-hover);color:#fff}
 .plan-ask .b.primary{background:var(--ms);border-color:var(--ms);color:#fff}
 .plan-ask .row{display:flex;flex-wrap:wrap;gap:.4rem}
+.plan-error{margin:.35rem 0 0;color:#9f1239;font-size:.92rem;font-weight:650;line-height:1.45}
+.plan-dialog input[aria-invalid="true"]{border-color:#9f1239;background:#fff7f8}
