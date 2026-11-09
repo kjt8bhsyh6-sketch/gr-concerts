@@ -54,6 +54,7 @@
       <p class="read-tags"><span class="tag read-tag">${h(c.genre)}</span></p>
       ${addedLine(c)}
       ${GRPane.ticketsHTML(c.affiliate || c.link, 'Tickets', aff, window.GRPlan && GRPlan.buttonHTML({ id: id, title: c.artist, date: c.date, end: end > c.date ? end : '', time: c.time, venue: c.venue, category: c.genre, url: c.link, when: GRPane.whenLine(c.date, c.time, end > c.date ? end : '') }))}
+      ${window.GRStay ? GRStay.buttonsHTML({ title: c.artist, venue: c.venue, date: c.date, end: end > c.date ? end : '', genre: c.genre, page: 'concerts' }) : ''}
       ${GRPane.bioHTML(bio ? [{ title: c.artist, text: bio.text, source: bio.source }] : [])}
       <div class="read-actions">${Marks.buttons(id)}<button type="button" class="b share" data-id="${id}" data-title="${h(share)}">Share</button>${GRPane.calHTML(id, GRICS.google(c))}</div>
     </article>`;

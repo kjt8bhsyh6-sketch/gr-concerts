@@ -8,4 +8,7 @@ const CONFIG = {
   SUBMIT_FORM_URL: "",
   // Comments (giscus): fill all four from https://giscus.app to show comments.
   GISCUS: { repo: "", repoId: "", category: "", categoryId: "" },
+  // Viator Selector mcid for partner P00330732. Empty hides Things to do.
+  // Do not put a sample or guessed value here. 42383 is a public example, not ours.
+  VIATOR_MCID: "",
 };

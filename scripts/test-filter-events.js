@@ -46,7 +46,8 @@ test('the staging host returns before any analytics side effect', () => {
   assert.ok(guard > 0 && bind > guard && beacon > guard && click > guard);
   assert.equal(T.SEARCH_DEBOUNCE_MS, 400);
   assert.deepEqual(Object.keys(T.FILTER_CONTROLS).sort(), ['f-genre', 'f-mine', 'f-new', 'f-venue']);
-  assert.doesNotMatch(src, /stay22|viator/i);
+  assert.doesNotMatch(src.slice(0, guard), /stay22|viator/i);
+  assert.match(src.slice(guard), /stay22\|viator/);
 });
 
 test('production filter paths omit search text', () => {

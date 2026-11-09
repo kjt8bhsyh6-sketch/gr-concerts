@@ -176,7 +176,7 @@
 
   /* First-party outbound ticket/affiliate click log (no cookies, no IP, query strings dropped server-side).
      POST /api/public/click via sendBeacon; see worker/src/click.js. */
-  var TICKET_HOST = /(ticketmaster|livenation|stubhub|seatgeek|vividseats|axs|etix|ticketweb|evenue|eventbrite|ludus|gofevo|seetickets|tix|ticket|impact|sjv\.io|7eer|flexoffers)/i;
+  var TICKET_HOST = /(ticketmaster|livenation|stubhub|seatgeek|vividseats|axs|etix|ticketweb|evenue|eventbrite|ludus|gofevo|seetickets|tix|ticket|impact|sjv\.io|7eer|flexoffers|stay22|viator)/i;
   var clickLog = function (a) {
     try {
       if (!navigator.sendBeacon || !/(^|\.)grhappenings\.com$/.test(location.hostname)) return;
