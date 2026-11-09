@@ -22,7 +22,9 @@ test('dinner time follows the half-hour rule in PlanNightView', () => {
   assert.equal(timed.end, P.zonedToMs(2026, 11, 10, 23, 0));
   assert.equal(timed.after, timed.end);
   assert.equal(P.dinnerHeading(timed.dinnerAt, timed.start), 'Dinner before, around 6:00 PM');
-  assert.equal(P.drinksHeading(timed.after, timed.start), 'Drinks after, around 11:00 PM');
+  assert.equal(P.drinksHeading(timed.after), 'Drinks around 11:00 PM');
+  assert.equal(P.dinnerWarning(timed.dinnerAt, timed.start), '');
+  assert.equal(P.drinksWarning(true, timed.end), P.DRINKS_ESTIMATE);
   const now = P.zonedToMs(2026, 11, 8, 19, 1);
   const start = P.zonedToMs(2026, 11, 8, 21, 1);
   assert.equal(P.dinnerAt(start, now), P.zonedToMs(2026, 11, 8, 19, 30));
@@ -130,7 +132,12 @@ test('a late dinner is not labeled before the show, and it uses the calendar end
   assert.equal(plan.end, P.zonedToMs(2026, 11, 8, 20, 30));
   assert.equal(plan.after, plan.end);
   assert.equal(P.dinnerHeading(plan.dinnerAt, plan.start), 'Dinner around 7:00 PM');
-  assert.equal(P.drinksHeading(plan.after, plan.start), 'Drinks after, around 8:30 PM');
+  assert.equal(P.drinksHeading(plan.after), 'Drinks around 8:30 PM');
+  assert.equal(P.dinnerWarning(plan.dinnerAt, plan.start), P.DINNER_NOT_BEFORE);
+  assert.equal(P.drinksWarning(true, plan.end), P.DRINKS_ESTIMATE);
+  assert.equal(P.dinnerWarning(null, null), P.DINNER_NO_CLOCK);
+  assert.equal(P.drinksWarning(false, null), P.DRINKS_UNKNOWN);
+  assert.equal(P.drinksHeading(null), 'Drinks');
   assert.equal(P.clockRange(plan.start, plan.end), '5:30 PM–8:30 PM ET');
   assert.equal(P.parseDinnerInputs('', '').ok, false);
   assert.equal(P.parseDinnerInputs('2026-02-31', '19:00').ok, false);
@@ -152,8 +159,8 @@ test('the button escapes text and the three corridors call it', () => {
   assert.match(fs.readFileSync(path.join(root, 'pane.js'), 'utf8'), /dialog\[open\]/);
   ['index.html', 'sports.html', 'seasonal.html'].forEach(file => {
     const htmlFile = fs.readFileSync(path.join(root, file), 'utf8');
-    assert.match(htmlFile, /plan-night\.js\?v=202611081905/);
-    assert.match(htmlFile, /style\.css\?v=202611081905/);
+    assert.match(htmlFile, /plan-night\.js\?v=202611081926/);
+    assert.match(htmlFile, /style\.css\?v=202611081926/);
     assert.match(htmlFile, /noindex,nofollow/);
   });
   assert.match(fs.readFileSync(path.join(root, 'sports-app.js'), 'utf8'), /function noteDetail/);
