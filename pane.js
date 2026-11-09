@@ -227,6 +227,7 @@
     });
     document.addEventListener('keydown', ev => {
       if (ev.key !== 'Escape' || desktop() || !document.body.classList.contains('is-reading')) return;
+      if (ev.target.closest && ev.target.closest('dialog')) return;
       if (document.querySelector('.mp-sheet, .bio-overlay:not([hidden]), dialog[open]')) return;
       ev.preventDefault();
       if (back) back.click();
