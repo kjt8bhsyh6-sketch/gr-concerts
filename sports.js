@@ -4,7 +4,7 @@
 //   link = the team's OFFICIAL ticket page, added = the date you added it (NEW badge for 7 days).
 // SEASON_NOTES: teams not playing right now get a short note card instead of games.
 // Remove a team's note once its games are listed in GAMES.
-const SPORTS_UPDATED = "Nov 6, 2026";
+const SPORTS_UPDATED = "Nov 9, 2026";
 const TEAMS = [
   { name:"Grand Rapids Griffins", sport:"Hockey (AHL)", site:"https://griffinshockey.com/schedule/home-schedule" },
   { name:"Grand Rapids Gold", sport:"Basketball (NBA G League)", site:"https://grandrapids.gleague.nba.com/schedule" },
@@ -14,7 +14,6 @@ const TEAMS = [
   { name:"Great Lakes Invitational", sport:"Hockey (NCAA)", site:"https://www.vanandelarena.com/events/2026/great-lakes-invitational" },
 ];
 const GAMES = [
-  { team:"Grand Rapids Griffins", opponent:"Milwaukee Admirals", date:"2026-11-06", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Rockford IceHogs", date:"2026-11-11", time:"11:00 AM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Manitoba Moose", date:"2026-11-18", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Iowa Wild", date:"2026-11-27", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
@@ -43,8 +42,6 @@ const GAMES = [
   { team:"Grand Rapids Griffins", opponent:"Chicago Wolves", date:"2027-03-26", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-20" },
   { team:"Grand Rapids Griffins", opponent:"Colorado Eagles", date:"2027-04-02", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-20" },
   { team:"Grand Rapids Griffins", opponent:"Colorado Eagles", date:"2027-04-03", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-20" },
-  { team:"Grand Rapids Gold", opponent:"Sioux Falls Skyforce", date:"2026-11-07", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },
-  { team:"Grand Rapids Gold", opponent:"Sioux Falls Skyforce", date:"2026-11-08", time:"3:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },
   { team:"Grand Rapids Gold", opponent:"Cleveland Charge", date:"2026-11-20", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },
   { team:"Grand Rapids Gold", opponent:"Cleveland Charge", date:"2026-11-22", time:"3:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },
   { team:"Grand Rapids Gold", opponent:"Noblesville Boom", date:"2026-11-28", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },

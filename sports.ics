@@ -24,39 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-06-grand-rapids-griffins-vs-milwaukee-admirals@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261106T190000
-DTEND;TZID=America/Detroit:20261106T220000
-SUMMARY:Grand Rapids Griffins vs. Milwaukee Admirals
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Hockey (AHL)\, 7:00 PM. Tickets/info: https://griffinshockey.e
- venue.net/events/S (confirm details with the venue)
-URL:https://griffinshockey.evenue.net/events/S
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-07-grand-rapids-gold-vs-sioux-falls-skyforce@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261107T190000
-DTEND;TZID=America/Detroit:20261107T220000
-SUMMARY:Grand Rapids Gold vs. Sioux Falls Skyforce
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Basketball (NBA G League)\, 7:00 PM. Tickets/info: https://www
- .gofevo.com/group/2026274315?ref=W (confirm details with the venue)
-URL:https://www.gofevo.com/group/2026274315?ref=W
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-08-grand-rapids-gold-vs-sioux-falls-skyforce@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261108T150000
-DTEND;TZID=America/Detroit:20261108T180000
-SUMMARY:Grand Rapids Gold vs. Sioux Falls Skyforce
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Basketball (NBA G League)\, 3:00 PM. Tickets/info: https://www
- .gofevo.com/group/2026274315?ref=W (confirm details with the venue)
-URL:https://www.gofevo.com/group/2026274315?ref=W
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-11-grand-rapids-griffins-vs-rockford-icehogs@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261111T110000

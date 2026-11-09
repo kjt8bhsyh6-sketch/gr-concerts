@@ -22,18 +22,6 @@ URL:https://www.highteagr.com/events/beauty-and-the-beast-themed-menu
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-05-art-coast-food-wine-festival@gr-seasonal
-DTSTAMP:20261028T120000Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261108
-SUMMARY:Art Coast Food & Wine Festival
-LOCATION:Riverside Pavilion\, 48 Water St\, Saugatuck\, Grand Rapids\, MI
-DESCRIPTION:Food & Wine Festival. Nov 5–7 · Thu–Sat. Info: https://saugatu
- ck.com/art-coast-food-wine-festival/ (confirm details with the organizer)
-URL:https://saugatuck.com/art-coast-food-wine-festival/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-18-grand-rapids-christkindl-markt@gr-seasonal
 DTSTAMP:20261019T120000Z
 DTSTART;VALUE=DATE:20261118

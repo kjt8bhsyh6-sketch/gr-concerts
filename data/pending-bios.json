@@ -1,102 +1,10 @@
 {
-  "generated": "2026-11-06",
-  "count": 171,
+  "generated": "2026-11-09",
+  "count": 163,
   "pending": [
     {
-      "artist": "Breaking (the) News! – Improv Comedy Show (Fridays, Nov 6–Dec 4)",
-      "week": "this",
-      "dates": [
-        "2026-11-06"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/breaking-the-news-improv-comedy-show",
-      "added": "2026-10-22"
-    },
-    {
-      "artist": "North By North with Saint Maybe, Quilter, Wilson Ave, Low Light",
-      "week": "this",
-      "dates": [
-        "2026-11-06"
-      ],
-      "venue": "Tip Top Deluxe Bar & Grill",
-      "link": "https://www.ticketweb.com/event/north-by-north-with-saint-tip-top-deluxe-bar-tickets/15021843",
-      "added": "2026-10-23"
-    },
-    {
-      "artist": "Mega 80's – The Ultimate 80's Retro Party (Nov 7)",
-      "week": "this",
-      "dates": [
-        "2026-11-07"
-      ],
-      "venue": "Elevation (at The Intersection)",
-      "link": "https://www.etix.com/ticket/p/42446718/mega-80s-the-ultimate-80s-retro-party-grand-rapids-the-intersection-elevation",
-      "added": "2026-10-20"
-    },
-    {
-      "artist": "Best of the Best (of the best) -Improv Comedy Show (Nov 7–Dec 5)",
-      "week": "this",
-      "dates": [
-        "2026-11-07"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/best-of-the-best-of-the-best-improv-comedy-show-3980574c-23e3-4fcf-8d8f-157e85b99da7",
-      "added": "2026-10-22"
-    },
-    {
-      "artist": "Choose Your Own Improv – Comedy Show",
-      "week": "this",
-      "dates": [
-        "2026-11-07",
-        "2026-11-14",
-        "2026-11-21"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/choose-your-own-improv-comedy-show",
-      "added": "2026-10-22"
-    },
-    {
-      "artist": "Yacht Rocket",
-      "week": "this",
-      "dates": [
-        "2026-11-07"
-      ],
-      "venue": "Tip Top Deluxe Bar & Grill",
-      "link": "https://www.ticketweb.com/event/yacht-rocket-tip-top-deluxe-bar-tickets/15036853",
-      "added": "2026-10-23"
-    },
-    {
-      "artist": "River City Improv (Nov 7)",
-      "week": "this",
-      "dates": [
-        "2026-11-07"
-      ],
-      "venue": "Midtown GR (at Studio Park)",
-      "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
-      "added": "2026-10-23"
-    },
-    {
-      "artist": "Steve Iott & Carl Sobel",
-      "week": "this",
-      "dates": [
-        "2026-11-07"
-      ],
-      "venue": "Coral Gables (Saugatuck)",
-      "link": "https://www.saugatuckcomedy.com/product/steve-iott-carl-sobel/20",
-      "added": "2026-11-02"
-    },
-    {
-      "artist": "All Get Out + Motherfolk + Saint Blonde",
-      "week": "this",
-      "dates": [
-        "2026-11-08"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/all-get-out-motherfolk-the-pyramid-scheme-tickets/15040103",
-      "added": "2026-10-20"
-    },
-    {
       "artist": "Holland American Legion Band's Veterans Concert",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-11"
       ],
@@ -106,7 +14,7 @@
     },
     {
       "artist": "The Diners – Short Order Improv",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-12"
       ],
@@ -116,7 +24,7 @@
     },
     {
       "artist": "Five Elements: Piano Duo Recital",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-12"
       ],
@@ -126,7 +34,7 @@
     },
     {
       "artist": "LIVE@TCP - Man Vs Machine - Improv Comedy Show!",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-12"
       ],
@@ -136,7 +44,7 @@
     },
     {
       "artist": "Eddie Clendening and the Blue Ribbon Boys wsg Kitten and The Tonics",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-12"
       ],
@@ -146,7 +54,7 @@
     },
     {
       "artist": "Resavoir + Harmolodics",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-13"
       ],
@@ -156,7 +64,7 @@
     },
     {
       "artist": "Thunder From Down Under (Nov 13 at 7 & 9 PM; Wawyé Oasis)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-13"
       ],
@@ -166,7 +74,7 @@
     },
     {
       "artist": "Together Again and Alex Austin's All Stars",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-13"
       ],
@@ -176,7 +84,7 @@
     },
     {
       "artist": "Ain't Nothing Like Family – Ms. Wilkins Goes To Court",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-14"
       ],
@@ -186,7 +94,7 @@
     },
     {
       "artist": "Boogie T (18+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-14"
       ],
@@ -196,7 +104,7 @@
     },
     {
       "artist": "Northbound (with Fredde, Gallo, Hubb) (21+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-14"
       ],
@@ -205,8 +113,19 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "Choose Your Own Improv – Comedy Show",
+      "week": "this",
+      "dates": [
+        "2026-11-14",
+        "2026-11-21"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/choose-your-own-improv-comedy-show",
+      "added": "2026-10-22"
+    },
+    {
       "artist": "Eastown Swing Band",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-14"
       ],
@@ -216,7 +135,7 @@
     },
     {
       "artist": "Mersiv – Pool Party (Wawyé Oasis)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-14"
       ],
@@ -226,7 +145,7 @@
     },
     {
       "artist": "Esteban Touma & Mike All",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-14"
       ],
@@ -236,7 +155,7 @@
     },
     {
       "artist": "Swanson, Matthews & Bardolph – Acoustic Stew Music Guild",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-15"
       ],
@@ -246,7 +165,7 @@
     },
     {
       "artist": "MDOP + Tonguecutter + Boob Sweat + Dog Skull",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-15"
       ],
@@ -256,7 +175,7 @@
     },
     {
       "artist": "Bad Momz of Comedy",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-18"
       ],
@@ -266,7 +185,7 @@
     },
     {
       "artist": "Midwinter – Haunt Me Forever Tour (with What Lies Below, Coldstate, Dirtywork)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-18"
       ],
@@ -276,7 +195,7 @@
     },
     {
       "artist": "O Christmas Tea: A British Comedy",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-19",
         "2026-11-19"
@@ -287,7 +206,7 @@
     },
     {
       "artist": "Ray Volpe – Volpetron Eternal Tour (18+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-19"
       ],
@@ -297,7 +216,7 @@
     },
     {
       "artist": "Live @TCP: The Dispatch (And friends!) - Comedy Show-RPPR",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-19"
       ],
@@ -307,7 +226,7 @@
     },
     {
       "artist": "Live @TCP: Role Play, Play, Roll! (After The Dispatch) (Nov 19, Dec 17)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-19"
       ],
@@ -317,7 +236,7 @@
     },
     {
       "artist": "Candlelight: The Best of Hans Zimmer",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-20"
       ],
@@ -327,7 +246,7 @@
     },
     {
       "artist": "Candlelight: Queen vs. The Beatles (Nov 20)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-20"
       ],
@@ -337,7 +256,7 @@
     },
     {
       "artist": "Subspace: Descend Into the Underground (with Gettoblaster, Pixcie, Cod3r) (18+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-20"
       ],
@@ -347,7 +266,7 @@
     },
     {
       "artist": "Free Show Friday: Reverend Jesse Ray (no cover, 21+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-20"
       ],
@@ -357,7 +276,7 @@
     },
     {
       "artist": "Starfarm – 80's Hits (Wawyé Oasis)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-20"
       ],
@@ -367,7 +286,7 @@
     },
     {
       "artist": "Semple – Rock Hits (131 Sportsbar & Lounge)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-20"
       ],
@@ -377,7 +296,7 @@
     },
     {
       "artist": "River City Improv (Nov 21)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-21"
       ],
@@ -387,7 +306,7 @@
     },
     {
       "artist": "DANCE… 4 U: Slayyyter x Charli XCX Night",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-21"
       ],
@@ -397,7 +316,7 @@
     },
     {
       "artist": "Canabliss: After Glow Tour (18+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-21"
       ],
@@ -407,7 +326,7 @@
     },
     {
       "artist": "Crooked Root",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-21"
       ],
@@ -417,7 +336,7 @@
     },
     {
       "artist": "Cam Rowe & Kate Brindle",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-21"
       ],
@@ -427,7 +346,7 @@
     },
     {
       "artist": "Rumours ATL: A Fleetwood Mac Tribute",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-22"
       ],
