@@ -5,7 +5,7 @@
 // and appear in "Just Announced" at the top of the page.
 // affiliate (optional): a partner/affiliate URL for the SAME official seller. If set, the Tickets button uses it;
 // otherwise it uses link. See EDITING.md for the rules. Example: affiliate:"https://..."
-const LAST_UPDATED = "Nov 9, 2026";
+const LAST_UPDATED = "Nov 10, 2026";
 const CONCERTS = [
   { week:"this", artist:"Broadway Grand Rapids: Maybe Happy Ending", venue:"DeVos Performance Hall", date:"2026-11-10", time:"7:30 PM", genre:"Musical", link:"https://www.ticketmaster.com/maybe-happy-ending-touring-grand-rapids-michigan-11-10-2026/event/08006519902B3EF8", added:"2026-10-19" },
   { week:"this", artist:"Tune-Yards + Rituals of Mine", venue:"The Pyramid Scheme", date:"2026-11-10", time:"7:00 PM", genre:"Indie", link:"https://www.ticketweb.com/event/tune-yards-rituals-of-the-pyramid-scheme-tickets/14319674", added:"2026-10-20" },
@@ -281,7 +281,6 @@ const CONCERTS = [
   { week:"later", artist:"Broken Glass (Jewish Theatre Grand Rapids, Feb 4–14)", venue:"GRCC Spectrum Theater", date:"2027-02-04", time:"7:30 PM", genre:"Theater", link:"https://www.jtgr.org/2026-2027/broken-glass", added:"2026-10-22" },
   { week:"later", artist:"A Mile in the Dark (Actors' Theatre, Mar 4–13)", venue:"GRCC Spectrum Theater", date:"2027-03-04", time:"Showtimes on venue site", genre:"Theater", link:"https://actorstheatregrandrapids.org/programming/coming-soon/a-mile-in-the-dark/", added:"2026-10-22" },
   { week:"this", artist:"Late-Night Comedy Lab", venue:"The Comedy Project", date:"2026-11-14", time:"10:30 PM", genre:"Comedy", link:"https://www.crowdwork.com/e/late-night-comedy-lab", added:"2026-10-22" },
-  { week:"this", artist:"Comedy Outlet Mondays – Open-mic Variety Show!", venue:"The Comedy Project", date:"2026-11-09", time:"7:00 PM", genre:"Comedy", link:"https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-show", added:"2026-10-22" },
   { week:"later", artist:"FREE - Improv Jam-a-lama-ding-dong (Stay for the sing-song!) (Nov 24, Dec 29, Jan 26)", venue:"The Comedy Project", date:"2026-11-24", time:"7:00 PM", genre:"Comedy", link:"https://www.crowdwork.com/e/free-improv-jam-a-lama-ding-dong-stay-for-the-sing-song", added:"2026-10-22" },
   { week:"this", artist:"Choose Your Own Improv – Comedy Show", venue:"The Comedy Project", date:"2026-11-14", time:"9:00 PM", genre:"Comedy", link:"https://www.crowdwork.com/e/choose-your-own-improv-comedy-show", added:"2026-10-22" },
   { week:"next", artist:"Choose Your Own Improv – Comedy Show", venue:"The Comedy Project", date:"2026-11-21", time:"9:00 PM", genre:"Comedy", link:"https://www.crowdwork.com/e/choose-your-own-improv-comedy-show", added:"2026-10-22" },
@@ -493,6 +492,8 @@ const CONCERTS = [
   { week:"later", artist:"The Rock and Roll Playhouse", venue:"The Stache (at The Intersection)", date:"2026-12-05", time:"12:00 PM", genre:"Family", link:"https://www.etix.com/ticket/p/40124216/the-rock-and-roll-playhouse-grand-rapids-the-intersection-the-stache", added:"2026-10-29" },
   { week:"later", artist:"Alexandra Kay – The One Woman Show", venue:"The Intersection (main room)", date:"2027-01-24", time:"8:00 PM", genre:"Country", link:"https://www.etix.com/ticket/p/92374492/alexandra-kay-the-one-woman-show-grand-rapids-the-intersection", added:"2026-10-29" },
   { week:"later", artist:"Kawaii Rave", venue:"The Stache (at The Intersection)", date:"2027-02-12", time:"9:30 PM", genre:"Dance Party", link:"https://www.etix.com/ticket/p/50028042/kawaii-rave-grand-rapids-the-intersection-the-stache", added:"2026-10-29" },
+  { week:"later", artist:"Thanksgiving Eve ft. DJ Composition + Deeechild + DJ Omega Supreme", venue:"The Pyramid Scheme", date:"2026-11-25", time:"9:00 PM", genre:"Dance Party", link:"https://www.ticketweb.com/event/thanksgiving-eve-ft-dj-composition-the-pyramid-scheme-tickets/14421754", added:"2026-11-10" },
+  { week:"later", artist:"The Turkey Turnup ft. King Inesse + Yeyo (Cultura Entertainment Group)", venue:"The Pyramid Scheme", date:"2026-11-28", time:"9:00 PM", genre:"Dance Party", link:"https://www.ticketweb.com/event/cultura-entertainment-group-presents-the-the-pyramid-scheme-tickets/14421684", added:"2026-11-10" },
   { week:"later", artist:"Pinball Disco ft. The DJ Bob Marino + Drop Catch + Slim Buddha + The Seventh", venue:"The Pyramid Scheme", date:"2026-12-27", time:"8:00 PM", genre:"Dance Party", link:"https://www.ticketweb.com/event/pinball-disco-ft-the-dj-the-pyramid-scheme-tickets/14403364", added:"2026-10-30" },
   { week:"later", artist:"Winter Jam 2027 (Crowder, Anne Wilson, Andy Mineo, Terrian, Red, NewSong)", venue:"Van Andel Arena", date:"2027-02-04", time:"7:00 PM", genre:"Christian", link:"https://www.vanandelarena.com/events/2027/winter-jam", added:"2026-10-30" },
   { week:"later", artist:"CRIMEWAVE: A Post-Punk & Darkwave Party", venue:"The Pyramid Scheme", date:"2027-02-12", time:"8:00 PM", genre:"Dance Party", link:"https://www.ticketweb.com/event/crimewave-a-post-punk-the-pyramid-scheme-tickets/14403384", added:"2026-10-30" },

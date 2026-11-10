@@ -24,19 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-09-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261109T190000
-DTEND;TZID=America/Detroit:20261109T220000
-SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
- medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
- )
-URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
- w
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-10-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261110T193000
@@ -1524,6 +1511,20 @@ URL:https://www.etix.com/ticket/p/99256957/desmond-jones-grand-rapids-the-
  intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-25-thanksgiving-eve-ft-dj-composition-deeechi-1gca6d@gr-concer
+ ts
+DTSTAMP:20261110T120000Z
+DTSTART;TZID=America/Detroit:20261125T210000
+DTEND;TZID=America/Detroit:20261126T000000
+SUMMARY:Thanksgiving Eve ft. DJ Composition + Deeechild + DJ Omega Supreme
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.ticketweb.com
+ /event/thanksgiving-eve-ft-dj-composition-the-pyramid-scheme-tickets/1442
+ 1754 (confirm details with the venue)
+URL:https://www.ticketweb.com/event/thanksgiving-eve-ft-dj-composition-the
+ -pyramid-scheme-tickets/14421754
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-27-cirque-dreams-holidaze@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261127T193000
@@ -1730,6 +1731,21 @@ LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
 DESCRIPTION:Holiday\, 6:00 PM. Tickets/info: https://soaringeaglecasino.co
  m/events/the-rockin-holiday-bash/ (confirm details with the venue)
 URL:https://soaringeaglecasino.com/events/the-rockin-holiday-bash/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-the-turkey-turnup-ft-king-inesse-yeyo-cult-uz92iz@gr-concer
+ ts
+DTSTAMP:20261110T120000Z
+DTSTART;TZID=America/Detroit:20261128T210000
+DTEND;TZID=America/Detroit:20261129T000000
+SUMMARY:The Turkey Turnup ft. King Inesse + Yeyo (Cultura Entertainment Gr
+ oup)
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.ticketweb.com
+ /event/cultura-entertainment-group-presents-the-the-pyramid-scheme-ticket
+ s/14421684 (confirm details with the venue)
+URL:https://www.ticketweb.com/event/cultura-entertainment-group-presents-t
+ he-the-pyramid-scheme-tickets/14421684
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-brent-terhune-dan-turco@gr-concerts
