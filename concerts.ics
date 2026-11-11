@@ -24,58 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-10-broadway-grand-rapids-maybe-happy-ending@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261110T193000
-DTEND;TZID=America/Detroit:20261110T223000
-SUMMARY:Broadway Grand Rapids: Maybe Happy Ending
-LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
-DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
- maybe-happy-ending-touring-grand-rapids-michigan-11-10-2026/event/0800651
- 9902B3EF8 (confirm details with the venue)
-URL:https://www.ticketmaster.com/maybe-happy-ending-touring-grand-rapids-m
- ichigan-11-10-2026/event/08006519902B3EF8
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-10-tune-yards-rituals-of-mine@gr-concerts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261110T190000
-DTEND;TZID=America/Detroit:20261110T220000
-SUMMARY:Tune-Yards + Rituals of Mine
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Indie\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event
- /tune-yards-rituals-of-the-pyramid-scheme-tickets/14319674 (confirm detai
- ls with the venue)
-URL:https://www.ticketweb.com/event/tune-yards-rituals-of-the-pyramid-sche
- me-tickets/14319674
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-10-almost-monday-thank-god-it-s-almost-monday@gr-concerts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261110T200000
-DTEND;TZID=America/Detroit:20261110T230000
-SUMMARY:almost monday – Thank God It's almost monday
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Indie Pop\, 8:00 PM. Tickets/info: https://www.etix.com/ticket
- /p/65855219/almost-monday-thank-god-its-almost-monday-grand-rapids-the-in
- tersection-elevation (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/65855219/almost-monday-thank-god-its-alm
- ost-monday-grand-rapids-the-intersection-elevation
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-10-grcc-percussion-area-recital-free@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261110T193000
-DTEND;TZID=America/Detroit:20261110T223000
-SUMMARY:GRCC Percussion Area Recital (free)
-LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
- /grcc-music-presents-percussion-area-recital-0 (confirm details with the 
- venue)
-URL:https://www.grcc.edu/events/grcc-music-presents-percussion-area-recita
- l-0
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-11-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261111T193000
@@ -163,17 +111,6 @@ DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
   details with the venue)
 URL:https://www.etix.com/ticket/p/50445234/bryan-andrews-grand-rapids-the-
  intersection-the-stache
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-five-elements-piano-duo-recital@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261112T193000
-DTEND;TZID=America/Detroit:20261112T223000
-SUMMARY:Five Elements: Piano Duo Recital
-LOCATION:Fountain Street Church\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://fountainstreet.chur
- chcenter.com/calendar/event/240704039 (confirm details with the venue)
-URL:https://fountainstreet.churchcenter.com/calendar/event/240704039
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-12-live-tcp-man-vs-machine-improv-comedy-show@gr-concerts
@@ -837,19 +774,6 @@ DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
  )
 URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
  w
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-17-triumph-the-rock-roll-machine-reloaded@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261117T200000
-DTEND;TZID=America/Detroit:20261117T230000
-SUMMARY:Triumph – The Rock & Roll Machine Reloaded
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.ticketmaster.com/tri
- umph-the-rock-roll-machine-reloaded-grand-rapids-michigan-11-17-2026/even
- t/08006513CDCC984A (confirm details with the venue)
-URL:https://www.ticketmaster.com/triumph-the-rock-roll-machine-reloaded-gr
- and-rapids-michigan-11-17-2026/event/08006513CDCC984A
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-17-grcc-woodwind-brass-area-recital-free@gr-concerts
@@ -1611,6 +1535,17 @@ DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://gunlakecasino.com/eve
 URL:https://gunlakecasino.com/event/family-tradition-band-2/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-27-battle-bots-improv-comedy-show@gr-concerts
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20261127T210000
+DTEND;TZID=America/Detroit:20261128T000000
+SUMMARY:Battle Bots Improv Comedy Show
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ba
+ ttle-bots-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/battle-bots-improv-comedy-show
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-28-straight-no-chaser-make-spirits-bright-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261128T193000
@@ -1759,6 +1694,17 @@ DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.saugatuckcomedy.co
 URL:https://www.saugatuckcomedy.com/product/brent-terhune-dan-turco/26
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-28-late-night-comedy-lab@gr-concerts
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20261128T223000
+DTEND;TZID=America/Detroit:20261129T013000
+SUMMARY:Late-Night Comedy Lab
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 10:30 PM. Tickets/info: https://www.crowdwork.com/e/l
+ ate-night-comedy-lab (confirm details with the venue)
+URL:https://www.crowdwork.com/e/late-night-comedy-lab
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-29-love-actually-in-concert@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261129T150000
@@ -1797,6 +1743,19 @@ DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/97
  ection (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/97537630/dexter-and-the-moonrocks-the-12
  -steps-tour-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-30-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20261130T190000
+DTEND;TZID=America/Detroit:20261130T220000
+SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
+ medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
+ )
+URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
+ w
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-01-mannheim-steamroller-christmas@gr-concerts
@@ -2339,6 +2298,19 @@ DESCRIPTION:Tribute\, 9:00 PM. Tickets/info: https://gunlakecasino.com/eve
 URL:https://gunlakecasino.com/event/hairmania-4/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-05-the-1985-totally-80-s-mixtape-live@gr-concerts
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20261205T200000
+DTEND;TZID=America/Detroit:20261205T230000
+SUMMARY:The 1985 – Totally 80’s Mixtape Live!
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:80s Tribute\, 8:00 PM. Tickets/info: https://www.eventbrite.co
+ m/e/the-1985-totally-80s-mixtape-live-the-big-room-grand-rapids-mi-ticket
+ s-2000062874899 (confirm details with the venue)
+URL:https://www.eventbrite.com/e/the-1985-totally-80s-mixtape-live-the-big
+ -room-grand-rapids-mi-tickets-2000062874899
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-06-gr-symphony-holiday-pops@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261206T140000
@@ -2848,6 +2820,19 @@ DESCRIPTION:Tribute\, 9:00 PM. Tickets/info: https://gunlakecasino.com/eve
 URL:https://gunlakecasino.com/event/hairbangers-ball-3/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-12-luis-j-gomez@gr-concerts
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20261212T190000
+DTEND;TZID=America/Detroit:20261212T220000
+SUMMARY:Luis J. Gomez
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Time on ticket page. Tickets/info: https://www.etix.c
+ om/ticket/p/86492828/luis-j-gomez-grand-rapids-the-big-room (confirm deta
+ ils with the venue)
+URL:https://www.etix.com/ticket/p/86492828/luis-j-gomez-grand-rapids-the-b
+ ig-room
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261213T190000
@@ -3037,6 +3022,20 @@ DESCRIPTION:Bluegrass\, 7:30 PM. Tickets/info: https://hollandciviccenter.
  com/event/dailey-vincent-candy-canes-coal/ (confirm details with the venu
  e)
 URL:https://hollandciviccenter.com/event/dailey-vincent-candy-canes-coal/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-17-the-accidentals-kaboom-studio-orchestra-so-xynjj9@gr-concer
+ ts
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20261217T190000
+DTEND;TZID=America/Detroit:20261217T220000
+SUMMARY:The Accidentals & Kaboom Studio Orchestra – Sonus Borealis
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Holiday\, Time on ticket page. Tickets/info: https://www.etix.
+ com/ticket/p/98729191/the-accidentals-and-kaboom-studio-orchestra-sonus-b
+ orealis-grand-rapids-the-big-room (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/98729191/the-accidentals-and-kaboom-stud
+ io-orchestra-sonus-borealis-grand-rapids-the-big-room
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-18-river-city-improv-dec-18@gr-concerts
@@ -3396,6 +3395,34 @@ LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
 DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://soaringeaglecasin
  o.com/events/neon-lights-vegas-nights/ (confirm details with the venue)
 URL:https://soaringeaglecasino.com/events/neon-lights-vegas-nights/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-31-joe-hertler-the-rainbow-seekers-new-year-s-xtzz1@gr-concert
+ s
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20261231T190000
+DTEND;TZID=America/Detroit:20261231T220000
+SUMMARY:Joe Hertler & The Rainbow Seekers – New Year’s Eve 2026 (with Y-NO
+ T)
+LOCATION:The Big Room\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, Time on ticket page. Tickets/info: https://www.et
+ ix.com/ticket/p/39449483/joe-hertler-the-rainbow-seekers-grand-rapids-the
+ -big-room (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/39449483/joe-hertler-the-rainbow-seekers
+ -grand-rapids-the-big-room
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-31-holland-s-ultimate-new-year-s-eve-bash-sold-out@gr-concerts
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20261231T193000
+DTEND;TZID=America/Detroit:20261231T223000
+SUMMARY:Holland’s Ultimate New Year’s Eve Bash (SOLD OUT)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:30 PM. Tickets/info: https://parktheatreholland
+ .org/event/hollands-ultimate-new-years-eve-bash/ (confirm details with th
+ e venue)
+URL:https://parktheatreholland.org/event/hollands-ultimate-new-years-eve-b
+ ash/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-02-river-city-improv-jan-2@gr-concerts
@@ -5137,6 +5164,19 @@ URL:https://www.devosperformancehall.com/events/2027/broadway-grand-rapids
  -presents-death-becomes-her
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-03-clutch-give-the-people-what-they-want@gr-concerts
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20270303T180000
+DTEND;TZID=America/Detroit:20270303T210000
+SUMMARY:CLUTCH – Give the People What They Want!
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 6:00 PM. Tickets/info: https://www.ticketmaster.com/clu
+ tch-give-the-people-what-they-grand-rapids-michigan-03-03-2027/event/0800
+ 6563AFB33B17 (confirm details with the venue)
+URL:https://www.ticketmaster.com/clutch-give-the-people-what-they-grand-ra
+ pids-michigan-03-03-2027/event/08006563AFB33B17
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-04-a-mile-in-the-dark-actors-theatre-mar-4-13@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270304T190000
@@ -5866,6 +5906,20 @@ LOCATION:Fountain Street Church\, Grand Rapids\, MI
 DESCRIPTION:Dance\, 7:30 PM. Tickets/info: https://fountainstreet.churchce
  nter.com/calendar/event/228264461 (confirm details with the venue)
 URL:https://fountainstreet.churchcenter.com/calendar/event/228264461
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-09-magical-mystery-doors-beatles-led-zeppelin-1vmymd@gr-concer
+ ts
+DTSTAMP:20261111T120000Z
+DTSTART;TZID=America/Detroit:20270409T210000
+DTEND;TZID=America/Detroit:20270410T000000
+SUMMARY:Magical Mystery Doors – Beatles\, Led Zeppelin & Doors Tribute
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/
+ magical-mystery-doors-new-buffalo-michigan-04-09-2027/event/0400656388502
+ A0B (confirm details with the venue)
+URL:https://www.ticketmaster.com/magical-mystery-doors-new-buffalo-michiga
+ n-04-09-2027/event/0400656388502A0B
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-10-amber-autry-happy-holler-tour-7-00-pm@gr-concerts

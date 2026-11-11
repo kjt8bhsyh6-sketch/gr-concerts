@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-09",
-  "count": 163,
+  "generated": "2026-11-11",
+  "count": 168,
   "pending": [
     {
       "artist": "Holland American Legion Band's Veterans Concert",
@@ -21,16 +21,6 @@
       "venue": "Wealthy Theatre",
       "link": "https://grcmc.org/event/the-diners-short-order-improv/1786",
       "added": "2026-10-19"
-    },
-    {
-      "artist": "Five Elements: Piano Duo Recital",
-      "week": "this",
-      "dates": [
-        "2026-11-12"
-      ],
-      "venue": "Fountain Street Church",
-      "link": "https://fountainstreet.churchcenter.com/calendar/event/240704039",
-      "added": "2026-10-22"
     },
     {
       "artist": "LIVE@TCP - Man Vs Machine - Improv Comedy Show!",
@@ -375,6 +365,16 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "Thanksgiving Eve ft. DJ Composition + Deeechild + DJ Omega Supreme",
+      "week": "later",
+      "dates": [
+        "2026-11-25"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/thanksgiving-eve-ft-dj-composition-the-pyramid-scheme-tickets/14421754",
+      "added": "2026-11-10"
+    },
+    {
       "artist": "Family Tradition Band – Country (Wawyé Oasis)",
       "week": "later",
       "dates": [
@@ -453,6 +453,16 @@
       "venue": "Lowell Arts at Sound Check",
       "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "The Turkey Turnup ft. King Inesse + Yeyo (Cultura Entertainment Group)",
+      "week": "later",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/cultura-entertainment-group-presents-the-the-pyramid-scheme-tickets/14421684",
+      "added": "2026-11-10"
     },
     {
       "artist": "Brent TerHune & Dan Turco",
@@ -574,6 +584,16 @@
       "venue": "Tip Top Deluxe Bar & Grill",
       "link": "https://www.ticketweb.com/event/vespa-and-together-again-tip-top-deluxe-bar-tickets/14403644",
       "added": "2026-10-28"
+    },
+    {
+      "artist": "The 1985 – Totally 80’s Mixtape Live!",
+      "week": "later",
+      "dates": [
+        "2026-12-05"
+      ],
+      "venue": "The Big Room",
+      "link": "https://www.eventbrite.com/e/the-1985-totally-80s-mixtape-live-the-big-room-grand-rapids-mi-tickets-2000062874899",
+      "added": "2026-11-11"
     },
     {
       "artist": "J Oscar Bittinger: A Winter's Tune – Acoustic Stew Music Guild",
@@ -914,6 +934,26 @@
       "venue": "Soaring Eagle Casino & Resort",
       "link": "https://soaringeaglecasino.com/events/neon-lights-vegas-nights/",
       "added": "2026-10-26"
+    },
+    {
+      "artist": "Joe Hertler & The Rainbow Seekers – New Year’s Eve 2026 (with Y-NOT)",
+      "week": "later",
+      "dates": [
+        "2026-12-31"
+      ],
+      "venue": "The Big Room",
+      "link": "https://www.etix.com/ticket/p/39449483/joe-hertler-the-rainbow-seekers-grand-rapids-the-big-room",
+      "added": "2026-11-11"
+    },
+    {
+      "artist": "Holland’s Ultimate New Year’s Eve Bash (SOLD OUT)",
+      "week": "later",
+      "dates": [
+        "2026-12-31"
+      ],
+      "venue": "Park Theatre (Holland)",
+      "link": "https://parktheatreholland.org/event/hollands-ultimate-new-years-eve-bash/",
+      "added": "2026-11-11"
     },
     {
       "artist": "River City Improv (Jan 2)",
@@ -1534,6 +1574,16 @@
       "venue": "Calvin University Chapel",
       "link": "https://calvin.edu/events/jazz-band-concert-1807140600",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Magical Mystery Doors – Beatles, Led Zeppelin & Doors Tribute",
+      "week": "later",
+      "dates": [
+        "2027-04-09"
+      ],
+      "venue": "Four Winds Silver Creek Event Center",
+      "link": "https://www.ticketmaster.com/magical-mystery-doors-new-buffalo-michigan-04-09-2027/event/0400656388502A0B",
+      "added": "2026-11-11"
     },
     {
       "artist": "Amber Autry: Happy Holler Tour",
