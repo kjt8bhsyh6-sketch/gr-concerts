@@ -24,17 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-11-grand-rapids-griffins-vs-rockford-icehogs@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261111T110000
-DTEND;TZID=America/Detroit:20261111T140000
-SUMMARY:Grand Rapids Griffins vs. Rockford IceHogs
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Hockey (AHL)\, 11:00 AM. Tickets/info: https://griffinshockey.
- evenue.net/events/S (confirm details with the venue)
-URL:https://griffinshockey.evenue.net/events/S
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-18-grand-rapids-griffins-vs-manitoba-moose@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261118T190000

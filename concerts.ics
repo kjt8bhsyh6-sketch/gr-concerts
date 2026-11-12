@@ -24,32 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-11-broadway-grand-rapids-maybe-happy-ending@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261111T193000
-DTEND;TZID=America/Detroit:20261111T223000
-SUMMARY:Broadway Grand Rapids: Maybe Happy Ending
-LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
-DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
- maybe-happy-ending-touring-grand-rapids-michigan-11-11-2026/event/0800651
- 990303F06 (confirm details with the venue)
-URL:https://www.ticketmaster.com/maybe-happy-ending-touring-grand-rapids-m
- ichigan-11-11-2026/event/0800651990303F06
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-11-holland-american-legion-band-s-veterans-concert@gr-concerts
-DTSTAMP:20261105T120000Z
-DTSTART;TZID=America/Detroit:20261111T190000
-DTEND;TZID=America/Detroit:20261111T220000
-SUMMARY:Holland American Legion Band's Veterans Concert
-LOCATION:Holland Civic Center Place\, Grand Rapids\, MI
-DESCRIPTION:Concert Band\, 7:00 PM. Tickets/info: https://hollandciviccent
- er.com/event/holland-american-legion-bands-veterans-concert/ (confirm det
- ails with the venue)
-URL:https://hollandciviccenter.com/event/holland-american-legion-bands-vet
- erans-concert/
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-12-broadway-grand-rapids-maybe-happy-ending@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261112T193000
@@ -277,17 +251,6 @@ DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ba
 URL:https://www.crowdwork.com/e/battle-bots-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-13-whitehorse@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261113T190000
-DTEND;TZID=America/Detroit:20261113T220000
-SUMMARY:Whitehorse
-LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
-DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.themidtowngr.c
- om/shows-events/detail/Whitehorse (confirm details with the venue)
-URL:https://www.themidtowngr.com/shows-events/detail/Whitehorse
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-13-calvin-symphonic-band-voices-of-the-americas@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261113T193000
@@ -409,6 +372,29 @@ DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
   (confirm details with the venue)
 URL:https://www.ticketweb.com/event/together-again-and-alex-austins-tip-to
  p-deluxe-bar-tickets/14412104
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-free-show-friday-stovepipe-stover-one-man-wy7voq@gr-concert
+ s
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261113T210000
+DTEND;TZID=America/Detroit:20261114T000000
+SUMMARY:Free Show Friday: Stovepipe Stover (one-man band\, no cover\, 21+)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 9:00 PM. Tickets/info: https://speciationartisana
+ les.com/events/stovepipe-stover (confirm details with the venue)
+URL:https://speciationartisanales.com/events/stovepipe-stover
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13-breaking-the-news-improv-comedy-show-nov-13@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261113T190000
+DTEND;TZID=America/Detroit:20261113T220000
+SUMMARY:Breaking (the) News! – Improv Comedy Show (Nov 13)
+LOCATION:The Comedy Project\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/br
+ eaking-the-news-improv-comedy-show (confirm details with the venue)
+URL:https://www.crowdwork.com/e/breaking-the-news-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-14-broadway-grand-rapids-maybe-happy-ending@gr-concerts
@@ -748,6 +734,21 @@ LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
 DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
  m/events/jazz-jam-11-15 (confirm details with the venue)
 URL:https://speciationartisanales.com/events/jazz-jam-11-15
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-15-guest-artist-recital-dr-jeiran-hasan-dr-ke-kh7q9m@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261115T173000
+DTEND;TZID=America/Detroit:20261115T203000
+SUMMARY:Guest Artist Recital: Dr. Jeiran Hasan & Dr. Kelariz Keshavarz (fl
+ ute)
+LOCATION:GVSU Haas Center for Performing Arts\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 5:30 PM. Tickets/info: https://www.gvsu.edu/mtd/mo
+ dule/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/7f3d1e69-be77-4916-8f2c-f
+ 558932b7ccc (confirm details with the venue)
+URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
+ vent/7f3d1e69-be77-4916-8f2c-f558932b7ccc
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-16-kottonmouth-kings@gr-concerts
@@ -1328,6 +1329,17 @@ DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
 URL:https://speciationartisanales.com/events/jazz-jam-11-22
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-22-lie-palooza-hosted-by-lie@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261122T163000
+DTEND;TZID=America/Detroit:20261122T193000
+SUMMARY:Lie.Palooza (hosted by Lie.)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Live Show\, 4:30 PM. Tickets/info: https://parktheatreholland.
+ org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-23-catch-your-breath-not-broken-enough-tour@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20261123T190000
@@ -1447,6 +1459,17 @@ DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://www.ticketweb.com
  1754 (confirm details with the venue)
 URL:https://www.ticketweb.com/event/thanksgiving-eve-ft-dj-composition-the
  -pyramid-scheme-tickets/14421754
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-25-reckless-davey-night-before-thanksgiving-bash@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261125T190000
+DTEND;TZID=America/Detroit:20261125T220000
+SUMMARY:Reckless Davey – Night Before Thanksgiving Bash
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://parktheatreholland
+ .org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-27-cirque-dreams-holidaze@gr-concerts
@@ -1705,6 +1728,19 @@ DESCRIPTION:Comedy\, 10:30 PM. Tickets/info: https://www.crowdwork.com/e/l
 URL:https://www.crowdwork.com/e/late-night-comedy-lab
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-28-rock-the-park-next-gen-youth-rock-metal-be-1ex275@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261128T180000
+DTEND;TZID=America/Detroit:20261128T210000
+SUMMARY:Rock the Park: NEXT GEN – Youth Rock & Metal Benefit Show (Park Th
+ eatre Foundation)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 6:00 PM. Tickets/info: https://parktheatreholland.org/ 
+ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-29-love-actually-in-concert@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261129T150000
@@ -1743,6 +1779,30 @@ DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/97
  ection (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/97537630/dexter-and-the-moonrocks-the-12
  -steps-tour-grand-rapids-the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-29-mitten-written-volume-one-honeycrutch-teen-qp0uel@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261129T180000
+DTEND;TZID=America/Detroit:20261129T210000
+SUMMARY:Mitten Written: Volume One (Honeycrutch\, Teenage Ghost & Tanner J
+ . Burns)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 6:00 PM. Tickets/info: https://parktheatreholland
+ .org/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-29-jazz-jam-w-tommy-pancy-nov-29@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261129T170000
+DTEND;TZID=America/Detroit:20261129T200000
+SUMMARY:Jazz Jam w/ Tommy Pancy (Nov 29)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
+ m/events/jazz-jam-11-29 (confirm details with the venue)
+URL:https://speciationartisanales.com/events/jazz-jam-11-29
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-30-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
@@ -2064,6 +2124,19 @@ DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
  enue)
 URL:https://calvin.edu/events/calvin-theatre-company-miracle-worker-179643
  0600
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-free-show-friday-t-h-v-swandrive-experimen-99skc1@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261204T210000
+DTEND;TZID=America/Detroit:20261205T000000
+SUMMARY:Free Show Friday: T.H.V. & Swandrive (experimental\, no cover\, 21
+ +)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 9:00 PM. Tickets/info: https://speciationartisana
+ les.com/events/thv-swandrive (confirm details with the venue)
+URL:https://speciationartisanales.com/events/thv-swandrive
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-05-gr-symphony-holiday-pops@gr-concerts
@@ -2437,6 +2510,19 @@ DESCRIPTION:Folk\, 7:30 PM. Tickets/info: https://www.scmcgr.org/concerts/
 URL:https://www.scmcgr.org/concerts/jeff-daniels-2026
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-09-lily-bomb-zero-sun-two-dollar-bills@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261209T190000
+DTEND;TZID=America/Detroit:20261209T220000
+SUMMARY:Lily Bomb + Zero Sun + Two Dollar Bills
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/lily-bomb-zero-sun-the-pyramid-scheme-tickets/14435274 (confirm det
+ ails with the venue)
+URL:https://www.ticketweb.com/event/lily-bomb-zero-sun-the-pyramid-scheme-
+ tickets/14435274
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-10-jessica-michelle-singleton-dec-10-12@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261210T190000
@@ -2646,6 +2732,19 @@ DESCRIPTION:80s Tribute\, 9:00 PM. Tickets/info: https://gunlakecasino.com
 URL:https://gunlakecasino.com/event/the-spazmatics/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-11-free-show-friday-erin-monroe-plays-the-civ-1wqorp@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261211T210000
+DTEND;TZID=America/Detroit:20261212T000000
+SUMMARY:Free Show Friday: Erin Monroe Plays The Civil Wars (folk/americana
+ \, no cover\, 21+)
+LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 9:00 PM. Tickets/info: https://speciationartisanales.co
+ m/events/erinmonroe-civilwars (confirm details with the venue)
+URL:https://speciationartisanales.com/events/erinmonroe-civilwars
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-12-heyz-something-different-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261212T210000
@@ -2831,6 +2930,19 @@ DESCRIPTION:Comedy\, Time on ticket page. Tickets/info: https://www.etix.c
  ils with the venue)
 URL:https://www.etix.com/ticket/p/86492828/luis-j-gomez-grand-rapids-the-b
  ig-room
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-space-bar@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261212T200000
+DTEND;TZID=America/Detroit:20261212T230000
+SUMMARY:Space Bar
+LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/space-bar-tip-top-deluxe-bar-tickets/14433284 (confirm details with
+  the venue)
+URL:https://www.ticketweb.com/event/space-bar-tip-top-deluxe-bar-tickets/1
+ 4433284
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-13-for-king-country-a-drummer-boy-christmas@gr-concerts
@@ -3256,6 +3368,19 @@ DESCRIPTION:Hip-Hop\, 9:00 PM. Tickets/info: https://gunlakecasino.com/eve
 URL:https://gunlakecasino.com/event/too-hype-crew-3/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-19-rage-against-the-tool-rage-against-the-mac-17sb6q@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20261219T190000
+DTEND;TZID=America/Detroit:20261219T220000
+SUMMARY:Rage Against the Tool: Rage Against the Machine + TOOL Tributes (D
+ own Rodeo & IONS)
+LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
+ g/ (confirm details with the venue)
+URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-20-possessed-by-paul-james-with-coleman-williams@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261220T190000
@@ -3517,6 +3642,18 @@ URL:https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-s
  how
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-07-andy-woodhull-jan-7-9@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270107T190000
+DTEND;TZID=America/Detroit:20270107T220000
+SUMMARY:Andy Woodhull (Jan 7–9)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=659 (confirm details with the ven
+ ue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=659
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-08-deric-cahill-natural-consequences@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270108T193000
@@ -3556,6 +3693,20 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  m details with the venue)
 URL:https://www.ticketweb.com/event/slumlord-radio-the-holy-the-pyramid-sc
  heme-tickets/14377024
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-08-folks-choir-community-sing-hosted-by-may-erlewine@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270108T190000
+DTEND;TZID=America/Detroit:20270108T220000
+SUMMARY:Folks Choir Community Sing hosted by May Erlewine
+LOCATION:Wealthy Theatre\, Grand Rapids\, MI
+DESCRIPTION:Sing-Along\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/folks-choir-community-sing-hosted-the-wealthy-theatre-tickets/14435
+ 234 (confirm details with the venue)
+URL:https://www.ticketweb.com/event/folks-choir-community-sing-hosted-the-
+ wealthy-theatre-tickets/14435234
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-09-jordan-rock-with-ricarlo-williams-winston@gr-concerts
@@ -3774,6 +3925,59 @@ DESCRIPTION:Classical\, 8:45 PM. Tickets/info: https://grcmc.org/event/can
 URL:https://grcmc.org/event/candlelight-90s-hip-hop-on-strings/1730
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-15-buku-beautiful-people-tour-with-local-support-tba@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270115T210000
+DTEND;TZID=America/Detroit:20270116T000000
+SUMMARY:Buku – Beautiful People Tour (with local support TBA)
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/97334802/buku-beautiful-people-tour-grand-rapids-the-intersection-the
+ -stache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/97334802/buku-beautiful-people-tour-gran
+ d-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-15-sin-genero-no-genre-ft-kennedy-perez-los-e-1k3724@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270115T190000
+DTEND;TZID=America/Detroit:20270115T220000
+SUMMARY:SIN GENERO (NO GENRE) ft. Kennedy Perez + Los Escoltas De La Sierr
+ a + DJ Mazter One + DJ Dove
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/sin-genero-no-genre-ft-the-pyramid-scheme-tickets/14434604 (confirm
+  details with the venue)
+URL:https://www.ticketweb.com/event/sin-genero-no-genre-ft-the-pyramid-sch
+ eme-tickets/14434604
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-15-rachel-scanlon-jan-15-16@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270115T190000
+DTEND;TZID=America/Detroit:20270115T220000
+SUMMARY:Rachel Scanlon (Jan 15–16)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1511 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1511
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-15-mark-lavengood-band-tickets-on-sale-nov-13-9-am@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270115T190000
+DTEND;TZID=America/Detroit:20270115T220000
+SUMMARY:Mark Lavengood Band (tickets on sale Nov 13\, 9 AM)
+LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.themidtowngr.c
+ om/shows-events/detail/Mark-Lavengood-Band (confirm details with the venu
+ e)
+URL:https://www.themidtowngr.com/shows-events/detail/Mark-Lavengood-Band
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-16-broadway-grand-rapids-six@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270116T140000
@@ -3884,6 +4088,19 @@ DESCRIPTION:Orchestral\, 7:30 PM. Tickets/info: https://www.scmcgr.org/sch
  e venue)
 URL:https://www.scmcgr.org/school-of-music/youth-programs/concerto-competi
  tion
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-16-dirt-monkey-with-zouth@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270116T210000
+DTEND;TZID=America/Detroit:20270117T000000
+SUMMARY:Dirt Monkey (with Zouth)
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/47084190/dirt-monkey-grand-rapids-the-intersection-the-stache (confir
+ m details with the venue)
+URL:https://www.etix.com/ticket/p/47084190/dirt-monkey-grand-rapids-the-in
+ tersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-17-broadway-grand-rapids-six@gr-concerts
@@ -4475,6 +4692,19 @@ URL:https://www.ticketmaster.com/eaglemania-the-worlds-greatest-eagles-tri
  bute-new-buffalo-michigan-02-06-2027/event/0400655CAE6788B3
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-06-smells-like-nirvana-with-dead-original@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270206T200000
+DTEND;TZID=America/Detroit:20270206T230000
+SUMMARY:Smells Like Nirvana (with Dead Original)
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
+ /79386062/smells-like-nirvana-grand-rapids-the-intersection-the-stache (c
+ onfirm details with the venue)
+URL:https://www.etix.com/ticket/p/79386062/smells-like-nirvana-grand-rapid
+ s-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-07-all-things-equal-the-life-trials-of-ruth-b-hidbwa@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -4527,6 +4757,21 @@ DESCRIPTION:Jazz\, 6:00 PM. Tickets/info: https://www.meijergardens.org/ev
  tails with the venue)
 URL:https://www.meijergardens.org/events/winter-nights-great-lakes-brass-f
  at-tuesday-celebration/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-09-grace-potter-the-trespassers-the-trespasse-1p7vix@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270209T193000
+DTEND;TZID=America/Detroit:20270209T223000
+SUMMARY:Grace Potter & The Trespassers – The Trespasser Tour (with Pokey L
+ aFarge)
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p/94
+ 896238/grace-potter-the-trespassers-grand-rapids-the-intersection (confir
+ m details with the venue)
+URL:https://www.etix.com/ticket/p/94896238/grace-potter-the-trespassers-gr
+ and-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-10-nickelback-everything-under-the-sun-tour@gr-concerts
@@ -4719,6 +4964,19 @@ URL:https://www.ticketmaster.com/chubby-checker-new-buffalo-michigan-02-13
  -2027/event/040065388D855946
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-14-tate-butts-the-something-to-believe-in-tour@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270214T183000
+DTEND;TZID=America/Detroit:20270214T213000
+SUMMARY:Tate Butts – The Something To Believe In Tour
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 6:30 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/51767331/tate-butts-the-something-to-believe-in-tour-grand-rapids-the
+ -intersection-the-stache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/51767331/tate-butts-the-something-to-bel
+ ieve-in-tour-grand-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-17-riley-with-super-sometimes-leisure-hour-shoreline@gr-concer
  ts
 DTSTAMP:20261021T120000Z
@@ -4801,6 +5059,18 @@ DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
  t/08006562FF7E8E42 (confirm details with the venue)
 URL:https://www.ticketmaster.com/vincent-mason-when-youre-not-around-grand
  -rapids-michigan-02-18-2027/event/08006562FF7E8E42
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-18-alex-falcone-feb-18-20@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270218T190000
+DTEND;TZID=America/Detroit:20270218T220000
+SUMMARY:Alex Falcone (Feb 18–20)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1522 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1522
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-19-dear-evan-hansen-civic-theatre-production-6vbcfk@gr-concert
@@ -5177,6 +5447,18 @@ URL:https://www.ticketmaster.com/clutch-give-the-people-what-they-grand-ra
  pids-michigan-03-03-2027/event/08006563AFB33B17
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-03-winston-hodges@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270303T190000
+DTEND;TZID=America/Detroit:20270303T220000
+SUMMARY:Winston Hodges
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1523 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1523
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-04-a-mile-in-the-dark-actors-theatre-mar-4-13@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270304T190000
@@ -5441,6 +5723,19 @@ DESCRIPTION:Choral\, 5:00 PM. Tickets/info: https://grwc.org/ (confirm det
 URL:https://grwc.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-13-millington-potionseller@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270313T190000
+DTEND;TZID=America/Detroit:20270313T220000
+SUMMARY:Millington + Potionseller
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/77368943/millington-plus-potionseller-grand-rapids-the-intersection-t
+ he-stache (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/77368943/millington-plus-potionseller-gr
+ and-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-14-denny-love-show-love-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270314T190000
@@ -5541,6 +5836,19 @@ DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-20-dylan-marlowe-with-cody-lohden@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270320T200000
+DTEND;TZID=America/Detroit:20270320T230000
+SUMMARY:Dylan Marlowe (with Cody Lohden)
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
+ /70657380/dylan-marlowe-grand-rapids-the-intersection-elevation (confirm 
+ details with the venue)
+URL:https://www.etix.com/ticket/p/70657380/dylan-marlowe-grand-rapids-the-
+ intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-21-blue-water-ramblers-acoustic-stew-music-guild@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270321T150000
@@ -5565,6 +5873,19 @@ DESCRIPTION:Comedy\, Doors 6:00 PM. Tickets/info: https://www.ticketweb.co
   the venue)
 URL:https://www.ticketweb.com/event/lucas-zelnick-the-big-room-tickets/144
  04284
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-21-the-funeral-portrait-a-hex-on-the-nation@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270321T183000
+DTEND;TZID=America/Detroit:20270321T213000
+SUMMARY:The Funeral Portrait – A Hex On The Nation
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 6:30 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/84123396/the-funeral-portrait-a-hex-on-the-nation-grand-rapids-the-in
+ tersection-elevation (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/84123396/the-funeral-portrait-a-hex-on-t
+ he-nation-grand-rapids-the-intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-23-ali-wong-live@gr-concerts
@@ -5860,6 +6181,19 @@ URL:https://calendar.hope.edu/event/actors-from-the-london-stage-in-king-l
  ear
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-08-actors-from-the-london-stage-king-lear-apr-8-9@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270408T193000
+DTEND;TZID=America/Detroit:20270408T223000
+SUMMARY:Actors from the London Stage: King Lear (Apr 8–9)
+LOCATION:Knickerbocker Theatre (Hope College)\, Grand Rapids\, MI
+DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calendar.hope.edu/eve
+ nt/actors-from-the-london-stage-in-king-lear (confirm details with the ve
+ nue)
+URL:https://calendar.hope.edu/event/actors-from-the-london-stage-in-king-l
+ ear
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-09-brit-floyd-animals-50-world-tour@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270409T200000
@@ -6055,6 +6389,19 @@ LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
  s-departments/music (confirm details with the venue)
 URL:https://www.grcc.edu/schools-departments/music
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-13-the-white-buffalo@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270413T190000
+DTEND;TZID=America/Detroit:20270413T220000
+SUMMARY:The White Buffalo
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Folk\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event/
+ the-white-buffalo-the-pyramid-scheme-tickets/14415274 (confirm details wi
+ th the venue)
+URL:https://www.ticketweb.com/event/the-white-buffalo-the-pyramid-scheme-t
+ ickets/14415274
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-14-grcc-jazz-night@gr-concerts
@@ -6310,6 +6657,18 @@ DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
 URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-22-gabby-bryan-apr-22-24@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270422T190000
+DTEND;TZID=America/Detroit:20270422T220000
+SUMMARY:Gabby Bryan (Apr 22–24)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1524 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1524
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-23-our-town-civic-theatre-production-apr-23-may-2@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270423T193000
@@ -6430,6 +6789,21 @@ DESCRIPTION:Opera\, Showtimes on venue site. Tickets/info: https://www.dev
  ls with the venue)
 URL:https://www.devosperformancehall.com/events/2027/opera-gr-presents-car
  men
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-30-sim-hooman-after-all-world-tour-with-auror-1b2q5y@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270430T193000
+DTEND;TZID=America/Detroit:20270430T223000
+SUMMARY:SiM – HOOMAN AFTER ALL World Tour (with Aurorawave\, Within Destru
+ ction)
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p/71
+ 473899/sim-hooman-after-all-world-tour-grand-rapids-the-intersection-elev
+ ation (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/71473899/sim-hooman-after-all-world-tour
+ -grand-rapids-the-intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-05-05-world-famous-popovich-comedy-pet-theater@gr-concerts
@@ -6627,6 +7001,34 @@ LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
 DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://grwc.org/ (confirm det
  ails with the venue)
 URL:https://grwc.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-22-bulls-bands-barrels-featuring-sam-barber@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270522T183000
+DTEND;TZID=America/Detroit:20270522T213000
+SUMMARY:Bulls Bands & Barrels: Featuring Sam Barber
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Country\, 6:30 PM. Tickets/info: https://www.ticketmaster.com/
+ bulls-bands-and-barrels-vs-sam-grand-rapids-michigan-05-22-2027/event/080
+ 0655BFB4564CA (confirm details with the venue)
+URL:https://www.ticketmaster.com/bulls-bands-and-barrels-vs-sam-grand-rapi
+ ds-michigan-05-22-2027/event/0800655BFB4564CA
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-23-the-menzingers-everything-i-ever-saw-north-1ap0sl@gr-concer
+ ts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270523T190000
+DTEND;TZID=America/Detroit:20270523T220000
+SUMMARY:The Menzingers: Everything I Ever Saw North American Tour (with Ho
+ t Water Music\, Weakened Friends)
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Punk\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/95
+ 931817/the-menzingerseverything-i-ever-saw-north-american-tour-grand-rapi
+ ds-the-intersection (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/95931817/the-menzingerseverything-i-ever
+ -saw-north-american-tour-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-06-04-les-mise-rables-civic-theatre-production-jun-4-20@gr-concer

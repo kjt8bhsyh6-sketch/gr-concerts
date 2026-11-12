@@ -1,17 +1,7 @@
 {
-  "generated": "2026-11-11",
-  "count": 168,
+  "generated": "2026-11-12",
+  "count": 193,
   "pending": [
-    {
-      "artist": "Holland American Legion Band's Veterans Concert",
-      "week": "this",
-      "dates": [
-        "2026-11-11"
-      ],
-      "venue": "Holland Civic Center Place",
-      "link": "https://hollandciviccenter.com/event/holland-american-legion-bands-veterans-concert/",
-      "added": "2026-11-05"
-    },
     {
       "artist": "The Diners – Short Order Improv",
       "week": "this",
@@ -71,6 +61,26 @@
       "venue": "Tip Top Deluxe Bar & Grill",
       "link": "https://www.ticketweb.com/event/together-again-and-alex-austins-tip-top-deluxe-bar-tickets/14412104",
       "added": "2026-11-02"
+    },
+    {
+      "artist": "Free Show Friday: Stovepipe Stover (one-man band, no cover, 21+)",
+      "week": "this",
+      "dates": [
+        "2026-11-13"
+      ],
+      "venue": "Speciation Artisan Ales",
+      "link": "https://speciationartisanales.com/events/stovepipe-stover",
+      "added": "2026-11-12"
+    },
+    {
+      "artist": "Breaking (the) News! – Improv Comedy Show (Nov 13)",
+      "week": "this",
+      "dates": [
+        "2026-11-13"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/breaking-the-news-improv-comedy-show",
+      "added": "2026-11-12"
     },
     {
       "artist": "Ain't Nothing Like Family – Ms. Wilkins Goes To Court",
@@ -162,6 +172,16 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/mdop-tonguecutter-boob-the-pyramid-scheme-tickets/14348714",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Guest Artist Recital: Dr. Jeiran Hasan & Dr. Kelariz Keshavarz (flute)",
+      "week": "this",
+      "dates": [
+        "2026-11-15"
+      ],
+      "venue": "GVSU Haas Center for Performing Arts",
+      "link": "https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/7f3d1e69-be77-4916-8f2c-f558932b7ccc",
+      "added": "2026-11-12"
     },
     {
       "artist": "Bad Momz of Comedy",
@@ -345,6 +365,16 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "Lie.Palooza (hosted by Lie.)",
+      "week": "next",
+      "dates": [
+        "2026-11-22"
+      ],
+      "venue": "Park Theatre (Holland)",
+      "link": "https://parktheatreholland.org/",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "High Score Comedy: Round 11",
       "week": "later",
       "dates": [
@@ -373,6 +403,16 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/thanksgiving-eve-ft-dj-composition-the-pyramid-scheme-tickets/14421754",
       "added": "2026-11-10"
+    },
+    {
+      "artist": "Reckless Davey – Night Before Thanksgiving Bash",
+      "week": "later",
+      "dates": [
+        "2026-11-25"
+      ],
+      "venue": "Park Theatre (Holland)",
+      "link": "https://parktheatreholland.org/",
+      "added": "2026-11-12"
     },
     {
       "artist": "Family Tradition Band – Country (Wawyé Oasis)",
@@ -475,6 +515,16 @@
       "added": "2026-11-02"
     },
     {
+      "artist": "Rock the Park: NEXT GEN – Youth Rock & Metal Benefit Show (Park Theatre Foundation)",
+      "week": "later",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "Park Theatre (Holland)",
+      "link": "https://parktheatreholland.org/",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "1976/1986: A Tribute",
       "week": "later",
       "dates": [
@@ -483,6 +533,26 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/19761986-a-tribute-the-pyramid-scheme-tickets/14243204",
       "added": "2026-10-21"
+    },
+    {
+      "artist": "Mitten Written: Volume One (Honeycrutch, Teenage Ghost & Tanner J. Burns)",
+      "week": "later",
+      "dates": [
+        "2026-11-29"
+      ],
+      "venue": "Park Theatre (Holland)",
+      "link": "https://parktheatreholland.org/",
+      "added": "2026-11-12"
+    },
+    {
+      "artist": "Jazz Jam w/ Tommy Pancy (Nov 29)",
+      "week": "later",
+      "dates": [
+        "2026-11-29"
+      ],
+      "venue": "Speciation Artisan Ales",
+      "link": "https://speciationartisanales.com/events/jazz-jam-11-29",
+      "added": "2026-11-12"
     },
     {
       "artist": "Candlelight: Mozart vs Beethoven (Dec 3)",
@@ -556,6 +626,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Free Show Friday: T.H.V. & Swandrive (experimental, no cover, 21+)",
+      "week": "later",
+      "dates": [
+        "2026-12-04"
+      ],
+      "venue": "Speciation Artisan Ales",
+      "link": "https://speciationartisanales.com/events/thv-swandrive",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "Jellybean Station – Improv Comedy Show (Dec 5–19)",
       "week": "later",
       "dates": [
@@ -626,6 +706,16 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "Lily Bomb + Zero Sun + Two Dollar Bills",
+      "week": "later",
+      "dates": [
+        "2026-12-09"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/lily-bomb-zero-sun-the-pyramid-scheme-tickets/14435274",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "Candlelight: Christmas Carols on Strings (Dec 10)",
       "week": "later",
       "dates": [
@@ -684,6 +774,16 @@
       "venue": "Tip Top Deluxe Bar & Grill",
       "link": "https://www.ticketweb.com/event/firebird-sweet-tip-top-deluxe-bar-tickets/14412114",
       "added": "2026-11-02"
+    },
+    {
+      "artist": "Free Show Friday: Erin Monroe Plays The Civil Wars (folk/americana, no cover, 21+)",
+      "week": "later",
+      "dates": [
+        "2026-12-11"
+      ],
+      "venue": "Speciation Artisan Ales",
+      "link": "https://speciationartisanales.com/events/erinmonroe-civilwars",
+      "added": "2026-11-12"
     },
     {
       "artist": "HEYZ – Something Different Tour",
@@ -774,6 +874,16 @@
       "venue": "Coral Gables (Saugatuck)",
       "link": "https://www.saugatuckcomedy.com/product/adam-burke-seth-davis/TG5UONSCTK36UT744CLACVDG",
       "added": "2026-11-02"
+    },
+    {
+      "artist": "Space Bar",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "Tip Top Deluxe Bar & Grill",
+      "link": "https://www.ticketweb.com/event/space-bar-tip-top-deluxe-bar-tickets/14433284",
+      "added": "2026-11-12"
     },
     {
       "artist": "Kill The Mood + The Half Notes + The Burdens + Redbelly",
@@ -896,6 +1006,16 @@
       "added": "2026-11-02"
     },
     {
+      "artist": "Rage Against the Tool: Rage Against the Machine + TOOL Tributes (Down Rodeo & IONS)",
+      "week": "later",
+      "dates": [
+        "2026-12-19"
+      ],
+      "venue": "Park Theatre (Holland)",
+      "link": "https://parktheatreholland.org/",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "Sweet Dee and the Wild Honeys, with Bobcat Opossum",
       "week": "later",
       "dates": [
@@ -996,6 +1116,16 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "Andy Woodhull (Jan 7–9)",
+      "week": "later",
+      "dates": [
+        "2027-01-07"
+      ],
+      "venue": "Dr. Grins (at The B.O.B.)",
+      "link": "https://www.thebob.com/drgrins/comedian/index.html?id=659",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "Deric Cahill – Natural Consequences",
       "week": "later",
       "dates": [
@@ -1076,6 +1206,46 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "Buku – Beautiful People Tour (with local support TBA)",
+      "week": "later",
+      "dates": [
+        "2027-01-15"
+      ],
+      "venue": "The Stache (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/97334802/buku-beautiful-people-tour-grand-rapids-the-intersection-the-stache",
+      "added": "2026-11-12"
+    },
+    {
+      "artist": "SIN GENERO (NO GENRE) ft. Kennedy Perez + Los Escoltas De La Sierra + DJ Mazter One + DJ Dove",
+      "week": "later",
+      "dates": [
+        "2027-01-15"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/sin-genero-no-genre-ft-the-pyramid-scheme-tickets/14434604",
+      "added": "2026-11-12"
+    },
+    {
+      "artist": "Rachel Scanlon (Jan 15–16)",
+      "week": "later",
+      "dates": [
+        "2027-01-15"
+      ],
+      "venue": "Dr. Grins (at The B.O.B.)",
+      "link": "https://www.thebob.com/drgrins/comedian/index.html?id=1511",
+      "added": "2026-11-12"
+    },
+    {
+      "artist": "Mark Lavengood Band (tickets on sale Nov 13, 9 AM)",
+      "week": "later",
+      "dates": [
+        "2027-01-15"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/Mark-Lavengood-Band",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "Mega 80's – The Ultimate 80's Retro Party (Jan 16)",
       "week": "later",
       "dates": [
@@ -1104,6 +1274,16 @@
       "venue": "Frederik Meijer Gardens & Sculpture Park",
       "link": "https://www.meijergardens.org/events/jazz-brunch-with-dave-bennett/",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Dirt Monkey (with Zouth)",
+      "week": "later",
+      "dates": [
+        "2027-01-16"
+      ],
+      "venue": "The Stache (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/47084190/dirt-monkey-grand-rapids-the-intersection-the-stache",
+      "added": "2026-11-12"
     },
     {
       "artist": "Shapel Lacey (Jan 22)",
@@ -1266,6 +1446,16 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "Smells Like Nirvana (with Dead Original)",
+      "week": "later",
+      "dates": [
+        "2027-02-06"
+      ],
+      "venue": "The Stache (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/79386062/smells-like-nirvana-grand-rapids-the-intersection-the-stache",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "All Things Equal – The Life & Trials of Ruth Bader Ginsburg",
       "week": "later",
       "dates": [
@@ -1334,6 +1524,16 @@
       "venue": "Lowell Arts at Sound Check",
       "link": "https://www.lowellarts.org/music-concerts/lowell-arts-at-sound-check",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Tate Butts – The Something To Believe In Tour",
+      "week": "later",
+      "dates": [
+        "2027-02-14"
+      ],
+      "venue": "The Stache (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/51767331/tate-butts-the-something-to-believe-in-tour-grand-rapids-the-intersection-the-stache",
+      "added": "2026-11-12"
     },
     {
       "artist": "Riley! (with Super Sometimes, Leisure Hour, Shoreline)",
@@ -1446,6 +1646,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Winston Hodges",
+      "week": "later",
+      "dates": [
+        "2027-03-03"
+      ],
+      "venue": "Dr. Grins (at The B.O.B.)",
+      "link": "https://www.thebob.com/drgrins/comedian/index.html?id=1523",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "A Mile in the Dark (Actors' Theatre, Mar 4–13)",
       "week": "later",
       "dates": [
@@ -1506,6 +1716,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Millington + Potionseller",
+      "week": "later",
+      "dates": [
+        "2027-03-13"
+      ],
+      "venue": "The Stache (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/77368943/millington-plus-potionseller-grand-rapids-the-intersection-the-stache",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "River City Improv (Mar 20)",
       "week": "later",
       "dates": [
@@ -1514,6 +1734,16 @@
       "venue": "Wealthy Theatre",
       "link": "https://grcmc.org/event/river-city-improv/1647",
       "added": "2026-10-22"
+    },
+    {
+      "artist": "The Funeral Portrait – A Hex On The Nation",
+      "week": "later",
+      "dates": [
+        "2027-03-21"
+      ],
+      "venue": "Elevation (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/84123396/the-funeral-portrait-a-hex-on-the-nation-grand-rapids-the-intersection-elevation",
+      "added": "2026-11-12"
     },
     {
       "artist": "Piano Recital: Mijeong Lee",
@@ -1576,6 +1806,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "Actors from the London Stage: King Lear (Apr 8–9)",
+      "week": "later",
+      "dates": [
+        "2027-04-08"
+      ],
+      "venue": "Knickerbocker Theatre (Hope College)",
+      "link": "https://calendar.hope.edu/event/actors-from-the-london-stage-in-king-lear",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "Magical Mystery Doors – Beatles, Led Zeppelin & Doors Tribute",
       "week": "later",
       "dates": [
@@ -1625,6 +1865,16 @@
       "venue": "Calvin University Chapel",
       "link": "https://calvin.edu/events/wind-ensemble-concert-1807918200",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Gabby Bryan (Apr 22–24)",
+      "week": "later",
+      "dates": [
+        "2027-04-22"
+      ],
+      "venue": "Dr. Grins (at The B.O.B.)",
+      "link": "https://www.thebob.com/drgrins/comedian/index.html?id=1524",
+      "added": "2026-11-12"
     },
     {
       "artist": "Calvin Orchestra Concert",

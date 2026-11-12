@@ -223,6 +223,22 @@ URL:https://saugatuck.com/event/saugatuck-douglas-holiday-cookie-tour/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-28-santa-s-magical-reindeer-meet-and-greet-at-meijer@gr-season
+ al
+DTSTAMP:20261112T120000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261206
+SUMMARY:Santa’s Magical Reindeer Meet and Greet at Meijer Gardens
+LOCATION:Michigan's Farm Garden\, Frederik Meijer Gardens\, 1000 E Beltlin
+ e Ave NE\, Grand Rapids\, MI
+DESCRIPTION:Santa Visit. Sat Nov 28 & Sat Dec 5 · see event page for times
+ . Info: https://www.meijergardens.org/events/santas-magical-reindeer-meet
+ -and-greet/ (confirm details with the organizer)
+URL:https://www.meijergardens.org/events/santas-magical-reindeer-meet-and-
+ greet/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-30-eastown-holiday-craft-event-ornaments-letters-to-@gr-season
  al
 DTSTAMP:20261024T120000Z
@@ -480,6 +496,23 @@ DESCRIPTION:Holiday Market. Sun Dec 20 · starts 4 PM. Info: https://www.ti
  4355814 (confirm details with the organizer)
 URL:https://www.ticketweb.com/event/last-chance-holiday-market-the-pyramid
  -scheme-tickets/14355814
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-23-2027-orchid-show-at-meijer-gardens-grand-valley-o@gr-season
+ al
+DTSTAMP:20261112T120000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270125
+SUMMARY:2027 Orchid Show at Meijer Gardens (Grand Valley Orchid Society)
+LOCATION:Frederik Meijer Gardens\, 1000 E Beltline Ave NE\, Grand Rapids\,
+  MI
+DESCRIPTION:Winter Flower Show. Sat Jan 23 (sales 9 AM–5 PM\, display 12–5
+  PM) & Sun Jan 24 (sales & display 11 AM–5 PM). Info: https://www.meijerg
+ ardens.org/events/2027-orchid-show-presented-by-grand-valley-orchid-socie
+ ty/ (confirm details with the organizer)
+URL:https://www.meijergardens.org/events/2027-orchid-show-presented-by-gra
+ nd-valley-orchid-society/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
