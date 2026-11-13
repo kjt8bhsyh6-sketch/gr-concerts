@@ -24,131 +24,29 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-12-broadway-grand-rapids-maybe-happy-ending@gr-concerts
+UID:2026-11-13-kevin-bozeman-nov-12-14@gr-concerts
 DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261112T193000
-DTEND;TZID=America/Detroit:20261112T223000
-SUMMARY:Broadway Grand Rapids: Maybe Happy Ending
-LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
-DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
- maybe-happy-ending-touring-grand-rapids-michigan-11-12-2026/event/0800651
- 990353F0D (confirm details with the venue)
-URL:https://www.ticketmaster.com/maybe-happy-ending-touring-grand-rapids-m
- ichigan-11-12-2026/event/0800651990353F0D
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-kevin-bozeman-nov-12-14@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261112T190000
-DTEND;TZID=America/Detroit:20261112T220000
+DTSTART;TZID=America/Detroit:20261113T190000
+DTEND;TZID=America/Detroit:20261113T220000
 SUMMARY:Kevin Bozeman (Nov 12–14)
 LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
- ebob.com/drgrins/comedian/index.html?id=578 (confirm details with the ven
+ ebob.com/drgrins/comedian/index.html?id=577 (confirm details with the ven
  ue)
-URL:https://www.thebob.com/drgrins/comedian/index.html?id=578
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=577
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-12-the-diners-short-order-improv@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261112T190000
-DTEND;TZID=America/Detroit:20261112T220000
-SUMMARY:The Diners – Short Order Improv
-LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://grcmc.org/event/the-di
- ners-short-order-improv/1786 (confirm details with the venue)
-URL:https://grcmc.org/event/the-diners-short-order-improv/1786
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-hot-water-music-signals-midwest-rodeo-boys-1qbsjd@gr-concer
- ts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261112T183000
-DTEND;TZID=America/Detroit:20261112T213000
-SUMMARY:Hot Water Music + Signals Midwest + Rodeo Boys + Singing Lungs
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Punk\, 6:30 PM. Tickets/info: https://www.ticketweb.com/event/
- hot-water-music-signals-the-pyramid-scheme-tickets/14780753 (confirm deta
- ils with the venue)
-URL:https://www.ticketweb.com/event/hot-water-music-signals-the-pyramid-sc
- heme-tickets/14780753
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-bryan-andrews-taking-my-flag-back-tour@gr-concerts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261112T200000
-DTEND;TZID=America/Detroit:20261112T230000
-SUMMARY:Bryan Andrews – Taking My Flag Back Tour
-LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
- /50445234/bryan-andrews-grand-rapids-the-intersection-the-stache (confirm
-  details with the venue)
-URL:https://www.etix.com/ticket/p/50445234/bryan-andrews-grand-rapids-the-
- intersection-the-stache
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-live-tcp-man-vs-machine-improv-comedy-show@gr-concerts
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261112T190000
-DTEND;TZID=America/Detroit:20261112T220000
-SUMMARY:LIVE@TCP - Man Vs Machine - Improv Comedy Show!
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/li
- ve-tcp-man-vs-machine-improv-comedy-show (confirm details with the venue)
-URL:https://www.crowdwork.com/e/live-tcp-man-vs-machine-improv-comedy-show
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-eddie-clendening-and-the-blue-ribbon-boys-d9xqib@gr-concert
- s
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261112T190000
-DTEND;TZID=America/Detroit:20261112T220000
-SUMMARY:Eddie Clendening and the Blue Ribbon Boys wsg Kitten and The Tonic
- s
-LOCATION:Tip Top Deluxe Bar & Grill\, Grand Rapids\, MI
-DESCRIPTION:Rockabilly\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
- event/eddie-clendening-and-the-blue-tip-top-deluxe-bar-tickets/14298914 (
- confirm details with the venue)
-URL:https://www.ticketweb.com/event/eddie-clendening-and-the-blue-tip-top-
- deluxe-bar-tickets/14298914
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-born-with-teeth-by-liz-duffy-adams-wealthy-yroo38@gr-concer
+UID:2026-11-13-born-with-teeth-by-liz-duffy-adams-wealthy-1gvu47@gr-concer
  ts
 DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261112T193000
-DTEND;TZID=America/Detroit:20261112T223000
+DTSTART;TZID=America/Detroit:20261113T193000
+DTEND;TZID=America/Detroit:20261113T223000
 SUMMARY:Born With Teeth (by Liz Duffy Adams\; Wealthy Annex\, Nov 12–14 & 
  19–21)
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
 DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://grcmc.org/event/born-
  with-teeth/1756 (confirm details with the venue)
 URL:https://grcmc.org/event/born-with-teeth/1756
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-big-shrimp-fall-tour-2026-w-tiberius@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261112T190000
-DTEND;TZID=America/Detroit:20261112T220000
-SUMMARY:Big Shrimp – Fall Tour 2026 w/ Tiberius
-LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
-DESCRIPTION:Jam Band\, 7:00 PM. Tickets/info: https://parktheatreholland.o
- rg/ (confirm details with the venue)
-URL:https://parktheatreholland.org/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-12-guest-artist-recital-beltline-bones-trombo-grqxt4@gr-concer
- ts
-DTSTAMP:20261031T120000Z
-DTSTART;TZID=America/Detroit:20261112T120000
-DTEND;TZID=America/Detroit:20261112T150000
-SUMMARY:Guest Artist Recital: Beltline Bones (trombone quartet)
-LOCATION:GVSU Haas Center for Performing Arts\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 12:00 PM. Tickets/info: https://www.gvsu.edu/mtd/m
- odule/79aaee59-6d1b-48aa-bea3-52de6bfb8896/event/42fb0222-db6f-4b57-8102-
- fd10225176a9 (confirm details with the venue)
-URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
- vent/42fb0222-db6f-4b57-8102-fd10225176a9
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-13-gr-symphony-coffee-with-bob-grace-kim-violin@gr-concerts
@@ -838,6 +736,18 @@ LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
 DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com/e
  vents/chicago/ (confirm details with the venue)
 URL:https://soaringeaglecasino.com/events/chicago/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-18-chamber-music-recital-free-collaborative-m-xexcaf@gr-concer
+ ts
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20261118T193000
+DTEND;TZID=America/Detroit:20261118T223000
+SUMMARY:Chamber Music Recital (free\; Collaborative Musicianship students)
+LOCATION:Calvin University Chapel\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://calvin.edu/events/c
+ hamber-music-recital-1795048200 (confirm details with the venue)
+URL:https://calvin.edu/events/chamber-music-recital-1795048200
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-19-o-christmas-tea-a-british-comedy-3-00-pm@gr-concerts
@@ -3601,6 +3511,17 @@ URL:https://www.etix.com/ticket/p/69966901/niko-moon-wayland-gun-lake-casi
  no-resortwawye-oasis
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-02-funkle-jesse-party-hits-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270102T210000
+DTEND;TZID=America/Detroit:20270103T000000
+SUMMARY:Funkle Jesse – Party Hits (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Party Band\, 9:00 PM. Tickets/info: https://gunlakecasino.com/
+ event/funkle-jesse-2/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/funkle-jesse-2/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-03-harlem-globetrotters-rivalry-tour@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270103T140000
@@ -3709,6 +3630,17 @@ URL:https://www.ticketweb.com/event/folks-choir-community-sing-hosted-the-
  wealthy-theatre-tickets/14435234
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-08-jedi-mind-trip-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270108T210000
+DTEND;TZID=America/Detroit:20270109T000000
+SUMMARY:Jedi Mind Trip (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/event/
+ jedi-mind-trip-3/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/jedi-mind-trip-3/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-09-jordan-rock-with-ricarlo-williams-winston@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270109T190000
@@ -3812,6 +3744,17 @@ URL:https://www.etix.com/ticket/p/93802476/winter-wheat-music-festival-202
  7-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-09-sonimanic-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270109T210000
+DTEND;TZID=America/Detroit:20270110T000000
+SUMMARY:Sonimanic (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/event/
+ sonimanic-2/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/sonimanic-2/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-12-broadway-grand-rapids-six@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270112T193000
@@ -3860,6 +3803,18 @@ DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
  irm details with the venue)
 URL:https://www.ticketmaster.com/six-touring-grand-rapids-michigan-01-14-2
  027/event/080064FDC7ABA74D
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-14-rachel-scanlon-jan-14-16@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270114T190000
+DTEND;TZID=America/Detroit:20270114T220000
+SUMMARY:Rachel Scanlon (Jan 14–16)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1511 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1511
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-15-broadway-grand-rapids-six@gr-concerts
@@ -3954,18 +3909,6 @@ URL:https://www.ticketweb.com/event/sin-genero-no-genre-ft-the-pyramid-sch
  eme-tickets/14434604
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-01-15-rachel-scanlon-jan-15-16@gr-concerts
-DTSTAMP:20261112T120000Z
-DTSTART;TZID=America/Detroit:20270115T190000
-DTEND;TZID=America/Detroit:20270115T220000
-SUMMARY:Rachel Scanlon (Jan 15–16)
-LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
- ebob.com/drgrins/comedian/index.html?id=1511 (confirm details with the ve
- nue)
-URL:https://www.thebob.com/drgrins/comedian/index.html?id=1511
-END:VEVENT
-BEGIN:VEVENT
 UID:2027-01-15-mark-lavengood-band-tickets-on-sale-nov-13-9-am@gr-concerts
 DTSTAMP:20261112T120000Z
 DTSTART;TZID=America/Detroit:20270115T190000
@@ -3976,6 +3919,17 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.themidtowngr.c
  om/shows-events/detail/Mark-Lavengood-Band (confirm details with the venu
  e)
 URL:https://www.themidtowngr.com/shows-events/detail/Mark-Lavengood-Band
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-15-sushi-roll-131-sportsbar-lounge@gr-concerts
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270115T210000
+DTEND;TZID=America/Detroit:20270116T000000
+SUMMARY:Sushi Roll (131 Sportsbar & Lounge)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Pop / Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/
+ event/sushi-roll-3/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/sushi-roll-3/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-16-broadway-grand-rapids-six@gr-concerts
@@ -4116,6 +4070,18 @@ URL:https://www.ticketmaster.com/six-touring-grand-rapids-michigan-01-17-2
  027/event/080064FDC7BCA768
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-17-zion-lion-reggae-pool-party-free-all-ages-49rml5@gr-concert
+ s
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270117T150000
+DTEND;TZID=America/Detroit:20270117T180000
+SUMMARY:Zion Lion – Reggae Pool Party (free\, all ages\; Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Reggae\, 3:00 PM. Tickets/info: https://gunlakecasino.com/even
+ t/zion-lion/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/zion-lion/
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-18-jon-spencer@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270118T190000
@@ -4201,6 +4167,17 @@ DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://www.ticketweb.com/
  h the venue)
 URL:https://www.ticketweb.com/event/the-deltaz-tip-top-deluxe-bar-tickets/
  14355574
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-22-echoes-of-pink-floyd-free-wawye-oasis@gr-concerts
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270122T200000
+DTEND;TZID=America/Detroit:20270122T230000
+SUMMARY:Echoes of Pink Floyd (free\; Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com/eve
+ nt/echoes-of-pink-floyd-2/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/echoes-of-pink-floyd-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-23-natalie-cuomo@gr-concerts
@@ -4639,6 +4616,18 @@ DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
  s with the venue)
 URL:https://calvin.edu/events/calvin-theatre-company-lab-series-evening-io
  nesco-1801873800
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-05-the-insiders-tom-petty-tribute-free-21-waw-144j27@gr-concer
+ ts
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270205T200000
+DTEND;TZID=America/Detroit:20270205T230000
+SUMMARY:The Insiders – Tom Petty Tribute (free\, 21+\; Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com/eve
+ nt/the_insiders_2/ (confirm details with the venue)
+URL:https://gunlakecasino.com/event/the_insiders_2/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-06-pop-scholars-improv-comedy-feb-6@gr-concerts
@@ -6069,6 +6058,21 @@ DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/school
 URL:https://www.grcc.edu/schools-departments/music/ensembles
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-02-calvin-theatre-company-spring-musical-apr-1vmh4s@gr-concert
+ s
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270402T193000
+DTEND;TZID=America/Detroit:20270402T223000
+SUMMARY:Calvin Theatre Company: Spring Musical (Apr 2–10\; title TBA Jan 1
+ )
+LOCATION:Gezon Auditorium (Calvin University)\, Grand Rapids\, MI
+DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://calvin.edu/events/cal
+ vin-theatre-company-spring-musical-1806708600 (confirm details with the v
+ enue)
+URL:https://calvin.edu/events/calvin-theatre-company-spring-musical-180670
+ 8600
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-03-justin-willman-one-for-the-ages@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270403T190000
@@ -6618,6 +6622,19 @@ DESCRIPTION:Choral\, 7:30 PM. Tickets/info: https://calendar.hope.edu/even
 URL:https://calendar.hope.edu/event/chanticleer
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-21-chamber-music-recital-free-collaborative-m-1pbmit@gr-concer
+ ts
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270421T193000
+DTEND;TZID=America/Detroit:20270421T223000
+SUMMARY:Chamber Music Recital (free\; Collaborative Musicianship students\
+ , Apr 21)
+LOCATION:Calvin University Chapel\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://calvin.edu/events/c
+ hamber-music-recital-1808350200 (confirm details with the venue)
+URL:https://calvin.edu/events/chamber-music-recital-1808350200
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-22-jeff-dunham-inappropriate-contact@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270422T190000
@@ -6776,6 +6793,17 @@ LOCATION:Calvin University Chapel\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://calvin.edu/events/s
  ymphonic-band-concert-1808868600 (confirm details with the venue)
 URL:https://calvin.edu/events/symphonic-band-concert-1808868600
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-28-new-music-from-calvin-free-student-composers@gr-concerts
+DTSTAMP:20261113T120000Z
+DTSTART;TZID=America/Detroit:20270428T190000
+DTEND;TZID=America/Detroit:20270428T220000
+SUMMARY:New Music from Calvin (free\; student composers)
+LOCATION:Calvin University Chapel\, Grand Rapids\, MI
+DESCRIPTION:Classical\, 7:00 PM. Tickets/info: https://calvin.edu/events/n
+ ew-music-calvin-1808953200 (confirm details with the venue)
+URL:https://calvin.edu/events/new-music-calvin-1808953200
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-30-opera-grand-rapids-carmen-apr-30-may-1@gr-concerts
