@@ -86,17 +86,59 @@
     }, true);
   };
 
+  /* Alert sign-up events. start = first real tap/click (pointerdown) or keypress (keydown) in the
+     email box, once per page load. Focus alone does not count: link scanners and preview bots focus
+     fields without a person there. submit = the form was submitted to Buttondown (the person still
+     has to confirm by email; confirmed counts live in Buttondown). The old email-signup path is
+     sent too so week-over-week numbers stay comparable; remove it one week after this ships. */
+  var signupEmailBox = function (t) {
+    return t && t.type === 'email' && t.closest && t.closest('.signup form') ? t : null;
+  };
+  var bindSignupEvents = function (doc, send, page) {
+    var started = false;
+    var start = function (ev) {
+      try {
+        if (started || !signupEmailBox(ev && ev.target)) return;
+        started = true;
+        send('tap/' + page + '/email-signup-start/' + page, 'Email signup started (' + page + ')');
+      } catch (e) {}
+    };
+    doc.addEventListener('pointerdown', start, true);
+    doc.addEventListener('keydown', start, true);
+    doc.addEventListener('submit', function (ev) {
+      try {
+        var f = ev && ev.target;
+        if (!f || !f.closest || !f.closest('.signup') || !f.querySelector('input[type=email]')) return;
+        send('tap/' + page + '/email-signup-submit/' + page, 'Email signup submitted (' + page + ')');
+        send('tap/' + page + '/email-signup/' + page, 'Email signup (' + page + ')'); /* legacy name, one week */
+      } catch (e) {}
+    }, true);
+  };
+
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
       slug: slug,
       filterPath: filterPath,
       controlValue: controlValue,
       bindFilterEvents: bindFilterEvents,
+      bindSignupEvents: bindSignupEvents,
       FILTER_CONTROLS: FILTER_CONTROLS,
       SEARCH_DEBOUNCE_MS: SEARCH_DEBOUNCE_MS
     };
   }
 
+  /* Node unit tests load this file for the helpers above; stop before browser-only code. */
+  if (typeof document === 'undefined') return;
+
+  /* QA hook, staging only and opt-in: with ?grhdebug=1 the sign-up events are recorded locally
+     (window.grhStagingEvents + console.debug) so they can be checked. Nothing is sent. */
+  if (location.hostname === "kjt8bhsyh6-sketch.github.io" && /[?&]grhdebug=1(&|$)/.test(location.search || '')) {
+    try {
+      var stagingPage = (location.pathname.split('/').pop() || 'index.html').replace(/\.html$/, '') || 'index';
+      var stagingLog = window.grhStagingEvents = [];
+      bindSignupEvents(document, function (path) { stagingLog.push(path); try { console.debug('[grh] staging event (not sent)', path); } catch (e) {} }, stagingPage);
+    } catch (e) {}
+  }
   /* Staging copy on GitHub Pages must not send analytics or click logs. */
   if (location.hostname === "kjt8bhsyh6-sketch.github.io") return;
   /* Cloudflare Web Analytics site token (public, safe to commit). Empty = beacon off.
@@ -194,14 +236,6 @@
     try { var a = ev.target && ev.target.closest && ev.target.closest('a[href]'); if (a && /^https?:/.test(a.href)) clickLog(a); } catch (e) {}
   }, true);
 
-  /* alert sign-up: start = first focus on the email field, complete = form submitted */
-  var started = {};
-  document.addEventListener('focusin', function (ev) {
-    try { var f = ev.target && ev.target.closest && ev.target.closest('.signup form'); if (f && ev.target.type === 'email' && !started[page]) { started[page] = 1; send('tap/' + page + '/email-signup-start/' + page, 'Email signup started (' + page + ')'); } } catch (e) {}
-  }, true);
-  document.addEventListener('submit', function (ev) {
-    try { var f = ev.target; if (f && f.closest && f.closest('.signup') && f.querySelector('input[type=email]')) send('tap/' + page + '/email-signup/' + page, 'Email signup (' + page + ')'); } catch (e) {}
-  }, true);
-
+  bindSignupEvents(document, send, page);
   bindFilterEvents(document, send, null);
 })();

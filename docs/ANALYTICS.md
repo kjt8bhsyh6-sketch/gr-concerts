@@ -2,7 +2,7 @@
 
 Two free, cookieless tools. No personal data, no cookies, no ad trackers.
 
-On the GitHub Pages test host, `track.js` returns immediately and sends none of these events.
+On the GitHub Pages test host, `track.js` returns immediately and sends none of these events. QA hook: add `?grhdebug=1` on the test host and the alert sign-up events are only recorded locally in `window.grhStagingEvents` (and `console.debug('[grh] staging event (not sent)', …)`); nothing leaves the browser.
 
 ## 1. GoatCounter — pageviews + custom events
 Dashboard: https://grhappenings.goatcounter.com (events show up as paths in the main list; filter by prefix).
@@ -18,8 +18,9 @@ Loaded on every page via `count.js`; events come from `track.js` (one delegated 
 | `download/<page>/ics/<file>` | Any other `.ics` / webcal link clicked |
 | `tap/<page>/share/<show>` | Share button |
 | `tap/<page>/going\|interested/<show>` | Marked a show |
-| `tap/<page>/email-signup-start/<page>` | Focused the alert email box (once per page load) |
-| `tap/<page>/email-signup/<page>` | Submitted the alert sign-up form (Buttondown confirms by email; confirmed counts are in Buttondown) |
+| `tap/<page>/email-signup-start/<page>` | First real tap/click (pointerdown) or keypress (keydown) in the alert email box, once per page load. Focus alone does not count (changed Nov 16, 2026: Facebook's link scanners were focusing the box and inflating starts). |
+| `tap/<page>/email-signup-submit/<page>` | Submitted the alert sign-up form to Buttondown. Not a confirmed subscriber: Buttondown emails a confirm link, and confirmed counts are only in Buttondown. |
+| `tap/<page>/email-signup/<page>` | **Legacy** name for the same submit, sent alongside `email-signup-submit` for one week after release so week-over-week numbers line up; then removed. |
 | `outbound/<page>/<host>` | Any other external link |
 | `campaign/<source>/<medium>/<campaign>` | Arrived with `utm_source`/`ref`/`source` (once per session) |
 | `referrer/<host>` | Arrived from another site (once per session) |
