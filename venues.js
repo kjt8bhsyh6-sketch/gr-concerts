@@ -48,6 +48,8 @@ const VENUES = {
   "Holland Community Theatre": "Holland Community Theatre, 50 W 9th St, Holland, MI 49423",
   "Saugatuck Center for the Arts": "Saugatuck Center for the Arts, 400 Culver St, Saugatuck, MI 49453",
   "Saugatuck Woman's Club": "Saugatuck Woman's Club, 303 Butler St, Saugatuck, MI 49453",
+  "Saugatuck Woman's Club, 303 Butler St, Saugatuck": "Saugatuck Woman's Club, 303 Butler St, Saugatuck, MI 49453",
+  "Crane Orchards, 6080 124th Ave, Fennville": "Crane Orchards, 6080 124th Ave, Fennville, MI 49408",
   "Coral Gables (Saugatuck)": "Coral Gables, 220 Water St, Saugatuck, MI 49453",
   "Coral Gables, 220 Water St, Saugatuck": "Coral Gables, 220 Water St, Saugatuck, MI 49453",
   "Gun Lake Casino Resort": "Gun Lake Casino Resort, 1123 129th Ave, Wayland, MI 49348",

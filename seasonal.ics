@@ -94,6 +94,20 @@ URL:https://saugatuck.com/event/turkey-trot-2025/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-21-festival-of-trees-saugatuck-woman-s-club@gr-seasonal
+DTSTAMP:20261117T120000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261129
+SUMMARY:Festival of Trees (Saugatuck Woman's Club)
+LOCATION:Saugatuck Woman's Club\, 303 Butler St\, Saugatuck\, Grand Rapids
+ \, MI
+DESCRIPTION:Holiday Exhibit. Nov 21–24\, 27 & 28 · 10 AM–4 PM · small deco
+ rated trees on display and for sale. Info: https://saugatuckwomensclub.or
+ g/series/festival-of-trees/ (confirm details with the organizer)
+URL:https://saugatuckwomensclub.org/series/festival-of-trees/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-23-enlighten-at-meijer-gardens@gr-seasonal
 DTSTAMP:20261019T120000Z
 DTSTART;VALUE=DATE:20261123
@@ -176,6 +190,35 @@ DESCRIPTION:Holiday Lights. Fri Nov 27 · 6–8 PM · tree lighting\, music &
  holiday treats. Info: https://saugatuck.com/event/saugatuck-christmas-tre
  e-lighting/ (confirm details with the organizer)
 URL:https://saugatuck.com/event/saugatuck-christmas-tree-lighting/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-crane-orchards-holiday-light-show@gr-seasonal
+DTSTAMP:20261117T120000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261228
+SUMMARY:Crane Orchards Holiday Light Show
+LOCATION:Crane Orchards\, 6080 124th Ave\, Fennville\, Grand Rapids\, MI
+DESCRIPTION:Holiday Lights. Nov 27–Dec 27 · Wed & Thu 6–8 PM\, Fri & Sat 6
+ –10 PM\, Sun 6–8 PM · closed Mon & Tue · drive-through\, pay at the gate.
+  Info: https://www.craneorchards.com/lightshow (confirm details with the 
+ organizer)
+URL:https://www.craneorchards.com/lightshow
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-saugatuck-douglas-art-club-holiday-market-with-sw@gr-season
+ al
+DTSTAMP:20261117T120000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261129
+SUMMARY:Saugatuck Douglas Art Club Holiday Market (with SWC Bake Sale)
+LOCATION:Saugatuck Woman's Club\, 303 Butler St\, Saugatuck\, Grand Rapids
+ \, MI
+DESCRIPTION:Holiday Market. Fri–Sat Nov 27–28 · 10 AM–3 PM · member art\, 
+ plus the Woman's Club bake sale. Info: https://saugatuckwomensclub.org/ev
+ ent/swc-bake-sale-2/2026-11-27/ (confirm details with the organizer)
+URL:https://saugatuckwomensclub.org/event/swc-bake-sale-2/2026-11-27/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
