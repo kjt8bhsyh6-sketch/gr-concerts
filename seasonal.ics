@@ -499,6 +499,20 @@ URL:https://www.ticketweb.com/event/last-chance-holiday-market-the-pyramid
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-31-coral-gables-nye-celebration-with-fireworks@gr-seasonal
+DTSTAMP:20261117T120000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Coral Gables NYE Celebration with Fireworks
+LOCATION:Coral Gables\, 220 Water St\, Saugatuck\, Grand Rapids\, MI
+DESCRIPTION:Holiday Celebration. Thu Dec 31 · 9:00 PM–1:00 AM. Info: https
+ ://saugatuck.com/event/coral-gables-nye-celebration-with-fireworks/ (conf
+ irm details with the organizer)
+URL:https://saugatuck.com/event/coral-gables-nye-celebration-with-firework
+ s/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-23-2027-orchid-show-at-meijer-gardens-grand-valley-o@gr-season
  al
 DTSTAMP:20261112T120000Z

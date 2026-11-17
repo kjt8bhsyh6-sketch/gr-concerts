@@ -49,6 +49,7 @@ const VENUES = {
   "Saugatuck Center for the Arts": "Saugatuck Center for the Arts, 400 Culver St, Saugatuck, MI 49453",
   "Saugatuck Woman's Club": "Saugatuck Woman's Club, 303 Butler St, Saugatuck, MI 49453",
   "Coral Gables (Saugatuck)": "Coral Gables, 220 Water St, Saugatuck, MI 49453",
+  "Coral Gables, 220 Water St, Saugatuck": "Coral Gables, 220 Water St, Saugatuck, MI 49453",
   "Gun Lake Casino Resort": "Gun Lake Casino Resort, 1123 129th Ave, Wayland, MI 49348",
   "FireKeepers Casino Event Center": "FireKeepers Casino Hotel, 11177 E Michigan Ave, Battle Creek, MI 49014",
   "Soaring Eagle Casino & Resort": "Soaring Eagle Casino & Resort, 6800 Soaring Eagle Blvd, Mt. Pleasant, MI 48858",
