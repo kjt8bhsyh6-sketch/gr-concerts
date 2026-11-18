@@ -37,19 +37,6 @@ URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
  vent/afebfa7b-523b-4699-ba65-807cfd985e1a
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-17-grcc-woodwind-brass-area-recital-free@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261117T193000
-DTEND;TZID=America/Detroit:20261117T223000
-SUMMARY:GRCC Woodwind & Brass Area Recital (free)
-LOCATION:GRCC Albert P. Smith Music Center\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.grcc.edu/events
- /grcc-music-presents-woodwind-brass-area-recital (confirm details with th
- e venue)
-URL:https://www.grcc.edu/events/grcc-music-presents-woodwind-brass-area-re
- cital
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-18-bad-momz-of-comedy@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261118T200000
@@ -78,11 +65,11 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-18-token-i-m-leaving-soon-tour@gr-concerts
 DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261118T200000
-DTEND;TZID=America/Detroit:20261118T230000
+DTSTART;TZID=America/Detroit:20261118T193000
+DTEND;TZID=America/Detroit:20261118T223000
 SUMMARY:Token – I'm Leaving Soon Tour
 LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Hip-Hop\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
+DESCRIPTION:Hip-Hop\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p
  /69885022/token-im-leaving-soon-tour-grand-rapids-the-intersection-the-st
  ache (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/69885022/token-im-leaving-soon-tour-gran
@@ -199,6 +186,17 @@ DESCRIPTION:Comedy\, 8:30 PM. Tickets/info: https://www.crowdwork.com/e/li
  enue)
 URL:https://www.crowdwork.com/e/live-tcp-role-play-play-roll-after-the-dis
  patch
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-19-max-meisel-the-l-a-sober-tour@gr-concerts
+DTSTAMP:20261118T120000Z
+DTSTART;TZID=America/Detroit:20261119T200000
+DTEND;TZID=America/Detroit:20261119T230000
+SUMMARY:Max Meisel – The L.A. Sober Tour
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.thebob.com/drgrins
+ /comedian/index.html?id=1527 (confirm details with the venue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1527
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-20-gr-symphony-messiah-by-candlelight@gr-concerts
@@ -3222,6 +3220,18 @@ URL:https://www.ticketmaster.com/six-touring-grand-rapids-michigan-01-14-2
  027/event/080064FDC7ABA74D
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-14-rachel-scanlon-jan-14-16@gr-concerts
+DTSTAMP:20261112T120000Z
+DTSTART;TZID=America/Detroit:20270114T190000
+DTEND;TZID=America/Detroit:20270114T220000
+SUMMARY:Rachel Scanlon (Jan 14–16)
+LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
+ ebob.com/drgrins/comedian/index.html?id=1511 (confirm details with the ve
+ nue)
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1511
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-15-broadway-grand-rapids-six@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270115T193000
@@ -3312,18 +3322,6 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
   details with the venue)
 URL:https://www.ticketweb.com/event/sin-genero-no-genre-ft-the-pyramid-sch
  eme-tickets/14434604
-END:VEVENT
-BEGIN:VEVENT
-UID:2027-01-15-rachel-scanlon-jan-15-16@gr-concerts
-DTSTAMP:20261112T120000Z
-DTSTART;TZID=America/Detroit:20270115T190000
-DTEND;TZID=America/Detroit:20270115T220000
-SUMMARY:Rachel Scanlon (Jan 15–16)
-LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
- ebob.com/drgrins/comedian/index.html?id=1511 (confirm details with the ve
- nue)
-URL:https://www.thebob.com/drgrins/comedian/index.html?id=1511
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-15-mark-lavengood-band-tickets-on-sale-nov-13-9-am@gr-concerts
@@ -3472,6 +3470,17 @@ DESCRIPTION:Electronic\, 9:00 PM. Tickets/info: https://www.etix.com/ticke
  m details with the venue)
 URL:https://www.etix.com/ticket/p/47084190/dirt-monkey-grand-rapids-the-in
  tersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-16-river-city-improv-jan-16@gr-concerts
+DTSTAMP:20261118T120000Z
+DTSTART;TZID=America/Detroit:20270116T190000
+DTEND;TZID=America/Detroit:20270116T220000
+SUMMARY:River City Improv (Jan 16)
+LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.themidtowngr.com/s
+ hows-events/detail/River-City-Improv (confirm details with the venue)
+URL:https://www.themidtowngr.com/shows-events/detail/River-City-Improv
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-17-broadway-grand-rapids-six@gr-concerts
@@ -4137,6 +4146,30 @@ URL:https://www.etix.com/ticket/p/79386062/smells-like-nirvana-grand-rapid
  s-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-06-party-iconic-presents-heated-rivalry-night-18@gr-concerts
+DTSTAMP:20261118T120000Z
+DTSTART;TZID=America/Detroit:20270206T200000
+DTEND;TZID=America/Detroit:20270206T230000
+SUMMARY:party iconic. Presents: HEATED RIVALRY NIGHT (18+)
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://www.etix.com/tick
+ et/p/93344001/party-iconicpresentsheated-rivalry-night-grand-rapids-the-i
+ ntersection-elevation (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/93344001/party-iconicpresentsheated-riva
+ lry-night-grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-06-river-city-improv-feb-6@gr-concerts
+DTSTAMP:20261118T120000Z
+DTSTART;TZID=America/Detroit:20270206T190000
+DTEND;TZID=America/Detroit:20270206T220000
+SUMMARY:River City Improv (Feb 6)
+LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.themidtowngr.com/s
+ hows-events/detail/River-City-Improv (confirm details with the venue)
+URL:https://www.themidtowngr.com/shows-events/detail/River-City-Improv
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-07-all-things-equal-the-life-trials-of-ruth-b-hidbwa@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -4540,9 +4573,9 @@ DTEND;TZID=America/Detroit:20270218T220000
 SUMMARY:Alex Falcone (Feb 18–20)
 LOCATION:Dr. Grins (at The B.O.B.)\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
- ebob.com/drgrins/comedian/index.html?id=1522 (confirm details with the ve
+ ebob.com/drgrins/comedian/index.html?id=1520 (confirm details with the ve
  nue)
-URL:https://www.thebob.com/drgrins/comedian/index.html?id=1522
+URL:https://www.thebob.com/drgrins/comedian/index.html?id=1520
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-19-dear-evan-hansen-civic-theatre-production-6vbcfk@gr-concert
@@ -5103,6 +5136,17 @@ DESCRIPTION:Choral\, 10:30 AM. Tickets/info: https://gryouthchorus.org/eve
 URL:https://gryouthchorus.org/event/free-community-concert-2/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-06-river-city-improv-mar-6@gr-concerts
+DTSTAMP:20261118T120000Z
+DTSTART;TZID=America/Detroit:20270306T190000
+DTEND;TZID=America/Detroit:20270306T220000
+SUMMARY:River City Improv (Mar 6)
+LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.themidtowngr.com/s
+ hows-events/detail/River-City-Improv (confirm details with the venue)
+URL:https://www.themidtowngr.com/shows-events/detail/River-City-Improv
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-07-tobymac-hits-deep-tour-2027-with-jeremy-ca-nt4z77@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -5382,6 +5426,19 @@ DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p
  details with the venue)
 URL:https://www.etix.com/ticket/p/70657380/dylan-marlowe-grand-rapids-the-
  intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-20-skid-row@gr-concerts
+DTSTAMP:20261118T120000Z
+DTSTART;TZID=America/Detroit:20270320T210000
+DTEND;TZID=America/Detroit:20270321T000000
+SUMMARY:Skid Row
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/ski
+ d-row-new-buffalo-michigan-03-20-2027/event/0400656592833D68 (confirm det
+ ails with the venue)
+URL:https://www.ticketmaster.com/skid-row-new-buffalo-michigan-03-20-2027/
+ event/0400656592833D68
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-21-blue-water-ramblers-acoustic-stew-music-guild@gr-concerts
@@ -6122,6 +6179,17 @@ URL:https://www.ticketweb.com/event/cursive-happy-hollow-the-pyramid-schem
  e-tickets/14435764
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-17-river-city-improv-apr-17@gr-concerts
+DTSTAMP:20261118T120000Z
+DTSTART;TZID=America/Detroit:20270417T190000
+DTEND;TZID=America/Detroit:20270417T220000
+SUMMARY:River City Improv (Apr 17)
+LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.themidtowngr.com/s
+ hows-events/detail/River-City-Improv (confirm details with the venue)
+URL:https://www.themidtowngr.com/shows-events/detail/River-City-Improv
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-18-ruth-max-bloomquist-acoustic-stew-music-guild@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20270418T150000
@@ -6539,6 +6607,17 @@ URL:https://www.devosperformancehall.com/events/2027/gr-symphony-presents-
  the-music-of-billy-joel---the-piano-mans-greatest-hits
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-05-15-river-city-improv-may-15@gr-concerts
+DTSTAMP:20261118T120000Z
+DTSTART;TZID=America/Detroit:20270515T190000
+DTEND;TZID=America/Detroit:20270515T220000
+SUMMARY:River City Improv (May 15)
+LOCATION:Midtown GR (at Studio Park)\, Grand Rapids\, MI
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.themidtowngr.com/s
+ hows-events/detail/River-City-Improv (confirm details with the venue)
+URL:https://www.themidtowngr.com/shows-events/detail/River-City-Improv
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-05-16-grand-rapids-youth-symphony-classical-orch-jj3p90@gr-concer
  ts
 DTSTAMP:20261023T120000Z
@@ -6695,6 +6774,19 @@ DESCRIPTION:Reggae\, 6:30 PM. Tickets/info: https://www.ticketmaster.com/k
  /080064BBAA797AE2 (confirm details with the venue)
 URL:https://www.ticketmaster.com/kona-big-wave-presents-stick-figure-grand
  -rapids-michigan-06-11-2027/event/080064BBAA797AE2
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-06-11-los-lonely-boys@gr-concerts
+DTSTAMP:20261118T120000Z
+DTSTART;TZID=America/Detroit:20270611T210000
+DTEND;TZID=America/Detroit:20270612T000000
+SUMMARY:Los Lonely Boys
+LOCATION:Four Winds Silver Creek Event Center\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/los
+ -lonely-boys-new-buffalo-michigan-06-11-2027/event/0400656ABC8B93D4 (conf
+ irm details with the venue)
+URL:https://www.ticketmaster.com/los-lonely-boys-new-buffalo-michigan-06-1
+ 1-2027/event/0400656ABC8B93D4
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-06-12-supersonic-north-america-s-tribute-to-oasi-1frkuw@gr-concer

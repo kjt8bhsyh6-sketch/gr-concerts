@@ -1,17 +1,7 @@
 {
-  "generated": "2026-11-17",
-  "count": 192,
+  "generated": "2026-11-18",
+  "count": 187,
   "pending": [
-    {
-      "artist": "Bad Momz of Comedy",
-      "week": "this",
-      "dates": [
-        "2026-11-18"
-      ],
-      "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/event/bad-momz-of-comedy/1765",
-      "added": "2026-10-19"
-    },
     {
       "artist": "Midwinter – Haunt Me Forever Tour (with What Lies Below, Coldstate, Dirtywork)",
       "week": "this",
@@ -21,17 +11,6 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/midwinter-haunt-me-forever-tour-the-pyramid-scheme-tickets/15019913",
       "added": "2026-10-20"
-    },
-    {
-      "artist": "O Christmas Tea: A British Comedy",
-      "week": "this",
-      "dates": [
-        "2026-11-19",
-        "2026-11-19"
-      ],
-      "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/event/o-christmas-tea-a-british-comedy/1809",
-      "added": "2026-10-19"
     },
     {
       "artist": "Ray Volpe – Volpetron Eternal Tour (18+)",
@@ -1055,6 +1034,16 @@
       "added": "2026-10-28"
     },
     {
+      "artist": "Rachel Scanlon (Jan 14–16)",
+      "week": "later",
+      "dates": [
+        "2027-01-14"
+      ],
+      "venue": "Dr. Grins (at The B.O.B.)",
+      "link": "https://www.thebob.com/drgrins/comedian/index.html?id=1511",
+      "added": "2026-11-12"
+    },
+    {
       "artist": "House Party: A Sweaty Love-Letter To The 2010s Rager",
       "week": "later",
       "dates": [
@@ -1082,16 +1071,6 @@
       ],
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/sin-genero-no-genre-ft-the-pyramid-scheme-tickets/14434604",
-      "added": "2026-11-12"
-    },
-    {
-      "artist": "Rachel Scanlon (Jan 15–16)",
-      "week": "later",
-      "dates": [
-        "2027-01-15"
-      ],
-      "venue": "Dr. Grins (at The B.O.B.)",
-      "link": "https://www.thebob.com/drgrins/comedian/index.html?id=1511",
       "added": "2026-11-12"
     },
     {
@@ -1145,14 +1124,14 @@
       "added": "2026-11-12"
     },
     {
-      "artist": "Hempy Takeover: SCA Creative Fellows (Heather Winia & Alexis Cameron Star)",
+      "artist": "River City Improv (Jan 16)",
       "week": "later",
       "dates": [
-        "2027-01-17"
+        "2027-01-16"
       ],
-      "venue": "Saugatuck Center for the Arts",
-      "link": "https://sc4a.org/event/hempy-takeover-sca-creative-fellows-performance-2027/",
-      "added": "2026-11-17"
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
+      "added": "2026-11-18"
     },
     {
       "artist": "Shapel Lacey (Jan 22)",
@@ -1295,16 +1274,6 @@
       "added": "2026-11-02"
     },
     {
-      "artist": "Christopher Goodpasture – Hempy Keyboard Series",
-      "week": "later",
-      "dates": [
-        "2027-01-31"
-      ],
-      "venue": "Saugatuck Center for the Arts",
-      "link": "https://sc4a.org/event/hempy-christopher-goodpasture/",
-      "added": "2026-11-17"
-    },
-    {
       "artist": "Winter Nights: Grand Rapids Ballet",
       "week": "later",
       "dates": [
@@ -1333,6 +1302,26 @@
       "venue": "The Stache (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/79386062/smells-like-nirvana-grand-rapids-the-intersection-the-stache",
       "added": "2026-11-12"
+    },
+    {
+      "artist": "party iconic. Presents: HEATED RIVALRY NIGHT (18+)",
+      "week": "later",
+      "dates": [
+        "2027-02-06"
+      ],
+      "venue": "Elevation (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/93344001/party-iconicpresentsheated-rivalry-night-grand-rapids-the-intersection-elevation",
+      "added": "2026-11-18"
+    },
+    {
+      "artist": "River City Improv (Feb 6)",
+      "week": "later",
+      "dates": [
+        "2027-02-06"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
+      "added": "2026-11-18"
     },
     {
       "artist": "All Things Equal – The Life & Trials of Ruth Bader Ginsburg",
@@ -1435,16 +1424,6 @@
       "added": "2026-11-12"
     },
     {
-      "artist": "Emiko Edwards – Hempy Keyboard Series",
-      "week": "later",
-      "dates": [
-        "2027-02-14"
-      ],
-      "venue": "Saugatuck Center for the Arts",
-      "link": "https://sc4a.org/event/hempy-emiko-edwards/",
-      "added": "2026-11-17"
-    },
-    {
       "artist": "Riley! (with Super Sometimes, Leisure Hour, Shoreline)",
       "week": "later",
       "dates": [
@@ -1545,16 +1524,6 @@
       "added": "2026-11-02"
     },
     {
-      "artist": "Peter Bergin – Hempy Keyboard Series",
-      "week": "later",
-      "dates": [
-        "2027-02-28"
-      ],
-      "venue": "Saugatuck Center for the Arts",
-      "link": "https://sc4a.org/event/hempy-peter-bergin/",
-      "added": "2026-11-17"
-    },
-    {
       "artist": "Calvin Symphonic Band & Rockford Community Band",
       "week": "later",
       "dates": [
@@ -1605,16 +1574,6 @@
       "added": "2026-10-19"
     },
     {
-      "artist": "Josh Turner (21+)",
-      "week": "later",
-      "dates": [
-        "2027-03-05"
-      ],
-      "venue": "FireKeepers Casino Event Center",
-      "link": "https://www.etix.com/ticket/p/80158265/josh-turner-battle-creek-firekeepers-casino-hotel",
-      "added": "2026-11-17"
-    },
-    {
       "artist": "Matt Schuster – Acoustic Nights Tour",
       "week": "later",
       "dates": [
@@ -1635,6 +1594,16 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "River City Improv (Mar 6)",
+      "week": "later",
+      "dates": [
+        "2027-03-06"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
+      "added": "2026-11-18"
+    },
+    {
       "artist": "August the Band, with Dave's at 7",
       "week": "later",
       "dates": [
@@ -1653,16 +1622,6 @@
       "venue": "The Stache (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/77368943/millington-plus-potionseller-grand-rapids-the-intersection-the-stache",
       "added": "2026-11-12"
-    },
-    {
-      "artist": "Leah Kang – Hempy Keyboard Series",
-      "week": "later",
-      "dates": [
-        "2027-03-14"
-      ],
-      "venue": "Saugatuck Center for the Arts",
-      "link": "https://sc4a.org/event/hempy-leah-kang/",
-      "added": "2026-11-17"
     },
     {
       "artist": "Sullivan King – Anthems of the Afterlife Tour (with Tynan, Benda) (18+)",
@@ -1816,14 +1775,14 @@
       "added": "2026-10-23"
     },
     {
-      "artist": "Cursive – Happy Hollow 20th Anniversary (with The Casket Lottery)",
+      "artist": "River City Improv (Apr 17)",
       "week": "later",
       "dates": [
         "2027-04-17"
       ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/cursive-happy-hollow-the-pyramid-scheme-tickets/14435764",
-      "added": "2026-11-17"
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
+      "added": "2026-11-18"
     },
     {
       "artist": "Gabby Bryan (Apr 22–24)",
@@ -1898,6 +1857,16 @@
       "added": "2026-10-23"
     },
     {
+      "artist": "River City Improv (May 15)",
+      "week": "later",
+      "dates": [
+        "2027-05-15"
+      ],
+      "venue": "Midtown GR (at Studio Park)",
+      "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
+      "added": "2026-11-18"
+    },
+    {
       "artist": "Michael Blaustein – Bad Bad Boy",
       "week": "later",
       "dates": [
@@ -1906,26 +1875,6 @@
       "venue": "DeVos Performance Hall",
       "link": "https://www.ticketmaster.com/michael-blaustein-bad-bad-boy-grand-rapids-michigan-05-21-2027/event/08006545D249597E",
       "added": "2026-10-23"
-    },
-    {
-      "artist": "Ty Segall",
-      "week": "later",
-      "dates": [
-        "2027-05-30"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/ty-segall-the-pyramid-scheme-tickets/14416204",
-      "added": "2026-11-17"
-    },
-    {
-      "artist": "Supersonic – North America's Tribute to Oasis (with Scotia Rose)",
-      "week": "later",
-      "dates": [
-        "2027-06-12"
-      ],
-      "venue": "Elevation (at The Intersection)",
-      "link": "https://www.etix.com/ticket/p/89966685/supersonic-north-americas-tribute-to-oasis-grand-rapids-the-intersection-elevation",
-      "added": "2026-11-17"
     }
   ]
 }
