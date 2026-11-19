@@ -5147,6 +5147,17 @@ URL:https://www.etix.com/ticket/p/82110694/matt-schuster-acoustic-nights-t
  our-grand-rapids-the-intersection-the-stache
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-03-06-phoebe-bridgers-the-lost-tour-with-paper-wings@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270306T193000
+DTEND;TZID=America/Detroit:20270306T223000
+SUMMARY:Phoebe Bridgers – The Lost Tour (with Paper Wings)
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Indie\, 7:30 PM. Tickets/info: https://www.vanandelarena.com/e
+ vents/2027/phoebe-bridgers (confirm details with the venue)
+URL:https://www.vanandelarena.com/events/2027/phoebe-bridgers
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-03-06-mega-80-s-the-ultimate-80-s-retro-party-mar-6@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270306T210000
