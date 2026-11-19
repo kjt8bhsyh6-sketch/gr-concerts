@@ -97,6 +97,17 @@ URL:https://www.etix.com/ticket/p/55212461/ray-volpe-volpetron-eternal-tou
  r-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-19-steve-hilger-blues-trio@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261119T170000
+DTEND;TZID=America/Detroit:20261119T200000
+SUMMARY:Steve Hilger Blues Trio
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Blues\, 5:00 PM. Tickets/info: https://www.horrocksmarket.com/
+ events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-19-live-tcp-the-dispatch-and-friends-comedy-s-uqi7og@gr-concer
  ts
 DTSTAMP:20261022T120000Z
@@ -236,6 +247,17 @@ DESCRIPTION:Reggae\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p/
  he venue)
 URL:https://www.etix.com/ticket/p/61533599/tropidelic-grand-rapids-the-int
  ersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-cat-daddy-jazz-trio@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261120T170000
+DTEND;TZID=America/Detroit:20261120T200000
+SUMMARY:Cat Daddy Jazz Trio
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://www.horrocksmarket.com/e
+ vents (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-20-dom-flemons-wsg-myron-elkins-solo-acoustic@gr-concerts
@@ -417,6 +439,17 @@ LOCATION:The Comedy Project\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 10:30 PM. Tickets/info: https://www.crowdwork.com/e/l
  ate-night-comedy-lab (confirm details with the venue)
 URL:https://www.crowdwork.com/e/late-night-comedy-lab
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21-candid-antics@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261121T170000
+DTEND;TZID=America/Detroit:20261121T200000
+SUMMARY:Candid Antics
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-21-choose-your-own-improv-comedy-show@gr-concerts
@@ -730,6 +763,17 @@ URL:https://www.ticketweb.com/event/koffin-kats-voodoo-glow-the-pyramid-sc
  heme-tickets/15031253
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-27-john-shea-jazz-trio@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261127T170000
+DTEND;TZID=America/Detroit:20261127T200000
+SUMMARY:John Shea Jazz Trio
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://www.horrocksmarket.com/e
+ vents (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-27-free-show-friday-the-moonrays-nov-27-no-cover@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261127T200000
@@ -835,6 +879,17 @@ DESCRIPTION:Live Music\, 7:30 PM. Tickets/info: https://www.etix.com/ticke
  n-the-stache (confirm details with the venue)
 URL:https://www.etix.com/ticket/p/71725021/enmy-damnlast-20-years-standing
  -grand-rapids-the-intersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-funky-brewster@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261128T170000
+DTEND;TZID=America/Detroit:20261128T200000
+SUMMARY:Funky Brewster
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-squeaky-clean-battle-bots-improv-comedy-sh-ysaats@gr-concer
@@ -1190,6 +1245,17 @@ URL:https://www.ticketweb.com/event/radiator-hospital-jes-kramer-the-pyram
  id-scheme-tickets/14343934
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-03-the-6-pak@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261203T170000
+DTEND;TZID=America/Detroit:20261203T200000
+SUMMARY:The 6 Pak
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-03-parade-jewish-theatre-grand-rapids-dec-3-13@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261203T193000
@@ -1262,6 +1328,17 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
   details with the venue)
 URL:https://www.ticketweb.com/event/michigander-3rd-annual-the-pyramid-sch
  eme-tickets/14319364
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-the-merry-men@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261204T170000
+DTEND;TZID=America/Detroit:20261204T200000
+SUMMARY:The Merry Men
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-04-voices-in-hope-a-church-choir-festival@gr-concerts
@@ -1831,6 +1908,17 @@ URL:https://www.ticketweb.com/event/honey-revenge-hunny-the-pyramid-scheme
  -tickets/14337304
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-10-genna-jesse@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261210T170000
+DTEND;TZID=America/Detroit:20261210T200000
+SUMMARY:Genna & Jesse
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-10-tower-of-power-holiday-hits-tour-21@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261210T200000
@@ -1906,6 +1994,17 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  (confirm details with the venue)
 URL:https://www.ticketweb.com/event/midwest-skies-presents-the-4th-the-pyr
  amid-scheme-tickets/14393174
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-11-horrocks-holiday-jamboree@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261211T160000
+DTEND;TZID=America/Detroit:20261211T190000
+SUMMARY:Horrocks Holiday Jamboree
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Holiday\, 4:00 PM. Tickets/info: https://www.horrocksmarket.co
+ m/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-11-calvin-alumni-choir-christmas-concert@gr-concerts
@@ -2005,6 +2104,17 @@ DESCRIPTION:Holiday\, 6:00 PM. Tickets/info: https://www.themidtowngr.com/
  nue)
 URL:https://www.themidtowngr.com/shows-events/detail/Love-Under-The-Mistle
  toe
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-12-the-soultry-collective@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261212T170000
+DTEND;TZID=America/Detroit:20261212T200000
+SUMMARY:The Soultry Collective
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-12-michigan-mandolin-orchestra-christmas-concert@gr-concerts
@@ -2233,6 +2343,17 @@ URL:https://www.ticketweb.com/event/kill-the-mood-the-the-pyramid-scheme-t
  ickets/15013423
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-13-red-rose-music-lab-students@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261213T150000
+DTEND;TZID=America/Detroit:20261213T180000
+SUMMARY:Red Rose Music Lab Students
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 3:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-13-scott-h-biram@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20261213T190000
@@ -2372,6 +2493,17 @@ DESCRIPTION:Holiday\, 8:45 PM. Tickets/info: https://grcmc.org/event/candl
 URL:https://grcmc.org/event/candlelight-christmas-carols-on-strings/1706
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-17-yacht-rocket@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261217T170000
+DTEND;TZID=America/Detroit:20261217T200000
+SUMMARY:Yacht Rocket
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-17-dailey-vincent-candy-canes-coal@gr-concerts
 DTSTAMP:20261102T120000Z
 DTSTART;TZID=America/Detroit:20261217T193000
@@ -2422,6 +2554,17 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  (confirm details with the venue)
 URL:https://www.ticketweb.com/event/the-american-hotel-systems-2nd-the-pyr
  amid-scheme-tickets/14393154
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-18-asamu-johnson-the-associates@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261218T170000
+DTEND;TZID=America/Detroit:20261218T200000
+SUMMARY:Asamu Johnson & the Associates
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-18-the-bootstrap-boys-winter-solstice-party-w-118xfc@gr-concer
@@ -2541,6 +2684,17 @@ DESCRIPTION:Live Music\, 7:30 PM. Tickets/info: https://www.etix.com/ticke
  ails with the venue)
 URL:https://www.etix.com/ticket/p/85818089/domestic-problems-grand-rapids-
  the-intersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-19-allendale-jazz-orchestra@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261219T170000
+DTEND;TZID=America/Detroit:20261219T200000
+SUMMARY:Allendale Jazz Orchestra
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://www.horrocksmarket.com/e
+ vents (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-19-chris-casello-trio@gr-concerts
@@ -2683,6 +2837,17 @@ DESCRIPTION:Ska\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/840
 URL:https://www.etix.com/ticket/p/84039906/mustard-plugs-annual-skaliday-s
  how-with-flatfoot-56wack-trucks-and-dance-contraption-grand-rapids-the-in
  tersection
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-26-nathan-walton-the-remedy@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261226T170000
+DTEND;TZID=America/Detroit:20261226T200000
+SUMMARY:Nathan Walton & the Remedy
+LOCATION:Horrocks Market\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
+ .com/events (confirm details with the venue)
+URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-26-sweet-dee-and-the-wild-honeys-with-bobcat-opossum@gr-concer

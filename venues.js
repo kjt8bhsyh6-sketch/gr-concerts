@@ -17,6 +17,7 @@ const VENUES = {
   "Frederik Meijer Gardens & Sculpture Park": "1000 E Beltline Ave NE, Grand Rapids, MI 49525",
   "St. Cecilia Music Center": "24 Ransom Ave NE, Grand Rapids, MI 49503",
   "Speciation Artisan Ales": "928 Wealthy St SE, Grand Rapids, MI 49506",
+  "Horrocks Market": "4455 Breton Rd SE, Kentwood, MI 49508",
   "Midtown GR (at Studio Park)": "Midtown at Studio Park, 123 Ionia Ave SW, Grand Rapids, MI 49503",
   "Calvin University Chapel": "3201 Burton St SE, Grand Rapids, MI 49546",
   "Gezon Auditorium (Calvin University)": "Spoelhof University Center, 3201 Burton St SE, Grand Rapids, MI 49546",
