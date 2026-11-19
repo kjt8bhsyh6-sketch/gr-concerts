@@ -108,6 +108,17 @@ DESCRIPTION:Blues\, 5:00 PM. Tickets/info: https://www.horrocksmarket.com/
 URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-19-open-mic-with-adam-free-21@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261119T210000
+DTEND;TZID=America/Detroit:20261120T000000
+SUMMARY:Open Mic with Adam (free\, 21+)
+LOCATION:Mulligan's Pub\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 9:00 PM. Tickets/info: https://mulliganspubgr.com/ 
+ (confirm details with the venue)
+URL:https://mulliganspubgr.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-19-live-tcp-the-dispatch-and-friends-comedy-s-uqi7og@gr-concer
  ts
 DTSTAMP:20261022T120000Z
@@ -258,6 +269,42 @@ LOCATION:Horrocks Market\, Grand Rapids\, MI
 DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://www.horrocksmarket.com/e
  vents (confirm details with the venue)
 URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-the-honeytones-vinyl-release-show@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261120T193000
+DTEND;TZID=America/Detroit:20261120T223000
+SUMMARY:The Honeytones – Vinyl-Release Show
+LOCATION:SpeakEZ Lounge\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:30 PM. Tickets/info: https://localspins.com/local-spi
+ ns-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-settin
+ g-local-spins/ (confirm details with the venue)
+URL:https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-m
+ ichigan-stars-in-an-intimate-setting-local-spins/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-after-party-band-5-cover@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261120T200000
+DTEND;TZID=America/Detroit:20261120T230000
+SUMMARY:After Party Band ($5 cover)
+LOCATION:Billy's Lounge\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://billyslounge.com/ 
+ (confirm details with the venue)
+URL:https://billyslounge.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-wake-of-existence-withhold-the-blood-maide-l6rzhl@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261120T220000
+DTEND;TZID=America/Detroit:20261121T010000
+SUMMARY:Wake of Existence\, Withhold the Blood\, Maidenless (free\, 21+)
+LOCATION:Mulligan's Pub\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 10:00 PM. Tickets/info: https://mulliganspubgr.co
+ m/ (confirm details with the venue)
+URL:https://mulliganspubgr.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-20-dom-flemons-wsg-myron-elkins-solo-acoustic@gr-concerts
@@ -452,6 +499,18 @@ DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
 URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-21-guilty-secrets-sister-lilith-crossing-bard-1errtp@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261121T220000
+DTEND;TZID=America/Detroit:20261122T010000
+SUMMARY:Guilty Secrets\, Sister Lilith\, Crossing Bard (free\, 21+)
+LOCATION:Mulligan's Pub\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 10:00 PM. Tickets/info: https://mulliganspubgr.co
+ m/ (confirm details with the venue)
+URL:https://mulliganspubgr.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-21-choose-your-own-improv-comedy-show@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261121T210000
@@ -558,6 +617,17 @@ URL:https://www.etix.com/ticket/p/40328864/rumours-atla-fleetwood-mac-trib
  ute-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-22-80-s-night-with-dj-silvahalo-dj-hustlah-2-cover@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261122T200000
+DTEND;TZID=America/Detroit:20261122T230000
+SUMMARY:80's Night with DJ Silvahalo & DJ Hustlah ($2 cover)
+LOCATION:Billy's Lounge\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://billyslounge.com/
+  (confirm details with the venue)
+URL:https://billyslounge.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-22-grand-rapids-youth-symphony-classical-orch-1c2poj@gr-concer
  ts
 DTSTAMP:20261024T120000Z
@@ -606,6 +676,17 @@ URL:https://www.etix.com/ticket/p/45992257/catch-your-breath-not-broken-en
  ough-tour-grand-rapids-the-intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-23-bassbin-northlake-baxter-stockman-zach-bletz@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261123T190000
+DTEND;TZID=America/Detroit:20261123T220000
+SUMMARY:BassBin: Northlake\, Baxter Stockman\, Zach Bletz
+LOCATION:Billy's Lounge\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, Time on venue site. Tickets/info: https://billysl
+ ounge.com/ (confirm details with the venue)
+URL:https://billyslounge.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-23-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
 DTSTAMP:20261103T120000Z
 DTSTART;TZID=America/Detroit:20261123T190000
@@ -643,6 +724,17 @@ DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketweb.com/even
   details with the venue)
 URL:https://www.ticketweb.com/event/high-score-comedy-round-11-the-pyramid
  -scheme-tickets/15040133
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-24-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261124T183000
+DTEND;TZID=America/Detroit:20261124T213000
+SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
+LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
+ visit-connect/grand-rapids-taproom/ (confirm details with the venue)
+URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-24-free-improv-jam-a-lama-ding-dong-stay-for-1rmv6r@gr-concert
@@ -700,6 +792,19 @@ URL:https://www.etix.com/ticket/p/99256957/desmond-jones-grand-rapids-the-
  intersection-elevation
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-25-the-return-of-hannah-rose-graves-w-highdeas@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261125T193000
+DTEND;TZID=America/Detroit:20261125T223000
+SUMMARY:The Return of Hannah Rose Graves w/ Highdeas
+LOCATION:SpeakEZ Lounge\, Grand Rapids\, MI
+DESCRIPTION:Americana\, 7:30 PM. Tickets/info: https://localspins.com/loca
+ l-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-s
+ etting-local-spins/ (confirm details with the venue)
+URL:https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-m
+ ichigan-stars-in-an-intimate-setting-local-spins/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-25-thanksgiving-eve-ft-dj-composition-deeechi-1gca6d@gr-concer
  ts
 DTSTAMP:20261110T120000Z
@@ -723,6 +828,19 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://parktheatreholland
  .org/ (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-26-616-got-talent-open-mic-sessions-w-grey-sk-tiwqz3@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261126T210000
+DTEND;TZID=America/Detroit:20261127T000000
+SUMMARY:616 Got Talent Open Mic Sessions w/ Grey Sky and Antholo-G (free\,
+  21+)
+LOCATION:Mulligan's Pub\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 9:00 PM. Tickets/info: https://mulliganspubgr.com/ 
+ (confirm details with the venue)
+URL:https://mulliganspubgr.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-27-cirque-dreams-holidaze@gr-concerts
@@ -772,6 +890,30 @@ LOCATION:Horrocks Market\, Grand Rapids\, MI
 DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://www.horrocksmarket.com/e
  vents (confirm details with the venue)
 URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-mgp-presents-dj-omega-supreme-dj-oso-black-friday@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261127T210000
+DTEND;TZID=America/Detroit:20261128T000000
+SUMMARY:MGP Presents: DJ Omega Supreme & DJ OSO – Black Friday
+LOCATION:Billy's Lounge\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 9:00 PM. Tickets/info: https://billyslounge.com/
+  (confirm details with the venue)
+URL:https://billyslounge.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-jungle-house-tech-saxony-capricorange-prim-155g2z@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261127T220000
+DTEND;TZID=America/Detroit:20261128T010000
+SUMMARY:Jungle & House Tech\, Saxony\, Capricorange\, Prim (free\, 21+)
+LOCATION:Mulligan's Pub\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 10:00 PM. Tickets/info: https://mulliganspubgr.co
+ m/ (confirm details with the venue)
+URL:https://mulliganspubgr.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-27-free-show-friday-the-moonrays-nov-27-no-cover@gr-concerts
@@ -890,6 +1032,30 @@ LOCATION:Horrocks Market\, Grand Rapids\, MI
 DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
  .com/events (confirm details with the venue)
 URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-honeyfoot-shadow-of-the-talisman-some-peop-druvky@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261128T220000
+DTEND;TZID=America/Detroit:20261129T010000
+SUMMARY:Honeyfoot\, Shadow of the Talisman\, Some People's Kids (free\, 21
+ +)
+LOCATION:Mulligan's Pub\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 10:00 PM. Tickets/info: https://mulliganspubgr.co
+ m/ (confirm details with the venue)
+URL:https://mulliganspubgr.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-the-soul-syndicate@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261128T190000
+DTEND;TZID=America/Detroit:20261128T220000
+SUMMARY:The Soul Syndicate
+LOCATION:Billy's Lounge\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, Time on venue site. Tickets/info: https://billysl
+ ounge.com/ (confirm details with the venue)
+URL:https://billyslounge.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-squeaky-clean-battle-bots-improv-comedy-sh-ysaats@gr-concer
@@ -1069,6 +1235,17 @@ URL:https://www.etix.com/ticket/p/97537630/dexter-and-the-moonrocks-the-12
  -steps-tour-grand-rapids-the-intersection
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-29-80-s-night-with-dj-silvahalo-dj-hustlah-2-cover@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261129T200000
+DTEND;TZID=America/Detroit:20261129T230000
+SUMMARY:80's Night with DJ Silvahalo & DJ Hustlah ($2 cover)
+LOCATION:Billy's Lounge\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://billyslounge.com/
+  (confirm details with the venue)
+URL:https://billyslounge.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-29-mitten-written-volume-one-honeycrutch-teen-qp0uel@gr-concer
  ts
 DTSTAMP:20261112T120000Z
@@ -1091,6 +1268,19 @@ LOCATION:Speciation Artisan Ales\, Grand Rapids\, MI
 DESCRIPTION:Jazz\, 5:00 PM. Tickets/info: https://speciationartisanales.co
  m/events/jazz-jam-11-29 (confirm details with the venue)
 URL:https://speciationartisanales.com/events/jazz-jam-11-29
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-30-bassbin-mitten-kittens-fundraiser-andromed-hskgjp@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261130T190000
+DTEND;TZID=America/Detroit:20261130T220000
+SUMMARY:BassBin: Mitten Kittens Fundraiser – Andromeda\, Soular Spice\, K-
+ Lala
+LOCATION:Billy's Lounge\, Grand Rapids\, MI
+DESCRIPTION:Electronic\, Time on venue site. Tickets/info: https://billysl
+ ounge.com/ (confirm details with the venue)
+URL:https://billyslounge.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-30-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
@@ -1117,6 +1307,17 @@ DESCRIPTION:Holiday\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
  064E984E02F83 (confirm details with the venue)
 URL:https://www.ticketmaster.com/mannheim-steamroller-christmas-grand-rapi
  ds-michigan-12-01-2026/event/080064E984E02F83
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-01-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261201T183000
+DTEND;TZID=America/Detroit:20261201T213000
+SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
+LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
+ visit-connect/grand-rapids-taproom/ (confirm details with the venue)
+URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-01-grcc-jazz-night@gr-concerts
@@ -1256,6 +1457,17 @@ DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
 URL:https://www.horrocksmarket.com/events
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-03-open-mic-with-adam-free-21@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261203T210000
+DTEND;TZID=America/Detroit:20261204T000000
+SUMMARY:Open Mic with Adam (free\, 21+)
+LOCATION:Mulligan's Pub\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 9:00 PM. Tickets/info: https://mulliganspubgr.com/ 
+ (confirm details with the venue)
+URL:https://mulliganspubgr.com/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-03-parade-jewish-theatre-grand-rapids-dec-3-13@gr-concerts
 DTSTAMP:20261022T120000Z
 DTSTART;TZID=America/Detroit:20261203T193000
@@ -1339,6 +1551,31 @@ LOCATION:Horrocks Market\, Grand Rapids\, MI
 DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
  .com/events (confirm details with the venue)
 URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-the-insane-theatre-the-doors-tribute@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261204T193000
+DTEND;TZID=America/Detroit:20261204T223000
+SUMMARY:The Insane Theatre – The Doors Tribute
+LOCATION:SpeakEZ Lounge\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:30 PM. Tickets/info: https://localspins.com/local-
+ spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-set
+ ting-local-spins/ (confirm details with the venue)
+URL:https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-m
+ ichigan-stars-in-an-intimate-setting-local-spins/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-04-the-wretched-hive-winter-after-second-fate-lyvl8k@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261204T220000
+DTEND;TZID=America/Detroit:20261205T010000
+SUMMARY:The Wretched Hive\, Winter After\, Second Fate (free\, 21+)
+LOCATION:Mulligan's Pub\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 10:00 PM. Tickets/info: https://mulliganspubgr.co
+ m/ (confirm details with the venue)
+URL:https://mulliganspubgr.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-04-voices-in-hope-a-church-choir-festival@gr-concerts
@@ -1512,6 +1749,18 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
   details with the venue)
 URL:https://www.ticketweb.com/event/michigander-3rd-annual-the-pyramid-sch
  eme-tickets/14319374
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-05-no-skull-angel-of-mars-the-vonwerewolves-free-21@gr-concert
+ s
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261205T220000
+DTEND;TZID=America/Detroit:20261206T010000
+SUMMARY:No Skull\, Angel of Mars\, The Vonwerewolves (free\, 21+)
+LOCATION:Mulligan's Pub\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 10:00 PM. Tickets/info: https://mulliganspubgr.co
+ m/ (confirm details with the venue)
+URL:https://mulliganspubgr.com/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-05-grand-rapids-women-s-chorus-winter-concert@gr-concerts
@@ -1820,6 +2069,30 @@ LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
 DESCRIPTION:Folk\, 7:30 PM. Tickets/info: https://www.scmcgr.org/concerts/
  jeff-daniels-2026 (confirm details with the venue)
 URL:https://www.scmcgr.org/concerts/jeff-daniels-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-08-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261208T183000
+DTEND;TZID=America/Detroit:20261208T213000
+SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
+LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
+ visit-connect/grand-rapids-taproom/ (confirm details with the venue)
+URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-09-the-mitten-pickers@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261209T193000
+DTEND;TZID=America/Detroit:20261209T223000
+SUMMARY:The Mitten Pickers
+LOCATION:SpeakEZ Lounge\, Grand Rapids\, MI
+DESCRIPTION:Bluegrass\, 7:30 PM. Tickets/info: https://localspins.com/loca
+ l-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-s
+ etting-local-spins/ (confirm details with the venue)
+URL:https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-m
+ ichigan-stars-in-an-intimate-setting-local-spins/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-09-lily-bomb-zero-sun-two-dollar-bills@gr-concerts
@@ -2404,6 +2677,17 @@ URL:https://www.ticketmaster.com/jonas-brothers-the-burning-up-tour-grand-
  rapids-michigan-12-15-2026/event/0800650EB9E3B051
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-15-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261215T183000
+DTEND;TZID=America/Detroit:20261215T213000
+SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
+LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
+ visit-connect/grand-rapids-taproom/ (confirm details with the venue)
+URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-16-gr-symphony-the-muppet-christmas-carol-in-concert@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -2565,6 +2849,19 @@ LOCATION:Horrocks Market\, Grand Rapids\, MI
 DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
  .com/events (confirm details with the venue)
 URL:https://www.horrocksmarket.com/events
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-18-crazy-hearse-neil-young-tribute@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261218T193000
+DTEND;TZID=America/Detroit:20261218T223000
+SUMMARY:Crazy Hearse – Neil Young Tribute
+LOCATION:SpeakEZ Lounge\, Grand Rapids\, MI
+DESCRIPTION:Tribute\, 7:30 PM. Tickets/info: https://localspins.com/local-
+ spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-set
+ ting-local-spins/ (confirm details with the venue)
+URL:https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-m
+ ichigan-stars-in-an-intimate-setting-local-spins/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-18-the-bootstrap-boys-winter-solstice-party-w-118xfc@gr-concer
@@ -2822,6 +3119,17 @@ URL:https://www.ticketmaster.com/dolly-partons-smoky-mountain-christmas-ca
  rol-grand-rapids-michigan-12-22-2026/event/0800653588982716
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-22-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261222T183000
+DTEND;TZID=America/Detroit:20261222T213000
+SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
+LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
+ visit-connect/grand-rapids-taproom/ (confirm details with the venue)
+URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-26-mustard-plug-s-annual-ska-liday-show-with-g22z6v@gr-concert
  s
 DTSTAMP:20261019T120000Z
@@ -2916,6 +3224,17 @@ DESCRIPTION:Cabaret\, 5:00 PM. Tickets/info: https://parktheatreholland.or
  firm details with the venue)
 URL:https://parktheatreholland.org/event/west-michigan-theatre-company-pre
  sents-cast-miscast-caberet/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-29-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261229T183000
+DTEND;TZID=America/Detroit:20261229T213000
+SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
+LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
+ visit-connect/grand-rapids-taproom/ (confirm details with the venue)
+URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-12-29-revisiting-creedence-21@gr-concerts
@@ -3107,6 +3426,17 @@ DESCRIPTION:Family Show\, 2:00 PM. Tickets/info: https://www.ticketmaster.
  ent/08006523926A369D (confirm details with the venue)
 URL:https://www.ticketmaster.com/harlem-globetrotters-rivalry-tour-grand-r
  apids-michigan-01-03-2027/event/08006523926A369D
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-05-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270105T183000
+DTEND;TZID=America/Detroit:20270105T213000
+SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
+LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
+ visit-connect/grand-rapids-taproom/ (confirm details with the venue)
+URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-07-loners-club-x-lucid-lyfestyles-with-whothe-1mzdta@gr-concer
@@ -3340,6 +3670,17 @@ DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.ticketmaster.com/
  irm details with the venue)
 URL:https://www.ticketmaster.com/six-touring-grand-rapids-michigan-01-12-2
  027/event/080064FDC7A2A742
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-12-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270112T183000
+DTEND;TZID=America/Detroit:20270112T213000
+SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
+LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
+ visit-connect/grand-rapids-taproom/ (confirm details with the venue)
+URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-12-northview-high-school-choirs-concert@gr-concerts
