@@ -1,17 +1,7 @@
 {
-  "generated": "2026-11-18",
-  "count": 187,
+  "generated": "2026-11-19",
+  "count": 186,
   "pending": [
-    {
-      "artist": "Midwinter – Haunt Me Forever Tour (with What Lies Below, Coldstate, Dirtywork)",
-      "week": "this",
-      "dates": [
-        "2026-11-18"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/midwinter-haunt-me-forever-tour-the-pyramid-scheme-tickets/15019913",
-      "added": "2026-10-20"
-    },
     {
       "artist": "Ray Volpe – Volpetron Eternal Tour (18+)",
       "week": "this",
@@ -71,36 +61,6 @@
       "venue": "The Mint (at The Intersection)",
       "link": "https://sectionlive.com/event/subspace-descend-into-the-underground/the-mint/grand-rapids-michigan/",
       "added": "2026-10-23"
-    },
-    {
-      "artist": "Free Show Friday: Reverend Jesse Ray (no cover, 21+)",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "Speciation Artisan Ales",
-      "link": "https://speciationartisanales.com/events/jesseray-nov2026",
-      "added": "2026-10-23"
-    },
-    {
-      "artist": "Starfarm – 80's Hits (Wawyé Oasis)",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "Gun Lake Casino Resort",
-      "link": "https://gunlakecasino.com/event/starfarm/",
-      "added": "2026-10-26"
-    },
-    {
-      "artist": "Semple – Rock Hits (131 Sportsbar & Lounge)",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "Gun Lake Casino Resort",
-      "link": "https://gunlakecasino.com/event/semple/",
-      "added": "2026-10-26"
     },
     {
       "artist": "River City Improv (Nov 21)",
@@ -350,16 +310,6 @@
       ],
       "venue": "Park Theatre (Holland)",
       "link": "https://parktheatreholland.org/",
-      "added": "2026-11-12"
-    },
-    {
-      "artist": "Jazz Jam w/ Tommy Pancy (Nov 29)",
-      "week": "next",
-      "dates": [
-        "2026-11-29"
-      ],
-      "venue": "Speciation Artisan Ales",
-      "link": "https://speciationartisanales.com/events/jazz-jam-11-29",
       "added": "2026-11-12"
     },
     {
@@ -914,6 +864,16 @@
       "added": "2026-11-11"
     },
     {
+      "artist": "Backwards Compatible NYE (with DJ Silvahalo, Sylock, Sam Fabiano, Dreas, APX, and visuals from Juggable Offense)",
+      "week": "later",
+      "dates": [
+        "2026-12-31"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/backwards-compatible-nye-ft-dj-the-pyramid-scheme-tickets/14452114",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "River City Improv (Jan 2)",
       "week": "later",
       "dates": [
@@ -1344,6 +1304,16 @@
       "added": "2026-11-16"
     },
     {
+      "artist": "Rockin Homegrown Jam (All Ages; with The Legal Immigrants, Adam Degi, Matt Lauria, Allen Trieu, David Dyer, and Josh Ortega)",
+      "week": "later",
+      "dates": [
+        "2027-02-07"
+      ],
+      "venue": "The Intersection (main room)",
+      "link": "https://www.etix.com/ticket/p/93039413/rockin-homegrown-jam-grand-rapids-the-intersection",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Winter Nights: Great Lakes Brass – Fat Tuesday Celebration",
       "week": "later",
       "dates": [
@@ -1432,6 +1402,16 @@
       "venue": "The Stache (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/57622950/riley-grand-rapids-the-intersection-the-stache",
       "added": "2026-10-21"
+    },
+    {
+      "artist": "Bearly Dead – Tourtoise (All Ages)",
+      "week": "later",
+      "dates": [
+        "2027-02-18"
+      ],
+      "venue": "The Stache (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/44718794/bearly-dead-grand-rapids-the-intersection-the-stache",
+      "added": "2026-11-19"
     },
     {
       "artist": "Buffalo Traffic Jam – Pictures of You Tour",
@@ -1833,6 +1813,16 @@
       "venue": "Calvin University Chapel",
       "link": "https://calvin.edu/events/symphonic-band-concert-1808868600",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "Southall – Hills And Valleys Tour (All Ages)",
+      "week": "later",
+      "dates": [
+        "2027-04-27"
+      ],
+      "venue": "Elevation (at The Intersection)",
+      "link": "https://www.etix.com/ticket/p/57478208/southall-hills-and-valleys-tour-grand-rapids-the-intersection-elevation",
+      "added": "2026-11-19"
     },
     {
       "artist": "GR Symphony: Mahler's \"Resurrection\" Symphony",

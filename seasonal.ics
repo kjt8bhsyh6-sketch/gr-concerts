@@ -108,6 +108,20 @@ URL:https://saugatuckwomensclub.org/series/festival-of-trees/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-21-grimoire-academy-s-gothic-market@gr-seasonal
+DTSTAMP:20261119T120000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261123
+SUMMARY:Grimoire Academy's Gothic Market
+LOCATION:Holland Civic Center Place\, 150 W 8th St\, Holland\, Grand Rapid
+ s\, MI
+DESCRIPTION:Gothic Market. Sat Nov 21\, 12 PM – Sun Nov 22\, 5 PM EST. Inf
+ o: https://events.humanitix.com/the-goth-market-nov-21-22-2026-holland-mi
+  (confirm details with the organizer)
+URL:https://events.humanitix.com/the-goth-market-nov-21-22-2026-holland-mi
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-23-enlighten-at-meijer-gardens@gr-seasonal
 DTSTAMP:20261019T120000Z
 DTSTART;VALUE=DATE:20261123

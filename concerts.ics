@@ -37,68 +37,6 @@ URL:https://www.gvsu.edu/mtd/module/79aaee59-6d1b-48aa-bea3-52de6bfb8896/e
  vent/afebfa7b-523b-4699-ba65-807cfd985e1a
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-18-bad-momz-of-comedy@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261118T200000
-DTEND;TZID=America/Detroit:20261118T230000
-SUMMARY:Bad Momz of Comedy
-LOCATION:Wealthy Theatre\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://grcmc.org/event/bad-mo
- mz-of-comedy/1765 (confirm details with the venue)
-URL:https://grcmc.org/event/bad-momz-of-comedy/1765
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-18-midwinter-haunt-me-forever-tour-with-what-1u2z1y@gr-concert
- s
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261118T180000
-DTEND;TZID=America/Detroit:20261118T210000
-SUMMARY:Midwinter – Haunt Me Forever Tour (with What Lies Below\, Coldstat
- e\, Dirtywork)
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Live Music\, 6:00 PM. Tickets/info: https://www.ticketweb.com/
- event/midwinter-haunt-me-forever-tour-the-pyramid-scheme-tickets/15019913
-  (confirm details with the venue)
-URL:https://www.ticketweb.com/event/midwinter-haunt-me-forever-tour-the-py
- ramid-scheme-tickets/15019913
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-18-token-i-m-leaving-soon-tour@gr-concerts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261118T193000
-DTEND;TZID=America/Detroit:20261118T223000
-SUMMARY:Token – I'm Leaving Soon Tour
-LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Hip-Hop\, 7:30 PM. Tickets/info: https://www.etix.com/ticket/p
- /69885022/token-im-leaving-soon-tour-grand-rapids-the-intersection-the-st
- ache (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/69885022/token-im-leaving-soon-tour-gran
- d-rapids-the-intersection-the-stache
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-18-chicago-live-in-concert@gr-concerts
-DTSTAMP:20261023T120000Z
-DTSTART;TZID=America/Detroit:20261118T200000
-DTEND;TZID=America/Detroit:20261118T230000
-SUMMARY:Chicago Live in Concert
-LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://soaringeaglecasino.com/e
- vents/chicago/ (confirm details with the venue)
-URL:https://soaringeaglecasino.com/events/chicago/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-18-chamber-music-recital-free-collaborative-m-xexcaf@gr-concer
- ts
-DTSTAMP:20261113T120000Z
-DTSTART;TZID=America/Detroit:20261118T193000
-DTEND;TZID=America/Detroit:20261118T223000
-SUMMARY:Chamber Music Recital (free\; Collaborative Musicianship students)
-LOCATION:Calvin University Chapel\, Grand Rapids\, MI
-DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://calvin.edu/events/c
- hamber-music-recital-1795048200 (confirm details with the venue)
-URL:https://calvin.edu/events/chamber-music-recital-1795048200
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-19-born-with-teeth-by-liz-duffy-adams-wealthy-1m87ca@gr-concer
  ts
 DTSTAMP:20261023T120000Z
@@ -1021,6 +959,19 @@ LOCATION:Park Theatre (Holland)\, Grand Rapids\, MI
 DESCRIPTION:Rock\, 6:00 PM. Tickets/info: https://parktheatreholland.org/ 
  (confirm details with the venue)
 URL:https://parktheatreholland.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-elf-2003-dive-in-movie-wawye-oasis@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261128T190000
+DTEND;TZID=America/Detroit:20261128T220000
+SUMMARY:Elf (2003) – Dive-In Movie (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Film\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/79
+ 660853/elf-wayland-gun-lake-casino-resortwawye-oasis (confirm details wit
+ h the venue)
+URL:https://www.etix.com/ticket/p/79660853/elf-wayland-gun-lake-casino-res
+ ortwawye-oasis
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-29-love-actually-in-concert@gr-concerts
@@ -2514,6 +2465,19 @@ DESCRIPTION:R&B / Funk\, 9:00 PM. Tickets/info: https://gunlakecasino.com/
 URL:https://gunlakecasino.com/event/theskeletones/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-18-die-hard-1988-dive-in-movie-wawye-oasis@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261218T200000
+DTEND;TZID=America/Detroit:20261218T230000
+SUMMARY:Die Hard (1988) – Dive-In Movie (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Film\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/52
+ 686195/die-hard-wayland-gun-lake-casino-resortwawye-oasis (confirm detail
+ s with the venue)
+URL:https://www.etix.com/ticket/p/52686195/die-hard-wayland-gun-lake-casin
+ o-resortwawye-oasis
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-19-jeff-daniels@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261219T150000
@@ -2745,6 +2709,21 @@ DESCRIPTION:Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/event/
 URL:https://gunlakecasino.com/event/jedi-mind-trip-2-2/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-26-pirates-of-the-caribbean-curse-of-the-blac-1nhxjq@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261226T190000
+DTEND;TZID=America/Detroit:20261226T220000
+SUMMARY:Pirates of the Caribbean: Curse of the Black Pearl (2003) – Dive-I
+ n Movie (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Film\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/64
+ 977373/pirate-of-the-caribbean-wayland-gun-lake-casino-resortwawye-oasis 
+ (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/64977373/pirate-of-the-caribbean-wayland
+ -gun-lake-casino-resortwawye-oasis
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-12-27-pinball-disco-ft-the-dj-bob-marino-drop-ca-wr3ogo@gr-concer
  ts
 DTSTAMP:20261030T120000Z
@@ -2875,6 +2854,21 @@ URL:https://parktheatreholland.org/event/hollands-ultimate-new-years-eve-b
  ash/
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-12-31-backwards-compatible-nye-with-dj-silvahalo-cnfc77@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20261231T200000
+DTEND;TZID=America/Detroit:20261231T230000
+SUMMARY:Backwards Compatible NYE (with DJ Silvahalo\, Sylock\, Sam Fabiano
+ \, Dreas\, APX\, and visuals from Juggable Offense)
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://www.ticketweb.com
+ /event/backwards-compatible-nye-ft-dj-the-pyramid-scheme-tickets/14452114
+  (confirm details with the venue)
+URL:https://www.ticketweb.com/event/backwards-compatible-nye-ft-dj-the-pyr
+ amid-scheme-tickets/14452114
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-02-river-city-improv-jan-2@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270102T190300
@@ -2888,13 +2882,13 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-02-marlon-wayans@gr-concerts
 DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20270102T190000
-DTEND;TZID=America/Detroit:20270102T220000
+DTSTART;TZID=America/Detroit:20270102T200000
+DTEND;TZID=America/Detroit:20270102T230000
 SUMMARY:Marlon Wayans
 LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, Time on ticket page. Tickets/info: https://www.ticket
- master.com/marlon-wayans-grand-rapids-michigan-01-02-2027/event/0800647F9
- 1F441C9 (confirm details with the venue)
+DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketmaster.com/m
+ arlon-wayans-grand-rapids-michigan-01-02-2027/event/0800647F91F441C9 (con
+ firm details with the venue)
 URL:https://www.ticketmaster.com/marlon-wayans-grand-rapids-michigan-01-02
  -2027/event/0800647F91F441C9
 END:VEVENT
@@ -3347,6 +3341,19 @@ DESCRIPTION:Pop / Rock\, 9:00 PM. Tickets/info: https://gunlakecasino.com/
 URL:https://gunlakecasino.com/event/sushi-roll-3/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-15-top-gun-maverick-2022-dive-in-movie-wawye-oasis@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270115T200000
+DTEND;TZID=America/Detroit:20270115T230000
+SUMMARY:Top Gun: Maverick (2022) – Dive-In Movie (Wawyé Oasis)
+LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
+DESCRIPTION:Film\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/75
+ 023507/top-gun-maverick-wayland-gun-lake-casino-resortwawye-oasis (confir
+ m details with the venue)
+URL:https://www.etix.com/ticket/p/75023507/top-gun-maverick-wayland-gun-la
+ ke-casino-resortwawye-oasis
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-16-broadway-grand-rapids-six@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20270116T140000
@@ -3379,9 +3386,9 @@ DTSTART;TZID=America/Detroit:20270116T190000
 DTEND;TZID=America/Detroit:20270116T220000
 SUMMARY:Chris Fleming Live
 LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, Time on ticket page. Tickets/info: https://www.ticket
- master.com/chris-fleming-live-grand-rapids-michigan-01-16-2027/event/0800
- 65282743BFF5 (confirm details with the venue)
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/c
+ hris-fleming-live-grand-rapids-michigan-01-16-2027/event/080065282743BFF5
+  (confirm details with the venue)
 URL:https://www.ticketmaster.com/chris-fleming-live-grand-rapids-michigan-
  01-16-2027/event/080065282743BFF5
 END:VEVENT
@@ -3579,9 +3586,9 @@ DTSTART;TZID=America/Detroit:20270122T190000
 DTEND;TZID=America/Detroit:20270122T220000
 SUMMARY:Dylan Scott
 LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Country\, Time on ticket page. Tickets/info: https://www.ticke
- tmaster.com/dylan-scott-grand-rapids-michigan-01-22-2027/event/08006528AF
- 5E461E (confirm details with the venue)
+DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
+ dylan-scott-grand-rapids-michigan-01-22-2027/event/08006528AF5E461E (conf
+ irm details with the venue)
 URL:https://www.ticketmaster.com/dylan-scott-grand-rapids-michigan-01-22-2
  027/event/08006528AF5E461E
 END:VEVENT
@@ -3851,6 +3858,19 @@ DESCRIPTION:Tribute\, 9:00 PM. Tickets/info: https://www.ticketmaster.com/
  65 (confirm details with the venue)
 URL:https://www.ticketmaster.com/that-arena-rock-show-new-buffalo-michigan
  -01-29-2027/event/0400655CA9648165
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-29-chase-matthew-lauren-alaina-all-my-exes-tour@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270129T183000
+DTEND;TZID=America/Detroit:20270129T213000
+SUMMARY:Chase Matthew & Lauren Alaina – All My Exes Tour
+LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
+DESCRIPTION:Country\, 6:30 PM. Tickets/info: https://www.ticketmaster.com/
+ chase-matthew-lauren-alaina-all-my-grand-rapids-michigan-01-29-2027/event
+ /0800656D9E1D49E3 (confirm details with the venue)
+URL:https://www.ticketmaster.com/chase-matthew-lauren-alaina-all-my-grand-
+ rapids-michigan-01-29-2027/event/0800656D9E1D49E3
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-30-kpop-night-k-winterland@gr-concerts
@@ -4210,6 +4230,21 @@ URL:https://www.ticketweb.com/event/doomblade-exit-73-the-pyramid-scheme-t
  ickets/14435594
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-07-rockin-homegrown-jam-all-ages-with-the-leg-1mnrxp@gr-concer
+ ts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270207T180000
+DTEND;TZID=America/Detroit:20270207T210000
+SUMMARY:Rockin Homegrown Jam (All Ages\; with The Legal Immigrants\, Adam 
+ Degi\, Matt Lauria\, Allen Trieu\, David Dyer\, and Josh Ortega)
+LOCATION:The Intersection (main room)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 6:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/93039413/rockin-homegrown-jam-grand-rapids-the-intersection (confirm 
+ details with the venue)
+URL:https://www.etix.com/ticket/p/93039413/rockin-homegrown-jam-grand-rapi
+ ds-the-intersection
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-09-broadway-grand-rapids-beauty-and-the-beast-1o8unk@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -4376,9 +4411,9 @@ DTSTART;TZID=America/Detroit:20270212T190000
 DTEND;TZID=America/Detroit:20270212T220000
 SUMMARY:Ryan Hamilton – Making Good Time
 LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, Time on ticket page. Tickets/info: https://www.ticket
- master.com/ryan-hamilton-making-good-time-grand-rapids-michigan-02-12-202
- 7/event/080064F0A0D457A5 (confirm details with the venue)
+DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/r
+ yan-hamilton-making-good-time-grand-rapids-michigan-02-12-2027/event/0800
+ 64F0A0D457A5 (confirm details with the venue)
 URL:https://www.ticketmaster.com/ryan-hamilton-making-good-time-grand-rapi
  ds-michigan-02-12-2027/event/080064F0A0D457A5
 END:VEVENT
@@ -4407,6 +4442,17 @@ DESCRIPTION:Dance Party\, 8:00 PM. Tickets/info: https://www.ticketweb.com
   details with the venue)
 URL:https://www.ticketweb.com/event/crimewave-a-post-punk-the-pyramid-sche
  me-tickets/14403384
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-02-12-lee-brice-entertainment-hall@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270212T200000
+DTEND;TZID=America/Detroit:20270212T230000
+SUMMARY:Lee Brice (Entertainment Hall)
+LOCATION:Soaring Eagle Casino & Resort\, Grand Rapids\, MI
+DESCRIPTION:Country\, 8:00 PM. Tickets/info: https://soaringeaglecasino.co
+ m/events/lee-brice/ (confirm details with the venue)
+URL:https://soaringeaglecasino.com/events/lee-brice/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-13-2000-s-rave-party-like-it-s-2003@gr-concerts
@@ -4578,6 +4624,19 @@ DESCRIPTION:Comedy\, Showtimes on venue site. Tickets/info: https://www.th
 URL:https://www.thebob.com/drgrins/comedian/index.html?id=1520
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-02-18-bearly-dead-tourtoise-all-ages@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270218T200000
+DTEND;TZID=America/Detroit:20270218T230000
+SUMMARY:Bearly Dead – Tourtoise (All Ages)
+LOCATION:The Stache (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 8:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/44718794/bearly-dead-grand-rapids-the-intersection-the-stache (confir
+ m details with the venue)
+URL:https://www.etix.com/ticket/p/44718794/bearly-dead-grand-rapids-the-in
+ tersection-the-stache
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-02-19-dear-evan-hansen-civic-theatre-production-6vbcfk@gr-concert
  s
 DTSTAMP:20261020T120000Z
@@ -4608,9 +4667,9 @@ DTSTART;TZID=America/Detroit:20270220T190000
 DTEND;TZID=America/Detroit:20270220T220000
 SUMMARY:Buffalo Traffic Jam – Pictures of You Tour
 LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Country\, Time on ticket page. Tickets/info: https://www.ticke
- tmaster.com/buffalo-traffic-jam-pictures-of-you-grand-rapids-michigan-02-
- 20-2027/event/0800654FD8DE66D8 (confirm details with the venue)
+DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
+ buffalo-traffic-jam-pictures-of-you-grand-rapids-michigan-02-20-2027/even
+ t/0800654FD8DE66D8 (confirm details with the venue)
 URL:https://www.ticketmaster.com/buffalo-traffic-jam-pictures-of-you-grand
  -rapids-michigan-02-20-2027/event/0800654FD8DE66D8
 END:VEVENT
@@ -4685,13 +4744,13 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-24-dropkick-murphys@gr-concerts
 DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20270224T190000
-DTEND;TZID=America/Detroit:20270224T220000
+DTSTART;TZID=America/Detroit:20270224T180000
+DTEND;TZID=America/Detroit:20270224T210000
 SUMMARY:Dropkick Murphys
 LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Punk\, Time on ticket page. Tickets/info: https://www.ticketma
- ster.com/dropkick-murphys-grand-rapids-michigan-02-24-2027/event/08006535
- BFC75054 (confirm details with the venue)
+DESCRIPTION:Punk\, 6:00 PM. Tickets/info: https://www.ticketmaster.com/dro
+ pkick-murphys-grand-rapids-michigan-02-24-2027/event/08006535BFC75054 (co
+ nfirm details with the venue)
 URL:https://www.ticketmaster.com/dropkick-murphys-grand-rapids-michigan-02
  -24-2027/event/08006535BFC75054
 END:VEVENT
@@ -4737,13 +4796,13 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-26-needtobreathe-the-long-surrender-tour@gr-concerts
 DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20270226T190000
-DTEND;TZID=America/Detroit:20270226T220000
+DTSTART;TZID=America/Detroit:20270226T180000
+DTEND;TZID=America/Detroit:20270226T210000
 SUMMARY:NEEDTOBREATHE – The Long Surrender Tour
 LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Rock\, Time on ticket page. Tickets/info: https://www.ticketma
- ster.com/needtobreathe-the-long-surrender-tour-grand-rapids-michigan-02-2
- 6-2027/event/08006532CF9594F2 (confirm details with the venue)
+DESCRIPTION:Rock\, 6:00 PM. Tickets/info: https://www.ticketmaster.com/nee
+ dtobreathe-the-long-surrender-tour-grand-rapids-michigan-02-26-2027/event
+ /08006532CF9594F2 (confirm details with the venue)
 URL:https://www.ticketmaster.com/needtobreathe-the-long-surrender-tour-gra
  nd-rapids-michigan-02-26-2027/event/08006532CF9594F2
 END:VEVENT
@@ -5929,9 +5988,9 @@ DTSTART;TZID=America/Detroit:20270411T190000
 DTEND;TZID=America/Detroit:20270411T220000
 SUMMARY:Dylan Gossett – The Ramblin' Tour 2027
 LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Country\, Time on ticket page. Tickets/info: https://www.ticke
- tmaster.com/dylan-gossett-the-ramblin-tour-2027-grand-rapids-michigan-04-
- 11-2027/event/0800653DBA206EC3 (confirm details with the venue)
+DESCRIPTION:Country\, 7:00 PM. Tickets/info: https://www.ticketmaster.com/
+ dylan-gossett-the-ramblin-tour-2027-grand-rapids-michigan-04-11-2027/even
+ t/0800653DBA206EC3 (confirm details with the venue)
 URL:https://www.ticketmaster.com/dylan-gossett-the-ramblin-tour-2027-grand
  -rapids-michigan-04-11-2027/event/0800653DBA206EC3
 END:VEVENT
@@ -6036,13 +6095,13 @@ END:VEVENT
 BEGIN:VEVENT
 UID:2027-04-15-warren-zeiders-no-brakes-tour@gr-concerts
 DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20270415T190000
-DTEND;TZID=America/Detroit:20270415T220000
+DTSTART;TZID=America/Detroit:20270415T183000
+DTEND;TZID=America/Detroit:20270415T213000
 SUMMARY:Warren Zeiders – No Brakes Tour
 LOCATION:GLC Live at 20 Monroe\, Grand Rapids\, MI
-DESCRIPTION:Country\, Time on ticket page. Tickets/info: https://www.ticke
- tmaster.com/warren-zeiders-no-brakes-tour-grand-rapids-michigan-04-15-202
- 7/event/08006541B02463F9 (confirm details with the venue)
+DESCRIPTION:Country\, 6:30 PM. Tickets/info: https://www.ticketmaster.com/
+ warren-zeiders-no-brakes-tour-grand-rapids-michigan-04-15-2027/event/0800
+ 6541B02463F9 (confirm details with the venue)
 URL:https://www.ticketmaster.com/warren-zeiders-no-brakes-tour-grand-rapid
  s-michigan-04-15-2027/event/08006541B02463F9
 END:VEVENT
@@ -6434,6 +6493,19 @@ DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://calvin.edu/events/s
 URL:https://calvin.edu/events/symphonic-band-concert-1808868600
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-27-southall-hills-and-valleys-tour-all-ages@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270427T190000
+DTEND;TZID=America/Detroit:20270427T220000
+SUMMARY:Southall – Hills And Valleys Tour (All Ages)
+LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.etix.com/ticke
+ t/p/57478208/southall-hills-and-valleys-tour-grand-rapids-the-intersectio
+ n-elevation (confirm details with the venue)
+URL:https://www.etix.com/ticket/p/57478208/southall-hills-and-valleys-tour
+ -grand-rapids-the-intersection-elevation
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-28-new-music-from-calvin-free-student-composers@gr-concerts
 DTSTAMP:20261113T120000Z
 DTSTART;TZID=America/Detroit:20270428T190000
@@ -6629,6 +6701,19 @@ LOCATION:DeVos Performance Hall\, Grand Rapids\, MI
 DESCRIPTION:Orchestral\, 3:00 PM. Tickets/info: https://www.grysco.org/con
  certs (confirm details with the venue)
 URL:https://www.grysco.org/concerts
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-17-slomosa@gr-concerts
+DTSTAMP:20261119T120000Z
+DTSTART;TZID=America/Detroit:20270517T190000
+DTEND;TZID=America/Detroit:20270517T220000
+SUMMARY:Slomosa
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/slomosa-the-pyramid-scheme-tickets/14435644 (confirm details with t
+ he venue)
+URL:https://www.ticketweb.com/event/slomosa-the-pyramid-scheme-tickets/144
+ 35644
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-05-19-judy-collins-sweet-judy-blue-eyes-farewell@gr-concerts
