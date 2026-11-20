@@ -28,9 +28,11 @@ DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261225
 SUMMARY:Grand Rapids Christkindl Markt
 LOCATION:Downtown Market\, 435 Ionia Ave SW\, Grand Rapids\, MI
-DESCRIPTION:Holiday Market. Nov 18–Dec 24 · Wed–Sun (closed Mon/Tue & Than
- ksgiving). Info: https://christkindlmarktgr.com/ (confirm details with th
- e organizer)
+DESCRIPTION:Holiday Market. Nov 18–Dec 24 · Wed 11 AM–8 PM\, Thu–Fri 11 AM
+ –9 PM\, Sat 10 AM–9 PM\, Sun 10 AM–8 PM · closed Mon/Tue & Thanksgiving\;
+  special hours Nov 25 10 AM–5 PM\, Dec 21–23 11 AM–9 PM\, Dec 24 10 AM–3 
+ PM. Info: https://christkindlmarktgr.com/ (confirm details with the organ
+ izer)
 URL:https://christkindlmarktgr.com/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -45,6 +47,20 @@ DESCRIPTION:Holiday Market. Nov 18–Dec 23 · Wed–Sun (closed Mon/Tue & Than
  ksgiving). Info: https://www.studioparkgr.com/holiday-market (confirm det
  ails with the organizer)
 URL:https://www.studioparkgr.com/holiday-market
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-20-grand-rapids-international-wine-beer-food-festiva@gr-season
+ al
+DTSTAMP:20261120T120000Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:Grand Rapids International Wine\, Beer & Food Festival (21+)
+LOCATION:DeVos Place\, 303 Monroe Ave NW\, Grand Rapids\, MI
+DESCRIPTION:Food & Drink Festival. Fri Nov 20 · 4–9 PM & Sat Nov 21 · 2–9 
+ PM · 21+ with valid ID · $25 single-day admission\, tasting tickets extra
+ . Info: https://showspan.com/grw/ (confirm details with the organizer)
+URL:https://showspan.com/grw/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
