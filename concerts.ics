@@ -7145,6 +7145,19 @@ DESCRIPTION:Metal\, 7:00 PM. Tickets/info: https://parktheatreholland.org/
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-04-26-alex-warren-finding-more-family-on-the-roa-52cy9s@gr-concer
+ ts
+DTSTAMP:20261120T120000Z
+DTSTART;TZID=America/Detroit:20270426T193000
+DTEND;TZID=America/Detroit:20270426T223000
+SUMMARY:Alex Warren – Finding (more) Family On the Road Tour (with Bebe St
+ ockwell)
+LOCATION:Van Andel Arena\, Grand Rapids\, MI
+DESCRIPTION:Pop\, 7:30 PM. Tickets/info: https://www.vanandelarena.com/eve
+ nts/2027/alex-warren (confirm details with the venue)
+URL:https://www.vanandelarena.com/events/2027/alex-warren
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-04-27-calvin-symphonic-band-concert-apr-27@gr-concerts
 DTSTAMP:20261023T120000Z
 DTSTART;TZID=America/Detroit:20270427T193000
@@ -7377,6 +7390,18 @@ DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
  he venue)
 URL:https://www.ticketweb.com/event/slomosa-the-pyramid-scheme-tickets/144
  35644
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-18-kings-of-leon-world-tour-2027-with-band-of-horses@gr-concer
+ ts
+DTSTAMP:20261120T120000Z
+DTSTART;TZID=America/Detroit:20270518T193000
+DTEND;TZID=America/Detroit:20270518T223000
+SUMMARY:Kings of Leon – World Tour 2027 (with Band of Horses)
+LOCATION:Acrisure Amphitheater\, Grand Rapids\, MI
+DESCRIPTION:Rock\, 7:30 PM. Tickets/info: https://www.acrisureamphitheater
+ .com/events/2026/kings-of-leon (confirm details with the venue)
+URL:https://www.acrisureamphitheater.com/events/2026/kings-of-leon
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-05-19-judy-collins-sweet-judy-blue-eyes-farewell@gr-concerts
