@@ -1,37 +1,7 @@
 {
-  "generated": "2026-11-19",
-  "count": 186,
+  "generated": "2026-11-20",
+  "count": 218,
   "pending": [
-    {
-      "artist": "Ray Volpe – Volpetron Eternal Tour (18+)",
-      "week": "this",
-      "dates": [
-        "2026-11-19"
-      ],
-      "venue": "The Intersection (main room)",
-      "link": "https://www.etix.com/ticket/p/55212461/ray-volpe-volpetron-eternal-tour-grand-rapids-the-intersection",
-      "added": "2026-10-20"
-    },
-    {
-      "artist": "Live @TCP: The Dispatch (And friends!) - Comedy Show-RPPR",
-      "week": "this",
-      "dates": [
-        "2026-11-19"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-show-rppr",
-      "added": "2026-10-22"
-    },
-    {
-      "artist": "Live @TCP: Role Play, Play, Roll! (After The Dispatch) (Nov 19, Dec 17)",
-      "week": "this",
-      "dates": [
-        "2026-11-19"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/live-tcp-role-play-play-roll-after-the-dispatch",
-      "added": "2026-10-22"
-    },
     {
       "artist": "Candlelight: The Best of Hans Zimmer",
       "week": "this",
@@ -51,6 +21,46 @@
       "venue": "Wealthy Theatre",
       "link": "https://grcmc.org/theatre/event/candlelight-tribute-to-queen-and-the-beatles/1704",
       "added": "2026-10-19"
+    },
+    {
+      "artist": "Cat Daddy Jazz Trio",
+      "week": "this",
+      "dates": [
+        "2026-11-20"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "The Honeytones – Vinyl-Release Show",
+      "week": "this",
+      "dates": [
+        "2026-11-20"
+      ],
+      "venue": "SpeakEZ Lounge",
+      "link": "https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-setting-local-spins/",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "After Party Band ($5 cover)",
+      "week": "this",
+      "dates": [
+        "2026-11-20"
+      ],
+      "venue": "Billy's Lounge",
+      "link": "https://billyslounge.com/",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "Wake of Existence, Withhold the Blood, Maidenless (free, 21+)",
+      "week": "this",
+      "dates": [
+        "2026-11-20"
+      ],
+      "venue": "Mulligan's Pub",
+      "link": "https://mulliganspubgr.com/",
+      "added": "2026-11-19"
     },
     {
       "artist": "Subspace: Descend Into the Underground (with Gettoblaster, Pixcie, Cod3r) (18+)",
@@ -103,14 +113,24 @@
       "added": "2026-10-24"
     },
     {
-      "artist": "Choose Your Own Improv – Comedy Show",
+      "artist": "Candid Antics",
       "week": "this",
       "dates": [
         "2026-11-21"
       ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/choose-your-own-improv-comedy-show",
-      "added": "2026-10-22"
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "Guilty Secrets, Sister Lilith, Crossing Bard (free, 21+)",
+      "week": "this",
+      "dates": [
+        "2026-11-21"
+      ],
+      "venue": "Mulligan's Pub",
+      "link": "https://mulliganspubgr.com/",
+      "added": "2026-11-19"
     },
     {
       "artist": "Cam Rowe & Kate Brindle",
@@ -133,6 +153,17 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "80's Night with DJ Silvahalo & DJ Hustlah ($2 cover)",
+      "week": "this",
+      "dates": [
+        "2026-11-22",
+        "2026-11-29"
+      ],
+      "venue": "Billy's Lounge",
+      "link": "https://billyslounge.com/",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Lie.Palooza (hosted by Lie.)",
       "week": "this",
       "dates": [
@@ -141,6 +172,16 @@
       "venue": "Park Theatre (Holland)",
       "link": "https://parktheatreholland.org/",
       "added": "2026-11-12"
+    },
+    {
+      "artist": "BassBin: Northlake, Baxter Stockman, Zach Bletz",
+      "week": "next",
+      "dates": [
+        "2026-11-23"
+      ],
+      "venue": "Billy's Lounge",
+      "link": "https://billyslounge.com/",
+      "added": "2026-11-19"
     },
     {
       "artist": "High Score Comedy: Round 11",
@@ -153,6 +194,23 @@
       "added": "2026-10-21"
     },
     {
+      "artist": "Founders Open Mic – hosted by Big Jake Bootstrap",
+      "week": "next",
+      "dates": [
+        "2026-11-24",
+        "2026-12-01",
+        "2026-12-08",
+        "2026-12-15",
+        "2026-12-22",
+        "2026-12-29",
+        "2027-01-05",
+        "2027-01-12"
+      ],
+      "venue": "Founders Brewing Taproom",
+      "link": "https://foundersbrewing.com/visit-connect/grand-rapids-taproom/",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Desmond Jones (with Chirp)",
       "week": "next",
       "dates": [
@@ -161,6 +219,16 @@
       "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/99256957/desmond-jones-grand-rapids-the-intersection-elevation",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "The Return of Hannah Rose Graves w/ Highdeas",
+      "week": "next",
+      "dates": [
+        "2026-11-25"
+      ],
+      "venue": "SpeakEZ Lounge",
+      "link": "https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-setting-local-spins/",
+      "added": "2026-11-19"
     },
     {
       "artist": "Thanksgiving Eve ft. DJ Composition + Deeechild + DJ Omega Supreme",
@@ -181,6 +249,46 @@
       "venue": "Park Theatre (Holland)",
       "link": "https://parktheatreholland.org/",
       "added": "2026-11-12"
+    },
+    {
+      "artist": "616 Got Talent Open Mic Sessions w/ Grey Sky and Antholo-G (free, 21+)",
+      "week": "next",
+      "dates": [
+        "2026-11-26"
+      ],
+      "venue": "Mulligan's Pub",
+      "link": "https://mulliganspubgr.com/",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "John Shea Jazz Trio",
+      "week": "next",
+      "dates": [
+        "2026-11-27"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "MGP Presents: DJ Omega Supreme & DJ OSO – Black Friday",
+      "week": "next",
+      "dates": [
+        "2026-11-27"
+      ],
+      "venue": "Billy's Lounge",
+      "link": "https://billyslounge.com/",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "Jungle & House Tech, Saxony, Capricorange, Prim (free, 21+)",
+      "week": "next",
+      "dates": [
+        "2026-11-27"
+      ],
+      "venue": "Mulligan's Pub",
+      "link": "https://mulliganspubgr.com/",
+      "added": "2026-11-19"
     },
     {
       "artist": "Family Tradition Band – Country (Wawyé Oasis)",
@@ -223,10 +331,41 @@
       "added": "2026-10-20"
     },
     {
-      "artist": "SQUEAKY CLEAN Battle Bots Improv Comedy Show (Nov 28, Jan 30)",
+      "artist": "Funky Brewster",
       "week": "next",
       "dates": [
         "2026-11-28"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "Honeyfoot, Shadow of the Talisman, Some People's Kids (free, 21+)",
+      "week": "next",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "Mulligan's Pub",
+      "link": "https://mulliganspubgr.com/",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "The Soul Syndicate",
+      "week": "next",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "Billy's Lounge",
+      "link": "https://billyslounge.com/",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "SQUEAKY CLEAN Battle Bots Improv Comedy Show (Nov 28, Jan 30)",
+      "week": "next",
+      "dates": [
+        "2026-11-28",
+        "2027-01-30"
       ],
       "venue": "The Comedy Project",
       "link": "https://www.crowdwork.com/e/squeaky-clean-battle-bots-improv-comedy-show",
@@ -236,7 +375,8 @@
       "artist": "Squawk Box Improv Comedy Show! (Nov 28, Jan 30)",
       "week": "next",
       "dates": [
-        "2026-11-28"
+        "2026-11-28",
+        "2027-01-30"
       ],
       "venue": "The Comedy Project",
       "link": "https://www.crowdwork.com/e/squawk-box-improv-comedy-show",
@@ -313,6 +453,16 @@
       "added": "2026-11-12"
     },
     {
+      "artist": "BassBin: Mitten Kittens Fundraiser – Andromeda, Soular Spice, K-Lala",
+      "week": "later",
+      "dates": [
+        "2026-11-30"
+      ],
+      "venue": "Billy's Lounge",
+      "link": "https://billyslounge.com/",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Candlelight: Mozart vs Beethoven (Dec 3)",
       "week": "later",
       "dates": [
@@ -343,6 +493,26 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "The 6 Pak",
+      "week": "later",
+      "dates": [
+        "2026-12-03"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "Open Mic with Adam (free, 21+)",
+      "week": "later",
+      "dates": [
+        "2026-12-03"
+      ],
+      "venue": "Mulligan's Pub",
+      "link": "https://mulliganspubgr.com/",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Parade (Jewish Theatre Grand Rapids, Dec 3–13)",
       "week": "later",
       "dates": [
@@ -351,6 +521,36 @@
       "venue": "GRCC Spectrum Theater",
       "link": "https://www.jtgr.org/2026-2027/parade",
       "added": "2026-10-22"
+    },
+    {
+      "artist": "The Merry Men",
+      "week": "later",
+      "dates": [
+        "2026-12-04"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "The Insane Theatre – The Doors Tribute",
+      "week": "later",
+      "dates": [
+        "2026-12-04"
+      ],
+      "venue": "SpeakEZ Lounge",
+      "link": "https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-setting-local-spins/",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "The Wretched Hive, Winter After, Second Fate (free, 21+)",
+      "week": "later",
+      "dates": [
+        "2026-12-04"
+      ],
+      "venue": "Mulligan's Pub",
+      "link": "https://mulliganspubgr.com/",
+      "added": "2026-11-19"
     },
     {
       "artist": "Voices in Hope: A Church Choir Festival",
@@ -392,6 +592,16 @@
       "venue": "Speciation Artisan Ales",
       "link": "https://speciationartisanales.com/events/thv-swandrive",
       "added": "2026-11-12"
+    },
+    {
+      "artist": "No Skull, Angel of Mars, The Vonwerewolves (free, 21+)",
+      "week": "later",
+      "dates": [
+        "2026-12-05"
+      ],
+      "venue": "Mulligan's Pub",
+      "link": "https://mulliganspubgr.com/",
+      "added": "2026-11-19"
     },
     {
       "artist": "Jellybean Station – Improv Comedy Show (Dec 5–19)",
@@ -464,6 +674,16 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "The Mitten Pickers",
+      "week": "later",
+      "dates": [
+        "2026-12-09"
+      ],
+      "venue": "SpeakEZ Lounge",
+      "link": "https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-setting-local-spins/",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Lily Bomb + Zero Sun + Two Dollar Bills",
       "week": "later",
       "dates": [
@@ -494,6 +714,16 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "Genna & Jesse",
+      "week": "later",
+      "dates": [
+        "2026-12-10"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Deep Dark & Dangerous with Truth",
       "week": "later",
       "dates": [
@@ -511,6 +741,26 @@
       ],
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/midwest-skies-presents-the-4th-the-pyramid-scheme-tickets/14393174",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Horrocks Holiday Jamboree",
+      "week": "later",
+      "dates": [
+        "2026-12-11"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "2026 Winter Sketch Comedy Show (Dec 11–Jan 23)",
+      "week": "later",
+      "dates": [
+        "2026-12-11"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/2026-winter-sketch-comedy-show",
       "added": "2026-10-22"
     },
     {
@@ -554,6 +804,16 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "The Soultry Collective",
+      "week": "later",
+      "dates": [
+        "2026-12-12"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Michigan Mandolin Orchestra Christmas Concert",
       "week": "later",
       "dates": [
@@ -561,16 +821,6 @@
       ],
       "venue": "Fountain Street Church",
       "link": "https://fountainstreet.churchcenter.com/calendar/event/237792635",
-      "added": "2026-10-22"
-    },
-    {
-      "artist": "2026 Winter Sketch Comedy Show (Dec 12–Jan 23)",
-      "week": "later",
-      "dates": [
-        "2026-12-12"
-      ],
-      "venue": "The Comedy Project",
-      "link": "https://www.crowdwork.com/e/2026-winter-sketch-comedy-show",
       "added": "2026-10-22"
     },
     {
@@ -664,6 +914,16 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "Red Rose Music Lab Students",
+      "week": "later",
+      "dates": [
+        "2026-12-13"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Candlelight: Christmas Classics (Dec 17)",
       "week": "later",
       "dates": [
@@ -694,6 +954,36 @@
       "added": "2026-10-19"
     },
     {
+      "artist": "Yacht Rocket",
+      "week": "later",
+      "dates": [
+        "2026-12-17"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "Live @TCP: The Dispatch (And friends!) - Comedy Show-RPPR",
+      "week": "later",
+      "dates": [
+        "2026-12-17"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/live-tcp-the-dispatch-and-friends-comedy-show-rppr",
+      "added": "2026-10-22"
+    },
+    {
+      "artist": "Live @TCP: Role Play, Play, Roll! (After The Dispatch) (Nov 19, Dec 17)",
+      "week": "later",
+      "dates": [
+        "2026-12-17"
+      ],
+      "venue": "The Comedy Project",
+      "link": "https://www.crowdwork.com/e/live-tcp-role-play-play-roll-after-the-dispatch",
+      "added": "2026-10-22"
+    },
+    {
       "artist": "River City Improv (Dec 18)",
       "week": "later",
       "dates": [
@@ -714,6 +1004,26 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "Asamu Johnson & the Associates",
+      "week": "later",
+      "dates": [
+        "2026-12-18"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
+    },
+    {
+      "artist": "Crazy Hearse – Neil Young Tribute",
+      "week": "later",
+      "dates": [
+        "2026-12-18"
+      ],
+      "venue": "SpeakEZ Lounge",
+      "link": "https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-setting-local-spins/",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "The Bootstrap Boys Winter Solstice Party wsg Rowdy Fingers & the Ready Boys",
       "week": "later",
       "dates": [
@@ -732,6 +1042,16 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/cause-for-conflict-presents-conflict-the-pyramid-scheme-tickets/15013023",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Allendale Jazz Orchestra",
+      "week": "later",
+      "dates": [
+        "2026-12-19"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
     },
     {
       "artist": "Chris Casello Trio",
@@ -782,6 +1102,16 @@
       "venue": "Park Theatre (Holland)",
       "link": "https://parktheatreholland.org/",
       "added": "2026-11-12"
+    },
+    {
+      "artist": "Nathan Walton & the Remedy",
+      "week": "later",
+      "dates": [
+        "2026-12-26"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-19"
     },
     {
       "artist": "Sweet Dee and the Wild Honeys, with Bobcat Opossum",
@@ -1659,7 +1989,7 @@
       "dates": [
         "2027-03-26"
       ],
-      "venue": "The Stache (at The Intersection)",
+      "venue": "Elevation (at The Intersection)",
       "link": "https://www.etix.com/ticket/p/65789691/ninth-key-grand-rapids-the-intersection-the-stache",
       "added": "2026-10-27"
     },
