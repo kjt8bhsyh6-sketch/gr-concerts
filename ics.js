@@ -78,13 +78,32 @@
     const head = [place, time].filter(Boolean).join('. ');
     return (head ? head + '. ' : '') + 'Tickets/info via primary source.';
   }
-  // Recommended Event fields we can fill from a listing. No price: concerts.js and sports.js have none.
+  // A listing price is only a dedicated field, never prose in the title or notes
+  // ("free parking", "(free, 21+)", "$2 cover" are not a price). "free" means 0.
+  function offerPrice(raw) {
+    if (typeof raw === 'number' && Number.isFinite(raw) && raw >= 0) return raw;
+    if (typeof raw !== 'string') return null;
+    const s = raw.trim();
+    if (/^free$/i.test(s)) return 0;
+    const m = /^\$?(\d+(?:\.\d{1,2})?)$/.exec(s);
+    return m ? +m[1] : null;
+  }
+  // Recommended Event fields we can fill from a listing. offers is included only with a
+  // price, and only when the listing already has a structured price or explicit free
+  // admission (price / free / admission). concerts.js, sports.js and seasonal.js have none.
   function eventLd(c, bio) {
     const link = c.link && /^https?:\/\//i.test(c.link) ? c.link : '';
-    const offers = { '@type': 'Offer', priceCurrency: 'USD' };
-    if (link) { offers.url = link; offers.availability = 'https://schema.org/InStock'; }
-    if (/^\d{4}-\d{2}-\d{2}$/.test(c.added || '')) offers.validFrom = c.added;
-    const out = { endDate: iso(parts(c, 3)), description: eventDescription(c, bio), image: BRAND_IMAGE, offers };
+    const out = { endDate: iso(parts(c, 3)), description: eventDescription(c, bio), image: BRAND_IMAGE };
+    const price = c && Object.prototype.hasOwnProperty.call(c, 'price') ? offerPrice(c.price)
+      : c && c.free === true ? 0
+      : c && Object.prototype.hasOwnProperty.call(c, 'admission') ? offerPrice(c.admission)
+      : null;
+    if (price != null) {
+      const offers = { '@type': 'Offer', price, priceCurrency: 'USD' };
+      if (link) { offers.url = link; offers.availability = 'https://schema.org/InStock'; }
+      if (/^\d{4}-\d{2}-\d{2}$/.test(c.added || '')) offers.validFrom = c.added;
+      out.offers = offers;
+    }
     if (c.venue) {
       out.organizer = { '@type': 'Organization', name: c.venue };
       if (link) out.organizer.url = link;
