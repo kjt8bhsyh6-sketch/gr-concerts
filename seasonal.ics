@@ -22,27 +22,17 @@ URL:https://www.highteagr.com/events/beauty-and-the-beast-themed-menu
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-05-art-coast-food-wine-festival@gr-seasonal
-DTSTAMP:20261028T120000Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261108
-SUMMARY:Art Coast Food & Wine Festival
-LOCATION:Riverside Pavilion\, 48 Water St\, Saugatuck\, Grand Rapids\, MI
-DESCRIPTION:Food & Wine Festival. Nov 5–7 · Thu–Sat. Info: https://saugatu
- ck.com/art-coast-food-wine-festival/ (confirm details with the organizer)
-URL:https://saugatuck.com/art-coast-food-wine-festival/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-18-grand-rapids-christkindl-markt@gr-seasonal
 DTSTAMP:20261019T120000Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261225
 SUMMARY:Grand Rapids Christkindl Markt
 LOCATION:Downtown Market\, 435 Ionia Ave SW\, Grand Rapids\, MI
-DESCRIPTION:Holiday Market. Nov 18–Dec 24 · Wed–Sun (closed Mon/Tue & Than
- ksgiving). Info: https://christkindlmarktgr.com/ (confirm details with th
- e organizer)
+DESCRIPTION:Holiday Market. Nov 18–Dec 24 · Wed 11 AM–8 PM\, Thu–Fri 11 AM
+ –9 PM\, Sat 10 AM–9 PM\, Sun 10 AM–8 PM · closed Mon/Tue & Thanksgiving\;
+  special hours Nov 25 10 AM–5 PM\, Dec 21–23 11 AM–9 PM\, Dec 24 10 AM–3 
+ PM. Info: https://christkindlmarktgr.com/ (confirm details with the organ
+ izer)
 URL:https://christkindlmarktgr.com/
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -75,34 +65,17 @@ URL:https://www.holland.org/kerstmarkt/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-21-gentex-grand-rapids-santa-parade-city-tree-lighti@gr-season
- al
-DTSTAMP:20261020T120000Z
+UID:2026-11-21-festival-of-trees-saugatuck-woman-s-club@gr-seasonal
+DTSTAMP:20261117T120000Z
 DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Gentex Grand Rapids Santa Parade + City Tree Lighting
-LOCATION:Downtown Grand Rapids (tree lighting at Rosa Parks Circle)\, Gran
- d Rapids\, MI
-DESCRIPTION:Holiday Parade. Sat Nov 21 · parade 5 PM\; Santa arrives ~6:30
-  PM\; tree lighting 6:45 PM. Info: https://grsantaparade.com/ (confirm de
- tails with the organizer)
-URL:https://grsantaparade.com/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-21-saugatuck-turkey-trot-2026-fun-run-benefiting-chr@gr-season
- al
-DTSTAMP:20261030T120000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Saugatuck Turkey Trot 2026 (fun run benefiting Christian Neighbors
- )
-LOCATION:Wick's Park Bar & Grille\, 449 Water St\, Saugatuck\, Grand Rapid
- s\, MI
-DESCRIPTION:Turkey Trot. Sat Nov 21 · 11 AM · non-timed ~3.5-mile run/walk
-  from Wicks Park. Info: https://saugatuck.com/event/turkey-trot-2025/ (co
- nfirm details with the organizer)
-URL:https://saugatuck.com/event/turkey-trot-2025/
+DTEND;VALUE=DATE:20261129
+SUMMARY:Festival of Trees (Saugatuck Woman's Club)
+LOCATION:Saugatuck Woman's Club\, 303 Butler St\, Saugatuck\, Grand Rapids
+ \, MI
+DESCRIPTION:Holiday Exhibit. Nov 21–24\, 27 & 28 · 10 AM–4 PM · small deco
+ rated trees on display and for sale. Info: https://saugatuckwomensclub.or
+ g/series/festival-of-trees/ (confirm details with the organizer)
+URL:https://saugatuckwomensclub.org/series/festival-of-trees/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -191,6 +164,35 @@ URL:https://saugatuck.com/event/saugatuck-christmas-tree-lighting/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:2026-11-27-crane-orchards-holiday-light-show@gr-seasonal
+DTSTAMP:20261117T120000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261228
+SUMMARY:Crane Orchards Holiday Light Show
+LOCATION:Crane Orchards\, 6080 124th Ave\, Fennville\, Grand Rapids\, MI
+DESCRIPTION:Holiday Lights. Nov 27–Dec 27 · Wed & Thu 6–8 PM\, Fri & Sat 6
+ –10 PM\, Sun 6–8 PM · closed Mon & Tue · drive-through\, pay at the gate.
+  Info: https://www.craneorchards.com/lightshow (confirm details with the 
+ organizer)
+URL:https://www.craneorchards.com/lightshow
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-27-saugatuck-douglas-art-club-holiday-market-with-sw@gr-season
+ al
+DTSTAMP:20261117T120000Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261129
+SUMMARY:Saugatuck Douglas Art Club Holiday Market (with SWC Bake Sale)
+LOCATION:Saugatuck Woman's Club\, 303 Butler St\, Saugatuck\, Grand Rapids
+ \, MI
+DESCRIPTION:Holiday Market. Fri–Sat Nov 27–28 · 10 AM–3 PM · member art\, 
+ plus the Woman's Club bake sale. Info: https://saugatuckwomensclub.org/ev
+ ent/swc-bake-sale-2/2026-11-27/ (confirm details with the organizer)
+URL:https://saugatuckwomensclub.org/event/swc-bake-sale-2/2026-11-27/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:2026-11-28-santa-claus-meet-greet-at-meijer-gardens@gr-seasonal
 DTSTAMP:20261023T120000Z
 DTSTART;VALUE=DATE:20261128
@@ -232,6 +234,22 @@ DESCRIPTION:Holiday Cookie Tour. Sat Nov 28 · 1–3 PM · open-house stroll s
   person. Info: https://saugatuck.com/event/saugatuck-douglas-holiday-cook
  ie-tour/ (confirm details with the organizer)
 URL:https://saugatuck.com/event/saugatuck-douglas-holiday-cookie-tour/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-28-santa-s-magical-reindeer-meet-and-greet-at-meijer@gr-season
+ al
+DTSTAMP:20261112T120000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261206
+SUMMARY:Santa’s Magical Reindeer Meet and Greet at Meijer Gardens
+LOCATION:Michigan's Farm Garden\, Frederik Meijer Gardens\, 1000 E Beltlin
+ e Ave NE\, Grand Rapids\, MI
+DESCRIPTION:Santa Visit. Sat Nov 28 & Sat Dec 5 · see event page for times
+ . Info: https://www.meijergardens.org/events/santas-magical-reindeer-meet
+ -and-greet/ (confirm details with the organizer)
+URL:https://www.meijergardens.org/events/santas-magical-reindeer-meet-and-
+ greet/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -492,6 +510,37 @@ DESCRIPTION:Holiday Market. Sun Dec 20 · starts 4 PM. Info: https://www.ti
  4355814 (confirm details with the organizer)
 URL:https://www.ticketweb.com/event/last-chance-holiday-market-the-pyramid
  -scheme-tickets/14355814
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-31-coral-gables-nye-celebration-with-fireworks@gr-seasonal
+DTSTAMP:20261117T120000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Coral Gables NYE Celebration with Fireworks
+LOCATION:Coral Gables\, 220 Water St\, Saugatuck\, Grand Rapids\, MI
+DESCRIPTION:Holiday Celebration. Thu Dec 31 · 9:00 PM–1:00 AM. Info: https
+ ://saugatuck.com/event/coral-gables-nye-celebration-with-fireworks/ (conf
+ irm details with the organizer)
+URL:https://saugatuck.com/event/coral-gables-nye-celebration-with-firework
+ s/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-23-2027-orchid-show-at-meijer-gardens-grand-valley-o@gr-season
+ al
+DTSTAMP:20261112T120000Z
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270125
+SUMMARY:2027 Orchid Show at Meijer Gardens (Grand Valley Orchid Society)
+LOCATION:Frederik Meijer Gardens\, 1000 E Beltline Ave NE\, Grand Rapids\,
+  MI
+DESCRIPTION:Winter Flower Show. Sat Jan 23 (sales 9 AM–5 PM\, display 12–5
+  PM) & Sun Jan 24 (sales & display 11 AM–5 PM). Info: https://www.meijerg
+ ardens.org/events/2027-orchid-show-presented-by-grand-valley-orchid-socie
+ ty/ (confirm details with the organizer)
+URL:https://www.meijergardens.org/events/2027-orchid-show-presented-by-gra
+ nd-valley-orchid-society/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

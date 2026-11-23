@@ -4,19 +4,16 @@
 //   link = the team's OFFICIAL ticket page, added = the date you added it (NEW badge for 7 days).
 // SEASON_NOTES: teams not playing right now get a short note card instead of games.
 // Remove a team's note once its games are listed in GAMES.
-const SPORTS_UPDATED = "Nov 6, 2026";
+const SPORTS_UPDATED = "Nov 23, 2026";
 const TEAMS = [
   { name:"Grand Rapids Griffins", sport:"Hockey (AHL)", site:"https://griffinshockey.com/schedule/home-schedule" },
   { name:"Grand Rapids Gold", sport:"Basketball (NBA G League)", site:"https://grandrapids.gleague.nba.com/schedule" },
-  { name:"Grand Rapids Rise", sport:"Volleyball (MLV)", site:"https://provolleyball.com/teams/grand-rapids-rise" },
+  { name:"Grand Rapids Rise", sport:"Volleyball (MLV)", site:"https://mlvb.com/teams/grand-rapids-rise" },
   { name:"West Michigan Whitecaps", sport:"Baseball (MiLB, High-A)", site:"https://www.milb.com/west-michigan/schedule" },
   { name:"AC Grand Rapids", sport:"Soccer (MLS NEXT Pro)", site:"https://www.acgrandrapids.com/" },
   { name:"Great Lakes Invitational", sport:"Hockey (NCAA)", site:"https://www.vanandelarena.com/events/2026/great-lakes-invitational" },
 ];
 const GAMES = [
-  { team:"Grand Rapids Griffins", opponent:"Milwaukee Admirals", date:"2026-11-06", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
-  { team:"Grand Rapids Griffins", opponent:"Rockford IceHogs", date:"2026-11-11", time:"11:00 AM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
-  { team:"Grand Rapids Griffins", opponent:"Manitoba Moose", date:"2026-11-18", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Iowa Wild", date:"2026-11-27", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Iowa Wild", date:"2026-11-29", time:"4:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-19" },
   { team:"Grand Rapids Griffins", opponent:"Manitoba Moose", date:"2026-12-02", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-20" },
@@ -43,10 +40,6 @@ const GAMES = [
   { team:"Grand Rapids Griffins", opponent:"Chicago Wolves", date:"2027-03-26", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-20" },
   { team:"Grand Rapids Griffins", opponent:"Colorado Eagles", date:"2027-04-02", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-20" },
   { team:"Grand Rapids Griffins", opponent:"Colorado Eagles", date:"2027-04-03", time:"7:00 PM", venue:"Van Andel Arena", link:"https://griffinshockey.evenue.net/events/S", added:"2026-10-20" },
-  { team:"Grand Rapids Gold", opponent:"Sioux Falls Skyforce", date:"2026-11-07", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },
-  { team:"Grand Rapids Gold", opponent:"Sioux Falls Skyforce", date:"2026-11-08", time:"3:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },
-  { team:"Grand Rapids Gold", opponent:"Cleveland Charge", date:"2026-11-20", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },
-  { team:"Grand Rapids Gold", opponent:"Cleveland Charge", date:"2026-11-22", time:"3:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },
   { team:"Grand Rapids Gold", opponent:"Noblesville Boom", date:"2026-11-28", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-19" },
   { team:"Grand Rapids Gold", opponent:"Wisconsin Herd", date:"2026-12-05", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-20" },
   { team:"Grand Rapids Gold", opponent:"Wisconsin Herd", date:"2026-12-08", time:"7:00 PM", venue:"Van Andel Arena", link:"https://www.gofevo.com/group/2026274315?ref=W", added:"2026-10-20" },
@@ -82,19 +75,19 @@ const GAMES = [
   { team:"West Michigan Whitecaps", opponent:"Lake County Captains", date:"2027-04-30", time:"6:35 PM", venue:"LMCU Ballpark", link:"https://www.milb.com/west-michigan/tickets/single-game-tickets", added:"2026-10-25" },
   { team:"Great Lakes Invitational", opponent:"Semifinals: Michigan Tech vs. Western Michigan (3:30 PM) & Michigan State vs. Lindenwood (7:00 PM)", date:"2026-12-29", time:"3:30 PM & 7:00 PM", venue:"Van Andel Arena", link:"https://www.vanandelarena.com/events/2026/great-lakes-invitational", added:"2026-10-23" },
   { team:"Great Lakes Invitational", opponent:"Third-Place Game (3:30 PM) & Championship Game (7:00 PM)", date:"2026-12-30", time:"3:30 PM & 7:00 PM", venue:"Van Andel Arena", link:"https://www.vanandelarena.com/events/2026/great-lakes-invitational", added:"2026-10-23" },
-  { team:"Grand Rapids Rise", opponent:"Orlando Valkyries", date:"2027-01-07", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"Columbus Fury", date:"2027-01-14", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"Minnesota Forge", date:"2027-01-28", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"Atlanta Vibe", date:"2027-01-30", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"Omaha Supernovas", date:"2027-02-14", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"DC Flight", date:"2027-02-24", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"Dallas Pulse", date:"2027-02-26", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"Atlanta Vibe", date:"2027-03-17", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"Los Angeles Thunder", date:"2027-03-21", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"Indy Ignite", date:"2027-04-04", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"NorCal Rumble", date:"2027-04-07", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"Vegas Thrill", date:"2027-04-10", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
-  { team:"Grand Rapids Rise", opponent:"DC Flight", date:"2027-04-18", time:"Time TBA", venue:"Van Andel Arena", link:"https://provolleyball.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Orlando Valkyries", date:"2027-01-07", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Columbus Fury", date:"2027-01-14", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Minnesota Forge", date:"2027-01-28", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Atlanta Vibe", date:"2027-01-30", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Omaha Supernovas", date:"2027-02-14", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"DC Flight", date:"2027-02-24", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Dallas Pulse", date:"2027-02-26", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Atlanta Vibe", date:"2027-03-17", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Los Angeles Thunder", date:"2027-03-21", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Indy Ignite", date:"2027-04-04", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"NorCal Rumble", date:"2027-04-07", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"Vegas Thrill", date:"2027-04-10", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
+  { team:"Grand Rapids Rise", opponent:"DC Flight", date:"2027-04-18", time:"Time TBA", venue:"Van Andel Arena", link:"https://mlvb.com/teams/grand-rapids-rise/schedule", added:"2026-10-31" },
 ];
 const SEASON_NOTES = [
   { team:"AC Grand Rapids", venue:"Amway Stadium", text:"New pro soccer club (MLS NEXT Pro). The first home match is Friday, March 19, 2027, at the new Amway Stadium (230 Winter Ave NW, downtown Westside). Opponent TBA.", link:"https://www.acgrandrapids.com/friday-night-lights-inaugural-home-opener-set-for-friday-march-19-2027/", added:"2026-10-19" },
