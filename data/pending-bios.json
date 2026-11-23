@@ -1,181 +1,10 @@
 {
-  "generated": "2026-11-20",
-  "count": 218,
+  "generated": "2026-11-23",
+  "count": 206,
   "pending": [
     {
-      "artist": "Candlelight: The Best of Hans Zimmer",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "Wealthy Theatre",
-      "link": "https://feverup.com/m/265141",
-      "added": "2026-10-19"
-    },
-    {
-      "artist": "Candlelight: Queen vs. The Beatles (Nov 20)",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/theatre/event/candlelight-tribute-to-queen-and-the-beatles/1704",
-      "added": "2026-10-19"
-    },
-    {
-      "artist": "Cat Daddy Jazz Trio",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "Horrocks Market",
-      "link": "https://www.horrocksmarket.com/events",
-      "added": "2026-11-19"
-    },
-    {
-      "artist": "The Honeytones – Vinyl-Release Show",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "SpeakEZ Lounge",
-      "link": "https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-setting-local-spins/",
-      "added": "2026-11-19"
-    },
-    {
-      "artist": "After Party Band ($5 cover)",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "Billy's Lounge",
-      "link": "https://billyslounge.com/",
-      "added": "2026-11-19"
-    },
-    {
-      "artist": "Wake of Existence, Withhold the Blood, Maidenless (free, 21+)",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "Mulligan's Pub",
-      "link": "https://mulliganspubgr.com/",
-      "added": "2026-11-19"
-    },
-    {
-      "artist": "Subspace: Descend Into the Underground (with Gettoblaster, Pixcie, Cod3r) (18+)",
-      "week": "this",
-      "dates": [
-        "2026-11-20"
-      ],
-      "venue": "The Mint (at The Intersection)",
-      "link": "https://sectionlive.com/event/subspace-descend-into-the-underground/the-mint/grand-rapids-michigan/",
-      "added": "2026-10-23"
-    },
-    {
-      "artist": "River City Improv (Nov 21)",
-      "week": "this",
-      "dates": [
-        "2026-11-21"
-      ],
-      "venue": "Wealthy Theatre",
-      "link": "https://grcmc.org/event/river-city-improv/1643",
-      "added": "2026-10-19"
-    },
-    {
-      "artist": "DANCE… 4 U: Slayyyter x Charli XCX Night",
-      "week": "this",
-      "dates": [
-        "2026-11-21"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/dance-4-u-slayyyter-x-the-pyramid-scheme-tickets/14300704",
-      "added": "2026-10-21"
-    },
-    {
-      "artist": "Canabliss: After Glow Tour (18+)",
-      "week": "this",
-      "dates": [
-        "2026-11-21"
-      ],
-      "venue": "The Stache (at The Intersection)",
-      "link": "https://www.etix.com/ticket/p/44961666/canabliss-after-glow-tour-grand-rapids-the-intersection-the-stache",
-      "added": "2026-10-20"
-    },
-    {
-      "artist": "Crooked Root",
-      "week": "this",
-      "dates": [
-        "2026-11-21"
-      ],
-      "venue": "Tip Top Deluxe Bar & Grill",
-      "link": "https://www.ticketweb.com/event/crooked-root-tip-top-deluxe-bar-tickets/14397974",
-      "added": "2026-10-24"
-    },
-    {
-      "artist": "Candid Antics",
-      "week": "this",
-      "dates": [
-        "2026-11-21"
-      ],
-      "venue": "Horrocks Market",
-      "link": "https://www.horrocksmarket.com/events",
-      "added": "2026-11-19"
-    },
-    {
-      "artist": "Guilty Secrets, Sister Lilith, Crossing Bard (free, 21+)",
-      "week": "this",
-      "dates": [
-        "2026-11-21"
-      ],
-      "venue": "Mulligan's Pub",
-      "link": "https://mulliganspubgr.com/",
-      "added": "2026-11-19"
-    },
-    {
-      "artist": "Cam Rowe & Kate Brindle",
-      "week": "this",
-      "dates": [
-        "2026-11-21"
-      ],
-      "venue": "Coral Gables (Saugatuck)",
-      "link": "https://www.saugatuckcomedy.com/product/cam-rowe-kate-brindle/31",
-      "added": "2026-11-02"
-    },
-    {
-      "artist": "Rumours ATL: A Fleetwood Mac Tribute",
-      "week": "this",
-      "dates": [
-        "2026-11-22"
-      ],
-      "venue": "Elevation (at The Intersection)",
-      "link": "https://www.etix.com/ticket/p/40328864/rumours-atla-fleetwood-mac-tribute-grand-rapids-the-intersection",
-      "added": "2026-10-20"
-    },
-    {
-      "artist": "80's Night with DJ Silvahalo & DJ Hustlah ($2 cover)",
-      "week": "this",
-      "dates": [
-        "2026-11-22",
-        "2026-11-29"
-      ],
-      "venue": "Billy's Lounge",
-      "link": "https://billyslounge.com/",
-      "added": "2026-11-19"
-    },
-    {
-      "artist": "Lie.Palooza (hosted by Lie.)",
-      "week": "this",
-      "dates": [
-        "2026-11-22"
-      ],
-      "venue": "Park Theatre (Holland)",
-      "link": "https://parktheatreholland.org/",
-      "added": "2026-11-12"
-    },
-    {
       "artist": "BassBin: Northlake, Baxter Stockman, Zach Bletz",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-23"
       ],
@@ -185,7 +14,7 @@
     },
     {
       "artist": "High Score Comedy: Round 11",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-24"
       ],
@@ -195,7 +24,7 @@
     },
     {
       "artist": "Founders Open Mic – hosted by Big Jake Bootstrap",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-24",
         "2026-12-01",
@@ -212,7 +41,7 @@
     },
     {
       "artist": "Desmond Jones (with Chirp)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-25"
       ],
@@ -222,7 +51,7 @@
     },
     {
       "artist": "The Return of Hannah Rose Graves w/ Highdeas",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-25"
       ],
@@ -232,7 +61,7 @@
     },
     {
       "artist": "Thanksgiving Eve ft. DJ Composition + Deeechild + DJ Omega Supreme",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-25"
       ],
@@ -242,7 +71,7 @@
     },
     {
       "artist": "Reckless Davey – Night Before Thanksgiving Bash",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-25"
       ],
@@ -252,7 +81,7 @@
     },
     {
       "artist": "616 Got Talent Open Mic Sessions w/ Grey Sky and Antholo-G (free, 21+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-26"
       ],
@@ -262,7 +91,7 @@
     },
     {
       "artist": "John Shea Jazz Trio",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-27"
       ],
@@ -272,7 +101,7 @@
     },
     {
       "artist": "MGP Presents: DJ Omega Supreme & DJ OSO – Black Friday",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-27"
       ],
@@ -282,7 +111,7 @@
     },
     {
       "artist": "Jungle & House Tech, Saxony, Capricorange, Prim (free, 21+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-27"
       ],
@@ -292,7 +121,7 @@
     },
     {
       "artist": "Family Tradition Band – Country (Wawyé Oasis)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-27"
       ],
@@ -302,7 +131,7 @@
     },
     {
       "artist": "Candlelight: Mozart vs Beethoven (Nov 28)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -312,7 +141,7 @@
     },
     {
       "artist": "Candlelight: 80s Rock Anthems",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -322,7 +151,7 @@
     },
     {
       "artist": "ENMY – Damn….Last 20 Years Standing",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -332,7 +161,7 @@
     },
     {
       "artist": "Funky Brewster",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -342,7 +171,7 @@
     },
     {
       "artist": "Honeyfoot, Shadow of the Talisman, Some People's Kids (free, 21+)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -352,7 +181,7 @@
     },
     {
       "artist": "The Soul Syndicate",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -362,7 +191,7 @@
     },
     {
       "artist": "SQUEAKY CLEAN Battle Bots Improv Comedy Show (Nov 28, Jan 30)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28",
         "2027-01-30"
@@ -373,7 +202,7 @@
     },
     {
       "artist": "Squawk Box Improv Comedy Show! (Nov 28, Jan 30)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28",
         "2027-01-30"
@@ -384,7 +213,7 @@
     },
     {
       "artist": "Silver Creek Revival, Blinker Fluid, Rowdy Fingers & The Ready Boys",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -394,7 +223,7 @@
     },
     {
       "artist": "Josh Rose & the Founding Fathers, with Kyle Joe",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -404,7 +233,7 @@
     },
     {
       "artist": "The Turkey Turnup ft. King Inesse + Yeyo (Cultura Entertainment Group)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -414,7 +243,7 @@
     },
     {
       "artist": "Brent TerHune & Dan Turco",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -424,7 +253,7 @@
     },
     {
       "artist": "Rock the Park: NEXT GEN – Youth Rock & Metal Benefit Show (Park Theatre Foundation)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-28"
       ],
@@ -433,8 +262,18 @@
       "added": "2026-11-12"
     },
     {
+      "artist": "Rachelle Rae",
+      "week": "this",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "Soaring Eagle Casino & Resort",
+      "link": "https://soaringeaglecasino.com/events/rachelle-rae-2-2-2-3-2-2-2-2/",
+      "added": "2026-11-23"
+    },
+    {
       "artist": "1976/1986: A Tribute",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-29"
       ],
@@ -443,8 +282,18 @@
       "added": "2026-10-21"
     },
     {
+      "artist": "80's Night with DJ Silvahalo & DJ Hustlah ($2 cover)",
+      "week": "this",
+      "dates": [
+        "2026-11-29"
+      ],
+      "venue": "Billy's Lounge",
+      "link": "https://billyslounge.com/",
+      "added": "2026-11-19"
+    },
+    {
       "artist": "Mitten Written: Volume One (Honeycrutch, Teenage Ghost & Tanner J. Burns)",
-      "week": "next",
+      "week": "this",
       "dates": [
         "2026-11-29"
       ],
@@ -454,7 +303,7 @@
     },
     {
       "artist": "BassBin: Mitten Kittens Fundraiser – Andromeda, Soular Spice, K-Lala",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-11-30"
       ],
@@ -464,7 +313,7 @@
     },
     {
       "artist": "Candlelight: Mozart vs Beethoven (Dec 3)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-03"
       ],
@@ -474,7 +323,7 @@
     },
     {
       "artist": "AHEE – BassQuest Tour Phase 3",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-03"
       ],
@@ -484,7 +333,7 @@
     },
     {
       "artist": "Candlelight: Queen vs. The Beatles (Dec 3)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-03"
       ],
@@ -494,7 +343,7 @@
     },
     {
       "artist": "The 6 Pak",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-03"
       ],
@@ -504,7 +353,7 @@
     },
     {
       "artist": "Open Mic with Adam (free, 21+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-03"
       ],
@@ -514,7 +363,7 @@
     },
     {
       "artist": "Parade (Jewish Theatre Grand Rapids, Dec 3–13)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-03"
       ],
@@ -524,7 +373,7 @@
     },
     {
       "artist": "The Merry Men",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-04"
       ],
@@ -534,7 +383,7 @@
     },
     {
       "artist": "The Insane Theatre – The Doors Tribute",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-04"
       ],
@@ -544,7 +393,7 @@
     },
     {
       "artist": "The Wretched Hive, Winter After, Second Fate (free, 21+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-04"
       ],
@@ -554,7 +403,7 @@
     },
     {
       "artist": "Voices in Hope: A Church Choir Festival",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-04"
       ],
@@ -564,7 +413,7 @@
     },
     {
       "artist": "Clownvis Presley wsg Vlad's Skeletal Circus",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-04"
       ],
@@ -574,7 +423,7 @@
     },
     {
       "artist": "Handel's Messiah (Calvin, 107th season)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-04",
         "2026-12-05"
@@ -585,7 +434,7 @@
     },
     {
       "artist": "Free Show Friday: T.H.V. & Swandrive (experimental, no cover, 21+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-04"
       ],
@@ -595,7 +444,7 @@
     },
     {
       "artist": "No Skull, Angel of Mars, The Vonwerewolves (free, 21+)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-05"
       ],
@@ -605,7 +454,7 @@
     },
     {
       "artist": "Jellybean Station – Improv Comedy Show (Dec 5–19)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-05"
       ],
@@ -615,7 +464,7 @@
     },
     {
       "artist": "River City Improv (Dec 5)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-05"
       ],
@@ -625,7 +474,7 @@
     },
     {
       "artist": "Vespa and Together Again",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-05"
       ],
@@ -635,7 +484,7 @@
     },
     {
       "artist": "The 1985 – Totally 80’s Mixtape Live!",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-05"
       ],
@@ -644,8 +493,18 @@
       "added": "2026-11-11"
     },
     {
+      "artist": "Dee Sutton & Drew Howard",
+      "week": "next",
+      "dates": [
+        "2026-12-05"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-23"
+    },
+    {
       "artist": "J Oscar Bittinger: A Winter's Tune – Acoustic Stew Music Guild",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-06"
       ],
@@ -655,7 +514,7 @@
     },
     {
       "artist": "Daisy Grenade – Still Has So Much 2 Say",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-06"
       ],
@@ -665,13 +524,23 @@
     },
     {
       "artist": "TRSH – Gone Fishin' Tour (with Adjust The Sails, Dear Maryanne, Dear Cincinnati)",
-      "week": "later",
+      "week": "next",
       "dates": [
         "2026-12-06"
       ],
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/trsh-gone-fishin-the-pyramid-scheme-tickets/14270694",
       "added": "2026-10-20"
+    },
+    {
+      "artist": "Kentwood Orchestra Students PLAY-A-THON",
+      "week": "next",
+      "dates": [
+        "2026-12-06"
+      ],
+      "venue": "Horrocks Market",
+      "link": "https://www.horrocksmarket.com/events",
+      "added": "2026-11-23"
     },
     {
       "artist": "The Mitten Pickers",
@@ -1982,6 +1851,16 @@
       "venue": "Calvin University Chapel",
       "link": "https://calvin.edu/events/campus-choir-and-womens-chorale-spring-concert-1805844600",
       "added": "2026-10-23"
+    },
+    {
+      "artist": "The Toasters – 46 Years in Ska",
+      "week": "later",
+      "dates": [
+        "2027-03-23"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/the-toasters-46-the-pyramid-scheme-tickets/14445884",
+      "added": "2026-11-23"
     },
     {
       "artist": "Ninth Key",

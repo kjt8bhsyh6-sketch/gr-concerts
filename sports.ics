@@ -24,28 +24,6 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-11-20-grand-rapids-gold-vs-cleveland-charge@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261120T190000
-DTEND;TZID=America/Detroit:20261120T220000
-SUMMARY:Grand Rapids Gold vs. Cleveland Charge
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Basketball (NBA G League)\, 7:00 PM. Tickets/info: https://www
- .gofevo.com/group/2026274315?ref=W (confirm details with the venue)
-URL:https://www.gofevo.com/group/2026274315?ref=W
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-22-grand-rapids-gold-vs-cleveland-charge@gr-concerts
-DTSTAMP:20261019T120000Z
-DTSTART;TZID=America/Detroit:20261122T150000
-DTEND;TZID=America/Detroit:20261122T180000
-SUMMARY:Grand Rapids Gold vs. Cleveland Charge
-LOCATION:Van Andel Arena\, Grand Rapids\, MI
-DESCRIPTION:Basketball (NBA G League)\, 3:00 PM. Tickets/info: https://www
- .gofevo.com/group/2026274315?ref=W (confirm details with the venue)
-URL:https://www.gofevo.com/group/2026274315?ref=W
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-27-grand-rapids-griffins-vs-iowa-wild@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261127T190000

@@ -50,20 +50,6 @@ URL:https://www.studioparkgr.com/holiday-market
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-20-grand-rapids-international-wine-beer-food-festiva@gr-season
- al
-DTSTAMP:20261120T120000Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261122
-SUMMARY:Grand Rapids International Wine\, Beer & Food Festival (21+)
-LOCATION:DeVos Place\, 303 Monroe Ave NW\, Grand Rapids\, MI
-DESCRIPTION:Food & Drink Festival. Fri Nov 20 · 4–9 PM & Sat Nov 21 · 2–9 
- PM · 21+ with valid ID · $25 single-day admission\, tasting tickets extra
- . Info: https://showspan.com/grw/ (confirm details with the organizer)
-URL:https://showspan.com/grw/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-20-holland-kerstmarkt-european-outdoor-christmas-mar@gr-season
  al
 DTSTAMP:20261023T120000Z
@@ -79,37 +65,6 @@ URL:https://www.holland.org/kerstmarkt/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-21-gentex-grand-rapids-santa-parade-city-tree-lighti@gr-season
- al
-DTSTAMP:20261020T120000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Gentex Grand Rapids Santa Parade + City Tree Lighting
-LOCATION:Downtown Grand Rapids (tree lighting at Rosa Parks Circle)\, Gran
- d Rapids\, MI
-DESCRIPTION:Holiday Parade. Sat Nov 21 · parade 5 PM\; Santa arrives ~6:30
-  PM\; tree lighting 6:45 PM. Info: https://grsantaparade.com/ (confirm de
- tails with the organizer)
-URL:https://grsantaparade.com/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-21-saugatuck-turkey-trot-2026-fun-run-benefiting-chr@gr-season
- al
-DTSTAMP:20261030T120000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:Saugatuck Turkey Trot 2026 (fun run benefiting Christian Neighbors
- )
-LOCATION:Wick's Park Bar & Grille\, 449 Water St\, Saugatuck\, Grand Rapid
- s\, MI
-DESCRIPTION:Turkey Trot. Sat Nov 21 · 11 AM · non-timed ~3.5-mile run/walk
-  from Wicks Park. Info: https://saugatuck.com/event/turkey-trot-2025/ (co
- nfirm details with the organizer)
-URL:https://saugatuck.com/event/turkey-trot-2025/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-21-festival-of-trees-saugatuck-woman-s-club@gr-seasonal
 DTSTAMP:20261117T120000Z
 DTSTART;VALUE=DATE:20261121
@@ -121,20 +76,6 @@ DESCRIPTION:Holiday Exhibit. Nov 21–24\, 27 & 28 · 10 AM–4 PM · small deco
  rated trees on display and for sale. Info: https://saugatuckwomensclub.or
  g/series/festival-of-trees/ (confirm details with the organizer)
 URL:https://saugatuckwomensclub.org/series/festival-of-trees/
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-21-grimoire-academy-s-gothic-market@gr-seasonal
-DTSTAMP:20261119T120000Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261123
-SUMMARY:Grimoire Academy's Gothic Market
-LOCATION:Holland Civic Center Place\, 150 W 8th St\, Holland\, Grand Rapid
- s\, MI
-DESCRIPTION:Gothic Market. Sat Nov 21\, 12 PM – Sun Nov 22\, 5 PM EST. Inf
- o: https://events.humanitix.com/the-goth-market-nov-21-22-2026-holland-mi
-  (confirm details with the organizer)
-URL:https://events.humanitix.com/the-goth-market-nov-21-22-2026-holland-mi
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
