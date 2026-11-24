@@ -38,4 +38,4 @@ routes = []
 
 [[env.staging.kv_namespaces]]
 binding = "SUBMISSIONS"
-id = "REPLACE_STAGING_KV_ID"
+id = "52be1e3171f0448da3f408b6a112d108"

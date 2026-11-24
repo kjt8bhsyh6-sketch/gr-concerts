@@ -242,6 +242,9 @@
       + "<h3>Thanks \u2014 we review every submission before it goes live.</h3>"
       + "<p>Nothing auto-publishes. If we can verify the show on a live primary source, it will appear on Grand Rapids Happenings after our next update. We may email you if we have a question.</p>"
       + '<p class="form-actions"><a class="btn" href="index.html">Back to concerts</a> <a class="btn ghost" href="submit.html">Submit another</a></p>';
+    // The form (and the focused Submit button) is now hidden, so move focus to the message instead of losing it to <body>.
+    status.setAttribute("tabindex", "-1");
+    status.focus();
   }
 
   var button = form.querySelector('button[type="submit"]');

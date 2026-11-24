@@ -8,7 +8,7 @@ This directory is the Cloudflare Worker for Grand Rapids Happenings profiles, pl
 
 The form on the staging site posts to `https://grh-profiles-staging.grhappenings.workers.dev/submit-event`. GitHub Pages does not run this Worker. Until the steps below succeed, the page can validate a submission but cannot store one.
 
-1. Create a KV namespace for staging submissions. Copy its id over `REPLACE_STAGING_KV_ID` in `wrangler.toml` under `[env.staging]`. Do not point staging at the production profile KV.
+1. Create a KV namespace for staging submissions. Created 2026-11-24 as `grh-submit-staging` (id in `wrangler.toml` under `[env.staging]`). Do not point staging at the production profile KV.
 2. Put the Turnstile **secret** (never commit it, never put it in `wrangler.toml`):
 
    ```sh
