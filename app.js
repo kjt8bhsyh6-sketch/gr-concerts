@@ -185,8 +185,8 @@
   }));
   const s = document.createElement('script'); s.type = 'application/ld+json'; s.textContent = JSON.stringify(ld); document.head.appendChild(s);
 
-  // ---- optional: Submit-an-event form + giscus comments (hidden until set in config.js) ----
-  if (C.SUBMIT_FORM_URL) { $('#submit').hidden = false; $('#submit-link').href = C.SUBMIT_FORM_URL; }
+  // ---- optional: giscus comments (hidden until set in config.js) ----
+  // Submit-an-event entry points are in submit-entry.js (SHOW_SUBMIT_EVENT).
   const G = C.GISCUS || {};
   if (G.repo && G.repoId && G.category && G.categoryId) {
     $('#comments').hidden = false;

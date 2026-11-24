@@ -382,3 +382,50 @@ a.read-tickets.b.primary:hover{background:var(--ms-hover);border-color:var(--ms-
 .plan-error{margin:.35rem 0 0;color:#9f1239;font-size:.92rem;font-weight:650;line-height:1.45}
 .plan-warn{margin:.55rem 0 0;padding:.55rem .7rem;border:2px solid #9a3412;border-radius:8px;background:#fff7ed;color:#7c2d12;font-size:.95rem;font-weight:650;line-height:1.45}
 .plan-dialog input[aria-invalid="true"]{border-color:#9f1239;background:#fff7f8}
+
+/* Submit an event (submit.html). Hints are #595959 so they clear 4.5:1 on #f7f7fb and on white. */
+.submit-page .signup form.submit-form{display:flex;flex-direction:column;align-items:stretch;gap:1rem;margin-top:.4rem}
+.submit-page .form-stack,.submit-page .submit-form{min-width:0}
+.submit-page .field{display:flex;flex-direction:column;gap:.3rem;min-width:0}
+.submit-page .field>label{font-weight:700;font-size:.9rem}
+.submit-page .hint,.submit-page .note,.submit-page .privacy-note,.submit-page label.hint{color:#595959;font-weight:400}
+.submit-page .field .hint,.submit-page .privacy-note,.submit-page label.hint{font-size:.8rem}
+.submit-page .note{font-size:.9rem}
+.submit-page footer{color:#595959}
+.submit-page .field input:not([type=radio]),.submit-page .field select{font:inherit;font-size:1rem;min-height:44px;padding:.5rem .7rem;border:1px solid #cfcfda;border-radius:8px;background:#fff;color:var(--text);width:100%;max-width:100%;min-width:0;flex:0 0 auto}
+.submit-page .signup input[type=email]{flex:0 0 auto;width:100%}
+.submit-page .hint a{color:var(--navy);font-weight:700;text-decoration:underline}
+.submit-page #turnstile-label{font-weight:700;font-size:.9rem}
+.submit-page .price-set>.field{margin-top:.5rem}
+.submit-page .field input::placeholder{color:#595959;opacity:1}
+.submit-page .row-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;min-width:0}
+.submit-page .row-2>.field{min-width:0}
+.submit-page .price-set{border:0;padding:0;margin:0;min-width:0}
+.submit-page .price-set>legend{font-weight:700;font-size:.9rem;padding:0}
+.submit-page .radio-row{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;align-items:center}
+.submit-page .radio-row label{font-weight:600;display:inline-flex;align-items:center;gap:.45rem;min-height:44px;min-width:44px}
+.submit-page .radio-row input{width:1.25rem;height:1.25rem;accent-color:var(--navy)}
+.submit-page .turnstile-slot{min-height:65px;max-width:100%;border:1px solid #cfcfda;border-radius:8px;background:#fff;padding:.35rem}
+.submit-page .turnstile-slot:focus-within{outline:3px solid var(--focus);outline-offset:2px}
+.submit-page .field-error{color:#b91c1c;font-size:.85rem;font-weight:600;margin:0}
+.submit-page .field.invalid input,.submit-page .field.invalid select{border-color:#b91c1c;background:#fef2f2}
+.submit-page .alert{border-radius:8px;padding:.85rem 1rem;margin:0 0 1rem;border:1px solid}
+.submit-page .alert-error{background:#fef2f2;border-color:#fecaca;color:#b91c1c}
+.submit-page .alert-ok{background:#f0fdf4;border-color:#bbf7d0;color:#166534}
+.submit-page .alert h3{margin:0 0 .35rem;font-size:1rem;border:0;padding:0}
+.submit-page .alert p{margin:0;font-size:.9rem}
+.submit-page .success-card{text-align:center;padding:1.5rem 1rem}
+.submit-page .success-card .check{font-size:2.5rem;line-height:1;margin-bottom:.5rem}
+.submit-page .form-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.25rem}
+.submit-page .success-card .form-actions{justify-content:center;margin-top:1rem}
+.submit-page #turnstile-retry{align-self:flex-start}
+.submit-page [hidden]{display:none !important}
+@media (max-width:520px){
+  .submit-page .row-2{grid-template-columns:1fr}
+}
+@media (max-width:380px){
+  .submit-page .turnstile-slot{min-height:140px}
+}
+@media (prefers-reduced-motion:reduce){
+  .submit-page,.submit-page *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+}

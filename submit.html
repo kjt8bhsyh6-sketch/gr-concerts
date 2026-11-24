@@ -1,0 +1,118 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="nDKhhTOPAaCx34YRSxGSWMy59igHP0gIZXPhLIAlEQs" /><script>(function(l){var h=l.hostname,p=l.pathname;if(h==="kjt8bhsyh6-sketch.github.io")return;if(/\.pages\.dev$/.test(h)&&h.split(".").length>3)return;if(h!=="www.grhappenings.com"&&!/\.pages\.dev$/.test(h)){return}p=p.replace(/\/index\.html$/,"/").replace(/\.html$/,"");l.replace("https://grhappenings.com"+p+l.search+l.hash)})(location)</script><link rel="canonical" href="https://grhappenings.com/submit">
+<title>Submit an event | Grand Rapids Happenings</title><meta property="og:site_name" content="Grand Rapids Happenings"><meta name="description" content="Tell Grand Rapids Happenings about a concert, open mic, or local show. Every submission is checked before it is posted.">
+<link rel="stylesheet" href="style.css?v=202611241200"><link rel="manifest" href="manifest.webmanifest?v=202611080943"><link rel="icon" href="icons/favicon.ico?v=202611080943" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png?v=202611080943"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png?v=202611080943"><meta name="application-name" content="Grand Rapids Happenings"><meta name="apple-mobile-web-app-title" content="GR Happenings"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#14142a"></head><body class="submit-page">
+<div class="mast"><header><img class="brand" src="assets/brand/cityscape.png?v=202611080943" alt=""><div class="mast-copy"><h1>Grand Rapids Happenings</h1><p class="subtitle">Submit an event</p></div></header></div>
+<nav class="segtoggle" aria-label="Section"><a href="index.html?v=202611081738">Concerts</a><a href="sports.html?v=202611081738">Sports</a><a href="seasonal.html?v=202611081738">Seasonal</a></nav>
+<main class="doc">
+<section class="signup" aria-labelledby="submit-h">
+  <h2 id="submit-h">Know a show we missed?</h2>
+  <div id="submit-intro">
+    <p>Tell us about a concert, open mic, or local show in the Grand Rapids area. We check every submission against a live venue or promoter page before it appears on the calendar.</p>
+    <p class="note">Required fields are marked. A primary-source link is required — we do not list unverified shows.</p>
+  </div>
+  <div id="submit-status" class="alert alert-ok success-card" role="status" aria-atomic="true" hidden></div>
+  <p id="submit-closed" hidden>Event submissions aren't open on this copy of the site.</p>
+  <form id="submit-form" class="submit-form" method="post" action="submit.html" novalidate>
+    <div id="form-summary" class="alert alert-error" role="alert" hidden>
+      <h3 id="form-summary-title"></h3>
+      <p id="form-summary-text"></p>
+    </div>
+    <div class="field">
+      <label for="event-name">Event name</label>
+      <input id="event-name" name="event" type="text" autocomplete="off" required maxlength="120" placeholder="e.g. Open Mic with Adam">
+      <p class="field-error" id="err-event" role="alert" hidden></p>
+    </div>
+    <div class="field">
+      <label for="venue">Venue</label>
+      <select id="venue" name="venue" required aria-expanded="false" aria-controls="venue-other-wrap" aria-describedby="hint-venue" data-hint="hint-venue">
+        <option value="">Select a venue…</option>
+        <option value="__other__">Other / new venue</option>
+      </select>
+      <span class="hint" id="hint-venue">Pick an existing venue, or choose Other / new venue and name it below.</span>
+      <p class="field-error" id="err-venue" role="alert" hidden></p>
+    </div>
+    <div class="field" id="venue-other-wrap" hidden>
+      <label for="venue-other">Venue name</label>
+      <input id="venue-other" name="venue_other" type="text" autocomplete="off" maxlength="160">
+      <p class="field-error" id="err-venue-other" role="alert" hidden></p>
+    </div>
+    <div class="row-2">
+      <div class="field">
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" required>
+        <p class="field-error" id="err-date" role="alert" hidden></p>
+      </div>
+      <div class="field">
+        <label for="time">Start time</label>
+        <input id="time" name="time" type="time" required data-hint="hint-time" aria-describedby="hint-time">
+        <span class="hint" id="hint-time">Eastern Time (America/Detroit).</span>
+        <p class="field-error" id="err-time" role="alert" hidden></p>
+      </div>
+    </div>
+    <div class="field">
+      <label for="source">Link to primary source <span aria-hidden="true">*</span></label>
+      <input id="source" name="source" type="url" inputmode="url" required maxlength="2000" placeholder="https://…" data-hint="hint-link" aria-describedby="hint-link">
+      <span class="hint" id="hint-link">Venue calendar, Facebook event, or promoter page that lists the show. Required — we do not list unverified shows.</span>
+      <p class="field-error" id="err-link" role="alert" hidden></p>
+    </div>
+    <div class="field">
+      <label for="genre">Genre</label>
+      <select id="genre" name="genre" required>
+        <option value="">Select a genre…</option>
+        <option value="Rock">Rock</option>
+        <option value="Jazz">Jazz</option>
+        <option value="Blues">Blues</option>
+        <option value="Hip-Hop">Hip-Hop</option>
+        <option value="Country">Country</option>
+        <option value="Folk">Folk</option>
+        <option value="Electronic">Electronic</option>
+        <option value="Classical">Classical</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Open Mic">Open Mic</option>
+        <option value="Other">Other</option>
+      </select>
+      <p class="field-error" id="err-genre" role="alert" hidden></p>
+    </div>
+    <fieldset class="field price-set">
+      <legend>Price</legend>
+      <div class="radio-row">
+        <label><input type="radio" name="price_type" value="free" checked> Free / no cover</label>
+        <label><input type="radio" name="price_type" value="paid"> Ticketed / cover</label>
+      </div>
+      <div class="field">
+        <label for="price" class="hint">If ticketed, price or range (optional)</label>
+        <input id="price" name="price" type="text" maxlength="80" placeholder="e.g. $10 cover or $25–$45" disabled>
+      </div>
+    </fieldset>
+    <div class="row-2">
+      <div class="field">
+        <label for="submitter-name">Your name</label>
+        <input id="submitter-name" name="name" type="text" autocomplete="name" required maxlength="80">
+        <p class="field-error" id="err-name" role="alert" hidden></p>
+      </div>
+      <div class="field">
+        <label for="submitter-email">Your email</label>
+        <input id="submitter-email" name="email" type="email" autocomplete="email" required maxlength="254" data-hint="hint-email" aria-describedby="hint-email">
+        <span class="hint" id="hint-email">We use your name and email only to verify or clarify this listing. See our <a href="privacy.html">Privacy Policy</a>.</span>
+        <p class="field-error" id="err-email" role="alert" hidden></p>
+      </div>
+    </div>
+    <div class="field">
+      <span id="turnstile-label">Spam check</span>
+      <div id="turnstile-group" class="turnstile-slot" role="group" aria-labelledby="turnstile-label">
+        <div id="cf-turnstile"></div>
+      </div>
+      <p class="field-error" id="err-turnstile" role="alert" hidden></p>
+      <button type="button" class="btn ghost" id="turnstile-retry" hidden>Try the spam check again</button>
+    </div>
+    <p class="privacy-note">By submitting, you agree we may use these details to verify and list the event. We keep your name and email only to follow up or until the submission is published or rejected. See our <a href="privacy.html">Privacy policy</a>.</p>
+    <div class="form-actions">
+      <button type="submit">Submit event</button>
+    </div>
+  </form>
+</section>
+</main>
+<footer><p>By The Canasta Club LLC. Always confirm details with the venue.</p><p class="mail-addr">The Canasta Club LLC · PO Box 140186 · Grand Rapids, MI 49504</p><p class="disclosure">Disclosure: some ticket links may be affiliate links; we may earn a small commission at no extra cost to you. <a href="about.html#disclosure">Learn more</a>.</p><nav class="footlinks"><a href="index.html?v=202611081738">Concerts</a><a href="sports.html?v=202611081738">Sports</a><a href="seasonal.html?v=202611081738">Seasonal</a><a href="submit.html" id="foot-submit" hidden>Submit an event</a><a href="about.html">About</a><a href="about.html#contact">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="about.html#disclosure">Affiliate disclosure</a></nav><p class="xfoot"><a href="https://x.com/GRHappen17" target="_blank" rel="noopener me" aria-label="Follow Grand Rapids Happenings on X (@GRHappen17)">Follow on X · @GRHappen17</a></p></footer>
+<script src="config.js?v=202611241200"></script><script src="venues.js?v=202611232206"></script><script src="submit.js?v=202611241200"></script><script src="submit-entry.js?v=202611241200"></script>
+<script src="profiles.js?v=202611081738"></script><script src="track.js?v=202611091500"></script><script src="refresh.js?v=202611080943"></script>
+</body></html>
