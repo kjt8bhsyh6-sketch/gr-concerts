@@ -1,17 +1,7 @@
 {
-  "generated": "2026-11-23",
-  "count": 206,
+  "generated": "2026-11-24",
+  "count": 202,
   "pending": [
-    {
-      "artist": "BassBin: Northlake, Baxter Stockman, Zach Bletz",
-      "week": "this",
-      "dates": [
-        "2026-11-23"
-      ],
-      "venue": "Billy's Lounge",
-      "link": "https://billyslounge.com/",
-      "added": "2026-11-19"
-    },
     {
       "artist": "High Score Comedy: Round 11",
       "week": "this",
@@ -21,23 +11,6 @@
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/high-score-comedy-round-11-the-pyramid-scheme-tickets/15040133",
       "added": "2026-10-21"
-    },
-    {
-      "artist": "Founders Open Mic – hosted by Big Jake Bootstrap",
-      "week": "this",
-      "dates": [
-        "2026-11-24",
-        "2026-12-01",
-        "2026-12-08",
-        "2026-12-15",
-        "2026-12-22",
-        "2026-12-29",
-        "2027-01-05",
-        "2027-01-12"
-      ],
-      "venue": "Founders Brewing Taproom",
-      "link": "https://foundersbrewing.com/visit-connect/grand-rapids-taproom/",
-      "added": "2026-11-19"
     },
     {
       "artist": "Desmond Jones (with Chirp)",
@@ -78,16 +51,6 @@
       "venue": "Park Theatre (Holland)",
       "link": "https://parktheatreholland.org/",
       "added": "2026-11-12"
-    },
-    {
-      "artist": "616 Got Talent Open Mic Sessions w/ Grey Sky and Antholo-G (free, 21+)",
-      "week": "this",
-      "dates": [
-        "2026-11-26"
-      ],
-      "venue": "Mulligan's Pub",
-      "link": "https://mulliganspubgr.com/",
-      "added": "2026-11-19"
     },
     {
       "artist": "John Shea Jazz Trio",
@@ -352,16 +315,6 @@
       "added": "2026-11-19"
     },
     {
-      "artist": "Open Mic with Adam (free, 21+)",
-      "week": "next",
-      "dates": [
-        "2026-12-03"
-      ],
-      "venue": "Mulligan's Pub",
-      "link": "https://mulliganspubgr.com/",
-      "added": "2026-11-19"
-    },
-    {
       "artist": "Parade (Jewish Theatre Grand Rapids, Dec 3–13)",
       "week": "next",
       "dates": [
@@ -493,7 +446,7 @@
       "added": "2026-11-11"
     },
     {
-      "artist": "Dee Sutton & Drew Howard",
+      "artist": "Sweet Dee & Drew Howard",
       "week": "next",
       "dates": [
         "2026-12-05"

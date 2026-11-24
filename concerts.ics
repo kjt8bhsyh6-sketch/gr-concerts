@@ -35,43 +35,6 @@ DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.grct.org/annie/ (
 URL:https://www.grct.org/annie/
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-23-catch-your-breath-not-broken-enough-tour@gr-concerts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261123T190000
-DTEND;TZID=America/Detroit:20261123T220000
-SUMMARY:Catch Your Breath – Not Broken Enough Tour
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://www.etix.com/ticket/p/45
- 992257/catch-your-breath-not-broken-enough-tour-grand-rapids-the-intersec
- tion-elevation (confirm details with the venue)
-URL:https://www.etix.com/ticket/p/45992257/catch-your-breath-not-broken-en
- ough-tour-grand-rapids-the-intersection-elevation
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-23-bassbin-northlake-baxter-stockman-zach-bletz@gr-concerts
-DTSTAMP:20261119T120000Z
-DTSTART;TZID=America/Detroit:20261123T190000
-DTEND;TZID=America/Detroit:20261123T220000
-SUMMARY:BassBin: Northlake\, Baxter Stockman\, Zach Bletz
-LOCATION:Billy's Lounge\, Grand Rapids\, MI
-DESCRIPTION:Electronic\, Time on venue site. Tickets/info: https://billysl
- ounge.com/ (confirm details with the venue)
-URL:https://billyslounge.com/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-23-comedy-outlet-mondays-open-mic-variety-show@gr-concerts
-DTSTAMP:20261103T120000Z
-DTSTART;TZID=America/Detroit:20261123T190000
-DTEND;TZID=America/Detroit:20261123T220000
-SUMMARY:Comedy Outlet Mondays – Open-mic Variety Show!
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/co
- medy-outlet-mondays-open-mic-variety-show (confirm details with the venue
- )
-URL:https://www.crowdwork.com/e/comedy-outlet-mondays-open-mic-variety-sho
- w
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-24-don-broco-with-windwaker-shadehouse@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20261124T200000
@@ -1375,11 +1338,11 @@ DESCRIPTION:Comedy\, 10:30 PM. Tickets/info: https://www.crowdwork.com/e/l
 URL:https://www.crowdwork.com/e/late-night-comedy-lab
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-05-dee-sutton-drew-howard@gr-concerts
+UID:2026-12-05-sweet-dee-drew-howard@gr-concerts
 DTSTAMP:20261123T120000Z
 DTSTART;TZID=America/Detroit:20261205T170000
 DTEND;TZID=America/Detroit:20261205T200000
-SUMMARY:Dee Sutton & Drew Howard
+SUMMARY:Sweet Dee & Drew Howard
 LOCATION:Horrocks Market\, Grand Rapids\, MI
 DESCRIPTION:Live Music\, 5:00 PM. Tickets/info: https://www.horrocksmarket
  .com/events (confirm details with the venue)
@@ -2011,14 +1974,14 @@ URL:https://www.saugatuckcomedy.com/product/adam-burke-seth-davis/TG5UONSC
  TK36UT744CLACVDG
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-12-hairbanger-s-ball-80-s-hair-rock-131-sport-1qhea5@gr-concer
+UID:2026-12-12-hairbanger-s-ball-80-s-hair-rock-free-wawye-oasis@gr-concer
  ts
 DTSTAMP:20261104T120000Z
-DTSTART;TZID=America/Detroit:20261212T210000
-DTEND;TZID=America/Detroit:20261213T000000
-SUMMARY:Hairbanger's Ball – 80's Hair Rock (131 Sportsbar & Lounge)
+DTSTART;TZID=America/Detroit:20261212T200000
+DTEND;TZID=America/Detroit:20261212T230000
+SUMMARY:Hairbanger's Ball – 80's Hair Rock (free\; Wawyé Oasis)
 LOCATION:Gun Lake Casino Resort\, Grand Rapids\, MI
-DESCRIPTION:Tribute\, 9:00 PM. Tickets/info: https://gunlakecasino.com/eve
+DESCRIPTION:Tribute\, 8:00 PM. Tickets/info: https://gunlakecasino.com/eve
  nt/hairbangers-ball-3/ (confirm details with the venue)
 URL:https://gunlakecasino.com/event/hairbangers-ball-3/
 END:VEVENT
