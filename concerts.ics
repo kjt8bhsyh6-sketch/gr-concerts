@@ -35,58 +35,6 @@ DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.grct.org/annie/ (
 URL:https://www.grct.org/annie/
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-24-don-broco-with-windwaker-shadehouse@gr-concerts
-DTSTAMP:20261020T120000Z
-DTSTART;TZID=America/Detroit:20261124T200000
-DTEND;TZID=America/Detroit:20261124T230000
-SUMMARY:Don Broco (with Windwaker\, Shadehouse)
-LOCATION:Elevation (at The Intersection)\, Grand Rapids\, MI
-DESCRIPTION:Rock\, 8:00 PM. Tickets/info: https://www.etix.com/ticket/p/92
- 085055/don-broco-grand-rapids-the-intersection-elevation (confirm details
-  with the venue)
-URL:https://www.etix.com/ticket/p/92085055/don-broco-grand-rapids-the-inte
- rsection-elevation
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-24-high-score-comedy-round-11@gr-concerts
-DTSTAMP:20261021T120000Z
-DTSTART;TZID=America/Detroit:20261124T200000
-DTEND;TZID=America/Detroit:20261124T230000
-SUMMARY:High Score Comedy: Round 11
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 8:00 PM. Tickets/info: https://www.ticketweb.com/even
- t/high-score-comedy-round-11-the-pyramid-scheme-tickets/15040133 (confirm
-  details with the venue)
-URL:https://www.ticketweb.com/event/high-score-comedy-round-11-the-pyramid
- -scheme-tickets/15040133
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-24-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
-DTSTAMP:20261119T120000Z
-DTSTART;TZID=America/Detroit:20261124T183000
-DTEND;TZID=America/Detroit:20261124T213000
-SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
-LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
-DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
- visit-connect/grand-rapids-taproom/ (confirm details with the venue)
-URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-24-free-improv-jam-a-lama-ding-dong-stay-for-1rmv6r@gr-concert
- s
-DTSTAMP:20261022T120000Z
-DTSTART;TZID=America/Detroit:20261124T190000
-DTEND;TZID=America/Detroit:20261124T220000
-SUMMARY:FREE - Improv Jam-a-lama-ding-dong (Stay for the sing-song!) (Nov 
- 24\, Dec 29\, Jan 26)
-LOCATION:The Comedy Project\, Grand Rapids\, MI
-DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/fr
- ee-improv-jam-a-lama-ding-dong-stay-for-the-sing-song (confirm details wi
- th the venue)
-URL:https://www.crowdwork.com/e/free-improv-jam-a-lama-ding-dong-stay-for-
- the-sing-song
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-25-underoath-define-the-great-line-20th-anniv-6ycfdq@gr-concer
  ts
 DTSTAMP:20261019T120000Z
@@ -3505,6 +3453,21 @@ DESCRIPTION:Tribute\, 7:00 PM. Tickets/info: https://parktheatreholland.or
 URL:https://parktheatreholland.org/
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-16-winter-concert-sinfonia-concert-orchestra-r9aslw@gr-concert
+ s
+DTSTAMP:20261125T120000Z
+DTSTART;TZID=America/Detroit:20270116T170000
+DTEND;TZID=America/Detroit:20270116T200000
+SUMMARY:Winter Concert: Sinfonia & Concert Orchestra (SCMC School of Music
+ )
+LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
+DESCRIPTION:Orchestral\, 5:00 PM. Tickets/info: https://www.scmcgr.org/con
+ certs/winter-concert-sinfonia-concert-orchestra-2027 (confirm details wit
+ h the venue)
+URL:https://www.scmcgr.org/concerts/winter-concert-sinfonia-concert-orches
+ tra-2027
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-16-st-cecilia-youth-philharmonic-winter-conce-39ymi1@gr-concer
  ts
 DTSTAMP:20261023T120000Z
@@ -3606,6 +3569,17 @@ DESCRIPTION:Rock\, 7:00 PM. Tickets/info: https://www.ticketweb.com/event/
   venue)
 URL:https://www.ticketweb.com/event/jon-spencer-the-pyramid-scheme-tickets
  /14340194
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-19-founders-open-mic-hosted-by-big-jake-bootstrap@gr-concerts
+DTSTAMP:20261125T120000Z
+DTSTART;TZID=America/Detroit:20270119T183000
+DTEND;TZID=America/Detroit:20270119T213000
+SUMMARY:Founders Open Mic – hosted by Big Jake Bootstrap
+LOCATION:Founders Brewing Taproom\, Grand Rapids\, MI
+DESCRIPTION:Open Mic\, 6:30 PM. Tickets/info: https://foundersbrewing.com/
+ visit-connect/grand-rapids-taproom/ (confirm details with the venue)
+URL:https://foundersbrewing.com/visit-connect/grand-rapids-taproom/
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-21-camerata-nordica-octet-great-performance-series@gr-concerts
