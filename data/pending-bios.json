@@ -1,47 +1,7 @@
 {
-  "generated": "2026-11-25",
-  "count": 199,
+  "generated": "2026-11-26",
+  "count": 200,
   "pending": [
-    {
-      "artist": "Desmond Jones (with Chirp)",
-      "week": "this",
-      "dates": [
-        "2026-11-25"
-      ],
-      "venue": "Elevation (at The Intersection)",
-      "link": "https://www.etix.com/ticket/p/99256957/desmond-jones-grand-rapids-the-intersection-elevation",
-      "added": "2026-10-20"
-    },
-    {
-      "artist": "The Return of Hannah Rose Graves w/ Highdeas",
-      "week": "this",
-      "dates": [
-        "2026-11-25"
-      ],
-      "venue": "SpeakEZ Lounge",
-      "link": "https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-setting-local-spins/",
-      "added": "2026-11-19"
-    },
-    {
-      "artist": "Thanksgiving Eve ft. DJ Composition + Deeechild + DJ Omega Supreme",
-      "week": "this",
-      "dates": [
-        "2026-11-25"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/thanksgiving-eve-ft-dj-composition-the-pyramid-scheme-tickets/14421754",
-      "added": "2026-11-10"
-    },
-    {
-      "artist": "Reckless Davey – Night Before Thanksgiving Bash",
-      "week": "this",
-      "dates": [
-        "2026-11-25"
-      ],
-      "venue": "Park Theatre (Holland)",
-      "link": "https://parktheatreholland.org/",
-      "added": "2026-11-12"
-    },
     {
       "artist": "John Shea Jazz Trio",
       "week": "this",
@@ -71,6 +31,16 @@
       "venue": "Mulligan's Pub",
       "link": "https://mulliganspubgr.com/",
       "added": "2026-11-19"
+    },
+    {
+      "artist": "Cultura Entertainment Group presents The Turkey Turnup ft. King Inesse + Yeyo",
+      "week": "this",
+      "dates": [
+        "2026-11-28"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/cultura-entertainment-group-presents-the-the-pyramid-scheme-tickets/14421684",
+      "added": "2026-11-26"
     },
     {
       "artist": "Candlelight: Mozart vs Beethoven (Nov 28)",
@@ -305,6 +275,26 @@
       "added": "2026-10-22"
     },
     {
+      "artist": "Paul Perry (live music, Ascend Lounge)",
+      "week": "next",
+      "dates": [
+        "2026-12-03"
+      ],
+      "venue": "Soaring Eagle Casino & Resort",
+      "link": "https://soaringeaglecasino.com/events/paul-perry-2/2026-12-03/",
+      "added": "2026-11-26"
+    },
+    {
+      "artist": "BassBin: Piggy Mctiggers Lives",
+      "week": "next",
+      "dates": [
+        "2026-12-04"
+      ],
+      "venue": "Billy's Lounge",
+      "link": "https://billyslounge.com/",
+      "added": "2026-11-26"
+    },
+    {
       "artist": "The Merry Men",
       "week": "next",
       "dates": [
@@ -365,6 +355,16 @@
       "added": "2026-11-12"
     },
     {
+      "artist": "Family Tradition (Ascend Lounge)",
+      "week": "next",
+      "dates": [
+        "2026-12-04"
+      ],
+      "venue": "Soaring Eagle Casino & Resort",
+      "link": "https://soaringeaglecasino.com/events/family-tradition/",
+      "added": "2026-11-26"
+    },
+    {
       "artist": "No Skull, Angel of Mars, The Vonwerewolves (free, 21+)",
       "week": "next",
       "dates": [
@@ -413,6 +413,16 @@
       "venue": "The Big Room",
       "link": "https://www.eventbrite.com/e/the-1985-totally-80s-mixtape-live-the-big-room-grand-rapids-mi-tickets-2000062874899",
       "added": "2026-11-11"
+    },
+    {
+      "artist": "Gasoline Alley (Ascend Lounge)",
+      "week": "next",
+      "dates": [
+        "2026-12-05"
+      ],
+      "venue": "Soaring Eagle Casino & Resort",
+      "link": "https://soaringeaglecasino.com/events/gasoline-alley/",
+      "added": "2026-11-26"
     },
     {
       "artist": "Sweet Dee & Drew Howard",
@@ -1115,16 +1125,6 @@
       "added": "2026-10-28"
     },
     {
-      "artist": "Rachel Scanlon (Jan 14–16)",
-      "week": "later",
-      "dates": [
-        "2027-01-14"
-      ],
-      "venue": "Dr. Grins (at The B.O.B.)",
-      "link": "https://www.thebob.com/drgrins/comedian/index.html?id=1511",
-      "added": "2026-11-12"
-    },
-    {
       "artist": "House Party: A Sweaty Love-Letter To The 2010s Rager",
       "week": "later",
       "dates": [
@@ -1152,6 +1152,16 @@
       ],
       "venue": "The Pyramid Scheme",
       "link": "https://www.ticketweb.com/event/sin-genero-no-genre-ft-the-pyramid-scheme-tickets/14434604",
+      "added": "2026-11-12"
+    },
+    {
+      "artist": "Rachel Scanlon (Jan 15–16)",
+      "week": "later",
+      "dates": [
+        "2027-01-15"
+      ],
+      "venue": "Dr. Grins (at The B.O.B.)",
+      "link": "https://www.thebob.com/drgrins/comedian/index.html?id=1511",
       "added": "2026-11-12"
     },
     {
