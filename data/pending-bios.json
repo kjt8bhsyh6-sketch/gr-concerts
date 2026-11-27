@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-26",
-  "count": 200,
+  "generated": "2026-11-27",
+  "count": 198,
   "pending": [
     {
       "artist": "John Shea Jazz Trio",
@@ -31,16 +31,6 @@
       "venue": "Mulligan's Pub",
       "link": "https://mulliganspubgr.com/",
       "added": "2026-11-19"
-    },
-    {
-      "artist": "Cultura Entertainment Group presents The Turkey Turnup ft. King Inesse + Yeyo",
-      "week": "this",
-      "dates": [
-        "2026-11-28"
-      ],
-      "venue": "The Pyramid Scheme",
-      "link": "https://www.ticketweb.com/event/cultura-entertainment-group-presents-the-the-pyramid-scheme-tickets/14421684",
-      "added": "2026-11-26"
     },
     {
       "artist": "Candlelight: Mozart vs Beethoven (Nov 28)",
@@ -265,16 +255,6 @@
       "added": "2026-11-19"
     },
     {
-      "artist": "Parade (Jewish Theatre Grand Rapids, Dec 3–13)",
-      "week": "next",
-      "dates": [
-        "2026-12-03"
-      ],
-      "venue": "GRCC Spectrum Theater",
-      "link": "https://www.jtgr.org/2026-2027/parade",
-      "added": "2026-10-22"
-    },
-    {
       "artist": "Paul Perry (live music, Ascend Lounge)",
       "week": "next",
       "dates": [
@@ -305,16 +285,6 @@
       "added": "2026-11-19"
     },
     {
-      "artist": "The Insane Theatre – The Doors Tribute",
-      "week": "next",
-      "dates": [
-        "2026-12-04"
-      ],
-      "venue": "SpeakEZ Lounge",
-      "link": "https://localspins.com/local-spins-speakez-lounge-the-fall-lineup-of-michigan-stars-in-an-intimate-setting-local-spins/",
-      "added": "2026-11-19"
-    },
-    {
       "artist": "The Wretched Hive, Winter After, Second Fate (free, 21+)",
       "week": "next",
       "dates": [
@@ -333,16 +303,6 @@
       "venue": "Fountain Street Church",
       "link": "https://fountainstreet.churchcenter.com/calendar/event/228611624",
       "added": "2026-10-22"
-    },
-    {
-      "artist": "Clownvis Presley wsg Vlad's Skeletal Circus",
-      "week": "next",
-      "dates": [
-        "2026-12-04"
-      ],
-      "venue": "Tip Top Deluxe Bar & Grill",
-      "link": "https://www.ticketweb.com/event/clownvis-presley-vlads-skeletal-circus-tip-top-deluxe-bar-tickets/14310444",
-      "added": "2026-10-23"
     },
     {
       "artist": "Free Show Friday: T.H.V. & Swandrive (experimental, no cover, 21+)",
@@ -1025,6 +985,16 @@
       "added": "2026-10-20"
     },
     {
+      "artist": "Lie. + ATJ + Zudocks + The Capstone Volunteers",
+      "week": "later",
+      "dates": [
+        "2027-01-03"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/lie-atj-zudocks-the-pyramid-scheme-tickets/15070263",
+      "added": "2026-11-27"
+    },
+    {
       "artist": "Loners Club x Lucid Lyfestyles with WhoTheHellIsCarlo (18+)",
       "week": "later",
       "dates": [
@@ -1113,6 +1083,16 @@
       "venue": "Coral Gables (Saugatuck)",
       "link": "https://www.saugatuckcomedy.com/product/jayson-cross-tba/4RRNCHGAOIH62BPGCBL6ZSQO",
       "added": "2026-11-02"
+    },
+    {
+      "artist": "Halfway to Yesterday + Versatile + Julie's Bones + FuzzBuster",
+      "week": "later",
+      "dates": [
+        "2027-01-10"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/halfway-to-yesterday-versatile-the-pyramid-scheme-tickets/15070293",
+      "added": "2026-11-27"
     },
     {
       "artist": "Northview High School Choirs Concert",
@@ -1223,6 +1203,16 @@
       "venue": "Midtown GR (at Studio Park)",
       "link": "https://www.themidtowngr.com/shows-events/detail/River-City-Improv",
       "added": "2026-11-18"
+    },
+    {
+      "artist": "The Bloody Pickups + The Ultraviolets + The Mannequins + Dog Skull",
+      "week": "later",
+      "dates": [
+        "2027-01-17"
+      ],
+      "venue": "The Pyramid Scheme",
+      "link": "https://www.ticketweb.com/event/the-bloody-pickups-the-the-pyramid-scheme-tickets/15070353",
+      "added": "2026-11-27"
     },
     {
       "artist": "Shapel Lacey (Jan 22)",
@@ -1833,16 +1823,6 @@
       "venue": "Calvin University Chapel",
       "link": "https://calvin.edu/events/jazz-band-concert-1807140600",
       "added": "2026-10-23"
-    },
-    {
-      "artist": "Actors from the London Stage: King Lear (Apr 8–9)",
-      "week": "later",
-      "dates": [
-        "2027-04-08"
-      ],
-      "venue": "Knickerbocker Theatre (Hope College)",
-      "link": "https://calendar.hope.edu/event/actors-from-the-london-stage-in-king-lear",
-      "added": "2026-11-12"
     },
     {
       "artist": "Magical Mystery Doors – Beatles, Led Zeppelin & Doors Tribute",

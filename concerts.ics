@@ -35,19 +35,6 @@ DESCRIPTION:Musical\, 7:30 PM. Tickets/info: https://www.grct.org/annie/ (
 URL:https://www.grct.org/annie/
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-26-616-got-talent-open-mic-sessions-w-grey-sk-tiwqz3@gr-concer
- ts
-DTSTAMP:20261119T120000Z
-DTSTART;TZID=America/Detroit:20261126T210000
-DTEND;TZID=America/Detroit:20261127T000000
-SUMMARY:616 Got Talent Open Mic Sessions w/ Grey Sky and Antholo-G (free\,
-  21+)
-LOCATION:Mulligan's Pub\, Grand Rapids\, MI
-DESCRIPTION:Open Mic\, 9:00 PM. Tickets/info: https://mulliganspubgr.com/ 
- (confirm details with the venue)
-URL:https://mulliganspubgr.com/
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-27-cirque-dreams-holidaze@gr-concerts
 DTSTAMP:20261019T120000Z
 DTSTART;TZID=America/Detroit:20261127T193000
@@ -189,21 +176,6 @@ LOCATION:The Comedy Project\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 7:00 PM. Tickets/info: https://www.crowdwork.com/e/br
  eaking-the-news-improv-comedy-show (confirm details with the venue)
 URL:https://www.crowdwork.com/e/breaking-the-news-improv-comedy-show
-END:VEVENT
-BEGIN:VEVENT
-UID:2026-11-28-cultura-entertainment-group-presents-the-t-e9fx4y@gr-concer
- ts
-DTSTAMP:20261126T120000Z
-DTSTART;TZID=America/Detroit:20261128T210000
-DTEND;TZID=America/Detroit:20261129T000000
-SUMMARY:Cultura Entertainment Group presents The Turkey Turnup ft. King In
- esse + Yeyo
-LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
-DESCRIPTION:Live Music\, 9:00 PM. Tickets/info: https://www.ticketweb.com/
- event/cultura-entertainment-group-presents-the-the-pyramid-scheme-tickets
- /14421684 (confirm details with the venue)
-URL:https://www.ticketweb.com/event/cultura-entertainment-group-presents-t
- he-the-pyramid-scheme-tickets/14421684
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-straight-no-chaser-make-spirits-bright-tour@gr-concerts
@@ -2884,6 +2856,19 @@ DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ch
 URL:https://www.crowdwork.com/e/choose-your-own-improv-comedy-show
 END:VEVENT
 BEGIN:VEVENT
+UID:2027-01-03-lie-atj-zudocks-the-capstone-volunteers@gr-concerts
+DTSTAMP:20261127T120000Z
+DTSTART;TZID=America/Detroit:20270103T190000
+DTEND;TZID=America/Detroit:20270103T220000
+SUMMARY:Lie. + ATJ + Zudocks + The Capstone Volunteers
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/lie-atj-zudocks-the-pyramid-scheme-tickets/15070263 (confirm detail
+ s with the venue)
+URL:https://www.ticketweb.com/event/lie-atj-zudocks-the-pyramid-scheme-tic
+ kets/15070263
+END:VEVENT
+BEGIN:VEVENT
 UID:2027-01-03-harlem-globetrotters-rivalry-tour@gr-concerts
 DTSTAMP:20261020T120000Z
 DTSTART;TZID=America/Detroit:20270103T140000
@@ -3137,6 +3122,20 @@ LOCATION:The Comedy Project\, Grand Rapids\, MI
 DESCRIPTION:Comedy\, 9:00 PM. Tickets/info: https://www.crowdwork.com/e/ch
  oose-your-own-improv-comedy-show (confirm details with the venue)
 URL:https://www.crowdwork.com/e/choose-your-own-improv-comedy-show
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-10-halfway-to-yesterday-versatile-julie-s-bon-slgd5j@gr-concer
+ ts
+DTSTAMP:20261127T120000Z
+DTSTART;TZID=America/Detroit:20270110T190000
+DTEND;TZID=America/Detroit:20270110T220000
+SUMMARY:Halfway to Yesterday + Versatile + Julie's Bones + FuzzBuster
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/halfway-to-yesterday-versatile-the-pyramid-scheme-tickets/15070293 
+ (confirm details with the venue)
+URL:https://www.ticketweb.com/event/halfway-to-yesterday-versatile-the-pyr
+ amid-scheme-tickets/15070293
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-12-broadway-grand-rapids-six@gr-concerts
@@ -3513,6 +3512,20 @@ DESCRIPTION:Musical\, 1:00 PM & 6:30 PM. Tickets/info: https://www.ticketm
  A768 (confirm details with the venue)
 URL:https://www.ticketmaster.com/six-touring-grand-rapids-michigan-01-17-2
  027/event/080064FDC7BCA768
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-01-17-the-bloody-pickups-the-ultraviolets-the-ma-w6egnx@gr-concer
+ ts
+DTSTAMP:20261127T120000Z
+DTSTART;TZID=America/Detroit:20270117T190000
+DTEND;TZID=America/Detroit:20270117T220000
+SUMMARY:The Bloody Pickups + The Ultraviolets + The Mannequins + Dog Skull
+LOCATION:The Pyramid Scheme\, Grand Rapids\, MI
+DESCRIPTION:Live Music\, 7:00 PM. Tickets/info: https://www.ticketweb.com/
+ event/the-bloody-pickups-the-the-pyramid-scheme-tickets/15070353 (confirm
+  details with the venue)
+URL:https://www.ticketweb.com/event/the-bloody-pickups-the-the-pyramid-sch
+ eme-tickets/15070353
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-01-17-zion-lion-reggae-pool-party-free-all-ages-49rml5@gr-concert
@@ -4487,8 +4500,8 @@ DTEND;TZID=America/Detroit:20270212T223000
 SUMMARY:GR Symphony: Light Beyond Shadows (GR Symphony Chorus)
 LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
- erts (confirm details with the venue)
-URL:https://www.scmcgr.org/concerts
+ erts/grand-rapids-symphony-4 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/grand-rapids-symphony-4
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-02-12-ryan-hamilton-making-good-time@gr-concerts
@@ -5167,8 +5180,8 @@ DTEND;TZID=America/Detroit:20270305T130000
 SUMMARY:GR Symphony: Coffee with Marcelo (Mary Beth Orr\, horn)
 LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 10:00 AM. Tickets/info: https://www.scmcgr.org/con
- certs (confirm details with the venue)
-URL:https://www.scmcgr.org/concerts
+ certs/grand-rapids-symphony-5 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/grand-rapids-symphony-5
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-05-gr-symphony-mozart-busler-mary-beth-orr-horn@gr-concerts
@@ -5178,8 +5191,8 @@ DTEND;TZID=America/Detroit:20270305T223000
 SUMMARY:GR Symphony: Mozart & Busler! (Mary Beth Orr\, horn)
 LOCATION:St. Cecilia Music Center\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 7:30 PM. Tickets/info: https://www.scmcgr.org/conc
- erts (confirm details with the venue)
-URL:https://www.scmcgr.org/concerts
+ erts/grand-rapids-symphony-6 (confirm details with the venue)
+URL:https://www.scmcgr.org/concerts/grand-rapids-symphony-6
 END:VEVENT
 BEGIN:VEVENT
 UID:2027-03-05-geoffrey-asmus@gr-concerts
@@ -5976,19 +5989,6 @@ DTSTART;TZID=America/Detroit:20270408T193000
 DTEND;TZID=America/Detroit:20270408T223000
 SUMMARY:Actors from the London Stage: King Lear (Apr 8–9\, Great Performan
  ce Series)
-LOCATION:Knickerbocker Theatre (Hope College)\, Grand Rapids\, MI
-DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calendar.hope.edu/eve
- nt/actors-from-the-london-stage-in-king-lear (confirm details with the ve
- nue)
-URL:https://calendar.hope.edu/event/actors-from-the-london-stage-in-king-l
- ear
-END:VEVENT
-BEGIN:VEVENT
-UID:2027-04-08-actors-from-the-london-stage-king-lear-apr-8-9@gr-concerts
-DTSTAMP:20261112T120000Z
-DTSTART;TZID=America/Detroit:20270408T193000
-DTEND;TZID=America/Detroit:20270408T223000
-SUMMARY:Actors from the London Stage: King Lear (Apr 8–9)
 LOCATION:Knickerbocker Theatre (Hope College)\, Grand Rapids\, MI
 DESCRIPTION:Theater\, 7:30 PM. Tickets/info: https://calendar.hope.edu/eve
  nt/actors-from-the-london-stage-in-king-lear (confirm details with the ve

@@ -135,22 +135,6 @@ URL:https://christmasliteshow.com/memory-lane-train/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-26-grand-rapids-public-schools-turkey-trot-34th-annu@gr-season
- al
-DTSTAMP:20261022T120000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:Grand Rapids Public Schools Turkey Trot (34th annual)
-LOCATION:Start at Van Andel Arena\, 130 W Fulton St\, Grand Rapids\, Grand
-  Rapids\, MI
-DESCRIPTION:Turkey Trot. Thu Nov 26 · 10K 8 AM\, Mini Trot 8:10 AM\, 5K & 
- 1-mile 8:30 AM. Info: https://runsignup.com/Race/MI/GrandRapids/GRPSThank
- sgivingDayTurkeyTrot (confirm details with the organizer)
-URL:https://runsignup.com/Race/MI/GrandRapids/GRPSThanksgivingDayTurkeyTro
- t
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:2026-11-27-saugatuck-christmas-tree-lighting-in-wicks-park@gr-seasonal
 DTSTAMP:20261023T120000Z
 DTSTART;VALUE=DATE:20261127
