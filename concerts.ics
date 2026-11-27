@@ -202,15 +202,15 @@ DESCRIPTION:Classical\, 6:30 PM. Tickets/info: https://grcmc.org/event/can
 URL:https://grcmc.org/event/candlelight-mozart-vs-beethoven/1802
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-28-candlelight-80s-rock-anthems@gr-concerts
-DTSTAMP:20261019T120000Z
+UID:2026-11-28-candlelight-tribute-to-michael-jackson-nov-28@gr-concerts
+DTSTAMP:20261127T120000Z
 DTSTART;TZID=America/Detroit:20261128T204500
 DTEND;TZID=America/Detroit:20261128T234500
-SUMMARY:Candlelight: 80s Rock Anthems
+SUMMARY:Candlelight: Tribute to Michael Jackson (Nov 28)
 LOCATION:Wealthy Theatre\, Grand Rapids\, MI
 DESCRIPTION:Classical\, 8:45 PM. Tickets/info: https://grcmc.org/event/can
- dlelight-80s-rock-anthems/1804 (confirm details with the venue)
-URL:https://grcmc.org/event/candlelight-80s-rock-anthems/1804
+ dlelight-tribute-to-michael-jackson/1832 (confirm details with the venue)
+URL:https://grcmc.org/event/candlelight-tribute-to-michael-jackson/1832
 END:VEVENT
 BEGIN:VEVENT
 UID:2026-11-28-enmy-damn-last-20-years-standing@gr-concerts
